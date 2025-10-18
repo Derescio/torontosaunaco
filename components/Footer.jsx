@@ -30,6 +30,14 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/service-areas"
+                  className="hover:underline hover:text-[#FFA726]"
+                >
+                  Service Areas
+                </Link>
+              </li>
             </ul>
           </div>
 
