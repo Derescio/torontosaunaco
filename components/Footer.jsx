@@ -136,6 +136,15 @@ const Footer = () => {
                   Refund Policy
                 </a>
               </li>
+              <li>
+                <a
+                  href="/warranty"
+                  className="hover:underline hover:text-[#FFA726] transition-colors"
+                  alt="Warranty Link"
+                >
+                  Warranty
+                </a>
+              </li>
             </ul>
           </div>
 
