@@ -7,6 +7,7 @@ export async function POST(req) {
       name,
       email,
       phone,
+      postalcode,
       subject,
       message,
       isConsultation,
@@ -36,6 +37,7 @@ export async function POST(req) {
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+            <p><strong>Postal Code:</strong> ${postalcode || "Not provided"}</p>
             <p><strong>Preferred Contact Method:</strong> ${contactMethod}</p>
           </div>
 
@@ -63,6 +65,7 @@ export async function POST(req) {
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
+            ${postalcode ? `<p><strong>Postal Code:</strong> ${postalcode}</p>` : ""}
           </div>
 
           <div style="background-color: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 5px;">

@@ -9,6 +9,8 @@ import HL from "@/public/images/humm_logo.jpg";
 import HarL from "@/public/images/Harvia.jpg";
 import HomePageImage from "@/components/HomePageImage";
 import BlogPage from "./blog/page";
+import newLogo from "@/public/images/Main Black.png";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -55,6 +57,18 @@ const HomePage = () => {
               priority
             />
           </div>
+          <Link href="/pacifictide">
+            <div className="col-span-1">
+              <Image
+                src={newLogo}
+                alt="Logo"
+                width={150}
+                height={150}
+                className="mx-auto"
+                priority
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

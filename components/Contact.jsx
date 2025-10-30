@@ -23,6 +23,7 @@ const Contact = ({ defaultSubject = "" }) => {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone?.value || "",
+      postalcode: e.target.postalcode?.value || "",
       message: e.target.message.value,
       subject: subject || e.target.subject.value, // Use state value or fallback to input value
       isConsultation: false,
@@ -101,6 +102,8 @@ const Contact = ({ defaultSubject = "" }) => {
             type="text"
             placeholder="Name"
             id="name"
+            name="name"
+            autoComplete="name"
             required
             className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
           />
@@ -108,6 +111,8 @@ const Contact = ({ defaultSubject = "" }) => {
             type="email"
             placeholder="Email"
             id="email"
+            name="email"
+            autoComplete="email"
             required
             className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
           />
@@ -115,6 +120,17 @@ const Contact = ({ defaultSubject = "" }) => {
             type="tel"
             placeholder="Phone Number"
             id="phone"
+            name="phone"
+            autoComplete="tel"
+            required
+            className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
+          />
+          <input
+            type="text"
+            placeholder="Postal Code"
+            id="postalcode"
+            name="postalcode"
+            autoComplete="postal-code"
             required
             className="w-full text-gray-800 rounded-lg py-2.5 px-4 border text-sm outline-blue-500"
           />
@@ -122,6 +138,7 @@ const Contact = ({ defaultSubject = "" }) => {
             type="text"
             placeholder="Subject"
             id="subject"
+            name="subject"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
@@ -131,6 +148,7 @@ const Contact = ({ defaultSubject = "" }) => {
             placeholder="Message"
             rows="6"
             id="message"
+            name="message"
             required
             className="w-full text-gray-800 rounded-lg px-4 border text-sm pt-2.5 outline-blue-500"
           ></textarea>

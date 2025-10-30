@@ -1,11 +1,10 @@
-import NavbarUpdate from "@/components/NavbarUpdate";
 import "../assets/styles/globals.css";
 import "photoswipe/dist/photoswipe.css";
 import StoreProvider from "@/redux/provider/StoreProvider";
 import AuthProvider from "@/components/AuthProvider";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ScrollToTop";
-import Footer from "@/components/Footer";
+import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndFooter";
 // import { GoogleTagManager } from "@next/third-parties/google";
 
 // Create Meta Data
@@ -39,14 +38,12 @@ const MainLayout = ({ children }) => {
         </head>
         <body>
           <StoreProvider>
-            <NavbarUpdate />
-            {/* <Navbar /> */}
-
             <Toaster position="top-center" />
             <ScrollToTop />
-            <main>{children}</main>
+            <ConditionalNavAndFooter>
+              <main>{children}</main>
+            </ConditionalNavAndFooter>
           </StoreProvider>
-          <Footer />
         </body>
       </html>
     </AuthProvider>
