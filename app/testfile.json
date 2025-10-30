@@ -3312,5 +3312,65 @@
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",
         "updatedAt": "2024-01-01T00:00:00.000Z"
+    },  {
+        "_id": {
+            "$oid": "668af06648215c199c427a96"
+        },
+        "owner": "torontosaunco",
+        "name": "Pure Cube Trinity Sauna",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "CUTrinity",
+        "description": "Our Pure Cube Trinity Sauna is a 5 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.",
+        "dimension": "84 x 120(in)",
+        "price": 9850,
+        "views": {},
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+            },
+            "Clear Cedar": {
+                "price": 3100,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+            }
+        },
+        "stove_type": {
+           " Huum Drop Heater - 9KW    WIFI CONTROL": {
+                "price": 3850,
+                "power": "9 Kw",
+                "dimensions": "10 x 11 x 23 (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+            }, " Harvia KIP 8KW Sauna Heater": {
+                "price": 1400,
+                "power": "8 Kw",
+                "dimensions": "16 W × 11”H × 21 D (in)",
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+            }
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+            },
+            "Supply_Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816852/torontosaunaco/Cubes/Trinity/Pure_Cube_Trinity_2_d3khaq.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816763/torontosaunaco/Cubes/Trinity/IMG_1254_h28cy0.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720366476/torontosaunaco/Cubes/Trinity/NewCornerSauna_Print-15_wezrtx.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816833/torontosaunaco/Cubes/Trinity/Pure_Cube_Trinity_oh9y8l.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
     }
 ]
