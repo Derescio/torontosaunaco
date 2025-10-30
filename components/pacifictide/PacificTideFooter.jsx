@@ -139,31 +139,19 @@ const Footer = () => {
                   Refund Policy
                 </a>
               </li>
+              <li>
+                <a
+                  href="/warranty"
+                  className="hover:underline hover:text-[#FFA726] transition-colors"
+                  alt="Warranty Link"
+                >
+                  Warranty
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        <p className="text-gray-500 text-sm mt-4">
-          The Toronto Sauna Company warrants our saunas against defects in
-          materials and workmanship under normal/residential use for a period of
-          (1) year, as applicable, from the date of receipt of the product by
-          the original end-user purchaser. This warranty does not apply to
-          normal wear and tear and/or natural weather conditions. This warranty
-          does not cover regular required maintenance of the sauna, (eg.
-          Tightening bands on the barrels, cleaning or staining the sauna) refer
-          to your sauna assembly manual for maintenance guidelines. This
-          warranty does not cover misuse or negligence and the manufacturer and
-          associated retailers are not liable for any injury or damage caused by
-          the product. The Toronto Sauna Company will either repair the Product
-          at no charge, using new or refurbished replacement parts. How long
-          does the coverage last? The Warranty Period for Physical Goods
-          purchased from The Toronto Sauna Company is 365 days from the date of
-          purchase. A replacement Physical Good or part assumes the remaining
-          warranty of the original Physical Good or 365 days from the date of
-          replacement or repair, whichever is longer. Any costs associated with
-          electricians or plumbers is solely the responsibility of the customer.
-          The Toronto Sauna Company does not absorb any of these costs.
-        </p>
         <div className="border-t text-center border-[#6b5f5f] pt-8 mt-8">
           <p className="text-gray-300 text-[15px]">
             &copy; {new Date().getFullYear()}{" "}
