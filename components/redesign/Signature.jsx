@@ -111,7 +111,7 @@ const Signature = () => {
               <Link href={sauna.href}>
                 <div className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
                   {/* Image */}
-                  <div className="relative h-72 overflow-hidden">
+                  <div className="relative h-64 md:h-72 overflow-hidden">
                     <Image
                       src={sauna.image}
                       alt={sauna.name}
