@@ -8,7 +8,7 @@ const HomePageImage = () => {
     <div className="relative w-full h-[800px] md:h-[600px] lg:h-[700px]">
       {/* Background Image */}
       <Image
-        src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1740247723/torontosaunaco/latvia-912341_1920_new_mvdep7.png"
+        src="/images/Contact_redesign_BG.png "
         alt="Sauna by the sea"
         fill
         style={{ objectFit: "cover" }}
@@ -16,7 +16,7 @@ const HomePageImage = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60">
+      <div className="absolute inset-0 bg-black bg-opacity-70">
         <div className="relative h-full w-full px-6 py-12 overflow-visible">
           <div className="h-full max-w-[1800px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Column - Main Content */}

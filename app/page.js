@@ -1,8 +1,8 @@
 import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
+//import Hero from "@/components/Hero";
 import Carousel2 from "@/components/Carousel2";
 import HompageInfo from "@/components/HompageInfo";
-import WoodTypes from "@/components/WoodTypes";
+//import WoodTypes from "@/components/WoodTypes";
 import Image from "next/image";
 import LCL from "@/public/images/Leisurecraft logo 3.jpg";
 import HL from "@/public/images/humm_logo.jpg";
@@ -11,17 +11,26 @@ import HomePageImage from "@/components/HomePageImage";
 import BlogPage from "./blog/page";
 import newLogo from "@/public/images/Main Black.png";
 import Link from "next/link";
+import Hero from "@/components/redesign/Hero";
+import InfoSection from "@/components/redesign/InfoSection";
+import Signature from "@/components/redesign/Signature";
+//import Signature_New from "@/components/redesign/Signature_New";
+import WoodTypes from "@/components/redesign/WoodTypes";
 
 const HomePage = () => {
   return (
     <div className="">
+      {/* <Hero /> */}
       <Hero />
-      <HompageInfo />
-      <WoodTypes />
-      <h1 className=" mt-4 text-3xl text-center font-bold font-playfair mb-2">
+      <Signature />
+      <InfoSection />
+      {/* <HompageInfo /> */}
+      <h1 className=" mt-6 text-3xl text-center text-[#4E7302] font-archivo font-light mb-1">
         Popular Saunas
       </h1>
       <Carousel2 />
+      <WoodTypes />
+
       <BlogPage />
       <HomePageImage />
       <Contact />
