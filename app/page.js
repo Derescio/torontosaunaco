@@ -25,20 +25,47 @@ const HomePage = () => {
       <Signature />
       <InfoSection />
       {/* <HompageInfo /> */}
-      <h1 className=" mt-6 text-3xl text-center text-[#4E7302] font-archivo font-light mb-1">
+      {/* <h1 className=" mt-6 text-3xl text-center text-[#4E7302] font-archivo font-light mb-1">
         Popular Saunas
-      </h1>
+      </h1> */}
+      <h2 className="mt-4 text-2xl text-center md:text-4xl lg:text-5xl font-light text-black mb-4  font-archivo ">
+        PopularSaunas
+      </h2>
       <Carousel2 />
       <WoodTypes />
 
       <BlogPage />
       <HomePageImage />
+      <h2 className="mt-10 text-2xl text-center md:text-4xl lg:text-5xl font-light text-black mb-4  font-archivo ">
+        Ready to Build Your Dream Sauna?
+      </h2>
       <Contact />
-      <div className="flex flex-col items-center">
-        <div className="grid grid-cols-2 md:flex md:flex-row justify-center items-center gap-8 max-w-2xl mx-auto w-full">
+      {/* <div className="flex flex-col items-center"> */}
+      <div className="grid grid-cols-3 md:flex md:flex-row justify-center items-center gap-8 max-w-2xl mx-auto w-full">
+        <div className="col-span-1">
+          <Image
+            src={LCL}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="mx-auto"
+            priority
+          />
+        </div>
+        <div className="col-span-1">
+          <Image
+            src={HL}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="mx-auto"
+            priority
+          />
+        </div>
+        <Link href="/pacifictide">
           <div className="col-span-1">
             <Image
-              src={LCL}
+              src={newLogo}
               alt="Logo"
               width={150}
               height={150}
@@ -46,40 +73,19 @@ const HomePage = () => {
               priority
             />
           </div>
-          <div className="col-span-1">
-            <Image
-              src={HL}
-              alt="Logo"
-              width={150}
-              height={150}
-              className="mx-auto"
-              priority
-            />
-          </div>
-          <div className="col-span-2 mt-8 md:mt-0">
-            <Image
-              src={HarL}
-              alt="Logo"
-              width={150}
-              height={150}
-              className="mx-auto"
-              priority
-            />
-          </div>
-          <Link href="/pacifictide">
-            <div className="col-span-1">
-              <Image
-                src={newLogo}
-                alt="Logo"
-                width={150}
-                height={150}
-                className="mx-auto"
-                priority
-              />
-            </div>
-          </Link>
+        </Link>
+        <div className="col-span-2 mt-8 md:mt-0">
+          <Image
+            src={HarL}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="mx-auto"
+            priority
+          />
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };
