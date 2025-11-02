@@ -30,13 +30,13 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-2">
           <Link
             href="/best-sellers"
-            className="ml-2 inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] bg-[#BF9774]/70 text-white px-8 py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
+            className="ml-2 inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] bg-[#BF9774]/30 md:bg-[#BF9774]/70 text-white px-2 py-1 md:px-8 md:py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
           >
             Best Sellers
           </Link>
           <Link
             href="/saunas"
-            className="inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] text-white px-8 py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
+            className="inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] text-white px-2 py-1 md:px-8 md:py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
           >
             View Collection
           </Link>
