@@ -63,7 +63,7 @@ const BestSellers = () => {
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image: "/images/Mini 1.png",
-      href: "/saunas/668b07d348215c199c406a6c",
+      href: "/saunas/studio-6",
       price: "Starting at $14,999",
     },
     {
@@ -83,7 +83,7 @@ const BestSellers = () => {
         "The Neptune Sauna seamlessly integrates the outdoors into its design through an expansive glass front wall.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653214/torontosaunaco/Cubes/NE6110/neptune_900x_u29c1e.webp",
-      href: "/saunas/barell",
+      href: "/saunas/668af06648215c199c406a65",
       price: "Starting at $15,999",
     },
 
@@ -94,7 +94,7 @@ const BestSellers = () => {
         "The Outdoor 552 Pure Cube Sauna sits 2 people and is an attractive and stylish design that features a large window panel on the front wall.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653090/torontosaunaco/Cubes/CU580/CU580PureCube5Person_900_xs7nw4.jpg",
-      href: "/saunas/668af06648215c199c406a69",
+      href: "/saunas/668af06648215c199c406a61",
       price: "Starting at $9,950",
     },
     {
@@ -104,7 +104,7 @@ const BestSellers = () => {
         "The OutdoorSauna With Shower sits 3 people and is another sophisticated design.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721090420/torontosaunaco/Cubes/CU582/4-PersonOutdoorSauna_Shower_900_acxnyb.jpg",
-      href: "/saunas/canadian-timber",
+      href: "/saunas/6695c201a93a72ff9464ef74",
       price: "Starting at $12,850",
     },
   ];
