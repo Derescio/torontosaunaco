@@ -54,7 +54,7 @@ const Signature = () => {
     },
     {
       id: 2,
-      name: "Studio 6 Max",
+      name: "Studio 6 Mini",
       description:
         "The ideal balance of space and efficiency. Classic design meets modern wellness technology.",
       image:
@@ -67,8 +67,9 @@ const Signature = () => {
       name: "Barrel Sauna",
       description:
         "Traditional barrel design with authentic Finnish sauna experience. Beautiful curved architecture.",
-      image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762112294/torontosaunaco/Barrel_redesign_pfg1zd.png",
+      // image:
+      //   "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762112294/torontosaunaco/Barrel_redesign_pfg1zd.png",
+      image: "/images/New_Panoramic.PNG",
       href: "/saunas/barell",
       features: [
         "Traditional Design",

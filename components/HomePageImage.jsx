@@ -8,7 +8,7 @@ const HomePageImage = () => {
     <div className="relative w-full h-[800px] md:h-[600px] lg:h-[700px]">
       {/* Background Image */}
       <Image
-        src="/images/Contact_redesign_BG.png "
+        src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1762113337/torontosaunaco/IMG_1529_oscb6b.jpg"
         alt="Sauna by the sea"
         fill
         style={{ objectFit: "cover" }}
