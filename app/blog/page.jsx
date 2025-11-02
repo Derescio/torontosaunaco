@@ -30,8 +30,8 @@ export default async function BlogPage() {
   const data = await GetData();
 
   return (
-    <div className="container mx-auto py-12 px-4 md:px-12 mt-16">
-      <h1 className="text-center font-playfair text-4xl">BLOGS</h1>
+    <div className="container mx-auto py-6 px-4 md:px-12 mt-16">
+      <h1 className="text-center font-archivo text-4xl">BLOGS</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8 max-w-6xl mx-auto mt-16">
         {data?.map((post) => (

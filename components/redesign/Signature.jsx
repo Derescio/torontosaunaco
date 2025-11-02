@@ -54,10 +54,10 @@ const Signature = () => {
     },
     {
       id: 2,
-      name: "Studio 6 Classic",
+      name: "Studio 6 Max",
       description:
         "The ideal balance of space and efficiency. Classic design meets modern wellness technology.",
-      image: "/images/Classic 2.png",
+      image: "/images/Studio_Max.jpg",
       href: "/saunas/studio-6",
       features: ["Spacious Interior", "Premium Cedar", "Chromatherapy"],
     },
