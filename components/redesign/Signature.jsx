@@ -67,7 +67,8 @@ const Signature = () => {
       name: "Barrel Sauna",
       description:
         "Traditional barrel design with authentic Finnish sauna experience. Beautiful curved architecture.",
-      image: "/images/Barrel_redesign.png",
+      image:
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762112294/torontosaunaco/Barrel_redesign_pfg1zd.png",
       href: "/saunas/barell",
       features: [
         "Traditional Design",
