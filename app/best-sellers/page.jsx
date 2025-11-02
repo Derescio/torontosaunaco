@@ -119,9 +119,8 @@ const BestSellers = () => {
               Best Sellers
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-archivo">
-              Discover our most popular saunas, trusted by thousands of
-              customers across Canada for exceptional quality and wellness
-              benefits.
+              Discover our most popular saunas, trusted by most of our customers
+              across Canada for exceptional quality and wellness benefits.
             </p>
           </div>
         </div>
