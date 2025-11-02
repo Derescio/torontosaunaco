@@ -17,7 +17,7 @@ export default function PacificTidePage() {
     },
     {
       id: 2,
-      name: "Studio 6 Classic",
+      name: "Studio 6 Max",
       description:
         "The ideal balance of space and efficiency for modern living.",
       image: "/images/Classic 2.png",
@@ -86,20 +86,21 @@ export default function PacificTidePage() {
       viewMore: "/hot-tub/668af06648215c199c423a66",
     },
   ];
-  console.log(galleryImages);
+  //console.log(galleryImages);
   return (
-    <div className="min-h-screen bg-white mt-1">
+    <div className="min-h-screen bg-white mt-[2px]">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/vancouver.jpg"
+            src="/images/micah-mckerlich-gaZBqZQWSng-unsplash.jpg"
+            //src="/images/vancouver.jpg"
             alt="Pacific Tide Sauna Background"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-orange-500/70 via-blue-400/70 to-slate-500/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-blue-400/70 to-slate-500/80"></div>
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">

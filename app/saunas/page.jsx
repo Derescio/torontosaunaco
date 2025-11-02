@@ -1,5 +1,6 @@
 import ProductCard from "@/components/ProductCard";
 import { fetchProducts } from "@/assets/utils/request";
+import SaunaCollectionHero from "@/components/redesign/SaunaCollectionHero";
 
 export const metadata = {
   title:
@@ -14,17 +15,16 @@ const Saunas = async () => {
   const products = await fetchProducts();
 
   const filteredProducts = Object.values(products).filter(
-    (x) => x.type !== "Cold Plunge"
+    (x) =>
+      x.type !== "Cold Plunge" &&
+      x.type !== "Outdoor Shower" &&
+      x.type !== "Hot Tub"
   );
-
+  // console.log(typeof filteredProducts);
   return (
     <div>
+      <SaunaCollectionHero />
       <section className="px-4 py-6 mt-6">
-        <h1 className="text-3xl text-center font-bold font-playfair mb-2">
-          Our Saunas
-        </h1>
-        {/* Horzontal rule across the screen */}
-        {/* <hr className="w-1/2 mx-auto border-b-2 border-black" /> */}
         <div className="container-xl lg:container m-auto px-4 py-6">
           {products.length === 0 ? (
             <p>No products found</p>
