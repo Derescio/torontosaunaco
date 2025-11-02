@@ -50,34 +50,25 @@ const BestSellers = () => {
   const bestSellers = [
     {
       id: 1,
-      name: "Studio 6 Max",
-      description:
-        "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
-      image: "/images/Max 1.png",
-      href: "/saunas/studio-6",
-      price: "Starting at $16,549",
-    },
-    {
-      id: 2,
       name: "Studio 6 Mini",
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
-      image: "/images/Mini 1.png",
+      image: "/images/Studio_6_Mini_Mainfle.png",
       href: "/saunas/studio-6",
       price: "Starting at $14,999",
     },
     {
-      id: 3,
-      name: "Pure Cube Hudson",
+      id: 2,
+      name: "Studio 6 Max",
       description:
-        "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
-      image: "/images/PureCubeHudsonClear_ Web-12.jpg",
-      href: "/saunas/668af06648215c199c406a64",
-      price: "Starting at $15,757",
+        "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
+      image: "/images/Studio_6_Main_File.png",
+      href: "/saunas/studio-6",
+      price: "Starting at $16,549",
     },
 
     {
-      id: 4,
+      id: 3,
       name: "Pure Cube Neptune",
       description:
         "The Neptune Sauna seamlessly integrates the outdoors into its design through an expansive glass front wall.",
@@ -86,7 +77,15 @@ const BestSellers = () => {
       href: "/saunas/668af06648215c199c406a65",
       price: "Starting at $15,999",
     },
-
+    {
+      id: 4,
+      name: "Pure Cube Hudson",
+      description:
+        "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
+      image: "/images/hudson_900_pgonnk.jpg",
+      href: "/saunas/668af06648215c199c406a64",
+      price: "Starting at $15,757",
+    },
     {
       id: 5,
       name: "Outdoor 552 Pure Cube Sauna ",
@@ -150,7 +149,7 @@ const BestSellers = () => {
                 <Link href={sauna.href}>
                   <div className="group bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer h-full flex flex-col">
                     {/* Image */}
-                    <div className="relative h-64 md:h-72 overflow-hidden">
+                    <div className="relative h-72 md:h-96 overflow-hidden">
                       <Image
                         src={sauna.image}
                         alt={sauna.name}
