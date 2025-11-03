@@ -222,6 +222,16 @@ const Header = () => {
                 {saunasDropdownOpen && (
                   <ul className="pl-4 mt-2 space-y-2">
                     <DropdownItem
+                      href="/best-sellers"
+                      label="Best Sellers"
+                      onClick={closeDropdown}
+                    />
+                    <DropdownItem
+                      href="/saunas/studio-6"
+                      label="Studio Six"
+                      onClick={closeDropdown}
+                    />
+                    <DropdownItem
                       href="/saunas/cube"
                       label="Cube Saunas"
                       onClick={closeDropdown}
@@ -232,18 +242,8 @@ const Header = () => {
                       onClick={closeDropdown}
                     />
                     <DropdownItem
-                      href="/showers"
-                      label="Indoor Showers"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/saunas/canadian-timber"
-                      label="Outdoor Saunas"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/saunas/studio-6"
-                      label="Studio Six"
+                      href="/saunas/indoor"
+                      label="Indoor Saunas"
                       onClick={closeDropdown}
                     />
                     <DropdownItem
@@ -252,8 +252,13 @@ const Header = () => {
                       onClick={closeDropdown}
                     />
                     <DropdownItem
-                      href="/saunas/indoor"
-                      label="Indoor Saunas"
+                      href="/saunas/canadian-timber"
+                      label="Canadian Timber"
+                      onClick={closeDropdown}
+                    />
+                    <DropdownItem
+                      href="/showers"
+                      label="Outdoor Showers"
                       onClick={closeDropdown}
                     />
                   </ul>
