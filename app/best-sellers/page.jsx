@@ -164,20 +164,20 @@ const BestSellers = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="p-6 bg-[#4E7302] flex-1 flex flex-col">
-                      <h3 className="text-xl font-light text-white mb-2 font-archivo">
+                    <div className="p-6 bg-[#BF9774]/30 flex-1 flex flex-col">
+                      <h3 className="text-xl font-light text-black mb-2 font-archivo">
                         {sauna.name}
                       </h3>
-                      <p className="text-white text-sm mb-4 leading-relaxed font-archivo font-normal flex-1">
+                      <p className="text-black text-sm mb-4 leading-relaxed font-archivo font-normal flex-1">
                         {sauna.description}
                       </p>
 
                       {/* Price and CTA */}
                       <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/20">
-                        <span className="text-white font-semibold font-archivo">
+                        <span className="text-black font-semibold font-archivo">
                           {sauna.price}
                         </span>
-                        <div className="text-[#4E7302] bg-white/90 text-sm rounded-lg px-4 py-2 font-archivo font-medium hover:bg-white transition-colors">
+                        <div className="text-black bg-[#BF9774]/50 text-sm rounded-lg px-4 py-2 font-archivo font-medium hover:bg-white transition-colors">
                           View Details
                         </div>
                       </div>
