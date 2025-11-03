@@ -6,7 +6,8 @@ import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ScrollToTop";
 import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndFooter";
 // import { GoogleTagManager } from "@next/third-parties/google";
-import { PostHogProvider } from "./providers";
+import { PHProvider } from "./providers";
+import PostHogPageView from "../components/PostHogPageViews";
 
 // Create Meta Data
 export const metadata = {
@@ -43,13 +44,14 @@ const MainLayout = ({ children }) => {
         </head>
         <body>
           <StoreProvider>
-            <PostHogProvider>
+            <PHProvider>
               <Toaster position="top-center" />
               <ScrollToTop />
+              <PostHogPageView />
               <ConditionalNavAndFooter>
                 <main>{children}</main>
               </ConditionalNavAndFooter>
-            </PostHogProvider>
+            </PHProvider>
           </StoreProvider>
         </body>
       </html>
