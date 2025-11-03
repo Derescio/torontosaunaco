@@ -124,16 +124,16 @@ const Signature = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6 bg-[#4E7302]">
-                    <h3 className="text-xl font-light text-white mb-2 font-archivo">
+                  <div className="p-6 bg-[#BF9774]/30">
+                    <h3 className="text-xl font-light text-black mb-2 font-archivo">
                       {sauna.name}
                     </h3>
-                    <p className="text-white text-md mb-4 leading-relaxed font-archivo font-normal">
+                    <p className="text-black text-md mb-4 leading-relaxed font-archivo font-semibold">
                       {sauna.description}
                     </p>
 
-                    <div className="flex justify-start drop-shadow-md   ">
-                      <div className="text-[#4E7302] bg-white/70 text-md rounded-lg px-2 py-2 leading-relaxed font-archivo font-normal hover:bg-white/90">
+                    <div className="flex justify-start drop-shadow-lg   ">
+                      <div className="text-black bg-[#BF9774]/50 text-md rounded-lg px-2 py-2 leading-relaxed font-archivo font-normal hover:bg-white/90">
                         View More
                       </div>
                     </div>
