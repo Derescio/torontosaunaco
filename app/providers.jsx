@@ -1,22 +1,16 @@
-// app/providers.tsx
+// app/providers.js
 "use client";
-
-import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
-import { usePostHog } from "posthog-js/react";
-
+import { PostHogProvider } from "@posthog/react";
 import posthog from "posthog-js";
-import { PostHogProvider as PHProvider } from "posthog-js/react";
 
-export function PostHogProvider({ children }) {
-  useEffect(() => {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
-      api_host:
-        process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
-      person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
-      defaults: "2025-05-24",
-    });
-  }, []);
+if (typeof window !== "undefined" && !posthog.__loaded) {
+  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com",
+    capture_pageview: false, // we’ll trigger pageviews manually in _app or layouts
+  });
+  posthog.__loaded = true;
+}
 
-  return <PHProvider client={posthog}>{children}</PHProvider>;
+export function PHProvider({ children }) {
+  return <PostHogProvider client={posthog}>{children}</PostHogProvider>;
 }
