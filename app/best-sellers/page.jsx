@@ -92,7 +92,7 @@ const BestSellers = () => {
       description:
         "The Outdoor 552 Pure Cube Sauna sits 2 people and is an attractive and stylish design that features a large window panel on the front wall.",
       image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653090/torontosaunaco/Cubes/CU580/CU580PureCube5Person_900_xs7nw4.jpg",
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720652998/torontosaunaco/Cubes/CU550/CU550_1_900_hehapo.jpg",
       href: "/saunas/668af06648215c199c406a61",
       price: "Starting at $9,950",
     },
