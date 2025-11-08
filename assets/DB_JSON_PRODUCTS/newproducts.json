@@ -302,7 +302,7 @@
     "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721169012/torontosaunaco/Cubes/HU6110/Hudson_test_2_ywc3i8.jpg"
   ],
   "is_featured": false,
-  "displayOrder": 40,
+  "displayOrder": 4,
   "createdAt": "2024-01-01T00:00:00.000Z",
   "updatedAt": "2024-01-01T00:00:00.000Z"
 },
@@ -388,13 +388,13 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366441/torontosaunaco/Cubes/OR6110/PureCubeOrion__Web-3_ygvxv9.jpg"
     ],
     "is_featured": false,
-    "displayOrder": 50,
+    "displayOrder": 5,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
     "_id": {
-            "$oid": "668af06648215c199c406a67"
+            "$oid": "668af06648215c199c406a5f"
           },
     "owner": "torontosaunco",
     "name": "The Pure Cube 552",
@@ -482,7 +482,7 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720360902/torontosaunaco/Cubes/CU550/Outdoors_CU550-PrivPanel_b-web_bmuwf7.jpg"
     ],
     "is_featured": false,
-    "displayOrder": 60,
+    "displayOrder": 6,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
@@ -671,7 +671,7 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366519/torontosaunaco/Cubes/CU580/_DSC9337Print_ydjbi7.jpg"
     ],
     "is_featured": false,
-    "displayOrder": 80,
+    "displayOrder": 8,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
@@ -768,7 +768,7 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721090420/torontosaunaco/Cubes/CU582/4-PersonOutdoorSauna_Shower_900_acxnyb.jpg"
     ],
     "is_featured": false,
-    "displayOrder": 85,
+    "displayOrder": 9,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
@@ -960,7 +960,7 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720376745/torontosaunaco/Cubes/CU670/CU672P%28Porch%29/CU670P_vmef5l.jpg"
     ],
     "is_featured": false,
-    "displayOrder": 100,
+    "displayOrder": 11,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
