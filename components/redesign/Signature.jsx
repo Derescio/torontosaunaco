@@ -60,7 +60,7 @@ const Signature = () => {
         "The ideal balance of space and efficiency. Classic design meets modern wellness technology.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762111055/torontosaunaco/Studio_Max_u6jbaw.jpg",
-      href: "/saunas/studio-6",
+      href: "/saunas/668af06648215c199c418a96",
       features: ["Spacious Interior", "Premium Cedar", "Chromatherapy"],
     },
     {
