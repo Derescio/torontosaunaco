@@ -30,7 +30,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 bg-[#4E7302] shadow-md z-50">
+    <header className="sticky top-0 bg-[#4E7302] shadow-lg shadow-white/50 z-50 ">
       <div className="container mx-auto px-4">
         {/* Desktop Header */}
         <div className="hidden lg:flex items-center justify-between py-4">

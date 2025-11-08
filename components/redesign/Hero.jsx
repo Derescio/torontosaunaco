@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/New_Hero.JPG"
+          src="https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew"
           alt="Sauna Wellness Background"
           fill
           className="object-cover"

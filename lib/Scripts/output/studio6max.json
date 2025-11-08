@@ -1,0 +1,63 @@
+{
+  "owner": "torontosaunco",
+  "name": "Unknown Sauna",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "Unknown Sauna",
+  "description": "The Studio 6 Max Sauna – 4 Person is the largest model in the Studio 6 collection, designed to bring a full wellness experience to your backyard or cottage. Its bold, modern cube structure combines architectural precision with everyday function, making it a standout addition to any outdoor space. Choose between horizontal or vertical metal or aluminum siding to create a look that complements your environment.\r\n\r\nInside, the expanded two-tier bench system runs front to back, providing ample seating for up to six people. The double-pane bronze glass front offers the perfect balance of openness and privacy, while the SIP panel insulation ensures consistent heat retention and all-season performance. Crafted with premium materials and refined details, the Studio 6 Max delivers the ultimate in design, comfort, and durability.\r\n\r\n• Comfortably seats 4\r\n• 89\" W x 72\" D x 93\" H (exterior)\r\n• Crafted from Canadian Red Cedar interior\r\n• Choice of metal or aluminum exterior siding (horizontal or vertical)\r\n• Modern 2-tier bench system\r\n• Double-pane bronze glass window\r\n• SIP panel insulated structure",
+  "baseCost": 16549,
+  "price": 16549,
+  "dimensions": null,
+  "features": [
+    "Comfortably seats 4",
+    "89\" W x 72\" D x 93\" H (exterior)",
+    "Crafted from Canadian Red Cedar interior",
+    "Choice of metal or aluminum exterior siding (horizontal or vertical)",
+    "Modern 2-tier bench system",
+    "Double-pane bronze glass window",
+    "SIP panel insulated structure"
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 4200
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

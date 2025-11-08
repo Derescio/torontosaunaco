@@ -1,0 +1,57 @@
+{
+  "owner": "torontosaunco",
+  "name": "The Orion",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "The Orion",
+  "description": "Introducing The Orion Sauna, a luxurious haven crafted from Crafted from Canadian Clear or Knotty Cedar, enhanced by its sleek wrap-around front glass. Designed to blend elegance with functionality, The Orion Sauna offers an inviting retreat to melt away stress and promote wellness with ease. Its sophisticated design and intuitive controls make every session a relaxing escape. Immerse yourself in nature within the spacious interior, with the option to install insulation separately for the floor, walls, and roof.",
+  "baseCost": 16670,
+  "price": 16670,
+  "dimensions": null,
+  "features": [],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 4314
+    }
+  },
+  "stove_type": {
+    "Huum Hive Mini 10.5kW with Remote": {
+      "price": 4925
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [
+    {
+      "name": "L-Bench",
+      "price": 750
+    }
+  ],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}
