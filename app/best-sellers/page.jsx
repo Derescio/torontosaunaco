@@ -54,7 +54,7 @@ const BestSellers = () => {
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image: "/images/Studio_6_Mini_Mainfle.png",
-      href: "/saunas/studio-6",
+      href: "/saunas/668af06648215c199c418a96",
       price: "Starting at $14,999",
     },
     {
@@ -63,7 +63,7 @@ const BestSellers = () => {
       description:
         "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image: "/images/Studio_6_Main_File.png",
-      href: "/saunas/studio-6",
+      href: "/saunas/668af06648215c199c427a97",
       price: "Starting at $16,549",
     },
 
@@ -93,7 +93,7 @@ const BestSellers = () => {
         "The Outdoor 552 Pure Cube Sauna sits 2 people and is an attractive and stylish design that features a large window panel on the front wall.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720652998/torontosaunaco/Cubes/CU550/CU550_1_900_hehapo.jpg",
-      href: "/saunas/668af06648215c199c406a5f",
+      href: "/saunas/668af06648215c199c406a67",
       price: "Starting at $9,950",
     },
     {
