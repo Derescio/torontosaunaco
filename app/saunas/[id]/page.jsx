@@ -8,6 +8,8 @@ import Spinner from "@/components/Spinner";
 import toast from "react-hot-toast";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Check } from "lucide-react";
+import posthog from "posthog-js";
+import { posthogEvents } from "@/assets/utils/posthogEvents";
 
 const SaunaPage = () => {
   const { id } = useParams();
@@ -29,6 +31,14 @@ const SaunaPage = () => {
       try {
         const data = await fetchProduct(id);
         setProduct(data);
+        // Track product viewed once after load
+        try {
+          posthog.capture(posthogEvents.product_viewed, {
+            productId: data?._id || id,
+            type: data?.type,
+            name: data?.name,
+          });
+        } catch {}
       } catch (error) {
         console.error(error);
       } finally {
@@ -65,15 +75,38 @@ const SaunaPage = () => {
       const data = await res.json();
       if (data.message === "Email sent successfully!") {
         toast.success("Email sent successfully!", { duration: 2700 });
+        // Client-side success tracking (no PII)
+        try {
+          posthog.capture(posthogEvents.quote_form_submitted, {
+            productId: product?._id || id,
+            totalPrice,
+            installation: selectedInstallation || "unset",
+            deliveryApplied: selectedInstallation === "DIY",
+          });
+        } catch {}
       } else {
         toast.error("Error sending email. Please try again later.", {
           duration: 2700,
         });
+        // Failed response tracking via exception
+        try {
+          posthog.captureException(new Error(data?.message || "Quote failed"), {
+            productId: product?._id || id,
+            installation: selectedInstallation || "unset",
+          });
+        } catch {}
       }
       setLoading(false);
     } catch (error) {
       console.error("Error sending emails:", error);
       setLoading(false);
+      // Catch block exception tracking
+      try {
+        posthog.captureException(error, {
+          productId: product?._id || id,
+          installation: selectedInstallation || "unset",
+        });
+      } catch {}
     }
   };
 
@@ -108,11 +141,21 @@ const SaunaPage = () => {
   };
 
   const toggleUpgrade = (upgradeName) => {
-    setSelectedUpgrades((prev) =>
-      prev.includes(upgradeName)
-        ? prev.filter((name) => name !== upgradeName)
-        : [...prev, upgradeName]
-    );
+    setSelectedUpgrades((prev) => {
+      const applied = !prev.includes(upgradeName);
+      const next = applied
+        ? [...prev, upgradeName]
+        : prev.filter((name) => name !== upgradeName);
+      try {
+        posthog.capture(posthogEvents.config_option_selected, {
+          productId: product?._id || id,
+          optionType: "addon",
+          optionName: upgradeName,
+          applied,
+        });
+      } catch {}
+      return next;
+    });
   };
 
   if (!product && !loading) {
@@ -123,6 +166,38 @@ const SaunaPage = () => {
   const basePrice = product?.baseCost || product?.price || 0;
   const deliveryFee =
     selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0;
+
+  // Track delivery applied when installation changes
+  useEffect(() => {
+    if (!product || !selectedInstallation) return;
+    try {
+      posthog.capture(posthogEvents.installation_selected, {
+        productId: product?._id || id,
+        installation: selectedInstallation,
+      });
+      posthog.capture(posthogEvents.delivery_applied, {
+        productId: product?._id || id,
+        applied: selectedInstallation === "DIY",
+        cost: selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0,
+      });
+    } catch {}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedInstallation]);
+
+  // Track price recalculation whenever dependent selections change
+  useEffect(() => {
+    if (!product) return;
+    try {
+      posthog.capture(posthogEvents.price_recalculated, {
+        productId: product?._id || id,
+        totalPrice,
+        basePrice,
+        numAddons: selectedUpgrades.length,
+        installation: selectedInstallation || "unset",
+      });
+    } catch {}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [totalPrice]);
 
   return (
     mounted && (
@@ -309,7 +384,20 @@ const SaunaPage = () => {
                             ([name, option]) => (
                               <button
                                 key={name}
-                                onClick={() => setSelectedWoodType(name)}
+                                onClick={() => {
+                                  setSelectedWoodType(name);
+                                  try {
+                                    posthog.capture(
+                                      posthogEvents.config_option_selected,
+                                      {
+                                        productId: product?._id || id,
+                                        optionType: "wood",
+                                        optionName: name,
+                                        priceDelta: option?.price || 0,
+                                      }
+                                    );
+                                  } catch {}
+                                }}
                                 className={`relative p-4 border-2 rounded-lg transition-all ${
                                   selectedWoodType === name
                                     ? "border-[#4E7302] bg-green-50"
@@ -369,7 +457,20 @@ const SaunaPage = () => {
                             ([name, option]) => (
                               <button
                                 key={name}
-                                onClick={() => setSelectedStove(name)}
+                                onClick={() => {
+                                  setSelectedStove(name);
+                                  try {
+                                    posthog.capture(
+                                      posthogEvents.config_option_selected,
+                                      {
+                                        productId: product?._id || id,
+                                        optionType: "stove",
+                                        optionName: name,
+                                        priceDelta: option?.price || 0,
+                                      }
+                                    );
+                                  } catch {}
+                                }}
                                 className={`relative p-4 border-2 rounded-lg transition-all ${
                                   selectedStove === name
                                     ? "border-[#4E7302] bg-green-50"
