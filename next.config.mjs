@@ -22,6 +22,11 @@ const nextConfig = {
         hostname: "klgko4j9xb.ufs.sh",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "rehttps",
+        pathname: "**",
+      },
     ],
   },
 };
