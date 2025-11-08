@@ -74,11 +74,11 @@ const Header = () => {
                     label="Best Sellers"
                     onClick={closeDropdown}
                   />
-                  <DropdownItem
+                  {/* <DropdownItem
                     href="/saunas/studio-6"
                     label="Studio Six"
                     onClick={closeDropdown}
-                  />
+                  /> */}
                   <DropdownItem
                     href="/saunas/cube"
                     label="Cube Saunas"
@@ -226,11 +226,11 @@ const Header = () => {
                       label="Best Sellers"
                       onClick={closeDropdown}
                     />
-                    <DropdownItem
+                    {/* <DropdownItem
                       href="/saunas/studio-6"
                       label="Studio Six"
                       onClick={closeDropdown}
-                    />
+                    /> */}
                     <DropdownItem
                       href="/saunas/cube"
                       label="Cube Saunas"

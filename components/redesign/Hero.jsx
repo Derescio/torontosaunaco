@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Sauna Wellness Background"
           fill
           className="object-cover"
-          priority
+          priority={true}
         />
       </div>
 
