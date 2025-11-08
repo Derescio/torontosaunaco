@@ -3372,5 +3372,72 @@
         "is_featured": false,
         "createdAt": "2024-01-01T00:00:00.000Z",
         "updatedAt": "2024-01-01T00:00:00.000Z"
-    }
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199c418a96"
+        },
+        "owner": "torontosaunco",
+        "name": "The Mini – Studio Six",
+        "type": "Studio 6",
+        "collectionType": "Studio 6",
+        "series": "Mini",
+        "description": "The Studio 6 Mini Sauna – 2 to 3 Person is a sleek and modern design...",
+        "baseCost": 14999,
+        "price": 14999,
+        "dimensions": {
+          "width": 72,
+          "depth": 60,
+          "height": 93,
+          "unit": "in",
+          "type": "exterior"
+        },
+        "features": [
+          "Comfortably seats 2–3",
+          "72\" W x 60\" D x 93\" H (exterior)",
+          "Crafted from Canadian Red Cedar interior",
+          "Choice of metal or aluminum exterior siding (horizontal or vertical)",
+          "Modern 2-tier bench system",
+          "Double-pane bronze glass window",
+          "SIP panel insulated structure"
+        ],
+        "wood_type": {
+          "Knotty Cedar": { "price": 0 },
+          "Clear Cedar Upgrade": { "price": 3800 }
+        },
+        "stove_type": {
+          "Huum Drop 9kW with Remote": { "price": 3307 },
+          "Harvia Kip 8kW": { "price": 1550, "wifi": false },
+          "Harvia Kip 8kW + Wifi Controller": { "price": 2125, "wifi": true }
+        },
+        "additional_upgrades": [
+          { "name": "L-Bench", "price": 750 },
+          { "name": "Mirrored Front Glass", "price": 1200 },
+          { "name": "Semi Privacy Window", "price": 450 }
+        ],
+        "delivery": {
+          "cost": 350,
+          "included": false,
+          "description": "Delivery charge"
+        },
+        "installation": {
+          "DIY": { "price": 0 },
+          "Professional Install": { "price": 1750 }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816852/torontosaunaco/Cubes/Trinity/Pure_Cube_Trinity_2_d3khaq.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816763/torontosaunaco/Cubes/Trinity/IMG_1254_h28cy0.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720366476/torontosaunaco/Cubes/Trinity/NewCornerSauna_Print-15_wezrtx.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1760816833/torontosaunaco/Cubes/Trinity/Pure_Cube_Trinity_oh9y8l.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+    
+      }
 ]

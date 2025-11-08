@@ -48,7 +48,8 @@ const Signature = () => {
       name: "Pure Cube Saunas",
       description:
         "Modern outdoor sauna with panoramic glass views. Perfect for small spaces and condos.",
-      image: "/images/PureCube_redesign_1.png",
+      image:
+        "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxIETfDL9bBOkxazGIusNUtpA89EXM4jZv1HLgi",
       href: "/saunas/cube",
       features: ["Compact Design", "Tempered Glass", "Western Red Cedar"],
     },
@@ -69,7 +70,8 @@ const Signature = () => {
         "Traditional barrel design with authentic Finnish sauna experience. Beautiful curved architecture.",
       // image:
       //   "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762112294/torontosaunaco/Barrel_redesign_pfg1zd.png",
-      image: "/images/New_Panoramic.PNG",
+      image:
+        "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxItveCpEGe3cdybN1R52s0ISLBrgvwmniEZ9fP",
       href: "/saunas/barell",
       features: [
         "Traditional Design",

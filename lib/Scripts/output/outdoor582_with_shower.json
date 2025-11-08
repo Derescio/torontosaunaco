@@ -1,0 +1,64 @@
+{
+  "owner": "torontosaunco",
+  "name": "Outdoor 582 Pure Cube Sauna with Shower",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "Outdoor 582 Pure Cube Sauna with Shower",
+  "description": "The Outdoor 5802Sauna With Shower - 3 Person DUAL Model is another sophisticated design that has a built in outdoor shower on 1 end with louvered privacy panels and stainless steel shower fixture. Create a calm and relaxing atmosphere with the optional semi-privacy panels that still have the double pane glass with a fixed cedar grill on the outside.\r\n\r\n•\tComfortably Seats 3\r\n•\tOutdoor Shower\r\n•\t5.5' W x 8.3' L x 7.6 H (173x254x231cm)\r\n•\tCrafted from Canadian Clear or Knotty Red Cedar\r\n•\tGlass Sauna Door\r\n•\t2-Tier Benches\r\n•\tTempered Glass Windows\r\n•\tShower Hardware Included\r\n\r\n* Please note: \r\n- The electric heater requires a certified electrician to hardwire the unit directly into your electrical panel.\r\n- The shower fixture requires a plumber",
+  "baseCost": 12850,
+  "price": 12850,
+  "dimensions": null,
+  "features": [
+    "Comfortably Seats 3",
+    "Outdoor Shower",
+    "5.5' W x 8.3' L x 7.6 H (173x254x231cm)",
+    "Crafted from Canadian Clear or Knotty Red Cedar",
+    "Glass Sauna Door",
+    "2-Tier Benches",
+    "Tempered Glass Windows",
+    "Shower Hardware Included\r\n\r\n* Please note: \r\n- The electric heater requires a certified electrician to hardwire the unit directly into your electrical panel.\r\n- The shower fixture requires a plumber"
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 5600
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

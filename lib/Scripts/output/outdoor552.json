@@ -1,0 +1,62 @@
+{
+  "owner": "torontosaunco",
+  "name": "Outdoor 552 Pure Cube Sauna",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "Outdoor 552 Pure Cube Sauna",
+  "description": "The Outdoor 552 Pure Cube Sauna - 2 Person is an attractive and stylish design that features a large window panel on the front wall beside the full glass door. Modernize your outdoor space with optional semi-privacy panels that still feature the double pane glass with a fixed cedar grill on the outside. The 552 is great for couples or small families.\r\n\r\n•\tComfortably Seats 2-3\r\n•\t5.5' W x 5.5' L x 7.6 H (173x173x231cm)\r\n•\tCrafted from Canadian Clear or Knotty Cedar\r\n•\tGlass Sauna Door\r\n•\t2-Tier Benches\r\n•\tTempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
+  "baseCost": 9950,
+  "price": 9950,
+  "dimensions": null,
+  "features": [
+    "Comfortably Seats 2-3",
+    "5.5' W x 5.5' L x 7.6 H (173x173x231cm)",
+    "Crafted from Canadian Clear or Knotty Cedar",
+    "Glass Sauna Door",
+    "2-Tier Benches",
+    "Tempered Glass Windows."
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 3600
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

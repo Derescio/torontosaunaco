@@ -1,0 +1,62 @@
+{
+  "owner": "torontosaunco",
+  "name": "Outdoor 582 Pure Cube Sauna",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "Outdoor 582 Pure Cube Sauna",
+  "description": "The Outdoor 582 Pure Cube Sauna - 5 Person is a charming and sophisticated design that features 3 large window panels on the front wall and the door on either the left or right side wall. Create a calm and relaxing atmosphere with the optional semi-privacy panels that still have the double pane glass with a fixed cedar grill on the outside. Relax and rejuvenate with your family or friends in this clean and modern sauna.\r\n\r\n•\tComfortably Seats 4-5\r\n•\t5.5' W x 8.3' L x 7.6 H (173x254x231cm)\r\n•\tCrafted from Canadian Clear or Knotty Red Cedar\r\n•\tGlass Sauna Door\r\n•\t2-Tier Benches\r\n•\tTempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
+  "baseCost": 13250,
+  "price": 13250,
+  "dimensions": null,
+  "features": [
+    "Comfortably Seats 4-5",
+    "5.5' W x 8.3' L x 7.6 H (173x254x231cm)",
+    "Crafted from Canadian Clear or Knotty Red Cedar",
+    "Glass Sauna Door",
+    "2-Tier Benches",
+    "Tempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel."
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 5100
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

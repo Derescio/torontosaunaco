@@ -1,0 +1,61 @@
+{
+  "owner": "torontosaunco",
+  "name": "Outdoor Trinity Pure Cube Sauna",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "Outdoor Trinity Pure Cube Sauna",
+  "description": "Our Pure Cube Trinity Sauna is a 2 Sided Corner model that will comfortably seat 2 people and fit onto an small deck or patio at your Condo or Cottage! Made with western red cedar and tempered glass windows this model as a special design flat plastic roof tray for year round use.\r\n\r\n•\tComfortably Seats 2\r\n•\tCrafted from Canadian Clear or Knotty Red Cedar\r\n•\tGlass Sauna Door\r\n•\t2-Tier Benches\r\n•\tTempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
+  "baseCost": 9850,
+  "price": 9850,
+  "dimensions": null,
+  "features": [
+    "Comfortably Seats 2",
+    "Crafted from Canadian Clear or Knotty Red Cedar",
+    "Glass Sauna Door",
+    "2-Tier Benches",
+    "Tempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel."
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 3300
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}

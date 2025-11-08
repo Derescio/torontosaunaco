@@ -1,0 +1,74 @@
+{
+  "owner": "torontosaunco",
+  "name": "The Neptune",
+  "type": "Outdoor Sauna",
+  "collectionType": "Cube",
+  "series": "The Neptune",
+  "description": "The Neptune Sauna seamlessly integrates the outdoors into its design through an expansive glass front wall. Immerse yourself in nature within the spacious interior. This modular sauna kit can be assembled effortlessly in any setting. With its sleek black metal siding, EPDM roofing, and the warm touch of Canadian cedar inside, it embodies a distinctive and contemporary outdoor sauna.\r\n\r\n•\tComfortably Seats 5-7\r\n•\t113\" L x 89\" W x 91\" H\r\n•\tCrafted from Canadian Clear or Knotty Cedar\r\n•\tLarge Glass Front Wall\r\n•\t2-Tier Benches\r\n•\tEPDM Roof\r\n•\tSpacious Interior\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
+  "baseCost": 15999,
+  "price": 15999,
+  "dimensions": null,
+  "features": [
+    "Comfortably Seats 5-7",
+    "113\" L x 89\" W x 91\" H",
+    "Crafted from Canadian Clear or Knotty Cedar",
+    "Large Glass Front Wall",
+    "2-Tier Benches",
+    "EPDM Roof",
+    "Spacious Interior\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel."
+  ],
+  "wood_type": {
+    "Knotty Cedar": {
+      "price": 0
+    },
+    "Clear Cedar (Upgrade)": {
+      "price": 4200
+    }
+  },
+  "stove_type": {
+    "Huum Drop 9kW with Remote": {
+      "price": 3307
+    },
+    "Narvi 20 Wood Burning Heater": {
+      "price": 3140
+    },
+    "Huum Hive Mini 10.5kW with Remote": {
+      "price": 4925
+    },
+    "Harvia Kip 8kW": {
+      "price": 1550
+    }
+  },
+  "wifi_controller": {
+    "price": 575,
+    "description": "Optional Wifi Controller for compatible electric heaters"
+  },
+  "additional_upgrades": [
+    {
+      "name": "L-Bench",
+      "price": 750
+    }
+  ],
+  "delivery": {
+    "cost": 350,
+    "included": false,
+    "description": "Delivery charge"
+  },
+  "installation": {
+    "DIY": {
+      "price": 0
+    },
+    "Professional Install": {
+      "price": 1750
+    }
+  },
+  "seller_info": {
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "617-555-5555"
+  },
+  "images": [],
+  "is_featured": false,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z"
+}
