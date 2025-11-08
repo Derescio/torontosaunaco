@@ -127,6 +127,16 @@ const SaunaPage = () => {
         {loading && <Spinner loading={loading} />}
         {!loading && product && (
           <>
+            {/* Compute intro/body text segments from description */}
+            {(() => {
+              const full = product?.description || "";
+              // First 106 characters (indexes 0..105)
+              // Remainder starts at index 106 (the 107th character)
+              // Store on product object scope for use in JSX below
+              product.__intro106 = full.slice(0, 109);
+              product.__bodyFrom107 = full.slice(110);
+              return null;
+            })()}
             {/* Hero Section with Breadcrumbs */}
             <section className=" drop-shadow-xl md:drop-shadow-2xl shadow-[#4E7302]/80 relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
               {/* Background Image */}
@@ -165,7 +175,7 @@ const SaunaPage = () => {
                   {product.name}
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-200 font-light font-archivo">
-                  {product.description?.substring(0, 106)}.
+                  {product.__intro106}
                 </p>
               </div>
             </section>
@@ -227,9 +237,11 @@ const SaunaPage = () => {
                       )}
                     </h2>
                     <div className="prose max-w-none text-gray-700 leading-relaxed font-archivo">
-                      <p className="text-base md:text-lg leading-relaxed whitespace-pre-line break-words">
-                        {product.description}
-                      </p>
+                      {product.__bodyFrom107 ? (
+                        <p className="text-base md:text-lg leading-relaxed whitespace-pre-line break-words">
+                          {product.__bodyFrom107}
+                        </p>
+                      ) : null}
                     </div>
                   </div>
                 </div>
