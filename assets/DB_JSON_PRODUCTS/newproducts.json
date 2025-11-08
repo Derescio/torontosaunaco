@@ -218,7 +218,7 @@
   "type": "Pure Cube",
   "collectionType": "Cube",
   "series": "Pure Cube",
-  "description": "Peaked‑roof cube with generous space and clean, modern lines for family relaxation.\r\n\r\nRelax and rejuvenate with your family or friends in this bright, modern sauna. Enjoy a spacious interior with optional insulation packages for floor, walls, and roof.\r\n• Comfortably Seats 5\r\n• 119\" x 88\" x 119\"\r\n• Crafted from Canadian Clear or Knotty Cedar\r\n• Glass Sauna Door\r\n• 2‑Tier Benches\r\n• Tempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
+  "description": "A contemporary outdoor sauna that blends modern architecture with natural warmth. The peaked roof and open interior create a relaxing escape for families or small groups. A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends in this clean and modern sauna and immerse yourself in nature within the spacious interior, with the option to install insulation separately for the floor, walls, and roof.\r\n•\tComfortably Seats 5\r\n•\t119\" x 88\" x 119\"\r\n•\tCrafted from Canadian Clear or Knotty Cedar\r\n•\tGlass Sauna Door\r\n•\t2-Tier Benches\r\n•\tTempered Glass Windows\r\n\r\n* Please note: Electric heaters require a certified electrician to hardwire the unit directly into your electrical panel.",
   "baseCost": 15757,
   "price": 15757,
   "dimensions": {
@@ -247,8 +247,12 @@
   },
   "stove_type": {
     "Huum Drop 9kW with Remote": {
-      "price": 3307,
+      "price": 3457,
       "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+    },
+    "Huum Drop 9kW with Remote + Wifi Controller": {
+      "price": 3950,
+      "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
     },
     "Narvi 20 Wood Burning Heater": {
       "price": 3140,
@@ -257,6 +261,10 @@
     "Huum Hive Mini 10.5kW with Remote": {
       "price": 4925,
       "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762468052/torontosaunaco/stoves/HUUM_HIVE_remote_1_kfxt7p.png"
+    },
+    "Huum Hive Mini 10.5kW with Remote + Wifi Controller": {
+      "price": 5500,
+      "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762471439/torontosaunaco/stoves/HUUM_HIVE_wifi_1_iisuq4.png"
     },
     "Harvia Kip 8kW": {
       "price": 1550,
@@ -1059,5 +1067,13 @@
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   }
+ 
+
+  
+
+
+
 
 ]
+
+

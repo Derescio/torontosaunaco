@@ -100,8 +100,9 @@ const SaunaPage = () => {
       const installOption = product.installation[selectedInstallation];
       if (installOption?.price) total += installOption.price;
     }
-    if (product?.delivery?.cost && !product?.delivery?.included) {
-      total += product.delivery.cost;
+    // Delivery: apply only for DIY; included for Professional Install
+    if (selectedInstallation === "DIY") {
+      total += product?.delivery?.cost || 0;
     }
     return total;
   };
@@ -120,6 +121,8 @@ const SaunaPage = () => {
 
   const totalPrice = product ? calculateTotal() : 0;
   const basePrice = product?.baseCost || product?.price || 0;
+  const deliveryFee =
+    selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0;
 
   return (
     mounted && (
@@ -643,6 +646,16 @@ const SaunaPage = () => {
                             </span>
                           </p>
                         )}
+                        {selectedInstallation && (
+                          <p>
+                            Delivery:{" "}
+                            <span className="font-semibold">
+                              {selectedInstallation === "DIY"
+                                ? `$${deliveryFee.toLocaleString()}`
+                                : "Included"}
+                            </span>
+                          </p>
+                        )}
                         <p className="mt-4 font-semibold text-lg">
                           See the total below
                         </p>
@@ -654,7 +667,11 @@ const SaunaPage = () => {
                   <div className="bg-[#4E7302]/80 backdrop-blur-sm text-white p-6 rounded-lg">
                     <div className="flex justify-between items-center">
                       <span className="text-xl font-light font-archivo">
-                        Total(Including Delivery)
+                        {selectedInstallation === "DIY"
+                          ? `Total (+ $${deliveryFee.toLocaleString()} delivery)`
+                          : selectedInstallation === "Professional Install"
+                            ? "Total (delivery included)"
+                            : "Total"}
                       </span>
                       <span className="text-2xl font-medium font-archivo">
                         ${totalPrice.toLocaleString()}
