@@ -49,6 +49,22 @@ const ProductsSchema = new Schema(
       unit: String, // "in", "cm", etc.
       type: String, // "exterior", "interior"
     },
+    // Optional size variants (e.g., Barrel 7x6 / 7x7 / 7x8) with per-wood pricing
+    // Example:
+    // sizes: [
+    //   { key: "7x6", label: "7’ x 6’", priceByWood: { "Knotty Cedar": 15350, "Clear Cedar": 23959 } },
+    //   { key: "7x7", label: "7’ x 7’", priceByWood: { "Knotty Cedar": 15950, "Clear Cedar": 25027 } }
+    // ]
+    sizes: [
+      new Schema(
+        {
+          key: { type: String },
+          label: { type: String },
+          priceByWood: { type: Map, of: Number },
+        },
+        { _id: false }
+      ),
+    ],
     // Features as bullet points array (new format)
     features: [
       {

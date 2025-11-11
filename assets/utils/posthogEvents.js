@@ -5,6 +5,7 @@ export const posthogEvents = {
 
   // Configurator
   config_option_selected: "config:option_selected",
+  size_selected: "config:size_selected",
   installation_selected: "config:installation_selected",
   delivery_applied: "config:delivery_applied",
   price_recalculated: "config:price_recalculated",
