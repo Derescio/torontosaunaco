@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import BarrelPage from "@/components/Barrel";
+import { fetchProducts } from "@/assets/utils/request";
+import NewProductCard from "@/components/redesign/NewProductCard";
 
 export const metadata = {
   title:
@@ -9,49 +10,88 @@ export const metadata = {
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
 
-const page = () => {
+const page = async () => {
+  const products = await fetchProducts();
+  const values = Array.isArray(products)
+    ? products
+    : Object.values(products || {});
+
+  const matches = (v, term) =>
+    typeof v === "string" && v.toLowerCase().includes(term);
+
+  const isBarrel = (p) =>
+    matches(p?.type, "barrel") ||
+    matches(p?.type, "barrell") ||
+    matches(p?.collectionType, "barrel") ||
+    matches(p?.collectionType, "barrell") ||
+    matches(p?.series, "barrel") ||
+    matches(p?.name, "barrel");
+
+  const barrelProducts = values.filter((p) => isBarrel(p));
+
+  const sortedBarrelProducts = [...barrelProducts].sort(
+    (a, b) =>
+      (a.displayOrder ?? 999) - (b.displayOrder ?? 999) ||
+      new Date(b.updatedAt || b.createdAt || 0) -
+        new Date(a.updatedAt || a.createdAt || 0) ||
+      (a.name || "").localeCompare(b.name || "")
+  );
+
   return (
     <div>
       <div>
-        <section className="px-4 py-2">
-          <section className="modern-saunas py-4">
-            <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:gap-2">
-              {/* Image */}
-              <div className="w-full md:w-[70%]">
-                <Image
-                  src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png"
-                  alt="Modern Sauna Image"
-                  className="rounded-xl object-cover h-full w-full"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  priority
-                />
-              </div>
+        {/* Hero with Background Image and Overlay */}
+        <section className="relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png"
+              alt="Barrel Saunas background"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+          </div>
 
-              {/* Paragraph */}
-              <div className="text-center md:text-right w-full md:w-1/3 mb-2 md:mb-0">
-                <h2 className="text-4xl font-bold mb-4 text-center text-black">
-                  Barrel Saunas
-                </h2>
-                <p className="text-gray-700 leading-relaxed mb-2 font-roboto">
-                  The Barrel Sauna is a timeless classic, recognized for its
-                  distinctive cylindrical shape that offers superior heat
-                  circulation and efficiency. Made from premium Canadian cedar,
-                  the Barrel Sauna is not only visually appealing but also
-                  durable and weather-resistant. Its compact and unique design
-                  allows for easy installation in various outdoor spaces, making
-                  it an ideal choice for those with limited space. The Barrel
-                  Sauna's cozy interior provides an intimate setting for
-                  relaxation and detoxification, making it a popular choice
-                  among sauna enthusiasts.
-                </p>
-              </div>
-            </div>
-          </section>
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 z-10 bg-black/50"></div>
+
+          {/* Centered Content */}
+          <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 font-archivo tracking-wide">
+              Barrel Saunas
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 font-light font-archivo">
+              Timeless, efficient heat circulation in a compact, beautiful form.
+              Crafted in Canadian cedar for durability and year‑round wellness.
+            </p>
+          </div>
         </section>
       </div>
-      <BarrelPage />
+
+      {/* New product grid (updated format) */}
+      <section className="px-4 py-8">
+        <div className="container mx-auto max-w-7xl">
+          {sortedBarrelProducts.length === 0 ? (
+            <p className="text-center text-gray-600">
+              No Barrel products found.
+            </p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedBarrelProducts.map((product) => (
+                <NewProductCard
+                  key={product._id || product.id}
+                  product={product}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/** Old component kept for reference during transition */}
+      {/** <BarrelPage /> */}
     </div>
   );
 };

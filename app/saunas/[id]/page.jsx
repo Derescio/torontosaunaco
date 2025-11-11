@@ -19,6 +19,7 @@ const SaunaPage = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   // Selection states
+  const [selectedSize, setSelectedSize] = useState(null);
   const [selectedWoodType, setSelectedWoodType] = useState(null);
   const [selectedStove, setSelectedStove] = useState(null);
   const [selectedUpgrades, setSelectedUpgrades] = useState([]);
@@ -50,6 +51,29 @@ const SaunaPage = () => {
     }
     setMounted(true);
   }, [id, product]);
+
+  // Treat Barrel products as single-wood (Knotty Cedar) models
+  const isBarrel =
+    (product?.type &&
+      typeof product.type === "string" &&
+      product.type.toLowerCase().includes("barrel")) ||
+    (product?.collectionType &&
+      typeof product.collectionType === "string" &&
+      product.collectionType.toLowerCase().includes("barrel")) ||
+    (product?.series &&
+      typeof product.series === "string" &&
+      product.series.toLowerCase().includes("barrel")) ||
+    (product?.name &&
+      typeof product.name === "string" &&
+      product.name.toLowerCase().includes("barrel"));
+
+  // Default wood selection for Barrel to Knotty Cedar
+  useEffect(() => {
+    if (product && isBarrel && !selectedWoodType) {
+      setSelectedWoodType("Knotty Cedar");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product, isBarrel]);
 
   const sendEmails = async (e) => {
     e.preventDefault();
@@ -110,12 +134,93 @@ const SaunaPage = () => {
     }
   };
 
+  // Derive base price given size/wood (if present)
+  const computeBasePrice = () => {
+    // If product has sizes, try to use size+wood specific base
+    if (
+      product?.sizes &&
+      Array.isArray(product.sizes) &&
+      product.sizes.length > 0
+    ) {
+      if (selectedSize && selectedWoodType) {
+        const sizeObj = product.sizes.find((s) => s.key === selectedSize);
+        const sizePrice =
+          sizeObj?.priceByWood &&
+          typeof sizeObj.priceByWood[selectedWoodType] === "number"
+            ? sizeObj.priceByWood[selectedWoodType]
+            : undefined;
+        if (typeof sizePrice === "number") {
+          return sizePrice;
+        }
+      }
+    }
+    // Fallback to product base
+    return product?.baseCost || product?.price || 0;
+  };
+
+  // Compute the lowest possible starting price for display (ignores user selections)
+  const computeStartingFromPrice = () => {
+    // If sizes exist, take the minimum across size+wood combinations
+    if (
+      product?.sizes &&
+      Array.isArray(product.sizes) &&
+      product.sizes.length > 0
+    ) {
+      let minPrice = Infinity;
+      for (const size of product.sizes) {
+        if (size?.priceByWood && typeof size.priceByWood === "object") {
+          // For Barrel, only consider Knotty Cedar
+          if (isBarrel) {
+            const knotty = size.priceByWood["Knotty Cedar"];
+            if (
+              typeof knotty === "number" &&
+              isFinite(knotty) &&
+              knotty < minPrice
+            ) {
+              minPrice = knotty;
+            }
+          } else {
+            for (const value of Object.values(size.priceByWood)) {
+              if (
+                typeof value === "number" &&
+                isFinite(value) &&
+                value < minPrice
+              ) {
+                minPrice = value;
+              }
+            }
+          }
+        }
+      }
+      if (minPrice !== Infinity) return minPrice;
+    }
+    // Otherwise, use product base plus the smallest positive wood delta (if any)
+    let base = product?.baseCost || product?.price || 0;
+    if (product?.wood_type && typeof product.wood_type === "object") {
+      const deltas = Object.values(product.wood_type)
+        .map((o) => (o && typeof o.price === "number" ? o.price : 0))
+        .filter((n) => typeof n === "number" && isFinite(n));
+      if (deltas.length > 0) {
+        const minDelta = Math.min(...deltas);
+        if (minDelta > 0) base += minDelta;
+      }
+    }
+    return base;
+  };
+
   // Calculate total price
   const calculateTotal = () => {
-    let total = product?.baseCost || product?.price || 0;
+    let total = computeBasePrice();
     if (selectedWoodType && product?.wood_type) {
       const woodOption = product.wood_type[selectedWoodType];
-      if (woodOption?.price) total += woodOption.price;
+      // If sizes are in play and we already used a size+wood base, avoid double-adding wood delta.
+      const hasSizes =
+        product?.sizes &&
+        Array.isArray(product.sizes) &&
+        product.sizes.length > 0;
+      if (!hasSizes) {
+        if (woodOption?.price) total += woodOption.price;
+      }
     }
     if (selectedStove && product?.stove_type) {
       const stoveOption = product.stove_type[selectedStove];
@@ -163,7 +268,8 @@ const SaunaPage = () => {
   }
 
   const totalPrice = product ? calculateTotal() : 0;
-  const basePrice = product?.baseCost || product?.price || 0;
+  const basePrice = computeBasePrice();
+  const startingFromPrice = computeStartingFromPrice();
   const deliveryFee =
     selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0;
 
@@ -309,7 +415,8 @@ const SaunaPage = () => {
 
                   <div className="mt-12 mb-12">
                     <h2 className="text-2xl md:text-3xl font-light text-[#4E7302] mb-6 font-archivo">
-                      {product.name} Starting from ${basePrice.toLocaleString()}
+                      {product.name} Starting from $
+                      {startingFromPrice.toLocaleString()}
                       {basePrice !== totalPrice && (
                         <span className="text-gray-600 text-lg ml-2"></span>
                       )}
@@ -341,14 +448,30 @@ const SaunaPage = () => {
                   </div>
 
                   {/* Tabs Section */}
-                  <Tabs defaultValue="wood" className="w-full">
-                    <TabsList className="mb-24 sm:mb-0 w-full bg-gray-200 rounded-lg p-1 grid grid-cols-2 sm:grid-cols-5 gap-2">
-                      <TabsTrigger
-                        value="wood"
-                        className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                      >
-                        Wood Style
-                      </TabsTrigger>
+                  <Tabs
+                    defaultValue={isBarrel ? "size" : "wood"}
+                    className="w-full"
+                  >
+                    <TabsList className="mb-24 sm:mb-0 w-full bg-gray-200 rounded-lg p-1 grid grid-cols-2 sm:grid-cols-6 gap-2">
+                      {!isBarrel && (
+                        <TabsTrigger
+                          value="wood"
+                          className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
+                        >
+                          Wood Style
+                        </TabsTrigger>
+                      )}
+                      {/* Size Tab - only if product.sizes exists */}
+                      {product?.sizes &&
+                        Array.isArray(product.sizes) &&
+                        product.sizes.length > 0 && (
+                          <TabsTrigger
+                            value="size"
+                            className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
+                          >
+                            Size
+                          </TabsTrigger>
+                        )}
                       <TabsTrigger
                         value="heater"
                         className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
@@ -375,78 +498,170 @@ const SaunaPage = () => {
                       </TabsTrigger>
                     </TabsList>
 
-                    {/* Wood Style Tab */}
-                    <TabsContent value="wood" className="mt-6">
-                      {product.wood_type &&
-                      Object.keys(product.wood_type).length > 0 ? (
-                        <div className="grid grid-cols-2 gap-4">
-                          {Object.entries(product.wood_type).map(
-                            ([name, option]) => (
-                              <button
-                                key={name}
-                                onClick={() => {
-                                  setSelectedWoodType(name);
-                                  try {
-                                    posthog.capture(
-                                      posthogEvents.config_option_selected,
-                                      {
-                                        productId: product?._id || id,
-                                        optionType: "wood",
-                                        optionName: name,
-                                        priceDelta: option?.price || 0,
-                                      }
-                                    );
-                                  } catch {}
-                                }}
-                                className={`relative p-4 border-2 rounded-lg transition-all ${
-                                  selectedWoodType === name
-                                    ? "border-[#4E7302] bg-green-50"
-                                    : "border-gray-200 hover:border-gray-300"
-                                }`}
-                              >
-                                {selectedWoodType === name && (
-                                  <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                    <Check className="w-4 h-4" />
-                                  </div>
-                                )}
-                                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                  {option.image && (
-                                    <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                      <Image
-                                        src={option.image}
-                                        alt={name}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 50vw, 200px"
-                                        priority
-                                      />
+                    {/* Size Tab Content */}
+                    {product?.sizes &&
+                      Array.isArray(product.sizes) &&
+                      product.sizes.length > 0 && (
+                        <TabsContent value="size" className="mt-6">
+                          <div className="grid grid-cols-2 gap-4">
+                            {product.sizes.map((size) => {
+                              const isSelected = selectedSize === size.key;
+                              const priceForWood =
+                                selectedWoodType && size.priceByWood
+                                  ? size.priceByWood[selectedWoodType]
+                                  : null;
+                              return (
+                                <button
+                                  key={size.key}
+                                  onClick={() => {
+                                    setSelectedSize(size.key);
+                                    try {
+                                      posthog.capture(
+                                        posthogEvents.size_selected,
+                                        {
+                                          productId: product?._id || id,
+                                          sizeKey: size.key,
+                                          sizeLabel: size.label || size.key,
+                                        }
+                                      );
+                                    } catch {}
+                                  }}
+                                  className={`relative p-4 border-2 rounded-lg transition-all ${
+                                    isSelected
+                                      ? "border-[#4E7302] bg-green-50"
+                                      : "border-gray-200 hover:border-gray-300"
+                                  }`}
+                                >
+                                  {isSelected && (
+                                    <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
+                                      <Check className="w-4 h-4" />
                                     </div>
                                   )}
-
-                                  <div className="flex-1">
-                                    <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                      {name}
-                                    </h3>
-                                    <p className="text-xs text-gray-600 font-archivo">
-                                      ${option.price?.toLocaleString() || 0}
-                                    </p>
-                                    {option.power && (
-                                      <p className="text-xs text-gray-500 mt-1 font-archivo">
-                                        {option.power}
-                                      </p>
+                                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
+                                    {size.image && (
+                                      <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
+                                        <Image
+                                          src={size.image}
+                                          alt={size.label || size.key}
+                                          fill
+                                          className="object-cover"
+                                          sizes="(max-width: 768px) 50vw, 200px"
+                                          priority
+                                        />
+                                      </div>
                                     )}
+                                    <div className="flex-1">
+                                      <h3 className="font-semibold text-sm mb-1 font-archivo">
+                                        {size.label || size.key}
+                                      </h3>
+                                      <p className="text-xs text-gray-600 font-archivo">
+                                        {priceForWood
+                                          ? `$${priceForWood.toLocaleString()}`
+                                          : selectedWoodType
+                                            ? "No price for selected wood"
+                                            : isBarrel
+                                              ? "Prices shown for Knotty Cedar"
+                                              : "Select wood to see price"}
+                                      </p>
+                                    </div>
                                   </div>
-                                </div>
-                              </button>
-                            )
+                                </button>
+                              );
+                            })}
+                          </div>
+                          {/* Hint for user selection */}
+                          {!selectedWoodType && !isBarrel && (
+                            <p className="text-xs text-gray-500 mt-2 font-archivo">
+                              Tip: Select a wood type to view size-specific
+                              pricing.
+                            </p>
                           )}
-                        </div>
-                      ) : (
-                        <p className="text-gray-500 text-center py-8 font-archivo">
-                          No wood type options available
-                        </p>
+                        </TabsContent>
                       )}
-                    </TabsContent>
+
+                    {/* Wood Style Tab (hidden for Barrel) */}
+                    {!isBarrel && (
+                      <TabsContent value="wood" className="mt-6">
+                        {product.wood_type &&
+                        Object.keys(product.wood_type).length > 0 ? (
+                          <div className="grid grid-cols-2 gap-4">
+                            {Object.entries(product.wood_type).map(
+                              ([name, option]) => (
+                                <button
+                                  key={name}
+                                  onClick={() => {
+                                    setSelectedWoodType(name);
+                                    try {
+                                      posthog.capture(
+                                        posthogEvents.config_option_selected,
+                                        {
+                                          productId: product?._id || id,
+                                          optionType: "wood",
+                                          optionName: name,
+                                          priceDelta: option?.price || 0,
+                                        }
+                                      );
+                                    } catch {}
+                                  }}
+                                  className={`relative p-4 border-2 rounded-lg transition-all ${
+                                    selectedWoodType === name
+                                      ? "border-[#4E7302] bg-green-50"
+                                      : "border-gray-200 hover:border-gray-300"
+                                  }`}
+                                >
+                                  {selectedWoodType === name && (
+                                    <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
+                                      <Check className="w-4 h-4" />
+                                    </div>
+                                  )}
+                                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
+                                    {option.image && (
+                                      <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
+                                        <Image
+                                          src={option.image}
+                                          alt={name}
+                                          fill
+                                          className="object-cover"
+                                          sizes="(max-width: 768px) 50vw, 200px"
+                                          priority
+                                        />
+                                      </div>
+                                    )}
+
+                                    <div className="flex-1">
+                                      <h3 className="font-semibold text-sm mb-1 font-archivo">
+                                        {name}
+                                      </h3>
+                                      {/* Hide $0 under wood style (especially when sizes exist). Show only positive deltas when no sizes. */}
+                                      {!(
+                                        product?.sizes &&
+                                        Array.isArray(product.sizes) &&
+                                        product.sizes.length > 0
+                                      ) &&
+                                        typeof option?.price === "number" &&
+                                        option.price > 0 && (
+                                          <p className="text-xs text-gray-600 font-archivo">
+                                            ${option.price.toLocaleString()}
+                                          </p>
+                                        )}
+                                      {option.power && (
+                                        <p className="text-xs text-gray-500 mt-1 font-archivo">
+                                          {option.power}
+                                        </p>
+                                      )}
+                                    </div>
+                                  </div>
+                                </button>
+                              )
+                            )}
+                          </div>
+                        ) : (
+                          <p className="text-gray-500 text-center py-8 font-archivo">
+                            No wood type options available
+                          </p>
+                        )}
+                      </TabsContent>
+                    )}
 
                     {/* Heater Tab */}
                     <TabsContent value="heater" className="mt-6">
@@ -597,26 +812,69 @@ const SaunaPage = () => {
                             <h3 className="font-semibold mb-3 font-archivo">
                               Dimensions
                             </h3>
-                            <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                              <p className="font-archivo">
-                                <span className="font-medium">Width:</span>{" "}
-                                {product.dimensions.width}{" "}
-                                {product.dimensions.unit}
-                              </p>
-                              <p className="font-archivo">
-                                <span className="font-medium">Depth:</span>{" "}
-                                {product.dimensions.depth}{" "}
-                                {product.dimensions.unit}
-                              </p>
-                              <p className="font-archivo">
-                                <span className="font-medium">Height:</span>{" "}
-                                {product.dimensions.height}{" "}
-                                {product.dimensions.unit}
-                              </p>
-                              <p className="text-sm text-gray-600 font-archivo">
-                                ({product.dimensions.type})
-                              </p>
-                            </div>
+                            {product.dimensions.width ||
+                            product.dimensions.depth ||
+                            product.dimensions.height ? (
+                              <div className="bg-gray-50 p-4 rounded-lg space-y-2">
+                                {typeof product.dimensions.width !==
+                                  "undefined" && (
+                                  <p className="font-archivo">
+                                    <span className="font-medium">Width:</span>{" "}
+                                    {product.dimensions.width}{" "}
+                                    {product.dimensions.unit || ""}
+                                  </p>
+                                )}
+                                {typeof product.dimensions.depth !==
+                                  "undefined" && (
+                                  <p className="font-archivo">
+                                    <span className="font-medium">Depth:</span>{" "}
+                                    {product.dimensions.depth}{" "}
+                                    {product.dimensions.unit || ""}
+                                  </p>
+                                )}
+                                {typeof product.dimensions.height !==
+                                  "undefined" && (
+                                  <p className="font-archivo">
+                                    <span className="font-medium">Height:</span>{" "}
+                                    {product.dimensions.height}{" "}
+                                    {product.dimensions.unit || ""}
+                                  </p>
+                                )}
+                                {(product.dimensions.HeatingOption ||
+                                  product.dimensions["Heating Option"]) && (
+                                  <p className="font-archivo">
+                                    <span className="font-medium">
+                                      Heating Options:
+                                    </span>{" "}
+                                    {product.dimensions.HeatingOption ||
+                                      product.dimensions["Heating Option"]}
+                                  </p>
+                                )}
+                                {product.dimensions.type && (
+                                  <p className="text-sm text-gray-600 font-archivo">
+                                    ({product.dimensions.type})
+                                  </p>
+                                )}
+                              </div>
+                            ) : (
+                              <div className="bg-gray-50 p-4 rounded-lg space-y-2">
+                                {Object.entries(product.dimensions).map(
+                                  ([key, value]) => (
+                                    <p key={key} className="font-archivo">
+                                      <span className="font-medium">
+                                        {key}:
+                                      </span>{" "}
+                                      {typeof value === "string" ||
+                                      typeof value === "number"
+                                        ? value
+                                        : Array.isArray(value)
+                                          ? value.join(", ")
+                                          : JSON.stringify(value)}
+                                    </p>
+                                  )
+                                )}
+                              </div>
+                            )}
                           </div>
                         )}
                         {product.features && product.features.length > 0 && (
@@ -754,6 +1012,14 @@ const SaunaPage = () => {
                               {selectedInstallation === "DIY"
                                 ? `$${deliveryFee.toLocaleString()}`
                                 : "Included"}
+                            </span>
+                          </p>
+                        )}
+                        {selectedSize && (
+                          <p>
+                            Size:{" "}
+                            <span className="font-semibold">
+                              {selectedSize}
                             </span>
                           </p>
                         )}

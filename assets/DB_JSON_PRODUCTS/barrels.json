@@ -1,0 +1,98 @@
+[
+    {
+        "_id": {
+                "$oid": "691273a0fffa32247e8079f5"
+              },
+        "owner": "torontosaunco",
+        "name": "Barrel Sauna",
+        "type": "Barrel",
+        "collectionType": "Barrel",
+        "series": "",
+        "description": "Panoramic Barrel Sauna with an integrated 4’ changeroom. A timeless barrel form that delivers efficient heat circulation and a stunning rear window. Choose your size and wood to fit your space and budget, then add your preferred heater and options.",
+       "baseCost": 15350,
+      "features": [
+            "Comfortably Seats 6",
+            "Crafted from Canadian Clear or Knotty Red Cedar",
+            "Glass Sauna Door",
+            "2-Tier Benches",
+            "Tempered Glass Windows."
+    ],
+        "sizes": [
+          {
+            "key": "7x4",
+            "label": "7’ x 4’",
+            "priceByWood": { "Knotty Cedar": 7820},
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg"
+          },
+          {
+            "key": "7x6",
+            "label": "7’ x 6’",
+            "priceByWood": { "Knotty Cedar": 8450 },
+             "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg"
+          },
+          {
+            "key": "7x7",
+            "label": "7’ x 7’",
+            "priceByWood": { "Knotty Cedar": 8950 },
+             "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg"
+          },
+          {
+            "key": "7x8",
+            "label": "7’ x 8’",
+            "priceByWood": { "Knotty Cedar": 9350 },
+             "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg"
+          },
+          {
+            "key": "7x10",
+            "label": "7’ x 10’",
+            "priceByWood": { "Knotty Cedar": 10400 },
+             "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg"
+          }
+        ],
+        
+        "stove_type": {
+          "Huum Drop 9kW with Remote": {
+        "price": 3457,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      },
+      "Huum Drop 9kW with Remote + Wifi Controller": {
+        "price": 3950,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      },
+          "Harvia Kip 8kW": {
+            "price": 1550,
+            "power": "8 kW",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469371/torontosaunaco/stoves/Harvia_KIP_Remote_d0k68b.png"
+          },
+          "Narvi 16 Wood Burning Heater": {
+            "price": 3140,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+          }
+        },
+        "additional_upgrades": [
+         { "name": "No Windows", "price": 0 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721317809/torontosaunaco/Barrell/6x6/6x6BarrelSauna_Interior_1_nz1vke.png" },
+          { "name": "Two Bronze Front Wall Windows", "price": 385 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762805847/torontosaunaco/Barrell/Two_Bronze_FrontWall_gghvxk.jpg" },
+          { "name": "Half Moon Front Wall Window", "price": 1350 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762805848/torontosaunaco/Barrell/Half_Moon_Front_Wall_utsmmy.jpg" },
+          { "name": "Half Moon Back Wall Window", "price": 1250 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762805848/torontosaunaco/Barrell/HalfMoon_Back_Wall_nfhfl9.jpg" }
+        ],
+        "delivery": { "cost": 350, "included": false, "description": "Delivery charge" },
+        "installation": {
+          "DIY": { "price": 0 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg" },
+          "Professional Install": { "price": 1750 , "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg" }
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762807495/torontosaunaco/Barrell/Barrel_evqkoz.png",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720930178/torontosaunaco/Barrell/7x12wCR_gut5xy.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720933070/torontosaunaco/Barrell/Filler_Image2_wjdarw.jpg"
+        ],
+        "is_featured": false,
+        "displayOrder": 12,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      }  
+]
