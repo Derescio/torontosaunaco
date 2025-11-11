@@ -45,7 +45,7 @@ const page = async () => {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1721332483/torontosaunaco/Barrell/7x7/7x7BarrelSauna_CRP_qkzlun.png"
+              src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1762805848/torontosaunaco/Barrell/Half_Moon_Front_Wall_utsmmy.jpg"
               alt="Barrel Saunas background"
               fill
               className="object-cover"
