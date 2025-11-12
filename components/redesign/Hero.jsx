@@ -13,6 +13,8 @@ const Hero = () => {
           fill
           className="object-cover"
           priority={true}
+          fetchPriority="high"
+          sizes="100vw"
         />
       </div>
 
