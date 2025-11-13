@@ -63,7 +63,7 @@ const Header = () => {
               onMouseEnter={() => handleDesktopHover(true)}
               onMouseLeave={() => handleDesktopHover(false)}
             >
-              <button className="flex items-center gap-1 text-white hover:text-[#FFA726] transition-colors font-medium">
+              <button className="flex items-center gap-2 text-white hover:text-[#FFA726] transition-colors font-medium">
                 <Link href="/saunas">Saunas</Link>
                 <FaChevronDown className="text-xs" />
               </button>

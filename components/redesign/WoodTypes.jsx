@@ -77,7 +77,7 @@ const WoodTypes = () => {
               <h3 className="text-xl md:text-2xl text-white mb-3 text-center font-archivo font-light">
                 {card.title}
               </h3>
-              <p className="text-gray-300 text-sm leading-relaxed text-left font-archivo flex-1">
+              <p className="text-gray-100 text-md leading-relaxed text-left font-archivo flex-1">
                 {card.description}
               </p>
             </div>
