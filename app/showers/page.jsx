@@ -23,8 +23,8 @@ const ShowersPage = async () => {
     matches(p?.type, "shower") ||
     matches(p?.type, "outdoor shower") ||
     matches(p?.collectionType, "shower") ||
-    matches(p?.series, "shower") ||
-    matches(p?.name, "shower");
+    matches(p?.series, "shower");
+  // matches(p?.name, "shower");
 
   const showerProducts = values.filter((p) => isShower(p));
 
