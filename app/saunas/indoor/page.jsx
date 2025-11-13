@@ -1,6 +1,7 @@
 import React from "react";
-import Indoors from "@/components/Indoors";
 import Image from "next/image";
+import { fetchProducts } from "@/assets/utils/request";
+import NewProductCard from "@/components/redesign/NewProductCard";
 
 export const metadata = {
   title:
@@ -9,50 +10,84 @@ export const metadata = {
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
 
-const page = () => {
+const page = async () => {
+  const products = await fetchProducts();
+  const values = Array.isArray(products)
+    ? products
+    : Object.values(products || {});
+
+  const matches = (v, term) =>
+    typeof v === "string" && v.toLowerCase().includes(term);
+
+  const isIndoor = (p) =>
+    matches(p?.type, "indoor") ||
+    matches(p?.collectionType, "indoor") ||
+    matches(p?.series, "indoor") ||
+    matches(p?.name, "indoor");
+
+  const indoorProducts = values.filter((p) => isIndoor(p));
+
+  const sortedIndoorProducts = [...indoorProducts].sort(
+    (a, b) =>
+      (a.displayOrder ?? 999) - (b.displayOrder ?? 999) ||
+      new Date(b.updatedAt || b.createdAt || 0) -
+        new Date(a.updatedAt || a.createdAt || 0) ||
+      (a.name || "").localeCompare(b.name || "")
+  );
+
   return (
     <div>
       <div>
-        <div className="px-4 py-2">
-          <section className="modern-saunas py-4">
-            <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:gap-2">
-              {/* Image */}
-              <div className="w-full md:w-[70%]">
-                <Image
-                  src="/images/indoor.jpg"
-                  alt="Modern Sauna Image"
-                  className="rounded-xl object-cover h-full w-full"
-                  width={0}
-                  height={0}
-                  sizes="100vh"
-                  priority
-                />
-              </div>
+        {/* Hero with Background Image and Overlay */}
+        <section className="relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/indoor.jpg"
+              alt="Indoor Saunas background"
+              fill
+              className="object-cover"
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+            />
+          </div>
 
-              {/* Paragraph */}
-              <div className="text-center md:text-right w-full md:w-1/3 mb-2 md:mb-0">
-                <h1 className="text-4xl font-bold mb-4 text-center text-black">
-                  Indoor Saunas
-                </h1>
-                <p className="text-gray-700 leading-relaxed mb-2 font-roboto">
-                  The Indoor Sauna is designed to bring the therapeutic benefits
-                  of sauna bathing into the comfort of your home. Tailored to
-                  fit seamlessly into various interior spaces, the Indoor Sauna
-                  is ideal for bathrooms, basements, or home gyms. Made from
-                  high-quality wood and equipped with advanced heating
-                  technology, it provides a soothing and efficient sauna
-                  experience. The Indoor Sauna's compact design makes it
-                  suitable for smaller spaces without compromising on comfort or
-                  performance. Enjoy the health and wellness benefits of regular
-                  sauna use with the convenience and privacy of an indoor
-                  setting.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 z-10 bg-black/50"></div>
+
+          {/* Centered Content */}
+          <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 font-archivo tracking-wide">
+              Indoor Saunas
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 font-light font-archivo">
+              Bring the full sauna experience inside with compact, efficient
+              designs.
+            </p>
+          </div>
+        </section>
       </div>
-      <Indoors />
+
+      {/* Product grid */}
+      <section className="px-4 py-8">
+        <div className="container mx-auto max-w-7xl">
+          {sortedIndoorProducts.length === 0 ? (
+            <p className="text-center text-gray-600">
+              No Indoor products found.
+            </p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedIndoorProducts.map((product) => (
+                <NewProductCard
+                  key={product._id || product.id}
+                  product={product}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 };
