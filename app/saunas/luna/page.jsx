@@ -21,8 +21,8 @@ const page = async () => {
   const isLuna = (p) =>
     matches(p?.type, "luna") ||
     matches(p?.collectionType, "luna") ||
-    matches(p?.series, "luna") ||
-    matches(p?.name, "luna");
+    matches(p?.series, "luna");
+  //matches(p?.name, "luna");
 
   const lunaProducts = values.filter((p) => isLuna(p));
 
