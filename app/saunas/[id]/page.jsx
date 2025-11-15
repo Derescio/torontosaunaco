@@ -67,13 +67,45 @@ const SaunaPage = () => {
       typeof product.name === "string" &&
       product.name.toLowerCase().includes("barrel"));
 
+  const isIndoorDundalk =
+    (product?.type &&
+      typeof product.type === "string" &&
+      product.type.toLowerCase().includes("dundalk")) ||
+    (product?.collectionType &&
+      typeof product.collectionType === "string" &&
+      product.collectionType.toLowerCase().includes("dundalk")) ||
+    (product?.series &&
+      typeof product.series === "string" &&
+      product.series.toLowerCase().includes("ls460")) ||
+    (product?.name &&
+      typeof product.name === "string" &&
+      product.name.toLowerCase().includes("dundalk"));
+
+  // Treat Luna models like single-wood models (similar to Barrel)
+  const isLuna =
+    (product?.type &&
+      typeof product.type === "string" &&
+      product.type.toLowerCase().includes("luna")) ||
+    (product?.collectionType &&
+      typeof product.collectionType === "string" &&
+      product.collectionType.toLowerCase().includes("luna")) ||
+    (product?.series &&
+      typeof product.series === "string" &&
+      product.series.toLowerCase().includes("luna")) ||
+    (product?.name &&
+      typeof product.name === "string" &&
+      product.name.toLowerCase().includes("luna"));
+
+  // Unify models that should behave like single-wood Barrel (default Knotty Cedar, hide Wood tab, size-first UX)
+  const isSingleWoodModel = isBarrel || isIndoorDundalk || isLuna;
+
   // Default wood selection for Barrel to Knotty Cedar
   useEffect(() => {
-    if (product && isBarrel && !selectedWoodType) {
+    if (product && isSingleWoodModel && !selectedWoodType) {
       setSelectedWoodType("Knotty Cedar");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [product, isBarrel]);
+  }, [product, isSingleWoodModel]);
 
   const sendEmails = async (e) => {
     e.preventDefault();
@@ -169,8 +201,8 @@ const SaunaPage = () => {
       let minPrice = Infinity;
       for (const size of product.sizes) {
         if (size?.priceByWood && typeof size.priceByWood === "object") {
-          // For Barrel, only consider Knotty Cedar
-          if (isBarrel) {
+          // For single-wood models (e.g., Barrel), only consider Knotty Cedar
+          if (isSingleWoodModel) {
             const knotty = size.priceByWood["Knotty Cedar"];
             if (
               typeof knotty === "number" &&
@@ -449,11 +481,11 @@ const SaunaPage = () => {
 
                   {/* Tabs Section */}
                   <Tabs
-                    defaultValue={isBarrel ? "size" : "wood"}
+                    defaultValue={isSingleWoodModel ? "size" : "wood"}
                     className="w-full"
                   >
                     <TabsList className="mb-24 sm:mb-0 w-full bg-gray-200 rounded-lg p-1 grid grid-cols-2 sm:grid-cols-6 gap-2">
-                      {!isBarrel && (
+                      {!isSingleWoodModel && (
                         <TabsTrigger
                           value="wood"
                           className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
@@ -559,7 +591,7 @@ const SaunaPage = () => {
                                           ? `$${priceForWood.toLocaleString()}`
                                           : selectedWoodType
                                             ? "No price for selected wood"
-                                            : isBarrel
+                                            : isSingleWoodModel
                                               ? "Prices shown for Knotty Cedar"
                                               : "Select wood to see price"}
                                       </p>

@@ -1,4 +1,6 @@
-import Cold_Plunge from "@/components/ColdPlunge";
+import Image from "next/image";
+import { fetchProducts } from "@/assets/utils/request";
+import NewProductCard from "@/components/redesign/NewProductCard";
 
 export const metadata = {
   title:
@@ -7,10 +9,77 @@ export const metadata = {
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
 
-const ColdPlunge = () => {
+const ColdPlunge = async () => {
+  const products = await fetchProducts();
+  const values = Array.isArray(products)
+    ? products
+    : Object.values(products || {});
+
+  const matches = (v, term) =>
+    typeof v === "string" && v.toLowerCase().includes(term);
+
+  const isColdPlunge = (p) =>
+    matches(p?.type, "cold plunge") ||
+    matches(p?.collectionType, "cold plunge") ||
+    matches(p?.series, "plunge") ||
+    matches(p?.name, "plunge");
+
+  const plungeProducts = values.filter((p) => isColdPlunge(p));
+
+  const sortedPlungeProducts = [...plungeProducts].sort(
+    (a, b) =>
+      (a.displayOrder ?? 999) - (b.displayOrder ?? 999) ||
+      new Date(b.updatedAt || b.createdAt || 0) -
+        new Date(a.updatedAt || a.createdAt || 0) ||
+      (a.name || "").localeCompare(b.name || "")
+  );
+
   return (
-    <div className="mt-8">
-      <Cold_Plunge />
+    <div>
+      {/* Hero */}
+      <section className="relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1763002732/torontosaunaco/coldplunge/Glacier_Cold_Tud_luoeek.png"
+            alt="Cold Plunge background"
+            fill
+            className="object-cover"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0 z-10 bg-black/50"></div>
+        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 font-archivo tracking-wide">
+            Hot & Cold Plunge
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 font-light font-archivo">
+            Energize recovery and boost circulation with purpose-built plunge
+            tubs.
+          </p>
+        </div>
+      </section>
+
+      {/* Grid */}
+      <section className="px-4 py-8">
+        <div className="container mx-auto max-w-7xl">
+          {sortedPlungeProducts.length === 0 ? (
+            <p className="text-center text-gray-600">
+              No Cold Plunge products found.
+            </p>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedPlungeProducts.map((product) => (
+                <NewProductCard
+                  key={product._id || product.id}
+                  product={product}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 };

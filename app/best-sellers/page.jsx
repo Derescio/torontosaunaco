@@ -50,7 +50,7 @@ const BestSellers = () => {
   const bestSellers = [
     {
       id: 1,
-      name: "Studio 6 Mini",
+      name: "The Mini",
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image: "/images/Studio_6_Mini_Mainfle.png",
@@ -59,7 +59,7 @@ const BestSellers = () => {
     },
     {
       id: 2,
-      name: "Studio 6 Max",
+      name: "The Max",
       description:
         "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image: "/images/Studio_6_Main_File.png",

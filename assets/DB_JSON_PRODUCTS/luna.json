@@ -1,0 +1,250 @@
+[
+    {
+        "owner": "torontosaunco",
+        "name": "The Luna Sauna",
+        "type": "Luna Sauna",
+        "collectionType": "Luna",
+        "series": "Luna",
+        "description": "The Luna Sauna offers a sleek and sophisticated addition to your home or cottage. This modular pre-built sauna kit boasts a large double pane tempered glass front window and full glass door, providing beautiful outdoor views and excellent thermal insulation. Experience the perfect blend of luxury and practicality with this modern Luna Sauna kit, ideal for creating a relaxing and rejuvenating sauna experience for you and your family or friends.",
+        "baseCost": 12800,
+        "price": 12800,
+        "dimensions": {
+          "width": 8,
+          "length": 6,
+          "height": 7,
+          "unit": "ft",
+          "type": "exterior"
+        },
+        "features": [
+          "Comfortably Seats 4-6",
+          "Crafted from Canadian Clear or Knotty Cedar",
+          "Glass Sauna Door",
+          "2-Tier Benches",
+          "Tempered Glass Windows."
+        ],
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+          },
+          "Clear Cedar": {
+            "price": 5300,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+          }
+        },
+        "stove_type": {
+          "Huum Drop 9kW with Remote": {
+            "price": 3457,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+          },
+          "Huum Drop 9kW with Remote + Wifi Controller": {
+            "price": 3950,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+          },
+          "Harvia Kip 8kW": {
+            "price": 1550,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469371/torontosaunaco/stoves/Harvia_KIP_Remote_d0k68b.png"
+          },
+          "Narvi 16 Wood Burning Heater": {
+            "price": 3140,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469780/torontosaunaco/stoves/Narvi_16_kdgcen.png"
+          }
+        },
+        "additional_upgrades": [
+          {
+            "name": "Mirror Pane Windows",
+            "price": 850,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171005/torontosaunaco/Lunas/2_Mirror_Pane_Windows_vki0kq.png"
+          },
+          {
+            "name": "Back Wall Bronze Window ",
+            "price": 450,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171006/torontosaunaco/Lunas/Bronze_Window_cafyfn.png"
+          },
+          {
+            "name": "Back Wall Mirror Pane Windows ",
+            "price": 1050,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171005/torontosaunaco/Lunas/Mirror_Pane_Window_jwe0ft.png"
+          }
+        ],
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+          },
+          "Professional Install": {
+            "price": 1750,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+          }
+        },
+       
+        "sizes": [
+              {
+                "key": "8x6",
+                "label": "8’ x 6’",
+                "priceByWood": {
+                  "Knotty Cedar": 12800
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654319/torontosaunaco/Lunas/luna1_8x8_swy7sn.jpg"
+              },
+              {
+                "key": "8x7",
+                "label": "8’ x 7",
+                "priceByWood": {
+                  "Knotty Cedar": 12970
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654319/torontosaunaco/Lunas/luna1_8x8_swy7sn.jpg"
+              },
+              {
+                "key": "8x8",
+                "label": "8’ x 8",
+                "priceByWood": {
+                  "Knotty Cedar": 13600
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654319/torontosaunaco/Lunas/luna1_8x8_swy7sn.jpg"
+              }
+           
+             
+            ],
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654318/torontosaunaco/Lunas/luna1_tar30r.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386255/torontosaunaco/Lunas/Luna/860LUW_1_kbngku.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386267/torontosaunaco/Lunas/Luna/880LUE_vv2usy.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386267/torontosaunaco/Lunas/Luna/880LUE_vv2usy.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386271/torontosaunaco/Lunas/Luna/882LUE_slzxvc.jpg"
+        ],
+        "is_featured": false,
+        "displayOrder": 24,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      },
+    {
+        "owner": "torontosaunco",
+        "name": "The Luna Sauna w/Porch",
+        "type": "Luna Sauna",
+        "collectionType": "Luna",
+        "series": "Luna",
+        "description": "The Luna Sauna offers a sleek and sophisticated addition to your home or cottage. This modular pre-built sauna kit boasts a large double pane tempered glass front window and full glass door, providing beautiful outdoor views and excellent thermal insulation. Experience the perfect blend of luxury and practicality with this modern Luna Sauna kit, ideal for creating a relaxing and rejuvenating sauna experience for you and your family or friends.",
+        "baseCost": 13900,
+        "price": 13900,
+        "dimensions": {
+          "width": 8,
+          "length": 6,
+          "height": 7,
+          "unit": "ft",
+          "type": "exterior"
+        },
+        "features": [
+          "Comfortably Seats 4-6",
+          "Crafted from Canadian Clear or Knotty Cedar",
+          "Glass Sauna Door",
+          "2-Tier Benches",
+          "Tempered Glass Windows."
+        ],
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+          },
+          "Clear Cedar": {
+            "price": 5300,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+          }
+        },
+        "stove_type": {
+          "Huum Drop 9kW with Remote": {
+            "price": 3457,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+          },
+          "Huum Drop 9kW with Remote + Wifi Controller": {
+            "price": 3950,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+          },
+          "Harvia Kip 8kW": {
+            "price": 1550,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469371/torontosaunaco/stoves/Harvia_KIP_Remote_d0k68b.png"
+          },
+          "Narvi 16 Wood Burning Heater": {
+            "price": 3140,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469780/torontosaunaco/stoves/Narvi_16_kdgcen.png"
+          }
+        },
+        "additional_upgrades": [
+          {
+            "name": "Mirror Pane Windows",
+            "price": 850,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171005/torontosaunaco/Lunas/2_Mirror_Pane_Windows_vki0kq.png"
+          },
+          {
+            "name": "Back Wall Bronze Window ",
+            "price": 450,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171006/torontosaunaco/Lunas/Bronze_Window_cafyfn.png"
+          },
+          {
+            "name": "Back Wall Mirror Pane Windows ",
+            "price": 1050,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763171005/torontosaunaco/Lunas/Mirror_Pane_Window_jwe0ft.png"
+          }
+        ],
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+          },
+          "Professional Install": {
+            "price": 1750,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+          }
+        },
+       
+        "sizes": [
+              {
+                "key": "8x6",
+                "label": "8’ x 6’",
+                "priceByWood": {
+                  "Knotty Cedar": 13900
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654320/torontosaunaco/Lunas/luna8x10_oftuhe.jpg"
+              },
+              {
+                "key": "8x7",
+                "label": "8’ x 7",
+                "priceByWood": {
+                  "Knotty Cedar": 15160
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654320/torontosaunaco/Lunas/luna8x10_oftuhe.jpg"
+              },
+              {
+                "key": "8x8",
+                "label": "8’ x 8",
+                "priceByWood": {
+                  "Knotty Cedar": 15300
+                },
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654320/torontosaunaco/Lunas/luna8x10_oftuhe.jpg"
+              }
+           
+             
+            ],
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720654320/torontosaunaco/Lunas/luna8x10_oftuhe.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753986175/torontosaunaco/Cubes/IMG_4307_ytu17n.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720387249/torontosaunaco/Lunas/Luna/880LUPE_5_x3tjx4.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386267/torontosaunaco/Lunas/Luna/880LUE_vv2usy.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720386271/torontosaunaco/Lunas/Luna/882LUE_slzxvc.jpg"
+        ],
+        "is_featured": false,
+        "displayOrder": 25,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      }
+]
