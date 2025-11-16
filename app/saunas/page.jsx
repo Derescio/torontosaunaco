@@ -19,7 +19,9 @@ const Saunas = async () => {
     (x) =>
       x.type !== "Cold Plunge" &&
       x.type !== "Outdoor Shower" &&
-      x.type !== "Hot Tub"
+      x.type !== "Hot Tub" &&
+      x.type !== "Indoor" &&
+      x.collectionType !== "Indoor"
   );
   const sortedProducts = [...filteredProducts].sort(
     (a, b) =>
