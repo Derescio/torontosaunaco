@@ -1,0 +1,270 @@
+[
+    {
+        "owner": "torontosaunco",
+        "name": "Indoor Dundalk Cabin Sauna - LS460",
+        "type": "Dundalk",
+        "collectionType": "Dundalk",
+        "series": "LS460",
+        "description": "The Dundalk Experience offers the ultimate relaxation with our Indoor Cabin Sauna—crafted for comfort, style, and wellness. Enjoy the soothing heat in a cozy, private space, perfect for unwinding at home",
+        "dimension": "120x182(cm)",
+        "price": 8085,
+        "views": {},
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+          },
+          "Clear Cedar": {
+            "price": 1654,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+          }
+        },
+        "stove_type": {
+          "Designer B Electric Heater (6kw)": {
+            "price": 1800,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+          },
+          " Huum Drop Heater - 6KW LOCAL CONTROL": {
+            "price": 2810,
+            "power": "6 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361776/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_7.5_KW_Electric_Heater_Local_Control_2721.00_lgzulk.jpg"
+          },
+          " Huum Drop Heater - 6KW WIFI CONTROL": {
+            "price": 3386,
+            "power": "6 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720361773/torontosaunaco/Wood_Stove_Install_img/HUUM_Drop_6.0_Electric_Heater_With_WIFI_Controls_3132.50_zpe3m3.jpg"
+          },
+          " Huum Hive Heater - 6KW LOCAL CONTROL": {
+            "price": 4294,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+          },
+          " Huum Hive Heater - 6KW WIFI CONTROL": {
+            "price": 4870,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+          },
+          " Harvia KIP 4.5KW Sauna Heater": {
+            "price": 1380,
+            "power": "4.5 Kw",
+            "dimensions": "16 W × 11”H × 21 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+          },
+          "Homecraft Revive Heater - 6KW": {
+            "price": 2640,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+          }
+        },
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+          },
+          "Supply_Install": {
+            "price": 1750,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+          }
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741558784/torontosaunaco/Dundalk_Indoor_gjuzxp.png",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_1_ziu08m.png",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1741553621/torontosaunaco/Dundalk_Indoor_2_dakesv.png"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "owner": "torontosaunco",
+        "name": "Indoor Sauna - 550E",
+        "type": "Indoor-Cub",
+        "collectionType": "Cub",
+        "series": "550 Indoors",
+        "description": "The Pure Cube PU550 Indoor Sauna is an attractive and stylish design that features a large window panel on the front wall beside the full glass door. Modernize your indoor space with optional semi-privacy panels that still feature the double pane glass with a fixed cedar grill on the outside. The Pure Cube PU550 Indoor Sauna comes in easy to assemble wall and roof panels and prebuilt solid cedar benches and duckboard floor. This model comes with an electric heater and comfortably sits up to 2 adults. Comfortable and cozy the Pure Cube PU550 Indoor Sauna is great for couples or small families.",
+        "dimension": "67 x 77 (in)",
+        "price": 10034,
+        "views": {},
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+          },
+          "Clear Cedar": {
+            "price": 3050,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+          }
+        },
+        "stove_type": {
+          "Designer B Electric Heater (4.4kw)": {
+            "price": 1801,
+            "power": "4.4 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+          },
+          "Designer B Electric Heater (6kw)": {
+            "price": 1858,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+          },
+          " Huum Drop Heater - 4.5KW LOCAL CONTROL": {
+            "price": 2632,
+            "power": "4.5 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1744044494/huumdrop_new_raiiys.png"
+          },
+          " Huum Drop Heater - 45KW WIFI CONTROL": {
+            "price": 3208,
+            "power": "6 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1744044494/huumdrop_new_raiiys.png"
+          },
+          " Harvia KIP 4.5KW Sauna Heater": {
+            "price": 1377,
+            "power": "4.5 Kw",
+            "dimensions": "16 W × 11”H × 21 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+          },
+          " Harvia KIP 6KW Sauna Heater": {
+            "price": 1470,
+            "power": "6 Kw",
+            "dimensions": "16 W × 11”H × 21 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+          },
+          "Homecraft Revive Heater - 6KW": {
+            "price": 2640,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+          }
+        },
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+          },
+          "Supply_Install": {
+            "price": 1750,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+          }
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653426/torontosaunaco/Cubes/PU550%28Indoor%29/indoor550_dakclp.webp",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366458/torontosaunaco/Cubes/PU550%28Indoor%29/_DSC8866Web_pdb4te.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366461/torontosaunaco/Cubes/PU550%28Indoor%29/_DSC8904Web_iks9pm.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366456/torontosaunaco/Cubes/PU550%28Indoor%29/_DSC8856Web_hgpod8.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366449/torontosaunaco/Cubes/PU550%28Indoor%29/PU550-_3_-web_z1g9p7.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "owner": "torontosaunco",
+        "name": "Indoor Sauna - 572E",
+        "type": "Indoor-Cub",
+        "collectionType": "Indoor-Cub",
+        "series": "570 Indoor",
+        "description": "The Pure Cube PU570 Indoor Sauna is a stunning design that features a full glass door between the large window panels on the front wall. Revamp your exclusive indoor space with optional semi-privacy panels that still feature the double pane tempered glass with a fixed cedar grill on the outside. The Pure Cube PU570 Indoor Sauna is an oasis to wholeheartedly enjoy the end of your day with loved ones",
+        "dimension": "86 x 84 (in)",
+        "price": 10973,
+        "views": {},
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+          },
+          "Clear Cedar": {
+            "price": 3450,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+          }
+        },
+        "stove_type": {
+          "Designer B Electric Heater (6kw)": {
+            "price": 1858,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361756/torontosaunaco/Wood_Stove_Install_img/Designer_B_6KW_Sauna_Heater_with_Rocks_1788_xjwjmu.jpg"
+          },
+          " Huum Drop Heater - 6KW LOCAL CONTROL": {
+            "price": 2810,
+            "power": "6 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1744044494/huumdrop_new_raiiys.png"
+          },
+          " Huum Drop Heater - 6KW WIFI CONTROL": {
+            "price": 3386,
+            "power": "6 Kw",
+            "dimensions": "10 x 11 x 23 (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1744044494/huumdrop_new_raiiys.png"
+          },
+          " Huum Hive Heater - 6KW LOCAL CONTROL": {
+            "price": 4294,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+          },
+          " Huum Hive Heater - 6KW WIFI CONTROL": {
+            "price": 4870,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464088/torontosaunaco/stoves/HUUMHIVE_Local_6kw__3600_ubtwqn.jpg"
+          },
+          " Harvia KIP 6KW Sauna Heater": {
+            "price": 1470,
+            "power": "6 Kw",
+            "dimensions": "16 W × 11”H × 21 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464062/torontosaunaco/stoves/Harvia_KIP_8KW_Sauna_Heater_with_Rocks__1600_ajkagr.jpg"
+          },
+          "Homecraft Revive Heater - 6KW": {
+            "price": 2640,
+            "power": "6 Kw",
+            "dimensions": "16-1/2 W × 23”H × 11 D (in)",
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
+          }
+        },
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+          },
+          "Supply_Install": {
+            "price": 1750,
+            "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+          }
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653483/torontosaunaco/Cubes/PU570%28Indoor%29/Luxurious4-PersonIndoor570PureCubeSauna_0cf8fb6d-a9a4-4ef6-acc3-8d12cd302cd9_900x_pxeu5f.webp",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366472/torontosaunaco/Cubes/PU570%28Indoor%29/_DSC9015Print_lmbzuk.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366463/torontosaunaco/Cubes/PU550%28Indoor%29/_DSC8913Web_tabu9y.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366469/torontosaunaco/Cubes/PU570%28Indoor%29/PU570-PrivPanels_Indoors-web_juxvni.jpg",
+          "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720366472/torontosaunaco/Cubes/PU570%28Indoor%29/_DSC9015Print_lmbzuk.jpg"
+        ],
+        "is_featured": false,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
+      }
+]

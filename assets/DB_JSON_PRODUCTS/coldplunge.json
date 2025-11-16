@@ -1,7 +1,5 @@
 {
-    "_id": {
-        "$oid": "668af06648215c199c422a66"
-      },
+   
     "owner": "torontosaunco",
     "name": "The Arctic Plunge Tub",
     "type": "Cold Plunge",
