@@ -139,7 +139,7 @@ const Signature = () => {
                         View More
                       </div>
                       {sauna.name === "Studio 6 Mini" && (
-                        <div className="text-white bg-black text-md rounded-lg px-2 py-2 ml-12 md:ml-24 leading-relaxed font-archivo font-normal">
+                        <div className="text-white bg-black text-md rounded-lg px-2 py-2 ml-4 md:ml-24 leading-relaxed font-archivo font-normal">
                           Black Friday Sale
                         </div>
                       )}
