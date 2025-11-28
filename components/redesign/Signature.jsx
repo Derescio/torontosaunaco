@@ -138,6 +138,11 @@ const Signature = () => {
                       <div className="text-black bg-[#BF9774]/50 text-md rounded-lg px-2 py-2 leading-relaxed font-archivo font-normal hover:bg-white/90">
                         View More
                       </div>
+                      {sauna.name === "Studio 6 Mini" && (
+                        <div className="text-white bg-black text-md rounded-lg px-2 py-2 ml-12 md:ml-24 leading-relaxed font-archivo font-normal">
+                          Black Friday Sale
+                        </div>
+                      )}
                     </div>
 
                     {/* Features */}
