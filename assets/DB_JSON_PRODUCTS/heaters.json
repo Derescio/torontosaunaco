@@ -1,0 +1,146 @@
+{
+    "name": "Harvia KIP 8 kW Electric Sauna Heater",
+    "model": "KIP-8",
+    "power": 8,
+    "description": "The Harvia KIP 8 kW Electric Sauna Heater (Built-in Controls) is a sleek, wall-mounted electric sauna heater designed for sauna rooms from 250 to 425 cubic feet. Its built-in mechanical controls allow for easy temperature adjustment, a 1-hour runtime, and a delayed start function of up to 8 hours—ideal for preheating your sauna. The heater automatically shuts off after 60 minutes for safety. Crafted from durable stainless steel and equipped with a protective rock guard, the KIP is built for long-lasting performance. Its stone compartment holds up to 44 lb (20 kg) of sauna stones, delivering steady, traditional heat and steam. The dual-wall design helps reduce exterior temperatures, making it a safe and compact choice for tight installations. Made in Finland by Harvia—a global leader in sauna equipment—the KIP 8 offers dependable quality and performance at a reasonable price.",
+    "basePrice": 1550,
+    "specifications": {
+      "roomSize": {
+        "min": 10,
+        "max": 16,
+        "imperial_min": 354,
+        "imperial_max": 566
+      },
+      "stoneCapacity": {
+        "weight": 150,
+        "imperial_weight": 331,
+        "diameter": {
+          "min": 5,
+          "max": 10,
+          "imperial_min": 2,
+          "imperial_max": 4
+        }
+      },
+      "dimensions": {
+        "height": {
+          "metric": 750,
+          "imperial": 29.6
+        },
+        "width": {
+          "metric": 390,
+          "imperial": 15.35
+        },
+        "depth": {
+          "metric": 335,
+          "imperial": 13.2
+        }
+      },
+      "weight": {
+        "metric": 16,
+        "imperial": 35.3
+      }
+    },
+    "options": {
+      "stones": [
+        {
+          "type": "Standard Stones",
+          "description": "",
+          "weight": {
+            "metric": 150,
+            "imperial": 331
+          },
+          "price": 880,
+          "isDefault": true
+        },
+        {
+          "type": "No Stones",
+          "description": "",
+          "weight": {
+            "metric": 0,
+            "imperial": 0
+          },
+          "price": 0,
+          "isDefault": false
+        }
+      ],
+      "controls": [
+        {
+          "type": "UKU Local Control",
+          "description": "Standard wall-mounted control panel",
+          "price": 1115,
+          "isDefault": true
+        },
+        {
+          "type": "UKU WiFi Control",
+          "description": "Smart control with mobile app connectivity",
+          "price": 1660,
+          "isDefault": false
+        }
+      ]
+     
+    },
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763258799/Harvia_KIP_1_ycw7vg.png",
+        "alt": "HUUM DROP Electric Sauna Heater 6kW - Front View",
+        "isPrimary": true
+      },
+      {
+        "url": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763258799/Harvia_KIP_2_k9ivjr.png",
+        "alt": "HUUM DROP Electric Sauna Heater 6kW - Side View",
+        "isPrimary": false
+      },
+      {
+        "url": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763258799/Harvia_KIP_3_ccvdbp.png",
+        "alt": "HUUM DROP Electric Sauna Heater 6kW - Installed View",
+        "isPrimary": false
+      },
+      {
+        "url": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1763258799/Harvia_KIP_1_ycw7vg.png",
+        "alt": "HUUM DROP Electric Sauna Heater 6kW - Detail View",
+        "isPrimary": false
+      }
+    ],
+    "warranty": {
+      "duration": 3,
+      "description": "3-year manufacturer warranty on electrical components"
+    },
+    "installation": {
+      "requirements": [
+        "Professional installation required",
+        "240V electrical connection",
+        "UKU sauna control system required",
+        "Minimum 55 kg of sauna stones with 5-10 cm diameter"
+      ],
+      "safetyDistances": {
+        "sides": 150,
+        "front": 200,
+        "back": 150,
+        "top": 200
+      }
+    },
+    "features": [
+      {
+        "title": "Large Stone Capacity",
+        "description": "Holds up to 55 kg of stones for optimal heat retention and steam generation"
+      },
+      {
+        "title": "Space-Saving Design",
+        "description": "Wall-mounted design saves floor space while maintaining high performance"
+      },
+      
+      {
+        "title": "Elegant Aesthetics",
+        "description": "Unique water drop design adds a sophisticated touch to your sauna"
+      }
+    ],
+    "isFeatured": true,
+    "createdAt": {
+      "$date": "2025-05-01T23:52:35.621Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-01T23:52:35.621Z"
+    },
+    "__v": 0
+  }
+
