@@ -234,7 +234,7 @@ const BestSellers = () => {
             </Link>
             <Link
               href="/quote"
-              className="inline-block bg-[#4E7302] text-white text-lg font-archivo font-light px-8 md:px-12 py-4 rounded-xl hover:bg-[#3d5a1f] transition-colors"
+              className="inline-block bg-black/90 text-white text-lg font-archivo font-light px-8 md:px-12 py-4 rounded-xl hover:bg-[#3d5a1f] transition-colors"
             >
               Get a Quote
             </Link>

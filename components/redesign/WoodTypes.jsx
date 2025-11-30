@@ -59,7 +59,7 @@ const WoodTypes = () => {
         {cards.map((card, index) => (
           <div
             key={card.id}
-            className="bg-[#4E7302] text-white overflow-hidden flex flex-col  font-archivo  font-light rounded-lg"
+            className="bg-black/90 text-white overflow-hidden flex flex-col  font-archivo  font-light rounded-lg"
           >
             {/* Image with rounded top corners - using aspect ratio for better scaling */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-b-lg">
