@@ -12,10 +12,10 @@ const InfoSection = () => {
             {/* <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">
               Wellness
             </p> */}
-            <h2 className="text-xl md:text-2xl text-[#4E7302] leading-tight mb-8 font-atkinson font-semibold">
+            <h2 className="text-xl md:text-2xl text-[#000] leading-tight mb-8 font-atkinson font-semibold">
               Transform Your Home into a Haven of Tranquility: Modern Saunas for
               Ultimate Relaxation. Modern Cedar Saunas in Toronto – Relaxation &
-              Wellness at Home
+              Wellness at Home.
             </h2>
           </div>
 
@@ -46,7 +46,7 @@ const InfoSection = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-[#4E7302] mb-2">Pure wellness</h3>
+                <h3 className="font-bold text-[#000] mb-2">Pure wellness</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   Forged from raw cedar and precision engineering, our saunas
                   breathe life into ancient healing traditions.
@@ -70,9 +70,7 @@ const InfoSection = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-[#4E7302] mb-2">
-                  Crafted design
-                </h3>
+                <h3 className="font-bold text-[#000] mb-2">Crafted design</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   We build more than saunas. We create sanctuaries of heat,
                   healing, and human potential.
