@@ -3,6 +3,15 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// Simple sale config for DX-friendly toggling
+// Toggle SALE.active to true and adjust label/discount/appliesTo as needed
+const SALE = {
+  active: false,
+  label: "10% OFF Black Friday",
+  discount: 0.1,
+  appliesTo: (sauna) => sauna.name === "The Mini" || sauna.name === "The Max",
+};
+
 const BestSellers = () => {
   const [visibleCards, setVisibleCards] = useState([
     false,
@@ -130,8 +139,7 @@ const BestSellers = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {bestSellers.map((sauna, index) => {
-              const isStudio6Sale =
-                sauna.name === "The Mini" || sauna.name === "The Max";
+              const isStudio6Sale = SALE.active && SALE.appliesTo(sauna);
               const originalPriceNumber = Number(
                 (sauna.price || "").replace(/[^0-9]/g, "") || 0
               );
@@ -172,7 +180,7 @@ const BestSellers = () => {
                         {/* Sale Banner */}
                         {isStudio6Sale && (
                           <div className="absolute top-4 right-4 mt-[-2px] bg-black/80 text-white px-3 py-1 rounded-full text-xs font-semibold font-archivo">
-                            10% OFF Black Friday
+                            {SALE.label}
                           </div>
                         )}
                       </div>
@@ -194,7 +202,10 @@ const BestSellers = () => {
                                 {sauna.price}
                               </span>
                               <span className="font-semibold text-sm">
-                                Starting at ${discountedPrice.toLocaleString()}
+                                Starting at $
+                                {Math.round(
+                                  originalPriceNumber * (1 - SALE.discount)
+                                ).toLocaleString()}
                               </span>
                             </span>
                           ) : (
@@ -244,5 +255,5 @@ const BestSellers = () => {
     </div>
   );
 };
-
+// cname.vercel-dns.com.
 export default BestSellers;
