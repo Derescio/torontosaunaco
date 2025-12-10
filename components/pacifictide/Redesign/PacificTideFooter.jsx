@@ -7,7 +7,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="mt-12">
-      <footer className="font-archivo tracking-wide bg-[#4E7302] py-10 px-10">
+      <footer className="font-archivo tracking-wide bg-black/90 py-10 px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo Column */}
           <div className="flex flex-col">
