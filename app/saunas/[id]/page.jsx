@@ -115,6 +115,7 @@ const SaunaPage = () => {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
+      postalcode: e.target.postalcode.value,
       message: e.target.message.value,
       subject: product.name,
     };
@@ -395,7 +396,6 @@ const SaunaPage = () => {
                 </p>
               </div>
             </section>
-
             {/* Main Content Section */}
             <section className="py-12 md:py-16">
               <div className="container mx-auto px-4 max-w-7xl">
@@ -462,7 +462,6 @@ const SaunaPage = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="space-y-6">
                   {/* Product Info & Options */}
                   <div>
@@ -1078,7 +1077,6 @@ const SaunaPage = () => {
                     </div>
                   </div>
                 </div>
-
                 {/* Contact Form Section */}
                 <div className="bg-gray-50 p-8 rounded-xl">
                   <h2 className="text-2xl font-semibold text-gray-900 mb-2 font-archivo">
@@ -1137,6 +1135,22 @@ const SaunaPage = () => {
                     </div>
                     <div>
                       <label
+                        htmlFor="postalcode"
+                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
+                      >
+                        Postal Code
+                      </label>
+                      <input
+                        type="text"
+                        id="postalcode"
+                        name="postalcode"
+                        required
+                        placeholder="Enter your postal code"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none font-archivo"
+                      />
+                    </div>
+                    <div>
+                      <label
                         htmlFor="message"
                         className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
                       >
@@ -1157,6 +1171,93 @@ const SaunaPage = () => {
                       Send Message
                     </button>
                   </form>
+                </div>
+                <div>
+                  {/* Media & Documents */}
+                  {(product?.video ||
+                    (product?.documents && product.documents.length > 0) ||
+                    product?.pdf) && (
+                    <div className="space-y-4 mt-8">
+                      {/* Video Preview */}
+                      {product?.video && (
+                        <div className="rounded-xl overflow-hidden border border-gray-200">
+                          <video
+                            src={product.video}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            controls
+                            poster={
+                              product?.images && product.images.length > 0
+                                ? product.images[0]
+                                : undefined
+                            }
+                            className="w-full h-auto"
+                          />
+                        </div>
+                      )}
+
+                      {/* Documents */}
+                      {(product?.documents && product.documents.length > 0) ||
+                      product?.pdf ? (
+                        <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                          <h3 className="font-semibold mb-3 font-archivo">
+                            Documentation for {product?.name}
+                          </h3>
+                          <ul className="space-y-2">
+                            {Array.isArray(product?.documents) &&
+                              product.documents.map((doc, idx) => (
+                                <li
+                                  key={`${doc?.url || idx}`}
+                                  className="font-archivo"
+                                >
+                                  <a
+                                    href={doc?.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    download
+                                    className="text-[#4E7302] hover:underline"
+                                  >
+                                    {doc?.label || `Document ${idx + 1}`}
+                                  </a>
+                                </li>
+                              ))}
+                            {/* Fallback single PDF */}
+                            {product?.pdf && (
+                              <li className="font-archivo">
+                                <a
+                                  href="/pdf/Toronto Sauna Co - Spec Book.pdf"
+                                  download
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[#4E7302] hover:underline"
+                                >
+                                  Download PDF
+                                </a>
+                                {/* <a
+                                  href="/Damion_Wilson_CV.pdf"
+                                  download
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-block"
+                                >
+                                  <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-[#8b5cf6] text-[#8b5cf6] hover:bg-[#8b5cf6] hover:text-white px-8"
+                                  >
+                                    <ArrowRight className="mr-2 h-5 w-5" />
+                                    Download CV
+                                  </Button>
+                                </a> */}
+                              </li>
+                            )}
+                          </ul>
+                        </div>
+                      ) : null}
+                    </div>
+                  )}
                 </div>
               </div>
             </section>

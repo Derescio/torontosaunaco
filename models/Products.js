@@ -87,6 +87,20 @@ const ProductsSchema = new Schema(
       // Can be Object with keys like "Huum Drop 9kW": { price: 3307, remote: true, wifi: false }
       // or Array: [{ name: "Huum Drop 9kW", price: 3307, remote: true, wifi: false, power: "9kW", image: "..." }]
     },
+    // Optional sample video URL for product preview
+    video: {
+      type: String,
+    },
+    // Multiple product documents (e.g., spec sheets, install guides)
+    documents: [
+      new Schema(
+        {
+          label: { type: String },
+          url: { type: String },
+        },
+        { _id: false }
+      ),
+    ],
     // Additional upgrades/features with prices (new format)
     additional_upgrades: [
       {
