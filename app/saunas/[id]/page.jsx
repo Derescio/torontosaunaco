@@ -68,7 +68,16 @@ export async function generateMetadata({ params }) {
         card: "summary_large_image",
         title: `${product.name} | Toronto Sauna Co.`,
         description,
-        images: product.images?.[0] ? [product.images[0]] : [],
+        images: product.images?.[0]
+          ? [
+              {
+                url: product.images[0],
+                width: 1200,
+                height: 630,
+                alt: product.name,
+              },
+            ]
+          : [],
       },
     };
   } catch (error) {
