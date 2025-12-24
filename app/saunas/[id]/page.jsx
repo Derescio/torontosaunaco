@@ -62,7 +62,7 @@ export async function generateMetadata({ params }) {
             ]
           : [],
         locale: "en_CA",
-        type: "product",
+        type: "website",
       },
       twitter: {
         card: "summary_large_image",
