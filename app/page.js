@@ -27,15 +27,15 @@ export const metadata = {
   authors: [{ name: "Toronto Sauna Co." }],
   creator: "Toronto Sauna Co.",
   publisher: "Toronto Sauna Co.",
-  metadataBase: new URL("https://www.torontosaunaco.com"),
+  metadataBase: new URL("https://www.thetorontosaunaco.com"),
   alternates: {
-    canonical: "https://www.torontosaunaco.com",
+    canonical: "https://www.thetorontosaunaco.com",
   },
   openGraph: {
     title: "Toronto Sauna Co. | Premium Cedar Saunas in Ontario",
     description:
       "Discover premium outdoor & indoor cedar saunas. Barrel, cube & custom sauna kits made in Canada. Free consultation available.",
-    url: "https://www.torontosaunaco.com",
+    url: "https://www.thetorontosaunaco.com",
     siteName: "Toronto Sauna Co.",
     images: [
       {
