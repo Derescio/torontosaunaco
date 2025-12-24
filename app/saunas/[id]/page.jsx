@@ -36,13 +36,13 @@ export async function generateMetadata({ params }) {
       product.description?.slice(0, 160) ||
       `Shop ${product.name} at Toronto Sauna Co.`;
 
-    const productUrl = `https://www.torontosaunaco.com/saunas/${id}`;
+    const productUrl = `https://www.thetorontosaunaco.com/saunas/${id}`;
 
     return {
       title: `${product.name} | Toronto Sauna Co.`,
       description,
       keywords: `${product.name}, sauna, cedar sauna, ${product.type || "outdoor sauna"}, toronto sauna, canada sauna`,
-      metadataBase: new URL("https://www.torontosaunaco.com"),
+      metadataBase: new URL("https://www.thetorontosaunaco.com"),
       alternates: {
         canonical: productUrl,
       },
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }) {
  * Generate Product JSON-LD structured data for rich snippets
  */
 function generateProductJsonLd(product, id) {
-  const productUrl = `https://www.torontosaunaco.com/saunas/${id}`;
+  const productUrl = `https://www.thetorontosaunaco.com/saunas/${id}`;
   const price = product.baseCost || product.price || product.startingFromPrice;
 
   return {
@@ -101,7 +101,7 @@ function generateProductJsonLd(product, id) {
     manufacturer: {
       "@type": "Organization",
       name: "Toronto Sauna Co.",
-      url: "https://www.torontosaunaco.com",
+      url: "https://www.thetorontosaunaco.com",
     },
     url: productUrl,
     sku: id,
@@ -118,17 +118,18 @@ function generateProductJsonLd(product, id) {
         availability: "https://schema.org/InStock",
         seller: {
           "@type": "Organization",
-          name: "Toronto Sauna Co.",
+          name: "The Toronto Sauna Co.",
         },
       },
     }),
-    ...(product.features && {
-      additionalProperty: product.features.map((feature) => ({
-        "@type": "PropertyValue",
-        name: "Feature",
-        value: feature,
-      })),
-    }),
+    ...(Array.isArray(product.features) &&
+      product.features.length > 0 && {
+        additionalProperty: product.features.map((feature) => ({
+          "@type": "PropertyValue",
+          name: "Feature",
+          value: feature,
+        })),
+      }),
   };
 }
 
