@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/assets/utils/authOptions";
 import OrderCard from "../../components/OrdersCard";
 import { fetchOrders } from "@/assets/utils/request";
+import { redirect } from "next/navigation";
 
 export const metadata = {
   title: "Orders | Toronto Sauna Co.",
@@ -15,12 +16,10 @@ const OrdersPage = async () => {
   const session = await getServerSession(authOptions);
   // const session = await getServerSession(authOptions);
 
-  // if (!session) {
-  // Redirect to sign in page if there's no session
-  //   return (
-  //     <div>Please sign in to view your orders.</div>
-  //   );
-  // }
+  if (!session) {
+    // Redirect to sign in page if there's no session
+    redirect("/signin");
+  }
 
   // Fetch orders on the server side
   const orders = await fetchOrders();

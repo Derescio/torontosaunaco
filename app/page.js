@@ -17,6 +17,59 @@ import Signature from "@/components/redesign/Signature";
 //import Signature_New from "@/components/redesign/Signature_New";
 import WoodTypes from "@/components/redesign/WoodTypes";
 
+// SEO Metadata for Homepage
+export const metadata = {
+  title: "Toronto Sauna Co. | Premium Cedar Saunas in Ontario, Canada",
+  description:
+    "Discover premium outdoor & indoor cedar saunas in Toronto. Barrel, cube & custom sauna kits proudly made in Canada. Cold plunges available. Free consultation!",
+  keywords:
+    "sauna toronto, outdoor sauna, cedar sauna, barrel sauna, cube sauna, indoor sauna, sauna ontario, sauna canada, cold plunge toronto, backyard sauna",
+  authors: [{ name: "Toronto Sauna Co." }],
+  creator: "Toronto Sauna Co.",
+  publisher: "Toronto Sauna Co.",
+  metadataBase: new URL("https://www.torontosaunaco.com"),
+  alternates: {
+    canonical: "https://www.torontosaunaco.com",
+  },
+  openGraph: {
+    title: "Toronto Sauna Co. | Premium Cedar Saunas in Ontario",
+    description:
+      "Discover premium outdoor & indoor cedar saunas. Barrel, cube & custom sauna kits made in Canada. Free consultation available.",
+    url: "https://www.torontosaunaco.com",
+    siteName: "Toronto Sauna Co.",
+    images: [
+      {
+        url: "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew",
+        width: 1200,
+        height: 630,
+        alt: "Toronto Sauna Co. - Premium Cedar Saunas",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Toronto Sauna Co. | Premium Cedar Saunas in Ontario",
+    description:
+      "Discover premium outdoor & indoor cedar saunas. Barrel, cube & custom sauna kits made in Canada.",
+    images: [
+      "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew",
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
 const HomePage = () => {
   return (
     <div className="">
@@ -28,8 +81,8 @@ const HomePage = () => {
       {/* <h1 className=" mt-6 text-3xl text-center text-[#4E7302] font-archivo font-light mb-1">
         Popular Saunas
       </h1> */}
-      <h2 className="mt-4 text-2xl text-center md:text-4xl lg:text-5xl font-light text-black mb-4  font-archivo ">
-        PopularSaunas
+      <h2 className="mt-4 text-2xl text-center md:text-4xl lg:text-5xl font-light text-black mb-4 font-archivo">
+        Popular Saunas
       </h2>
       <Carousel2 />
       <WoodTypes />

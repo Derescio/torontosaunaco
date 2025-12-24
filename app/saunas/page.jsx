@@ -9,7 +9,37 @@ export const metadata = {
   description:
     "Discover premium cedar saunas in Toronto. Outdoor & indoor barrel, cube & custom sauna kits. Relax, recharge & enjoy cold plunges.",
   keywords:
-    "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me",
+    "sauna, toronto, ontario, canada, wellness, relaxation, steam, Best sauna shop in Ontario, Home Saunas near me, barrel sauna, cube sauna, backyard sauna",
+  metadataBase: new URL("https://www.torontosaunaco.com"),
+  alternates: {
+    canonical: "https://www.torontosaunaco.com/saunas",
+  },
+  openGraph: {
+    title: "Saunas in Toronto | Outdoor & Indoor Cedar Saunas",
+    description:
+      "Discover premium cedar saunas in Toronto. Outdoor & indoor barrel, cube & custom sauna kits. Relax, recharge & enjoy cold plunges.",
+    url: "https://www.torontosaunaco.com/saunas",
+    siteName: "Toronto Sauna Co.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762113337/torontosaunaco/IMG_1529_oscb6b.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Toronto Sauna Co. - Premium Cedar Saunas Collection",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Saunas in Toronto | Outdoor & Indoor Cedar Saunas",
+    description:
+      "Discover premium cedar saunas in Toronto. Barrel, cube & custom sauna kits. Relax & recharge!",
+    images: [
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762113337/torontosaunaco/IMG_1529_oscb6b.jpg",
+    ],
+  },
 };
 
 const Saunas = async () => {

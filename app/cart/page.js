@@ -1,22 +1,44 @@
-'use client'
-import { Button } from '@/components/ui/button'
-import React, {useEffect, useState} from 'react'
-import { useRouter } from 'next/navigation';
-import { useSelector } from 'react-redux';
-import { removeFromCart, updateCartItemQuantity , clearCart,hydrateCart} from "@/redux/slices/cartSlice";
-import { useDispatch  } from 'react-redux';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import { Button } from "@/components/ui/button";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  removeFromCart,
+  updateCartItemQuantity,
+  clearCart,
+  hydrateCart,
+} from "@/redux/slices/cartSlice";
+import Image from "next/image";
+import Link from "next/link";
+import toast from "react-hot-toast";
+import { Send, Trash2, Minus, Plus, ShoppingBag } from "lucide-react";
+
+// Feature flag for checkout - set to true when ready for e-commerce
+const ENABLE_CHECKOUT = false;
 
 const CartPage = () => {
-const dispatch = useDispatch();
-const {cartItems} = useSelector((state) => state.cart);
-const [suBtotal, setSubTotal] = useState(0);
-const [shippingCost, setShippingCost] = useState(0);
-const router = useRouter();
+  const dispatch = useDispatch();
+  const { cartItems } = useSelector((state) => state.cart);
+  const [suBtotal, setSubTotal] = useState(0);
+  const [shippingCost, setShippingCost] = useState(0);
+  const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
+  // Quote form state
+  const [quoteForm, setQuoteForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    postalcode: "",
+    address: "",
+    city: "",
+    province: "",
+    message: "",
+  });
 
-const calculateShippingCost = (subTotal) => {
+  const calculateShippingCost = (subTotal) => {
     switch (true) {
       case subTotal > 5000:
         setShippingCost(200);
@@ -32,165 +54,571 @@ const calculateShippingCost = (subTotal) => {
     }
   };
 
-useEffect(() => {
-    //Ensure that the initial state is consistent between the server and the client. 
-    //Client-side effect to sync the state after the component mounts. 
-    //  Call the hydrate cart action to restore the state from the localStorage.
-    
+  useEffect(() => {
     dispatch(hydrateCart());
-}, [ dispatch]);
+  }, [dispatch]);
 
-useEffect(() => {
-    const Subtotal = () => {
-        if(!cartItems || undefined){
-            return setSubTotal(0);
-        } else{
-            const total = cartItems.reduce((acc, item) => {
-                return acc + (Number(item.price) * Number(item.qty));
-            }, 0);
-            setSubTotal(total);
-           calculateShippingCost(total)
-        };
-        }
+  useEffect(() => {
+    if (!cartItems) {
+      setSubTotal(0);
+      return;
+    }
+    const total = cartItems.reduce((acc, item) => {
+      return acc + Number(item.price) * Number(item.qty);
+    }, 0);
+    setSubTotal(total);
+    calculateShippingCost(total);
+  }, [cartItems]);
 
-    Subtotal();
-
-}, [cartItems]);
-
-const AddDecimals = (num) => {
+  const AddDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
   };
 
-const tax = AddDecimals((suBtotal + shippingCost) * 0.13)
-const handleItemIncrement = (id) => {
+  const tax = AddDecimals((suBtotal + shippingCost) * 0.13);
+  const totalCost = AddDecimals(suBtotal + shippingCost + parseFloat(tax));
 
-    const item = cartItems.find(item => item.id === id);
+  const handleItemIncrement = (id) => {
+    const item = cartItems.find((item) => item.id === id);
     if (item) {
-        const newQty = item.qty + 1;
-        dispatch(updateCartItemQuantity({ id, qty: newQty }));
+      dispatch(updateCartItemQuantity({ id, qty: item.qty + 1 }));
     }
-}
-const handleItemDecrement = (id) => {
-    const item = cartItems.find(item => item.id === id);
+  };
+
+  const handleItemDecrement = (id) => {
+    const item = cartItems.find((item) => item.id === id);
     if (item && item.qty > 1) {
-        const newQty = item.qty - 1;
-        dispatch(updateCartItemQuantity({ id, qty: newQty }));
+      dispatch(updateCartItemQuantity({ id, qty: item.qty - 1 }));
     }
-}
+  };
 
-const handleEmptyCart = () => {
-   
+  const handleEmptyCart = () => {
     dispatch(clearCart());
-}
+  };
 
-const handleItemDelete = (id) => {
-    // console.log(id)
+  const handleItemDelete = (id) => {
     dispatch(removeFromCart(id));
-}
+  };
 
-const handleBuyNow = () => {
-  // Navigate to the checkout page
-  router.push('/precheckout');
-};
-// const tax = AddDecimals((suBtotal + shippingCost) * 0.13)
-const totalCost = AddDecimals(suBtotal + shippingCost + parseFloat(tax))
+  // Hidden checkout handler - preserved for future use
+  const handleBuyNow = () => {
+    router.push("/precheckout");
+  };
+
+  const handleQuoteFormChange = (e) => {
+    const { name, value } = e.target;
+    setQuoteForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleRequestQuote = async (e) => {
+    e.preventDefault();
+
+    if (!cartItems || cartItems.length === 0) {
+      toast.error("Your cart is empty");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch("/api/emails", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...quoteForm,
+          subject: `Quote Request - ${cartItems.length} item(s)`,
+          isCartQuote: true,
+          cartItems: cartItems.map((item) => ({
+            name: item.name,
+            price: item.price,
+            qty: item.qty,
+            image: item.image,
+            configuration: item.configuration,
+            selectedOptions: item.selectedOptions,
+          })),
+          cartSummary: {
+            subtotal: suBtotal,
+            shipping: shippingCost,
+            tax: parseFloat(tax),
+            total: parseFloat(totalCost),
+          },
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.message === "Email sent successfully!") {
+        toast.success(
+          "Quote request sent successfully! We will contact you shortly.",
+          { duration: 4000 }
+        );
+        setQuoteForm({
+          name: "",
+          email: "",
+          phone: "",
+          postalcode: "",
+          address: "",
+          city: "",
+          province: "",
+          message: "",
+        });
+        setShowQuoteForm(false);
+        // Optionally clear cart after successful quote
+        // dispatch(clearCart());
+      } else {
+        toast.error("Error sending quote request. Please try again.", {
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      console.error("Error sending quote:", error);
+      toast.error("Error sending quote request. Please try again.", {
+        duration: 3000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  /**
+   * Render configuration details for a cart item
+   */
+  const renderConfiguration = (item) => {
+    const config = item.configuration;
+    if (!config) {
+      // Fallback to legacy selectedOptions
+      if (item.selectedOptions) {
+        return Object.entries(item.selectedOptions)
+          .filter(([, option]) => option !== null)
+          .map(([key, option]) => (
+            <p key={key} className="text-sm text-gray-600">
+              <span className="capitalize">{key}:</span> {option?.type}
+              {option?.price > 0 && ` (+$${option.price.toLocaleString()})`}
+            </p>
+          ));
+      }
+      return null;
+    }
+
+    const details = [];
+
+    if (config.size) {
+      details.push(
+        <p key="size" className="text-sm text-gray-600">
+          Size: {config.size.label || config.size.key}
+        </p>
+      );
+    }
+
+    if (config.woodType) {
+      details.push(
+        <p key="wood" className="text-sm text-gray-600">
+          Wood: {config.woodType.name}
+        </p>
+      );
+    }
+
+    if (config.stove) {
+      details.push(
+        <p key="stove" className="text-sm text-gray-600">
+          Heater: {config.stove.name}
+          {config.stove.wifi && " (WiFi)"}
+        </p>
+      );
+    }
+
+    if (config.installation) {
+      details.push(
+        <p key="installation" className="text-sm text-gray-600">
+          Installation: {config.installation.name}
+        </p>
+      );
+    }
+
+    if (config.delivery) {
+      details.push(
+        <p key="delivery" className="text-sm text-gray-600">
+          Delivery:{" "}
+          {config.delivery.included
+            ? "Included"
+            : `$${config.delivery.cost.toLocaleString()}`}
+        </p>
+      );
+    }
+
+    if (config.upgrades && config.upgrades.length > 0) {
+      details.push(
+        <p key="upgrades" className="text-sm text-gray-600">
+          Add-ons: {config.upgrades.map((u) => u.name).join(", ")}
+        </p>
+      );
+    }
+
+    return details;
+  };
 
   return (
-    <div>
-      <div className="font-sans max-w-4xl max-md:max-w-xl mx-auto p-4">
-            <h1 className="text-2xl font-extrabold text-gray-800">Your Cart</h1>
-            <div className="grid md:grid-cols-3 gap-4 mt-8">
-                <div className="md:col-span-2 space-y-4">
-
-                    {cartItems && cartItems.length > 0 ? cartItems.map((item, index)=> (
-        <div key={index} className="flex gap-4 bg-white px-4 py-6 rounded-md shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
-        <div className="flex gap-4">
-        <div className="w-28 h-28 max-sm:w-24 max-sm:h-24 shrink-0">
-          <Image src={item.image || ''} width={100} height={100} alt={item.name} priority={true}  className="w-full h-full object-contain" />
-          {/* <img src='https://readymadeui.com/images/watch1.webp' className="w-full h-full object-contain" /> */}
-         </div>
-
-         <div className="flex flex-col gap-4">
-          <div>
-              <h3 className="text-base font-normal text-gray-800 font-playfair">{item.name}</h3>
-              
-          </div>
-          {item?.selectedOptions && item?.selectedOptions!==null &&(
-            <div>
-              {Object.entries(item.selectedOptions).map(([key, option]) => (
-                <p key={key} className='font-roboto text-sm text-gray-600'>
-                  {key}: {option?.type} (${option?.price})
-                </p>
-              ))}
-            </div>
-          )}
-{/* <span>{item.selectedOptions ?'True':"False"}</span> */}
-
-          <div className="mt-auto flex items-center gap-3">
-              <button type="button"
-              onClick={() => handleItemDecrement(item.id)}
-                  className="flex items-center justify-center w-5 h-5 bg-gray-400 outline-none rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-2 fill-white" viewBox="0 0 124 124">
-                      <path d="M112 50H12C5.4 50 0 55.4 0 62s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z" data-original="#000000"></path>
-                  </svg>
-              </button>
-              <span className="font-bold text-sm leading-[18px]">{item.qty}</span>
-              <button type="button"
-              onClick={() => handleItemIncrement(item.id)}
-                  className="flex items-center justify-center w-5 h-5 bg-gray-400 outline-none rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-2 fill-white" viewBox="0 0 42 42">
-                      <path d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z" data-original="#000000"></path>
-                  </svg>
-              </button>
-          </div>
-      </div>
-  </div>
-
-  <div className="ml-auto flex flex-col">
-
-      <div className="flex items-start gap-4 justify-end ">
-            <Button className="text-sm font-semibold text-gray-800" variant="link" onClick={() => {handleItemDelete(item.id)}}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 cursor-pointer fill-gray-400 inline-block" viewBox="0 0 24 24">
-              <path d="M19 7a1 1 0 0 0-1 1v11.191A1.92 1.92 0 0 1 15.99 21H8.01A1.92 1.92 0 0 1 6 19.191V8a1 1 0 0 0-2 0v11.191A3.918 3.918 0 0 0 8.01 23h7.98A3.918 3.918 0 0 0 20 19.191V8a1 1 0 0 0-1-1Zm1-3h-4V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2H4a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2ZM10 4V3h4v1Z" data-original="#000000"></path>
-              <path d="M11 17v-7a1 1 0 0 0-2 0v7a1 1 0 0 0 2 0Zm4 0v-7a1 1 0 0 0-2 0v7a1 1 0 0 0 2 0Z" data-original="#000000"></path>
-          </svg>
-          </Button>
-      </div>
-    <h3 className="text-base font-bold text-gray-800 mt-auto">{`$${(item.price * item.qty).toLocaleString()}.00`}</h3>
-  </div>
-</div>
-                    )) :(
-                    <p> Cart is Empty </p>)
-                    }
-                </div>
-                <div className="bg-white rounded-md px-4 py-6 h-max shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
-                    <ul className="text-gray-800 space-y-4">
-                        <li className="flex flex-wrap gap-4 text-sm">Subtotal <span className="ml-auto font-bold">${`${suBtotal.toLocaleString()}.00`}</span></li>
-                        <li className="flex flex-wrap gap-4 text-sm">Shipping <span className="ml-auto font-bold">${`${shippingCost.toLocaleString()}.00`}</span></li>
-                        
-                        <li className="flex flex-wrap gap-4 text-sm">Tax <span className="ml-auto font-bold">${`${tax.toLocaleString()}`}</span></li>
-                        <hr className="border-gray-300" />
-                        <li className="flex flex-wrap gap-4 text-sm font-bold">Total <span className="ml-auto">{`$${totalCost.toLocaleString()}`}</span></li>
-                    </ul>
-
-                    <div className=" flex flex-col items-center mt-8 space-y-2">
-                        <button type="button" 
-                        onClick={handleBuyNow}
-                        className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-gray-800 hover:bg-gray-900 text-white rounded-md">Buy Now</button>
-                        <h3> or</h3>
-                        <Link href={'/'}>
-                        <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent hover:bg-gray-100 text-gray-800 border border-gray-300 rounded-md">Continue Browsing</button>
-                        </Link>
-                    </div>
-                </div>
-                
-                <Button className="bg-black text-white" onClick={handleEmptyCart}>
-                    Empty Cart
-                </Button>
-            </div>
+    <div className="min-h-screen bg-gray-50">
+      <div className="font-sans max-w-6xl mx-auto p-4 md:p-8">
+        {/* Header */}
+        <div className="flex items-center gap-3 mb-8">
+          {/* <ShoppingBag className="w-8 h-8 text-[#4E7302]" /> */}
+          <h1 className="text-3xl font-bold text-gray-800 font-archivo">
+            Sauna Request Details
+          </h1>
+          {/* <Link href="/">
+            <button className="text-gray-500 hover:text-gray-700 transition-colors">
+              <Home className="w-5 h-5" />
+            </button>
+          </Link> */}
         </div>
-    </div>
-  )
-}
+        <div className="text-gray-500 text-lg mb-4 font-archivo">
+          <p className="max-w-7xl mx-auto text-center">
+            Review your selections below and submit your details. A member of
+            our team will contact you shortly to have a conversation and discuss
+            next steps. No payment required at this stage. Thanks for your
+            interest!
+          </p>
+        </div>
 
-export default CartPage
+        {cartItems && cartItems.length > 0 ? (
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Cart Items */}
+            <div className="lg:col-span-2 space-y-4">
+              {cartItems.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex gap-4 bg-white p-4 md:p-6 rounded-xl shadow-sm border border-gray-100"
+                >
+                  {/* Image */}
+                  <div className="w-24 h-24 md:w-32 md:h-32 shrink-0 rounded-lg overflow-hidden bg-gray-100">
+                    {item.image && (
+                      <Image
+                        src={item.image}
+                        width={128}
+                        height={128}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+
+                  {/* Details */}
+                  <div className="flex-1 flex flex-col">
+                    <div className="flex justify-between items-start">
+                      <h3 className="text-lg font-semibold text-gray-800 font-archivo">
+                        {item.name}
+                      </h3>
+                      <button
+                        onClick={() => handleItemDelete(item.id)}
+                        className="text-gray-400 hover:text-red-500 transition-colors p-1"
+                      >
+                        <Trash2 className="w-5 h-5" />
+                      </button>
+                    </div>
+
+                    {/* Configuration */}
+                    <div className="mt-2 space-y-1">
+                      {renderConfiguration(item)}
+                    </div>
+
+                    {/* Quantity and Price */}
+                    <div className="mt-auto pt-4 flex items-center justify-between">
+                      {/* Quantity Controls */}
+                      <div className="flex items-center gap-2 bg-gray-100 rounded-lg">
+                        <button
+                          onClick={() => handleItemDecrement(item.id)}
+                          className="p-2 hover:bg-gray-200 rounded-l-lg transition-colors"
+                          disabled={item.qty <= 1}
+                        >
+                          <Minus className="w-4 h-4" />
+                        </button>
+                        <span className="px-4 font-semibold">{item.qty}</span>
+                        <button
+                          onClick={() => handleItemIncrement(item.id)}
+                          className="p-2 hover:bg-gray-200 rounded-r-lg transition-colors"
+                        >
+                          <Plus className="w-4 h-4" />
+                        </button>
+                      </div>
+
+                      {/* Price */}
+                      <p className="text-xl font-bold text-[#4E7302]">
+                        ${(item.price * item.qty).toLocaleString()}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {/* Empty Cart Button */}
+              <button
+                onClick={handleEmptyCart}
+                className="text-red-500 hover:text-red-600 text-sm font-medium flex items-center gap-2"
+              >
+                <Trash2 className="w-4 h-4" />
+                Empty Cart
+              </button>
+            </div>
+
+            {/* Summary & Quote Form */}
+            <div className="space-y-6">
+              {/* Order Summary */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <h2 className="text-xl font-bold text-gray-800 mb-4 font-archivo">
+                  Order Summary
+                </h2>
+                <ul className="text-gray-700 space-y-3">
+                  <li className="flex justify-between">
+                    <span>Subtotal</span>
+                    <span className="font-semibold">
+                      ${suBtotal.toLocaleString()}
+                    </span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Estimated Shipping</span>
+                    <span className="font-semibold">
+                      ${shippingCost.toLocaleString()}
+                    </span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Tax (13% HST)</span>
+                    <span className="font-semibold">${tax}</span>
+                  </li>
+                  <hr className="border-gray-200 my-2" />
+                  <li className="flex justify-between text-lg font-semibold">
+                    <span>Estimated Total*</span>
+                    <span className="text-[#4E7302]">${totalCost}</span>
+                  </li>
+                </ul>
+
+                {/* Request Quote Button */}
+                <button
+                  onClick={() => setShowQuoteForm(true)}
+                  className="w-full mt-6 bg-black/90 hover:bg-[#3d5a02] text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
+                >
+                  <Send className="w-5 h-5" />
+                  Send Quote Request
+                </button>
+
+                {/* Checkout Button - Hidden by feature flag */}
+                {ENABLE_CHECKOUT && (
+                  <>
+                    <div className="text-center my-3 text-gray-400 text-sm">
+                      or
+                    </div>
+                    <button
+                      onClick={handleBuyNow}
+                      className="w-full bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                    >
+                      Proceed to Checkout
+                    </button>
+                  </>
+                )}
+
+                <Link href="/saunas">
+                  <button className="w-full mt-3 bg-transparent hover:bg-gray-100 text-gray-700 font-medium py-2 px-6 rounded-lg border border-gray-300 transition-colors">
+                    Continue Shopping
+                  </button>
+                </Link>
+              </div>
+
+              {/* Quote Form Modal/Inline */}
+              {showQuoteForm && (
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <h2 className="text-xl font-bold text-gray-800 mb-4 font-archivo">
+                    Your Contact Information
+                  </h2>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Fill in your details and we&apos;ll send you a personalized
+                    quote.
+                  </p>
+                  <form onSubmit={handleRequestQuote} className="space-y-4">
+                    <div>
+                      <label
+                        htmlFor="quote-name"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-name"
+                        name="name"
+                        value={quoteForm.name}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="Your full name"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-email"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Email *
+                      </label>
+                      <input
+                        type="email"
+                        id="quote-email"
+                        name="email"
+                        value={quoteForm.email}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="your@email.com"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-phone"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Phone *
+                      </label>
+                      <input
+                        type="tel"
+                        id="quote-phone"
+                        name="phone"
+                        value={quoteForm.phone}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="(xxx) xxx-xxxx"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-postalcode"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Postal Code *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-postalcode"
+                        name="postalcode"
+                        value={quoteForm.postalcode}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="A1A 1A1"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-address"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Address *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-address"
+                        name="address"
+                        value={quoteForm.address}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="123 Main St"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-city"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        City *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-city"
+                        name="city"
+                        value={quoteForm.city}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="Toronto"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-province"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Province *
+                      </label>
+                      <input
+                        type="text"
+                        id="quote-province"
+                        name="province"
+                        value={quoteForm.province}
+                        onChange={handleQuoteFormChange}
+                        required
+                        placeholder="ON"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="quote-message"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Additional Notes
+                      </label>
+                      <textarea
+                        id="quote-message"
+                        name="message"
+                        value={quoteForm.message}
+                        onChange={handleQuoteFormChange}
+                        rows="3"
+                        placeholder="Any questions or special requirements?"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none resize-none"
+                      />
+                    </div>
+                    <div className="flex gap-3">
+                      <button
+                        type="button"
+                        onClick={() => setShowQuoteForm(false)}
+                        className="flex-1 py-2 px-4 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="flex-1 bg-[#4E7302] hover:bg-[#3d5a02] text-white font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      >
+                        {isSubmitting ? "Sending..." : "Submit"}
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              )}
+            </div>
+          </div>
+        ) : (
+          /* Empty Cart State */
+          <div className="text-center py-20">
+            <ShoppingBag className="w-20 h-20 text-gray-300 mx-auto mb-6" />
+            <h2 className="text-2xl font-semibold text-gray-700 mb-2">
+              Your cart is empty
+            </h2>
+            <p className="text-gray-500 mb-8">
+              Looks like you haven&apos;t added any saunas yet.
+            </p>
+            <Link href="/saunas">
+              <button className="bg-[#4E7302] hover:bg-[#3d5a02] text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+                Browse Saunas
+              </button>
+            </Link>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CartPage;
