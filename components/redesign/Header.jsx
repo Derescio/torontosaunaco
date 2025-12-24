@@ -2,12 +2,21 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes, FaChevronDown, FaShoppingBag } from "react-icons/fa";
+import { signOut, useSession } from "next-auth/react";
 import newLogo from "@/assets/images/IMG_6773_white.png";
+import defaultImage from "@/assets/images/profile.png";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [saunasDropdownOpen, setSaunasDropdownOpen] = useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+
+  const { cartItems } = useSelector((state) => state.cart);
+  const cartCount = cartItems?.length || 0;
+  const { data: session } = useSession();
+  const profileImage = session?.user?.image || defaultImage;
 
   const handleDesktopHover = (open) => {
     setSaunasDropdownOpen(open);
@@ -24,18 +33,21 @@ const Header = () => {
       if (!e.target.closest(".dropdown")) {
         setSaunasDropdownOpen(false);
       }
+      if (!e.target.closest(".profile-dropdown")) {
+        setIsProfileMenuOpen(false);
+      }
     };
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
   return (
-    <header className="sticky top-0 bg-black/90 shadow-lg shadow-white/10 z-50 ">
+    <header className="sticky top-0 bg-black/90 shadow-lg shadow-white/10 z-50">
       <div className="container mx-auto px-4">
         {/* Desktop Header */}
         <div className="hidden lg:flex items-center justify-between py-4">
           {/* Logo on the left */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-[120px]">
             <Link href="/">
               <Image
                 src={newLogo}
@@ -48,8 +60,8 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Navigation links in the middle going to the right */}
-          <nav className="flex-1 flex justify-end items-center gap-6 mr-28">
+          {/* Navigation links in the center */}
+          <nav className="flex-1 flex justify-center items-center gap-6">
             <Link
               href="/"
               className="text-white hover:text-[#FFA726] transition-colors font-medium"
@@ -74,11 +86,6 @@ const Header = () => {
                     label="Best Sellers"
                     onClick={closeDropdown}
                   />
-                  {/* <DropdownItem
-                    href="/saunas/studio-6"
-                    label="Studio Six"
-                    onClick={closeDropdown}
-                  /> */}
                   <DropdownItem
                     href="/saunas/cube"
                     label="Cube Saunas"
@@ -141,6 +148,102 @@ const Header = () => {
               Accessories
             </Link>
           </nav>
+
+          {/* Cart and Profile on the right */}
+          <div className="flex items-center gap-4 w-[120px] justify-end">
+            {/* Cart Icon */}
+            <Link
+              href="/cart"
+              className="relative text-white hover:text-[#FFA726] transition-colors"
+            >
+              <FaShoppingBag className="w-6 h-6" />
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-[#4E7302] text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center border-2 border-black">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
+
+            {/* Profile Menu */}
+            <div className="relative profile-dropdown">
+              <button
+                type="button"
+                className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                id="user-menu-button"
+                aria-expanded={isProfileMenuOpen}
+                aria-haspopup="true"
+                onClick={() => setIsProfileMenuOpen((prev) => !prev)}
+              >
+                <span className="sr-only">Open user menu</span>
+                <Image
+                  className="h-8 w-8 rounded-full"
+                  src={profileImage}
+                  alt="Profile"
+                  width={32}
+                  height={32}
+                />
+              </button>
+
+              {/* Profile Dropdown Menu */}
+              {isProfileMenuOpen && (
+                <div
+                  className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="user-menu-button"
+                  onClick={() => setIsProfileMenuOpen(false)}
+                >
+                  {session ? (
+                    <>
+                      <div className="px-4 py-2 border-b border-gray-100">
+                        <p className="text-sm font-medium text-gray-900 truncate">
+                          {session.user?.name || "User"}
+                        </p>
+                        <p className="text-xs text-gray-500 truncate">
+                          {session.user?.email}
+                        </p>
+                      </div>
+                      <Link
+                        href="/orders"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                        role="menuitem"
+                      >
+                        View Orders
+                      </Link>
+                      <button
+                        onClick={() => signOut()}
+                        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                        role="menuitem"
+                      >
+                        Sign Out
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        href="/signin"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors font-bold"
+                        role="menuitem"
+                      >
+                        Sign In
+                      </Link>
+                      {session?.user?.id && (
+                        <>
+                          <Link
+                            href="/orders"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                            role="menuitem"
+                          >
+                            View Orders
+                          </Link>
+                        </>
+                      )}
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Mobile Header */}
@@ -168,8 +271,91 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Spacer for alignment */}
-          <div className="w-6"></div>
+          {/* Cart and Profile Icons on the right for mobile */}
+          <div className="flex items-center gap-3">
+            <Link
+              href="/cart"
+              className="relative text-white hover:text-[#FFA726] transition-colors"
+            >
+              <FaShoppingBag className="w-6 h-6" />
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-[#4E7302] text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center border-2 border-black">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
+
+            {/* Mobile Profile Button */}
+            <div className="relative profile-dropdown">
+              <button
+                type="button"
+                className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+                aria-expanded={isProfileMenuOpen}
+                aria-haspopup="true"
+                onClick={() => setIsProfileMenuOpen((prev) => !prev)}
+              >
+                <span className="sr-only">Open user menu</span>
+                <Image
+                  className="h-7 w-7 rounded-full"
+                  src={profileImage}
+                  alt="Profile"
+                  width={28}
+                  height={28}
+                />
+              </button>
+
+              {/* Mobile Profile Dropdown Menu */}
+              {isProfileMenuOpen && (
+                <div
+                  className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-50"
+                  role="menu"
+                  aria-orientation="vertical"
+                  onClick={() => setIsProfileMenuOpen(false)}
+                >
+                  {session ? (
+                    <>
+                      <div className="px-4 py-2 border-b border-gray-100">
+                        <p className="text-sm font-medium text-gray-900 truncate">
+                          {session.user?.name || "User"}
+                        </p>
+                      </div>
+                      <Link
+                        href="/orders"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                        role="menuitem"
+                      >
+                        View Orders
+                      </Link>
+                      <button
+                        onClick={() => signOut()}
+                        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                        role="menuitem"
+                      >
+                        Sign Out
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <Link
+                        href="/signin"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors font-bold"
+                        role="menuitem"
+                      >
+                        Sign In
+                      </Link>
+                      <Link
+                        href="/orders"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                        role="menuitem"
+                      >
+                        View Orders
+                      </Link>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -226,11 +412,6 @@ const Header = () => {
                       label="Best Sellers"
                       onClick={closeDropdown}
                     />
-                    {/* <DropdownItem
-                      href="/saunas/studio-6"
-                      label="Studio Six"
-                      onClick={closeDropdown}
-                    /> */}
                     <DropdownItem
                       href="/saunas/cube"
                       label="Cube Saunas"
@@ -304,6 +485,59 @@ const Header = () => {
                   Accessories
                 </Link>
               </li>
+
+              {/* Cart Link in Mobile Menu */}
+              <li>
+                <Link
+                  href="/cart"
+                  onClick={closeDropdown}
+                  className="flex items-center gap-2 text-gray-800 hover:text-[#FFA726] transition-colors font-medium py-2"
+                >
+                  <FaShoppingBag className="w-5 h-5" />
+                  Cart
+                  {cartCount > 0 && (
+                    <span className="bg-[#4E7302] text-white text-xs font-semibold rounded-full px-2 py-0.5">
+                      {cartCount}
+                    </span>
+                  )}
+                </Link>
+              </li>
+
+              {/* View Orders in Mobile Menu */}
+              <li>
+                <Link
+                  href="/orders"
+                  onClick={closeDropdown}
+                  className="text-gray-800 hover:text-[#FFA726] transition-colors font-medium block py-2"
+                >
+                  View Orders
+                </Link>
+              </li>
+
+              {/* Sign In / Sign Out in Mobile Menu */}
+              {session ? (
+                <li>
+                  <button
+                    onClick={() => {
+                      signOut();
+                      closeDropdown();
+                    }}
+                    className="text-gray-800 hover:text-[#FFA726] transition-colors font-medium block py-2 w-full text-left"
+                  >
+                    Sign Out
+                  </button>
+                </li>
+              ) : (
+                <li>
+                  <Link
+                    href="/signin"
+                    onClick={closeDropdown}
+                    className="text-gray-800 hover:text-[#FFA726] transition-colors font-bold block py-2"
+                  >
+                    Sign In
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </nav>

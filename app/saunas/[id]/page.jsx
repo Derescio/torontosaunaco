@@ -1,1301 +1,162 @@
-"use client";
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
-import { fetchProduct } from "@/assets/utils/request";
-import Spinner from "@/components/Spinner";
-import toast from "react-hot-toast";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Check } from "lucide-react";
-import posthog from "posthog-js";
-import { posthogEvents } from "@/assets/utils/posthogEvents";
+import connectDB from "@/config/db";
+import Products from "@/models/Products";
+import { SaunaProductClient } from "@/components/sauna";
+import { notFound } from "next/navigation";
+import Script from "next/script";
 
-const SaunaPage = () => {
-  const { id } = useParams();
-  const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(0);
+/**
+ * Server component for sauna product page
+ * Fetches product data server-side and passes to client component
+ */
 
-  // Selection states
-  const [selectedSize, setSelectedSize] = useState(null);
-  const [selectedWoodType, setSelectedWoodType] = useState(null);
-  const [selectedStove, setSelectedStove] = useState(null);
-  const [selectedUpgrades, setSelectedUpgrades] = useState([]);
-  const [selectedInstallation, setSelectedInstallation] = useState(null);
+// Generate metadata for SEO
+export async function generateMetadata({ params }) {
+  const { id } = params;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      if (!id) return;
+  try {
+    await connectDB();
+    const product = await Products.findById(id).lean();
 
-      try {
-        const data = await fetchProduct(id);
-        setProduct(data);
-        // Track product viewed once after load
-        try {
-          posthog.capture(posthogEvents.product_viewed, {
-            productId: data?._id || id,
-            type: data?.type,
-            name: data?.name,
-          });
-        } catch {}
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
+    if (!product) {
+      return {
+        title: "Product Not Found | Toronto Sauna Co.",
+        description: "The requested product could not be found.",
+      };
+    }
+
+    const description =
+      product.description?.slice(0, 160) ||
+      `Shop ${product.name} at Toronto Sauna Co.`;
+
+    const productUrl = `https://www.torontosaunaco.com/saunas/${id}`;
+
+    return {
+      title: `${product.name} | Toronto Sauna Co.`,
+      description,
+      keywords: `${product.name}, sauna, cedar sauna, ${product.type || "outdoor sauna"}, toronto sauna, canada sauna`,
+      metadataBase: new URL("https://www.torontosaunaco.com"),
+      alternates: {
+        canonical: productUrl,
+      },
+      openGraph: {
+        title: `${product.name} | Toronto Sauna Co.`,
+        description,
+        url: productUrl,
+        siteName: "Toronto Sauna Co.",
+        images: product.images?.[0]
+          ? [
+              {
+                url: product.images[0],
+                width: 1200,
+                height: 630,
+                alt: product.name,
+              },
+            ]
+          : [],
+        locale: "en_CA",
+        type: "product",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${product.name} | Toronto Sauna Co.`,
+        description,
+        images: product.images?.[0] ? [product.images[0]] : [],
+      },
     };
-    if (product === null) {
-      fetchData();
-    }
-    setMounted(true);
-  }, [id, product]);
-
-  // Treat Barrel products as single-wood (Knotty Cedar) models
-  const isBarrel =
-    (product?.type &&
-      typeof product.type === "string" &&
-      product.type.toLowerCase().includes("barrel")) ||
-    (product?.collectionType &&
-      typeof product.collectionType === "string" &&
-      product.collectionType.toLowerCase().includes("barrel")) ||
-    (product?.series &&
-      typeof product.series === "string" &&
-      product.series.toLowerCase().includes("barrel")) ||
-    (product?.name &&
-      typeof product.name === "string" &&
-      product.name.toLowerCase().includes("barrel"));
-
-  const isIndoorDundalk =
-    (product?.type &&
-      typeof product.type === "string" &&
-      product.type.toLowerCase().includes("dundalk")) ||
-    (product?.collectionType &&
-      typeof product.collectionType === "string" &&
-      product.collectionType.toLowerCase().includes("dundalk")) ||
-    (product?.series &&
-      typeof product.series === "string" &&
-      product.series.toLowerCase().includes("ls460")) ||
-    (product?.name &&
-      typeof product.name === "string" &&
-      product.name.toLowerCase().includes("dundalk"));
-
-  // Treat Luna models like single-wood models (similar to Barrel)
-  const isLuna =
-    (product?.type &&
-      typeof product.type === "string" &&
-      product.type.toLowerCase().includes("luna")) ||
-    (product?.collectionType &&
-      typeof product.collectionType === "string" &&
-      product.collectionType.toLowerCase().includes("luna")) ||
-    (product?.series &&
-      typeof product.series === "string" &&
-      product.series.toLowerCase().includes("luna")) ||
-    (product?.name &&
-      typeof product.name === "string" &&
-      product.name.toLowerCase().includes("luna"));
-
-  // Unify models that should behave like single-wood Barrel (default Knotty Cedar, hide Wood tab, size-first UX)
-  const isSingleWoodModel = isBarrel || isIndoorDundalk || isLuna;
-
-  // Default wood selection for Barrel to Knotty Cedar
-  useEffect(() => {
-    if (product && isSingleWoodModel && !selectedWoodType) {
-      setSelectedWoodType("Knotty Cedar");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [product, isSingleWoodModel]);
-
-  const sendEmails = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      postalcode: e.target.postalcode.value,
-      message: e.target.message.value,
-      subject: product.name,
+  } catch (error) {
+    return {
+      title: "Toronto Sauna Co.",
+      description: "Premium saunas crafted for wellness and relaxation.",
     };
-
-    try {
-      const res = await fetch("/api/emails", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      if (data.message === "Email sent successfully!") {
-        toast.success("Email sent successfully!", { duration: 2700 });
-        // Client-side success tracking (no PII)
-        try {
-          posthog.capture(posthogEvents.quote_form_submitted, {
-            productId: product?._id || id,
-            totalPrice,
-            installation: selectedInstallation || "unset",
-            deliveryApplied: selectedInstallation === "DIY",
-          });
-        } catch {}
-      } else {
-        toast.error("Error sending email. Please try again later.", {
-          duration: 2700,
-        });
-        // Failed response tracking via exception
-        try {
-          posthog.captureException(new Error(data?.message || "Quote failed"), {
-            productId: product?._id || id,
-            installation: selectedInstallation || "unset",
-          });
-        } catch {}
-      }
-      setLoading(false);
-    } catch (error) {
-      console.error("Error sending emails:", error);
-      setLoading(false);
-      // Catch block exception tracking
-      try {
-        posthog.captureException(error, {
-          productId: product?._id || id,
-          installation: selectedInstallation || "unset",
-        });
-      } catch {}
-    }
-  };
-
-  // Derive base price given size/wood (if present)
-  const computeBasePrice = () => {
-    // If product has sizes, try to use size+wood specific base
-    if (
-      product?.sizes &&
-      Array.isArray(product.sizes) &&
-      product.sizes.length > 0
-    ) {
-      if (selectedSize && selectedWoodType) {
-        const sizeObj = product.sizes.find((s) => s.key === selectedSize);
-        const sizePrice =
-          sizeObj?.priceByWood &&
-          typeof sizeObj.priceByWood[selectedWoodType] === "number"
-            ? sizeObj.priceByWood[selectedWoodType]
-            : undefined;
-        if (typeof sizePrice === "number") {
-          return sizePrice;
-        }
-      }
-    }
-    // Fallback to product base
-    return product?.baseCost || product?.price || 0;
-  };
-
-  // Compute the lowest possible starting price for display (ignores user selections)
-  const computeStartingFromPrice = () => {
-    // If sizes exist, take the minimum across size+wood combinations
-    if (
-      product?.sizes &&
-      Array.isArray(product.sizes) &&
-      product.sizes.length > 0
-    ) {
-      let minPrice = Infinity;
-      for (const size of product.sizes) {
-        if (size?.priceByWood && typeof size.priceByWood === "object") {
-          // For single-wood models (e.g., Barrel), only consider Knotty Cedar
-          if (isSingleWoodModel) {
-            const knotty = size.priceByWood["Knotty Cedar"];
-            if (
-              typeof knotty === "number" &&
-              isFinite(knotty) &&
-              knotty < minPrice
-            ) {
-              minPrice = knotty;
-            }
-          } else {
-            for (const value of Object.values(size.priceByWood)) {
-              if (
-                typeof value === "number" &&
-                isFinite(value) &&
-                value < minPrice
-              ) {
-                minPrice = value;
-              }
-            }
-          }
-        }
-      }
-      if (minPrice !== Infinity) return minPrice;
-    }
-    // Otherwise, use product base plus the smallest positive wood delta (if any)
-    let base = product?.baseCost || product?.price || 0;
-    if (product?.wood_type && typeof product.wood_type === "object") {
-      const deltas = Object.values(product.wood_type)
-        .map((o) => (o && typeof o.price === "number" ? o.price : 0))
-        .filter((n) => typeof n === "number" && isFinite(n));
-      if (deltas.length > 0) {
-        const minDelta = Math.min(...deltas);
-        if (minDelta > 0) base += minDelta;
-      }
-    }
-    return base;
-  };
-
-  // Calculate total price
-  const calculateTotal = () => {
-    let total = computeBasePrice();
-    if (selectedWoodType && product?.wood_type) {
-      const woodOption = product.wood_type[selectedWoodType];
-      // If sizes are in play and we already used a size+wood base, avoid double-adding wood delta.
-      const hasSizes =
-        product?.sizes &&
-        Array.isArray(product.sizes) &&
-        product.sizes.length > 0;
-      if (!hasSizes) {
-        if (woodOption?.price) total += woodOption.price;
-      }
-    }
-    if (selectedStove && product?.stove_type) {
-      const stoveOption = product.stove_type[selectedStove];
-      if (stoveOption?.price) total += stoveOption.price;
-    }
-    if (selectedUpgrades.length > 0 && product?.additional_upgrades) {
-      selectedUpgrades.forEach((upgradeName) => {
-        const upgrade = product.additional_upgrades.find(
-          (u) => u.name === upgradeName
-        );
-        if (upgrade?.price) total += upgrade.price;
-      });
-    }
-    if (selectedInstallation && product?.installation) {
-      const installOption = product.installation[selectedInstallation];
-      if (installOption?.price) total += installOption.price;
-    }
-    // Delivery: apply only for DIY; included for Professional Install
-    if (selectedInstallation === "DIY") {
-      total += product?.delivery?.cost || 0;
-    }
-    return total;
-  };
-
-  const toggleUpgrade = (upgradeName) => {
-    setSelectedUpgrades((prev) => {
-      const applied = !prev.includes(upgradeName);
-      const next = applied
-        ? [...prev, upgradeName]
-        : prev.filter((name) => name !== upgradeName);
-      try {
-        posthog.capture(posthogEvents.config_option_selected, {
-          productId: product?._id || id,
-          optionType: "addon",
-          optionName: upgradeName,
-          applied,
-        });
-      } catch {}
-      return next;
-    });
-  };
-
-  if (!product && !loading) {
-    return <p className="text-center">Product not found</p>;
   }
+}
 
-  const totalPrice = product ? calculateTotal() : 0;
-  const basePrice = computeBasePrice();
-  const startingFromPrice = computeStartingFromPrice();
-  const deliveryFee =
-    selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0;
+/**
+ * Generate Product JSON-LD structured data for rich snippets
+ */
+function generateProductJsonLd(product, id) {
+  const productUrl = `https://www.torontosaunaco.com/saunas/${id}`;
+  const price = product.baseCost || product.price || product.startingFromPrice;
 
-  // Track delivery applied when installation changes
-  useEffect(() => {
-    if (!product || !selectedInstallation) return;
-    try {
-      posthog.capture(posthogEvents.installation_selected, {
-        productId: product?._id || id,
-        installation: selectedInstallation,
-      });
-      posthog.capture(posthogEvents.delivery_applied, {
-        productId: product?._id || id,
-        applied: selectedInstallation === "DIY",
-        cost: selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0,
-      });
-    } catch {}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedInstallation]);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description:
+      product.description?.slice(0, 500) ||
+      `Premium ${product.name} sauna from Toronto Sauna Co.`,
+    image: product.images || [],
+    brand: {
+      "@type": "Brand",
+      name: "Toronto Sauna Co.",
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: "Toronto Sauna Co.",
+      url: "https://www.torontosaunaco.com",
+    },
+    url: productUrl,
+    sku: id,
+    category: product.type || "Sauna",
+    ...(price && {
+      offers: {
+        "@type": "Offer",
+        url: productUrl,
+        priceCurrency: "CAD",
+        price: price,
+        priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)
+          .toISOString()
+          .split("T")[0],
+        availability: "https://schema.org/InStock",
+        seller: {
+          "@type": "Organization",
+          name: "Toronto Sauna Co.",
+        },
+      },
+    }),
+    ...(product.features && {
+      additionalProperty: product.features.map((feature) => ({
+        "@type": "PropertyValue",
+        name: "Feature",
+        value: feature,
+      })),
+    }),
+  };
+}
 
-  // Track price recalculation whenever dependent selections change
-  useEffect(() => {
-    if (!product) return;
-    try {
-      posthog.capture(posthogEvents.price_recalculated, {
-        productId: product?._id || id,
-        totalPrice,
-        basePrice,
-        numAddons: selectedUpgrades.length,
-        installation: selectedInstallation || "unset",
-      });
-    } catch {}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [totalPrice]);
+// Server component
+export default async function SaunaPage({ params }) {
+  const { id } = await params;
 
-  return (
-    mounted && (
-      <div className="min-h-screen bg-white">
-        {loading && <Spinner loading={loading} />}
-        {!loading && product && (
-          <>
-            {/* Compute intro/body text segments from description */}
-            {(() => {
-              const full = product?.description || "";
-              // First 106 characters (indexes 0..105)
-              // Remainder starts at index 106 (the 107th character)
-              // Store on product object scope for use in JSX below
-              product.__intro106 = full.slice(0, 109);
-              product.__bodyFrom107 = full.slice(110);
-              return null;
-            })()}
-            {/* Hero Section with Breadcrumbs */}
-            <section className=" drop-shadow-xl md:drop-shadow-2xl shadow-[#4E7302]/80 relative h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
-              {/* Background Image */}
-              <div className="absolute inset-0 z-0">
-                {product.images && product.images.length > 0 && (
-                  <Image
-                    src={product.images[1]}
-                    alt={product.name}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                )}
-              </div>
+  try {
+    await connectDB();
+    const product = await Products.findById(id).lean();
 
-              {/* Dark Overlay */}
-              <div className="absolute inset-0 z-10 bg-black/50"></div>
+    if (!product) {
+      notFound();
+    }
 
-              {/* Breadcrumbs */}
-              <div className="absolute top-6 left-4 md:left-8 z-20">
-                <nav className="flex items-center gap-2 text-white text-sm">
-                  <Link
-                    href="/saunas"
-                    className="hover:text-[#FFA726] transition-colors"
-                  >
-                    All Saunas
-                  </Link>
-                  <span>/</span>
-                  <span>{product.name}</span>
-                </nav>
-              </div>
+    // Serialize the MongoDB document for client component
+    // Convert _id and any ObjectId fields to strings
+    const serializedProduct = JSON.parse(JSON.stringify(product));
 
-              {/* Centered Content */}
-              <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 font-archivo tracking-wide">
-                  {product.name}
-                </h1>
-                <p className="text-xl md:text-2xl text-gray-200 font-light font-archivo">
-                  {product.__intro106}
-                </p>
-              </div>
-            </section>
-            {/* Main Content Section */}
-            <section className="py-12 md:py-16">
-              <div className="container mx-auto px-4 max-w-7xl">
-                <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
-                  {/* Image Gallery */}
-                  <div className="space-y-4">
-                    {/* Main Image */}
-                    <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
-                      {product.images && product.images.length > 0 && (
-                        <Image
-                          src={product.images[selectedImage]}
-                          alt={product.name}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          priority
-                        />
-                      )}
-                    </div>
+    // Generate JSON-LD structured data
+    const jsonLd = generateProductJsonLd(serializedProduct, id);
 
-                    {/* Thumbnail Images */}
-                    {product.images && product.images.length > 1 && (
-                      <div className="grid grid-cols-3 md:gap-1">
-                        {product.images.slice(0, 3).map((image, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setSelectedImage(index)}
-                            className={`relative aspect-square overflow-hidden rounded-lg border-2 transition-all ${
-                              selectedImage === index
-                                ? "border-[#4E7302]"
-                                : "border-transparent"
-                            }`}
-                          >
-                            <Image
-                              src={image}
-                              alt={`${product.name} view ${index + 1}`}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 33vw, 150px"
-                              priority
-                            />
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Product Price, Title and Description Section */}
-
-                  <div className="mt-12 mb-12">
-                    <h2 className="text-2xl md:text-3xl font-light text-[#4E7302] mb-6 font-archivo">
-                      {product.name} Starting from $
-                      {startingFromPrice.toLocaleString()}
-                      {basePrice !== totalPrice && (
-                        <span className="text-gray-600 text-lg ml-2"></span>
-                      )}
-                    </h2>
-                    <div className="prose max-w-none text-gray-700 leading-relaxed font-archivo">
-                      {product.__bodyFrom107 ? (
-                        <p className="text-base md:text-lg leading-relaxed whitespace-pre-line break-words">
-                          {product.__bodyFrom107}
-                        </p>
-                      ) : null}
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-6">
-                  {/* Product Info & Options */}
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-light text-[#4E7302] mb-2 font-archivo">
-                      Choose Available Options
-                    </h2>
-                    <p className="text-xl text-gray-600 font-archivo">
-                      {/* ${basePrice.toLocaleString()} */}
-                      {/* {basePrice !== totalPrice && (
-                        <span className="text-gray-400 ml-2">
-                          {product.name}
-                        </span>
-                      )} */}
-                    </p>
-                  </div>
-
-                  {/* Tabs Section */}
-                  <Tabs
-                    defaultValue={isSingleWoodModel ? "size" : "wood"}
-                    className="w-full"
-                  >
-                    <TabsList className="mb-24 sm:mb-0 w-full bg-gray-200 rounded-lg p-1 grid grid-cols-2 sm:grid-cols-6 gap-2">
-                      {!isSingleWoodModel && (
-                        <TabsTrigger
-                          value="wood"
-                          className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                        >
-                          Wood Style
-                        </TabsTrigger>
-                      )}
-                      {/* Size Tab - only if product.sizes exists */}
-                      {product?.sizes &&
-                        Array.isArray(product.sizes) &&
-                        product.sizes.length > 0 && (
-                          <TabsTrigger
-                            value="size"
-                            className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                          >
-                            Size
-                          </TabsTrigger>
-                        )}
-                      <TabsTrigger
-                        value="heater"
-                        className="data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                      >
-                        Heater
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="addons"
-                        className="bg-gray-100 sm:bg-transparent data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                      >
-                        Add-ons
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="specs"
-                        className="bg-gray-100 sm:bg-transparent data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                      >
-                        Specs & Dimensions
-                      </TabsTrigger>
-                      <TabsTrigger
-                        value="installation"
-                        className="bg-gray-100 sm:bg-transparent data-[state=active]:bg-[#4E7302]/80  data-[state=active]:text-white rounded-md font-archivo w-full text-center whitespace-normal break-words leading-tight"
-                      >
-                        Installation
-                      </TabsTrigger>
-                    </TabsList>
-
-                    {/* Size Tab Content */}
-                    {product?.sizes &&
-                      Array.isArray(product.sizes) &&
-                      product.sizes.length > 0 && (
-                        <TabsContent value="size" className="mt-6">
-                          <div className="grid grid-cols-2 gap-4">
-                            {product.sizes.map((size) => {
-                              const isSelected = selectedSize === size.key;
-                              const priceForWood =
-                                selectedWoodType && size.priceByWood
-                                  ? size.priceByWood[selectedWoodType]
-                                  : null;
-                              return (
-                                <button
-                                  key={size.key}
-                                  onClick={() => {
-                                    setSelectedSize(size.key);
-                                    try {
-                                      posthog.capture(
-                                        posthogEvents.size_selected,
-                                        {
-                                          productId: product?._id || id,
-                                          sizeKey: size.key,
-                                          sizeLabel: size.label || size.key,
-                                        }
-                                      );
-                                    } catch {}
-                                  }}
-                                  className={`relative p-4 border-2 rounded-lg transition-all ${
-                                    isSelected
-                                      ? "border-[#4E7302] bg-green-50"
-                                      : "border-gray-200 hover:border-gray-300"
-                                  }`}
-                                >
-                                  {isSelected && (
-                                    <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                      <Check className="w-4 h-4" />
-                                    </div>
-                                  )}
-                                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                    {size.image && (
-                                      <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                        <Image
-                                          src={size.image}
-                                          alt={size.label || size.key}
-                                          fill
-                                          className="object-cover"
-                                          sizes="(max-width: 768px) 50vw, 200px"
-                                          priority
-                                        />
-                                      </div>
-                                    )}
-                                    <div className="flex-1">
-                                      <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                        {size.label || size.key}
-                                      </h3>
-                                      <p className="text-xs text-gray-600 font-archivo">
-                                        {priceForWood
-                                          ? `$${priceForWood.toLocaleString()}`
-                                          : selectedWoodType
-                                            ? "No price for selected wood"
-                                            : isSingleWoodModel
-                                              ? "Prices shown for Knotty Cedar"
-                                              : "Select wood to see price"}
-                                      </p>
-                                    </div>
-                                  </div>
-                                </button>
-                              );
-                            })}
-                          </div>
-                          {/* Hint for user selection */}
-                          {!selectedWoodType && !isBarrel && (
-                            <p className="text-xs text-gray-500 mt-2 font-archivo">
-                              Tip: Select a wood type to view size-specific
-                              pricing.
-                            </p>
-                          )}
-                        </TabsContent>
-                      )}
-
-                    {/* Wood Style Tab (hidden for Barrel) */}
-                    {!isBarrel && (
-                      <TabsContent value="wood" className="mt-6">
-                        {product.wood_type &&
-                        Object.keys(product.wood_type).length > 0 ? (
-                          <div className="grid grid-cols-2 gap-4">
-                            {Object.entries(product.wood_type).map(
-                              ([name, option]) => (
-                                <button
-                                  key={name}
-                                  onClick={() => {
-                                    setSelectedWoodType(name);
-                                    try {
-                                      posthog.capture(
-                                        posthogEvents.config_option_selected,
-                                        {
-                                          productId: product?._id || id,
-                                          optionType: "wood",
-                                          optionName: name,
-                                          priceDelta: option?.price || 0,
-                                        }
-                                      );
-                                    } catch {}
-                                  }}
-                                  className={`relative p-4 border-2 rounded-lg transition-all ${
-                                    selectedWoodType === name
-                                      ? "border-[#4E7302] bg-green-50"
-                                      : "border-gray-200 hover:border-gray-300"
-                                  }`}
-                                >
-                                  {selectedWoodType === name && (
-                                    <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                      <Check className="w-4 h-4" />
-                                    </div>
-                                  )}
-                                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                    {option.image && (
-                                      <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                        <Image
-                                          src={option.image}
-                                          alt={name}
-                                          fill
-                                          className="object-cover"
-                                          sizes="(max-width: 768px) 50vw, 200px"
-                                          priority
-                                        />
-                                      </div>
-                                    )}
-
-                                    <div className="flex-1">
-                                      <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                        {name}
-                                      </h3>
-                                      {/* Hide $0 under wood style (especially when sizes exist). Show only positive deltas when no sizes. */}
-                                      {!(
-                                        product?.sizes &&
-                                        Array.isArray(product.sizes) &&
-                                        product.sizes.length > 0
-                                      ) &&
-                                        typeof option?.price === "number" &&
-                                        option.price > 0 && (
-                                          <p className="text-xs text-gray-600 font-archivo">
-                                            ${option.price.toLocaleString()}
-                                          </p>
-                                        )}
-                                      {option.power && (
-                                        <p className="text-xs text-gray-500 mt-1 font-archivo">
-                                          {option.power}
-                                        </p>
-                                      )}
-                                    </div>
-                                  </div>
-                                </button>
-                              )
-                            )}
-                          </div>
-                        ) : (
-                          <p className="text-gray-500 text-center py-8 font-archivo">
-                            No wood type options available
-                          </p>
-                        )}
-                      </TabsContent>
-                    )}
-
-                    {/* Heater Tab */}
-                    <TabsContent value="heater" className="mt-6">
-                      {product.stove_type &&
-                      Object.keys(product.stove_type).length > 0 ? (
-                        <div className="grid grid-cols-2 gap-4">
-                          {Object.entries(product.stove_type).map(
-                            ([name, option]) => (
-                              <button
-                                key={name}
-                                onClick={() => {
-                                  setSelectedStove(name);
-                                  try {
-                                    posthog.capture(
-                                      posthogEvents.config_option_selected,
-                                      {
-                                        productId: product?._id || id,
-                                        optionType: "stove",
-                                        optionName: name,
-                                        priceDelta: option?.price || 0,
-                                      }
-                                    );
-                                  } catch {}
-                                }}
-                                className={`relative p-4 border-2 rounded-lg transition-all ${
-                                  selectedStove === name
-                                    ? "border-[#4E7302] bg-green-50"
-                                    : "border-gray-200 hover:border-gray-300"
-                                }`}
-                              >
-                                {selectedStove === name && (
-                                  <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                    <Check className="w-4 h-4" />
-                                  </div>
-                                )}
-
-                                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                  {option.image && (
-                                    <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                      <Image
-                                        src={option.image}
-                                        alt={name}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 50vw, 200px"
-                                        priority
-                                      />
-                                    </div>
-                                  )}
-
-                                  <div className="flex-1">
-                                    <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                      {name}
-                                    </h3>
-                                    <p className="text-xs text-gray-600 font-archivo">
-                                      ${option.price?.toLocaleString() || 0}
-                                    </p>
-                                    {option.power && (
-                                      <p className="text-xs text-gray-500 mt-1 font-archivo">
-                                        {option.power}
-                                      </p>
-                                    )}
-                                  </div>
-                                </div>
-                              </button>
-                            )
-                          )}
-                        </div>
-                      ) : (
-                        <p className="text-gray-500 text-center py-8 font-archivo">
-                          No heater options available
-                        </p>
-                      )}
-
-                      {/* Heater disclaimer */}
-                      <div className="mt-4 p-3 rounded-md bg-amber-50 border border-amber-200">
-                        <p className="text-[13px] leading-relaxed text-amber-900 font-archivo">
-                          Please note: Electric heaters require a certified
-                          electrician to hardwire the unit directly into your
-                          electrical panel.
-                        </p>
-                      </div>
-                    </TabsContent>
-
-                    {/* Add-ons Tab */}
-                    <TabsContent value="addons" className="mt-6">
-                      {product.additional_upgrades &&
-                      product.additional_upgrades.length > 0 ? (
-                        <div className="grid grid-cols-2 gap-4">
-                          {product.additional_upgrades.map((upgrade) => (
-                            <button
-                              key={upgrade.name}
-                              onClick={() => toggleUpgrade(upgrade.name)}
-                              className={`relative p-4 border-2 rounded-lg transition-all ${
-                                selectedUpgrades.includes(upgrade.name)
-                                  ? "border-[#4E7302] bg-green-50"
-                                  : "border-gray-200 hover:border-gray-300"
-                              }`}
-                            >
-                              {selectedUpgrades.includes(upgrade.name) && (
-                                <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                  <Check className="w-4 h-4" />
-                                </div>
-                              )}
-                              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                {upgrade.image && (
-                                  <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                    <Image
-                                      src={upgrade.image}
-                                      alt={upgrade.name}
-                                      fill
-                                      className="object-cover"
-                                      sizes="(max-width: 768px) 50vw, 200px"
-                                      priority
-                                    />
-                                  </div>
-                                )}
-
-                                <div className="flex-1">
-                                  <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                    {upgrade.name}
-                                  </h3>
-                                  <p className="text-xs text-gray-600 font-archivo">
-                                    ${upgrade.price?.toLocaleString() || 0}
-                                  </p>
-                                  {upgrade.power && (
-                                    <p className="text-xs text-gray-500 mt-1 font-archivo">
-                                      {upgrade.power}
-                                    </p>
-                                  )}
-                                </div>
-                              </div>
-                            </button>
-                          ))}
-                        </div>
-                      ) : (
-                        <p className="text-gray-500 text-center py-8 font-archivo">
-                          No additional upgrades available
-                        </p>
-                      )}
-                    </TabsContent>
-
-                    {/* Specs & Dimensions Tab */}
-                    <TabsContent value="specs" className="mt-6">
-                      <div className="space-y-6">
-                        {product.dimensions && (
-                          <div>
-                            <h3 className="font-semibold mb-3 font-archivo">
-                              Dimensions
-                            </h3>
-                            {product.dimensions.width ||
-                            product.dimensions.depth ||
-                            product.dimensions.height ? (
-                              <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                                {typeof product.dimensions.width !==
-                                  "undefined" && (
-                                  <p className="font-archivo">
-                                    <span className="font-medium">Width:</span>{" "}
-                                    {product.dimensions.width}{" "}
-                                    {product.dimensions.unit || ""}
-                                  </p>
-                                )}
-                                {typeof product.dimensions.depth !==
-                                  "undefined" && (
-                                  <p className="font-archivo">
-                                    <span className="font-medium">Depth:</span>{" "}
-                                    {product.dimensions.depth}{" "}
-                                    {product.dimensions.unit || ""}
-                                  </p>
-                                )}
-                                {typeof product.dimensions.height !==
-                                  "undefined" && (
-                                  <p className="font-archivo">
-                                    <span className="font-medium">Height:</span>{" "}
-                                    {product.dimensions.height}{" "}
-                                    {product.dimensions.unit || ""}
-                                  </p>
-                                )}
-                                {(product.dimensions.HeatingOption ||
-                                  product.dimensions["Heating Option"]) && (
-                                  <p className="font-archivo">
-                                    <span className="font-medium">
-                                      Heating Options:
-                                    </span>{" "}
-                                    {product.dimensions.HeatingOption ||
-                                      product.dimensions["Heating Option"]}
-                                  </p>
-                                )}
-                                {product.dimensions.type && (
-                                  <p className="text-sm text-gray-600 font-archivo">
-                                    ({product.dimensions.type})
-                                  </p>
-                                )}
-                              </div>
-                            ) : (
-                              <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                                {Object.entries(product.dimensions).map(
-                                  ([key, value]) => (
-                                    <p key={key} className="font-archivo">
-                                      <span className="font-medium">
-                                        {key}:
-                                      </span>{" "}
-                                      {typeof value === "string" ||
-                                      typeof value === "number"
-                                        ? value
-                                        : Array.isArray(value)
-                                          ? value.join(", ")
-                                          : JSON.stringify(value)}
-                                    </p>
-                                  )
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        )}
-                        {product.features && product.features.length > 0 && (
-                          <div>
-                            <h3 className="font-semibold mb-3 font-archivo">
-                              Features
-                            </h3>
-                            <ul className="space-y-2">
-                              {product.features.map((feature, index) => (
-                                <li
-                                  key={index}
-                                  className="flex items-start gap-2 text-gray-700 font-archivo"
-                                >
-                                  <span className="text-[#4E7302] mt-1">•</span>
-                                  <span>{feature}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    </TabsContent>
-
-                    {/* Installation Tab */}
-                    <TabsContent value="installation" className="mt-6">
-                      {product.installation &&
-                      Object.keys(product.installation).length > 0 ? (
-                        <div className="grid grid-cols-2 gap-4">
-                          {Object.entries(product.installation).map(
-                            ([name, option]) => (
-                              <button
-                                key={name}
-                                onClick={() => setSelectedInstallation(name)}
-                                className={`relative p-4 border-2 rounded-lg transition-all ${
-                                  selectedInstallation === name
-                                    ? "border-[#4E7302] bg-green-50"
-                                    : "border-gray-200 hover:border-gray-300"
-                                }`}
-                              >
-                                {selectedInstallation === name && (
-                                  <div className="absolute top-2 z-10 right-2 bg-[#4E7302] text-white rounded-full p-1">
-                                    <Check className="w-4 h-4" />
-                                  </div>
-                                )}
-                                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 w-full text-left">
-                                  {option.image && (
-                                    <div className="relative w-full h-32 sm:w-32 sm:h-24 rounded overflow-hidden sm:flex-shrink-0 mb-2 sm:mb-0">
-                                      <Image
-                                        src={option.image}
-                                        alt={name}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 50vw, 200px"
-                                        priority
-                                      />
-                                    </div>
-                                  )}
-
-                                  <div className="flex-1">
-                                    <h3 className="font-semibold text-sm mb-1 font-archivo">
-                                      {name}
-                                    </h3>
-                                    <p className="text-xs text-gray-600 font-archivo">
-                                      ${option.price?.toLocaleString() || 0}
-                                    </p>
-                                    {option.power && (
-                                      <p className="text-xs text-gray-500 mt-1 font-archivo">
-                                        {option.power}
-                                      </p>
-                                    )}
-                                  </div>
-                                </div>
-                              </button>
-                            )
-                          )}
-                        </div>
-                      ) : (
-                        <p className="text-gray-500 text-center py-8 font-archivo">
-                          No installation options available
-                        </p>
-                      )}
-                    </TabsContent>
-                  </Tabs>
-
-                  {/* Selection Summary */}
-                  {(selectedWoodType ||
-                    selectedStove ||
-                    selectedUpgrades.length > 0 ||
-                    selectedInstallation) && (
-                    <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="text-[#4E7302] font-bold text-lg font-archivo">
-                          THE TORONTO SAUNA CO.
-                        </div>
-                      </div>
-                      <div className="space-y-2 text-sm font-archivo">
-                        {selectedStove && (
-                          <p>
-                            You Have Chosen:{" "}
-                            <span className="font-semibold">
-                              {selectedStove}
-                            </span>
-                            {product.stove_type[selectedStove]?.wifi &&
-                              " with Wifi Controller"}
-                          </p>
-                        )}
-                        {selectedWoodType && (
-                          <p>
-                            Wood Type:{" "}
-                            <span className="font-semibold">
-                              {selectedWoodType}
-                            </span>
-                          </p>
-                        )}
-                        {selectedUpgrades.length > 0 && (
-                          <p>
-                            Upgrades:{" "}
-                            <span className="font-semibold">
-                              {selectedUpgrades.join(", ")}
-                            </span>
-                          </p>
-                        )}
-                        {selectedInstallation && (
-                          <p>
-                            Installation:{" "}
-                            <span className="font-semibold">
-                              {selectedInstallation}
-                            </span>
-                          </p>
-                        )}
-                        {selectedInstallation && (
-                          <p>
-                            Delivery:{" "}
-                            <span className="font-semibold">
-                              {selectedInstallation === "DIY"
-                                ? `$${deliveryFee.toLocaleString()}`
-                                : "Included"}
-                            </span>
-                          </p>
-                        )}
-                        {selectedSize && (
-                          <p>
-                            Size:{" "}
-                            <span className="font-semibold">
-                              {selectedSize}
-                            </span>
-                          </p>
-                        )}
-                        <p className="mt-4 font-semibold text-lg">
-                          See the total below
-                        </p>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Total Price */}
-                  <div className="bg-[#4E7302]/80 backdrop-blur-sm text-white p-6 rounded-lg">
-                    <div className="flex justify-between items-center">
-                      <span className="text-xl font-light font-archivo">
-                        {selectedInstallation === "DIY"
-                          ? `Total (+ $${deliveryFee.toLocaleString()} delivery)`
-                          : selectedInstallation === "Professional Install"
-                            ? "Total (delivery included)"
-                            : "Total"}
-                      </span>
-                      <span className="text-2xl font-medium font-archivo">
-                        ${totalPrice.toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                {/* Contact Form Section */}
-                <div className="bg-gray-50 p-8 rounded-xl">
-                  <h2 className="text-2xl font-semibold text-gray-900 mb-2 font-archivo">
-                    Need More Information?
-                  </h2>
-                  <p className="text-gray-600 mb-6 font-archivo">
-                    Get in touch with us, send us an email.
-                  </p>
-                  <form onSubmit={sendEmails} className="space-y-4">
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
-                      >
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none font-archivo"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none font-archivo"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
-                      >
-                        Phone
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Enter your phone number"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none font-archivo"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="postalcode"
-                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
-                      >
-                        Postal Code
-                      </label>
-                      <input
-                        type="text"
-                        id="postalcode"
-                        name="postalcode"
-                        required
-                        placeholder="Enter your postal code"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none font-archivo"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-2 font-archivo"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Enter your message"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4E7302] focus:border-transparent outline-none resize-none font-archivo"
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      className="w-full bg-[#4E7302]/80  hover:bg-[#4E7302]/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors font-archivo"
-                    >
-                      Send Message
-                    </button>
-                  </form>
-                </div>
-                <div>
-                  {/* Media & Documents */}
-                  {(product?.video ||
-                    (product?.documents && product.documents.length > 0) ||
-                    product?.pdf) && (
-                    <div className="space-y-4 mt-8">
-                      {/* Video Preview */}
-                      {product?.video && (
-                        <div className="rounded-xl overflow-hidden border border-gray-200">
-                          <video
-                            src={product.video}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            controls
-                            poster={
-                              product?.images && product.images.length > 0
-                                ? product.images[0]
-                                : undefined
-                            }
-                            className="w-full h-auto"
-                          />
-                        </div>
-                      )}
-
-                      {/* Documents */}
-                      {(product?.documents && product.documents.length > 0) ||
-                      product?.pdf ? (
-                        <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
-                          <h3 className="font-semibold mb-3 font-archivo">
-                            Documentation for {product?.name}
-                          </h3>
-                          <ul className="space-y-2">
-                            {Array.isArray(product?.documents) &&
-                              product.documents.map((doc, idx) => (
-                                <li
-                                  key={`${doc?.url || idx}`}
-                                  className="font-archivo"
-                                >
-                                  <a
-                                    href={doc?.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    download
-                                    className="text-[#4E7302] hover:underline"
-                                  >
-                                    {doc?.label || `Document ${idx + 1}`}
-                                  </a>
-                                </li>
-                              ))}
-                            {/* Fallback single PDF */}
-                            {product?.pdf && (
-                              <li className="font-archivo">
-                                <a
-                                  href="/pdf/Toronto Sauna Co - Spec Book.pdf"
-                                  download
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-[#4E7302] hover:underline"
-                                >
-                                  Download PDF
-                                </a>
-                                {/* <a
-                                  href="/Damion_Wilson_CV.pdf"
-                                  download
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-block"
-                                >
-                                  <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-[#8b5cf6] text-[#8b5cf6] hover:bg-[#8b5cf6] hover:text-white px-8"
-                                  >
-                                    <ArrowRight className="mr-2 h-5 w-5" />
-                                    Download CV
-                                  </Button>
-                                </a> */}
-                              </li>
-                            )}
-                          </ul>
-                        </div>
-                      ) : null}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </section>
-
-            {/* OLD CODE PRESERVED FOR REFERENCE - Commented out below */}
-            {/* 
-            ============================================
-            OLD PRODUCT PAGE CODE - KEPT FOR REFERENCE
-            ============================================
-            
-            <PureCube1_ID id={id} />
-            
-            <section className="">
-              <div className="container m-auto py-10 px-6">
-                <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
-                  <SaunaDetails product={product} />
-                  
-                  <aside className="space-y-4">    
-                    {loading && <Spinner loading={loading} /> }  
-                    <ShareButtons product={product} />
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h3 className="text-xl font-bold mb-2">Need More Information ?</h3>
-                      <p className="mb-4">Get in touch with us, send us an email.</p>
-                      <form onSubmit={sendEmails}>
-                        // ... old form code ...
-              </form>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-            */}
-          </>
-        )}
-      </div>
-    )
-  );
-};
-
-export default SaunaPage;
+    return (
+      <>
+        {/* JSON-LD Structured Data for SEO */}
+        <Script
+          id="product-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          strategy="afterInteractive"
+        />
+        <SaunaProductClient product={serializedProduct} productId={id} />
+      </>
+    );
+  } catch (error) {
+    console.error("Error fetching product:", error);
+    notFound();
+  }
+}
