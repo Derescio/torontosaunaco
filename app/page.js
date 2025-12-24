@@ -23,7 +23,7 @@ export const metadata = {
   description:
     "Discover premium outdoor & indoor cedar saunas in Toronto. Barrel, cube & custom sauna kits proudly made in Canada. Cold plunges available. Free consultation!",
   keywords:
-    "sauna toronto, outdoor sauna, cedar sauna, barrel sauna, cube sauna, indoor sauna, sauna ontario, sauna canada, cold plunge toronto, backyard sauna",
+    "sauna purchase, outdoor sauna, sauna for sale, barrel sauna, cube sauna, indoor sauna, sauna ontario, sauna canada, cold plunge toronto, backyard sauna",
   authors: [{ name: "Toronto Sauna Co." }],
   creator: "Toronto Sauna Co.",
   publisher: "Toronto Sauna Co.",
@@ -54,7 +54,7 @@ export const metadata = {
     description:
       "Discover premium outdoor & indoor cedar saunas. Barrel, cube & custom sauna kits made in Canada.",
     images: [
-      "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew",
+      "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxIKHBPF5JCIZtVTnlc4dX3YxhzgQfs85b0DSaU",
     ],
   },
   robots: {
