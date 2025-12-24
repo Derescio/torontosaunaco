@@ -22,10 +22,10 @@ export const metadata = {
     siteName: "Toronto Sauna Co.",
     images: [
       {
-        url: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762113337/torontosaunaco/IMG_1529_oscb6b.jpg",
+        url: "/og/IMG_6773_black.png",
         width: 1200,
         height: 630,
-        alt: "Toronto Sauna Co. - Premium Cedar Saunas Collection",
+        alt: "Toronto Sauna Co. - Saunas in Toronto",
       },
     ],
     locale: "en_CA",
@@ -35,9 +35,14 @@ export const metadata = {
     card: "summary_large_image",
     title: "Saunas in Toronto | Outdoor & Indoor Cedar Saunas",
     description:
-      "Discover premium cedar saunas in Toronto. Barrel, cube & custom sauna kits. Relax & recharge!",
+      "Discover premium cedar saunas in Toronto, Ontario. Barrel, cube, custom & so much more. Relax & recharge!",
     images: [
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762113337/torontosaunaco/IMG_1529_oscb6b.jpg",
+      {
+        url: "/og/Sauna_Twitter_Image.png",
+        width: 1200,
+        height: 630,
+        alt: "Toronto Sauna Co. - Saunas in Toronto",
+      },
     ],
   },
 };
