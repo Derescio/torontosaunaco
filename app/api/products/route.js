@@ -2,30 +2,23 @@
 
 import connectDB from "@/config/db";
 import Products from "@/models/Products";
-import Product from "@/models/UpdatedProduct";
-
-import { getUserSession } from "@/assets/utils/getServerSession";
 
 export const dynamic = "force-dynamic";
 
 // GET API Handler - /api/products
 export const GET = async (req, res) => {
-  // If
   try {
-    // const sessionUser = await getUserSession();
-    // if (!sessionUser || !sessionUser.user) {
-    //   return new Response("Unauthorized", { status: 401 });
-    // }
-    // const userId = sessionUser.user.id;
+    await connectDB();
 
     const products = await Products.find();
-    const product = await Product.find();
-    // console.log('New Product',product)
 
     return new Response(JSON.stringify(products), { status: 200 });
   } catch (error) {
-    //console.log(error)
-    return new Response("error", { status: 500 });
+    console.error("Error fetching products:", error);
+    return new Response(JSON.stringify({ error: "Failed to fetch products" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 };
 
