@@ -2,7 +2,6 @@ import connectDB from "@/config/db";
 import Products from "@/models/Products";
 import { SaunaProductClient } from "@/components/sauna";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 
 /**
  * Server component for sauna product page
@@ -11,7 +10,16 @@ import Script from "next/script";
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
-  const { id } = params;
+  const resolvedParams = await params;
+  const id = resolvedParams.id;
+
+  // Validate MongoDB ObjectId format
+  if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
+    return {
+      title: "Product Not Found | Toronto Sauna Co.",
+      description: "The requested product could not be found.",
+    };
+  }
 
   try {
     await connectDB();
@@ -126,7 +134,13 @@ function generateProductJsonLd(product, id) {
 
 // Server component
 export default async function SaunaPage({ params }) {
-  const { id } = await params;
+  const resolvedParams = await params;
+  const id = resolvedParams.id;
+
+  // Validate MongoDB ObjectId format
+  if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
+    notFound();
+  }
 
   try {
     await connectDB();
@@ -146,11 +160,9 @@ export default async function SaunaPage({ params }) {
     return (
       <>
         {/* JSON-LD Structured Data for SEO */}
-        <Script
-          id="product-jsonld"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          strategy="afterInteractive"
         />
         <SaunaProductClient product={serializedProduct} productId={id} />
       </>
