@@ -38,6 +38,19 @@ export async function generateMetadata({ params }) {
 
     const productUrl = `https://www.thetorontosaunaco.com/saunas/${id}`;
 
+    // Fallback image for products without images
+    const fallbackImage =
+      "https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxIKHBPF5JCIZtVTnlc4dX3YxhzgQfs85b0DSaU";
+
+    // Get the best image for social sharing (prefer JPG over PNG for better compatibility)
+    const productImages = Array.isArray(product.images) ? product.images : [];
+    const jpgImage = productImages.find(
+      (img) =>
+        img?.toLowerCase().endsWith(".jpg") ||
+        img?.toLowerCase().endsWith(".jpeg")
+    );
+    const socialImage = jpgImage || productImages[0] || fallbackImage;
+
     return {
       title: `${product.name} | Toronto Sauna Co.`,
       description,
@@ -51,16 +64,14 @@ export async function generateMetadata({ params }) {
         description,
         url: productUrl,
         siteName: "Toronto Sauna Co.",
-        images: product.images?.[0]
-          ? [
-              {
-                url: product.images[0],
-                width: 1200,
-                height: 630,
-                alt: product.name,
-              },
-            ]
-          : [],
+        images: [
+          {
+            url: socialImage,
+            width: 1200,
+            height: 630,
+            alt: product.name,
+          },
+        ],
         locale: "en_CA",
         type: "website",
       },
@@ -68,16 +79,7 @@ export async function generateMetadata({ params }) {
         card: "summary_large_image",
         title: `${product.name} | Toronto Sauna Co.`,
         description,
-        images: product.images?.[0]
-          ? [
-              {
-                url: product.images[0],
-                width: 1200,
-                height: 630,
-                alt: product.name,
-              },
-            ]
-          : [],
+        images: [socialImage],
       },
     };
   } catch (error) {
