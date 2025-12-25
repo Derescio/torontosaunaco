@@ -398,12 +398,7 @@ const Header = () => {
                   onClick={() => setSaunasDropdownOpen(!saunasDropdownOpen)}
                   className="flex items-center justify-between w-full text-gray-800 hover:text-[#FFA726] transition-colors font-medium py-2"
                 >
-                  <Link
-                    href="/saunas"
-                    className="hover:text-[#FFA726] transition-colors font-medium"
-                  >
-                    Saunas
-                  </Link>
+                  Saunas
                   <FaChevronDown
                     className={`transition-transform ${
                       saunasDropdownOpen ? "rotate-180" : ""
@@ -447,6 +442,13 @@ const Header = () => {
                       label="Outdoor Showers"
                       onClick={closeDropdown}
                     />
+                    <hr className="my-2 border-gray-400" />
+                    <Link
+                      href="/saunas"
+                      className="ml-4 text-gray-800 hover:text-[#FFA726] transition-colors font-medium block py-2"
+                    >
+                      View All Saunas
+                    </Link>
                   </ul>
                 )}
               </li>
