@@ -174,6 +174,16 @@ const Footer = () => {
             All Rights Reserved.
           </p>
         </div>
+        {/* Powered by OpsedSolutions */}
+        <div className="text-center text-white/70 text-[13px] mt-4">
+          Powered by{" "}
+          <a
+            href="https://www.opsedsolutions.com/"
+            className="hover:underline mx-1 text-blue-500"
+          >
+            OpsedSolutions
+          </a>
+        </div>
       </footer>
     </div>
   );
