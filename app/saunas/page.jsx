@@ -1,4 +1,3 @@
-import ProductCard from "@/components/ProductCard";
 import NewProductCard from "@/components/redesign/NewProductCard";
 import { fetchProducts } from "@/assets/utils/request";
 import SaunaCollectionHero from "@/components/redesign/SaunaCollectionHero";
@@ -74,11 +73,27 @@ const Saunas = async () => {
           {sortedProducts.length === 0 ? (
             <p>No products found</p>
           ) : (
+            <>
+            {/* Added this section for SEO and user information jan,3,2026 (Monitor via Google Search Console) */}
+            <section className="px-4 py-6">
+  <div className="container-xl m-auto">
+    <h1 className="text-3xl font-semibold">
+      Saunas for Sale in Toronto & the GTA
+    </h1>
+
+    <p className="mt-4 max-w-3xl">
+      Toronto Sauna Co. offers premium indoor and outdoor cedar saunas
+      delivered across Toronto, the GTA, and Ontario. Explore barrel,
+      cube, and custom sauna kits designed for Canadian climates.
+    </p>
+  </div>
+</section>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8">
               {sortedProducts.map((product, index) => (
                 <NewProductCard product={product} key={index} />
               ))}
             </div>
+            </>
           )}
         </div>
       </section>
