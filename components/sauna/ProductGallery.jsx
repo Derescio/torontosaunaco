@@ -49,22 +49,21 @@ const ProductGallery = ({ product }) => {
         {/* Navigation Arrows on Main Image */}
         {product.images.length > 1 && (
           <>
-            <button
-              type="button"
-              onClick={handlePrevious}
-              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition-all hover:bg-black/70"
-              aria-label="Previous image"
-            >
-              <FaChevronLeft className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              onClick={handleNext}
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition-all hover:bg-black/70"
-              aria-label="Next image"
-            >
-              <FaChevronRight className="h-5 w-5" />
-            </button>
+           <div className="absolute inset-0 flex items-center justify-between px-3">
+  <button
+    onClick={handlePrevious}
+    className="rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70"
+  >
+    <FaChevronLeft className="h-5 w-5" />
+  </button>
+
+  <button
+    onClick={handleNext}
+    className="rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70"
+  >
+    <FaChevronRight className="h-5 w-5" />
+  </button>
+</div>
           </>
         )}
 
