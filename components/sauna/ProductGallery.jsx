@@ -34,9 +34,9 @@ const ProductGallery = ({ product }) => {
   }
 
   return (
-    <div className="space-y-2.5">
+    <div className="w-full max-w-full overflow-hidden space-y-2.5">
       {/* Main Image with Navigation Arrows */}
-      <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
+      <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-gray-100">
         <Image
           src={product.images[selectedImage]}
           alt={product.name}
@@ -48,23 +48,24 @@ const ProductGallery = ({ product }) => {
 
         {/* Navigation Arrows on Main Image */}
         {product.images.length > 1 && (
-          <>
-           <div className="absolute inset-0 flex items-center justify-between px-3">
-  <button
-    onClick={handlePrevious}
-    className="rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70"
-  >
-    <FaChevronLeft className="h-5 w-5" />
-  </button>
-
-  <button
-    onClick={handleNext}
-    className="rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70"
-  >
-    <FaChevronRight className="h-5 w-5" />
-  </button>
-</div>
-          </>
+          <div className="absolute inset-0 flex items-center justify-between px-3 pointer-events-none">
+            <button
+              type="button"
+              onClick={handlePrevious}
+              className="pointer-events-auto rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70 transition-colors"
+              aria-label="Previous image"
+            >
+              <FaChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              onClick={handleNext}
+              className="pointer-events-auto rounded-full bg-black/50 p-2 text-white backdrop-blur-sm hover:bg-black/70 transition-colors"
+              aria-label="Next image"
+            >
+              <FaChevronRight className="h-5 w-5" />
+            </button>
+          </div>
         )}
 
         {/* Image Counter */}
@@ -77,7 +78,7 @@ const ProductGallery = ({ product }) => {
 
       {/* Thumbnail Grid */}
       {product.images.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto pb-1" style={{ scrollbarWidth: "thin" }}>
+        <div className="w-full max-w-full flex gap-2 overflow-x-auto pb-1" style={{ scrollbarWidth: "thin" }}>
           {product.images.map((image, index) => (
             <button
               key={index}

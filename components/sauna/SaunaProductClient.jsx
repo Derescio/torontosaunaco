@@ -264,7 +264,9 @@ const SaunaProductClient = ({ product, productId }) => {
         <div className="container mx-auto px-4 max-w-7xl">
           {/* Gallery and Description */}
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-12">
-            <ProductGallery product={product} />
+            <div className="min-w-0">
+              <ProductGallery product={product} />
+            </div>
 
             {/* Product Price, Title and Description */}
             <div className="mt-12 mb-12">
