@@ -34,7 +34,7 @@ const ProductGallery = ({ product }) => {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-2.5">
       {/* Main Image with Navigation Arrows */}
       <div className="relative aspect-square overflow-hidden rounded-xl bg-gray-100">
         <Image
@@ -78,15 +78,15 @@ const ProductGallery = ({ product }) => {
 
       {/* Thumbnail Grid */}
       {product.images.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto pb-2" style={{ scrollbarWidth: "thin" }}>
+        <div className="flex gap-2 overflow-x-auto pb-1" style={{ scrollbarWidth: "thin" }}>
           {product.images.map((image, index) => (
             <button
               key={index}
               type="button"
               onClick={() => setSelectedImage(index)}
-              className={`relative shrink-0 w-16 h-16 overflow-hidden rounded-lg transition-all ${
+              className={`ml-1 relative shrink-0 w-16 h-16 overflow-hidden rounded-sm transition-all ${
                 selectedImage === index
-                  ? "ring-2 ring-[#4E7302] ring-offset-2"
+                  ? "ring-1 ring-[#4E7302]"
                   : "opacity-70 hover:opacity-100"
               }`}
             >
