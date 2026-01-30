@@ -128,8 +128,7 @@ const BestSellers = () => {
               Best Sellers
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-archivo">
-              Discover our most popular saunas, trusted by most of our customers
-              across Canada for exceptional quality and wellness benefits.
+            Our best selling outdoor saunas, built for four season use. All but one are fully insulated with metal/aluminum cladding for long term durability and consistent heat, year round.
             </p>
           </div>
         </div>

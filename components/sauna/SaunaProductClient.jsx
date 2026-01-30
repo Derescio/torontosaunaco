@@ -9,6 +9,7 @@ import ProductConfigurator from "./ProductConfigurator";
 import PriceSummary from "./PriceSummary";
 import ProductContactForm from "./ProductContactForm";
 import ProductDocuments from "./ProductDocuments";
+import Product from "../Product";
 
 /**
  * SaunaProductClient - Main client component orchestrating product page
@@ -212,6 +213,18 @@ const SaunaProductClient = ({ product, productId }) => {
   const startingFromPrice = computeStartingFromPrice();
   const deliveryFee =
     selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0;
+
+    // console.log(deliveryFee)
+    // console.log(product)
+    // console.log(product?.delivery?.cost)
+    // console.log(product?.delivery?.included)
+    // console.log(product?.delivery?.description)
+    // console.log(product?.delivery?.cost)
+    // console.log(product?.delivery?.included)
+    // console.log(product?.delivery?.description)
+    // console.log(product?.delivery?.cost)
+    // console.log(product?.delivery?.included)
+    // console.log(product?.delivery?.description)
 
   // Description segments
   const introText = product?.description?.slice(0, 109) || "";
