@@ -2,7 +2,7 @@ import connectDB from "@/config/db";
 import Products from "@/models/Products";
 import mongoose from "mongoose";
 
-export const dynamic = "force-dynamic";
+//export const dynamic = "force-dynamic";
 
 // Debug endpoint to test specific product lookups
 // GET /api/debug-product?id=668af06648215c199c418a96

@@ -9,15 +9,15 @@ import { notFound } from "next/navigation";
  */
 
 // Force dynamic rendering to bypass any stale cache
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+//export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const id = resolvedParams.id;
 
-  console.log("[generateMetadata] Called with ID:", id);
+//  console.log("[generateMetadata] Called with ID:", id);
 
   // Validate MongoDB ObjectId format
   if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
@@ -30,9 +30,9 @@ export async function generateMetadata({ params }) {
 
   try {
     await connectDB();
-    console.log("[generateMetadata] DB connected, querying...");
+  //  console.log("[generateMetadata] DB connected, querying...");
     const product = await Products.findById(id).lean();
-    console.log("[generateMetadata] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
+  //  console.log("[generateMetadata] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
 
     if (!product) {
       return {
@@ -158,23 +158,23 @@ export default async function SaunaPage({ params }) {
   const resolvedParams = await params;
   const id = resolvedParams.id;
 
-  console.log("[SaunaPage] Fetching product with ID:", id);
+  //console.log("[SaunaPage] Fetching product with ID:", id);
 
   // Validate MongoDB ObjectId format
   if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
-    console.log("[SaunaPage] Invalid ObjectId format:", id);
+   // console.log("[SaunaPage] Invalid ObjectId format:", id);
     notFound();
   }
 
   try {
     await connectDB();
-    console.log("[SaunaPage] Database connected, querying for:", id);
+   // console.log("[SaunaPage] Database connected, querying for:", id);
     
     const product = await Products.findById(id).lean();
-    console.log("[SaunaPage] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
+   // console.log("[SaunaPage] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
 
     if (!product) {
-      console.log("[SaunaPage] Product not found in database for ID:", id);
+    //  console.log("[SaunaPage] Product not found in database for ID:", id);
       notFound();
     }
 

@@ -64,7 +64,7 @@ const BestSellers = () => {
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1769124809/torontosaunaco/Mini_new_2_eqhzwg.jpg",
       href: "/saunas/668af06648215c199c418a96",
-      price: "Starting at $14,999",
+      price: "$14,999",
     },
     {
       id: 2,
@@ -74,7 +74,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1766677493/torontosaunaco/Max_Image_New_1_updated_cymu9s.jpg",
       href: "/saunas/668af06648215c199c427a97",
-      price: "Starting at $16,549",
+      price: "$16,549",
     },
 
     {
@@ -85,7 +85,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653214/torontosaunaco/Cubes/NE6110/neptune_900x_u29c1e.webp",
       href: "/saunas/668af06648215c199c406a65",
-      price: "Starting at $15,999",
+      price: "$15,999",
     },
     {
       id: 4,
@@ -94,7 +94,7 @@ const BestSellers = () => {
         "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
       image: "/images/hudson_900_pgonnk.jpg",
       href: "/saunas/668af06648215c199c406a64",
-      price: "Starting at $15,757",
+      price: "$15,757",
     },
     {
       id: 5,
@@ -104,7 +104,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720652998/torontosaunaco/Cubes/CU550/CU550_1_900_hehapo.jpg",
       href: "/saunas/668af06648215c199c406a5f",
-      price: "Starting at $9,950",
+      price: "$9,950",
     },
     {
       id: 6,
@@ -114,7 +114,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721090420/torontosaunaco/Cubes/CU582/4-PersonOutdoorSauna_Shower_900_acxnyb.jpg",
       href: "/saunas/6695c201a93a72ff9464ef74",
-      price: "Starting at $12,850",
+      price: "$12,850",
     },
   ];
 
@@ -202,7 +202,7 @@ const BestSellers = () => {
                                 {sauna.price}
                               </span>
                               <span className="font-semibold text-sm">
-                                Starting at $
+                                $
                                 {Math.round(
                                   originalPriceNumber * (1 - SALE.discount)
                                 ).toLocaleString()}
