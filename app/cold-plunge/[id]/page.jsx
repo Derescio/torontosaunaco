@@ -344,7 +344,8 @@ const ColdPlungePage = () => {
 
                   <div className="mt-12 mb-12">
                     <h2 className="text-2xl md:text-3xl font-light text-[#4E7302] mb-6 font-archivo">
-                      {product.name} Starting from $
+                      {/* {product.name} Starting from $ */}
+                      {product.name}  $
                       {startingFromPrice.toLocaleString()}
                     </h2>
                     <div className="prose max-w-none text-gray-700 leading-relaxed font-archivo">

@@ -132,7 +132,8 @@ const HeaterDetails = () => {
             <div className="mt-3">
               <h2 className="sr-only">Product information</h2>
               <p className="text-2xl text-gray-900">
-                Starting from ${heater.basePrice}
+                {/* Starting from ${heater.basePrice} */}
+                ${heater.basePrice}
               </p>
             </div>
 

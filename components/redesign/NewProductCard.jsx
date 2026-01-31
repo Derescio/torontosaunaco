@@ -76,7 +76,8 @@ const NewProductCard = ({ product }) => {
                
               )} */}
               <span className="text-black font-semibold font-archivo">
-                Starting at ${basePrice.toLocaleString()}
+                ${basePrice.toLocaleString()}
+                {/* Starting at ${basePrice.toLocaleString()} */}
               </span>
               <div className="text-black bg-[#BF9774]/50 text-sm rounded-lg md:px-4 px-2 mt-1 md:mt-0 md:w-auto py-2 font-archivo font-medium hover:bg-white transition-colors">
                 View Details
