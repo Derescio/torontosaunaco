@@ -8,13 +8,20 @@ import { notFound } from "next/navigation";
  * Fetches product data server-side and passes to client component
  */
 
+// Force dynamic rendering to bypass any stale cache
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const id = resolvedParams.id;
 
+  console.log("[generateMetadata] Called with ID:", id);
+
   // Validate MongoDB ObjectId format
   if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
+    console.log("[generateMetadata] Invalid ObjectId format:", id);
     return {
       title: "Product Not Found | Toronto Sauna Co.",
       description: "The requested product could not be found.",
@@ -23,7 +30,9 @@ export async function generateMetadata({ params }) {
 
   try {
     await connectDB();
+    console.log("[generateMetadata] DB connected, querying...");
     const product = await Products.findById(id).lean();
+    console.log("[generateMetadata] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
 
     if (!product) {
       return {
@@ -149,16 +158,23 @@ export default async function SaunaPage({ params }) {
   const resolvedParams = await params;
   const id = resolvedParams.id;
 
+  console.log("[SaunaPage] Fetching product with ID:", id);
+
   // Validate MongoDB ObjectId format
   if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) {
+    console.log("[SaunaPage] Invalid ObjectId format:", id);
     notFound();
   }
 
   try {
     await connectDB();
+    console.log("[SaunaPage] Database connected, querying for:", id);
+    
     const product = await Products.findById(id).lean();
+    console.log("[SaunaPage] Query result:", product ? `Found: ${product.name}` : "NOT FOUND");
 
     if (!product) {
+      console.log("[SaunaPage] Product not found in database for ID:", id);
       notFound();
     }
 
