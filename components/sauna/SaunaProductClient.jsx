@@ -284,7 +284,7 @@ const SaunaProductClient = ({ product, productId }) => {
             {/* Product Price, Title and Description */}
             <div className="mt-12 mb-12">
               <h2 className="text-2xl md:text-3xl font-light text-[#4E7302] mb-6 font-archivo">
-                {product.name} {product.type === "Barrel" ? "Starting from $" : ""}
+                {product.name} {product.type === "Barrel" ? "Starting from $" : "$"}
                 {startingFromPrice.toLocaleString()}
               </h2>
               <div className="prose max-w-none text-gray-700 leading-relaxed font-archivo">
