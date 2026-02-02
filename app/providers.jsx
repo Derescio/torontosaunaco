@@ -9,7 +9,7 @@ export function PHProvider({ children }) {
     if (typeof window !== "undefined" && !posthog.__loaded) {
       posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
         api_host:
-          process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+          process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.posthog.com",
         person_profiles: "identified_only",
         capture_pageview: false, // We capture pageviews manually
         loaded: (posthog) => {
