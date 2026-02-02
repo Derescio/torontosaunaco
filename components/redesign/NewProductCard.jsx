@@ -76,6 +76,7 @@ const NewProductCard = ({ product }) => {
                
               )} */}
               <span className="text-black font-semibold font-archivo">
+              <span className="text-black font-light font-archivo">{product.type === "Barrel" ? "Starting from $" : "Base Price: "}</span>
                 ${basePrice.toLocaleString()}
                 {/* Starting at ${basePrice.toLocaleString()} */}
               </span>
