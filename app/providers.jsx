@@ -11,6 +11,7 @@ export function PHProvider({ children }) {
         api_host: "https://us.i.posthog.com",
         person_profiles: "identified_only",
         capture_pageview: false,
+        // advanced_disable_decide: true,
       })
       posthog.__loaded = true
     }
