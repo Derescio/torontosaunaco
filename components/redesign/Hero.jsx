@@ -81,7 +81,7 @@ const Hero = () => {
         preload="metadata"
         aria-hidden="true"
         className="absolute inset-0 z-5 h-full w-full object-cover"
-        poster="https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew"
+        poster="https://res.cloudinary.com/dw4ev5whz/image/upload/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png"
       >
         <source
           src="https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaAQzCBpuAhtKF2LqmV6IRbN09fpB17YTorzw4u"
