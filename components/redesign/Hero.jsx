@@ -62,7 +62,7 @@ const Hero = () => {
       {/* Background Image (always renders, instant paint) */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://klgko4j9xb.ufs.sh/f/QU3WlvTtWXxINXUnmbY6EFDuZUGftA81BP9QXmlCKO5vzsew"
+          src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png"
           alt="Sauna Wellness Background"
           fill
           priority
