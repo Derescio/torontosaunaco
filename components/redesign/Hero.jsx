@@ -52,36 +52,68 @@
 
 
 
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef(null);
+  const posterUrl =
+    "https://res.cloudinary.com/dw4ev5whz/image/upload/f_auto,q_auto,w_1920/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png?t=1738613520";
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleCanPlay = () => {
+      setIsVideoLoaded(true);
+    };
+
+    video.addEventListener("canplay", handleCanPlay);
+
+    if (video.readyState >= 3) {
+      setIsVideoLoaded(true);
+    }
+
+    return () => {
+      video.removeEventListener("canplay", handleCanPlay);
+    };
+  }, []);
+
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image (always renders, instant paint) */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <Image
-          src="https://res.cloudinary.com/dw4ev5whz/image/upload/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png"
+          src={posterUrl}
           alt="Sauna Wellness Background"
           fill
           priority
           fetchPriority="high"
           sizes="100vw"
-          className="object-cover"
+          className={`object-cover transition-opacity duration-1000 ${
+            isVideoLoaded ? "opacity-0" : "opacity-100"
+          }`}
         />
-      </div>
+      </div> */}
 
       {/* Background Video (CDN) */}
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
-        preload="metadata"
+        preload="auto"
         aria-hidden="true"
-        className="absolute inset-0 z-5 h-full w-full object-cover"
-        poster="https://res.cloudinary.com/dw4ev5whz/image/upload/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png"
+        data-testid="hero-video"
+        className={`absolute inset-0 z-[1] h-full w-full object-cover transition-opacity duration-1000 ${
+          isVideoLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        // poster={posterUrl}
       >
         <source
           src="https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaAQzCBpuAhtKF2LqmV6IRbN09fpB17YTorzw4u"

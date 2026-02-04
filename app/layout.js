@@ -29,6 +29,10 @@ const MainLayout = ({ children }) => {
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
+          <link rel="preconnect" href="https://res.cloudinary.com" />
+          <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+          <link rel="preconnect" href="https://gz7g5ew6dp.ufs.sh" />
+          <link rel="dns-prefetch" href="https://gz7g5ew6dp.ufs.sh" />
           <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
