@@ -23,6 +23,11 @@ const MainLayout = ({ children }) => {
       <html lang="en" suppressHydrationWarning>
         {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
         <head>
+        <link
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700"
+  as="style"
+/>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

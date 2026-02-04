@@ -57,12 +57,19 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import useMediaQuery from "@/lib/useMediaQuery";
 
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const videoRef = useRef(null);
-  const posterUrl =
-    "https://res.cloudinary.com/dw4ev5whz/image/upload/f_auto,q_auto,w_1920/v1770137541/torontosaunaco/Screenshot_2026-02-03_115145_osuvkc.png?t=1738613520";
+
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
+const posterUrl = isMobile
+  ? "/images/mobile_bg.png"   // NO TEXT
+  : "/images/mobile_bg.png"; // Can match video
+  // const posterUrl =
+  //   "/images/mobile_bg.png"
 
   useEffect(() => {
     const video = videoRef.current;
@@ -86,7 +93,7 @@ const Hero = () => {
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image (always renders, instant paint) */}
-      {/* <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0">
         <Image
           src={posterUrl}
           alt="Sauna Wellness Background"
@@ -98,7 +105,7 @@ const Hero = () => {
             isVideoLoaded ? "opacity-0" : "opacity-100"
           }`}
         />
-      </div> */}
+      </div>
 
       {/* Background Video (CDN) */}
       <video
@@ -107,7 +114,7 @@ const Hero = () => {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-hidden="true"
         data-testid="hero-video"
         className={`absolute inset-0 z-[1] h-full w-full object-cover transition-opacity duration-1000 ${
@@ -116,7 +123,7 @@ const Hero = () => {
         // poster={posterUrl}
       >
         <source
-          src="https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaAQzCBpuAhtKF2LqmV6IRbN09fpB17YTorzw4u"
+          src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1770173947/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
           type="video/mp4"
         />
       </video>
