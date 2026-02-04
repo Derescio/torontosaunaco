@@ -9,13 +9,14 @@ import HL from "@/public/images/humm_logo.jpg";
 import HarL from "@/public/images/Harvia.jpg";
 import HomePageImage from "@/components/HomePageImage";
 import BlogPage from "./blog/page";
-import newLogo from "@/public/images/Main Black.png";
+import newLogo from "@/public/images/Black Transparent.png";
 import Link from "next/link";
 import Hero from "@/components/redesign/Hero";
 import InfoSection from "@/components/redesign/InfoSection";
 import Signature from "@/components/redesign/Signature";
 //import Signature_New from "@/components/redesign/Signature_New";
 import WoodTypes from "@/components/redesign/WoodTypes";
+import WhistlerBlack from "@/public/images/New_whistler.png";
 
 // SEO Metadata for Homepage
 export const metadata = {
@@ -116,7 +117,7 @@ const HomePage = () => {
             priority
           />
         </div>
-        <Link href="/pacifictide">
+        {/* <Link href="/pacifictide">
           <div className="col-span-1">
             <Image
               src={newLogo}
@@ -127,7 +128,7 @@ const HomePage = () => {
               priority
             />
           </div>
-        </Link>
+        </Link> */}
         <div className="col-span-2 mt-8 md:mt-0">
           <Image
             src={HarL}
@@ -138,6 +139,16 @@ const HomePage = () => {
             priority
           />
         </div>
+        <Link href="/thewhistlersaunaco">
+        <Image
+            src={WhistlerBlack}
+            alt="Whistler Black Logo"
+            width={150}
+            height={150}
+            className="mx-auto"
+            priority
+          />
+          </Link>
       </div>
       {/* </div> */}
     </div>

@@ -161,4 +161,3 @@ const posterUrl = isMobile
 };
 
 export default Hero;
-
