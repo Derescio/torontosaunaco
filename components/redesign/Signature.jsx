@@ -84,6 +84,24 @@ const Signature = () => {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-7xl">
+        {/* <div className="text-left mb-12 md:mb-16"> */}
+          {/* <h2 className="font-libre italic text-2xl md:text-4xl lg:text-5xl font-light text-neutral-600 mb-4  font-archivo ">
+          Sauna lifestyle built for you.
+          </h2>
+
+          <p className="font-nunito font-light text-xl md:text-2xl text-gray-600 max-w-2xl">
+          From barrel saunas to modern cubes, embrace a wellness.
+          </p> */}
+           {/* <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-black mb-4  font-archivo ">
+            Signature Saunas
+          </h2>
+
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Discover our handpicked collection of premium saunas, each crafted
+            for exceptional relaxation and wellness
+          </p>
+        </div> */}
+
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-black mb-4  font-archivo ">
             Signature Saunas
@@ -94,6 +112,9 @@ const Signature = () => {
             for exceptional relaxation and wellness
           </p>
         </div>
+
+
+
 
         <div className="grid md:grid-cols-3 gap-8">
           {saunas.map((sauna, index) => (

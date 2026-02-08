@@ -63,6 +63,12 @@ module.exports = {
         atkinson: ["Atkinson Hyperlegible", "sans-serif"],
         nunito: ["Nunito", "Poppins"],
         rubik: ["Rubik", "sans-serif"],
+        abeezee: ["ABeeZee", "sans-serif"],
+        abyssinica: ["Abyssinica SIL", "sans-serif"],
+        akaya: ["Akaya Kanadaka", "sans-serif"],
+        anton: ["Anton", "sans-serif"],
+        kavivanar: ["Kavivanar", "sans-serif"],
+        libre: ["Libre Baskerville", "serif"],
       },
       gridTemplateColumns: {
         "70/30": "70% 28%",

@@ -8,6 +8,7 @@ import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndF
 // import { GoogleTagManager } from "@next/third-parties/google";
 import { PHProvider } from "./providers";
 import PostHogPageView from "../components/PostHogPageViews";
+import Script from "next/script";
 
 // Create Meta Data
 export const metadata = {
@@ -50,6 +51,21 @@ const MainLayout = ({ children }) => {
             href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
             rel="stylesheet"
           ></link>
+          <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abyssinica+SIL&family=Akaya+Kanadaka&family=Anton&family=Kavivanar&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet"
+          ></link>
+           <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16622832527"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16622832527');
+          `}
+        </Script>
         </head>
         <body>
           <StoreProvider>
