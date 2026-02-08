@@ -89,12 +89,12 @@ const BestSellers = () => {
     },
     {
       id: 4,
-      name: "Pure Cube Hudson",
+      name: "The Orion",
       description:
         "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
-      image: "/images/hudson_900_pgonnk.jpg",
-      href: "/saunas/668af06648215c199c406a64",
-      price: "$15,757",
+      image: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653285/torontosaunaco/Cubes/OR6110/MS-_-Orion-PDP_900_atvbal.jpg",
+      href: "/saunas/668af06648215c199c406a66",
+      price: "$16,670", 
     },
     {
       id: 5,
@@ -108,14 +108,13 @@ const BestSellers = () => {
     },
     {
       id: 6,
-      name: "Pure Cube Sauna w/ Shower ",
+      name: "Pure Cube Hudson",
       description:
-        "The OutdoorSauna With Shower sits 3 people and is another sophisticated design.",
-      image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721090420/torontosaunaco/Cubes/CU582/4-PersonOutdoorSauna_Shower_900_acxnyb.jpg",
-      href: "/saunas/6695c201a93a72ff9464ef74",
-      price: "$12,850",
-    },
+        "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
+      image: "/images/hudson_900_pgonnk.jpg",
+      href: "/saunas/668af06648215c199c406a64",
+      price: "$15,757",
+    }
   ];
 
   return (
