@@ -27,12 +27,19 @@ const HeaterDetails = () => {
         setHeater(data);
         setTotalPrice(data.basePrice);
 
+        const options = data.options ?? {};
+
         // Set default options
         const defaultOptions = {
-          stones: data.options.stones.find((s) => s.isDefault) || null,
-          controls: data.options.controls.find((c) => c.isDefault) || null,
-          safetyRailing:
-            data.options.safetyRailing.find((r) => r.isDefault) || null,
+          stones: Array.isArray(options.stones)
+            ? options.stones.find((s) => s.isDefault) || null
+            : null,
+          controls: Array.isArray(options.controls)
+            ? options.controls.find((c) => c.isDefault) || null
+            : null,
+          safetyRailing: Array.isArray(options.safetyRailing)
+            ? options.safetyRailing.find((r) => r.isDefault) || null
+            : null,
         };
         setSelectedOptions(defaultOptions);
       } catch (error) {
@@ -68,7 +75,7 @@ const HeaterDetails = () => {
         Heater not found
       </div>
     );
-
+console.log(heater.options.safetyRailing);
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -209,161 +216,170 @@ const HeaterDetails = () => {
               </h3>
 
               {/* Stones Selection */}
-              <div className="mt-4">
-                <label className="text-sm font-medium text-gray-700">
-                  Stones
-                </label>
-                <div className="mt-4 space-y-3">
-                  {heater.options.stones.map((stone) => {
-                    const isSelected =
-                      selectedOptions.stones?.type === stone.type;
-                    return (
-                      <label
-                        key={stone.type}
-                        className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
-                          isSelected
-                            ? "border-indigo-600 bg-indigo-50"
-                            : "border-gray-300 hover:border-indigo-400"
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3">
-                            <input
-                              type="radio"
-                              name="stones"
-                              checked={isSelected}
-                              onChange={() =>
-                                setSelectedOptions({
-                                  ...selectedOptions,
-                                  stones: stone,
-                                })
-                              }
-                              className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            <div>
-                              <p className="text-sm font-medium text-gray-900">
-                                {stone.type}
-                              </p>
-                              <p className="text-sm text-gray-950">
-                                {stone.description}
-                              </p>
+              {Array.isArray(heater.options?.stones) &&
+                heater.options.stones.length > 0 && (
+                  <div className="mt-4">
+                    <label className="text-sm font-medium text-gray-700">
+                      Stones
+                    </label>
+                    <div className="mt-4 space-y-3">
+                      {heater.options.stones.map((stone) => {
+                        const isSelected =
+                          selectedOptions.stones?.type === stone.type;
+                        return (
+                          <label
+                            key={stone.type}
+                            className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
+                              isSelected
+                                ? "border-indigo-600 bg-indigo-50"
+                                : "border-gray-300 hover:border-indigo-400"
+                            }`}
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-3">
+                                <input
+                                  type="radio"
+                                  name="stones"
+                                  checked={isSelected}
+                                  onChange={() =>
+                                    setSelectedOptions({
+                                      ...selectedOptions,
+                                      stones: stone,
+                                    })
+                                  }
+                                  className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
+                                />
+                                <div>
+                                  <p className="text-sm font-medium text-gray-900">
+                                    {stone.type}
+                                  </p>
+                                  <p className="text-sm text-gray-950">
+                                    {stone.description}
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="text-sm text-gray-700 text-right">
+                                <p>${stone.price}</p>
+                                <p>
+                                  {stone.weight.metric} kg (
+                                  {stone.weight.imperial} lb)
+                                </p>
+                              </div>
                             </div>
-                          </div>
-                          <div className="text-sm text-gray-700 text-right">
-                            <p>${stone.price}</p>
-                            <p>
-                              {stone.weight.metric} kg ({stone.weight.imperial}{" "}
-                              lb)
-                            </p>
-                          </div>
-                        </div>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
               {/* Controls Selection */}
-              <div className="mt-6">
-                <label className="text-sm font-medium text-gray-700">
-                  Controls
-                </label>
-                <div className="mt-4 space-y-3">
-                  {heater.options.controls.map((control) => {
-                    const isSelected =
-                      selectedOptions.controls?.type === control.type;
-                    return (
-                      <label
-                        key={control.type}
-                        className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
-                          isSelected
-                            ? "border-indigo-600 bg-indigo-50"
-                            : "border-gray-300 hover:border-indigo-400"
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3">
-                            <input
-                              type="radio"
-                              name="controls"
-                              checked={isSelected}
-                              onChange={() =>
-                                setSelectedOptions({
-                                  ...selectedOptions,
-                                  controls: control,
-                                })
-                              }
-                              className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            <div>
-                              <p className="text-sm font-medium text-gray-900">
-                                {control.type}
-                              </p>
-                              <p className="text-sm text-gray-950">
-                                {control.description}
-                              </p>
+              {Array.isArray(heater.options?.controls) &&
+                heater.options.controls.length > 0 && (
+                  <div className="mt-6">
+                    <label className="text-sm font-medium text-gray-700">
+                      Controls
+                    </label>
+                    <div className="mt-4 space-y-3">
+                      {heater.options.controls.map((control) => {
+                        const isSelected =
+                          selectedOptions.controls?.type === control.type;
+                        return (
+                          <label
+                            key={control.type}
+                            className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
+                              isSelected
+                                ? "border-indigo-600 bg-indigo-50"
+                                : "border-gray-300 hover:border-indigo-400"
+                            }`}
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-3">
+                                <input
+                                  type="radio"
+                                  name="controls"
+                                  checked={isSelected}
+                                  onChange={() =>
+                                    setSelectedOptions({
+                                      ...selectedOptions,
+                                      controls: control,
+                                    })
+                                  }
+                                  className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
+                                />
+                                <div>
+                                  <p className="text-sm font-medium text-gray-900">
+                                    {control.type}
+                                  </p>
+                                  <p className="text-sm text-gray-950">
+                                    {control.description}
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="text-sm text-gray-700 text-right">
+                                <p>${control.price}</p>
+                              </div>
                             </div>
-                          </div>
-                          <div className="text-sm text-gray-700 text-right">
-                            <p>${control.price}</p>
-                          </div>
-                        </div>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
               {/* Safety Railing Selection */}
-              <div className="mt-6">
-                <label className="text-sm font-medium text-gray-700">
-                  Safety Railing
-                </label>
-                <div className="mt-4 space-y-3">
-                  {heater.options.safetyRailing.map((railing) => {
-                    const isSelected =
-                      selectedOptions.safetyRailing?.type === railing.type;
-                    return (
-                      <label
-                        key={railing.type}
-                        className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
-                          isSelected
-                            ? "border-indigo-600 bg-indigo-50"
-                            : "border-gray-300 hover:border-indigo-400"
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3">
-                            <input
-                              type="radio"
-                              name="safetyRailing"
-                              checked={isSelected}
-                              onChange={() =>
-                                setSelectedOptions({
-                                  ...selectedOptions,
-                                  safetyRailing: railing,
-                                })
-                              }
-                              className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            <div>
-                              <p className="text-sm font-medium text-gray-900">
-                                {railing.type}
-                              </p>
-                              <p className="text-sm text-gray-950">
-                                {railing.description}
-                              </p>
+              {Array.isArray(heater.options?.safetyRailing) &&
+                heater.options.safetyRailing.length > 0 && (
+                  <div className="mt-6">
+                    <label className="text-sm font-medium text-gray-700">
+                      Safety Railing
+                    </label>
+                    <div className="mt-4 space-y-3">
+                      {heater.options.safetyRailing.map((railing) => {
+                        const isSelected =
+                          selectedOptions.safetyRailing?.type === railing.type;
+                        return (
+                          <label
+                            key={railing.type}
+                            className={`block cursor-pointer border rounded-xl p-4 transition-all duration-150 ${
+                              isSelected
+                                ? "border-indigo-600 bg-indigo-50"
+                                : "border-gray-300 hover:border-indigo-400"
+                            }`}
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-3">
+                                <input
+                                  type="radio"
+                                  name="safetyRailing"
+                                  checked={isSelected}
+                                  onChange={() =>
+                                    setSelectedOptions({
+                                      ...selectedOptions,
+                                      safetyRailing: railing,
+                                    })
+                                  }
+                                  className="h-5 w-5 text-indigo-600 focus:ring-indigo-500"
+                                />
+                                <div>
+                                  <p className="text-sm font-medium text-gray-900">
+                                    {railing.type}
+                                  </p>
+                                  <p className="text-sm text-gray-950">
+                                    {railing.description}
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="text-sm text-gray-700 text-right">
+                                <p>${railing.price}</p>
+                              </div>
                             </div>
-                          </div>
-                          <div className="text-sm text-gray-700 text-right">
-                            <p>${railing.price}</p>
-                          </div>
-                        </div>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
             </div>
 
             {/* Total Price */}
