@@ -212,7 +212,7 @@ console.log(heater.options.safetyRailing);
             {/* Options */}
             <div className="mt-8 border-t border-gray-200 pt-8">
               <h3 className="text-lg font-medium text-gray-900">
-                Customize Your Heater
+               {heater.options.length === 0 ?  "No Options Available": "Customize Your Heater" }
               </h3>
 
               {/* Stones Selection */}
