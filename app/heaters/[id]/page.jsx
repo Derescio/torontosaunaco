@@ -75,7 +75,10 @@ const HeaterDetails = () => {
         Heater not found
       </div>
     );
-console.log(heater.options.safetyRailing);
+  const options = heater.options ?? {};
+  const hasOptions = ["stones", "controls", "safetyRailing"].some(
+    (key) => Array.isArray(options[key]) && options[key].length > 0
+  );
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -212,7 +215,7 @@ console.log(heater.options.safetyRailing);
             {/* Options */}
             <div className="mt-8 border-t border-gray-200 pt-8">
               <h3 className="text-lg font-medium text-gray-900">
-               {heater.options.length === 0 ?  "No Options Available": "Customize Your Heater" }
+                {hasOptions ? "Customize Your Heater" : "No Options Available"}
               </h3>
 
               {/* Stones Selection */}
