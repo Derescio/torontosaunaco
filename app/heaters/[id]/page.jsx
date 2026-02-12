@@ -193,7 +193,7 @@ const HeaterDetails = () => {
                   <div>
                     <p className="text-sm font-medium text-gray-950">Power</p>
                     <p className="mt-1 text-sm text-gray-900">
-                      {heater.power} kW
+                      {heater.power && heater.power > 0 ? `${heater.power} kW` : "Wood burning"} 
                     </p>
                   </div>
                   <div>
