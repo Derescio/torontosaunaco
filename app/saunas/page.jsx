@@ -64,7 +64,7 @@ const Saunas = async () => {
         new Date(a.updatedAt || a.createdAt || 0) ||
       (a.name || "").localeCompare(b.name || "")
   );
-  //console.log(products);
+  //console.log(products.map(p => p.name));
   return (
     <div>
       <SaunaCollectionHero />

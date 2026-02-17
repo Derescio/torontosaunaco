@@ -10,6 +10,7 @@ import PriceSummary from "./PriceSummary";
 import ProductContactForm from "./ProductContactForm";
 import ProductDocuments from "./ProductDocuments";
 import Product from "../Product";
+import Link from "next/link";
 
 /**
  * SaunaProductClient - Main client component orchestrating product page
@@ -293,6 +294,9 @@ const SaunaProductClient = ({ product, productId }) => {
                     {bodyText}
                   </p>
                 )}
+                <Link href="/shipping">
+                  <p className="text-xs italic hover:text-blue-700 underline-none">Shipping Details</p>
+                </Link>
               </div>
             </div>
           </div>
