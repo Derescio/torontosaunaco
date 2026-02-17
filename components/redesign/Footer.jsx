@@ -143,6 +143,15 @@ const Footer = () => {
                   Warranty
                 </a>
               </li>
+              <li>
+                <a
+                  href="/shipping"
+                  className="hover:underline hover:text-[#FFA726] transition-colors text-white"
+                  alt="Shipping Link"
+                >
+                  Shipping
+                </a>
+              </li>
             </ul>
           </div>
 
