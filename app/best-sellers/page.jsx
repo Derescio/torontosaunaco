@@ -68,17 +68,27 @@ const BestSellers = () => {
     },
     {
       id: 2,
+      name: "The Max",
+      description:
+        "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
+      image:
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386022/torontosaunaco/studio/MaxONE_sd9kqd.png",
+      href: "/saunas/69950e9f11eb36b604c4687b",
+      price: "$18,991",
+    },
+    {
+      id: 3,
       name: "The Max Plus",
       description:
         "The Studio 6 Max Plus Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1766677493/torontosaunaco/Max_Image_New_1_updated_cymu9s.jpg",
       href: "/saunas/668af06648215c199c427a97",
-      price: "$16,549",
+      price: "$21,450",
     },
 
     {
-      id: 3,
+      id: 4,
       name: "Pure Cube Neptune",
       description:
         "The Neptune Sauna seamlessly integrates the outdoors into its design through an expansive glass front wall.",
@@ -88,7 +98,16 @@ const BestSellers = () => {
       price: "$15,999",
     },
     {
-      id: 4,
+      id: 5,
+      name: "Pure Cube Hudson",
+      description:
+        "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
+      image: "/images/hudson_900_pgonnk.jpg",
+      href: "/saunas/668af06648215c199c406a64",
+      price: "$15,757",
+    },
+    {
+      id: 6,
       name: "The Orion",
       description:
         "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
@@ -96,25 +115,8 @@ const BestSellers = () => {
       href: "/saunas/668af06648215c199c406a66",
       price: "$16,670", 
     },
-    {
-      id: 5,
-      name: "Outdoor 552 Pure Cube Sauna ",
-      description:
-        "The Outdoor 552 Pure Cube Sauna sits 2 people and is an attractive and stylish design that features a large window panel on the front wall.",
-      image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720652998/torontosaunaco/Cubes/CU550/CU550_1_900_hehapo.jpg",
-      href: "/saunas/668af06648215c199c406a5f",
-      price: "$9,950",
-    },
-    {
-      id: 6,
-      name: "Pure Cube Hudson",
-      description:
-        "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
-      image: "/images/hudson_900_pgonnk.jpg",
-      href: "/saunas/668af06648215c199c406a64",
-      price: "$15,757",
-    }
+    
+    
   ];
 
   return (
@@ -256,3 +258,4 @@ const BestSellers = () => {
 };
 // cname.vercel-dns.com.
 export default BestSellers;
+
