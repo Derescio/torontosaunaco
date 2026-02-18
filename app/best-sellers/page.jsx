@@ -68,9 +68,9 @@ const BestSellers = () => {
     },
     {
       id: 2,
-      name: "The Max",
+      name: "The Max Plus",
       description:
-        "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
+        "The Studio 6 Max Plus Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1766677493/torontosaunaco/Max_Image_New_1_updated_cymu9s.jpg",
       href: "/saunas/668af06648215c199c427a97",
