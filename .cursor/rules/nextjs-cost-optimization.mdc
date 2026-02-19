@@ -1,0 +1,272 @@
+---
+description: Next.js cost optimization best practices for Vercel deployments — static generation, ISR, caching, database patterns, and anti-patterns to avoid.
+alwaysApply: false
+---
+
+# Next.js Cost Optimization Best Practices
+
+## Purpose
+
+Reusable reference for building and maintaining Next.js applications on Vercel (or similar platforms) with minimal operational cost while preserving performance, scalability, and SEO.
+
+---
+
+## Core Principles
+
+1. If a page can be cached, it should be.
+2. If it can be static, make it static.
+3. If it must be dynamic, make it fast.
+4. Let the CDN do the work — not your serverless functions.
+5. Treat every DB call, API call, and image transformation as a cost line item.
+
+---
+
+## The Single Most Impactful Change
+
+Add `generateStaticParams()` to every dynamic route that serves known content.
+
+Without it → every visit triggers a serverless function + DB/API call.
+With it → pages are pre-rendered at build time and served from Vercel's CDN for free.
+
+```js
+// app/products/[id]/page.jsx
+export async function generateStaticParams() {
+  await connectDB();
+  const products = await Products.find({}, "_id").lean();
+  return products.map((p) => ({ id: p._id.toString() }));
+}
+```
+
+Pair this with ISR so content stays fresh without full rebuilds:
+
+```js
+export const revalidate = 3600; // rebuild at most once per hour
+```
+
+---
+
+## Rendering Strategy Decision Tree
+
+```
+Does the page need per-request user-specific data?
+  YES → SSR (use sparingly, prefer Edge runtime)
+  NO  →
+    Does content change occasionally?
+      YES → ISR with generateStaticParams + revalidate
+      NO  → Full SSG (no revalidate needed)
+```
+
+### Never use SSR for:
+- Marketing pages
+- Blog posts
+- Product listings / detail pages
+- Any page a logged-out user can see
+
+### Only use SSR for:
+- User dashboards
+- Pages behind auth that show personalised data
+- Real-time data (live pricing, inventory counts)
+
+---
+
+## ISR Revalidation Interval Cheat Sheet
+
+| Content Type | Recommended `revalidate` |
+|---|---|
+| Blog posts | `3600` – `86400` (1–24 hrs) |
+| Product pages | `1800` – `7200` (30 min – 2 hrs) |
+| Product listings | `900` – `3600` (15 min – 1 hr) |
+| CMS-driven content | On-demand via webhook |
+| Pricing / availability | `300` – `900` (5–15 min) |
+| Static marketing pages | `false` (never revalidate) |
+
+> ⚠️ `revalidate = 30` on a high-traffic page means up to 120 serverless executions per hour per page. Always question low revalidation values.
+
+---
+
+## Shared Data Fetcher Pattern (Eliminate Double DB Calls)
+
+Both `generateMetadata` and the page component need the same data. Without a shared fetcher, the DB is queried twice per request.
+
+```js
+// Shared fetcher — Next.js deduplicates this at build time
+async function getProduct(id) {
+  if (!id || !/^[a-fA-F0-9]{24}$/.test(id)) return null;
+  await connectDB();
+  const product = await Products.findById(id).lean();
+  if (!product) return null;
+  return JSON.parse(JSON.stringify(product)); // serialize ObjectIds
+}
+
+export async function generateMetadata({ params }) {
+  const product = await getProduct(params.id); // ← same function
+  // ...
+}
+
+export default async function Page({ params }) {
+  const product = await getProduct(params.id); // ← same function, deduplicated
+  // ...
+}
+```
+
+---
+
+## Parallel Data Fetching (Eliminate Waterfalls)
+
+Sequential fetches block each other. Always use `Promise.all()` when data is independent.
+
+```js
+// ❌ Bad — sequential, slow
+const post = await getPostBySlug(slug);
+const related = await getRelatedPosts(slug);
+
+// ✅ Good — parallel, fast
+const [post, related] = await Promise.all([
+  getPostBySlug(slug),
+  getRelatedPosts(slug),
+]);
+```
+
+---
+
+## Database Connection Pattern (Serverless)
+
+Serverless functions are stateless — never assume a connection exists. Always call `connectDB()` at the top of every fetcher, not once at module level.
+
+```js
+// ✅ Correct
+async function getProduct(id) {
+  await connectDB(); // safe to call multiple times — checks if already connected
+  return Products.findById(id).lean();
+}
+
+// ❌ Wrong — connection may not exist when the function cold-starts
+const db = connectDB(); // module-level — unreliable in serverless
+```
+
+Use `.lean()` on every Mongoose query that doesn't need document methods — it returns plain JS objects and is significantly faster.
+
+---
+
+## Query Projection (Only Fetch What You Need)
+
+Never fetch full documents when you only need a subset of fields.
+
+```js
+// ❌ Fetches entire document including images, description, etc.
+const products = await Products.find({}).lean();
+
+// ✅ Only fetches _id — used for generateStaticParams
+const products = await Products.find({}, "_id").lean();
+
+// ✅ Only fetches fields needed for a listing card
+const products = await Products.find({}, "name slug images baseCost type").lean();
+```
+
+---
+
+## Images
+
+- Always use Next.js `<Image />` — never raw `<img>` tags
+- Set explicit `width` and `height` on every image
+- Only use `priority` on above-the-fold images (hero, first product image)
+- Do not use `priority` on sidebar, related, or below-fold images
+- Use `sizes` prop to prevent unnecessarily large image variants being generated
+
+```jsx
+// ✅ Correct
+<Image
+  src={src}
+  alt={alt}
+  width={800}
+  height={450}
+  sizes="(max-width: 768px) 100vw, 800px"
+  priority // only on hero/above-fold
+/>
+```
+
+Vercel charges per image transformation. Unbounded sizes with no `sizes` prop generates many variants.
+
+---
+
+## Middleware
+
+Middleware runs on every matching request — it is one of the easiest sources of hidden cost.
+
+- Scope matcher paths as narrowly as possible
+- Never run middleware globally if only a few routes need it
+- Avoid DB calls or external API calls inside middleware
+- Prefer Edge runtime for middleware (faster, cheaper than Node.js runtime)
+
+```js
+// next.config.js matcher — scope narrowly
+export const config = {
+  matcher: ["/dashboard/:path*", "/account/:path*"],
+};
+```
+
+---
+
+## Serverless Function Best Practices
+
+| Do | Avoid |
+|---|---|
+| Keep execution under 1s | Long-running loops or transforms |
+| Cache DB query results | Repeated identical queries |
+| Use `.lean()` on Mongoose | Full Mongoose documents |
+| Return early on invalid input | Processing before validation |
+| Use Edge runtime where possible | Node.js runtime for simple logic |
+
+---
+
+## Common Anti-Patterns and Fixes
+
+| Anti-Pattern | Fix |
+|---|---|
+| `export const dynamic = "force-dynamic"` on product/blog pages | Remove it — use `generateStaticParams` instead |
+| `revalidate = 0` | Only use this for truly real-time pages |
+| `revalidate = 30` on blog/product pages | Increase to `3600` or higher |
+| Two DB calls per page (metadata + page component) | Extract shared fetcher function |
+| Sequential `await` for independent data | Replace with `Promise.all()` |
+| `priority` on all images | Only on above-fold images |
+| `find({}).lean()` for slug lists | `find({}, "_id").lean()` — projection only |
+| Global middleware matcher `"/:path*"` | Scope to specific protected routes only |
+
+---
+
+## Vercel Cost Drivers (What Actually Appears on Your Invoice)
+
+1. **Function Invocations** — every SSR or ISR hit counts. `generateStaticParams` eliminates these.
+2. **Function Duration (GB-Hours)** — how long functions run × memory. Slow DB queries inflate this.
+3. **ISR Writes** — every ISR regeneration writes to Vercel's cache. Low `revalidate` values cause spikes.
+4. **Image Optimizations** — each unique `src + size` combination is a billed transformation.
+5. **Middleware Executions** — runs on every request matching the matcher. Scope tightly.
+
+> Monitor the **Functions** tab in your Vercel dashboard monthly. Sort by GB-Hours descending — the top 3 routes are almost always responsible for the majority of cost.
+
+---
+
+## Build Optimization
+
+- Use `turbopack` in development (`next dev --turbo`) — faster local iteration
+- Avoid importing entire libraries when only one function is needed (`import { X } from "lib"` not `import lib from "lib"`)
+- Remove `console.log` statements before production builds — they slow down server components
+- Keep `node_modules` clean — audit with `npx depcheck`
+
+---
+
+## Monitoring Checklist (Run Monthly)
+
+- [ ] Review Vercel Functions tab — sort by GB-Hours
+- [ ] Identify any route with invocations > 10K — add `generateStaticParams` if applicable
+- [ ] Check ISR write spikes — increase `revalidate` intervals if needed
+- [ ] Audit middleware matcher scope
+- [ ] Review Image Optimizations count
+- [ ] Run `npx @next/bundle-analyzer` to check JS bundle size
+
+---
+
+## Final Rule of Thumb
+
+> Static is free. Dynamic costs money. ISR is the middle ground.
+> Default to static. Justify every dynamic route explicitly.

@@ -82,7 +82,7 @@ const BestSellers = () => {
       description:
         "The Studio 6 Max Plus Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1766677493/torontosaunaco/Max_Image_New_1_updated_cymu9s.jpg",
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386026/torontosaunaco/studio/PlusONE_wi1qzh.png",
       href: "/saunas/668af06648215c199c427a97",
       price: "$21,450",
     },
