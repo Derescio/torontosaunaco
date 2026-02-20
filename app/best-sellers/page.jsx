@@ -42,7 +42,7 @@ const BestSellers = () => {
         {
           threshold: 0.15,
           rootMargin: "0px 0px -50px 0px",
-        }
+        },
       );
 
       observer.observe(ref);
@@ -62,7 +62,8 @@ const BestSellers = () => {
       name: "The Mini",
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
-      image: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
+      image:
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
       href: "/saunas/668af06648215c199c418a96",
       price: "$15,999",
     },
@@ -74,7 +75,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386022/torontosaunaco/studio/MaxONE_sd9kqd.png",
       href: "/saunas/69950e9f11eb36b604c4687b",
-      price: "$18,991",
+      price: "$20,650",
     },
     {
       id: 3,
@@ -84,7 +85,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386026/torontosaunaco/studio/PlusONE_wi1qzh.png",
       href: "/saunas/668af06648215c199c427a97",
-      price: "$21,450",
+      price: "$23,550",
     },
 
     {
@@ -111,12 +112,11 @@ const BestSellers = () => {
       name: "The Orion",
       description:
         "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
-      image: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653285/torontosaunaco/Cubes/OR6110/MS-_-Orion-PDP_900_atvbal.jpg",
+      image:
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653285/torontosaunaco/Cubes/OR6110/MS-_-Orion-PDP_900_atvbal.jpg",
       href: "/saunas/668af06648215c199c406a66",
-      price: "$16,670", 
+      price: "$16,670",
     },
-    
-    
   ];
 
   return (
@@ -129,7 +129,9 @@ const BestSellers = () => {
               Best Sellers
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-archivo">
-            Our best selling outdoor saunas, built for four season use. All but one are fully insulated with metal/aluminum cladding for long term durability and consistent heat, year round.
+              Our best selling outdoor saunas, built for four season use. All
+              but one are fully insulated with metal/aluminum cladding for long
+              term durability and consistent heat, year round.
             </p>
           </div>
         </div>
@@ -142,7 +144,7 @@ const BestSellers = () => {
             {bestSellers.map((sauna, index) => {
               const isStudio6Sale = SALE.active && SALE.appliesTo(sauna);
               const originalPriceNumber = Number(
-                (sauna.price || "").replace(/[^0-9]/g, "") || 0
+                (sauna.price || "").replace(/[^0-9]/g, "") || 0,
               );
               const discountedPrice = Math.round(originalPriceNumber * 0.9);
 
@@ -205,7 +207,7 @@ const BestSellers = () => {
                               <span className="font-semibold text-sm">
                                 $
                                 {Math.round(
-                                  originalPriceNumber * (1 - SALE.discount)
+                                  originalPriceNumber * (1 - SALE.discount),
                                 ).toLocaleString()}
                               </span>
                             </span>
@@ -258,4 +260,3 @@ const BestSellers = () => {
 };
 // cname.vercel-dns.com.
 export default BestSellers;
-
