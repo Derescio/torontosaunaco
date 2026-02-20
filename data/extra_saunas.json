@@ -348,5 +348,121 @@
         "displayOrder": 8,
         "createdAt": "2024-01-01T00:00:00.000Z",
         "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+        "_id": {
+            "$oid": "668af06648215c199f921a92"
+        },
+        "owner": "torontosaunco",
+        "name": "Pure Cube 672",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "Pure Cube",
+        "description": "A spacious 4-5 person outdoor sauna that blends modern design with natural warmth. Perfect for friends.         The 672 Pure Cube features a symmetrical front with wide glass panels and a centered door, creating a bright, open retreat for families and friends to unwind together.\n\nThe Outdoor 672 Pure Cube Sauna 4-5 Person is a sophisticated design that features 3 large window panels on the front wall and the door in the middle. Create a calm and relaxing atmosphere with the optional semi-privacy panels that still have the double pane glass with a fixed cedar grill on the outside. Relax and rejuvenate with your family or friends in this clean and modern sauna.\n\n•\tComfortably Seats 4-5\n•\t99\" (L)x 74\" (W)  x 91\" (H) \n•\tCrafted from Canadian Clear or Knotty Red Cedar\n•\tGlass Sauna Door\n•\t2-Tier Benches\n•\tTempered Glass Windows\n",
+        "baseCost": 13950,
+        "price": 13950,
+        "dimensions": {
+            "width": 80,
+            "depth": 104,
+            "height": 91,
+            "unit": "in",
+            "type": "exterior"
+        },
+        "features": [
+            "Comfortably Seats 4-5",
+            "Crafted from Canadian Clear or Knotty Red Cedar",
+            "Glass Sauna Door",
+            "2-Tier Benches",
+            "Tempered Glass Windows."
+        ],
+        "wood_type": {
+            "Knotty Cedar": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+            },
+            "Clear Cedar": {
+                "price": 5300,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+            }
+        },
+        "stove_type": {
+            "Huum Drop 9kW with Remote": {
+                "price": 3457,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
+            },
+            "Huum Drop 9kW with Remote + Wifi Controller": {
+                "price": 3950,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
+            },
+            "Harvia Kip 8kW": {
+                "price": 1550,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762468797/torontosaunaco/stoves/Harvia_KIP_1_zbmcy5.png"
+            },
+            "Narvi 16 Wood Burning Heater": {
+                "price": 3140,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469780/torontosaunaco/stoves/Narvi_16_kdgcen.png"
+            },
+            "Homecraft Revive 9kw w/ Wifi": {
+                "price": 3300,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1770913652/torontosaunaco/stoves/HomeCraft_New_wwbjpi.png"
+            }
+        },
+        "wifi_controller": {
+            "price": 575,
+            "description": "Optional Wifi Controller for compatible electric heaters"
+        },
+        "additional_upgrades": [
+            {
+                "name": "Semi-Privacy Panels",
+                "price": 450,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466273/torontosaunaco/stoves/semi_private_eznhlw.jpg"
+            },
+            {
+                "name": "Mirrored Front Glass",
+                "price": 1900,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466282/torontosaunaco/stoves/mirrorred_qcvbqf.jpg"
+            }
+        ],
+        "delivery": {
+            "cost": 450,
+            "included": false,
+            "description": "Delivery charge"
+        },
+        "installation": {
+            "DIY": {
+                "price": 0,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+            },
+            "Professional Install": {
+                "price": 1750,
+                "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+            }
+        },
+        "seller_info": {
+            "name": "John Doe",
+            "email": "john@gmail.com",
+            "phone": "617-555-5555"
+        },
+        "images": [
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1754020532/torontosaunaco/Cubes/IMG-20250731-WA0009_new_tjj8ye.png",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753986175/torontosaunaco/Cubes/IMG_4307_ytu17n.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1753986175/torontosaunaco/Cubes/IMG_4315_gmpmcr.jpg",
+            "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720376745/torontosaunaco/Cubes/CU670/CU672P%28Porch%29/CU670P_vmef5l.jpg"
+        ],
+        "video": "https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaAlKi2EbPbLaAKcMfzNrRpo2SJvy6Y0H8tUIlg",
+        "documents": [
+            {
+                "label": "Specs & Dimensions (PDF)",
+                "url": "https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaA4tXEWcTkOeloAs6iptdGza5LjfwyFcXx1K3Y"
+            },
+            {
+                "label": "Installation Guide (PDF)",
+                "url": "https://gz7g5ew6dp.ufs.sh/f/lkr2dvBPbLaAbZDlZ4vBST2ioNeqajIEwhHuQ9AG67brDpVf"
+            }
+        ],
+        "is_featured": false,
+        "displayOrder": 13,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
     }
 ]

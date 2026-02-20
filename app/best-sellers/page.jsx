@@ -64,7 +64,7 @@ const BestSellers = () => {
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image: "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
       href: "/saunas/668af06648215c199c418a96",
-      price: "$14,999",
+      price: "$15,999",
     },
     {
       id: 2,
