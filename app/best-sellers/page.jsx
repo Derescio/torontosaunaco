@@ -96,7 +96,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653214/torontosaunaco/Cubes/NE6110/neptune_900x_u29c1e.webp",
       href: "/saunas/668af06648215c199c406a65",
-      price: "$15,999",
+      price: "$17,499",
     },
     {
       id: 5,
@@ -105,7 +105,7 @@ const BestSellers = () => {
         "A modern and sophisticated design that features a peaked roof. Relax and rejuvenate with your family or friends.",
       image: "/images/hudson_900_pgonnk.jpg",
       href: "/saunas/668af06648215c199c406a64",
-      price: "$15,757",
+      price: "$16,995",
     },
     {
       id: 6,
@@ -115,7 +115,7 @@ const BestSellers = () => {
       image:
         "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720653285/torontosaunaco/Cubes/OR6110/MS-_-Orion-PDP_900_atvbal.jpg",
       href: "/saunas/668af06648215c199c406a66",
-      price: "$16,670",
+      price: "$17,995",
     },
   ];
 
