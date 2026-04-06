@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { fetchProducts } from "@/assets/utils/request";
 import NewProductCard from "@/components/redesign/NewProductCard";
 
@@ -50,6 +49,7 @@ const Studio6Page = async () => {
   );
 
   const lowestPrice = minProductPrice(sortedProducts);
+  console.log(sortedProducts);
 
   const heroImage =
     "/images/west_coast/The-Max-w-Porch_1.PNG" ||

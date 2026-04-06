@@ -98,5 +98,104 @@
         "displayOrder": 1,
         "createdAt": "2024-01-01T00:00:00.000Z",
         "updatedAt": "2024-01-01T00:00:00.000Z"
+      },
+      {
+              
+        "owner": "torontosaunco",
+        "name": "The Studio Six Max",
+        "type": "Pure Cube",
+        "collectionType": "Cube",
+        "series": "Studio 6",
+        "description": "The Studio Six Max offers expanded space while maintaining the same premium construction and modern design.\n\n                     Ideal for homes or cottages, this model comfortably seats 4 to 6 people with tiered benches that allow each user to find their preferred heat level. Built with the same SIP panel construction and aluminum clad exterior, it delivers reliable performance and durability in all seasons.",
+        "dimension": "84 x 96 x 104(in)",
+        "price": 20650,
+        "dimensions": {
+          "width": 84,
+          "length": 96,
+          "height": 104,
+          "unit": "in",
+          "type": "exterior"
+        },
+        "features": [
+          "Comfortably seats 4 to 6 people",
+          "84\" W x 96\" D x 104\" H (exterior)",
+          "Crafted from Canadian Red Cedar interior",
+          "Choice of metal or aluminum exterior siding (horizontal or vertical)",
+          "Modern 2-tier bench system",
+          "Double-pane bronze glass window",
+          "SIP panel insulated structure"
+        ],
+        "wood_type": {
+          "Knotty Cedar": {
+            "price": 0,
+            "image": "/images/options&upgrades/knotty_cedar.png"
+          },
+          "Clear Cedar(Upgrade)": {
+            "price": 4200,
+            "image": "/images/options&upgrades/clear_cedar.png"
+          }
+        },
+        "stove_type": {
+          "Huum Drop 9kW with Remote": {
+            "price": 3307,
+            "image": "/images/heaters/Huum_drop_remote.png"
+          },
+          "Harvia Kip 8kW": {
+            "price": 1550,
+            "wifi": false,
+            "image": "/images/heaters/harvia_kip_6.png"
+          },
+          "Harvia Kip 8kW + Wifi Controller": {
+            "price": 2125,
+            "wifi": true,
+            "image": "/images/heaters/harvia_kip_wifi.png"
+          }
+        },
+        "additional_upgrades": [
+          {
+            "name": "L-Bench",
+            "price": 750,
+            "image": "/images/options&upgrades/L-Bench.png"
+          },
+          {
+            "name": "Mirrored Front Glass",
+            "price": 1200,
+            "image": "/images/options&upgrades/Mirrored_Front_Glass.png"
+          },
+          {
+            "name": "Semi Privacy Window",
+            "price": 450,
+            "image": "/images/options&upgrades/semi_privacy_panels.png"
+          }
+        ],
+        "delivery": {
+          "cost": 350,
+          "included": false,
+          "description": "Delivery charge"
+        },
+        "installation": {
+          "DIY": {
+            "price": 0,
+            "image": "/images/options&upgrades/DIY.png"
+          },
+          "Professional Install": {
+            "price": 1750,
+            "image": "/images/options&upgrades/supply_install.png"
+          }
+        },
+        "seller_info": {
+          "name": "John Doe",
+          "email": "john@gmail.com",
+          "phone": "617-555-5555"
+        },
+        "images": [
+          "/images/west_coast/The-Mini.png",
+          "/images/west_coast/The-Mini_1.png",
+          "/images/west_coast/The-Max_8.JPG"
+        ],
+        "is_featured": false,
+        "displayOrder": 45,
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z"
       }
 ]
