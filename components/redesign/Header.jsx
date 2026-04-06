@@ -107,6 +107,11 @@ const Header = () => {
                     onClick={closeDropdown}
                   />
                   <DropdownItem
+                    href="/saunas/studio-6"
+                    label="Studio Six Collection"
+                    onClick={closeDropdown}
+                  />
+                  <DropdownItem
                     href="/saunas/canadian-timber"
                     label="Canadian Timber"
                     onClick={closeDropdown}
@@ -430,6 +435,11 @@ const Header = () => {
                     <DropdownItem
                       href="/saunas/luna"
                       label="Luna Saunas"
+                      onClick={closeDropdown}
+                    />
+                    <DropdownItem
+                      href="/saunas/studio-6"
+                      label="Studio Six Collection"
                       onClick={closeDropdown}
                     />
                     <DropdownItem

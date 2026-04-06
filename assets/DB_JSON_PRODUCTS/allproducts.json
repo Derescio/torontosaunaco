@@ -3329,26 +3329,24 @@
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
-    "_id": {
-      "$oid": "668af06648215c199f921a92"
-    },
+   
     "owner": "torontosaunco",
-    "name": "Pure Cube 672",
+    "name": "The Studio Six Mini",
     "type": "Pure Cube",
     "collectionType": "Cube",
-    "series": "SH6112",
-    "description": "The Pure Cube CU672 Outdoor Sauna is built for those who want a little more room to relax. With its added depth and two-tier L-bench, it comfortably seats 4 to 5 people. A full glass front and door invite the outdoors in, while the clean, modern design makes it a standout in any backyard or cottage setting. More space, same Pure Cube style.",
-    "dimension": "84 x 120(in)",
-    "price": 13950,
+    "series": "Studio 6",
+    "description": "Designed to bring a complete sauna experience to your backyard or cottage, the 6’ x 5’ Studio Six Mini combines a bold, modern cube design with everyday functionality. The exterior is finished in horizontal aluminum cladding, providing four season durability and a clean, contemporary look that will stand the test of time. Inside, it comfortably accommodates 2 to 3 people. Built with R24 rated SIP panels, the walls and ceiling deliver outstanding insulation and structural integrity. A foil lined interior with an integrated air gap ensures consistent heat retention and optimal sauna performance. A two tier bench layout maximizes comfort and flexibility, while the double pane bronze glass front and door balance openness with privacy without sacrificing efficiency.",
+    "dimension": "72 x 60 x 97(in)",
+    "price": 15999,
     "views": {},
     "wood_type": {
       "Knotty Cedar": {
         "price": 0,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361788/torontosaunaco/Wood_Stove_Install_img/Knotty_Cedar_vpayph.jpg"
+        "image": "/images/options&upgrades/knotty_cedar.png"
       },
       "Clear Cedar": {
-        "price": 4550,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/c_thumb,w_200,g_face/v1720361754/torontosaunaco/Wood_Stove_Install_img/Clear_Cedar_utcqtu.jpg"
+        "price": 3600,
+        "image": "/images/options&upgrades/clear_cedar.png"
       }
     },
     "stove_type": {
@@ -3371,14 +3369,26 @@
         "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720464079/torontosaunaco/stoves/Homecraft_Revive_7.5kw_Sauna_Heater_with_Controls__2500_xjtsc4.jpg"
       }
     },
+    "additional_upgrades": [
+      {
+        "name": "L-Bench",
+        "price": 750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459566/torontosaunaco/stoves/LBench_sugkql.jpg"
+      },
+      {
+        "name": "Mirrored Front Glass",
+        "price": 1700,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466282/torontosaunaco/stoves/mirrorred_qcvbqf.jpg"
+      }
+    ],
     "installation": {
       "DIY": {
         "price": 0,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+        "image": "/images/options&upgrades/DIY.png"
       },
       "Supply_Install": {
         "price": 1750,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+        "image": "/images/options&upgrades/supply_install.png"
       }
     },
     "seller_info": {
@@ -3393,6 +3403,7 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1720376745/torontosaunaco/Cubes/CU670/CU672P%28Porch%29/CU670P_vmef5l.jpg"
     ],
     "is_featured": false,
+    "displayOrder": 54,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },

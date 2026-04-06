@@ -34,7 +34,7 @@ const page = async () => {
       (a.displayOrder ?? 999) - (b.displayOrder ?? 999) ||
       new Date(b.updatedAt || b.createdAt || 0) -
         new Date(a.updatedAt || a.createdAt || 0) ||
-      (a.name || "").localeCompare(b.name || "")
+      (a.name || "").localeCompare(b.name || ""),
   );
 
   return (
