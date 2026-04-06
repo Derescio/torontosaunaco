@@ -87,6 +87,11 @@ const Header = () => {
                     onClick={closeDropdown}
                   />
                   <DropdownItem
+                    href="/saunas/studio-6"
+                    label="Studio Six Collection"
+                    onClick={closeDropdown}
+                  />
+                  <DropdownItem
                     href="/saunas/cube"
                     label="Cube Saunas"
                     onClick={closeDropdown}
@@ -106,11 +111,7 @@ const Header = () => {
                     label="Luna Saunas"
                     onClick={closeDropdown}
                   />
-                  <DropdownItem
-                    href="/saunas/studio-6"
-                    label="Studio Six Collection"
-                    onClick={closeDropdown}
-                  />
+
                   <DropdownItem
                     href="/saunas/canadian-timber"
                     label="Canadian Timber"
@@ -418,6 +419,11 @@ const Header = () => {
                       onClick={closeDropdown}
                     />
                     <DropdownItem
+                      href="/saunas/studio-6"
+                      label="Studio Six Collection"
+                      onClick={closeDropdown}
+                    />
+                    <DropdownItem
                       href="/saunas/cube"
                       label="Cube Saunas"
                       onClick={closeDropdown}
@@ -437,11 +443,7 @@ const Header = () => {
                       label="Luna Saunas"
                       onClick={closeDropdown}
                     />
-                    <DropdownItem
-                      href="/saunas/studio-6"
-                      label="Studio Six Collection"
-                      onClick={closeDropdown}
-                    />
+
                     <DropdownItem
                       href="/saunas/canadian-timber"
                       label="Canadian Timber"
