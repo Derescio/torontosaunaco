@@ -8,12 +8,10 @@ import PacificTideNavBar from "@/components/pacifictide/PacificTideNaBar";
 import PacificTideRedesignFooter from "@/components/pacifictide/Redesign/PacificTideFooter";
 import Header from "@/components/redesign/Header";
 import PacificTideRedesignNavBar from "@/components/pacifictide/Redesign/PacificTideNavBar";
-import { HeaderWhistler, FooterWhistler } from "@/components/whistler";
 
 export default function ConditionalNavAndFooter({ children }) {
   const pathname = usePathname();
   const isPacificTide = pathname?.startsWith("/pacifictide");
-  const isWhistler = pathname?.startsWith("/thewhistlersaunaco");
 
   return (
     <>
@@ -22,12 +20,6 @@ export default function ConditionalNavAndFooter({ children }) {
           <PacificTideRedesignNavBar />
           {children}
           <PacificTideRedesignFooter />
-        </>
-      ) : isWhistler ? (
-        <>
-          <HeaderWhistler />
-          {children}
-          <FooterWhistler />
         </>
       ) : (
         <>
