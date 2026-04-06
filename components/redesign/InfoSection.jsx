@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 const InfoSection = () => {
-  const pathname = usePathname();
-  const isWhistler = pathname === "/thewhistlersaunaco";
   return (
     <section className="bg-[#ecebea]/20 py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-7xl">
@@ -17,8 +14,7 @@ const InfoSection = () => {
             </p> */}
             <h2 className="text-xl md:text-2xl text-[#000] leading-tight mb-8 font-atkinson font-semibold">
               Transform Your Home into a Haven of Tranquility: Modern Saunas for
-              Ultimate Relaxation. Modern Cedar Saunas in{" "}
-              {isWhistler ? " " : "Toronto"} – Relaxation & Wellness at Home.
+              Ultimate Relaxation.               Modern Cedar Saunas in Toronto – Relaxation & Wellness at Home.
             </h2>
           </div>
 

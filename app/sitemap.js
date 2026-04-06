@@ -24,7 +24,6 @@ const staticRoutes = [
   "/showers",
   "/signin",
   "/terms",
-  "/thewhistlersaunaco",
   "/tubs",
   "/warranty",
   "/pacifictide",

@@ -139,8 +139,12 @@ const HomePage = () => {
             priority
           />
         </div>
-        <Link href="/thewhistlersaunaco">
-        <Image
+        <Link
+          href="https://www.thewhistlersaunaco.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
             src={WhistlerBlack}
             alt="Whistler Black Logo"
             width={150}
@@ -148,7 +152,7 @@ const HomePage = () => {
             className="mx-auto"
             priority
           />
-          </Link>
+        </Link>
       </div>
       {/* </div> */}
     </div>
