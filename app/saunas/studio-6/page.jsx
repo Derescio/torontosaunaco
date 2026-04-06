@@ -73,13 +73,13 @@ const Studio6Page = async () => {
 
         <div className="container mx-auto px-4 relative z-20 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-2xl md:text-6xl font-bold text-nowrap md:mb-6">
+            <h1 className="text-2xl md:text-6xl font-archivo tracking-wide text-nowrap md:mb-6">
               Studio Six Collection
             </h1>
-            <p className="text-xl md:text-2xl mb-6 font-light">
+            <p className="text-xl md:text-2xl mb-6 font-archivo">
               Contemporary. Minimalist. Built for Canadian backyards.
             </p>
-            <div className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <div className="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed font-archivo">
               The Studio Six Collection represents the next evolution in outdoor
               sauna design, where modern architecture meets advanced
               performance. Designed in Toronto and built for Canadian
