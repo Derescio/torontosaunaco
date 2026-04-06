@@ -59,17 +59,16 @@ const BestSellers = () => {
   const bestSellers = [
     {
       id: 1,
-      name: "The Mini",
+      name: "The Studio Six Mini",
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
-      image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
+      image: "/images/west_coast/The-Max.png",
       href: "/saunas/668af06648215c199c418a96",
       price: "$15,999",
     },
     {
       id: 2,
-      name: "The Max",
+      name: "The Studio Six Max",
       description:
         "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
@@ -79,7 +78,7 @@ const BestSellers = () => {
     },
     {
       id: 3,
-      name: "The Max Plus",
+      name: "The Studio Six Max Plus",
       description:
         "The Studio 6 Max Plus Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
