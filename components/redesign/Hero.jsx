@@ -99,7 +99,7 @@ const posterUrl = isMobile
           alt="Sauna Wellness Background"
           fill
           priority
-          fetchPriority="high"
+          // fetchPriority="high"
           sizes="100vw"
           className={`object-cover transition-opacity duration-1000 ${
             isVideoLoaded ? "opacity-0" : "opacity-100"
@@ -123,8 +123,11 @@ const posterUrl = isMobile
         // poster={posterUrl}
       >
         <source
-          src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1770173947/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
+          src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto:eco,w_960/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi"
           type="video/mp4"
+          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1770173947/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
+          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto,w_1280/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
+          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto:eco,w_960/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
         />
       </video>
 
