@@ -122,7 +122,7 @@ const Contact = ({ defaultSubject = "" }) => {
                   fill
                   className="object-cover"
                   priority
-                  sizes="100vw"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
                   <h2 className="text-white text-2xl font-medium font-archivo">

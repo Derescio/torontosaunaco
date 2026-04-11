@@ -53,7 +53,8 @@ const Header = () => {
                 src={newLogo}
                 alt="Toronto Sauna Co"
                 width={120}
-                height={120}
+                // height={120}
+                // fill
                 priority
                 className="object-contain"
               />
