@@ -57,6 +57,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 /** On-the-fly delivery: one fetch per viewport (source media), smaller width + q on mobile. */
+//Updated Contetnt
 const HERO_VIDEO_BASE =
   "https://res.cloudinary.com/dw4ev5whz/video/upload/v1777168983/torontosaunaco/Hero_Video_q9bzhg.mp4";
 const HERO_VIDEO_MOBILE = HERO_VIDEO_BASE.replace(
