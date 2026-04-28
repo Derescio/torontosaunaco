@@ -107,3 +107,5 @@ This does not change Cloudinary cost much; it improves perceived load.
 - [Transformation URL syntax](https://cloudinary.com/documentation/transformation_basics)
 - [Video transformation reference](https://cloudinary.com/documentation/video_transformation_reference)
 - [Adaptive bitrate streaming (HLS/DASH)](https://cloudinary.com/documentation/adaptive_bitrate_streaming)
+
+- Removed the .next folder to remove caching error
