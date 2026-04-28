@@ -50,26 +50,29 @@
 
 // export default Hero;
 
-
-
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import useMediaQuery from "@/lib/useMediaQuery";
+
+/** On-the-fly delivery: one fetch per viewport (source media), smaller width + q on mobile. */
+const HERO_VIDEO_BASE =
+  "https://res.cloudinary.com/dw4ev5whz/video/upload/v1777168983/torontosaunaco/Hero_Video_q9bzhg.mp4";
+const HERO_VIDEO_MOBILE = HERO_VIDEO_BASE.replace(
+  "/upload/",
+  "/upload/f_auto,q_auto:eco,c_limit,w_800/"
+);
+const HERO_VIDEO_DESKTOP = HERO_VIDEO_BASE.replace(
+  "/upload/",
+  "/upload/f_auto,q_auto,c_limit,w_1280/"
+);
+
+const POSTER = "/images/mobile_bg.png";
 
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const videoRef = useRef(null);
-
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
-const posterUrl = isMobile
-  ? "/images/mobile_bg.png"   // NO TEXT
-  : "/images/mobile_bg.png"; // Can match video
-  // const posterUrl =
-  //   "/images/mobile_bg.png"
 
   useEffect(() => {
     const video = videoRef.current;
@@ -95,7 +98,7 @@ const posterUrl = isMobile
       {/* Background Image (always renders, instant paint) */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={posterUrl}
+          src={POSTER}
           alt="Sauna Wellness Background"
           fill
           priority
@@ -123,12 +126,10 @@ const posterUrl = isMobile
         // poster={posterUrl}
       >
         <source
-          src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto:eco,w_960/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi"
-          type="video/mp4"
-          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/v1770173947/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
-          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto,w_1280/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
-          // src="https://res.cloudinary.com/dw4ev5whz/video/upload/f_auto,q_auto:eco,w_960/torontosaunaco/stoves/ttsc-hero-sauna-720p_lgturi.mov"
+          src={HERO_VIDEO_MOBILE}
+          media="(max-width: 768px)"
         />
+        <source src={HERO_VIDEO_DESKTOP} />
       </video>
 
       {/* Dark Overlay */}
