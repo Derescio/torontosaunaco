@@ -17,6 +17,8 @@ import Signature from "@/components/redesign/Signature";
 //import Signature_New from "@/components/redesign/Signature_New";
 import WoodTypes from "@/components/redesign/WoodTypes";
 import WhistlerBlack from "@/public/images/New_whistler.png";
+import { fetchProducts } from "@/assets/utils/request";
+import { buildPureCubeCarouselItems } from "@/lib/product-utils";
 
 // SEO Metadata for Homepage
 export const metadata = {
@@ -71,7 +73,10 @@ export const metadata = {
   },
 };
 
-const HomePage = () => {
+export default async function HomePage() {
+  const products = await fetchProducts();
+  const carouselItems = buildPureCubeCarouselItems(products);
+
   return (
     <div className="">
       {/* <Hero /> */}
@@ -86,7 +91,7 @@ const HomePage = () => {
       <h2 className="mt-4 text-2xl text-center md:text-4xl lg:text-5xl font-light text-black mb-4 font-archivo">
         Popular Saunas
       </h2>
-      <Carousel2 />
+      <Carousel2 items={carouselItems} />
       <WoodTypes />
 
       <BlogPage />
@@ -157,6 +162,4 @@ const HomePage = () => {
       {/* </div> */}
     </div>
   );
-};
-
-export default HomePage;
+}

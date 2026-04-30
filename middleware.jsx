@@ -133,10 +133,13 @@
 import { NextResponse } from 'next/server';
 import { getToken } from "next-auth/jwt";
 
-export { default } from 'next-auth/middleware';
-
 export async function middleware(request) {
-    const token = await getToken({ req: request });
+    const hasAuthCookie = request.cookies
+        .getAll()
+        .some(({ name }) => name.includes("next-auth.session-token"));
+    const token = hasAuthCookie
+        ? await getToken({ req: request })
+        : null;
     const { pathname } = request.nextUrl;
 
     if (token && pathname === '/signin') {
