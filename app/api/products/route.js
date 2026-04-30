@@ -3,16 +3,22 @@
 import connectDB from "@/config/db";
 import Products from "@/models/Products";
 
-//export const dynamic = "force-dynamic";
 export const revalidate = 3600;
-// GET API Handler - /api/products
-export const GET = async (req, res) => {
+
+export const GET = async (req) => {
   try {
     await connectDB();
+    const { searchParams } = new URL(req.url);
+    const full = searchParams.get("full") === "1";
 
-    const products = await Products.find();
+    const products = full
+      ? await Products.find().lean()
+      : await Products.find().select("-documents").lean();
 
-    return new Response(JSON.stringify(products), { status: 200 });
+    return new Response(JSON.stringify(products), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
     console.error("Error fetching products:", error);
     return new Response(JSON.stringify({ error: "Failed to fetch products" }), {

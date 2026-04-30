@@ -1,5 +1,4 @@
 // Create Utility function to fetch all data
-import { NextResponse } from "next/server";
 const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null;
 
 const fetchProducts = async () => {
@@ -9,7 +8,7 @@ const fetchProducts = async () => {
       return [];
     }
     const res = await fetch(`${apiDomain}/products`, {
-      next: { revalidate: 10 },
+      next: { revalidate: 7200 },
     });
     if (!res.ok) {
       throw new Error("Error fetching products");
@@ -52,7 +51,7 @@ const fetchAccessories = async () => {
       return [];
     }
     const res = await fetch(`${apiDomain}/accessories`, {
-      next: { revalidate: 10 },
+      next: { revalidate: 3600 },
     });
     if (!res.ok) {
       throw new Error("Error fetching Accessories");
@@ -65,13 +64,22 @@ const fetchAccessories = async () => {
   }
 };
 
-// Fetch Orders
+// Fetch Orders (forward Cookie on server so /api/orders sees the session)
 const fetchOrders = async () => {
   try {
     if (!apiDomain) {
       return [];
     }
-    const res = await fetch(`${apiDomain}/orders`);
+    let cookieHeader;
+    if (typeof window === "undefined") {
+      const { headers } = await import("next/headers");
+      const h = await headers();
+      cookieHeader = h.get("cookie") ?? undefined;
+    }
+    const res = await fetch(`${apiDomain}/orders`, {
+      ...(cookieHeader ? { headers: { cookie: cookieHeader } } : {}),
+      cache: "no-store",
+    });
     if (!res.ok) {
       throw new Error("Error fetching Orders");
     }

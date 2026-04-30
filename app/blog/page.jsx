@@ -11,7 +11,7 @@ export const metadata = {
     "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
 };
 
-export const revalidate = 30;
+export const revalidate = 7200;
 
 export const GetData = async () => {
   const query = `*[_type == "blogPost"] | order(publishedAt desc) {

@@ -1,41 +1,35 @@
 import connectDB from "@/config/db";
 import Orders from "@/models/Orders";
-import { getToken } from "next-auth/jwt";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/assets/utils/authOptions";
-// import { getCSRFToken } from '../../utils/csrf';
-
-// export default async function handler(req, res) {
- 
-//   // Use the token as needed
-// }
-
-
 
 export const maxDuration = 25;
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
-export const GET = async (req, res) => {
-// const csrfToken = getCSRFToken();
-const session = await getServerSession(authOptions);
-    // const session = await getServerSession(authOptions);
-  
-  //console.log('Session',session)
-  // console.log('Token',csrfToken)
+export const GET = async () => {
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user?.email) {
+      return new Response(JSON.stringify({ error: "Not authenticated" }), {
+        status: 401,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
 
-try {
-    const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
-   // console.log('Token:', token); // Log the token for debugging
-    
-    // if (!token) {
-    //     return new Response(JSON.stringify({ error: "Not authenticated" }), { status: 401 });
-    // }
     await connectDB();
-    const orders = await Orders.find();
-  // console.log('API Route', orders)
- return new Response (JSON.stringify(orders), {status: 200});
-} catch (error) {
-    console.log(error)
-    return new Response ("error", {status: 500});
-}
+    const email = session.user.email;
+    const orders = await Orders.find({
+      $or: [{ email }, { username: email }],
+    })
+      .lean()
+      .sort({ createdAt: -1 });
+
+    return new Response(JSON.stringify(orders), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  } catch (error) {
+    console.log(error);
+    return new Response("error", { status: 500 });
+  }
 };
