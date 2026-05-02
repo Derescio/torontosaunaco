@@ -1,0 +1,246 @@
+[
+
+
+{
+    "_id": {
+      "$oid": "668af06648215c199c418a96"
+    },
+    "owner": "torontosaunco",
+    "name": "The Studio Six Mini",
+    "type": "Pure Cube",
+    "collectionType": "Cube",
+    "series": "Studio 6",
+    "description": "Fully insulated, aluminum clad sauna built for four season use. Seats 2 comfortably.                          Built with precision and crafted for year-round use, the Studio 6 Mini features a minimalist cube structure with clean lines and contemporary finishes. The exterior is cladded with horizontal aluminium siding for four season protection ensuring your investment looks as good on year 10 as it did on day one. \n\nInside, enjoy a modern two-tier bench system that runs front to back for optimal comfort and heat circulation. The double-pane bronze glass front adds both warmth and privacy while maintaining a refined aesthetic. Constructed using SIP panel insulation, this unit is engineered for superior energy efficiency and durability through all Canadian seasons.\n",
+    "baseCost": 15999,
+    "price": 15999,
+    "dimensions": {
+      "width": 72,
+      "length": 60,
+      "height": 97,
+      "unit": "in",
+      "type": "exterior",
+      "depth": "60"
+    },
+    "features": [
+      "Comfortably seats 2",
+      "72\" W x 60\" D x 97\" H (exterior)",
+      "Interior crafted from Canadian Western Red Cedar",
+      "Horizontal aluminium exterior siding.",
+      "Modern 2-tier bench system",
+      "Double-pane bronze glass window",
+      "SIP panel insulated structure"
+    ],
+    "wood_type": {
+      "Knotty Cedar": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+      },
+      "Clear Cedar(Upgrade)": {
+        "price": 3600,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+      }
+    },
+    "stove_type": {
+      "Harvia Kip 8kW": {
+        "price": 1550,
+        "wifi": true,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469371/torontosaunaco/stoves/Harvia_KIP_Remote_d0k68b.png"
+      },
+      "Huum Drop 7.5kW with Remote": {
+        "price": 3350,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
+      },
+      "Huum Drop 7.5kW with Remote + Wifi Controller": {
+        "price": 3850,
+        "wifi": false,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
+      }
+    },
+    "additional_upgrades": [
+      {
+        "name": "Mirrored Front Glass",
+        "price": 1200,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466282/torontosaunaco/stoves/mirrorred_qcvbqf.jpg"
+      },
+      {
+        "name": "Woodgrain Metal Siding w/ Black Trim",
+        "price": 429,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771375531/torontosaunaco/mini_wood_trim_zi3lt1.png"
+      },
+      {
+        "name": "White Metal w Black window & door frame",
+        "price": 429,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771375531/torontosaunaco/mini_white_iztbgv.png"
+      },
+      {
+        "name": "Accent Wall",
+        "price": 475,
+        "image": "/images/west_coast/The-Max_9.JPG"
+      }
+    ],
+    "delivery": {
+      "cost": 450,
+      "included": false,
+      "description": "Delivery charge"
+    },
+    "installation": {
+      "DIY": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+      },
+      "Professional Install": {
+        "price": 1750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+      }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": [
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386025/torontosaunaco/studio/MiniTWO_afxj2h.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniTHREE_zoujns.jpg",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386029/torontosaunaco/studio/MiniFOUR_i4fggf.jpg",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1769124644/torontosaunaco/Mini_New_1_v5r1fg.jpg",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1769134764/torontosaunaco/IMG-20260122-WA0040_p7j5hn.jpg"
+    ],
+    "documents": [
+        {
+          "label": "Studio 6 Mini Specs & Dimensions (PDF)",
+          "url": "/public/pdf/The Studio 6 Mini - Specs.pdf"
+        }
+        
+      ],
+    "is_featured": false,
+    "displayOrder": 4,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "69950e9f11eb36b604c4687b"
+    },
+    "owner": "torontosaunco",
+    "name": "The Studio Six Max",
+    "type": "Pure Cube",
+    "collectionType": "Cube",
+    "series": "Studio Six",
+    "description": "Fully insulated, aluminum clad sauna built for four season use. Seats 4-5 comfortably.                          Designed to bring a full wellness experience to your backyard or cottage. Its bold, modern cube structure combines architectural precision with everyday function, making it a standout addition to any outdoor space. The exterior is cladded with horizontal aluminium siding for four season protection ensuring your investment looks as good on year 10 as it did on day one.\n\nInside, the expanded two-tier bench system runs front to back, providing ample seating for up to six people. The double-pane bronze glass front offers the perfect balance of openness and privacy, while the SIP panel insulation ensures consistent heat retention and all-season performance. Crafted with premium materials and refined details, the Studio 6 Max delivers the ultimate in design, comfort, and durability.\n\n• Comfortably seats 4-5\n• 96\" W x 84\" D x 104\" H (exterior)\n• Interior crafted from Canadian Western Cedar\n• Horizontal aluminium exterior siding\n• Modern 2-tier bench system\n• Double-pane bronze glass window\n• SIP panel insulated structure",
+    "baseCost": 20650,
+    "price": 20650,
+    "dimensions": {
+      "width": 96,
+      "depth": 84,
+      "height": 104,
+      "unit": "in",
+      "type": "exterior"
+    },
+    "features": [
+      "Comfortably seats 4-5",
+      "Interior crafted from Canadian Western Cedar",
+      "Horizontal aluminium exterior siding",
+      "Modern 2-tier bench system",
+      "Double-pane bronze glass window",
+      "SIP panel insulated structure"
+    ],
+    "wood_type": {
+      "Knotty Cedar": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+      },
+      "Clear Cedar": {
+        "price": 5600,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+      }
+    },
+    "stove_type": {
+      "Huum Drop 9kW with Remote": {
+        "price": 3450,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      },
+      "Huum Drop 9kW with Remote + Wifi Controller": {
+        "price": 3950,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      },
+      "Harvia Kip 8kW": {
+        "price": 1550,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762468797/torontosaunaco/stoves/Harvia_KIP_1_zbmcy5.png"
+      },
+      "Narvi 16 Wood Burning Heater": {
+        "price": 4200,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469780/torontosaunaco/stoves/Narvi_16_kdgcen.png"
+      },
+      "Homecraft Revive 9kw w/ Wifi": {
+        "price": 3300,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1770913652/torontosaunaco/stoves/HomeCraft_New_wwbjpi.png"
+      }
+    },
+    "wifi_controller": {
+      "price": 575,
+      "description": "Optional Wifi Controller for compatible electric heaters"
+    },
+    "additional_upgrades": [
+      {
+        "name": "Wood Grain Metal Siding w/ Black Trim",
+        "price": 680,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771375532/torontosaunaco/Screenshot_2026-02-17_194257_pj5vq3.png"
+      },
+      {
+        "name": "White Metal w Black window & door frame",
+        "price": 680,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771375531/torontosaunaco/Screenshot_2026-02-17_194319_rlvc8n.png"
+      },
+      {
+        "name": "Mirrored Glass in half window & door",
+        "price": 1261,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466282/torontosaunaco/stoves/mirrorred_qcvbqf.jpg"
+      },
+      {
+        "name": "Accent Wall",
+        "price": 575,
+        "image": "/images/west_coast/The-Max_9.JPG"
+      }
+    ],
+    "delivery": {
+      "cost": 450,
+      "included": false,
+      "description": "Delivery charge"
+    },
+    "installation": {
+      "DIY": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+      },
+      "Professional Install": {
+        "price": 1750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+      }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": [
+      "/images/west_coast/The-Max.png",
+      "/images/west_coast/The-Max-White.PNG",
+      "/images/west_coast/The-Max_3.PNG",
+      "/images/west_coast/cube/themax_newpng.png",
+      "/images/west_coast/cube/themax_5.png",
+      "/images/west_coast/cube/themax_6.png"
+    ],
+    "documents": [
+        {
+          "label": "Studio 6 Max Specs & Dimensions (PDF)",
+          "url": "/public/pdf/The Max - Spec Sheet.pdf"
+        }
+        
+      ],
+    "is_featured": false,
+    "displayOrder": 5,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
