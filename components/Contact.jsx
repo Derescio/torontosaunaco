@@ -15,6 +15,13 @@ const Contact = ({ defaultSubject = "" }) => {
   const [subject, setSubject] = useState(defaultSubject);
   const hasTrackedFormStart = useRef(false);
 
+  const getFormIdByPath = () => {
+    if (pathname === "/quote") return "quote-contact-form";
+    if (pathname === "/") return "home-contact-form";
+    if (pathname?.startsWith("/heaters/")) return "heater-contact-form";
+    return "contact-form";
+  };
+
   // Update subject when defaultSubject prop changes
   useEffect(() => {
     setSubject(defaultSubject);
@@ -24,11 +31,13 @@ const Contact = ({ defaultSubject = "" }) => {
     if (hasTrackedFormStart.current) return;
     hasTrackedFormStart.current = true;
 
+    const eventPayload = {
+      page: pathname || window.location.pathname,
+      form_id: getFormIdByPath(),
+    };
+
     try {
-      posthog.capture(posthogEvents.quote_form_started, {
-        page: pathname || window.location.pathname,
-        form_id: "quote-contact-form",
-      });
+      posthog.capture(posthogEvents.quote_form_started, eventPayload);
     } catch {}
   };
 

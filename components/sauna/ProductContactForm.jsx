@@ -21,12 +21,14 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
     if (hasTrackedFormStart.current) return;
     hasTrackedFormStart.current = true;
 
+    const eventPayload = {
+      page: pathname || window.location.pathname,
+      form_id: "sauna-product-contact-form",
+      productId: product?._id,
+    };
+
     try {
-      posthog.capture(posthogEvents.quote_form_started, {
-        page: pathname || window.location.pathname,
-        form_id: "sauna-product-contact-form",
-        productId: product?._id,
-      });
+      posthog.capture(posthogEvents.quote_form_started, eventPayload);
     } catch {}
   };
 
