@@ -2,6 +2,7 @@ export const posthogEvents = {
   // Browsing
   page_viewed: "site:page_viewed",
   product_viewed: "product:product_viewed",
+  engaged: "engagement:engaged",
 
   // Configurator
   config_option_selected: "config:option_selected",
@@ -11,6 +12,8 @@ export const posthogEvents = {
   price_recalculated: "config:price_recalculated",
 
   // Conversion intent
+  cta_clicked: "cta:clicked",
+  quote_form_started: "quote:form_started",
   quote_form_opened: "quote:form_opened",
   quote_form_submitted: "quote:form_submitted",
 };

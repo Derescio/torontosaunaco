@@ -8,6 +8,7 @@ import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndF
 // import { GoogleTagManager } from "@next/third-parties/google";
 import { PHProvider } from "./providers";
 import PostHogPageView from "../components/PostHogPageViews";
+import PostHogFunnelSignals from "../components/PostHogFunnelSignals";
 import Script from "next/script";
 
 // Create Meta Data
@@ -68,6 +69,7 @@ const MainLayout = ({ children }) => {
               <Toaster position="top-center" />
               <ScrollToTop />
               <PostHogPageView />
+              <PostHogFunnelSignals />
               <ConditionalNavAndFooter>
                 <main>{children}</main>
               </ConditionalNavAndFooter>
