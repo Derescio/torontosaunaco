@@ -1,20 +1,36 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaInstagram } from "react-icons/fa";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import posthog from "posthog-js";
+import { posthogEvents } from "@/assets/utils/posthogEvents";
 
 const Contact = ({ defaultSubject = "" }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [loading, setLoading] = useState(false);
   const [subject, setSubject] = useState(defaultSubject);
+  const hasTrackedFormStart = useRef(false);
 
   // Update subject when defaultSubject prop changes
   useEffect(() => {
     setSubject(defaultSubject);
   }, [defaultSubject]);
+
+  const handleFormStart = () => {
+    if (hasTrackedFormStart.current) return;
+    hasTrackedFormStart.current = true;
+
+    try {
+      posthog.capture(posthogEvents.quote_form_started, {
+        page: pathname || window.location.pathname,
+        form_id: "quote-contact-form",
+      });
+    } catch {}
+  };
 
   const sendEmails = async (e) => {
     e.preventDefault();
@@ -134,7 +150,12 @@ const Contact = ({ defaultSubject = "" }) => {
 
             {/* Right Column - Contact Form */}
             <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 shadow-xl">
-              <form className="space-y-4" onSubmit={sendEmails}>
+              <form
+                className="space-y-4"
+                onSubmit={sendEmails}
+                onFocusCapture={handleFormStart}
+                onInputCapture={handleFormStart}
+              >
                 <input
                   type="text"
                   placeholder="Name"

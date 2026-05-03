@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import posthog from "posthog-js";
+import { usePathname } from "next/navigation";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
 
 /**
@@ -13,6 +14,21 @@ import { posthogEvents } from "@/assets/utils/posthogEvents";
  */
 const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
   const [loading, setLoading] = useState(false);
+  const pathname = usePathname();
+  const hasTrackedFormStart = useRef(false);
+
+  const handleFormStart = () => {
+    if (hasTrackedFormStart.current) return;
+    hasTrackedFormStart.current = true;
+
+    try {
+      posthog.capture(posthogEvents.quote_form_started, {
+        page: pathname || window.location.pathname,
+        form_id: "sauna-product-contact-form",
+        productId: product?._id,
+      });
+    } catch {}
+  };
 
   const sendEmails = async (e) => {
     e.preventDefault();
@@ -83,7 +99,12 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
       <p className="text-gray-600 mb-6 font-archivo">
         Get in touch with us, send us an email.
       </p>
-      <form onSubmit={sendEmails} className="space-y-4">
+      <form
+        onSubmit={sendEmails}
+        onFocusCapture={handleFormStart}
+        onInputCapture={handleFormStart}
+        className="space-y-4"
+      >
         <div>
           <label
             htmlFor="name"
