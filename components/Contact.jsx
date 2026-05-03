@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { FaInstagram } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { useRouter, usePathname } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
@@ -35,10 +34,16 @@ const Contact = ({ defaultSubject = "" }) => {
       page: pathname || window.location.pathname,
       form_id: getFormIdByPath(),
     };
+    // posthog.capture('quote:form_started', {
+    //   page: pathname || window.location.pathname,
+    //   form_id: getFormIdByPath(),
+    // });
 
     try {
       posthog.capture(posthogEvents.quote_form_started, eventPayload);
-    } catch {}
+    } catch (e) {
+      console.error("Error capturing quote form started event:", e);
+    }
   };
 
   const sendEmails = async (e) => {
