@@ -1,7 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import { buildPosthogContext } from "@/assets/utils/posthogContext";
 import Spinner from "@/components/Spinner";
 import ProductHero from "./ProductHero";
 import ProductGallery from "./ProductGallery";
@@ -20,6 +22,7 @@ import Link from "next/link";
  */
 const SaunaProductClient = ({ product, productId }) => {
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
 
   // Selection states
   const [selectedSize, setSelectedSize] = useState(null);
@@ -59,12 +62,13 @@ const SaunaProductClient = ({ product, productId }) => {
     if (!product || !mounted) return;
     try {
       posthog.capture(posthogEvents.product_viewed, {
+        ...buildPosthogContext(pathname),
         productId: product._id || productId,
         type: product.type,
         name: product.name,
       });
     } catch {}
-  }, [product, productId, mounted]);
+  }, [product, productId, mounted, pathname]);
 
   // Default wood selection for single-wood models
   useEffect(() => {
@@ -78,16 +82,18 @@ const SaunaProductClient = ({ product, productId }) => {
     if (!product || !selectedInstallation) return;
     try {
       posthog.capture(posthogEvents.installation_selected, {
+        ...buildPosthogContext(pathname),
         productId: product._id || productId,
         installation: selectedInstallation,
       });
       posthog.capture(posthogEvents.delivery_applied, {
+        ...buildPosthogContext(pathname),
         productId: product._id || productId,
         applied: selectedInstallation === "DIY",
         cost: selectedInstallation === "DIY" ? product?.delivery?.cost || 0 : 0,
       });
     } catch {}
-  }, [selectedInstallation, product, productId]);
+  }, [selectedInstallation, product, productId, pathname]);
 
   // Price calculation functions
   const computeBasePrice = () => {
@@ -236,6 +242,7 @@ const SaunaProductClient = ({ product, productId }) => {
     if (!product) return;
     try {
       posthog.capture(posthogEvents.price_recalculated, {
+        ...buildPosthogContext(pathname),
         productId: product._id || productId,
         totalPrice,
         basePrice,
@@ -250,6 +257,7 @@ const SaunaProductClient = ({ product, productId }) => {
     basePrice,
     selectedUpgrades.length,
     selectedInstallation,
+    pathname,
   ]);
 
   if (!product) {

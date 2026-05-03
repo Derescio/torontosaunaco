@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import { buildPosthogContext } from "@/assets/utils/posthogContext";
 
 function getScrollDepthPercent() {
   const doc = document.documentElement;
@@ -24,29 +25,67 @@ function inferCtaLocation(element) {
 export default function PostHogFunnelSignals() {
   const pathname = usePathname();
   const hasSentEngaged = useRef(false);
+  const maxDepthSeen = useRef(0);
+  const interactionSeen = useRef(false);
+  const routeStartMs = useRef(0);
+
+  const fireEngaged = (trigger) => {
+    if (hasSentEngaged.current) return;
+    hasSentEngaged.current = true;
+
+    const timeOnPageS = Math.round((Date.now() - routeStartMs.current) / 1000);
+    const eventPayload = {
+      ...buildPosthogContext(pathname),
+      trigger,
+      time_on_page_s: Math.max(timeOnPageS, 0),
+      scroll_depth_pct: maxDepthSeen.current,
+      interaction: interactionSeen.current,
+    };
+
+    try {
+      posthog.capture(posthogEvents.engaged, eventPayload);
+    } catch {}
+  };
 
   useEffect(() => {
     hasSentEngaged.current = false;
+    maxDepthSeen.current = 0;
+    interactionSeen.current = false;
+    routeStartMs.current = Date.now();
   }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (hasSentEngaged.current) return;
       const depth = getScrollDepthPercent();
+      if (depth > maxDepthSeen.current) {
+        maxDepthSeen.current = depth;
+      }
       if (depth < 50) return;
-
-      hasSentEngaged.current = true;
-      try {
-        posthog.capture(posthogEvents.engaged, {
-          page: pathname || window.location.pathname,
-          scroll_depth: "50%",
-          source: "scroll",
-        });
-      } catch {}
+      fireEngaged("scroll");
     };
 
+    const handleInteraction = () => {
+      interactionSeen.current = true;
+      const timeOnPageS = Math.round((Date.now() - routeStartMs.current) / 1000);
+      if (timeOnPageS >= 15) {
+        fireEngaged("interaction_and_time");
+      }
+    };
+
+    const timeThresholdTimer = window.setTimeout(() => {
+      fireEngaged("time_on_page");
+    }, 15000);
+
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("click", handleInteraction, true);
+    document.addEventListener("keydown", handleInteraction, true);
+
+    return () => {
+      window.clearTimeout(timeThresholdTimer);
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleInteraction, true);
+      document.removeEventListener("keydown", handleInteraction, true);
+    };
   }, [pathname]);
 
   useEffect(() => {
@@ -64,7 +103,7 @@ export default function PostHogFunnelSignals() {
 
       try {
         posthog.capture(posthogEvents.cta_clicked, {
-          page: pathname || window.location.pathname,
+          ...buildPosthogContext(pathname),
           cta_text: ctaText,
           cta_href: href,
           cta_location: inferCtaLocation(link),

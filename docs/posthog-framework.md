@@ -20,6 +20,8 @@ Use it when adding, changing, or debugging PostHog instrumentation.
 ### Event Registry
 - `assets/utils/posthogEvents.js`
   - Central event constant map. Always add new custom event names here first.
+- `assets/utils/posthogContext.js`
+  - Shared helpers for standardized context (`page`, `page_type`, `location`, `source`) and value bucketing.
 
 ### Feature Instrumentation
 - `components/Contact.jsx`
@@ -73,19 +75,26 @@ Rules:
   - Trigger: PDP product mount/view.
   - Typical properties: `productId`, `type`, `name`.
 - `engagement:engaged`
-  - Trigger: first 50% scroll depth on a route.
-  - Properties: `page`, `scroll_depth`, `source`.
+  - Trigger: first meaningful engagement signal on a route.
+  - Triggers supported: `scroll` (>=50%), `time_on_page` (>=15s), `interaction_and_time`.
+  - Properties: `page`, `page_type`, `location`, `source`, `trigger`, `time_on_page_s`, `scroll_depth_pct`, `interaction`.
 
 ## CTA and quote intent
 - `cta:clicked`
   - Trigger: click on links matching `/quote*` (delegated globally).
-  - Properties: `page`, `cta_text`, `cta_href`, `cta_location`.
+  - Properties: `page`, `page_type`, `location`, `source`, `cta_text`, `cta_href`, `cta_location`.
 - `quote:form_started`
   - Trigger: first focus/input on quote forms.
-  - Properties: `page`, `form_id`, optional `productId`.
+  - Properties: `page`, `page_type`, `location`, `source`, `form_id`, optional `productId`.
+- `quote:field_error`
+  - Trigger: form submission errors (API response or network/server).
+  - Properties: `page`, `page_type`, `location`, `source`, `form_id`, `step`, `error_type`, optional `productId`.
+- `quote:abandoned`
+  - Trigger: form started, then user leaves without submit.
+  - Properties: `page`, `page_type`, `location`, `source`, `form_id`, `step`, `reason`, optional `productId`.
 - `quote:form_submitted`
   - Trigger: successful quote form submission.
-  - Properties: `productId`, `totalPrice`, `installation`, `deliveryApplied`.
+  - Properties: `page`, `page_type`, `location`, `source`, `form_id`, optional `productId`, plus conversion fields such as `totalPrice` and `estimated_value_bucket`.
 
 ## Configurator and pricing
 - `config:size_selected`
@@ -139,6 +148,8 @@ Default quote funnel:
 
 Recommended breakdowns:
 - `page`
+- `page_type`
+- `location`
 - `cta_location`
 - `form_id`
 

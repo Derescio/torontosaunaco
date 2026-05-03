@@ -1,9 +1,13 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import posthog from "posthog-js";
 import { usePathname } from "next/navigation";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import {
+  buildPosthogContext,
+  getEstimatedValueBucket,
+} from "@/assets/utils/posthogContext";
 
 /**
  * ProductContactForm - Contact form for product inquiries
@@ -16,13 +20,40 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
   const [loading, setLoading] = useState(false);
   const pathname = usePathname();
   const hasTrackedFormStart = useRef(false);
+  const hasSubmittedForm = useRef(false);
+  const hasTrackedAbandoned = useRef(false);
+  const lastFieldFocused = useRef("unknown");
 
-  const handleFormStart = () => {
+  const trackAbandoned = () => {
+    if (
+      hasTrackedAbandoned.current ||
+      !hasTrackedFormStart.current ||
+      hasSubmittedForm.current
+    ) {
+      return;
+    }
+
+    hasTrackedAbandoned.current = true;
+    try {
+      posthog.capture(posthogEvents.quote_abandoned, {
+        ...buildPosthogContext(pathname),
+        form_id: "sauna-product-contact-form",
+        productId: product?._id,
+        step: lastFieldFocused.current,
+        reason: "unmount_before_submit",
+      });
+    } catch {}
+  };
+
+  const handleFormStart = (event) => {
+    if (event?.target?.name) {
+      lastFieldFocused.current = event.target.name;
+    }
     if (hasTrackedFormStart.current) return;
     hasTrackedFormStart.current = true;
 
     const eventPayload = {
-      page: pathname || window.location.pathname,
+      ...buildPosthogContext(pathname),
       form_id: "sauna-product-contact-form",
       productId: product?._id,
     };
@@ -32,9 +63,16 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
     } catch {}
   };
 
+  useEffect(() => {
+    return () => {
+      trackAbandoned();
+    };
+  }, [pathname, product?._id]);
+
   const sendEmails = async (e) => {
     e.preventDefault();
     setLoading(true);
+    hasSubmittedForm.current = true;
 
     const formData = {
       name: e.target.name.value,
@@ -60,8 +98,11 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
         e.target.reset();
         try {
           posthog.capture(posthogEvents.quote_form_submitted, {
+            ...buildPosthogContext(pathname),
+            form_id: "sauna-product-contact-form",
             productId: product?._id,
             totalPrice,
+            estimated_value_bucket: getEstimatedValueBucket(totalPrice),
             installation: selectedInstallation || "unset",
             deliveryApplied: selectedInstallation === "DIY",
           });
@@ -70,6 +111,15 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
         toast.error("Error sending email. Please try again later.", {
           duration: 2700,
         });
+        try {
+          posthog.capture(posthogEvents.quote_field_error, {
+            ...buildPosthogContext(pathname),
+            form_id: "sauna-product-contact-form",
+            productId: product?._id,
+            step: "submit",
+            error_type: "api_response_error",
+          });
+        } catch {}
         try {
           posthog.captureException(new Error(data?.message || "Quote failed"), {
             productId: product?._id,
@@ -82,6 +132,15 @@ const ProductContactForm = ({ product, totalPrice, selectedInstallation }) => {
       toast.error("Error sending email. Please try again later.", {
         duration: 2700,
       });
+      try {
+        posthog.capture(posthogEvents.quote_field_error, {
+          ...buildPosthogContext(pathname),
+          form_id: "sauna-product-contact-form",
+          productId: product?._id,
+          step: "submit",
+          error_type: "network_or_server_error",
+        });
+      } catch {}
       try {
         posthog.captureException(error, {
           productId: product?._id,
