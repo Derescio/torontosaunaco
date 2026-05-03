@@ -1,10 +1,12 @@
 "use client";
 import { useDispatch } from "react-redux";
+import { usePathname } from "next/navigation";
 import { addToCart } from "@/redux/slices/cartSlice";
 import { ShoppingCart } from "lucide-react";
 import toast from "react-hot-toast";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import { buildPosthogContext } from "@/assets/utils/posthogContext";
 
 /**
  * PriceSummary - Selection summary and total price with Add to Cart
@@ -16,6 +18,7 @@ import { posthogEvents } from "@/assets/utils/posthogEvents";
  */
 const PriceSummary = ({ product, selections, totalPrice, deliveryFee }) => {
   const dispatch = useDispatch();
+  const pathname = usePathname();
   const {
     selectedSize,
     selectedWoodType,
@@ -167,6 +170,7 @@ const PriceSummary = ({ product, selections, totalPrice, deliveryFee }) => {
     // Track add to cart
     try {
       posthog.capture(posthogEvents.config_option_selected, {
+        ...buildPosthogContext(pathname),
         productId: product._id,
         optionType: "add_to_cart",
         totalPrice,

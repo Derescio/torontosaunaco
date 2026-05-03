@@ -14,6 +14,8 @@ export const posthogEvents = {
   // Conversion intent
   cta_clicked: "cta:clicked",
   quote_form_started: "quote:form_started",
+  quote_field_error: "quote:field_error",
+  quote_abandoned: "quote:abandoned",
   quote_form_opened: "quote:form_opened",
   quote_form_submitted: "quote:form_submitted",
 };

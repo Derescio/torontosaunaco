@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import { buildPosthogContext } from "@/assets/utils/posthogContext";
 
 const Contact = ({ defaultSubject = "" }) => {
   const router = useRouter();
@@ -13,6 +14,9 @@ const Contact = ({ defaultSubject = "" }) => {
   const [loading, setLoading] = useState(false);
   const [subject, setSubject] = useState(defaultSubject);
   const hasTrackedFormStart = useRef(false);
+  const hasSubmittedForm = useRef(false);
+  const hasTrackedAbandoned = useRef(false);
+  const lastFieldFocused = useRef("unknown");
 
   const getFormIdByPath = () => {
     if (pathname === "/quote") return "quote-contact-form";
@@ -26,18 +30,39 @@ const Contact = ({ defaultSubject = "" }) => {
     setSubject(defaultSubject);
   }, [defaultSubject]);
 
-  const handleFormStart = () => {
+  useEffect(() => {
+    return () => {
+      if (
+        hasTrackedAbandoned.current ||
+        !hasTrackedFormStart.current ||
+        hasSubmittedForm.current
+      ) {
+        return;
+      }
+
+      hasTrackedAbandoned.current = true;
+      try {
+        posthog.capture(posthogEvents.quote_abandoned, {
+          ...buildPosthogContext(pathname),
+          form_id: getFormIdByPath(),
+          step: lastFieldFocused.current,
+          reason: "unmount_before_submit",
+        });
+      } catch {}
+    };
+  }, [pathname]);
+
+  const handleFormStart = (event) => {
+    if (event?.target?.name) {
+      lastFieldFocused.current = event.target.name;
+    }
     if (hasTrackedFormStart.current) return;
     hasTrackedFormStart.current = true;
 
     const eventPayload = {
-      page: pathname || window.location.pathname,
+      ...buildPosthogContext(pathname),
       form_id: getFormIdByPath(),
     };
-    // posthog.capture('quote:form_started', {
-    //   page: pathname || window.location.pathname,
-    //   form_id: getFormIdByPath(),
-    // });
 
     try {
       posthog.capture(posthogEvents.quote_form_started, eventPayload);
@@ -49,6 +74,7 @@ const Contact = ({ defaultSubject = "" }) => {
   const sendEmails = async (e) => {
     e.preventDefault();
     setLoading(true);
+    hasSubmittedForm.current = true;
 
     const formData = {
       name: e.target.name.value,
@@ -71,15 +97,40 @@ const Contact = ({ defaultSubject = "" }) => {
 
       const dataResponse = await res.json();
       if (dataResponse.message === "Email sent successfully!") {
+        try {
+          posthog.capture(posthogEvents.quote_form_submitted, {
+            ...buildPosthogContext(pathname),
+            form_id: getFormIdByPath(),
+            estimated_value_bucket: "unknown",
+            subject: subject || e.target.subject.value,
+          });
+        } catch {}
+
         setLoading(false);
         toast.success("Email sent successfully!", { duration: 2700 });
         setTimeout(() => {
           router.push("/");
         }, 2000);
       } else {
+        try {
+          posthog.capture(posthogEvents.quote_field_error, {
+            ...buildPosthogContext(pathname),
+            form_id: getFormIdByPath(),
+            step: "submit",
+            error_type: "api_response_error",
+          });
+        } catch {}
         toast.error("Error sending email. Please try again later.");
       }
     } catch (error) {
+      try {
+        posthog.capture(posthogEvents.quote_field_error, {
+          ...buildPosthogContext(pathname),
+          form_id: getFormIdByPath(),
+          step: "submit",
+          error_type: "network_or_server_error",
+        });
+      } catch {}
       console.error("Error sending emails:", error);
       toast.error("Error sending email. Please try again later.");
     }

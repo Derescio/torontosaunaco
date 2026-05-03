@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Check } from "lucide-react";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
+import { buildPosthogContext } from "@/assets/utils/posthogContext";
 
 /**
  * ProductConfigurator - Tabs for configuring sauna options
@@ -23,6 +25,7 @@ const ProductConfigurator = ({
   selections,
   onSelectionChange,
 }) => {
+  const pathname = usePathname();
   const {
     selectedSize,
     selectedWoodType,
@@ -35,6 +38,7 @@ const ProductConfigurator = ({
     onSelectionChange("size", sizeKey);
     try {
       posthog.capture(posthogEvents.size_selected, {
+        ...buildPosthogContext(pathname),
         productId,
         sizeKey,
         sizeLabel,
@@ -46,6 +50,7 @@ const ProductConfigurator = ({
     onSelectionChange("wood", name);
     try {
       posthog.capture(posthogEvents.config_option_selected, {
+        ...buildPosthogContext(pathname),
         productId,
         optionType: "wood",
         optionName: name,
@@ -58,6 +63,7 @@ const ProductConfigurator = ({
     onSelectionChange("stove", name);
     try {
       posthog.capture(posthogEvents.config_option_selected, {
+        ...buildPosthogContext(pathname),
         productId,
         optionType: "stove",
         optionName: name,
@@ -75,6 +81,7 @@ const ProductConfigurator = ({
     onSelectionChange("upgrades", newUpgrades);
     try {
       posthog.capture(posthogEvents.config_option_selected, {
+        ...buildPosthogContext(pathname),
         productId,
         optionType: "addon",
         optionName: upgradeName,
