@@ -17,11 +17,11 @@ const HeaterDetails = () => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [showContact, setShowContact] = useState(false);
   const params = useParams();
-  // console.log(heater);
+  //console.log(params);
   useEffect(() => {
     const fetchHeater = async () => {
       try {
-        const response = await fetch(`/api/heaters/${params.id}`);
+        const response = await fetch(`/api/heaters/${params.slug}`);
         if (!response.ok) throw new Error("Failed to fetch heater");
         const data = await response.json();
         setHeater(data);
@@ -50,7 +50,7 @@ const HeaterDetails = () => {
     };
 
     fetchHeater();
-  }, [params.id]);
+  }, [params.slug]);
 
   useEffect(() => {
     if (heater) {
@@ -77,7 +77,7 @@ const HeaterDetails = () => {
     );
   const options = heater.options ?? {};
   const hasOptions = ["stones", "controls", "safetyRailing"].some(
-    (key) => Array.isArray(options[key]) && options[key].length > 0
+    (key) => Array.isArray(options[key]) && options[key].length > 0,
   );
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
@@ -142,8 +142,7 @@ const HeaterDetails = () => {
             <div className="mt-3">
               <h2 className="sr-only">Product information</h2>
               <p className="text-2xl text-gray-900">
-                {/* Starting from ${heater.basePrice} */}
-                ${heater.basePrice}
+                {/* Starting from ${heater.basePrice} */}${heater.basePrice}
               </p>
             </div>
 
@@ -193,7 +192,9 @@ const HeaterDetails = () => {
                   <div>
                     <p className="text-sm font-medium text-gray-950">Power</p>
                     <p className="mt-1 text-sm text-gray-900">
-                      {heater.power && heater.power > 0 ? `${heater.power} kW` : "Wood burning"} 
+                      {heater.power && heater.power > 0
+                        ? `${heater.power} kW`
+                        : "Wood burning"}
                     </p>
                   </div>
                   <div>

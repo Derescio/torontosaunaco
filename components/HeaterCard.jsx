@@ -3,7 +3,7 @@ import Link from "next/link";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 const HeaterCard = ({ heater }) => {
-  const heaterLink = `/heaters/${heater._id}`;
+  const heaterLink = `/heaters/${heater.slug ?? heater._id}`;
 
   return (
     <>

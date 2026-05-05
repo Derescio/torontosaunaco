@@ -66,6 +66,22 @@ export default async function sitemap() {
     // Continue without dynamic routes if products can't be fetched
   }
 
+  let heaterSitemapEntries = [];
+  try {
+    const connectDB = (await import("@/config/db")).default;
+    const Heaters = (await import("@/models/Heaters")).default;
+    await connectDB();
+    const heaters = await Heaters.find({}, { slug: 1 }).lean();
+    heaterSitemapEntries = heaters.map((h) => ({
+      url: `${baseUrl}/heaters/${h.slug || String(h._id)}`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
+  } catch (error) {
+    console.log("Error fetching heaters for sitemap:", error);
+  }
+
   // Service area routes (common locations in Ontario/Canada)
   const serviceAreas = [
     "toronto",
@@ -96,8 +112,6 @@ export default async function sitemap() {
   const productCategories = [
     "/saunas/668af06648215c199c427a97",
     "/saunas/668af06648215c199c406a65",
-    "/heaters/6814094308165731c6027fc7",
-    "/heaters/6814094308165731c6027fc6",
     "/cold-plunge/6917e50d3f05f33c3f08ca61",
     "/saunas/668af06648215c199c406a64",
     "/saunas/691273a0fffa32247e8079f5",
@@ -114,6 +128,7 @@ export default async function sitemap() {
   return [
     ...staticSitemapEntries,
     ...productSitemapEntries,
+    ...heaterSitemapEntries,
     ...serviceAreaEntries,
     ...categoryEntries,
   ];
