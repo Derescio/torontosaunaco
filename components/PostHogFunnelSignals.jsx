@@ -44,7 +44,9 @@ export default function PostHogFunnelSignals() {
 
     try {
       posthog.capture(posthogEvents.engaged, eventPayload);
-    } catch {}
+    } catch (e) {
+      console.error("Error capturing engaged event:", e);
+    }
   };
 
   useEffect(() => {
@@ -60,21 +62,23 @@ export default function PostHogFunnelSignals() {
       if (depth > maxDepthSeen.current) {
         maxDepthSeen.current = depth;
       }
-      if (depth < 50) return;
+      if (depth < 30) return;
       fireEngaged("scroll");
     };
 
     const handleInteraction = () => {
       interactionSeen.current = true;
-      const timeOnPageS = Math.round((Date.now() - routeStartMs.current) / 1000);
-      if (timeOnPageS >= 15) {
+      const timeOnPageS = Math.round(
+        (Date.now() - routeStartMs.current) / 1000,
+      );
+      if (timeOnPageS >= 10) {
         fireEngaged("interaction_and_time");
       }
     };
 
     const timeThresholdTimer = window.setTimeout(() => {
       fireEngaged("time_on_page");
-    }, 15000);
+    }, 10000);
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     document.addEventListener("click", handleInteraction, true);
@@ -99,7 +103,9 @@ export default function PostHogFunnelSignals() {
       if (!href || !href.startsWith("/quote")) return;
 
       const ctaText =
-        link.textContent?.trim() || link.getAttribute("aria-label") || "quote_cta";
+        link.textContent?.trim() ||
+        link.getAttribute("aria-label") ||
+        "quote_cta";
 
       try {
         posthog.capture(posthogEvents.cta_clicked, {

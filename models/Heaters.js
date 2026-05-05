@@ -1,10 +1,18 @@
 import { Schema, model, models } from "mongoose";
+import { slugify } from "../assets/utils/slugify.js";
 
 const HeaterSchema = new Schema(
   {
     name: {
       type: String,
       required: true,
+    },
+    slug: {
+      type: String,
+      unique: true,
+      sparse: true,
+      trim: true,
+      lowercase: true,
     },
     model: {
       type: String,
@@ -130,6 +138,29 @@ const HeaterSchema = new Schema(
     timestamps: true,
   }
 );
+
+HeaterSchema.pre("save", async function assignSlugFromName() {
+  if (this.slug || !this.name) return;
+
+  const base = slugify(this.name);
+  if (!base) return;
+
+  const Model = this.constructor;
+  let candidate = base;
+  let counter = 1;
+
+  while (
+    await Model.findOne({
+      slug: candidate,
+      _id: { $ne: this._id },
+    }).lean()
+  ) {
+    candidate = `${base}-${counter}`;
+    counter += 1;
+  }
+
+  this.slug = candidate;
+});
 
 const Heaters = models.Heaters || model("Heaters", HeaterSchema);
 
