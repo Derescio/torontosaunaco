@@ -146,6 +146,13 @@ export async function middleware(request) {
         return NextResponse.redirect(new URL('/', request.url));
     }
 
+    if (!token && pathname === '/checkout') {
+        const url = request.nextUrl.clone();
+        url.pathname = '/precheckout';
+        url.search = '';
+        return NextResponse.redirect(url);
+    }
+
     if (!token && pathname !== '/' && !pathname.startsWith('/signin')) {
         const signInUrl = new URL('/signin', request.url);
         signInUrl.searchParams.set('callbackUrl', request.url);
@@ -163,6 +170,7 @@ export const config = {
         '/messages',
         '/orders',
         '/products/saved',
-        '/signin'
+        '/signin',
+        '/checkout',
     ],
 };
