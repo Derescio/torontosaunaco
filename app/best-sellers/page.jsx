@@ -63,9 +63,9 @@ const BestSellers = () => {
       description:
         "The Studio 6 Mini Sauna sits 2 to 3 people. It is a sleek and modern design that combines efficiency and elegance in a compact footprint.",
       image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386024/torontosaunaco/studio/MiniONE_nabv0c.png",
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780510107/torontosaunaco/Cubes/The%20Mini/The_Mini_New_jpofsg.png",
       href: "/saunas/668af06648215c199c418a96",
-      price: "$15,999",
+      price: "$17,499",
     },
     {
       id: 2,
@@ -74,17 +74,17 @@ const BestSellers = () => {
         "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image: "/images/west_coast/The-Max.png",
       href: "/saunas/69950e9f11eb36b604c4687b",
-      price: "$20,650",
+      price: "$22,350",
     },
     {
       id: 3,
-      name: "The Max Plus",
+      name: "The Max with Porch",
       description:
-        "The Studio 6 Max Plus Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
+        "The Studio 6 Max with Porch sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
       image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1771386026/torontosaunaco/studio/PlusONE_wi1qzh.png",
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780510190/torontosaunaco/Cubes/The%20Ma%2BPorch/Max-w-Porch_First_Image_new_v63yuy.png",
       href: "/saunas/668af06648215c199c427a97",
-      price: "$23,550",
+      price: "$26,599",
     },
 
     {

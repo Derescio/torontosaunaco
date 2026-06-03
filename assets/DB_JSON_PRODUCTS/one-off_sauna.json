@@ -95,10 +95,132 @@
       "/images/west_coast/The-Max_9.JPG",
       "/images/west_coast/The-Max-w-Porch_1.PNG"
     ],
+    "documents": [
+      {
+        "label": "Studio 6 Mini Specs & Dimensions (PDF)",
+        "url": "/public/pdf/The Studio 6 Mini - Specs.pdf"
+      }
+      
+    ],
     "is_featured": false,
     "displayOrder": 7,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "668af06648215c199c418a96"
+    },
+    "owner": "torontosaunco",
+    "name": "The Studio Six Mini",
+    "type": "Pure Cube",
+    "collectionType": "Cube",
+    "series": "Studio 6",
+    "description": "Fully insulated, aluminum clad sauna built for four season use. Seats 2 comfortably.                          Built with precision and crafted for year-round use, the Studio 6 Mini features a minimalist cube structure with clean lines and contemporary finishes. The exterior is cladded with horizontal aluminium siding for four season protection ensuring your investment looks as good on year 10 as it did on day one. \n\nInside, enjoy a modern two-tier bench system that runs front to back for optimal comfort and heat circulation. The double-pane bronze glass front adds both warmth and privacy while maintaining a refined aesthetic. Constructed using SIP panel insulation, this unit is engineered for superior energy efficiency and durability through all Canadian seasons.\n",
+    "baseCost": 17499,
+    "price": 17499,
+    "dimensions": {
+      "width": 72,
+      "length": 60,
+      "height": 97,
+      "unit": "in",
+      "type": "exterior",
+      "depth": "60"
+    },
+    "features": [
+      "Comfortably seats 2",
+      "72\" W x 60\" D x 97\" H (exterior)",
+      "Interior crafted from Canadian Western Red Cedar",
+      "Horizontal aluminium exterior siding.",
+      "Modern 2-tier bench system",
+      "Double-pane bronze glass window",
+      "SIP panel insulated structure"
+    ],
+    "wood_type": {
+      "Knotty Cedar": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+      },
+      "Clear Cedar(Upgrade)": {
+        "price": 3600,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+      }
+    },
+    "stove_type": {
+      "Harvia Kip 8kW": {
+        "price": 1550,
+        "wifi": true,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762469371/torontosaunaco/stoves/Harvia_KIP_Remote_d0k68b.png"
+      },
+      "Huum Drop 7.5kW with Remote": {
+        "price": 3350,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
+      },
+      "Huum Drop 7.5kW with Remote + Wifi Controller": {
+        "price": 3850,
+        "wifi": false,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
+      }
+    },
+    "additional_upgrades": [
+      {
+        "name": "Woodgrain Brown Siding",
+        "price": 495,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1780505616/torontosaunaco/Cubes/The%20Mini/IMG_6772_y3kw4o.png"
+      },
+      {
+        "name": "Royal Thermal Black Accent Wall",
+        "price": 1500,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505853/torontosaunaco/Cubes/Accent%20Walls/IMG_6842_adj3zb.jpg"
+      },
+      {
+        "name": "Rhombus Thermal Alder Wall",
+        "price": 1800,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505854/torontosaunaco/Cubes/Accent%20Walls/IMG_6843_ltmsuq.jpg"
+      },
+      {
+        "name": "Hexa Xl Thermo Wall",
+        "price": 1950,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505850/torontosaunaco/Cubes/Accent%20Walls/IMG_6840_dm8cpv.jpg"
+      }
+    ],
+    "delivery": {
+      "cost": 450,
+      "included": false,
+      "description": "Delivery charge"
+    },
+    "installation": {
+      "DIY": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+      },
+      "Professional Install": {
+        "price": 1750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+      }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": [
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780510107/torontosaunaco/Cubes/The%20Mini/The_Mini_New_jpofsg.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505624/torontosaunaco/Cubes/The%20Mini/IMG_6782_ju42qj.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505620/torontosaunaco/Cubes/The%20Mini/IMG_6777_mvtfyf.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505612/torontosaunaco/Cubes/The%20Mini/DSC05216_zefcnk.jpg",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505616/torontosaunaco/Cubes/The%20Mini/IMG_6772_y3kw4o.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780505617/torontosaunaco/Cubes/The%20Mini/IMG_6773_jypblu.png"
+    ],
+    "documents": [
+      {
+        "label": "Studio 6 Mini Specs & Dimensions (PDF)",
+        "url": "/public/pdf/The Studio 6 Mini - Specs.pdf"
+      }
+    ],
+    "is_featured": false,
+    "displayOrder": 4,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
   }
- 
 ]
