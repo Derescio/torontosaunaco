@@ -88,7 +88,7 @@ const Saunas = async () => {
     </p>
   </div>
 </section>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8 items-stretch">
               {sortedProducts.map((product, index) => (
                 <NewProductCard product={product} key={index} />
               ))}
