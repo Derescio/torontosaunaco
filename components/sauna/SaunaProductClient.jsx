@@ -13,6 +13,11 @@ import ProductContactForm from "./ProductContactForm";
 import ProductDocuments from "./ProductDocuments";
 import Product from "../Product";
 import Link from "next/link";
+import {
+  getProductStartingPrice,
+  UNPRICED_LABEL,
+  UNPRICED_LINK,
+} from "@/assets/utils/productPrice";
 
 /**
  * SaunaProductClient - Main client component orchestrating product page
@@ -113,51 +118,8 @@ const SaunaProductClient = ({ product, productId }) => {
     return product?.baseCost || product?.price || 0;
   };
 
-  const computeStartingFromPrice = () => {
-    if (
-      product?.sizes &&
-      Array.isArray(product.sizes) &&
-      product.sizes.length > 0
-    ) {
-      let minPrice = Infinity;
-      for (const size of product.sizes) {
-        if (size?.priceByWood && typeof size.priceByWood === "object") {
-          if (isSingleWoodModel) {
-            const knotty = size.priceByWood["Knotty Cedar"];
-            if (
-              typeof knotty === "number" &&
-              isFinite(knotty) &&
-              knotty < minPrice
-            ) {
-              minPrice = knotty;
-            }
-          } else {
-            for (const value of Object.values(size.priceByWood)) {
-              if (
-                typeof value === "number" &&
-                isFinite(value) &&
-                value < minPrice
-              ) {
-                minPrice = value;
-              }
-            }
-          }
-        }
-      }
-      if (minPrice !== Infinity) return minPrice;
-    }
-    let base = product?.baseCost || product?.price || 0;
-    if (product?.wood_type && typeof product.wood_type === "object") {
-      const deltas = Object.values(product.wood_type)
-        .map((o) => (o && typeof o.price === "number" ? o.price : 0))
-        .filter((n) => typeof n === "number" && isFinite(n));
-      if (deltas.length > 0) {
-        const minDelta = Math.min(...deltas);
-        if (minDelta > 0) base += minDelta;
-      }
-    }
-    return base;
-  };
+  const computeStartingFromPrice = () =>
+    getProductStartingPrice(product, { isSingleWoodModel });
 
   const calculateTotal = () => {
     let total = computeBasePrice();
@@ -293,8 +255,20 @@ const SaunaProductClient = ({ product, productId }) => {
             {/* Product Price, Title and Description */}
             <div className="mt-12 mb-12">
               <h2 className="text-2xl md:text-3xl font-light text-[#4E7302] mb-6 font-archivo">
-                {product.name} {product.type === "Barrel" ? "Starting from $" : "$"}
-                {startingFromPrice.toLocaleString()}
+                {product.name}
+                {startingFromPrice === null ? (
+                  <>
+                    {" — "}
+                    <Link
+                      href={UNPRICED_LINK}
+                      className="underline hover:text-[#3d5a02] transition-colors"
+                    >
+                      {UNPRICED_LABEL}
+                    </Link>
+                  </>
+                ) : (
+                  ` ${product.type === "Barrel" ? "Starting from $" : "$"}${startingFromPrice.toLocaleString()}`
+                )}
               </h2>
               <div className="prose max-w-none text-gray-700 leading-relaxed font-archivo">
                 {bodyText && (
