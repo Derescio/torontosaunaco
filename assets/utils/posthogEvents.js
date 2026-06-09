@@ -18,4 +18,5 @@ export const posthogEvents = {
   quote_abandoned: "quote:abandoned",
   quote_form_opened: "quote:form_opened",
   quote_form_submitted: "quote:form_submitted",
+  quote_thank_you_viewed: "quote:thank_you_viewed",
 };
