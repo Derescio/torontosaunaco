@@ -9,6 +9,7 @@ import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndF
 import { PHProvider } from "./providers";
 import PostHogPageView from "../components/PostHogPageViews";
 import PostHogFunnelSignals from "../components/PostHogFunnelSignals";
+import AttributionCaptureBoundary from "@/components/AttributionCaptureBoundary";
 import Script from "next/script";
 
 // Create Meta Data
@@ -70,6 +71,7 @@ const MainLayout = ({ children }) => {
               <ScrollToTop />
               <PostHogPageView />
               <PostHogFunnelSignals />
+              <AttributionCaptureBoundary />
               <ConditionalNavAndFooter>
                 <main>{children}</main>
               </ConditionalNavAndFooter>

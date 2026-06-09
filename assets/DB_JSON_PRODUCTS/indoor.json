@@ -389,26 +389,24 @@
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
-    "_id": {
-      "$oid": "6a24b6531b4ba114399c137f"
-    },
+   
     "owner": "torontosaunco",
-    "name": "Element Nook Sauna",
+    "name": "Element Loft Sauna",
     "type": "Indoor",
     "collectionType": "Indoor",
-    "series": "Element Nook Sauna",
+    "series": "Element Loft Sauna",
     "description": "Element is designed for modern indoor wellness spaces with clean design, natural materials, everyday comfort.     With its full glass front, warm interior lighting, refined wood finish, and compact architectural shape, Element creates a spa-like experience that feels both luxurious and approachable. A compact indoor sauna thoughtfully designed for smaller spaces, private wellness rooms, home gyms, bathrooms, and personal retreats. The Nook delivers the benefits of traditional sauna bathing while maintaining a minimal footprint and refined presence. ",
     "baseCost": null,
     "price": null,
     "dimensions": {
-      "width": 54.75,
-      "length": 72,
+      "width": 74.75,
+      "length": 54,
       "height": 88,
       "unit": "in",
       "type": "interior"
     },
     "features": [
-      "Comfortably Seats 1-2",
+      "Comfortably Seats 2-3",
       "Crafted from Canadian Timber",
       "Glass Sauna Door",
       "2-Tier Benches",
@@ -450,17 +448,90 @@
       "phone": "617-555-5555"
     },
     "images": [
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785584/torontosaunaco/Indoor/Nook/Nook_White_dfkcvk.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785129/torontosaunaco/Indoor/Nook/Nook3_kdwwhs.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785131/torontosaunaco/Indoor/Nook/Nook_sneedq.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/Nook1_s33ce8.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/Nook2_baxquw.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/TSC-bucket-ladle_bp6tk4.png"
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799395/torontosaunaco/Indoor/Loft/Loft_White_kkwlc5.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799234/torontosaunaco/Indoor/Loft/Lof4t_uttlh6.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799235/torontosaunaco/Indoor/Loft/Loft2_qahun8.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799237/torontosaunaco/Indoor/Loft/Loft1_n4jlp6.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799238/torontosaunaco/Indoor/Loft/Loft_aom4hn.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799234/torontosaunaco/Indoor/Loft/Loft3_uukkgj.png"
     ],
     "is_featured": false,
-    "displayOrder": 44,
+    "displayOrder": 45,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+   
+    "owner": "torontosaunco",
+    "name": "Element Studio Sauna",
+    "type": "Indoor",
+    "collectionType": "Indoor",
+    "series": "Element Studio Sauna",
+    "description": "Element is designed for modern indoor wellness spaces with clean design, natural materials, everyday comfort.     With its full glass front, warm interior lighting, refined wood finish, and compact architectural shape, Element creates a spa-like experience that feels both luxurious and approachable. A compact indoor sauna thoughtfully designed for smaller spaces, private wellness rooms, home gyms, bathrooms, and personal retreats. The Nook delivers the benefits of traditional sauna bathing while maintaining a minimal footprint and refined presence. ",
+    "baseCost": null,
+    "price": null,
+    "dimensions": {
+      "width": 84.75,
+      "length": 64,
+      "height": 88,
+      "unit": "in",
+      "type": "interior"
+    },
+    "features": [
+      "Comfortably Seats 2-4",
+      "Crafted from Canadian Timber",
+      "Glass Sauna Door",
+      "2-Tier Benches",
+      "Tempered Glass Windows."
+    ],
+    "wood_type": {
+      "Canadian Timber": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780791475/torontosaunaco/CTC/Canadian%20Timber/Screenshot_2026-06-06_201713_gsibib.png"
+      }
+    },
+    "stove_type": {
+      "Huum Drop 9kW with Remote": {
+        "price": 3307,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      },
+      "Huum Drop 9kW with Remote + Wifi Controller": {
+        "price": 3950,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      },
+      "Harvia Kip 8kW": {
+        "price": 1550,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762468797/torontosaunaco/stoves/Harvia_KIP_1_zbmcy5.png"
+      }
+    },
+    "installation": {
+      "DIY": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466731/torontosaunaco/stoves/jay-wennington-BdeMttZx6Fs-unsplash_ni4gyf.jpg"
+      },
+      "Professional Install": {
+        "price": 1750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762466639/torontosaunaco/stoves/conor-brown-TWxNr5ZpxJM-unsplash_agqo7n.jpg"
+      }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": [
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800720/torontosaunaco/Indoor/Studio/Studio_White_tewqh6.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800514/torontosaunaco/Indoor/Studio/Element-Studio_cid0h5.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800512/torontosaunaco/Indoor/Studio/Element-Studio1_lds1k0.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800509/torontosaunaco/Indoor/Studio/Element-Studio4_hz5n7e.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800510/torontosaunaco/Indoor/Studio/Element-Studio3_lrx7wa.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800511/torontosaunaco/Indoor/Studio/Element-Studio2_eznt2e.png"
+    ],
+    "is_featured": false,
+    "displayOrder": 46,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   }
+
 
 ]
