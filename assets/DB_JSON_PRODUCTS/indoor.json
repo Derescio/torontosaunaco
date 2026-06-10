@@ -316,21 +316,23 @@
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
-   
+    "_id": {
+      "$oid": "6a24b6531b4ba114399c137f"
+    },
     "owner": "torontosaunco",
-    "name": "Element Nook Sauna",
+    "name": "Element Nook Sauna                                       ",
     "type": "Indoor",
     "collectionType": "Indoor",
     "series": "Element Nook Sauna",
-    "description": "Element is designed for modern indoor wellness spaces where clean design, natural materials, and everyday comfort come together. With its full glass front, warm interior lighting, refined wood finish, and compact architectural shape, Element creates a spa-like experience that feels both luxurious and approachable.",
-    "baseCost": 10499,
-    "price": 10499,
+    "description": "The Nook delivers all benefits of traditional sauna bathing with a minimal footprint and refined presence.     A compact 54x54  indoor sauna thoughtfully designed for smaller spaces, private wellness rooms, home gyms, bathrooms, and personal retreats. Element is Crafted from Thermo Grandis, an exceptional eco-friendly wood known for its structural longevity, moisture resistance, and consistent appearance, the Element Collection is built for the demands of an indoor sauna environment. Through a specialized thermo treatment process completed in Ontario, Canada, the wood is transformed into an extra-stable, luxury-grade sauna material with improved durability and a rich, elegant look.",
+    "baseCost": 10850,
+    "price": 10850,
     "dimensions": {
       "width": 54.75,
       "length": 72,
       "height": 88,
       "unit": "in",
-      "type": "interior"  
+      "type": "interior"
     },
     "features": [
       "Comfortably Seats 1-2",
@@ -342,24 +344,23 @@
     "wood_type": {
       "Canadian Timber": {
         "price": 0,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785584/torontosaunaco/Indoor/Nook/Nook_White_dfkcvk.png"
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780791475/torontosaunaco/CTC/Canadian%20Timber/Screenshot_2026-06-06_201713_gsibib.png"
       }
     },
     "stove_type": {
-      "Huum Drop 9kW with Remote": {
-        "price": 3307,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      "Huum Drop 7.5kW with Remote": {
+        "price": 3350,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
       },
-      "Huum Drop 9kW with Remote + Wifi Controller": {
-        "price": 3950,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      "Huum Drop 7.5kW with Remote + Wifi Controller": {
+        "price": 3850,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
       },
       "Harvia Kip 8kW": {
         "price": 1550,
         "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762468797/torontosaunaco/stoves/Harvia_KIP_1_zbmcy5.png"
       }
     },
-   
     "installation": {
       "DIY": {
         "price": 0,
@@ -377,11 +378,18 @@
     },
     "images": [
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785584/torontosaunaco/Indoor/Nook/Nook_White_dfkcvk.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/Nook2_baxquw.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785129/torontosaunaco/Indoor/Nook/Nook3_kdwwhs.png",
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785131/torontosaunaco/Indoor/Nook/Nook_sneedq.png",
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/Nook1_s33ce8.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/TSC-bucket-ladle_bp6tk4.png",
-      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785129/torontosaunaco/Indoor/Nook/Nook3_kdwwhs.png"
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/Nook2_baxquw.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780785130/torontosaunaco/Indoor/Nook/TSC-bucket-ladle_bp6tk4.png"
+    ],
+    "documents": [
+      {
+        "label": "Nook Product Drawing (PDF)",
+        "url":  "/public/pdf/Nook Product Drawing.pdf"
+      }
+    
     ],
     "is_featured": false,
     "displayOrder": 44,
@@ -389,15 +397,17 @@
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
-   
+    "_id": {
+      "$oid": "6a24decb1b4ba114399c1386"
+    },
     "owner": "torontosaunco",
     "name": "Element Loft Sauna",
     "type": "Indoor",
     "collectionType": "Indoor",
     "series": "Element Loft Sauna",
-    "description": "Element is designed for modern indoor wellness spaces with clean design, natural materials, everyday comfort.     With its full glass front, warm interior lighting, refined wood finish, and compact architectural shape, Element creates a spa-like experience that feels both luxurious and approachable. A compact indoor sauna thoughtfully designed for smaller spaces, private wellness rooms, home gyms, bathrooms, and personal retreats. The Nook delivers the benefits of traditional sauna bathing while maintaining a minimal footprint and refined presence. ",
-    "baseCost": null,
-    "price": null,
+    "description": "The Element Loft offers an elevated sauna experience while preserving the clean, architectural simplicity of the collection.     The ideal balance of comfort and versatility. Designed for couples, families, and homeowners seeking a more spacious 54\" x 74\" wellness environment, it delivers generous interior room while maintaining the clean lines, thoughtful proportions, and architectural elegance that define the collection. Element is Crafted from Thermo Grandis, an exceptional eco-friendly wood known for its structural longevity, moisture resistance, and consistent appearance, the Element Collection is built for the demands of an indoor sauna environment. Through a specialized thermo treatment process completed in Ontario, Canada, the wood is transformed into an extra-stable, luxury-grade sauna material with improved durability and a rich, elegant look.",
+    "baseCost": 12650,
+    "price": 12650,
     "dimensions": {
       "width": 74.75,
       "length": 54,
@@ -419,13 +429,13 @@
       }
     },
     "stove_type": {
-      "Huum Drop 9kW with Remote": {
-        "price": 3307,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      "Huum Drop 7.5kW with Remote": {
+        "price": 3350,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
       },
-      "Huum Drop 9kW with Remote + Wifi Controller": {
-        "price": 3950,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      "Huum Drop 7.5kW with Remote + Wifi Controller": {
+        "price": 3850,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
       },
       "Harvia Kip 8kW": {
         "price": 1550,
@@ -455,21 +465,30 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799238/torontosaunaco/Indoor/Loft/Loft_aom4hn.png",
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780799234/torontosaunaco/Indoor/Loft/Loft3_uukkgj.png"
     ],
+    "documents": [
+      {
+        "label": "The Loft Product Drawing (PDF)",
+        "url": "/public/pdf/The Loft Product Drawing.pdf"
+      }
+      
+    ],
     "is_featured": false,
     "displayOrder": 45,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
-   
+    "_id": {
+      "$oid": "6a24dfd71b4ba114399c1388"
+    },
     "owner": "torontosaunco",
     "name": "Element Studio Sauna",
     "type": "Indoor",
     "collectionType": "Indoor",
     "series": "Element Studio Sauna",
-    "description": "Element is designed for modern indoor wellness spaces with clean design, natural materials, everyday comfort.     With its full glass front, warm interior lighting, refined wood finish, and compact architectural shape, Element creates a spa-like experience that feels both luxurious and approachable. A compact indoor sauna thoughtfully designed for smaller spaces, private wellness rooms, home gyms, bathrooms, and personal retreats. The Nook delivers the benefits of traditional sauna bathing while maintaining a minimal footprint and refined presence. ",
-    "baseCost": null,
-    "price": null,
+    "description": "Perfect for luxury residences, wellness studios, spas, boutique hotels, fitness spaces, relaxation is guaranteed.     Our most expansive model (64x84) created for those who value a premium, open-concept sauna experience. Thoughtfully designed to accommodate multiple users comfortably, it transforms any environment into a refined wellness destination. Element is Crafted from Thermo Grandis, an exceptional eco-friendly wood known for its structural longevity, moisture resistance, and consistent appearance, the Element Collection is built for the demands of an indoor sauna environment. Through a specialized thermo treatment process completed in Ontario, Canada, the wood is transformed into an extra-stable, luxury-grade sauna material with improved durability and a rich, elegant look.",
+    "baseCost": 13950,
+    "price": 13950,
     "dimensions": {
       "width": 84.75,
       "length": 64,
@@ -491,13 +510,13 @@
       }
     },
     "stove_type": {
-      "Huum Drop 9kW with Remote": {
-        "price": 3307,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762457698/torontosaunaco/stoves/heater_new_qvf9w7_remote_fziizb.jpg"
+      "Huum Drop 7.5kW with Remote": {
+        "price": 3350,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627990/torontosaunaco/stoves/huum_drop_remote_zajlsk.png"
       },
-      "Huum Drop 9kW with Remote + Wifi Controller": {
-        "price": 3950,
-        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762455348/torontosaunaco/stoves/heater_new_qvf9w7_wifi_mruvqb.jpg"
+      "Huum Drop 7.5kW with Remote + Wifi Controller": {
+        "price": 3850,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762627324/torontosaunaco/stoves/huum_drop_wifi_fdgaiu.png"
       },
       "Harvia Kip 8kW": {
         "price": 1550,
@@ -527,11 +546,16 @@
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800510/torontosaunaco/Indoor/Studio/Element-Studio3_lrx7wa.png",
       "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780800511/torontosaunaco/Indoor/Studio/Element-Studio2_eznt2e.png"
     ],
+    "documents": [
+      {
+        "label": "The Studio Product Drawing (PDF)",
+        "url": "/public/pdf/The Studio Product Drawing.pdf"
+      }
+      
+    ],
     "is_featured": false,
     "displayOrder": 46,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   }
-
-
 ]
