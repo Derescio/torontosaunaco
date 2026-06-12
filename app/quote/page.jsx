@@ -1,7 +1,6 @@
 "use client";
 import Contact from "@/components/Contact";
 import Image from "next/image";
-// import { GoogleTagManager } from "@next/third-parties/google";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -22,7 +21,6 @@ const QuoteContent = () => {
   return (
     <>
       <Contact defaultSubject={defaultSubject} />
-      {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
     </>
   );
 };

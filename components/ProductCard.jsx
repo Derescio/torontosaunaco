@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 //import { Button } from "./ui/button";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 const ProductCard = ({ product }) => {
   const saunaLink = `/saunas/${product._id}`;
@@ -9,7 +8,6 @@ const ProductCard = ({ product }) => {
   //console.log(product);
   return (
     <>
-      <GoogleTagManager gtmId="AW-16622832527" />
       <div className="group relative rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-white">
         {product.type !== "Cold Plunge" ? (
           <>
