@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GoogleTagManager } from "@next/third-parties/google";
 
 const HeaterCard = ({ heater }) => {
   const heaterLink = `/heaters/${heater.slug ?? heater._id}`;
 
   return (
     <>
-      <GoogleTagManager gtmId="AW-16622832527" />
       <div className="group relative rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 bg-white">
         <div className="relative aspect-square overflow-hidden">
           {heater.images?.length > 0 && (
