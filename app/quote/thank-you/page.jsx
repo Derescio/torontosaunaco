@@ -24,7 +24,7 @@ export default function QuoteThankYouPage() {
     window.sessionStorage.setItem(dedupeKey, "1");
 
     const fireThankYouEvents = async (attribution = {}) => {
-      toast.success("Your quote request was submitted successfully.");
+      toast.success("Email sent successfully!");
 
       try {
         posthog.capture(posthogEvents.quote_thank_you_viewed, {

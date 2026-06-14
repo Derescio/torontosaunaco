@@ -131,18 +131,9 @@ const Contact = ({ defaultSubject = "" }) => {
           ...attribution,
         });
 
-        setLoading(false);
-
-        if (isQuotePage) {
-          toast.success("Quote request sent! Redirecting...", { duration: 4000 });
-          router.replace(
-            `/quote/thank-you?submission=${encodeURIComponent(submissionId)}`
-          );
-          return;
-        }
-
-        toast.success("Email sent successfully!", { duration: 2700 });
-        router.replace("/");
+        router.replace(
+          `/quote/thank-you?submission=${encodeURIComponent(submissionId)}`
+        );
         return;
       } else {
         try {
