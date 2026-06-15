@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { createQuoteAttributionSubmission } from "@/lib/marketing/submissions";
+import { syncSubmissionToHubSpot } from "@/lib/hubspot/syncSubmission";
 
 /**
  * Generate HTML for a single cart item with its configuration
@@ -272,6 +273,12 @@ export async function POST(req) {
     };
 
     await transporter.sendMail(mailOptions);
+
+    try {
+      await syncSubmissionToHubSpot(data);
+    } catch (hubspotError) {
+      console.error("HubSpot sync failed after email sent:", hubspotError);
+    }
 
     if (submissionId) {
       try {
