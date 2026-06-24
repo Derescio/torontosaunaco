@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { createQuoteAttributionSubmission } from "@/lib/marketing/submissions";
+import { syncSubmissionToHubSpot } from "@/lib/hubspot/syncSubmission";
 
 /**
  * Generate HTML for a single cart item with its configuration
@@ -176,6 +178,11 @@ export async function POST(req) {
       postalcode,
       subject,
       message,
+      submissionId,
+      attribution,
+      sourcePath,
+      formId,
+      formType,
       isConsultation,
       isCartQuote,
       cartItems,
@@ -266,6 +273,29 @@ export async function POST(req) {
     };
 
     await transporter.sendMail(mailOptions);
+
+    try {
+      await syncSubmissionToHubSpot(data);
+    } catch (hubspotError) {
+      console.error("HubSpot sync failed after email sent:", hubspotError);
+    }
+
+    if (submissionId) {
+      try {
+        await createQuoteAttributionSubmission({
+          submissionId,
+          formId: formId || "",
+          formType: formType || (isCartQuote ? "cart_quote" : isConsultation ? "consultation" : "quote"),
+          subject: subject || "",
+          contact: { name, email, phone, postalcode, message },
+          attribution: attribution || {},
+          sourcePath: sourcePath || "",
+          emailSent: true,
+        });
+      } catch (persistError) {
+        console.error("Failed to persist quote attribution submission:", persistError);
+      }
+    }
 
     return NextResponse.json(
       { message: "Email sent successfully!" },

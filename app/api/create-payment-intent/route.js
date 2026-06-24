@@ -1,4 +1,6 @@
 import Stripe from 'stripe';
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/assets/utils/authOptions";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2022-11-15',
@@ -6,6 +8,14 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export async function POST(req) {
   try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user) {
+      return new Response(JSON.stringify({ error: "Not authenticated" }), {
+        status: 401,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
     const { amount, currency = 'usd' } = await req.json();
     
     if (!amount || amount <= 0 || !Number.isInteger(amount)) {

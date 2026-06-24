@@ -4,6 +4,12 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import connectDB from '@/config/db';
 import User from '@/models/Users';
 import bcryptjs from 'bcryptjs'
+import {
+  canAccessMarketing,
+  canEditCatalog,
+  canManageRoles,
+  normalizeRole,
+} from "@/assets/utils/rbac";
 
 
 export const authOptions = {
@@ -50,11 +56,37 @@ export const authOptions = {
 callbacks: {
 
     async jwt({ token, user }) {
-        if (user) {
-          token.id = user.id;
-          token.isAdmin = user.isAdmin;
+        try {
+          await connectDB();
+          const email = user?.email || token?.email;
+
+          if (email) {
+            const dbUser = await User.findOne({ email })
+              .select("_id role isAdmin")
+              .lean();
+
+            if (dbUser) {
+              token.id = dbUser._id?.toString();
+              token.role = normalizeRole(dbUser);
+              token.isAdmin = token.role === "admin";
+            } else if (user) {
+              token.id = user.id || user._id?.toString();
+              token.role = normalizeRole(user);
+              token.isAdmin = token.role === "admin";
+            }
+          } else if (user) {
+            token.id = user.id || user._id?.toString();
+            token.role = normalizeRole(user);
+            token.isAdmin = token.role === "admin";
+          }
+        } catch {
+          if (user) {
+            token.id = user.id || user._id?.toString();
+            token.role = normalizeRole(user);
+            token.isAdmin = token.role === "admin";
+          }
         }
-     
+
         return token;
       },
     // Invoked on Successful Sign In
@@ -82,18 +114,25 @@ callbacks: {
     async session({session, token}){
         // Steps
         // 1. Connect to the DB
+        await connectDB();
         const user = await User.findOne({email:session.user.email});
+        if (!user) {
+            return session;
+        }
         // async session({session, token}){
         //     const user = await User.findOne({email:session.user.email});
+            const role = normalizeRole(user);
             session.user = {
                 id: token.id,
-                isAdmin: user.isAdmin,
+                role,
+                isAdmin: role === "admin",
+                canEditCatalog: canEditCatalog(user),
+                canManageRoles: canManageRoles(user),
+                canAccessMarketing: canAccessMarketing(user),
                 username: user.username,
                 email:user.email,
                 image:user.image,
                 secondaryId:user._id.toString(),
-
-
             };
             return session;
         }

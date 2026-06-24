@@ -2,7 +2,6 @@ import { client } from "@/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/lib/sanity";
-// import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
   title:
@@ -68,7 +67,6 @@ export default async function BlogPage() {
           </div>
         ))}
       </div>
-      {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
     </div>
   );
 }

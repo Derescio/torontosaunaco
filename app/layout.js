@@ -5,11 +5,11 @@ import AuthProvider from "@/components/AuthProvider";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ScrollToTop";
 import ConditionalNavAndFooter from "@/components/pacifictide/ConditionalNavAndFooter";
-// import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { PHProvider } from "./providers";
 import PostHogPageView from "../components/PostHogPageViews";
 import PostHogFunnelSignals from "../components/PostHogFunnelSignals";
-import Script from "next/script";
+import AttributionCaptureBoundary from "@/components/AttributionCaptureBoundary";
 
 // Create Meta Data
 export const metadata = {
@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
   return (
     <AuthProvider>
       <html lang="en" suppressHydrationWarning>
-        {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
+        <GoogleTagManager gtmId="GTM-PSLPBPCV" />
         <head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -50,18 +50,6 @@ const MainLayout = ({ children }) => {
           <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abyssinica+SIL&family=Akaya+Kanadaka&family=Anton&family=Kavivanar&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
           ></link>
-           <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16622832527"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16622832527');
-          `}
-        </Script>
         </head>
         <body>
           <StoreProvider>
@@ -70,6 +58,7 @@ const MainLayout = ({ children }) => {
               <ScrollToTop />
               <PostHogPageView />
               <PostHogFunnelSignals />
+              <AttributionCaptureBoundary />
               <ConditionalNavAndFooter>
                 <main>{children}</main>
               </ConditionalNavAndFooter>

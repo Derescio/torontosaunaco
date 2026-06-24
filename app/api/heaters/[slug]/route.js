@@ -2,6 +2,9 @@ import connectDB from "@/config/db";
 import Heaters from "@/models/Heaters";
 import { NextResponse } from "next/server";
 import { isLikelyMongoObjectId, slugify } from "@/assets/utils/slugify";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/assets/utils/authOptions";
+import { canEditCatalog } from "@/assets/utils/rbac";
 
 function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -54,6 +57,62 @@ export const GET = async (request, { params }) => {
     return NextResponse.json(
       { error: "Failed to fetch heater" },
       { status: 500 },
+    );
+  }
+};
+
+export const PATCH = async (request, { params }) => {
+  const { slug: segment } = await params;
+
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session?.user) {
+      return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
+    }
+
+    if (!canEditCatalog(session.user)) {
+      return NextResponse.json(
+        { error: "Insufficient permissions" },
+        { status: 403 }
+      );
+    }
+
+    await connectDB();
+
+    const raw = safeDecodeSegment(segment).trim();
+    let filter = null;
+
+    if (isLikelyMongoObjectId(raw)) {
+      filter = { _id: raw };
+    } else if (raw) {
+      filter = {
+        $or: [
+          { slug: raw.toLowerCase() },
+          { slug: slugify(raw) },
+          { name: new RegExp(`^${escapeRegex(raw)}$`, "i") },
+        ],
+      };
+    }
+
+    if (!filter) {
+      return NextResponse.json({ error: "Invalid heater identifier" }, { status: 400 });
+    }
+
+    const payload = await request.json();
+    const updated = await Heaters.findOneAndUpdate(filter, payload, {
+      new: true,
+      runValidators: true,
+    });
+
+    if (!updated) {
+      return NextResponse.json({ error: "Heater not found" }, { status: 404 });
+    }
+
+    return NextResponse.json(updated, { status: 200 });
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Failed to update heater" },
+      { status: 500 }
     );
   }
 };

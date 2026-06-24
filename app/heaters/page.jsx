@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import HeaterCard from "@/components/HeaterCard";
-// import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 
 const Heaters = () => {
@@ -36,7 +35,6 @@ const Heaters = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
 
       {/* Hero Section */}
       <div className="relative bg-gray-800 text-white py-24 mt-[4px]">

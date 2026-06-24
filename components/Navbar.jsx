@@ -268,12 +268,12 @@ const Navbar = () => {
              onClick={()=> setIsProfileMenuOpen(false)}
             >
               <Link
-                href="/signin"
+                href={session ? "/orders" : "/signin"}
                 className="block px-4 py-2 text-sm text-gray-700"
                 role="menuitem"
                tabIndex="-1"
                 id="user-menu-item-0"
-                ><span className='font-bold'>Sign In</span></Link
+                ><span className='font-bold'>{session ? "My Account" : "Sign In"}</span></Link
               >
               {/* <Link
                 href="/profile"
@@ -291,6 +291,37 @@ const Navbar = () => {
                 id="user-menu-item-2"
                 >View Orders</Link
               >
+              {session?.user?.canEditCatalog && (
+                <Link
+                  href="/editor"
+                  className="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  Editor Access
+                </Link>
+              )}
+              {session?.user?.canManageRoles && (
+                <Link
+                  href="/admin"
+                  className="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  Admin Dashboard
+                </Link>
+              )}
+              {(session?.user?.canAccessMarketing ||
+                session?.user?.canManageRoles) && (
+                <Link
+                  href="/marketing"
+                  className="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  Marketing Workspace
+                </Link>
+              )}
               <button  className="block px-4 py-2 text-sm text-gray-700" 
               onClick={()=> {setIsProfileMenuOpen(false)
                 signOut()

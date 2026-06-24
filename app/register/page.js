@@ -1,6 +1,5 @@
 import Register from "@/components/Register";
 import React from "react";
-// import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Register | Toronto Sauna Co.",
@@ -12,7 +11,6 @@ const page = () => {
   return (
     <div>
       <Register />
-      {/* <GoogleTagManager gtmId="AW-16622832527" /> */}
     </div>
   );
 };

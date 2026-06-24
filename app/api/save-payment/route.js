@@ -5,6 +5,9 @@ import { getUserSession } from '@/assets/utils/getServerSession';
 
 export async function POST(req) {
   const sessionUser = await getUserSession();
+  if (!sessionUser?.user) {
+    return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
+  }
   //console.log(sessionUser)
   
   try {

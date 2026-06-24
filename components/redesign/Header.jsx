@@ -217,6 +217,34 @@ const Header = () => {
                       >
                         View Orders
                       </Link>
+                      {session?.user?.canEditCatalog && (
+                        <Link
+                          href="/editor"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Editor Access
+                        </Link>
+                      )}
+                      {session?.user?.canManageRoles && (
+                        <Link
+                          href="/admin"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Admin Dashboard
+                        </Link>
+                      )}
+                      {(session?.user?.canAccessMarketing ||
+                        session?.user?.canManageRoles) && (
+                        <Link
+                          href="/marketing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Marketing Workspace
+                        </Link>
+                      )}
                       <button
                         onClick={() => signOut()}
                         className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
@@ -333,6 +361,34 @@ const Header = () => {
                       >
                         View Orders
                       </Link>
+                      {session?.user?.canEditCatalog && (
+                        <Link
+                          href="/editor"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Editor Access
+                        </Link>
+                      )}
+                      {session?.user?.canManageRoles && (
+                        <Link
+                          href="/admin"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Admin Dashboard
+                        </Link>
+                      )}
+                      {(session?.user?.canAccessMarketing ||
+                        session?.user?.canManageRoles) && (
+                        <Link
+                          href="/marketing"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                          role="menuitem"
+                        >
+                          Marketing Workspace
+                        </Link>
+                      )}
                       <button
                         onClick={() => signOut()}
                         className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"

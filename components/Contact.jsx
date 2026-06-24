@@ -7,6 +7,11 @@ import Image from "next/image";
 import posthog from "posthog-js";
 import { posthogEvents } from "@/assets/utils/posthogEvents";
 import { buildPosthogContext } from "@/assets/utils/posthogContext";
+import {
+  buildQuoteSubmissionId,
+  getAttributionForSubmission,
+  pushDataLayerEvent,
+} from "@/assets/utils/marketingAttribution";
 
 const Contact = ({ defaultSubject = "" }) => {
   const router = useRouter();
@@ -18,8 +23,10 @@ const Contact = ({ defaultSubject = "" }) => {
   const hasTrackedAbandoned = useRef(false);
   const lastFieldFocused = useRef("unknown");
 
+  const isQuotePage = pathname === "/quote";
+
   const getFormIdByPath = () => {
-    if (pathname === "/quote") return "quote-contact-form";
+    if (isQuotePage) return "quote-contact-form";
     if (pathname === "/") return "home-contact-form";
     if (pathname?.startsWith("/heaters/")) return "heater-contact-form";
     return "contact-form";
@@ -76,14 +83,22 @@ const Contact = ({ defaultSubject = "" }) => {
     setLoading(true);
     hasSubmittedForm.current = true;
 
+    const attribution = getAttributionForSubmission();
+    const submissionId = buildQuoteSubmissionId();
+
     const formData = {
+      submissionId,
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone?.value || "",
       postalcode: e.target.postalcode?.value || "",
       message: e.target.message.value,
-      subject: subject || e.target.subject.value, // Use state value or fallback to input value
+      subject: subject || e.target.subject.value,
       isConsultation: false,
+      attribution,
+      sourcePath: pathname,
+      formId: getFormIdByPath(),
+      formType: isQuotePage ? "quote" : "general_contact",
     };
 
     try {
@@ -101,16 +116,25 @@ const Contact = ({ defaultSubject = "" }) => {
           posthog.capture(posthogEvents.quote_form_submitted, {
             ...buildPosthogContext(pathname),
             form_id: getFormIdByPath(),
+            submission_id: submissionId,
             estimated_value_bucket: "unknown",
             subject: subject || e.target.subject.value,
+            ...attribution,
           });
         } catch {}
 
-        setLoading(false);
-        toast.success("Email sent successfully!", { duration: 2700 });
-        setTimeout(() => {
-          router.push("/");
-        }, 2000);
+        pushDataLayerEvent("quote_submitted", {
+          submission_id: submissionId,
+          form_id: getFormIdByPath(),
+          form_type: isQuotePage ? "quote" : "general_contact",
+          subject: subject || e.target.subject.value,
+          ...attribution,
+        });
+
+        router.replace(
+          `/quote/thank-you?submission=${encodeURIComponent(submissionId)}`
+        );
+        return;
       } else {
         try {
           posthog.capture(posthogEvents.quote_field_error, {
@@ -140,8 +164,11 @@ const Contact = ({ defaultSubject = "" }) => {
   return (
     <div className="mb-12  mt-0.5 relative min-h-[600px]">
       {loading && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+        <div className="fixed top-0 left-0 z-50 flex h-full w-full flex-col items-center justify-center bg-black/50 px-6 text-center">
+          <div className="h-16 w-16 animate-spin rounded-full border-t-2 border-b-2 border-white" />
+          <p className="mt-6 max-w-sm text-base font-medium text-white">
+            Sending your request...
+          </p>
         </div>
       )}
 
