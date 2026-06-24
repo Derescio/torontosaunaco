@@ -82,7 +82,7 @@ const BestSellers = () => {
       description:
         "A spacious 4-5 person outdoor sauna that blends modern design with natural warmth. Perfect for friends.         The 672 Pure Cube features a symmetrical front with wide glass panels and a centered door, creating a bright, open retreat for families and friends to unwind together.",
       image:
-        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1780510190/torontosaunaco/Cubes/The%20Ma%2BPorch/Max-w-Porch_First_Image_new_v63yuy.pnghttps://res.cloudinary.com/dw4ev5whz/image/upload/v1754020532/torontosaunaco/Cubes/IMG-20250731-WA0009_new_tjj8ye.png",
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1754020532/torontosaunaco/Cubes/IMG-20250731-WA0009_new_tjj8ye.png",
       href: "/saunas/668af06648215c199f921a92",
       price: "$14,995",
     },
