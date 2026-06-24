@@ -583,5 +583,77 @@
     "displayOrder": 5,
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "6a381ec48eba55057729ae16"
+    },
+    "owner": "torontosaunco",
+    "name": "The Flow Cold Plunge",
+    "type": "Cold Plunge",
+    "collectionType": "Cold Plunge",
+    "series": "Tub",
+    "description": "Wrapped in natural cedar cladding and built with a premium stainless steel tub, the Flow is designed to offer a clean, calming, and restorative cold immersion experience.                    Now available to order, the new Flow Cold Plunge combines performance, beauty, and simplicity in one fully assembled package.  The space for the Chiller is now built into the outer shell for a sophisticated finished look. \n For wellness seekers, athletes, and anyone building a daily recovery ritual, this is the plunge that delivers. \n\n Large Format Tub \n Designed for complete full-body immersion, our large format tub provides ample space to stretch out and relax comfortably. The generous interior allows for a more effective cold plunge experience by ensuring your body is fully submerged, promoting optimal circulation, muscle recovery, and overall wellness. Whether you're tall, broad-shouldered, or simply prefer extra room, this tub is built to deliver comfort without compromise. \n\n Concealed Chiller Compartment  \n Thoughtfully engineered with a hidden chiller compartment, this design keeps all mechanical components neatly tucked away for a clean, streamlined appearance. By concealing hoses and equipment, the aesthetic remains natural and uncluttered—perfect for backyards, patios, or cottage settings. The enclosed space also provides added protection for your chiller, helping extend its lifespan while maintaining easy access for servicing.     \n\n Stainless Steel Interior \n The premium stainless steel interior offers exceptional durability, hygiene, and longevity. Naturally resistant to rust, corrosion, and staining, it stands up to constant water exposure and fluctuating temperatures. Its smooth, non-porous surface makes cleaning simple and helps maintain pristine water conditions, ensuring your cold plunge remains as sanitary as it is refreshing.",
+    "dimension": "40 x 40 x 55 (in)",
+    "price": null,
+    "views": {},
+    "wood_type": {
+      "Knotty Cedar": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762458460/torontosaunaco/stoves/Knotty_cedar_ty6egk.png"
+      },
+      "Clear Cedar": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1762459125/torontosaunaco/stoves/Clear_Cedar_fouqfg.png"
+      }
+    },
+    "stove_type": {
+      "No Chiller": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1721167248/torontosaunaco/coldplunge/Untitled_design_j17dds.jpg"
+      },
+      "Penguin Cold Therapy Chiller w/ Filter Kit": {
+        "price": 0,
+        "dimensions": "10 x 11 x 23 (in)",
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1742156045/Penguin_Cold_Therapy_1_lgrry9.png"
+      }
+    },
+    "additional_upgrades": [
+      {
+        "name": "Insulated Vinyl Cover",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782066491/torontosaunaco/coldplunge/TheFlow/TheFlow6_w4joel.png"
+      },
+      {
+        "name": "2 Tier Step with Straight Top Tread",
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782066862/torontosaunaco/coldplunge/TheFlow/TheFlowSteps_e3qkle.png"
+      }
+    ],
+    "installation": {
+      "DIY": {
+        "price": 0,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361758/torontosaunaco/Wood_Stove_Install_img/DIY_wfzost.jpg"
+      },
+      "Supply_Install": {
+        "price": 1750,
+        "image": "https://res.cloudinary.com/dw4ev5whz/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1720361807/torontosaunaco/Wood_Stove_Install_img/supply_install_mr2nhj.jpg"
+      }
+    },
+    "seller_info": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": [
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782060587/torontosaunaco/coldplunge/TheFlow/TheFlow2_d9woar.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782060589/torontosaunaco/coldplunge/TheFlow/TheFlow_v8pjr8.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782060588/torontosaunaco/coldplunge/TheFlow/TheFlow1_tn9j1f.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782060586/torontosaunaco/coldplunge/TheFlow/TheFlow4_r72ext.png",
+      "https://res.cloudinary.com/dw4ev5whz/image/upload/v1782060585/torontosaunaco/coldplunge/TheFlow/TheFlow5_yfoulo.png"
+    ],
+    "is_featured": false,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
   }
 ]
