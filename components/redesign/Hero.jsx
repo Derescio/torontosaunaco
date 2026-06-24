@@ -62,11 +62,11 @@ const HERO_VIDEO_BASE =
   "https://res.cloudinary.com/dw4ev5whz/video/upload/v1777168983/torontosaunaco/Hero_Video_q9bzhg.mp4";
 const HERO_VIDEO_MOBILE = HERO_VIDEO_BASE.replace(
   "/upload/",
-  "/upload/f_auto,q_auto:eco,c_limit,w_800/"
+  "/upload/f_auto,q_auto:eco,c_limit,w_800/",
 );
 const HERO_VIDEO_DESKTOP = HERO_VIDEO_BASE.replace(
   "/upload/",
-  "/upload/f_auto,q_auto,c_limit,w_1280/"
+  "/upload/f_auto,q_auto,c_limit,w_1280/",
 );
 
 const POSTER = "/images/mobile_bg.png";
@@ -126,10 +126,7 @@ const Hero = () => {
         }`}
         // poster={posterUrl}
       >
-        <source
-          src={HERO_VIDEO_MOBILE}
-          media="(max-width: 768px)"
-        />
+        <source src={HERO_VIDEO_MOBILE} media="(max-width: 768px)" />
         <source src={HERO_VIDEO_DESKTOP} />
       </video>
 
@@ -138,11 +135,11 @@ const Hero = () => {
 
       {/* Centered Content */}
       <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
-        <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-thin mb-6 tracking-wide">
-          Welcome To Wellness
-        </h1>
+        <h3 className="text-white text-5xl md:text-6xl lg:text-7xl font-thin mb-6 tracking-wide">
+          Bring The Sauna Experience Home
+        </h3>
         <p className="text-white text-xl md:text-2xl lg:text-3xl font-light mb-8 tracking-wide font-atkinson">
-          Relax Recharge Rejuvenate
+          Premium Canadian Cedar Saunas. Delivered across Ontario.
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-2">
@@ -150,14 +147,14 @@ const Hero = () => {
             href="/best-sellers"
             className="ml-2 inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] bg-[#BF9774]/30 md:bg-[#BF9774]/70 text-white px-2 py-1 md:px-8 md:py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
           >
-            Best Sellers
+            Shop Best Sellers
           </Link>
 
           <Link
             href="/saunas"
             className="inline-block border-2 border-[#8B7355] hover:bg-[#7A6345] text-white px-2 py-1 md:px-8 md:py-4 rounded-lg text-lg font-medium font-atkinson transition-colors shadow-lg"
           >
-            View Collection
+            Explore Saunas
           </Link>
         </div>
       </div>
