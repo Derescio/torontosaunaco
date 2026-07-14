@@ -2,7 +2,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaBars, FaTimes, FaChevronDown, FaShoppingBag } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaChevronDown,
+  FaShoppingBag,
+  FaPhone,
+} from "react-icons/fa";
 import { signOut, useSession } from "next-auth/react";
 import newLogo from "@/assets/images/IMG_6773_white.png";
 import defaultImage from "@/assets/images/profile.png";
@@ -158,18 +164,7 @@ const Header = () => {
 
           {/* Cart and Profile on the right */}
           <div className="flex items-center gap-4 w-[120px] justify-end">
-            {/* Cart Icon */}
-            <Link
-              href="/cart"
-              className="relative text-white hover:text-[#FFA726] transition-colors"
-            >
-              <FaShoppingBag className="w-6 h-6" />
-              {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-[#4E7302] text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center border-2 border-black">
-                  {cartCount}
-                </span>
-              )}
-            </Link>
+            <CartOrPhoneAction cartCount={cartCount} />
 
             {/* Profile Menu */}
             <div className="relative profile-dropdown">
@@ -308,17 +303,7 @@ const Header = () => {
 
           {/* Cart and Profile Icons on the right for mobile */}
           <div className="flex items-center gap-3">
-            <Link
-              href="/cart"
-              className="relative text-white hover:text-[#FFA726] transition-colors"
-            >
-              <FaShoppingBag className="w-6 h-6" />
-              {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-[#4E7302] text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center border-2 border-black">
-                  {cartCount}
-                </span>
-              )}
-            </Link>
+            <CartOrPhoneAction cartCount={cartCount} />
 
             {/* Mobile Profile Button */}
             <div className="relative profile-dropdown">
@@ -629,6 +614,32 @@ const Header = () => {
     </header>
   );
 };
+
+function CartOrPhoneAction({ cartCount, className = "w-6 h-6" }) {
+  if (cartCount > 0) {
+    return (
+      <Link
+        href="/cart"
+        className="relative text-white hover:text-[#FFA726] transition-colors"
+      >
+        <FaShoppingBag className={className} />
+        <span className="absolute -top-2 -right-2 bg-[#4E7302] text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center border-2 border-black">
+          {cartCount}
+        </span>
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      href="tel:+14374296623"
+      className="text-white hover:text-[#FFA726] transition-colors"
+      aria-label="Call (437) 429-6623"
+    >
+      <FaPhone className={className} />
+    </a>
+  );
+}
 
 // Dropdown Item Component
 function DropdownItem({ href, label, onClick }) {
