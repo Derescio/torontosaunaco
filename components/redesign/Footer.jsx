@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="space-y-2">
                 <p className="text-sm font-archivo font-medium">GTA Showroom</p>
                 <p className="text-sm">
-                  4663 LloydTown Aurora Rd, KING ON. L7B 0E3
+                  17380 Highway 27 Schomberg Ontario. L0G 1T0
                 </p>
               </div>
               <div className="space-y-2 mt-4">
@@ -160,11 +160,12 @@ const Footer = () => {
             <h1 className="mb-4 text-xl font-semibold text-white">Find Us</h1>
             <div className="rounded-lg overflow-hidden w-full h-48 border-2 border-orange-300">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1234567890123!2d-79.63026428222656!3d43.991024017333984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPathways%20to%20Perennials!5e0!3m2!1sen!2sca!4v1747678349536!5m2!1sen!2sca&markers=color:red%7C43.991024017333984,-79.63026428222656"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.6549743004716!2d-79.67779323821753!3d44.00785797357932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882adc2754c406a5%3A0x95008df80397f713!2s17380%20Hwy%2027%2C%20King%2C%20ON%20L0G%201T0!5e0!3m2!1sen!2sca!4v1784748718817!5m2!1sen!2sca"
                 className="w-full h-full border-0"
-                loading="lazy"
+                // style="border:0;"
                 allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
                 title="Map of The Toronto Sauna Co."
               ></iframe>
             </div>

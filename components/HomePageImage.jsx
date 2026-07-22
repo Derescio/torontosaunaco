@@ -60,12 +60,22 @@ const HomePageImage = () => {
                   <div className="flex items-center space-y-2">
                     {/* <FaMapMarkerAlt className="text-[#eeb35a] text-xl flex-shrink-0" /> */}
                     <div className="rounded-lg overflow-hidden w-full h-50 md:h-70 border-2 border-orange-300 ">
-                      <iframe
+                      {/* <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1234567890123!2d-79.63026428222656!3d43.991024017333984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPathways%20to%20Perennials!5e0!3m2!1sen!2sca!4v1747678349536!5m2!1sen!2sca&markers=color:red%7C43.991024017333984,-79.63026428222656"
                         className="w-full h-full border-0"
                         loading="lazy"
                         allowFullScreen
                         referrerPolicy="no-referrer-when-downgrade"
+                        title="Map of The Toronto Sauna Co."
+                      ></iframe> */}
+
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.6549743004716!2d-79.67779323821753!3d44.00785797357932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882adc2754c406a5%3A0x95008df80397f713!2s17380%20Hwy%2027%2C%20King%2C%20ON%20L0G%201T0!5e0!3m2!1sen!2sca!4v1784748718817!5m2!1sen!2sca"
+                        className="w-full h-full border-0"
+                        // style="border:0;"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="strict-origin-when-cross-origin"
                         title="Map of The Toronto Sauna Co."
                       ></iframe>
                     </div>
