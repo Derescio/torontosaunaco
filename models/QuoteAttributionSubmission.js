@@ -14,7 +14,14 @@ const quoteAttributionSubmissionSchema = new mongoose.Schema(
     formId: { type: String, default: "" },
     formType: {
       type: String,
-      enum: ["quote", "general_contact", "consultation", "cart_quote", "other"],
+      enum: [
+        "quote",
+        "general_contact",
+        "consultation",
+        "cart_quote",
+        "custom_build",
+        "other",
+      ],
       default: "quote",
     },
     subject: { type: String, default: "" },

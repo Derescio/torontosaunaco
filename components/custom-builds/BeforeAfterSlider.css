@@ -1,0 +1,4 @@
+.before-after-slider [style*="rgba(0, 0, 0, 0.5)"],
+.before-after-slider [style*="rgba(0,0,0,0.5)"] {
+  border-radius: 9999px !important;
+}

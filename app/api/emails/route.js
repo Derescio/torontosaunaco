@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { createQuoteAttributionSubmission } from "@/lib/marketing/submissions";
 import { syncSubmissionToHubSpot } from "@/lib/hubspot/syncSubmission";
+import { buildCustomBuildEmailHtml } from "@/lib/customBuilds/quoteDetails";
 
 /**
  * Generate HTML for a single cart item with its configuration
@@ -195,6 +196,13 @@ export async function POST(req) {
       province,
       address,
       city,
+      isCustomBuild,
+      projectType,
+      interiorFinish,
+      lengthFt,
+      widthFt,
+      heightFt,
+      notes,
     } = data;
 
     const transporter = nodemailer.createTransport({
@@ -212,6 +220,19 @@ export async function POST(req) {
     if (isCartQuote && cartItems && cartItems.length > 0) {
       emailContent = generateCartQuoteHtml(data);
       emailSubject = `🔥 HIGH-VALUE LEAD: Quote Request - $${cartSummary.total.toLocaleString()} - ${name}`;
+    } else if (isCustomBuild || formType === "custom_build") {
+      emailContent = buildCustomBuildEmailHtml({
+        name,
+        email,
+        phone,
+        address,
+        projectType,
+        interiorFinish,
+        lengthFt,
+        widthFt,
+        heightFt,
+        notes,
+      });
     } else if (isConsultation) {
       emailContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -285,7 +306,7 @@ export async function POST(req) {
         await createQuoteAttributionSubmission({
           submissionId,
           formId: formId || "",
-          formType: formType || (isCartQuote ? "cart_quote" : isConsultation ? "consultation" : "quote"),
+          formType: formType || (isCartQuote ? "cart_quote" : isConsultation ? "consultation" : isCustomBuild ? "custom_build" : "quote"),
           subject: subject || "",
           contact: { name, email, phone, postalcode, message },
           attribution: attribution || {},

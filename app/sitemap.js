@@ -11,6 +11,7 @@ const staticRoutes = [
   "/blog",
   "/cold-plunge",
   "/consultation",
+  "/custom-builds",
   "/heaters",
   "/quote",
   "/register",
