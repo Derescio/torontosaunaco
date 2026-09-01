@@ -5,18 +5,15 @@ import Products from "@/models/Products";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/assets/utils/authOptions";
 import { canEditCatalog } from "@/assets/utils/rbac";
+import { getProducts } from "@/lib/products/getProducts";
 
 export const revalidate = 3600;
 
 export const GET = async (req) => {
   try {
-    await connectDB();
     const { searchParams } = new URL(req.url);
     const full = searchParams.get("full") === "1";
-
-    const products = full
-      ? await Products.find().lean()
-      : await Products.find().select("-documents").lean();
+    const products = await getProducts({ full });
 
     return new Response(JSON.stringify(products), {
       status: 200,

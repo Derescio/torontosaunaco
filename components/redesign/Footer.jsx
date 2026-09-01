@@ -66,6 +66,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href="/custom-builds"
+                  className="hover:underline hover:text-[#FFA726] transition-colors text-white"
+                >
+                  Custom Sauna Room
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/quote"
                   className="hover:underline hover:text-[#FFA726] transition-colors text-white"
                 >

@@ -87,7 +87,7 @@ const Header = () => {
                 <FaChevronDown className="text-xs" />
               </button>
               {saunasDropdownOpen && (
-                <ul className="absolute top-full left-0 mt-0.75 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+                <ul className="absolute top-full left-0 mt-0.75 w-56 bg-white shadow-lg rounded-lg py-2 z-50">
                   <DropdownItem
                     href="/best-sellers"
                     label="Best Sellers"
@@ -101,6 +101,11 @@ const Header = () => {
                   <DropdownItem
                     href="/saunas/cube"
                     label="Cube Saunas"
+                    onClick={closeDropdown}
+                  />
+                  <DropdownItem
+                    href="/custom-builds"
+                    label="Custom Sauna Room"
                     onClick={closeDropdown}
                   />
                   <DropdownItem
@@ -465,16 +470,21 @@ const Header = () => {
                       label="Studio Six Collection"
                       onClick={closeDropdown}
                     />
-                    <DropdownItem
-                      href="/saunas/cube"
-                      label="Cube Saunas"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/saunas/barell"
-                      label="Barrel Sauna"
-                      onClick={closeDropdown}
-                    />
+                  <DropdownItem
+                    href="/saunas/cube"
+                    label="Cube Saunas"
+                    onClick={closeDropdown}
+                  />
+                  <DropdownItem
+                    href="/custom-builds"
+                    label="Custom Sauna Room"
+                    onClick={closeDropdown}
+                  />
+                  <DropdownItem
+                    href="/saunas/barell"
+                    label="Barrel Sauna"
+                    onClick={closeDropdown}
+                  />
                     <DropdownItem
                       href="/saunas/indoor"
                       label="Indoor Saunas"

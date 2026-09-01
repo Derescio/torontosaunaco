@@ -1,63 +1,50 @@
-// Create Utility function to fetch all data
+import { readJsonResponse } from "@/lib/http/readJsonResponse";
+
 const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null;
 
 const fetchProducts = async () => {
   try {
+    if (typeof window === "undefined") {
+      const { getProducts } = await import("@/lib/products/getProducts");
+      return await getProducts();
+    }
+
     if (!apiDomain) {
-      //console.log("Something went Wrong....")
       return [];
     }
+
     const res = await fetch(`${apiDomain}/products`, {
       next: { revalidate: 7200 },
     });
-    if (!res.ok) {
-      throw new Error("Error fetching products");
-    }
-
-    const products = await res.json();
-    // console.log("Fetching Products....")
-    return products;
+    return await readJsonResponse(res, []);
   } catch (error) {
     console.error(error);
     return [];
   }
 };
 
-// Fetch Single Product
 const fetchProduct = async (id) => {
   try {
     if (!apiDomain) {
-      // console.log("Something went Wrong....")
       return null;
     }
     const res = await fetch(`${apiDomain}/products/${id}`);
-    if (!res.ok) {
-      throw new Error("Error fetching Sauna!");
-    }
-    const product = await res.json();
-
-    return product;
+    return await readJsonResponse(res, null);
   } catch (error) {
     console.error(error);
     return null;
   }
 };
 
-// Fetch Accessories
 const fetchAccessories = async () => {
   try {
     if (!apiDomain) {
-      // console.log("Something went Wrong....")
       return [];
     }
     const res = await fetch(`${apiDomain}/accessories`, {
       next: { revalidate: 3600 },
     });
-    if (!res.ok) {
-      throw new Error("Error fetching Accessories");
-    }
-    const accessories = await res.json();
-    return accessories;
+    return await readJsonResponse(res, []);
   } catch (error) {
     console.error(error);
     return [];
@@ -80,12 +67,7 @@ const fetchOrders = async () => {
       ...(cookieHeader ? { headers: { cookie: cookieHeader } } : {}),
       cache: "no-store",
     });
-    if (!res.ok) {
-      throw new Error("Error fetching Orders");
-    }
-    const orders = await res.json();
-    // console.log('FetchOrders', orders)
-    return orders;
+    return await readJsonResponse(res, []);
   } catch (error) {
     console.error(error);
     return [];
@@ -118,12 +100,7 @@ const fetchOrder = async (id) => {
       return null;
     }
     const res = await fetch(`${apiDomain}/orders/${id}`);
-    if (!res.ok) {
-      throw new Error("Error fetching Sauna!");
-    }
-    const order = await res.json();
-
-    return order;
+    return await readJsonResponse(res, null);
   } catch (error) {
     console.error(error);
     return null;
