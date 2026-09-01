@@ -14,6 +14,18 @@ import newLogo from "@/assets/images/IMG_6773_white.png";
 import defaultImage from "@/assets/images/profile.png";
 import { useSelector } from "react-redux";
 
+const SAUNA_NAV_ITEMS = [
+  { href: "/best-sellers", label: "Best Sellers" },
+  { href: "/saunas/cube", label: "Cube Saunas" },
+  { href: "/custom-builds", label: "Custom Sauna Rooms" },
+  { href: "/saunas/indoor", label: "Indoor Sauna Kits" },
+  { href: "/saunas/studio-6", label: "Studio Six Collection" },
+  { href: "/saunas/barell", label: "Barrel Sauna" },
+  { href: "/saunas/luna", label: "Luna Saunas" },
+  { href: "/saunas/canadian-timber", label: "Canadian Timber" },
+  { href: "/showers", label: "Outdoor Showers" },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [saunasDropdownOpen, setSaunasDropdownOpen] = useState(false);
@@ -87,53 +99,15 @@ const Header = () => {
                 <FaChevronDown className="text-xs" />
               </button>
               {saunasDropdownOpen && (
-                <ul className="absolute top-full left-0 mt-0.75 w-56 bg-white shadow-lg rounded-lg py-2 z-50">
-                  <DropdownItem
-                    href="/best-sellers"
-                    label="Best Sellers"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/studio-6"
-                    label="Studio Six Collection"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/cube"
-                    label="Cube Saunas"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/custom-builds"
-                    label="Custom Sauna Room"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/barell"
-                    label="Barrel Sauna"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/indoor"
-                    label="Indoor Saunas"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/luna"
-                    label="Luna Saunas"
-                    onClick={closeDropdown}
-                  />
-
-                  <DropdownItem
-                    href="/saunas/canadian-timber"
-                    label="Canadian Timber"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/showers"
-                    label="Outdoor Showers"
-                    onClick={closeDropdown}
-                  />
+                <ul className="absolute top-full left-0 mt-0.75 w-64 bg-white shadow-lg rounded-lg py-2 z-50">
+                  {SAUNA_NAV_ITEMS.map((item) => (
+                    <DropdownItem
+                      key={item.href}
+                      href={item.href}
+                      label={item.label}
+                      onClick={closeDropdown}
+                    />
+                  ))}
                 </ul>
               )}
             </div>
@@ -460,52 +434,14 @@ const Header = () => {
                 </button>
                 {saunasDropdownOpen && (
                   <ul className="pl-4 mt-2 space-y-2">
-                    <DropdownItem
-                      href="/best-sellers"
-                      label="Best Sellers"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/saunas/studio-6"
-                      label="Studio Six Collection"
-                      onClick={closeDropdown}
-                    />
-                  <DropdownItem
-                    href="/saunas/cube"
-                    label="Cube Saunas"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/custom-builds"
-                    label="Custom Sauna Room"
-                    onClick={closeDropdown}
-                  />
-                  <DropdownItem
-                    href="/saunas/barell"
-                    label="Barrel Sauna"
-                    onClick={closeDropdown}
-                  />
-                    <DropdownItem
-                      href="/saunas/indoor"
-                      label="Indoor Saunas"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/saunas/luna"
-                      label="Luna Saunas"
-                      onClick={closeDropdown}
-                    />
-
-                    <DropdownItem
-                      href="/saunas/canadian-timber"
-                      label="Canadian Timber"
-                      onClick={closeDropdown}
-                    />
-                    <DropdownItem
-                      href="/showers"
-                      label="Outdoor Showers"
-                      onClick={closeDropdown}
-                    />
+                    {SAUNA_NAV_ITEMS.map((item) => (
+                      <DropdownItem
+                        key={item.href}
+                        href={item.href}
+                        label={item.label}
+                        onClick={closeDropdown}
+                      />
+                    ))}
                     <hr className="my-2 border-gray-400" />
                     <Link
                       href="/saunas"
