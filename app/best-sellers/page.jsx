@@ -69,12 +69,12 @@ const BestSellers = () => {
     },
     {
       id: 2,
-      name: "The Studio Six Max",
+      name: "The Neptune Mini",
       description:
-        "The Studio 6 Max Sauna sits 4 people it is the largest model in the Studio 6 collection,designed to bring the full sauna wellness experience.",
-      image: "/images/west_coast/The-Max.png",
-      href: "/saunas/69950e9f11eb36b604c4687b",
-      price: "$22,350",
+        "The Neptune Mini is designed for spaces where every square foot matters. An ideal fit for urban backyards, patios and tighter outdoor spaces without sacrificing the immersive feel of a full-size sauna.",
+      image: "/images/Neptune_Mini_Main.jpg",
+      href: "/saunas/6a9e383a3130fdc6df666c0b",
+      price: "$14,999",
     },
     {
       id: 3,
