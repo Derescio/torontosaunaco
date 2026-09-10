@@ -57,7 +57,20 @@ export default function EditorHeaterDetailPage() {
         const err = await response.json().catch(() => ({}));
         throw new Error(err.error || "Failed to update heater");
       }
-      setStatus("Heater updated successfully.");
+      const saved = await response.json().catch(() => ({}));
+      const productCount = saved.syncedProductCount ?? 0;
+      const optionCount = saved.syncedStoveOptionCount ?? 0;
+      if (saved.syncError) {
+        setStatus(`Heater updated, but products did not sync: ${saved.syncError}`);
+      } else if (productCount > 0) {
+        setStatus(
+          `Heater updated. Synced ${optionCount} heater option${
+            optionCount === 1 ? "" : "s"
+          } across ${productCount} product${productCount === 1 ? "" : "s"}.`
+        );
+      } else {
+        setStatus("Heater updated. No matching product heater options were found.");
+      }
     } catch (error) {
       setStatus(error.message);
     } finally {
