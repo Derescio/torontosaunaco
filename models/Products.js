@@ -47,7 +47,7 @@ const ProductsSchema = new Schema(
       depth: Number,
       height: Number,
       unit: String, // "in", "cm", etc.
-      type: String, // "exterior", "interior"
+      type: { type: String }, // "exterior", "interior" — nested `type` must be wrapped
     },
     // Optional size variants (e.g., Barrel 7x6 / 7x7 / 7x8) with per-wood pricing
     // Example:
@@ -81,11 +81,12 @@ const ProductsSchema = new Schema(
       // Can be Object with keys like "Knotty Cedar": { price: 0, image: "..." }
       // or Array: [{ name: "Knotty Cedar", price: 0, image: "..." }]
     },
-    // Stove type options with prices and configurations
+    // Stove/heater options shown on the product. Keys are display names.
+    // Linked heaters store heaterId + priceOffset so catalog heater edits
+    // can update every associated product (price = heater.basePrice + priceOffset).
     stove_type: {
       type: Schema.Types.Mixed,
-      // Can be Object with keys like "Huum Drop 9kW": { price: 3307, remote: true, wifi: false }
-      // or Array: [{ name: "Huum Drop 9kW", price: 3307, remote: true, wifi: false, power: "9kW", image: "..." }]
+      // Object: { "Huum Drop 9kW with Remote": { heaterId, price, priceOffset, image } }
     },
     // Optional sample video URL for product preview
     video: {

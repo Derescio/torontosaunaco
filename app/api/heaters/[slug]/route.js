@@ -5,6 +5,7 @@ import { isLikelyMongoObjectId, slugify } from "@/assets/utils/slugify";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/assets/utils/authOptions";
 import { canEditCatalog } from "@/assets/utils/rbac";
+import { syncHeaterToProducts } from "@/lib/catalog/syncHeaterToProducts";
 
 function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -99,7 +100,12 @@ export const PATCH = async (request, { params }) => {
     }
 
     const payload = await request.json();
-    const updated = await Heaters.findOneAndUpdate(filter, payload, {
+    const previous = await Heaters.findOne(filter);
+    if (!previous) {
+      return NextResponse.json({ error: "Heater not found" }, { status: 404 });
+    }
+
+    const updated = await Heaters.findByIdAndUpdate(previous._id, payload, {
       new: true,
       runValidators: true,
     });
@@ -108,7 +114,25 @@ export const PATCH = async (request, { params }) => {
       return NextResponse.json({ error: "Heater not found" }, { status: 404 });
     }
 
-    return NextResponse.json(updated, { status: 200 });
+    let synced = { products: 0, options: 0 };
+    let syncErrorMessage = null;
+    try {
+      synced = await syncHeaterToProducts({ previous, updated });
+    } catch (syncError) {
+      console.error("Failed to sync heater changes to products:", syncError);
+      syncErrorMessage = syncError.message;
+    }
+
+    const body = updated.toObject ? updated.toObject() : updated;
+    return NextResponse.json(
+      {
+        ...body,
+        syncedProductCount: synced.products,
+        syncedStoveOptionCount: synced.options,
+        syncError: syncErrorMessage,
+      },
+      { status: 200 }
+    );
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to update heater" },
