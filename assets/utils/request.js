@@ -38,6 +38,11 @@ const fetchProduct = async (id) => {
 
 const fetchAccessories = async () => {
   try {
+    if (typeof window === "undefined") {
+      const { getAccessories } = await import("@/lib/accessories/getAccessories");
+      return await getAccessories();
+    }
+
     if (!apiDomain) {
       return [];
     }

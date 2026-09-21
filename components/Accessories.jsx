@@ -14,7 +14,7 @@ const Accessories = async () => {
             Accessories
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2">
-            {recentProducts === 0 ? (
+            {!Array.isArray(recentProducts) || recentProducts.length === 0 ? (
               <p>No Products found</p>
             ) : (
               recentProducts.map((product, i) => (
