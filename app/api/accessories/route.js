@@ -1,15 +1,22 @@
-import connectDB from "@/config/db";
-import Accessories from "@/models/Accessories";
+import { getAccessories } from "@/lib/accessories/getAccessories";
 
 export const revalidate = 3600;
 
 export const GET = async () => {
   try {
-    await connectDB();
-    const accessories = await Accessories.find().lean();
+    const accessories = await getAccessories();
 
-    return new Response(JSON.stringify(accessories), { status: 200 });
+    return new Response(JSON.stringify(accessories), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
-    return new Response("error", { status: 500 });
+    return new Response(
+      JSON.stringify({ error: "Failed to fetch accessories" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 };

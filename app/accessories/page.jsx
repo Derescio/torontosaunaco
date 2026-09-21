@@ -1,6 +1,8 @@
 import React from "react";
 import Accessories from "@/components/Accessories";
 
+export const revalidate = 3600;
+
 export const metadata = {
   title:
     "Accessories | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
