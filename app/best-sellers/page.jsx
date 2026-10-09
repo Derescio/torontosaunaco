@@ -72,7 +72,8 @@ const BestSellers = () => {
       name: "The Neptune Mini",
       description:
         "The Neptune Mini is designed for spaces where every square foot matters. An ideal fit for urban backyards, patios and tighter outdoor spaces without sacrificing the immersive feel of a full-size sauna.",
-      image: "/images/Neptune_Mini_Main.jpg",
+      image:
+        "https://res.cloudinary.com/dw4ev5whz/image/upload/v1791561756/torontosaunaco/Cubes/Neptune%20Mini/Neptune_Mini_ccc5c7.png",
       href: "/saunas/6a9e383a3130fdc6df666c0b",
       price: "$14,999",
     },
