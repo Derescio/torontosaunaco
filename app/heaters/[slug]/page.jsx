@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Contact from "@/components/Contact";
+import { heaterSpecRows } from "@/lib/catalog/heaterSpecs";
 
 function defaultOptionsFor(heater) {
   const options = heater?.options ?? {};
@@ -130,6 +131,7 @@ const HeaterDetails = () => {
   const seriesName =
     typeof heater.series === "string" ? heater.series.trim() : "";
   const imageIndex = heater.images?.[selectedImage] ? selectedImage : 0;
+  const specRows = heaterSpecRows(heater);
 
   const selectPower = (variant) => {
     const slug = variant.slug ?? variant._id;
@@ -261,41 +263,32 @@ const HeaterDetails = () => {
               </div>
             </div>
 
-            {/* Specifications */}
-            <div className="mt-8 border-t border-gray-200 pt-8">
-              <h3 className="text-lg font-medium text-black">Specifications</h3>
-              <div className="mt-4 space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-sm font-medium text-black">Room Size</p>
-                    <p className="mt-1 text-md text-black">
-                      {heater.specifications.roomSize.min} -{" "}
-                      {heater.specifications.roomSize.max} m³
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-950">Power</p>
-                    <p className="mt-1 text-sm text-gray-900">
-                      {heater.power && heater.power > 0
-                        ? `${heater.power} kW`
-                        : "Wood burning"}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-950">Width</p>
-                    <p className="mt-1 text-sm text-gray-900">
-                      {heater.specifications.dimensions.width.metric} mm
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-950">Depth</p>
-                    <p className="mt-1 text-sm text-gray-900">
-                      {heater.specifications.dimensions.depth.metric} mm
-                    </p>
-                  </div>
-                </div>
+            {specRows.length > 0 && (
+              <div className="mt-8 border-t border-gray-200 pt-8">
+                <h3 className="text-lg font-medium text-black">Specifications</h3>
+                <dl className="mt-4 divide-y divide-gray-200">
+                  {specRows.map((row) => (
+                    <div
+                      key={row.label}
+                      className="grid grid-cols-1 gap-1 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4"
+                    >
+                      <dt className="text-sm font-medium text-black">{row.label}</dt>
+                      <dd className="text-sm text-gray-900">
+                        {Array.isArray(row.value) ? (
+                          <div className="space-y-1">
+                            {row.value.map((line) => (
+                              <p key={line}>{line}</p>
+                            ))}
+                          </div>
+                        ) : (
+                          row.value
+                        )}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
-            </div>
+            )}
 
             {/* Options */}
             <div className="mt-8 border-t border-gray-200 pt-8">

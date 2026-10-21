@@ -46,6 +46,7 @@ const HeaterSchema = new Schema(
       stoneCapacity: {
         weight: Number, // in kg
         imperial_weight: Number, // in lb
+        note: String, // box count or other stone note from the manufacturer sheet
         diameter: {
           min: Number, // in cm
           max: Number,
@@ -66,11 +67,19 @@ const HeaterSchema = new Schema(
           metric: Number,
           imperial: Number,
         },
+        diameter: {
+          metric: Number, // in mm
+          imperial: Number, // in inches
+        },
       },
       weight: {
         metric: Number, // in kg
         imperial: Number, // in lb
       },
+      electrical: [String],
+      mounting: String,
+      clearance: String,
+      controls: String,
     },
     options: {
       stones: [
