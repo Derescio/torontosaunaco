@@ -14,6 +14,11 @@ const HeaterSchema = new Schema(
       trim: true,
       lowercase: true,
     },
+    series: {
+      type: String,
+      trim: true,
+      index: true,
+    },
     model: {
       type: String,
       required: true,

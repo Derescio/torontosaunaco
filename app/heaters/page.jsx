@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import HeaterCard from "@/components/HeaterCard";
 import Link from "next/link";
+import { groupHeatersBySeries } from "@/lib/catalog/groupHeatersBySeries";
 
 const Heaters = () => {
   const [heaters, setHeaters] = useState([]);
@@ -56,8 +57,11 @@ const Heaters = () => {
           Our Heater Collection
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {heaters.map((heater) => (
-            <HeaterCard key={heater._id} heater={heater} />
+          {groupHeatersBySeries(heaters).map((group) => (
+            <HeaterCard
+              key={group.series ?? group.representative._id}
+              group={group}
+            />
           ))}
         </div>
       </div>

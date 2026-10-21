@@ -1,8 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HeaterCard = ({ heater }) => {
+const HeaterCard = ({ group }) => {
+  const heater = group.representative;
   const heaterLink = `/heaters/${heater.slug ?? heater._id}`;
+  const title = group.series || heater.name;
+  const sizes = group.variants
+    .map((variant) => variant.power)
+    .filter((power) => power != null && power !== "")
+    .join(" / ");
+  const startingPrice = Math.min(
+    ...group.variants.map((variant) => variant.basePrice)
+  );
 
   return (
     <>
@@ -25,12 +34,11 @@ const HeaterCard = ({ heater }) => {
               className="font-light font-rubik text-gray-900"
               style={{ fontSize: "1.25rem", lineHeight: "1.75rem" }}
             >
-              {heater.name}
+              {title}
             </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              {heater.power}kW • {heater.specifications.roomSize.min}-
-              {heater.specifications.roomSize.max}m³
-            </p>
+            {sizes && (
+              <p className="text-sm text-gray-500 mt-1">{sizes} kW</p>
+            )}
           </div>
 
           <div className="flex items-center justify-between">
@@ -39,7 +47,7 @@ const HeaterCard = ({ heater }) => {
                 className="font-extralight font-rubik text-gray-900"
                 style={{ fontSize: "1.35rem", lineHeight: "1.25rem" }}
               >
-                ${heater.basePrice.toLocaleString()}
+                ${startingPrice.toLocaleString()}
               </span>
               <span className="text-sm text-gray-500 mt-1">Starting from</span>
             </div>
@@ -54,7 +62,7 @@ const HeaterCard = ({ heater }) => {
           {/* Features Preview */}
           <div className="mt-4 pt-4 border-t border-gray-100">
             <div className="flex flex-wrap gap-2">
-              {heater.features.slice(0, 2).map((feature, index) => (
+              {heater.features?.slice(0, 2).map((feature, index) => (
                 <span
                   key={index}
                   className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800"

@@ -11,6 +11,7 @@ export default function EditorHeaterDetailPage() {
   const [status, setStatus] = useState("");
   const [form, setForm] = useState({
     name: "",
+    series: "",
     basePrice: "",
     description: "",
     isFeatured: false,
@@ -24,6 +25,7 @@ export default function EditorHeaterDetailPage() {
         const heater = await response.json();
         setForm({
           name: heater.name || "",
+          series: heater.series || "",
           basePrice: heater.basePrice ?? "",
           description: heater.description || "",
           isFeatured: Boolean(heater.isFeatured),
@@ -47,6 +49,7 @@ export default function EditorHeaterDetailPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
+          series: form.series.trim(),
           basePrice: Number(form.basePrice),
           description: form.description,
           isFeatured: form.isFeatured,
@@ -93,6 +96,18 @@ export default function EditorHeaterDetailPage() {
             onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
             className="w-full rounded-md border border-gray-300 px-3 py-2"
           />
+        </div>
+        <div>
+          <label className="mb-1 block text-sm font-medium text-gray-800">Series</label>
+          <input
+            value={form.series}
+            onChange={(e) => setForm((p) => ({ ...p, series: e.target.value }))}
+            placeholder="Homecraft Apex Mini"
+            className="w-full rounded-md border border-gray-300 px-3 py-2"
+          />
+          <p className="mt-1 text-sm text-gray-500">
+            Heaters with the same series appear as one card. Leave blank to list this heater on its own.
+          </p>
         </div>
         <div>
           <label className="mb-1 block text-sm font-medium text-gray-800">Base Price</label>

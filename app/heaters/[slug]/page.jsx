@@ -1,12 +1,41 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Contact from "@/components/Contact";
 
+function defaultOptionsFor(heater) {
+  const options = heater?.options ?? {};
+  return {
+    stones: Array.isArray(options.stones)
+      ? options.stones.find((s) => s.isDefault) || null
+      : null,
+    controls: Array.isArray(options.controls)
+      ? options.controls.find((c) => c.isDefault) || null
+      : null,
+    safetyRailing: Array.isArray(options.safetyRailing)
+      ? options.safetyRailing.find((r) => r.isDefault) || null
+      : null,
+  };
+}
+
+function variantsFor(data) {
+  const listed = Array.isArray(data?.variants) ? data.variants : [];
+  const variants = listed.length > 0 ? listed : [data];
+  if (!variants.some((variant) => String(variant._id) === String(data._id))) {
+    return [data, ...variants];
+  }
+  return variants;
+}
+
+function variantMatchesSlug(variant, slug) {
+  return variant.slug === slug || String(variant._id) === String(slug);
+}
+
 const HeaterDetails = () => {
   const [heater, setHeater] = useState(null);
+  const [variants, setVariants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedOptions, setSelectedOptions] = useState({
     stones: null,
@@ -16,41 +45,60 @@ const HeaterDetails = () => {
   const [selectedImage, setSelectedImage] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const [showContact, setShowContact] = useState(false);
+  const variantsRef = useRef([]);
   const params = useParams();
-  //console.log(params);
+
+  const showVariant = useCallback((data, siblingVariants) => {
+    const options = defaultOptionsFor(data);
+    let total = data.basePrice;
+    if (options.stones) total += options.stones.price;
+    if (options.controls) total += options.controls.price;
+    if (options.safetyRailing) total += options.safetyRailing.price;
+
+    variantsRef.current = siblingVariants;
+    setVariants(siblingVariants);
+    setHeater(data);
+    setSelectedImage(0);
+    setSelectedOptions(options);
+    setTotalPrice(total);
+  }, []);
+
   useEffect(() => {
+    const slug = String(params.slug ?? "");
+    const cached = variantsRef.current.find((variant) =>
+      variantMatchesSlug(variant, slug)
+    );
+
+    if (cached) {
+      showVariant(cached, variantsRef.current);
+      setLoading(false);
+      return;
+    }
+
+    let cancelled = false;
+    setLoading(true);
+
     const fetchHeater = async () => {
       try {
-        const response = await fetch(`/api/heaters/${params.slug}`);
+        const response = await fetch(`/api/heaters/${slug}`);
         if (!response.ok) throw new Error("Failed to fetch heater");
         const data = await response.json();
-        setHeater(data);
-        setTotalPrice(data.basePrice);
-
-        const options = data.options ?? {};
-
-        // Set default options
-        const defaultOptions = {
-          stones: Array.isArray(options.stones)
-            ? options.stones.find((s) => s.isDefault) || null
-            : null,
-          controls: Array.isArray(options.controls)
-            ? options.controls.find((c) => c.isDefault) || null
-            : null,
-          safetyRailing: Array.isArray(options.safetyRailing)
-            ? options.safetyRailing.find((r) => r.isDefault) || null
-            : null,
-        };
-        setSelectedOptions(defaultOptions);
+        if (cancelled) return;
+        showVariant(data, variantsFor(data));
       } catch (error) {
         console.error("Error fetching heater:", error);
+        if (!cancelled) setHeater(null);
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     };
 
     fetchHeater();
-  }, [params.slug]);
+
+    return () => {
+      cancelled = true;
+    };
+  }, [params.slug, showVariant]);
 
   useEffect(() => {
     if (heater) {
@@ -79,6 +127,19 @@ const HeaterDetails = () => {
   const hasOptions = ["stones", "controls", "safetyRailing"].some(
     (key) => Array.isArray(options[key]) && options[key].length > 0,
   );
+  const seriesName =
+    typeof heater.series === "string" ? heater.series.trim() : "";
+  const imageIndex = heater.images?.[selectedImage] ? selectedImage : 0;
+
+  const selectPower = (variant) => {
+    const slug = variant.slug ?? variant._id;
+    if (!slug || String(variant._id) === String(heater._id)) return;
+    showVariant(variant, variants);
+    const nextUrl = `/heaters/${slug}`;
+    if (window.location.pathname !== nextUrl) {
+      window.history.replaceState(window.history.state, "", nextUrl);
+    }
+  };
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -91,8 +152,9 @@ const HeaterDetails = () => {
                 {heater.images?.length > 0 && (
                   <div className="w-full max-w-[400px] aspect-square mx-auto rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 relative">
                     <Image
-                      src={heater.images[selectedImage].url}
-                      alt={heater.images[selectedImage].alt}
+                      key={heater.images[imageIndex].url}
+                      src={heater.images[imageIndex].url}
+                      alt={heater.images[imageIndex].alt}
                       className="w-full h-full object-cover"
                       fill
                       sizes="(max-width: 640px) 100vw, 400px"
@@ -109,7 +171,7 @@ const HeaterDetails = () => {
                         key={index}
                         onClick={() => setSelectedImage(index)}
                         className={`relative aspect-square rounded-lg overflow-hidden ${
-                          selectedImage === index
+                          imageIndex === index
                             ? "ring-2 ring-indigo-500"
                             : "ring-1 ring-gray-200"
                         }`}
@@ -118,7 +180,7 @@ const HeaterDetails = () => {
                           src={image.url}
                           alt={image.alt}
                           className={`w-full h-full object-center object-cover ${
-                            selectedImage === index
+                            imageIndex === index
                               ? "opacity-100"
                               : "opacity-75 hover:opacity-100"
                           }`}
@@ -137,8 +199,30 @@ const HeaterDetails = () => {
           {/* Product info */}
           <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
             <h1 className="text-3xl font-bold mb-4  text-black font-playfair">
-              {heater.name}
+              {seriesName || heater.name}
             </h1>
+            {variants.length > 1 && (
+              <div className="flex flex-wrap gap-2" role="group" aria-label="Power">
+                {variants.map((variant) => {
+                  const active = String(variant._id) === String(heater._id);
+                  return (
+                    <button
+                      key={variant._id ?? variant.power}
+                      type="button"
+                      aria-pressed={active}
+                      onClick={() => selectPower(variant)}
+                      className={`px-3 py-2 rounded-lg border text-sm transition-all ${
+                        active
+                          ? "border-black bg-black text-white"
+                          : "border-gray-300 bg-white text-black hover:bg-black hover:text-white"
+                      }`}
+                    >
+                      {variant.power} kW
+                    </button>
+                  );
+                })}
+              </div>
+            )}
             <div className="mt-3">
               <h2 className="sr-only">Product information</h2>
               <p className="text-2xl text-gray-900">

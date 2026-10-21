@@ -53,7 +53,18 @@ export const GET = async (request, { params }) => {
       return NextResponse.json({ error: "Heater not found" }, { status: 404 });
     }
 
-    return NextResponse.json(heater);
+    const series =
+      typeof heater.series === "string" ? heater.series.trim() : "";
+    if (!series) {
+      return NextResponse.json(heater);
+    }
+
+    const variants = await Heaters.find({ series }).sort({ power: 1 }).lean();
+
+    return NextResponse.json({
+      ...heater.toObject(),
+      variants,
+    });
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to fetch heater" },
