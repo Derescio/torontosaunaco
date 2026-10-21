@@ -290,10 +290,10 @@ const HeaterDetails = () => {
               </div>
             )}
 
-            {/* Options */}
+            {hasOptions && (
             <div className="mt-8 border-t border-gray-200 pt-8">
               <h3 className="text-lg font-medium text-gray-900">
-                {hasOptions ? "Customize Your Heater" : "No Options Available"}
+                Customize Your Heater
               </h3>
 
               {/* Stones Selection */}
@@ -462,6 +462,7 @@ const HeaterDetails = () => {
                   </div>
                 )}
             </div>
+            )}
 
             {/* Total Price */}
             <div className="mt-8 border-t border-gray-200 pt-8">
