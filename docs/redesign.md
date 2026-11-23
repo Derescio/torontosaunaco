@@ -17,11 +17,14 @@ Copied from the handoff's `IMPLEMENTATION-PLAN.md` (v2, 2026-11-21) on 2026-11-2
 ## Setup checklist
 
 - [x] `staging` database seeded (`scripts/staging/copy-test-to-staging.mjs`)
-- [ ] `MONGO_URI` in Vercel Staging + Preview points at `staging`; local `.env` points at `staging` (owner)
-- [ ] `STAGING_EMAIL_TO` set in Vercel Staging + Preview and local `.env` (owner)
-- [ ] Guard in `config/db.js`: refuse `test` outside production
-- [ ] Recipient override in `app/api/emails` and `app/api/cron` outside production
-- [ ] GitHub rulesets on `main` and `redesign`; `guard-redesign-into-main` check
+- [x] Guard in `config/db.js`: refuse `test` outside production
+- [x] Recipient override in `app/api/emails` and `app/api/cron` outside production; HubSpot sync skipped outside production
+- [x] GitHub rulesets on `main` and `redesign`; `guard-redesign-into-main` check
+- [x] `MONGO_URI` / `STAGING_EMAIL_TO` set in Vercel and local `.env` (owner, 2026-11-23)
+- [ ] ESLint is not configured (`npm run lint` prompts for setup). Needs its own slice.
+- [ ] `__tests__/getServerSession.test.js` fails to parse (pre-existing, Jest transform of next-auth deps)
+- [ ] Local `MAIL_USER`/`MAIL_PWD` rejected by Gmail; refresh the app password to test email locally
+- [ ] Staging custom domain: DNS at Namecheap, `NEXTAUTH_URL` for Staging, Google OAuth redirect URI
 
 ---
 
@@ -38,6 +41,7 @@ Copied from the handoff's `IMPLEMENTATION-PLAN.md` (v2, 2026-11-21) on 2026-11-2
 | 11 blog posts to migrate | Already in Sanity at `/blog/[slug]` | Nothing to migrate. Just reskin and check the slugs match. |
 | `/_blob/<id>` images | Cloudinary + `public/images` | Most photos probably already exist. Match them, and upload only the new ones to Cloudinary. |
 | Service-area city pages | `app/service-areas/[id]` + city data | Reskin and add the new cities. |
+
 
 ---
 
@@ -74,6 +78,7 @@ Each design file carries prices, and so does MongoDB (recently updated: commit `
 - ~~Address string~~: decided 2026-11-23, "Schomberg". It must match the LocalBusiness JSON-LD everywhere.
 - Label emailed quotes "estimate, subject to confirmation"? The cart total is computed in the browser.
 - Spam protection on `/api/emails`: honeypot + Turnstile or reCAPTCHA + rate limiting. Check what exists today.
+
 
 ---
 
