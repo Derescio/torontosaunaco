@@ -1,0 +1,31 @@
+# Fails any PR from `redesign` (or an rd/* slice) into `main` until the owner
+# schedules the cutover and adds the `cutover` label to the PR.
+name: guard-redesign-into-main
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize, labeled, unlabeled, edited]
+
+permissions: {}
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Block redesign work from reaching main before cutover
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          HAS_CUTOVER_LABEL: ${{ contains(github.event.pull_request.labels.*.name, 'cutover') }}
+        run: |
+          case "$HEAD_REF" in
+            redesign|rd/*)
+              if [ "$HAS_CUTOVER_LABEL" = "true" ]; then
+                echo "Cutover label present: allowing $HEAD_REF -> main."
+              else
+                echo "::error::$HEAD_REF -> main is blocked until cutover. The owner adds the 'cutover' label when it's scheduled."
+                exit 1
+              fi
+              ;;
+            *) echo "$HEAD_REF -> main: not redesign work, OK." ;;
+          esac
