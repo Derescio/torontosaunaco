@@ -35,15 +35,16 @@ Sanity (blog), Cloudinary (images/video), Redux cart (`localStorage` key `cart`)
     `scripts/staging/copy-test-to-staging.mjs` (reads `test`, never writes it; no orders, leads or customer accounts).
   - `toronto`: a partial copy of `test` made by `/api/cron/mirror-test-to-toronto` (`docs/mirror-test-to-toronto.md`). That job
     is not in `vercel.json`, so it only runs when triggered by hand. Don't build on `toronto`.
-- Never point a redesign build or script at `test`. TODO: guard in `connectDB` that refuses `test` unless `VERCEL_ENV === "production"`.
+- Never point a redesign build or script at `test`. `connectDB` enforces this via `lib/env/safety.js`: outside production
+  (`VERCEL_ENV !== "production"`) it throws if the URI names `test` or names no database (Mongo defaults to `test`).
 - Schema changes must be **additive** (e.g. add `slug`, never rename or remove fields), so the current site keeps working
   until cutover. Migrations run on `staging` first, then on `test` only with the owner's go-ahead.
 - Never write to `.env` or read secrets into output. Don't run scripts in `scripts/` against production (the read-only staging seed
   script above is the one exception).
 - This repo is public during the redesign. Never commit secrets, customer data or personal email addresses.
 - Staging email must not reach customers or the sales team: outside production, every recipient is replaced by `STAGING_EMAIL_TO`
-  (set in Vercel Staging/Preview and `.env`). TODO: not built yet. `app/api/emails/route.js` always sends to the sales inbox, so
-  don't submit forms on staging until the override exists.
+  (set in Vercel Staging/Preview and `.env`), the subject gets `[STAGING]`, and nothing is sent if it's unset. Wrap every
+  `sendMail` call in `applyEmailSafety()` from `lib/env/safety.js`. HubSpot sync is skipped outside production.
 
 ## The redesign
 

@@ -3,6 +3,7 @@ import nodemailer from "nodemailer";
 import { createQuoteAttributionSubmission } from "@/lib/marketing/submissions";
 import { syncSubmissionToHubSpot } from "@/lib/hubspot/syncSubmission";
 import { buildCustomBuildEmailHtml } from "@/lib/customBuilds/quoteDetails";
+import { applyEmailSafety, isProduction } from "@/lib/env/safety";
 
 /**
  * Generate HTML for a single cart item with its configuration
@@ -293,12 +294,15 @@ export async function POST(req) {
       html: emailContent,
     };
 
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(applyEmailSafety(mailOptions));
 
-    try {
-      await syncSubmissionToHubSpot(data);
-    } catch (hubspotError) {
-      console.error("HubSpot sync failed after email sent:", hubspotError);
+    // Staging and preview leads must not create contacts in the live HubSpot.
+    if (isProduction()) {
+      try {
+        await syncSubmissionToHubSpot(data);
+      } catch (hubspotError) {
+        console.error("HubSpot sync failed after email sent:", hubspotError);
+      }
     }
 
     if (submissionId) {

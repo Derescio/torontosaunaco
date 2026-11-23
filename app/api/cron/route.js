@@ -1,6 +1,7 @@
 import connectDB from "@/config/db";
 import Orders from "@/models/Orders";
 import nodemailer from 'nodemailer';
+import { applyEmailSafety } from "@/lib/env/safety";
 
 
 
@@ -34,20 +35,20 @@ if(order.items){
 async function sendEmails(orders) {
   for (const order of orders) {
     // Send email to customer
-    await transporter.sendMail({
+    await transporter.sendMail(applyEmailSafety({
       from: process.env.MAIL_USER,
       to: order.email,
       subject: 'Your Order Confirmation',
       html: createEmailContent(order),
-    });
+    }));
 
     // Send email to merchant
-    await transporter.sendMail({
+    await transporter.sendMail(applyEmailSafety({
       from: process.env.MAIL_USER,
       to: process.env.MAIL_USER,
       subject: 'New Order Received',
       html: createEmailContent(order),
-    });
+    }));
   }
 }
 
