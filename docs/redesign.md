@@ -22,7 +22,7 @@ Copied from the handoff's `IMPLEMENTATION-PLAN.md` (v2, 2026-11-21) on 2026-11-2
 - [x] GitHub rulesets on `main` and `redesign`; `guard-redesign-into-main` check
 - [x] `MONGO_URI` / `STAGING_EMAIL_TO` set in Vercel and local `.env` (owner, 2026-11-23)
 - [ ] ESLint is not configured (`npm run lint` prompts for setup). Needs its own slice.
-- [ ] `__tests__/getServerSession.test.js` fails to parse (pre-existing, Jest transform of next-auth deps)
+- [ ] `__tests__/getServerSession.test.js` fails to parse (pre-existing, Jest transform of next-auth deps). Jest's `@/` alias now points at the repo root, matching `jsconfig.json`.
 - [ ] Local `MAIL_USER`/`MAIL_PWD` rejected by Gmail; refresh the app password to test email locally
 - [x] Staging custom domain `staging.thetorontosaunaco.com`: DNS valid, Staging URL variables set (2026-11-23)
 - [ ] Google OAuth: add `https://staging.thetorontosaunaco.com/api/auth/callback/google` as a redirect URI (owner)
@@ -94,7 +94,7 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 
 ### Phase 1: Foundation (~3 days)
 - [x] **Design tokens** (`rd/1-tokens`): values in `lib/site/tokens.js`, spread into `tailwind.config.js`; Cormorant Garamond + Manrope self-hosted via `next/font/local`; `components/site/Button.jsx`; review page `/style-guide` (404 in production). Spec: `docs/superpowers/specs/2026-11-23-design-tokens-design.md`.
-- [ ] Rebuild `Header` (dropdown nav as designed) and `Footer` in `components/site/`. Update the root layout.
+- [x] `Header` (dropdown nav, phone menu) and `Footer` in `components/site/` (`rd/1-header-footer`). New pages live in `app/(site)/` and must be listed in `lib/site/routes.js`; live pages keep the old nav. Spec: `docs/superpowers/specs/2026-11-24-header-footer-design.md`.
 - [ ] **Extraction script** (`scripts/extract-dc.mjs`): `.dc.html` → JSON per page (route, title, meta, canonical, OG, JSON-LD, data object, copy blocks). Output goes in `content/redesign/`.
 - [ ] **Price/data diff script**: extracted design data vs MongoDB → a report for the owner.
 - [ ] `slug` on Products/Accessories + backfill migration (A).

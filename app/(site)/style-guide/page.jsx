@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import Button from "../../components/site/Button";
-import { isProduction } from "../../lib/env/safety";
+import Button from "../../../components/site/Button";
+import { isProduction } from "../../../lib/env/safety";
 
-const tokens = require("../../lib/site/tokens.js");
+const tokens = require("../../../lib/site/tokens.js");
 
 // Review page for the redesign tokens. Staging and previews only.
 export const metadata = {

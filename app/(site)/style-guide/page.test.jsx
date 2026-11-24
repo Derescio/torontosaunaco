@@ -1,7 +1,7 @@
 import { render, screen, within } from "@testing-library/react";
 import StyleGuidePage, { metadata } from "./page";
 
-const tokens = require("../../lib/site/tokens.js");
+const tokens = require("../../../lib/site/tokens.js");
 
 jest.mock("next/navigation", () => ({
   notFound: jest.fn(() => {
