@@ -10,6 +10,7 @@ import { PHProvider } from "./providers";
 import PostHogPageView from "../components/PostHogPageViews";
 import PostHogFunnelSignals from "../components/PostHogFunnelSignals";
 import AttributionCaptureBoundary from "@/components/AttributionCaptureBoundary";
+import { display, body } from "./fonts";
 
 // Create Meta Data
 export const metadata = {
@@ -22,7 +23,11 @@ export const metadata = {
 const MainLayout = ({ children }) => {
   return (
     <AuthProvider>
-      <html lang="en" suppressHydrationWarning>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        className={`${display.variable} ${body.variable}`}
+      >
         <GoogleTagManager gtmId="GTM-PSLPBPCV" />
         <head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
