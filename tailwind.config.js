@@ -141,6 +141,7 @@ module.exports = {
       },
       screens: {
         xs: "859px",
+        ...site.screens,
       },
     },
   },

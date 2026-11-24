@@ -76,6 +76,7 @@ old pages.
 | `text-title` | 22px | 1.3 | either | small titles (19–22) |
 | `text-lead` | 18px | 1.6 | body | intro paragraphs (17–18) |
 | `text-body` | 16px | 1.6 | body | body copy (15–16) |
+| `text-nav` | 15px | 1.5 | body | header nav only (added in `rd/1-header-footer`: at 16px the nav wrapped to two rows) |
 | `text-small` | 14px | 1.5 | body | UI text, nav, buttons (13–14) |
 | `text-caption` | 12px | 1.4 | body | fine print, tags (9–12) |
 | `text-eyebrow` | 13px, 600, uppercase, tracking 0.2em | 1.2 | body | the design's small-caps labels |
@@ -89,9 +90,11 @@ Letter spacing: `tracking-eyebrow` 0.2em, `tracking-caps` 0.1em (absorbs 0.06–
 
 - Spacing uses Tailwind's built-in 4px scale. Odd design values snap to the nearest step: 7→8, 13→12, 18→16 or 20,
   22→24, 27→28, 90→96, 110→112.
-- Page width: `max-w-site` = 1320px, with 32px side padding on desktop and 20px on mobile.
-- One mobile/desktop switch, as in the design: Tailwind's `md` (768px) stands in for the design's 720px. *(My call: avoids a
-  custom breakpoint.)*
+- Page width: `max-w-site` = 1384px outer, so content is 1320px wide with 32px side padding on desktop (20px on
+  mobile). The design sets `max-width: 1320px` in content-box; Tailwind is border-box. *(Corrected in
+  `rd/1-header-footer`: at 1320px outer, content was 64px narrower than the design and the header nav wrapped.)*
+- One mobile/desktop switch: `desktop:` at 998px (owner's call, 2026-11-24; the design used 720px). `md` stays at 768px
+  for the live pages, so new components use `desktop:` instead of `md:`.
 
 ### Corners and shadows
 

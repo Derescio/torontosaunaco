@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import Button from "../../components/site/Button";
-import { isProduction } from "../../lib/env/safety";
+import Button from "../../../components/site/Button";
+import { isProduction } from "../../../lib/env/safety";
 
-const tokens = require("../../lib/site/tokens.js");
+const tokens = require("../../../lib/site/tokens.js");
 
 // Review page for the redesign tokens. Staging and previews only.
 export const metadata = {
@@ -27,7 +27,7 @@ const SWATCH = {
 const TYPE = {
   "display-xl": "text-display-xl", "display-lg": "text-display-lg", "display-md": "text-display-md",
   "display-sm": "text-display-sm", heading: "text-heading", title: "text-title", lead: "text-lead",
-  body: "text-body", small: "text-small", caption: "text-caption", eyebrow: "text-eyebrow uppercase",
+  body: "text-body", nav: "text-nav", small: "text-small", caption: "text-caption", eyebrow: "text-eyebrow uppercase",
 };
 
 function Section({ id, title, children }) {
@@ -59,7 +59,7 @@ export default function StyleGuidePage() {
 
   return (
     <div className="bg-white font-body text-ink">
-      <div className="mx-auto max-w-site px-5 py-16 md:px-8">
+      <div className="mx-auto max-w-site px-5 py-16 desktop:px-8">
         <p className="text-eyebrow uppercase text-walnut">Redesign · staging only</p>
         <h1 className="mt-4 font-display text-display-lg">Style guide</h1>
         <p className="mt-4 max-w-2xl text-lead text-taupe-700">
@@ -83,7 +83,7 @@ export default function StyleGuidePage() {
         <Section id="type" title="Type">
           <div className="space-y-8">
             {Object.entries(tokens.fontSize).map(([name, [size]]) => (
-              <div key={name} className="grid gap-2 md:grid-cols-[12rem_1fr] md:items-baseline">
+              <div key={name} className="grid gap-2 desktop:grid-cols-[12rem_1fr] desktop:items-baseline">
                 <div>
                   <p className="text-small font-semibold">{`text-${name}`}</p>
                   <p className="text-caption text-taupe-500">{size}</p>

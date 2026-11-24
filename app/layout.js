@@ -65,7 +65,7 @@ const MainLayout = ({ children }) => {
               <PostHogFunnelSignals />
               <AttributionCaptureBoundary />
               <ConditionalNavAndFooter>
-                <main>{children}</main>
+                {children}
               </ConditionalNavAndFooter>
             </PHProvider>
           </StoreProvider>
