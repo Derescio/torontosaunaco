@@ -1,3 +1,5 @@
+const site = require("./lib/site/tokens.js");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -55,6 +57,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Redesign tokens (additive, lib/site/tokens.js)
+        ...site.colors,
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
@@ -69,7 +73,12 @@ module.exports = {
         anton: ["Anton", "sans-serif"],
         kavivanar: ["Kavivanar", "sans-serif"],
         libre: ["Libre Baskerville", "serif"],
+        ...site.fontFamily,
       },
+      fontSize: site.fontSize,
+      letterSpacing: site.letterSpacing,
+      boxShadow: site.boxShadow,
+      maxWidth: site.maxWidth,
       gridTemplateColumns: {
         "70/30": "70% 28%",
       },
@@ -77,6 +86,7 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        ...site.borderRadius,
       },
       keyframes: {
         "accordion-down": {
@@ -127,6 +137,7 @@ module.exports = {
         "4/12": "33.333333%",
         "5/12": "41.666667%",
         "6/12": "50%",
+        ...site.spacing,
       },
       screens: {
         xs: "859px",
