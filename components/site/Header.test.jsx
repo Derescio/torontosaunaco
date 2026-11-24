@@ -106,6 +106,13 @@ describe("Header", () => {
     }
   });
 
+  it("sets the desktop nav at the nav size", () => {
+    renderAt("/");
+    const nav = screen.getByRole("navigation", { name: "Main" });
+    expect(nav).toHaveClass("text-nav");
+    expect(nav).not.toHaveClass("text-body");
+  });
+
   it("has one banner landmark", () => {
     renderAt("/");
     expect(screen.getAllByRole("banner")).toHaveLength(1);

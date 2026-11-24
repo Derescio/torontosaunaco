@@ -76,6 +76,7 @@ old pages.
 | `text-title` | 22px | 1.3 | either | small titles (19–22) |
 | `text-lead` | 18px | 1.6 | body | intro paragraphs (17–18) |
 | `text-body` | 16px | 1.6 | body | body copy (15–16) |
+| `text-nav` | 15px | 1.5 | body | header nav only (added in `rd/1-header-footer`: at 16px the nav wrapped to two rows) |
 | `text-small` | 14px | 1.5 | body | UI text, nav, buttons (13–14) |
 | `text-caption` | 12px | 1.4 | body | fine print, tags (9–12) |
 | `text-eyebrow` | 13px, 600, uppercase, tracking 0.2em | 1.2 | body | the design's small-caps labels |

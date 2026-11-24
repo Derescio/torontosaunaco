@@ -90,7 +90,7 @@ export default function Header() {
         </Link>
 
         {/* Keyed by path: remounting drops focus from the clicked link, so its dropdown closes after navigation. */}
-        <nav key={pathname} aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-body font-medium md:flex">
+        <nav key={pathname} aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-nav font-medium md:flex">
           {MAIN_NAV.map((item) => {
             const current = isActive(item, pathname);
             return item.children ? (

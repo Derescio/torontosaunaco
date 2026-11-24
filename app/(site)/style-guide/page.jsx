@@ -27,7 +27,7 @@ const SWATCH = {
 const TYPE = {
   "display-xl": "text-display-xl", "display-lg": "text-display-lg", "display-md": "text-display-md",
   "display-sm": "text-display-sm", heading: "text-heading", title: "text-title", lead: "text-lead",
-  body: "text-body", small: "text-small", caption: "text-caption", eyebrow: "text-eyebrow uppercase",
+  body: "text-body", nav: "text-nav", small: "text-small", caption: "text-caption", eyebrow: "text-eyebrow uppercase",
 };
 
 function Section({ id, title, children }) {
