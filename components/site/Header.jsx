@@ -84,9 +84,9 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-site items-center justify-between gap-7 px-5 py-3.5 md:px-8">
+      <div className="mx-auto flex max-w-site items-center justify-between gap-3 px-5 py-3.5 md:gap-7 md:px-8">
         <Link href="/" aria-label="The Toronto Sauna Co. home" className="flex-none">
-          <Image src="/images/site/logo.png" alt="The Toronto Sauna Co." width={132} height={48} priority className="h-12 w-auto" />
+          <Image src="/images/site/logo.png" alt="The Toronto Sauna Co." width={132} height={48} priority className="h-10 w-auto md:h-12" />
         </Link>
 
         {/* Keyed by path: remounting drops focus from the clicked link, so its dropdown closes after navigation. */}
@@ -108,7 +108,7 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="flex flex-none items-center gap-2.5">
+        <div className="flex flex-none items-center gap-1 md:gap-2.5">
           <Button href={HEADER_ACTIONS.finder.href} variant="outline-walnut" className="hidden md:inline-flex">
             <RulerIcon />
             {HEADER_ACTIONS.finder.label}
