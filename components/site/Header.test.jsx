@@ -79,6 +79,13 @@ describe("Header", () => {
     expect(screen.getAllByRole("link", { name: "Request a Quote" })[0]).toHaveAttribute("href", "/contact");
   });
 
+  it("shows Find your fit beside Request a Quote from 640px up", () => {
+    renderAt("/");
+    const finder = screen.getByRole("link", { name: "Find your fit" });
+    expect(finder).toHaveClass("hidden", "sm:inline-flex", "h-9", "md:h-11");
+    expect(finder).not.toHaveClass("md:inline-flex");
+  });
+
   it("logo links home with an accessible name", () => {
     renderAt("/");
     expect(screen.getByRole("link", { name: "The Toronto Sauna Co. home" })).toHaveAttribute("href", "/");

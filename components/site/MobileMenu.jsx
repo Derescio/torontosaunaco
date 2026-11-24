@@ -116,11 +116,11 @@ export default function MobileMenu({ pathname }) {
         type="button"
         aria-expanded={open}
         aria-controls={PANEL_ID}
+        aria-label="Menu"
         onClick={() => setOpen(true)}
-        className="inline-flex h-9 items-center gap-1.5 rounded-full px-2 text-small font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-walnut"
+        className="inline-flex size-10 items-center justify-center rounded-full border border-walnut text-walnut transition-colors hover:bg-walnut hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-walnut focus-visible:ring-offset-2"
       >
         <MenuIcon />
-        Menu
       </button>
 
       {open && (

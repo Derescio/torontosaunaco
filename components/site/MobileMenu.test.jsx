@@ -32,6 +32,13 @@ describe("MobileMenu", () => {
     expect(menuButton()).toHaveAttribute("aria-controls", "site-mobile-menu");
   });
 
+  it("shows the menu button as an icon in a walnut circle, named Menu for screen readers", () => {
+    render(<MobileMenu pathname="/" />);
+    expect(menuButton()).toHaveAttribute("aria-label", "Menu");
+    expect(menuButton().textContent).toBe("");
+    expect(menuButton()).toHaveClass("rounded-full", "border-walnut", "text-walnut");
+  });
+
   it("opens the panel and moves focus to the close button", () => {
     render(<MobileMenu pathname="/" />);
     open();

@@ -109,7 +109,11 @@ export default function Header() {
         </nav>
 
         <div className="flex flex-none items-center gap-1 md:gap-2.5">
-          <Button href={HEADER_ACTIONS.finder.href} variant="outline-walnut" className="hidden md:inline-flex">
+          <Button
+            href={HEADER_ACTIONS.finder.href}
+            variant="outline-walnut"
+            className="hidden h-9 px-4 sm:inline-flex md:h-11 md:px-5"
+          >
             <RulerIcon />
             {HEADER_ACTIONS.finder.label}
           </Button>
