@@ -7,6 +7,9 @@ export const CONTACT = {
   note: "Showroom in Schomberg, by appointment · Delivery and installation across Ontario",
 };
 
+// Indoor sauna routes. The Element models sit outside /saunas/indoor in page-map.csv.
+const INDOOR = ["/saunas/indoor", "/saunas/element-loft", "/saunas/element-nook", "/saunas/element-studio"];
+
 const thumb = (file) => ({ src: `/images/site/${file}`, alt: "" });
 
 export const MAIN_NAV = [
@@ -14,7 +17,7 @@ export const MAIN_NAV = [
     label: "Outdoor Saunas",
     href: "/saunas/best-sellers",
     match: ["/saunas"],
-    exclude: ["/saunas/indoor"],
+    exclude: INDOOR,
     width: "w-[300px]",
     children: [
       { label: "Best Sellers", href: "/saunas/best-sellers", description: "Our most popular backyard saunas" },
@@ -38,7 +41,7 @@ export const MAIN_NAV = [
   {
     label: "Indoor Saunas",
     href: "/saunas/indoor",
-    match: ["/saunas/indoor"],
+    match: INDOOR,
     width: "w-[340px]",
     children: [
       { label: "Indoor Sauna Kits", href: "/saunas/indoor/kits", description: "Ready-made rooms in set sizes, from $8,070", image: thumb("nav-indoor-kits.jpg") },

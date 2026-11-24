@@ -84,6 +84,28 @@ describe("Header", () => {
     expect(screen.getByRole("link", { name: "The Toronto Sauna Co. home" })).toHaveAttribute("href", "/");
   });
 
+  it("moves focus off a dropdown link after navigating", () => {
+    usePathname.mockReturnValue("/saunas");
+    const { rerender } = render(<Header />);
+    const link = mainNav().getByRole("link", { name: /Cube Saunas/ });
+    link.focus();
+    expect(link).toHaveFocus();
+    usePathname.mockReturnValue("/saunas/cube");
+    rerender(<Header />);
+    expect(document.activeElement).toBe(document.body);
+  });
+
+  it("opens dropdowns on hover only where the device supports hover", () => {
+    renderAt("/");
+    const panels = document.querySelectorAll("[data-dropdown-panel]");
+    expect(panels).toHaveLength(3);
+    for (const panel of panels) {
+      expect(panel.className).toContain("[@media(hover:hover)]:group-hover:block");
+      expect(panel.className.split(" ")).not.toContain("group-hover:block");
+      expect(panel.className).toContain("group-focus-within:block");
+    }
+  });
+
   it("has one banner landmark", () => {
     renderAt("/");
     expect(screen.getAllByRole("banner")).toHaveLength(1);

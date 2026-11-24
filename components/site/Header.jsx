@@ -37,7 +37,11 @@ function DropdownItem({ item, current }) {
           ▾
         </span>
       </Link>
-      <div className="absolute -left-4 top-full z-50 hidden pt-3.5 group-focus-within:block group-hover:block">
+      {/* Hover only where the device has it, so a first tap on a touch screen follows the link. */}
+      <div
+        data-dropdown-panel
+        className="absolute -left-4 top-full z-50 hidden pt-3.5 group-focus-within:block [@media(hover:hover)]:group-hover:block"
+      >
         <div className={cn("flex flex-col gap-0.5 rounded-card border border-line bg-white p-2.5 shadow-menu", item.width)}>
           {item.children.map((child) => (
             <Link
@@ -85,7 +89,8 @@ export default function Header() {
           <Image src="/images/site/logo.png" alt="The Toronto Sauna Co." width={132} height={48} priority className="h-12 w-auto" />
         </Link>
 
-        <nav aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-body font-medium md:flex">
+        {/* Keyed by path: remounting drops focus from the clicked link, so its dropdown closes after navigation. */}
+        <nav key={pathname} aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-body font-medium md:flex">
           {MAIN_NAV.map((item) => {
             const current = isActive(item, pathname);
             return item.children ? (

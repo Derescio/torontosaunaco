@@ -91,6 +91,22 @@ export default function MobileMenu({ pathname }) {
     }
   }, [open]);
 
+  // Close on navigation (including back/forward) and when the window widens to desktop,
+  // where the panel is hidden but would still hold the scroll lock.
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open || typeof window.matchMedia !== "function") return undefined;
+    const query = window.matchMedia("(min-width: 768px)");
+    const onChange = (e) => {
+      if (e.matches) setOpen(false);
+    };
+    query.addEventListener("change", onChange);
+    return () => query.removeEventListener("change", onChange);
+  }, [open]);
+
   const close = () => setOpen(false);
 
   return (

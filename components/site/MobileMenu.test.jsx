@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, act } from "@testing-library/react";
 import MobileMenu from "./MobileMenu";
 
 jest.mock("next/link", () => {
@@ -81,6 +81,29 @@ describe("MobileMenu", () => {
     fireEvent.click(screen.getByRole("link", { name: "Heaters" }));
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
     expect(document.body.style.overflow).toBe("");
+  });
+
+  it("closes when the page changes", () => {
+    const { rerender } = render(<MobileMenu pathname="/" />);
+    open();
+    rerender(<MobileMenu pathname="/saunas" />);
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(document.body.style.overflow).toBe("");
+  });
+
+  it("closes when the window widens to desktop", () => {
+    let listener;
+    window.matchMedia = jest.fn(() => ({
+      matches: false,
+      addEventListener: (_type, fn) => (listener = fn),
+      removeEventListener: jest.fn(),
+    }));
+    render(<MobileMenu pathname="/" />);
+    open();
+    act(() => listener({ matches: true }));
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(document.body.style.overflow).toBe("");
+    delete window.matchMedia;
   });
 
   it("shows Find your fit, Request a Quote and the phone number", () => {
