@@ -37,6 +37,7 @@ describe("MobileMenu", () => {
     expect(menuButton()).toHaveAttribute("aria-label", "Menu");
     expect(menuButton().textContent).toBe("");
     expect(menuButton()).toHaveClass("rounded-full", "border-walnut", "text-walnut");
+    expect(menuButton().parentElement).toHaveClass("desktop:hidden");
   });
 
   it("opens the panel and moves focus to the close button", () => {
@@ -107,6 +108,7 @@ describe("MobileMenu", () => {
     }));
     render(<MobileMenu pathname="/" />);
     open();
+    expect(window.matchMedia).toHaveBeenCalledWith("(min-width: 998px)");
     act(() => listener({ matches: true }));
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
     expect(document.body.style.overflow).toBe("");

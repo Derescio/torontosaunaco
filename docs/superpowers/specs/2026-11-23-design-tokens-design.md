@@ -93,8 +93,8 @@ Letter spacing: `tracking-eyebrow` 0.2em, `tracking-caps` 0.1em (absorbs 0.06–
 - Page width: `max-w-site` = 1384px outer, so content is 1320px wide with 32px side padding on desktop (20px on
   mobile). The design sets `max-width: 1320px` in content-box; Tailwind is border-box. *(Corrected in
   `rd/1-header-footer`: at 1320px outer, content was 64px narrower than the design and the header nav wrapped.)*
-- One mobile/desktop switch, as in the design: Tailwind's `md` (768px) stands in for the design's 720px. *(My call: avoids a
-  custom breakpoint.)*
+- One mobile/desktop switch: `desktop:` at 998px (owner's call, 2026-11-24; the design used 720px). `md` stays at 768px
+  for the live pages, so new components use `desktop:` instead of `md:`.
 
 ### Corners and shadows
 

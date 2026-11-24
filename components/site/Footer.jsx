@@ -22,7 +22,7 @@ function FooterLink({ href, children }) {
 export default function Footer() {
   return (
     <footer className="bg-ink font-body text-body text-sand-100">
-      <div className="mx-auto grid max-w-site grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 px-5 pb-10 pt-16 md:px-8">
+      <div className="mx-auto grid max-w-site grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 px-5 pb-10 pt-16 desktop:px-8">
         <div className="flex flex-col gap-3">
           <Link href="/" aria-label="The Toronto Sauna Co. home" className="w-fit">
             <Image src="/images/site/logo-footer.png" alt="The Toronto Sauna Co." width={154} height={56} className="h-14 w-auto" />
@@ -44,7 +44,7 @@ export default function Footer() {
           </nav>
         ))}
       </div>
-      <div className="mx-auto max-w-site px-5 md:px-8">
+      <div className="mx-auto max-w-site px-5 desktop:px-8">
         <div className="border-t border-line-dark py-6 text-small text-sand-400">{COPYRIGHT}</div>
       </div>
     </footer>

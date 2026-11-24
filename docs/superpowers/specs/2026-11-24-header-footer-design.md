@@ -43,7 +43,7 @@ content. The live pages keep their current nav and footer until each one is repl
 
 ## Decisions
 
-- **Phone menu (owner's choice, option 1).** Below `md` (768px) the main row shows the logo, "Request a Quote" (`sm`)
+- **Phone menu (owner's choice, option 1).** Below the `desktop` breakpoint (998px; was `md`, 768px, changed by the owner on 2026-11-24) the main row shows the logo, "Request a Quote" (`sm`)
   and a Menu button. The button opens a full-screen panel with the same links. The three dropdowns become expandable
   groups. Below them are "Find your fit" and the phone number. The panel closes on Escape, on its close button and when
   a link is followed. Focus moves into the panel when it opens and returns to the Menu button when it closes. Page

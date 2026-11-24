@@ -82,8 +82,8 @@ describe("Header", () => {
   it("shows Find your fit beside Request a Quote from 640px up", () => {
     renderAt("/");
     const finder = screen.getByRole("link", { name: "Find your fit" });
-    expect(finder).toHaveClass("hidden", "sm:inline-flex", "h-9", "md:h-11");
-    expect(finder).not.toHaveClass("md:inline-flex");
+    expect(finder).toHaveClass("hidden", "sm:inline-flex", "h-9", "desktop:h-11");
+    expect(finder).not.toHaveClass("desktop:inline-flex");
   });
 
   it("logo links home with an accessible name", () => {
@@ -118,6 +118,12 @@ describe("Header", () => {
     const nav = screen.getByRole("navigation", { name: "Main" });
     expect(nav).toHaveClass("text-nav");
     expect(nav).not.toHaveClass("text-body");
+  });
+
+  it("uses the 998px desktop breakpoint, not md", () => {
+    const { container } = renderAt("/");
+    expect(container.innerHTML).not.toMatch(/md:/);
+    expect(screen.getByRole("navigation", { name: "Main" })).toHaveClass("hidden", "desktop:flex");
   });
 
   it("has one banner landmark", () => {

@@ -70,8 +70,8 @@ export default function Header() {
   return (
     <header className="border-b border-line bg-white font-body text-ink">
       <div className="bg-ink text-small text-sand-200">
-        <div className="mx-auto flex max-w-site items-center justify-between gap-4 px-5 py-2 md:px-8">
-          <span className="hidden md:inline">{CONTACT.note}</span>
+        <div className="mx-auto flex max-w-site items-center justify-between gap-4 px-5 py-2 desktop:px-8">
+          <span className="hidden desktop:inline">{CONTACT.note}</span>
           <span className="ml-auto flex items-center gap-5">
             <a href={CONTACT.tel} className="text-sand-100 hover:text-white">
               {CONTACT.phone}
@@ -84,13 +84,13 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-site items-center justify-between gap-3 px-5 py-3.5 md:gap-7 md:px-8">
+      <div className="mx-auto flex max-w-site items-center justify-between gap-3 px-5 py-3.5 desktop:gap-7 desktop:px-8">
         <Link href="/" aria-label="The Toronto Sauna Co. home" className="flex-none">
-          <Image src="/images/site/logo.png" alt="The Toronto Sauna Co." width={132} height={48} priority className="h-10 w-auto md:h-12" />
+          <Image src="/images/site/logo.png" alt="The Toronto Sauna Co." width={132} height={48} priority className="h-10 w-auto desktop:h-12" />
         </Link>
 
         {/* Keyed by path: remounting drops focus from the clicked link, so its dropdown closes after navigation. */}
-        <nav key={pathname} aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-nav font-medium md:flex">
+        <nav key={pathname} aria-label="Main" className="hidden flex-wrap gap-x-7 gap-y-2 text-nav font-medium desktop:flex">
           {MAIN_NAV.map((item) => {
             const current = isActive(item, pathname);
             return item.children ? (
@@ -108,16 +108,16 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="flex flex-none items-center gap-1 md:gap-2.5">
+        <div className="flex flex-none items-center gap-1 desktop:gap-2.5">
           <Button
             href={HEADER_ACTIONS.finder.href}
             variant="outline-walnut"
-            className="hidden h-9 px-4 sm:inline-flex md:h-11 md:px-5"
+            className="hidden h-9 px-4 sm:inline-flex desktop:h-11 desktop:px-5"
           >
             <RulerIcon />
             {HEADER_ACTIONS.finder.label}
           </Button>
-          <Button href={HEADER_ACTIONS.quote.href} variant="dark" className="h-9 px-4 md:h-11 md:px-5">
+          <Button href={HEADER_ACTIONS.quote.href} variant="dark" className="h-9 px-4 desktop:h-11 desktop:px-5">
             {HEADER_ACTIONS.quote.label}
           </Button>
           <MobileMenu pathname={pathname} />

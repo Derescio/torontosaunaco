@@ -99,7 +99,7 @@ export default function MobileMenu({ pathname }) {
 
   useEffect(() => {
     if (!open || typeof window.matchMedia !== "function") return undefined;
-    const query = window.matchMedia("(min-width: 768px)");
+    const query = window.matchMedia("(min-width: 998px)");
     const onChange = (e) => {
       if (e.matches) setOpen(false);
     };
@@ -110,7 +110,7 @@ export default function MobileMenu({ pathname }) {
   const close = () => setOpen(false);
 
   return (
-    <div className="md:hidden">
+    <div className="desktop:hidden">
       <button
         ref={menuButtonRef}
         type="button"
