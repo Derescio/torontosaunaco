@@ -17,11 +17,11 @@ function BagIcon() {
   );
 }
 
-export function PencilIcon() {
+export function RulerIcon() {
   return (
     <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <path d="M3 17 17 3l4 4L7 21H3z" />
-      <path d="M14 6l4 4" />
+      <path d="m7 13 2 2M10 10l2 2M13 7l2 2" />
     </svg>
   );
 }
@@ -105,7 +105,7 @@ export default function Header() {
 
         <div className="flex flex-none items-center gap-2.5">
           <Button href={HEADER_ACTIONS.finder.href} variant="outline-walnut" className="hidden md:inline-flex">
-            <PencilIcon />
+            <RulerIcon />
             {HEADER_ACTIONS.finder.label}
           </Button>
           <Button href={HEADER_ACTIONS.quote.href} variant="dark" className="h-9 px-4 md:h-11 md:px-5">
