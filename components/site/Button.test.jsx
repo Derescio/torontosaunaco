@@ -74,4 +74,14 @@ describe("Button", () => {
     render(<Button className="w-full">Go</Button>);
     expect(screen.getByRole("button")).toHaveClass("w-full", "bg-ink", "text-small", "text-white");
   });
+  it.each([
+    ["dark", "focus-visible:ring-walnut"],
+    ["walnut", "focus-visible:ring-walnut"],
+    ["outline-walnut", "focus-visible:ring-walnut"],
+    ["light", "focus-visible:ring-tan"],
+    ["outline-light", "focus-visible:ring-tan"],
+  ])("gives the %s variant a focus ring with at least 3:1 contrast (%s)", (variant, ring) => {
+    render(<Button variant={variant}>Go</Button>);
+    expect(screen.getByRole("button")).toHaveClass(ring, "focus-visible:ring-2");
+  });
 });
