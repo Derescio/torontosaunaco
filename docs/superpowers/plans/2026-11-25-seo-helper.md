@@ -58,7 +58,7 @@ metadata and JSON-LD, with the project rules applied. `components/site/JsonLd.js
 **Interfaces:**
 - Consumes: `content/seo.json`, `content/image-map.json`.
 - Produces: `pageSeo(route, { price } = {}) → { metadata, jsonLd } | null`, plus a pure
-  `buildSeo(entry, { price, imageMap }) → { metadata, jsonLd }` for unit tests. `SITE` and `FALLBACK_OG_IMAGE`
+  `buildSeo(entry, { price, imageMap, now }) → { metadata, jsonLd }` for unit tests. `SITE` and `FALLBACK_OG_IMAGE`
   are exported constants.
 
 - [ ] **Step 1: Failing unit tests** (`seo.test.js`, fixtures through `buildSeo`):
@@ -71,7 +71,9 @@ metadata and JSON-LD, with the project rules applied. `components/site/JsonLd.js
   - `_blob/abc` mapped in `imageMap` → replaced. Unmapped in `image: [..]` → removed from the array. Unmapped og
     image → `FALLBACK_OG_IMAGE`.
   - Product offers: no price → no `offers`. `price: 2974` → `offers.price === "2974.00"` (the design's `"9999.00"`
-    replaced). `price: 0` and `NaN` → no `offers`.
+    replaced), `offers.availability === "https://schema.org/InStock"`, and `offers.priceValidUntil` is today + 365
+    days as `YYYY-MM-DD`, matching today's product pages (pass `now` to `buildSeo` for a fixed date in tests).
+    `price: 0` and `NaN` → no `offers`.
   - Two calls on the same entry return deep-equal results, and the entry object is unchanged.
 - [ ] **Step 2: Failing route tests** (`seo.routes.test.js`, the real data, every route in `content/seo.json`):
   og type `website`; canonical = `SITE` + route (the root is `${SITE}/`); title and description equal `pageMap`;

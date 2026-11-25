@@ -58,7 +58,8 @@ applied in one place.
     `address.addressLocality = "Schomberg"` when they have an address.
   - `/_blob/<id>` URLs become `image-map.json` values. Unmapped ones are removed from arrays, and a property whose
     value is unmapped is dropped.
-  - Product `offers`: with `price` (a number from MongoDB), `offers.price` is set to `price.toFixed(2)`. Without it,
+  - Product `offers`: with `price` (a number from MongoDB), `offers.price` is set to `price.toFixed(2)`, plus
+    `availability: InStock` and `priceValidUntil` (today + 365 days), as on today's product pages. Without it,
     `offers` is removed, because the design price is never published unapproved.
   - Any `thetorontosaunaco.com` / `torontosaunaco.com` origin other than `https://www.thetorontosaunaco.com` is
     rewritten to it (in metadata URLs too).
