@@ -46,7 +46,7 @@ describe.each([
   it("slug route renders the client page with the product's ID", async () => {
     resolveProductParam.mockResolvedValue({ product: { _id: ID } });
     const el = await NewPage(params({ slug: "arctic" }));
-    expect(resolveProductParam).toHaveBeenCalledWith("arctic", kind);
+    expect(resolveProductParam).toHaveBeenCalledWith("arctic", kind, { slugOnly: true });
     expect(el.props.id).toBe(ID);
   });
 

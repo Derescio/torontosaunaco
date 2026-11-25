@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 }
 
 async function load(slug) {
-  const result = await resolveProductParam(slug, "cold-plunge");
+  const result = await resolveProductParam(slug, "cold-plunge", { slugOnly: true });
   return result?.product ?? null;
 }
 
