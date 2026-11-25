@@ -1,4 +1,5 @@
 import { Schema, model, models } from "mongoose";
+import { slugFromName } from "./plugins/slugFromName.js";
 
 const AccessoriesSchema = new Schema({
     
@@ -20,6 +21,8 @@ const AccessoriesSchema = new Schema({
 {
     timestamps: true,
 });
+
+AccessoriesSchema.plugin(slugFromName);
 
 const Accessories = models.Accessories || model("Accessories", AccessoriesSchema);
 export default Accessories;
