@@ -12,7 +12,8 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "extract:dc": "node scripts/extract-dc.mjs"
+    "extract:dc": "node scripts/extract-dc.mjs",
+    "price-diff": "node --env-file=.env scripts/price-diff.mjs"
   },
   "dependencies": {
     "@cloudinary/react": "^1.13.0",
@@ -82,6 +83,8 @@
     "@testing-library/react": "^16.0.0",
     "acorn": "^8.19.0",
     "babel-jest": "^29.7.0",
+    "docx": "^9.16.0",
+    "fflate": "^0.8.3",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "node-html-parser": "^6.1.13",
