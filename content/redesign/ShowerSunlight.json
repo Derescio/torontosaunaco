@@ -1,0 +1,883 @@
+{
+  "file": "ShowerSunlight.dc.html",
+  "route": "/outdoor-showers/sunlight",
+  "pageMap": {
+    "route": "/outdoor-showers/sunlight",
+    "title": "The Sunlight Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Sunlight Outdoor Shower: A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 13
+  },
+  "head": {
+    "title": "The Sunlight Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Sunlight Outdoor Shower: A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/outdoor-showers/sunlight",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Sunlight Outdoor Shower | The Toronto Sauna Co.",
+      "description": "Sunlight Outdoor Shower: A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/outdoor-showers/sunlight",
+      "image": "https://www.thetorontosaunaco.com/_blob/d47d02b3e35e487cf5444e1d1cc65780"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Sunlight Outdoor Shower",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/d47d02b3e35e487cf5444e1d1cc65780"
+        ],
+        "url": "https://www.thetorontosaunaco.com/outdoor-showers/sunlight",
+        "description": "Sunlight Outdoor Shower: A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "970.00",
+          "url": "https://www.thetorontosaunaco.com/outdoor-showers/sunlight",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Outdoor shower",
+      "section": "plunge",
+      "basePrice": 970,
+      "buildLabel": "Build your outdoor shower",
+      "related": [
+        "Compare other outdoor <span style=\"font-style: italic\">showers</span>",
+        [
+          "View All Outdoor Showers",
+          "/outdoor-showers"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+      "height": 4000,
+      "file": "ShowerSunlight",
+      "name": "The Sunlight Outdoor Shower",
+      "series": "Western Red Cedar",
+      "collection": null,
+      "intro": "A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Western red cedar in knotty or clear grade on a slatted cedar deck. Hook it to a garden hose, or add our premium hardware for hot and cold water.",
+      "highlights": [
+        "Pillar shower",
+        "31\" × 31\" base",
+        "Western Red Cedar",
+        "Made in Canada"
+      ],
+      "photos": [
+        "The Sunlight Outdoor Shower",
+        "Detail",
+        "In use"
+      ],
+      "specs": [
+        [
+          "Overall height",
+          "81½\" (207 cm) with base"
+        ],
+        [
+          "Pillar",
+          "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep"
+        ],
+        [
+          "Base",
+          "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high"
+        ],
+        [
+          "Shower head height",
+          "About 76\" (193 cm) with premium hardware"
+        ],
+        [
+          "Wood",
+          "Western red cedar, knotty or clear"
+        ],
+        [
+          "Hardware",
+          "Sold separately: Premium Shower Hardware add-on"
+        ],
+        [
+          "Water",
+          "Garden hose for cold water; hot and cold with premium hardware"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Wood",
+          "desc": "Choose the cedar for your shower.",
+          "groups": [
+            {
+              "id": "wood",
+              "title": "Choose your wood type",
+              "type": "single",
+              "required": true,
+              "default": "knotty",
+              "base": true,
+              "options": [
+                {
+                  "id": "knotty",
+                  "label": "Knotty Western Red Cedar",
+                  "sub": "Rustic, characterful grain",
+                  "price": 970,
+                  "photo": "Knotty cedar",
+                  "img": "./assets/d47d02b3e35e487cf5444e1d1cc65780.jpg",
+                  "alt": "Sunlight cedar pillar outdoor shower with premium hardware, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "clear",
+                  "label": "Clear Western Red Cedar",
+                  "sub": "Smooth, knot-free finish",
+                  "price": 1171,
+                  "photo": "Clear cedar",
+                  "img": "./assets/ae6b9794d6b3e0257f193e099ae00fba.jpg",
+                  "alt": "Clear western red cedar sample, The Toronto Sauna Co."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw",
+          "title": "Hardware",
+          "desc": "Buy the shower on its own, or add our premium hardware.",
+          "groups": [
+            {
+              "id": "hardware",
+              "title": "Shower hardware",
+              "type": "single",
+              "required": true,
+              "default": "hw_none",
+              "note": "Showers ship without hardware. Pillar showers can run cold from a garden hose; add the Premium Shower Hardware for a rain head, hand shower and hot and cold mixing valve. A plumber may be needed for hot water.",
+              "options": [
+                {
+                  "id": "hw_none",
+                  "label": "Unit only",
+                  "sub": "No hardware: I have my own or will add it later",
+                  "price": 0,
+                  "none": true,
+                  "photo": "Unit only"
+                },
+                {
+                  "id": "hw_prem",
+                  "label": "Premium Shower Hardware",
+                  "sub": "Brushed stainless steel: round rain head, hand shower on a slide bar, hot and cold mixing valve. A plumber may be needed for hot water.",
+                  "price": 390,
+                  "photo": "Premium Shower Hardware",
+                  "img": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+                  "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Plunge & Shower",
+          "/cold-plunges"
+        ],
+        [
+          "Outdoor Showers",
+          "/outdoor-showers"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/d47d02b3e35e487cf5444e1d1cc65780.jpg",
+          "alt": "Sunlight cedar pillar outdoor shower with premium hardware, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/2ba29c5f29ae62d2ddc11aef2e6fc2c7.jpg",
+          "alt": "Sunlight cedar outdoor shower beside a pool, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/439691981e9c843913dc689ea0cdf3ab.jpg",
+          "alt": "Outdoor shower rain head in use, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/67600354959ac1df2e6d25b8f7ff8c89.jpg",
+          "alt": "Sunlight outdoor shower cedar deck base, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+          "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "about": {
+        "title": "A rinse station, done right",
+        "lede": "The Sunlight gives you a proper outdoor shower in a footprint smaller than a patio chair.",
+        "items": [
+          [
+            "Slim cedar pillar",
+            "A 15\" cedar column on a 31\" slatted deck that drains fast. Easy to assemble and easy to move."
+          ],
+          [
+            "Knotty or clear red cedar",
+            "Western red cedar resists moisture, rot and insects. Choose knotty for character or clear for a smooth, knot-free look."
+          ],
+          [
+            "Garden hose or hot and cold",
+            "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve."
+          ],
+          [
+            "Made in Canada",
+            "Handcrafted in Canada with a 5-year residential limited warranty."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/a2052714640636d17c71d6402132bcd4.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Outdoor Showers",
+              "href": "/outdoor-showers"
+            },
+            {
+              "text": "The Sunlight Outdoor Shower"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "{{galCount}}",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Sunlight Outdoor Shower",
+              "text": "Photo: The Sunlight Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "The Sunlight Outdoor Shower",
+              "text": "The Sunlight Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "Detail",
+              "text": "Detail"
+            },
+            {
+              "type": "text",
+              "html": "In use",
+              "text": "In use"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar · Outdoor shower",
+          "text": "Western Red Cedar · Outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Sunlight Outdoor Shower",
+          "text": "The Sunlight Outdoor Shower"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Western red cedar in knotty or clear grade on a slatted cedar deck. Hook it to a garden hose, or add our premium hardware for hot and cold water.",
+          "text": "A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool. Western red cedar in knotty or clear grade on a slatted cedar deck. Hook it to a garden hose, or add our premium hardware for hot and cold water."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Pillar shower",
+              "text": "Pillar shower"
+            },
+            {
+              "html": "31\" × 31\" base",
+              "text": "31\" × 31\" base"
+            },
+            {
+              "html": "Western Red Cedar",
+              "text": "Western Red Cedar"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
+          "text": "Build Yours Book a Showroom Visit"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your outdoor shower",
+          "text": "Build your outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
+              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{g.title}}",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
+          "text": "YOUR BUILD {{subtotalText}}+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart.Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "About this sauna",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "A rinse station, done right",
+          "text": "A rinse station, done right"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Sunlight gives you a proper outdoor shower in a footprint smaller than a patio chair.",
+          "text": "The Sunlight gives you a proper outdoor shower in a footprint smaller than a patio chair."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Slim cedar pillar",
+          "text": "Slim cedar pillar"
+        },
+        {
+          "type": "paragraph",
+          "html": "A 15\" cedar column on a 31\" slatted deck that drains fast. Easy to assemble and easy to move.",
+          "text": "A 15\" cedar column on a 31\" slatted deck that drains fast. Easy to assemble and easy to move."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Knotty or clear red cedar",
+          "text": "Knotty or clear red cedar"
+        },
+        {
+          "type": "paragraph",
+          "html": "Western red cedar resists moisture, rot and insects. Choose knotty for character or clear for a smooth, knot-free look.",
+          "text": "Western red cedar resists moisture, rot and insects. Choose knotty for character or clear for a smooth, knot-free look."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Garden hose or hot and cold",
+          "text": "Garden hose or hot and cold"
+        },
+        {
+          "type": "paragraph",
+          "html": "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve.",
+          "text": "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Made in Canada",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "paragraph",
+          "html": "Handcrafted in Canada with a 5-year residential limited warranty.",
+          "text": "Handcrafted in Canada with a 5-year residential limited warranty."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Overall height",
+                "text": "Overall height"
+              },
+              "details": {
+                "html": "81½\" (207 cm) with base",
+                "text": "81½\" (207 cm) with base"
+              }
+            },
+            {
+              "term": {
+                "html": "Pillar",
+                "text": "Pillar"
+              },
+              "details": {
+                "html": "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep",
+                "text": "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep"
+              }
+            },
+            {
+              "term": {
+                "html": "Base",
+                "text": "Base"
+              },
+              "details": {
+                "html": "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high",
+                "text": "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high"
+              }
+            },
+            {
+              "term": {
+                "html": "Shower head height",
+                "text": "Shower head height"
+              },
+              "details": {
+                "html": "About 76\" (193 cm) with premium hardware",
+                "text": "About 76\" (193 cm) with premium hardware"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Western red cedar, knotty or clear",
+                "text": "Western red cedar, knotty or clear"
+              }
+            },
+            {
+              "term": {
+                "html": "Hardware",
+                "text": "Hardware"
+              },
+              "details": {
+                "html": "Sold separately: Premium Shower Hardware add-on",
+                "text": "Sold separately: Premium Shower Hardware add-on"
+              }
+            },
+            {
+              "term": {
+                "html": "Water",
+                "text": "Water"
+              },
+              "details": {
+                "html": "Garden hose for cold water; hot and cold with premium hardware",
+                "text": "Garden hose for cold water; hot and cold with premium hardware"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/a2052714640636d17c71d6402132bcd4.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. <strong>Quoted</strong>",
+          "text": "Delivery to your doorDelivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other outdoor <em>showers</em>",
+          "text": "Compare other outdoor showers"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/outdoor-showers\">View All Outdoor Showers</a> <a href=\"/cold-plunges\">Cold Plunges</a>",
+          "text": "View All Outdoor Showers Cold Plunges"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "file": "Blog.dc.html",
+  "route": "/blog",
+  "pageMap": {
+    "route": "/blog",
+    "title": "Sauna Blog | Guides, Costs & Tips | The Toronto Sauna Co.",
+    "description": "Sauna guides from The Toronto Sauna Co.: costs, electricity, etiquette, four-season backyard saunas, cold plunge and choosing the right sauna company.",
+    "index": "",
+    "photos": 17
+  },
+  "head": {
+    "title": "Sauna Blog | Guides, Costs & Tips | The Toronto Sauna Co.",
+    "description": "Sauna guides from The Toronto Sauna Co.: costs, electricity, etiquette, four-season backyard saunas, cold plunge and choosing the right sauna company.",
+    "canonical": "https://www.thetorontosaunaco.com/blog",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Blog | Guides, Costs & Tips | The Toronto Sauna Co.",
+      "description": "Sauna guides from The Toronto Sauna Co.: costs, electricity, etiquette, four-season backyard saunas, cold plunge and choosing the right sauna company.",
+      "url": "https://www.thetorontosaunaco.com/blog",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://www.thetorontosaunaco.com/blog",
+        "name": "Sauna Blog | Guides, Costs & Tips | The Toronto Sauna Co.",
+        "description": "Sauna guides from The Toronto Sauna Co.: costs, electricity, etiquette, four-season backyard saunas, cold plunge and choosing the right sauna company.",
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "The Toronto Sauna Co.",
+          "telephone": "+1-437-429-6623",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17380 Highway 27",
+            "addressLocality": "Schomberg",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://www.thetorontosaunaco.com/blog/how-long-does-an-outdoor-sauna-last",
+            "name": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.thetorontosaunaco.com/blog/building-a-backyard-sauna-for-four-season-enjoyment",
+            "name": "Building a Backyard Sauna for Four-Season Enjoyment"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://www.thetorontosaunaco.com/blog/choosing-a-sauna-company-questions-to-ask-before-you-buy",
+            "name": "Choosing a Sauna Company: Questions to Ask Before You Buy"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.thetorontosaunaco.com/blog/sauna-etiquette-for-first-time-users-a-beginner-s-guide",
+            "name": "Sauna Etiquette for First-Time Users: A Beginner’s Guide"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://www.thetorontosaunaco.com/blog/traditional-finnish-sauna-vs-infrared-sauna-what-s-the-difference",
+            "name": "Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://www.thetorontosaunaco.com/blog/how-much-does-a-sauna-cost-in-toronto-in-2026",
+            "name": "How Much Does a Sauna Cost in Toronto in 2026?"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://www.thetorontosaunaco.com/blog/how-sauna-and-cold-plunge-help-battle-seasonal-depression-in-canada",
+            "name": "How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://www.thetorontosaunaco.com/blog/from-city-to-cottage-canadas-sauna-ritual",
+            "name": "From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://www.thetorontosaunaco.com/blog/sauna-wellness-unleashed-transforming-home-relaxation-with-modern-innovation",
+            "name": "Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://www.thetorontosaunaco.com/blog/transform-your-backyard-with-a-modern-outdoor-sauna-in-the-greater-toronto-area",
+            "name": "Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://www.thetorontosaunaco.com/blog/creating-a-backyard-oasis-your-ultimate-guide-to-outdoor-saunas-in-the-gta",
+            "name": "Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA"
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Blog hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Blog"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "The Toronto Sauna Co. blog",
+          "text": "The Toronto Sauna Co. blog"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Guides for sauna <em><strong>owners.</strong></em>",
+          "text": "Guides for sauna owners."
+        },
+        {
+          "type": "paragraph",
+          "html": "Costs, planning, heaters, etiquette and the cold plunge: straight answers from the team that delivers and installs saunas across Ontario.",
+          "text": "Costs, planning, heaters, etiquette and the cold plunge: straight answers from the team that delivers and installs saunas across Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Featured post",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/how-long-does-an-outdoor-sauna-last",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/49655706d69b722e8134c4a963c2976f.jpg",
+              "alt": "Black outdoor sauna with cedar-framed glass door in a garden, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Latest · Ownership · November 18, 2026</strong> <strong>How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna</strong> What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going. <strong>Read the article</strong>",
+              "text": "Latest · Ownership · November 18, 2026 How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going. Read the article"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "All posts",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/building-a-backyard-sauna-for-four-season-enjoyment",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/b8080efb1ab29e5fea55c3914d5975c4.jpg",
+              "alt": "Glass-front cube sauna on a landscaped stone patio with fire pit, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Planning · November 3, 2026",
+              "text": "Planning · November 3, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Building a Backyard Sauna for Four-Season Enjoyment",
+              "text": "Building a Backyard Sauna for Four-Season Enjoyment"
+            },
+            {
+              "type": "text",
+              "html": "Placement, foundations, heaters and the small details that make a backyard sauna as good in January as it is in July.",
+              "text": "Placement, foundations, heaters and the small details that make a backyard sauna as good in January as it is in July."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/choosing-a-sauna-company-questions-to-ask-before-you-buy",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/31d8d6d8c010b5f26d2998a87545057a.jpg",
+              "alt": "Black outdoor sauna with glass front and LED-lit benches in a backyard, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Buying guide · October 21, 2026",
+              "text": "Buying guide · October 21, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Choosing a Sauna Company: Questions to Ask Before You Buy",
+              "text": "Choosing a Sauna Company: Questions to Ask Before You Buy"
+            },
+            {
+              "type": "text",
+              "html": "The questions worth asking any sauna seller about installation, warranty, heaters and after-sale service before you sign.",
+              "text": "The questions worth asking any sauna seller about installation, warranty, heaters and after-sale service before you sign."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/sauna-etiquette-for-first-time-users-a-beginner-s-guide",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/88c851de08ed961a8dce2c88f39c62c7.jpg",
+              "alt": "Sauna interior looking out to a lake through the glass front, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Sauna ritual · June 24, 2026",
+              "text": "Sauna ritual · June 24, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Sauna Etiquette for First-Time Users: A Beginner’s Guide",
+              "text": "Sauna Etiquette for First-Time Users: A Beginner’s Guide"
+            },
+            {
+              "type": "text",
+              "html": "New to the sauna? How long to stay in, when to add water to the stones, what to bring and how to cool down between rounds.",
+              "text": "New to the sauna? How long to stay in, when to add water to the stones, what to bring and how to cool down between rounds."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/traditional-finnish-sauna-vs-infrared-sauna-what-s-the-difference",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/fea745f86babad1fa9b940fda9e4e808.jpg",
+              "alt": "Sauna interior with picture window and round stone heater in winter, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Buying guide · May 27, 2026",
+              "text": "Buying guide · May 27, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?",
+              "text": "Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?"
+            },
+            {
+              "type": "text",
+              "html": "Heat, humidity, steam and running costs: how a traditional stone-heater sauna compares with infrared, and which suits you.",
+              "text": "Heat, humidity, steam and running costs: how a traditional stone-heater sauna compares with infrared, and which suits you."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/how-much-does-a-sauna-cost-in-toronto-in-2026",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/c3e355a8c422ffa0a99f735490f26805.jpg",
+              "alt": "Cedar cube outdoor sauna with glass front by a pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Costs · May 5, 2026",
+              "text": "Costs · May 5, 2026"
+            },
+            {
+              "type": "text",
+              "html": "How Much Does a Sauna Cost in Toronto in 2026?",
+              "text": "How Much Does a Sauna Cost in Toronto in 2026?"
+            },
+            {
+              "type": "text",
+              "html": "A plain-language breakdown of what goes into the price of a backyard sauna in Toronto, from the model to the base and electrical.",
+              "text": "A plain-language breakdown of what goes into the price of a backyard sauna in Toronto, from the model to the base and electrical."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/how-sauna-and-cold-plunge-help-battle-seasonal-depression-in-canada",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/84128a11d79aa3cf06d63dd85309b63f.jpg",
+              "alt": "Black outdoor sauna with shower porch beside a plunge pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Wellness · December 25, 2025",
+              "text": "Wellness · December 25, 2025"
+            },
+            {
+              "type": "text",
+              "html": "How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada",
+              "text": "How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada"
+            },
+            {
+              "type": "text",
+              "html": "Why regular heat and brief cold exposure can help with mood, sleep and energy through a long Canadian winter.",
+              "text": "Why regular heat and brief cold exposure can help with mood, sleep and energy through a long Canadian winter."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/from-city-to-cottage-canadas-sauna-ritual",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/0c702432d0d2112ac4665ae4121c6427.jpg",
+              "alt": "Cedar sauna beside a lakeside cottage, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Sauna ritual · October 23, 2025",
+              "text": "Sauna ritual · October 23, 2025"
+            },
+            {
+              "type": "text",
+              "html": "From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual",
+              "text": "From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual"
+            },
+            {
+              "type": "text",
+              "html": "From downtown backyards to Muskoka shorelines, why Canadians are making the outdoor sauna part of every season.",
+              "text": "From downtown backyards to Muskoka shorelines, why Canadians are making the outdoor sauna part of every season."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/sauna-wellness-unleashed-transforming-home-relaxation-with-modern-innovation",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/8754f99693bdfbbce7e107d10e29046c.jpg",
+              "alt": "Indoor sauna with warm LED lighting, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Wellness · August 20, 2025",
+              "text": "Wellness · August 20, 2025"
+            },
+            {
+              "type": "text",
+              "html": "Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation",
+              "text": "Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation"
+            },
+            {
+              "type": "text",
+              "html": "Glass fronts, smart controls and better heaters: how modern saunas have changed what relaxing at home looks like.",
+              "text": "Glass fronts, smart controls and better heaters: how modern saunas have changed what relaxing at home looks like."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/transform-your-backyard-with-a-modern-outdoor-sauna-in-the-greater-toronto-area",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/d2bc1b5efc590e9de5b40003b3cffa28.jpg",
+              "alt": "Black outdoor sauna with picture window beside a backyard pool in Toronto, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Planning",
+              "text": "Planning"
+            },
+            {
+              "type": "text",
+              "html": "Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area",
+              "text": "Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area"
+            },
+            {
+              "type": "text",
+              "html": "How a modern outdoor sauna fits a GTA backyard, from Toronto and Vaughan to Oakville and Barrie, and why Canadian cedar handles our winters.",
+              "text": "How a modern outdoor sauna fits a GTA backyard, from Toronto and Vaughan to Oakville and Barrie, and why Canadian cedar handles our winters."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/creating-a-backyard-oasis-your-ultimate-guide-to-outdoor-saunas-in-the-gta",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/ccab54c86479d6710ee51be2663c3343.jpg",
+              "alt": "Black outdoor sauna with glass front in a garden, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Planning",
+              "text": "Planning"
+            },
+            {
+              "type": "text",
+              "html": "Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA",
+              "text": "Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA"
+            },
+            {
+              "type": "text",
+              "html": "Choosing the spot, the size and the materials for an outdoor sauna, plus insulation, ventilation and drainage for GTA winters.",
+              "text": "Choosing the spot, the size and the materials for an outdoor sauna, plus insulation, ventilation and drainage for GTA winters."
+            },
+            {
+              "type": "text",
+              "html": "Read the article",
+              "text": "Read the article"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for <em><strong>your own</strong></em> sauna?",
+          "text": "Ready for your own sauna?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Use the Sauna Finder to see what fits your space, or call us and talk it through.",
+          "text": "Use the Sauna Finder to see what fits your space, or call us and talk it through."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Shop outdoor saunas</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Find your fit Shop outdoor saunas Call (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

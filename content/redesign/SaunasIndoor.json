@@ -1,0 +1,221 @@
+{
+  "file": "SaunasIndoor.dc.html",
+  "route": "/saunas/indoor",
+  "pageMap": {
+    "route": "/saunas/indoor",
+    "title": "Indoor Saunas in Toronto & the GTA | The Toronto Sauna Co.",
+    "description": "Indoor saunas from The Toronto Sauna Co.: ready-made cedar and Thermo Grandis sauna kits from $8,070, or a custom sauna room designed and built into your space.",
+    "index": "",
+    "photos": 7
+  },
+  "head": {
+    "title": "Indoor Saunas in Toronto & the GTA | The Toronto Sauna Co.",
+    "description": "Indoor saunas from The Toronto Sauna Co.: ready-made cedar and Thermo Grandis sauna kits from $8,070, or a custom sauna room designed and built into your space.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/indoor",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Indoor Saunas in Toronto & the GTA | The Toronto Sauna Co.",
+      "description": "Indoor saunas from The Toronto Sauna Co.: ready-made cedar and Thermo Grandis sauna kits from $8,070, or a custom sauna room designed and built into your space.",
+      "url": "https://www.thetorontosaunaco.com/saunas/indoor",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.thetorontosaunaco.com/saunas/indoor",
+            "name": "Indoor Saunas in Toronto & the GTA | The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com/saunas/indoor",
+            "description": "Indoor saunas from The Toronto Sauna Co.: ready-made cedar and Thermo Grandis sauna kits from $8,070, or a custom sauna room designed and built into your space."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Indoor Saunas",
+                "item": "https://www.thetorontosaunaco.com/saunas/indoor"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Indoor Saunas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Indoor saunas",
+          "text": "Indoor saunas"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "A sauna inside your <em>home.</em>",
+          "text": "A sauna inside your home."
+        },
+        {
+          "type": "paragraph",
+          "html": "Two ways to bring the heat indoors: a ready-made sauna kit in a set size, or a custom room we design and build to fit your space exactly.",
+          "text": "Two ways to bring the heat indoors: a ready-made sauna kit in a set size, or a custom room we design and build to fit your space exactly."
+        }
+      ]
+    },
+    {
+      "name": "Two paths",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/saunas/indoor/kits",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/8754f99693bdfbbce7e107d10e29046c.jpg",
+              "alt": "Element Loft indoor sauna kit with warm LED lighting, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Ready-made",
+              "text": "Ready-made"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Indoor Sauna Kits",
+              "text": "Indoor Sauna Kits"
+            },
+            {
+              "type": "paragraph",
+              "html": "Prebuilt sauna rooms in set sizes that assemble in a basement, spare room, gym or condo. Delivered and installed in about a day.",
+              "text": "Prebuilt sauna rooms in set sizes that assemble in a basement, spare room, gym or condo. Delivered and installed in about a day."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "html": "✓Pure Cube Indoor, Element and classic cedar cabins",
+                  "text": "✓Pure Cube Indoor, Element and classic cedar cabins"
+                },
+                {
+                  "html": "✓Seats 1 to 6, from 54¾\" square to 6′ × 8′",
+                  "text": "✓Seats 1 to 6, from 54¾\" square to 6′ × 8′"
+                },
+                {
+                  "html": "✓From $8,070",
+                  "text": "✓From $8,070"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Shop indoor kits →",
+              "text": "Shop indoor kits →"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/indoor/custom",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/9bd7db102ef90d6bb0b132091aeeba15.jpg",
+              "alt": "Custom indoor sauna room in cedar with HUUM heater and backrest, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Made to measure",
+              "text": "Made to measure"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Custom Indoor Saunas",
+              "text": "Custom Indoor Saunas"
+            },
+            {
+              "type": "paragraph",
+              "html": "A sauna room designed around your space and built on site, for homes, condos, gyms, spas and wellness studios.",
+              "text": "A sauna room designed around your space and built on site, for homes, condos, gyms, spas and wellness studios."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "html": "✓Any size or shape, including odd corners and sloped ceilings",
+                  "text": "✓Any size or shape, including odd corners and sloped ceilings"
+                },
+                {
+                  "html": "✓Your choice of wood, glass, benches and lighting",
+                  "text": "✓Your choice of wood, glass, benches and lighting"
+                },
+                {
+                  "html": "✓Free design consultation",
+                  "text": "✓Free design consultation"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Explore custom saunas →",
+              "text": "Explore custom saunas →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not sure",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Not sure which is right for you?",
+          "text": "Not sure which is right for you?"
+        },
+        {
+          "type": "paragraph",
+          "html": "A kit is faster and more affordable. Custom makes sense when your room is unusual, or you want the sauna built right into the walls. Tell us about your space and we’ll recommend the best fit.",
+          "text": "A kit is faster and more affordable. Custom makes sense when your room is unusual, or you want the sauna built right into the walls. Tell us about your space and we’ll recommend the best fit."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a free consultation</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Book a free consultation Call (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

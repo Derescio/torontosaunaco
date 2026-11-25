@@ -1,0 +1,901 @@
+{
+  "file": "ShowerSkylight.dc.html",
+  "route": "/outdoor-showers/skylight",
+  "pageMap": {
+    "route": "/outdoor-showers/skylight",
+    "title": "The Skylight Washroom & Shower Combo | The Toronto Sauna Co.",
+    "description": "Skylight Washroom & Shower Combo: A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic… Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "The Skylight Washroom & Shower Combo | The Toronto Sauna Co.",
+    "description": "Skylight Washroom & Shower Combo: A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic… Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/outdoor-showers/skylight",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Skylight Washroom & Shower Combo | The Toronto Sauna Co.",
+      "description": "Skylight Washroom & Shower Combo: A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic… Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/outdoor-showers/skylight",
+      "image": "https://www.thetorontosaunaco.com/_blob/67993d876cbf3a93f02820beee16a5d8"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Skylight Washroom & Shower Combo",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/67993d876cbf3a93f02820beee16a5d8"
+        ],
+        "url": "https://www.thetorontosaunaco.com/outdoor-showers/skylight",
+        "description": "Skylight Washroom & Shower Combo: A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic… Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Outdoor shower",
+      "section": "plunge",
+      "basePrice": null,
+      "buildLabel": "Build your outdoor shower",
+      "related": [
+        "Compare other outdoor <span style=\"font-style: italic\">showers</span>",
+        [
+          "View All Outdoor Showers",
+          "/outdoor-showers"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+      "height": 4000,
+      "file": "ShowerSkylight",
+      "name": "The Skylight Washroom & Shower Combo",
+      "series": "Western Red Cedar",
+      "collection": null,
+      "intro": "A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic skylight dome. Western red cedar walls and floor, and it assembles in under four hours. Ideal for a cottage, pool or sauna setup.",
+      "highlights": [
+        "7' diameter",
+        "Washroom + shower",
+        "Acrylic skylight",
+        "Made in Canada"
+      ],
+      "photos": [
+        "The Skylight Washroom & Shower Combo",
+        "Detail",
+        "In use"
+      ],
+      "specs": [
+        [
+          "Diameter",
+          "84\" (213 cm), a 7' cedar barrel"
+        ],
+        [
+          "Overall height",
+          "106\" (269 cm) with the skylight dome"
+        ],
+        [
+          "Wall height",
+          "83\" (211 cm)"
+        ],
+        [
+          "Skylight roof",
+          "Acrylic dome, 23\" (59 cm) high"
+        ],
+        [
+          "Door",
+          "25½\" (65 cm) wide × 62¾\" (159 cm) tall"
+        ],
+        [
+          "Layout",
+          "Divided interior: a washroom side and a shower side"
+        ],
+        [
+          "Assembly",
+          "Under 4 hours"
+        ],
+        [
+          "Wood",
+          "Western red cedar, knotty or clear"
+        ],
+        [
+          "Hardware",
+          "Sold separately: Premium Shower Hardware add-on"
+        ],
+        [
+          "Water",
+          "Plumbing planned with you in your quote"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Wood",
+          "desc": "Choose the cedar for your shower.",
+          "groups": [
+            {
+              "id": "wood",
+              "title": "Choose your wood type",
+              "type": "single",
+              "required": true,
+              "default": "knotty",
+              "base": true,
+              "options": [
+                {
+                  "id": "knotty",
+                  "label": "Knotty Western Red Cedar",
+                  "sub": "Rustic, characterful grain",
+                  "price": null,
+                  "photo": "Knotty cedar",
+                  "img": "./assets/67993d876cbf3a93f02820beee16a5d8.jpg",
+                  "alt": "Skylight cedar barrel washroom and shower combo with acrylic dome, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "clear",
+                  "label": "Clear Western Red Cedar",
+                  "sub": "Smooth, knot-free finish. Upgrade, priced on request",
+                  "price": null,
+                  "photo": "Clear cedar",
+                  "img": "./assets/ae6b9794d6b3e0257f193e099ae00fba.jpg",
+                  "alt": "Clear western red cedar sample, The Toronto Sauna Co."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw",
+          "title": "Hardware",
+          "desc": "Buy the shower on its own, or add our premium hardware.",
+          "groups": [
+            {
+              "id": "hardware",
+              "title": "Shower hardware",
+              "type": "single",
+              "required": true,
+              "default": "hw_none",
+              "note": "Showers ship without hardware. Add the Premium Shower Hardware for a rain head, hand shower and hot and cold mixing valve. A plumber may be needed for hot water.",
+              "options": [
+                {
+                  "id": "hw_none",
+                  "label": "Unit only",
+                  "sub": "No hardware: I have my own or will add it later",
+                  "price": 0,
+                  "none": true,
+                  "photo": "Unit only"
+                },
+                {
+                  "id": "hw_prem",
+                  "label": "Premium Shower Hardware",
+                  "sub": "Brushed stainless steel: round rain head, hand shower on a slide bar, hot and cold mixing valve. A plumber may be needed for hot water.",
+                  "price": null,
+                  "photo": "Premium Shower Hardware",
+                  "img": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+                  "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Plunge & Shower",
+          "/cold-plunges"
+        ],
+        [
+          "Outdoor Showers",
+          "/outdoor-showers"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/67993d876cbf3a93f02820beee16a5d8.jpg",
+          "alt": "Skylight cedar barrel washroom and shower combo with acrylic dome, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/1c5b273095e74ce3af7fca7d689a84f5.jpg",
+          "alt": "Skylight washroom and shower combo floor plan view, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "about": {
+        "title": "Washroom and shower in one",
+        "lede": "The Skylight adds a private changing, washroom and shower space next to your sauna, pool or cottage.",
+        "items": [
+          [
+            "Two spaces, one barrel",
+            "A divided 7' interior gives you a washroom side and a shower side."
+          ],
+          [
+            "Daylight from above",
+            "A clear acrylic skylight dome fills it with natural light."
+          ],
+          [
+            "Cedar inside and out",
+            "Western red cedar walls and floor, in knotty or clear grade."
+          ],
+          [
+            "Fixtures and plumbing",
+            "Washroom fixtures and plumbing are planned with you in your quote; add the Premium Shower Hardware for the shower side."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/6d1a523467e9e52101383936ed8a9b69.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Outdoor Showers",
+              "href": "/outdoor-showers"
+            },
+            {
+              "text": "The Skylight Washroom & Shower Combo"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "{{galCount}}",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Skylight Washroom &amp; Shower Combo",
+              "text": "Photo: The Skylight Washroom & Shower Combo"
+            },
+            {
+              "type": "text",
+              "html": "The Skylight Washroom &amp; Shower Combo",
+              "text": "The Skylight Washroom & Shower Combo"
+            },
+            {
+              "type": "text",
+              "html": "Detail",
+              "text": "Detail"
+            },
+            {
+              "type": "text",
+              "html": "In use",
+              "text": "In use"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar · Outdoor shower",
+          "text": "Western Red Cedar · Outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Skylight Washroom &amp; Shower Combo",
+          "text": "The Skylight Washroom & Shower Combo"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic skylight dome. Western red cedar walls and floor, and it assembles in under four hours. Ideal for a cottage, pool or sauna setup.",
+          "text": "A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic skylight dome. Western red cedar walls and floor, and it assembles in under four hours. Ideal for a cottage, pool or sauna setup."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "7' diameter",
+              "text": "7' diameter"
+            },
+            {
+              "html": "Washroom + shower",
+              "text": "Washroom + shower"
+            },
+            {
+              "html": "Acrylic skylight",
+              "text": "Acrylic skylight"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
+          "text": "Build Yours Book a Showroom Visit"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your outdoor shower",
+          "text": "Build your outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
+              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{g.title}}",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
+          "text": "YOUR BUILD {{subtotalText}}+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart.Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "About this sauna",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Washroom and shower in one",
+          "text": "Washroom and shower in one"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Skylight adds a private changing, washroom and shower space next to your sauna, pool or cottage.",
+          "text": "The Skylight adds a private changing, washroom and shower space next to your sauna, pool or cottage."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Two spaces, one barrel",
+          "text": "Two spaces, one barrel"
+        },
+        {
+          "type": "paragraph",
+          "html": "A divided 7' interior gives you a washroom side and a shower side.",
+          "text": "A divided 7' interior gives you a washroom side and a shower side."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Daylight from above",
+          "text": "Daylight from above"
+        },
+        {
+          "type": "paragraph",
+          "html": "A clear acrylic skylight dome fills it with natural light.",
+          "text": "A clear acrylic skylight dome fills it with natural light."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Cedar inside and out",
+          "text": "Cedar inside and out"
+        },
+        {
+          "type": "paragraph",
+          "html": "Western red cedar walls and floor, in knotty or clear grade.",
+          "text": "Western red cedar walls and floor, in knotty or clear grade."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Fixtures and plumbing",
+          "text": "Fixtures and plumbing"
+        },
+        {
+          "type": "paragraph",
+          "html": "Washroom fixtures and plumbing are planned with you in your quote; add the Premium Shower Hardware for the shower side.",
+          "text": "Washroom fixtures and plumbing are planned with you in your quote; add the Premium Shower Hardware for the shower side."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Diameter",
+                "text": "Diameter"
+              },
+              "details": {
+                "html": "84\" (213 cm), a 7' cedar barrel",
+                "text": "84\" (213 cm), a 7' cedar barrel"
+              }
+            },
+            {
+              "term": {
+                "html": "Overall height",
+                "text": "Overall height"
+              },
+              "details": {
+                "html": "106\" (269 cm) with the skylight dome",
+                "text": "106\" (269 cm) with the skylight dome"
+              }
+            },
+            {
+              "term": {
+                "html": "Wall height",
+                "text": "Wall height"
+              },
+              "details": {
+                "html": "83\" (211 cm)",
+                "text": "83\" (211 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Skylight roof",
+                "text": "Skylight roof"
+              },
+              "details": {
+                "html": "Acrylic dome, 23\" (59 cm) high",
+                "text": "Acrylic dome, 23\" (59 cm) high"
+              }
+            },
+            {
+              "term": {
+                "html": "Door",
+                "text": "Door"
+              },
+              "details": {
+                "html": "25½\" (65 cm) wide × 62¾\" (159 cm) tall",
+                "text": "25½\" (65 cm) wide × 62¾\" (159 cm) tall"
+              }
+            },
+            {
+              "term": {
+                "html": "Layout",
+                "text": "Layout"
+              },
+              "details": {
+                "html": "Divided interior: a washroom side and a shower side",
+                "text": "Divided interior: a washroom side and a shower side"
+              }
+            },
+            {
+              "term": {
+                "html": "Assembly",
+                "text": "Assembly"
+              },
+              "details": {
+                "html": "Under 4 hours",
+                "text": "Under 4 hours"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Western red cedar, knotty or clear",
+                "text": "Western red cedar, knotty or clear"
+              }
+            },
+            {
+              "term": {
+                "html": "Hardware",
+                "text": "Hardware"
+              },
+              "details": {
+                "html": "Sold separately: Premium Shower Hardware add-on",
+                "text": "Sold separately: Premium Shower Hardware add-on"
+              }
+            },
+            {
+              "term": {
+                "html": "Water",
+                "text": "Water"
+              },
+              "details": {
+                "html": "Plumbing planned with you in your quote",
+                "text": "Plumbing planned with you in your quote"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/6d1a523467e9e52101383936ed8a9b69.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. <strong>Quoted</strong>",
+          "text": "Delivery to your doorDelivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other outdoor <em>showers</em>",
+          "text": "Compare other outdoor showers"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/outdoor-showers\">View All Outdoor Showers</a> <a href=\"/cold-plunges\">Cold Plunges</a>",
+          "text": "View All Outdoor Showers Cold Plunges"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

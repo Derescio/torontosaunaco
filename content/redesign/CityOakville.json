@@ -1,0 +1,661 @@
+{
+  "file": "CityOakville.dc.html",
+  "route": "/service-areas/oakville",
+  "pageMap": {
+    "route": "/service-areas/oakville",
+    "title": "Backyard Saunas in Oakville | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Oakville, delivered and installed for $1,750. Serving Old Oakville, Morrison, Eastlake and more. Visit our King Township showroom.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "Backyard Saunas in Oakville | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Oakville, delivered and installed for $1,750. Serving Old Oakville, Morrison, Eastlake and more. Visit our King Township showroom.",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas/oakville",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas in Oakville | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas in Oakville, delivered and installed for $1,750. Serving Old Oakville, Morrison, Eastlake and more. Visit our King Township showroom.",
+      "url": "https://www.thetorontosaunaco.com/service-areas/oakville",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Backyard sauna sales, delivery and installation in Oakville",
+            "serviceType": "Backyard sauna installation",
+            "provider": {
+              "@id": "https://www.thetorontosaunaco.com/#store"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Oakville",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ontario"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Delivery and installation",
+              "price": "1750.00",
+              "priceCurrency": "CAD"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/service-areas/oakville",
+            "url": "https://www.thetorontosaunaco.com/service-areas/oakville",
+            "name": "Backyard Saunas in Oakville",
+            "description": "Premium backyard saunas in Oakville, delivered and installed for $1,750. Serving Old Oakville, Morrison, Eastlake and more. Visit our King Township showroom."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Oakville",
+                "item": "https://www.thetorontosaunaco.com/service-areas/oakville"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for a backyard sauna in Oakville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Heritage districts and lots near regulated ravines can need extra review. We check before you order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "My lot backs onto a ravine. Can I still have a sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Usually, yes. Lots near watercourses like Sixteen Mile Creek may be regulated by Conservation Halton, so we place the sauna away from the slope and suggest confirming with them early."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can the sauna match my home's design?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Choose clear or knotty cedar, glass options, lighting and heater style. We'll help you match your home and landscaping."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does delivery and installation cost in Oakville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery and installation is $1,750 anywhere in Ontario, including Oakville. Delivery only is $450. HST is shown separately on every quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What heater size does my sauna need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas",
+              "href": "/service-areas"
+            },
+            {
+              "text": "Oakville"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Halton Region",
+          "text": "Halton Region"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Saunas in <em><strong>Oakville</strong></em>",
+          "text": "Backyard Saunas in Oakville"
+        },
+        {
+          "type": "paragraph",
+          "html": "Oakville's lakeside estates and leafy neighbourhoods set a high bar, and our saunas meet it. We design, deliver and install premium cedar saunas across Oakville, from Morrison and Eastlake to Glen Abbey and Bronte.",
+          "text": "Oakville's lakeside estates and leafy neighbourhoods set a high bar, and our saunas meet it. We design, deliver and install premium cedar saunas across Oakville, from Morrison and Eastlake to Glen Abbey and Bronte."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Free Site Consult</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Book a Free Site Consult Call (437) 429-6623"
+        },
+        {
+          "type": "image",
+          "src": "./assets/216a1b08a9b8491d3fc7161527ddc7bc.jpg",
+          "alt": "Red cedar cube sauna beside a suburban backyard pool, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>$1,750 delivery and installation</strong>Anywhere in Ontario, including Oakville. Delivery only: $450.",
+          "text": "$1,750 delivery and installationAnywhere in Ontario, including Oakville. Delivery only: $450."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom in King Township</strong>17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "Showroom in King Township17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "5-star Google reviewsReal customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>Western Red Cedar saunas built for Ontario winters.",
+          "text": "Made in CanadaWestern Red Cedar saunas built for Ontario winters."
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhoods",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Where we install",
+          "text": "Where we install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Serving all of <em><strong>Oakville.</strong></em>",
+          "text": "Serving all of Oakville."
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install backyard saunas across Oakville, including Old Oakville, Morrison, Eastlake, Glen Abbey, Bronte, Joshua Creek, Clearview and Ford.",
+          "text": "We design, deliver and install backyard saunas across Oakville, including Old Oakville, Morrison, Eastlake, Glen Abbey, Bronte, Joshua Creek, Clearview and Ford."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Old Oakville",
+              "text": "Old Oakville"
+            },
+            {
+              "html": "Morrison",
+              "text": "Morrison"
+            },
+            {
+              "html": "Eastlake",
+              "text": "Eastlake"
+            },
+            {
+              "html": "Glen Abbey",
+              "text": "Glen Abbey"
+            },
+            {
+              "html": "Bronte",
+              "text": "Bronte"
+            },
+            {
+              "html": "Joshua Creek",
+              "text": "Joshua Creek"
+            },
+            {
+              "html": "Clearview",
+              "text": "Clearview"
+            },
+            {
+              "html": "Ford",
+              "text": "Ford"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local setting",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Southeast Oakville estates",
+          "text": "Southeast Oakville estates"
+        },
+        {
+          "type": "paragraph",
+          "html": "Large lots in Morrison, Eastlake and Ford suit our signature saunas. The Orion's glass on every side brings the garden in; the Hudson's black metal siding suits modern rebuilds.",
+          "text": "Large lots in Morrison, Eastlake and Ford suit our signature saunas. The Orion's glass on every side brings the garden in; the Hudson's black metal siding suits modern rebuilds."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Heritage districts and ravines",
+          "text": "Heritage districts and ravines"
+        },
+        {
+          "type": "paragraph",
+          "html": "Oakville has several heritage conservation districts, including Old Oakville and Trafalgar Road, and many lots back onto ravines such as Sixteen Mile Creek, regulated by Conservation Halton. We'll flag both early so your sauna goes in without surprises.",
+          "text": "Oakville has several heritage conservation districts, including Old Oakville and Trafalgar Road, and many lots back onto ravines such as Sixteen Mile Creek, regulated by Conservation Halton. We'll flag both early so your sauna goes in without surprises."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Finished like the house",
+          "text": "Finished like the house"
+        },
+        {
+          "type": "paragraph",
+          "html": "Clear or knotty cedar, bronze or mirrored glass, LED lighting and Wi-Fi heater control let us match your sauna to the design of your home and landscaping.",
+          "text": "Clear or knotty cedar, bronze or mirrored glass, LED lighting and Wi-Fi heater control let us match your sauna to the design of your home and landscaping."
+        }
+      ]
+    },
+    {
+      "name": "Picks",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Recommended for Oakville",
+          "text": "Recommended for Oakville"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas we recommend in <em><strong>Oakville.</strong></em>",
+          "text": "Saunas we recommend in Oakville."
+        },
+        {
+          "type": "paragraph",
+          "html": "Statement designs for Oakville's estate homes and modern rebuilds.",
+          "text": "Statement designs for Oakville's estate homes and modern rebuilds."
+        },
+        {
+          "type": "link",
+          "html": "Shop all saunas",
+          "text": "Shop all saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/orion",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/9973e9da12e43a602a48cc4fbcd8c9b4.jpg",
+              "alt": "Orion black outdoor sauna with glass corner on a lakeside deck, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Orion",
+              "text": "The Orion"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person, all glass",
+              "text": "5–6 person, all glass"
+            },
+            {
+              "type": "text",
+              "html": "$18,735",
+              "text": "$18,735"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/hudson",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/6712f61d57723a958be2a6b2d97f122c.jpg",
+              "alt": "Hudson outdoor sauna with peaked roof, cedar gable and glass front, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Hudson",
+              "text": "The Hudson"
+            },
+            {
+              "type": "text",
+              "html": "Black metal and cedar",
+              "text": "Black metal and cedar"
+            },
+            {
+              "type": "text",
+              "html": "$17,489",
+              "text": "$17,489"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/neptune",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/81b56bdb9fa387d62ffde5ad19c08b8e.jpg",
+              "alt": "Neptune black outdoor sauna with glass front and glass door among autumn trees, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Neptune",
+              "text": "The Neptune"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person",
+              "text": "5–6 person"
+            },
+            {
+              "type": "text",
+              "html": "$17,896",
+              "text": "$17,896"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/studio-six-max",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/d2bc1b5efc590e9de5b40003b3cffa28.jpg",
+              "alt": "Studio Six Max black outdoor sauna with picture window beside a backyard pool in Toronto, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Studio Six Max",
+              "text": "The Studio Six Max"
+            },
+            {
+              "type": "text",
+              "html": "4–5 person, four-season",
+              "text": "4–5 person, four-season"
+            },
+            {
+              "type": "text",
+              "html": "$22,350",
+              "text": "$22,350"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "How it works",
+          "text": "How it works"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>steam.</strong></em>",
+          "text": "From first call to first steam."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "html": "<strong>01</strong> <strong>Consult</strong> Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+              "text": "01 Consult Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+            },
+            {
+              "html": "<strong>02</strong> <strong>Site check</strong> We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+              "text": "02 Site check We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+            },
+            {
+              "html": "<strong>03</strong> <strong>Spec and quote</strong> We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+              "text": "03 Spec and quote We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+            },
+            {
+              "html": "<strong>04</strong> <strong>Deliver and install</strong> Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+              "text": "04 Deliver and install Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-heaters\">Compare heaters</a> <a href=\"/cold-plunges\">Add a cold plunge</a> <a href=\"/accessories\">Sauna accessories</a>",
+          "text": "Compare heaters Add a cold plunge Sauna accessories"
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Reviews",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "text": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "cite": "<strong>Matthew Alexander</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "text": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "cite": "<strong>Caterina Imperium</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Questions",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas in Oakville: <em><strong>FAQ.</strong></em>",
+          "text": "Backyard saunas in Oakville: FAQ."
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a permit for a backyard sauna in Oakville?",
+          "text": "Do I need a permit for a backyard sauna in Oakville?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Heritage districts and lots near regulated ravines can need extra review. We check before you order.",
+              "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Heritage districts and lots near regulated ravines can need extra review. We check before you order."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "My lot backs onto a ravine. Can I still have a sauna?",
+          "text": "My lot backs onto a ravine. Can I still have a sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Usually, yes. Lots near watercourses like Sixteen Mile Creek may be regulated by Conservation Halton, so we place the sauna away from the slope and suggest confirming with them early.",
+              "text": "Usually, yes. Lots near watercourses like Sixteen Mile Creek may be regulated by Conservation Halton, so we place the sauna away from the slope and suggest confirming with them early."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can the sauna match my home's design?",
+          "text": "Can the sauna match my home's design?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Choose clear or knotty cedar, glass options, lighting and heater style. We'll help you match your home and landscaping.",
+              "text": "Yes. Choose clear or knotty cedar, glass options, lighting and heater style. We'll help you match your home and landscaping."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much does delivery and installation cost in Oakville?",
+          "text": "How much does delivery and installation cost in Oakville?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery and installation is $1,750 anywhere in Ontario, including Oakville. Delivery only is $450. HST is shown separately on every quote.",
+              "text": "Delivery and installation is $1,750 anywhere in Ontario, including Oakville. Delivery only is $450. HST is shown separately on every quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What heater size does my sauna need?",
+          "text": "What heater size does my sauna need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances.",
+              "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nearby",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Also serving nearby:</strong> <a href=\"/service-areas/mississauga\">Mississauga</a><a href=\"/service-areas/burlington\">Burlington</a><a href=\"/service-areas/toronto\">Toronto</a><a href=\"/service-areas/niagara-on-the-lake\">Niagara-on-the-Lake</a> <a href=\"/service-areas\">All service areas →</a>",
+          "text": "Also serving nearby: MississaugaBurlingtonTorontoNiagara-on-the-Lake All service areas →"
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for a sauna in <em><strong>Oakville?</strong></em>",
+          "text": "Ready for a sauna in Oakville?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Site Consult</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Book a Site Consult (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

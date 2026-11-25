@@ -1,0 +1,186 @@
+{
+  "file": "ServiceAreas.dc.html",
+  "route": "/service-areas",
+  "pageMap": {
+    "route": "/service-areas",
+    "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+    "index": "",
+    "photos": 7
+  },
+  "head": {
+    "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+      "url": "https://www.thetorontosaunaco.com/service-areas",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "url": "https://www.thetorontosaunaco.com/service-areas",
+            "name": "Backyard Sauna Service Areas",
+            "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill, Vaughan, King, Whitby, Muskoka, Haliburton, Collingwood, Prince Edward County and Niagara-on-the-Lake."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              }
+            ]
+          },
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Toronto"
+              },
+              {
+                "@type": "City",
+                "name": "Mississauga"
+              },
+              {
+                "@type": "City",
+                "name": "Markham"
+              },
+              {
+                "@type": "City",
+                "name": "Aurora"
+              },
+              {
+                "@type": "City",
+                "name": "Richmond Hill"
+              },
+              {
+                "@type": "City",
+                "name": "Vaughan"
+              },
+              {
+                "@type": "City",
+                "name": "King Township"
+              },
+              {
+                "@type": "City",
+                "name": "King City"
+              },
+              {
+                "@type": "City",
+                "name": "Brooklin"
+              },
+              {
+                "@type": "City",
+                "name": "Whitby"
+              },
+              {
+                "@type": "City",
+                "name": "Prince Edward County"
+              },
+              {
+                "@type": "City",
+                "name": "Niagara-on-the-Lake"
+              },
+              {
+                "@type": "City",
+                "name": "Oakville"
+              },
+              {
+                "@type": "City",
+                "name": "Burlington"
+              },
+              {
+                "@type": "City",
+                "name": "Muskoka"
+              },
+              {
+                "@type": "City",
+                "name": "Haliburton"
+              },
+              {
+                "@type": "City",
+                "name": "Collingwood"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Across the GTA and Ontario",
+          "text": "Across the GTA and Ontario"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Sauna <em><strong>Service Areas</strong></em>",
+          "text": "Backyard Sauna Service Areas"
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install premium backyard saunas across the Greater Toronto Area and Ontario, from our showroom in King Township. Delivery and installation is $1,750 anywhere in Ontario.",
+          "text": "We design, deliver and install premium backyard saunas across the Greater Toronto Area and Ontario, from our showroom in King Township. Delivery and installation is $1,750 anywhere in Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Section 2",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<a href=\"/service-areas/toronto\">City of Toronto <strong>Toronto</strong> Rosedale, Forest Hill, Lawrence Park, Leaside <strong>Backyard saunas in Toronto</strong></a> <a href=\"/service-areas/mississauga\">Peel Region <strong>Mississauga</strong> Lorne Park, Mineola, Port Credit, Sheridan Homelands <strong>Backyard saunas in Mississauga</strong></a> <a href=\"/service-areas/markham\">York Region <strong>Markham</strong> Unionville, Angus Glen, Cachet, Victoria Manor <strong>Backyard saunas in Markham</strong></a> <a href=\"/service-areas/aurora\">York Region <strong>Aurora</strong> Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington <strong>Backyard saunas in Aurora</strong></a> <a href=\"/service-areas/richmond-hill\">York Region <strong>Richmond Hill</strong> Bayview Hill, Mill Pond, Oak Ridges, Lake Wilcox <strong>Backyard saunas in Richmond Hill</strong></a> <a href=\"/service-areas/vaughan\">York Region <strong>Vaughan</strong> Kleinburg, Woodbridge, Maple, Thornhill Woods <strong>Backyard saunas in Vaughan</strong></a> <a href=\"/service-areas/king-township\">York Region <strong>King Township</strong> Nobleton, Schomberg, Kettleby, Pottageville <strong>Backyard saunas in King Township</strong></a> <a href=\"/service-areas/king-city\">King Township <strong>King City</strong> King City village, Kingscross, Eversley, Temperanceville <strong>Backyard saunas in King City</strong></a> <a href=\"/service-areas/brooklin\">Whitby, Durham Region <strong>Brooklin</strong> Brooklin village, North Brooklin, Ashburn, Myrtle <strong>Backyard saunas in Brooklin</strong></a> <a href=\"/service-areas/whitby\">Durham Region <strong>Whitby</strong> Port Whitby, Lynde Shores, Williamsburg, Rolling Acres <strong>Backyard saunas in Whitby</strong></a> <a href=\"/service-areas/prince-edward-county\">Eastern Ontario <strong>Prince Edward County</strong> Picton, Wellington, Bloomfield, Milford <strong>Backyard saunas in Prince Edward County</strong></a> <a href=\"/service-areas/niagara-on-the-lake\">Niagara Region <strong>Niagara-on-the-Lake</strong> Old Town, Virgil, St. Davids, Queenston <strong>Backyard saunas in Niagara-on-the-Lake</strong></a> <a href=\"/service-areas/oakville\">Halton Region <strong>Oakville</strong> Old Oakville, Morrison, Eastlake, Glen Abbey <strong>Backyard saunas in Oakville</strong></a> <a href=\"/service-areas/burlington\">Halton Region <strong>Burlington</strong> Roseland, Shoreacres, Tyandaga, Millcroft <strong>Backyard saunas in Burlington</strong></a> <a href=\"/service-areas/muskoka\">Cottage country <strong>Muskoka</strong> Lake Muskoka, Lake Rosseau, Lake Joseph, Port Carling <strong>Backyard saunas in Muskoka</strong></a> <a href=\"/service-areas/haliburton\">Haliburton Highlands <strong>Haliburton</strong> Haliburton Village, Minden, Kennisis Lake, Eagle Lake <strong>Backyard saunas in Haliburton</strong></a> <a href=\"/service-areas/collingwood\">Southern Georgian Bay <strong>Collingwood</strong> Downtown Collingwood, Lighthouse Point, Cranberry, Blue Mountain <strong>Backyard saunas in Collingwood</strong></a>",
+          "text": "City of Toronto Toronto Rosedale, Forest Hill, Lawrence Park, Leaside Backyard saunas in Toronto Peel Region Mississauga Lorne Park, Mineola, Port Credit, Sheridan Homelands Backyard saunas in Mississauga York Region Markham Unionville, Angus Glen, Cachet, Victoria Manor Backyard saunas in Markham York Region Aurora Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington Backyard saunas in Aurora York Region Richmond Hill Bayview Hill, Mill Pond, Oak Ridges, Lake Wilcox Backyard saunas in Richmond Hill York Region Vaughan Kleinburg, Woodbridge, Maple, Thornhill Woods Backyard saunas in Vaughan York Region King Township Nobleton, Schomberg, Kettleby, Pottageville Backyard saunas in King Township King Township King City King City village, Kingscross, Eversley, Temperanceville Backyard saunas in King City Whitby, Durham Region Brooklin Brooklin village, North Brooklin, Ashburn, Myrtle Backyard saunas in Brooklin Durham Region Whitby Port Whitby, Lynde Shores, Williamsburg, Rolling Acres Backyard saunas in Whitby Eastern Ontario Prince Edward County Picton, Wellington, Bloomfield, Milford Backyard saunas in Prince Edward County Niagara Region Niagara-on-the-Lake Old Town, Virgil, St. Davids, Queenston Backyard saunas in Niagara-on-the-Lake Halton Region Oakville Old Oakville, Morrison, Eastlake, Glen Abbey Backyard saunas in Oakville Halton Region Burlington Roseland, Shoreacres, Tyandaga, Millcroft Backyard saunas in Burlington Cottage country Muskoka Lake Muskoka, Lake Rosseau, Lake Joseph, Port Carling Backyard saunas in Muskoka Haliburton Highlands Haliburton Haliburton Village, Minden, Kennisis Lake, Eagle Lake Backyard saunas in Haliburton Southern Georgian Bay Collingwood Downtown Collingwood, Lighthouse Point, Cranberry, Blue Mountain Backyard saunas in Collingwood"
+        },
+        {
+          "type": "paragraph",
+          "html": "Don't see your town? We deliver and install anywhere in Ontario. <a href=\"/contact\">Ask us about your area</a> or call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Don't see your town? We deliver and install anywhere in Ontario. Ask us about your area or call (437) 429-6623."
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

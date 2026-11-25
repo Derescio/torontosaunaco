@@ -1,0 +1,933 @@
+{
+  "file": "PlungeGlacier.dc.html",
+  "route": "/cold-plunges/glacier",
+  "pageMap": {
+    "route": "/cold-plunges/glacier",
+    "title": "The Glacier Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+    "description": "Glacier Plunge Tub: Our largest lie-down cold plunge, made in Canada. Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 19
+  },
+  "head": {
+    "title": "The Glacier Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+    "description": "Glacier Plunge Tub: Our largest lie-down cold plunge, made in Canada. Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/cold-plunges/glacier",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Glacier Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+      "description": "Glacier Plunge Tub: Our largest lie-down cold plunge, made in Canada. Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/cold-plunges/glacier",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Glacier Plunge Tub",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+        ],
+        "url": "https://www.thetorontosaunaco.com/cold-plunges/glacier",
+        "description": "Glacier Plunge Tub: Our largest lie-down cold plunge, made in Canada. Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "4389.00",
+          "url": "https://www.thetorontosaunaco.com/cold-plunges/glacier",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Cold plunge",
+      "section": "plunge",
+      "basePrice": 4389,
+      "buildLabel": "Build your cold plunge",
+      "related": [
+        "Compare other cold <span style=\"font-style: italic\">plunges</span>",
+        [
+          "View All Cold Plunges",
+          "/cold-plunges"
+        ],
+        [
+          "Pair It With a Sauna",
+          "/saunas/best-sellers"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Chiller electrical connections must be made by a licensed electrician.",
+      "height": 4000,
+      "file": "PlungeGlacier",
+      "name": "The Glacier Plunge Tub",
+      "series": "Dundalk Collection",
+      "collection": "Dundalk Collection",
+      "intro": "Our largest lie-down cold plunge, made in Canada. Choose a 304 stainless steel or white HDPE plastic interior, wrapped in a clear or knotty Western Red Cedar skirt. It holds about 190 gallons (720 L), and an easy garden hose drain lets you empty or reuse the water. Add a chiller to keep it cold all year, or fill it with ice.",
+      "highlights": [
+        "190 gallons (720 L)",
+        "Stainless or plastic interior",
+        "Clear or knotty red cedar",
+        "Made in Canada"
+      ],
+      "photos": [
+        "362CPN_10.jpg",
+        "362CPN_20.jpg",
+        "362CPN_40.jpg"
+      ],
+      "specs": [
+        [
+          "Model",
+          "362CP"
+        ],
+        [
+          "Exterior dimensions",
+          "71\" L × 33\" W × 25\" H"
+        ],
+        [
+          "Capacity",
+          "About 190 gallons (720 L)"
+        ],
+        [
+          "Interior",
+          "304 stainless steel or white HDPE plastic"
+        ],
+        [
+          "Exterior",
+          "Western Red Cedar, clear or knotty"
+        ],
+        [
+          "Drain",
+          "Garden hose drain"
+        ],
+        [
+          "Dry weight",
+          "About 400 lb (181 kg)"
+        ],
+        [
+          "Crate weight",
+          "402 lb (182 kg)"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited (tub)"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Interior",
+          "desc": "Choose the interior of your tub.",
+          "prompt": "Choose your interior",
+          "groups": [
+            {
+              "id": "liner",
+              "title": "Interior liner",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "ln_hdpe",
+                  "label": "White Plastic Interior",
+                  "sub": "Seamless, durable HDPE liner",
+                  "price": 4389,
+                  "img": "./assets/37d93914bbc4f25317a0c09c6018ff97.jpg",
+                  "alt": "Glacier cold plunge white plastic interior, The Toronto Sauna Co."
+                },
+                {
+                  "id": "ln_ss",
+                  "label": "Stainless Steel Interior",
+                  "sub": "Premium 304 stainless, easy to clean",
+                  "price": 6024.5,
+                  "img": "./assets/66a9964b3c19cd0db07432feff188853.jpg",
+                  "alt": "Glacier cold plunge stainless steel interior, The Toronto Sauna Co."
+                }
+              ],
+              "base": true,
+              "default": "ln_hdpe"
+            }
+          ]
+        },
+        {
+          "id": "clad",
+          "title": "Exterior",
+          "desc": "Choose the grade of Western Red Cedar.",
+          "prompt": "Choose your exterior",
+          "groups": [
+            {
+              "id": "clad",
+              "title": "Exterior cladding",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "cl_knotty",
+                  "label": "Knotty Cedar on Outside",
+                  "sub": "Rustic grain with natural knots",
+                  "price": 0,
+                  "img": "./assets/e390164b2b9ed3c7bf4798a09d737545.jpg",
+                  "alt": "Glacier cold plunge knotty cedar exterior, The Toronto Sauna Co."
+                },
+                {
+                  "id": "cl_clear",
+                  "label": "Clear Cedar on Outside",
+                  "sub": "Clean, knot-free grain",
+                  "price": 392.5,
+                  "img": "./assets/9cf9a111946cea9a90c822f4bff45074.jpg",
+                  "alt": "Glacier cold plunge clear cedar exterior, The Toronto Sauna Co."
+                }
+              ],
+              "default": "cl_knotty"
+            }
+          ]
+        },
+        {
+          "id": "chill",
+          "title": "Chiller",
+          "desc": "Keep it cold all year with a chiller, or use ice.",
+          "prompt": "Choose your chiller",
+          "groups": [
+            {
+              "id": "chiller",
+              "title": "Chiller",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "ch_coldture",
+                  "label": "Coldture Water Chiller Pro with Fittings",
+                  "sub": "Compact chiller with digital temperature control",
+                  "price": 4666,
+                  "img": "./assets/376106c6b3170bc1d611ae132eeec99d.jpg",
+                  "alt": "Coldture Water Chiller Pro, The Toronto Sauna Co."
+                },
+                {
+                  "id": "ch_penguin",
+                  "label": "Penguin Chiller with Filter Kit",
+                  "sub": "Stainless chiller with filtration kit",
+                  "price": 3085,
+                  "img": "./assets/632e66cc7aebc9892f35e1d7aabcf87c.jpg",
+                  "alt": "Penguin chiller with filter kit, The Toronto Sauna Co."
+                },
+                {
+                  "id": "ch_none",
+                  "label": "No Chiller",
+                  "sub": "Use ice or cold tap water",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No chiller"
+                }
+              ],
+              "note": "Chiller electrical connections must be made by a licensed electrician."
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "title": "Cover",
+          "desc": "Keep the cold in and debris out.",
+          "prompt": "Choose a cover",
+          "groups": [
+            {
+              "id": "cover",
+              "title": "Cover",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "cv_knotty",
+                  "label": "Knotty Cedar Roll-Up Cover",
+                  "sub": "Slatted knotty cedar that rolls up for storage",
+                  "price": 442,
+                  "img": "./assets/91ffa8d0a2441de9cd23c3cb882963fd.jpg",
+                  "alt": "Knotty cedar roll-up cover on a Glacier cold plunge, The Toronto Sauna Co."
+                },
+                {
+                  "id": "cv_clear",
+                  "label": "Clear Cedar Roll-Up Cover",
+                  "sub": "Slatted clear cedar that rolls up for storage",
+                  "price": 597,
+                  "img": "./assets/3d1f133520e232d999986351a2eacbc9.jpg",
+                  "alt": "Clear cedar roll-up cover on a Glacier cold plunge, The Toronto Sauna Co."
+                },
+                {
+                  "id": "cv_none",
+                  "label": "No Cover",
+                  "sub": "Add one later if you like",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No cover"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "steps",
+          "title": "Steps",
+          "desc": "Make getting in and out easy.",
+          "prompt": "Add steps",
+          "groups": [
+            {
+              "id": "steps",
+              "title": "Steps",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "st_2",
+                  "label": "2 Tier Cedar Steps",
+                  "sub": "Solid cedar, easy in and out",
+                  "price": 314.5,
+                  "img": "./assets/a59896a28daea97b9d843d3f827fb090.jpg",
+                  "alt": "2 tier cedar cold plunge steps, The Toronto Sauna Co."
+                },
+                {
+                  "id": "st_none",
+                  "label": "No Steps",
+                  "sub": "Add them later if you like",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No steps"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/f20866f0c70f44118012645dc4775fb4.jpg",
+          "alt": "Glacier cold plunge with roll-up cover on a backyard patio, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/e390164b2b9ed3c7bf4798a09d737545.jpg",
+          "alt": "Glacier cold plunge with stainless interior and knotty cedar skirt, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/9b9c392b0706cd57fca6bb5aad71a608.jpg",
+          "alt": "Glacier cold plunge with cedar roll-up cover closed, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/3d1f133520e232d999986351a2eacbc9.jpg",
+          "alt": "Glacier cold plunge with cedar roll-up cover rolled back, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/0aeab24fe7b3ddedd9b1d4e97572e6b1.jpg",
+          "alt": "Glacier cold plunge with cover rack and roll-up cover, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/e69e316697847050a365ec0a8e174aee.jpg",
+          "alt": "Glacier cold plunge beside a barrel sauna on a stone patio, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/9cf9a111946cea9a90c822f4bff45074.jpg",
+          "alt": "Glacier cold plunge with clear cedar skirt, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a59896a28daea97b9d843d3f827fb090.jpg",
+          "alt": "2 tier cedar steps for the Glacier cold plunge, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/37d93914bbc4f25317a0c09c6018ff97.jpg",
+          "alt": "Glacier cold plunge white plastic interior, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/66a9964b3c19cd0db07432feff188853.jpg",
+          "alt": "Glacier cold plunge stainless steel interior, The Toronto Sauna Co.",
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Cold Plunges",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "The Glacier Plunge Tub"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "{{galCount}}",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: 362CPN_10.jpg",
+              "text": "Photo: 362CPN_10.jpg"
+            },
+            {
+              "type": "text",
+              "html": "362CPN_10.jpg",
+              "text": "362CPN_10.jpg"
+            },
+            {
+              "type": "text",
+              "html": "362CPN_20.jpg",
+              "text": "362CPN_20.jpg"
+            },
+            {
+              "type": "text",
+              "html": "362CPN_40.jpg",
+              "text": "362CPN_40.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Dundalk Collection · Cold plunge",
+          "text": "Dundalk Collection · Cold plunge"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Glacier Plunge Tub",
+          "text": "The Glacier Plunge Tub"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "Our largest lie-down cold plunge, made in Canada. Choose a 304 stainless steel or white HDPE plastic interior, wrapped in a clear or knotty Western Red Cedar skirt. It holds about 190 gallons (720 L), and an easy garden hose drain lets you empty or reuse the water. Add a chiller to keep it cold all year, or fill it with ice.",
+          "text": "Our largest lie-down cold plunge, made in Canada. Choose a 304 stainless steel or white HDPE plastic interior, wrapped in a clear or knotty Western Red Cedar skirt. It holds about 190 gallons (720 L), and an easy garden hose drain lets you empty or reuse the water. Add a chiller to keep it cold all year, or fill it with ice."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "190 gallons (720 L)",
+              "text": "190 gallons (720 L)"
+            },
+            {
+              "html": "Stainless or plastic interior",
+              "text": "Stainless or plastic interior"
+            },
+            {
+              "html": "Clear or knotty red cedar",
+              "text": "Clear or knotty red cedar"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
+          "text": "Build Yours Book a Showroom Visit"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your cold plunge",
+          "text": "Build your cold plunge"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
+              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{g.title}}",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
+          "text": "YOUR BUILD {{subtotalText}}+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart.Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Model",
+                "text": "Model"
+              },
+              "details": {
+                "html": "362CP",
+                "text": "362CP"
+              }
+            },
+            {
+              "term": {
+                "html": "Exterior dimensions",
+                "text": "Exterior dimensions"
+              },
+              "details": {
+                "html": "71\" L × 33\" W × 25\" H",
+                "text": "71\" L × 33\" W × 25\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "Capacity",
+                "text": "Capacity"
+              },
+              "details": {
+                "html": "About 190 gallons (720 L)",
+                "text": "About 190 gallons (720 L)"
+              }
+            },
+            {
+              "term": {
+                "html": "Interior",
+                "text": "Interior"
+              },
+              "details": {
+                "html": "304 stainless steel or white HDPE plastic",
+                "text": "304 stainless steel or white HDPE plastic"
+              }
+            },
+            {
+              "term": {
+                "html": "Exterior",
+                "text": "Exterior"
+              },
+              "details": {
+                "html": "Western Red Cedar, clear or knotty",
+                "text": "Western Red Cedar, clear or knotty"
+              }
+            },
+            {
+              "term": {
+                "html": "Drain",
+                "text": "Drain"
+              },
+              "details": {
+                "html": "Garden hose drain",
+                "text": "Garden hose drain"
+              }
+            },
+            {
+              "term": {
+                "html": "Dry weight",
+                "text": "Dry weight"
+              },
+              "details": {
+                "html": "About 400 lb (181 kg)",
+                "text": "About 400 lb (181 kg)"
+              }
+            },
+            {
+              "term": {
+                "html": "Crate weight",
+                "text": "Crate weight"
+              },
+              "details": {
+                "html": "402 lb (182 kg)",
+                "text": "402 lb (182 kg)"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited (tub)",
+                "text": "5-year residential limited (tub)"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Delivery",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. <strong>Quoted</strong>",
+          "text": "Delivery to your doorDelivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Chiller electrical connections must be made by a licensed electrician.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Chiller electrical connections must be made by a licensed electrician."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other cold <em>plunges</em>",
+          "text": "Compare other cold plunges"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/cold-plunges\">View All Cold Plunges</a> <a href=\"/saunas/best-sellers\">Pair It With a Sauna</a>",
+          "text": "View All Cold Plunges Pair It With a Sauna"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "file": "SaunasIndoorKits.dc.html",
+  "route": "/saunas/indoor/kits",
+  "pageMap": {
+    "route": "/saunas/indoor/kits",
+    "title": "Indoor Sauna Kits | The Toronto Sauna Co.",
+    "description": "Indoor sauna kits for basements, spare rooms and condos: Pure Cube Indoor, Element and classic cedar cabins in sizes for 1 to 6.",
+    "index": "",
+    "photos": 13
+  },
+  "head": {
+    "title": "Indoor Sauna Kits | The Toronto Sauna Co.",
+    "description": "Indoor sauna kits for basements, spare rooms and condos: Pure Cube Indoor, Element and classic cedar cabins in sizes for 1 to 6.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/indoor/kits",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Indoor Sauna Kits | The Toronto Sauna Co.",
+      "description": "Indoor sauna kits for basements, spare rooms and condos: Pure Cube Indoor, Element and classic cedar cabins in sizes for 1 to 6.",
+      "url": "https://www.thetorontosaunaco.com/saunas/indoor/kits",
+      "image": "https://www.thetorontosaunaco.com/_blob/fe896ac8a02116451e2ad8b4ae30a9b4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {
+    "D": {
+      "items": [
+        {
+          "n": "Pure Cube Indoor 552",
+          "href": "/saunas/indoor/pure-cube-552",
+          "img": "./assets/fe896ac8a02116451e2ad8b4ae30a9b4.jpg",
+          "alt": "Pure Cube Indoor 552 red cedar sauna with glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Indoor Kit",
+          "p": 11160,
+          "frm": 0,
+          "cap": "2 person",
+          "d": "A compact glass-front red cedar sauna for a basement, spare room or home gym.",
+          "best": 0,
+          "specs": [
+            "5' × 5'",
+            "Clear or knotty red cedar",
+            "Glass front"
+          ]
+        },
+        {
+          "n": "Pure Cube Indoor 572",
+          "href": "/saunas/indoor/pure-cube-572",
+          "img": "./assets/1bd0de57aa4744319d31bd9db8e99519.jpg",
+          "alt": "Pure Cube Indoor 572 red cedar sauna with glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Indoor Kit",
+          "p": 11846,
+          "frm": 0,
+          "cap": "3 person",
+          "d": "A full glass door between two big window panels, in clear or knotty red cedar.",
+          "best": 0,
+          "specs": [
+            "5' × 7'",
+            "Clear or knotty red cedar",
+            "Full glass front"
+          ]
+        },
+        {
+          "n": "The Element Nook",
+          "href": "/saunas/element-nook",
+          "img": "./assets/ca619225e44f3cbfae268cce2fcb4d1e.jpg",
+          "alt": "Element Nook Thermo Grandis indoor sauna with glass door, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Indoor Kit",
+          "p": 10850,
+          "frm": 0,
+          "cap": "1–2 person",
+          "d": "The most compact Element, in warm Thermo Grandis wood with a full glass front.",
+          "best": 0,
+          "specs": [
+            "54¾\" × 54¾\"",
+            "Thermo Grandis wood",
+            "Full glass front"
+          ]
+        },
+        {
+          "n": "The Element Loft",
+          "href": "/saunas/element-loft",
+          "img": "./assets/79fc232056ce940e334e53e606684d1c.jpg",
+          "alt": "Element Loft Thermo Grandis indoor sauna with glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Indoor Kit",
+          "p": 12650,
+          "frm": 0,
+          "cap": "2–3 person",
+          "d": "The mid-size Element: room to share, small enough for a spare room.",
+          "best": 0,
+          "specs": [
+            "74¾\" × 54¾\"",
+            "Thermo Grandis wood",
+            "Full glass front"
+          ]
+        },
+        {
+          "n": "The Element Studio",
+          "href": "/saunas/element-studio",
+          "img": "./assets/e82bd557fc69a737b046c542ac5639fd.jpg",
+          "alt": "Element Studio Thermo Grandis indoor sauna with glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Indoor Kit",
+          "p": 13950,
+          "frm": 0,
+          "cap": "2–4 person",
+          "d": "The largest Element, with room for four and warm LED lighting.",
+          "best": 0,
+          "specs": [
+            "84¾\" × 64¾\"",
+            "Thermo Grandis wood",
+            "Full glass front"
+          ]
+        },
+        {
+          "n": "Indoor Cabin Sauna",
+          "href": "/saunas/indoor/cabin",
+          "s": "Indoor Kit",
+          "p": 8070,
+          "frm": 1,
+          "cap": "2–6 person",
+          "d": "Made-in-Canada Western Red Cedar with tongue-and-groove walls, dovetail joints and a glass door.",
+          "best": 0,
+          "specs": [
+            "7 sizes, 4' × 6' to 6' × 8'",
+            "Knotty or clear red cedar",
+            "Made in Canada"
+          ],
+          "img": "./assets/cbbbfbb6ee59b516229b457c305892b7.jpg",
+          "alt": "Indoor cabin sauna in western red cedar with glass door, The Toronto Sauna Co.",
+          "contain": 1
+        }
+      ],
+      "chips": null,
+      "showBest": true
+    }
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Indoor Saunas",
+              "href": "/saunas/indoor"
+            },
+            {
+              "text": "Indoor Sauna Kits"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Indoor sauna kits",
+          "text": "Indoor sauna kits"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Indoor sauna kits for your <em><strong>home.</strong></em>",
+          "text": "Indoor sauna kits for your home."
+        },
+        {
+          "type": "paragraph",
+          "html": "Prebuilt cedar sauna rooms that assemble inside your basement, spare room or condo. Choose a size and wood, and we'll deliver and install it.",
+          "text": "Prebuilt cedar sauna rooms that assemble inside your basement, spare room or condo. Choose a size and wood, and we'll deliver and install it."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<a href=\"/saunas/indoor/kits\">Indoor Sauna Kits</a> <a href=\"/saunas/indoor/custom\">Custom Indoor Saunas</a>",
+          "text": "Indoor Sauna Kits Custom Indoor Saunas"
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-finder\"><strong>Not sure what fits?</strong>Enter your space and we’ll show every sauna that fits, in about a minute.<strong>Find your fit →</strong></a>",
+          "text": "Not sure what fits?Enter your space and we’ll show every sauna that fits, in about a minute.Find your fit →"
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{b}}",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgCover}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgContain}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong> {{it.cap}}",
+              "text": "{{it.s}} {{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}} <strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceLabel}} {{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "xpromo",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/saunas/indoor/custom",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/9bd7db102ef90d6bb0b132091aeeba15.jpg",
+              "alt": "Custom indoor sauna room in cedar, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Custom indoor saunas",
+              "text": "Custom indoor saunas"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Don’t see your size?",
+              "text": "Don’t see your size?"
+            },
+            {
+              "type": "paragraph",
+              "html": "We design and build sauna rooms to fit any space, from odd corners and sloped basement ceilings to home gyms and spas. Pick your wood, glass, benches and lighting, and we handle the rest.",
+              "text": "We design and build sauna rooms to fit any space, from odd corners and sloped basement ceilings to home gyms and spas. Pick your wood, glass, benches and lighting, and we handle the rest."
+            },
+            {
+              "type": "text",
+              "html": "Explore custom saunas →",
+              "text": "Explore custom saunas →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Indoor Sauna Kits",
+          "text": "Indoor Sauna Kits"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Kit or custom?",
+          "text": "Kit or custom?"
+        },
+        {
+          "type": "paragraph",
+          "html": "An indoor sauna kit is a prebuilt room in set sizes, which makes it faster and more affordable. If your space is unusual, or you want the sauna built into the walls of the room, see our Indoor Custom Saunas.",
+          "text": "An indoor sauna kit is a prebuilt room in set sizes, which makes it faster and more affordable. If your space is unusual, or you want the sauna built into the walls of the room, see our Indoor Custom Saunas."
+        },
+        {
+          "type": "text",
+          "html": "Not sure which sauna <em>fits?</em>",
+          "text": "Not sure which sauna fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget.",
+          "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Book a Consultation (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

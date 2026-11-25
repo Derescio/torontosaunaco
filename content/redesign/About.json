@@ -1,0 +1,296 @@
+{
+  "file": "About.dc.html",
+  "route": "/about",
+  "pageMap": {
+    "route": "/about",
+    "title": "About Us | Customer-First Sauna Company | The Toronto Sauna Co.",
+    "description": "The Toronto Sauna Co. delivers and installs outdoor saunas across Ontario with a customer-first approach: fast responses, honest advice and practical…",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "About Us | Customer-First Sauna Company | The Toronto Sauna Co.",
+    "description": "The Toronto Sauna Co. delivers and installs outdoor saunas across Ontario with a customer-first approach: fast responses, honest advice and practical…",
+    "canonical": "https://www.thetorontosaunaco.com/about",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "About Us | Customer-First Sauna Company | The Toronto Sauna Co.",
+      "description": "The Toronto Sauna Co. delivers and installs outdoor saunas across Ontario with a customer-first approach: fast responses, honest advice and practical…",
+      "url": "https://www.thetorontosaunaco.com/about",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": "https://www.thetorontosaunaco.com/about",
+        "name": "About Us | Customer-First Sauna Company in Ontario | The Toronto Sauna Co.",
+        "description": "The Toronto Sauna Co. delivers and installs outdoor saunas across Ontario with a customer-first approach: fast responses, honest advice and practical solutions for every backyard.",
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "The Toronto Sauna Co.",
+          "telephone": "+1-437-429-6623",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17380 Highway 27",
+            "addressLocality": "Schomberg",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "About hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "About Us"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "About us",
+          "text": "About us"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Customer first. <em><strong>Every time.</strong></em>",
+          "text": "Customer first. Every time."
+        },
+        {
+          "type": "paragraph",
+          "html": "The Toronto Sauna Co. helps homeowners across Ontario find, install and enjoy the right sauna, with quick answers, honest advice and support that keeps going long after the install.",
+          "text": "The Toronto Sauna Co. helps homeowners across Ontario find, install and enjoy the right sauna, with quick answers, honest advice and support that keeps going long after the install."
+        },
+        {
+          "type": "image",
+          "src": "./assets/aef9ea3a7860006dc2663bab6ffe2da8.jpg",
+          "alt": "Black glass-front outdoor sauna glowing at dusk in the woods, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Approach",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Our approach",
+          "text": "Our approach"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Built around <em><strong>the customer.</strong></em>",
+          "text": "Built around the customer."
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna comes with a lot of questions: which size fits, which heater, what the yard needs, how the electrical works. Our job is to make every answer clear and quick, so the whole process feels easy.",
+          "text": "Buying a sauna comes with a lot of questions: which size fits, which heater, what the yard needs, how the electrical works. Our job is to make every answer clear and quick, so the whole process feels easy."
+        },
+        {
+          "type": "paragraph",
+          "html": "We listen first, then recommend what actually suits your space and the way you want to use it. And when something doesn’t fit the usual mould, we find a way that works.",
+          "text": "We listen first, then recommend what actually suits your space and the way you want to use it. And when something doesn’t fit the usual mould, we find a way that works."
+        },
+        {
+          "type": "quote",
+          "html": "<em>“Every inquiry gets a fast, real answer. Every challenge gets a solution.”</em>",
+          "text": "“Every inquiry gets a fast, real answer. Every challenge gets a solution.”",
+          "cite": null
+        }
+      ]
+    },
+    {
+      "name": "Photo strip",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/64d77f47f4149fa939e4ae1ee5d2f634.jpg",
+          "alt": "Cedar outdoor sauna beside a pool and hot tub in a Toronto backyard, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/88c851de08ed961a8dce2c88f39c62c7.jpg",
+          "alt": "Cedar sauna interior with a lake view through the glass front, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/9807588eb3aced3d74e47aab2655f6e1.jpg",
+          "alt": "Glass-front outdoor sauna lit up at night on a cedar deck, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "What you can count on",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Why people choose us",
+          "text": "Why people choose us"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What you can <em><strong>count on.</strong></em>",
+          "text": "What you can count on."
+        },
+        {
+          "type": "text",
+          "html": "01",
+          "text": "01"
+        },
+        {
+          "type": "text",
+          "html": "Fast response",
+          "text": "Fast response"
+        },
+        {
+          "type": "paragraph",
+          "html": "Call, text or email and you’ll hear back quickly, usually the same business day. A sauna is a big decision, and you shouldn’t have to wait for answers.",
+          "text": "Call, text or email and you’ll hear back quickly, usually the same business day. A sauna is a big decision, and you shouldn’t have to wait for answers."
+        },
+        {
+          "type": "text",
+          "html": "02",
+          "text": "02"
+        },
+        {
+          "type": "text",
+          "html": "Customer first",
+          "text": "Customer first"
+        },
+        {
+          "type": "paragraph",
+          "html": "Every recommendation starts with what’s right for you and your space. The right sauna is the one you’ll actually use.",
+          "text": "Every recommendation starts with what’s right for you and your space. The right sauna is the one you’ll actually use."
+        },
+        {
+          "type": "text",
+          "html": "03",
+          "text": "03"
+        },
+        {
+          "type": "text",
+          "html": "Solutions, not obstacles",
+          "text": "Solutions, not obstacles"
+        },
+        {
+          "type": "paragraph",
+          "html": "Tight yard, tricky access, unusual electrical? We work through it with you and find a way to make it happen.",
+          "text": "Tight yard, tricky access, unusual electrical? We work through it with you and find a way to make it happen."
+        },
+        {
+          "type": "text",
+          "html": "04",
+          "text": "04"
+        },
+        {
+          "type": "text",
+          "html": "Support that lasts",
+          "text": "Support that lasts"
+        },
+        {
+          "type": "paragraph",
+          "html": "Heater questions, cedar care, parts and warranty. We’re here for whatever comes up, long after the install.",
+          "text": "Heater questions, cedar care, parts and warranty. We’re here for whatever comes up, long after the install."
+        }
+      ]
+    },
+    {
+      "name": "Service after install",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/81b56bdb9fa387d62ffde5ad19c08b8e.jpg",
+          "alt": "Black outdoor sauna with glass front and glass door among autumn trees, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "After the install",
+          "text": "After the install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "The install is just <em><strong>the beginning.</strong></em>",
+          "text": "The install is just the beginning."
+        },
+        {
+          "type": "paragraph",
+          "html": "A question about your heater, the best way to care for your cedar, a part that needs replacing or a warranty claim: reach out and we’ll get it sorted quickly.",
+          "text": "A question about your heater, the best way to care for your cedar, a part that needs replacing or a warranty claim: reach out and we’ll get it sorted quickly."
+        },
+        {
+          "type": "paragraph",
+          "html": "No call centres and no runaround. Just a responsive team that knows your sauna and is ready to help, in year one and year five.",
+          "text": "No call centres and no runaround. Just a responsive team that knows your sauna and is ready to help, in year one and year five."
+        }
+      ]
+    },
+    {
+      "name": "Showroom",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Visit us",
+          "text": "Visit us"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Come sit in one.",
+          "text": "Come sit in one."
+        },
+        {
+          "type": "paragraph",
+          "html": "See the cedar, feel the benches and talk through your space with us at our showroom in Schomberg, by appointment.",
+          "text": "See the cedar, feel the benches and talk through your space with us at our showroom in Schomberg, by appointment."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment) <strong>Phone:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a> <strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> <a href=\"/contact#visit\">Book a visit</a>",
+          "text": "Showroom: 17380 Highway 27, Schomberg, ON (by appointment) Phone: (437) 429-6623 Email: sales@thetorontosaunaco.com Book a visit"
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Let’s find <em><strong>your</strong></em> sauna.",
+          "text": "Let’s find your sauna."
+        },
+        {
+          "type": "paragraph",
+          "html": "Start with the Sauna Finder, or just call. Either way, you’ll hear back fast.",
+          "text": "Start with the Sauna Finder, or just call. Either way, you’ll hear back fast."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Shop outdoor saunas</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Find your fit Shop outdoor saunas Call (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

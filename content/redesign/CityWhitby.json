@@ -1,0 +1,657 @@
+{
+  "file": "CityWhitby.dc.html",
+  "route": "/service-areas/whitby",
+  "pageMap": {
+    "route": "/service-areas/whitby",
+    "title": "Backyard Saunas in Whitby | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Whitby, delivered and installed for $1,750. Serving Port Whitby, Lynde Shores, Williamsburg and more.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "Backyard Saunas in Whitby | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Whitby, delivered and installed for $1,750. Serving Port Whitby, Lynde Shores, Williamsburg and more.",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas/whitby",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas in Whitby | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas in Whitby, delivered and installed for $1,750. Serving Port Whitby, Lynde Shores, Williamsburg and more.",
+      "url": "https://www.thetorontosaunaco.com/service-areas/whitby",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Backyard sauna sales, delivery and installation in Whitby",
+            "serviceType": "Backyard sauna installation",
+            "provider": {
+              "@id": "https://www.thetorontosaunaco.com/#store"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Whitby",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ontario"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Delivery and installation",
+              "price": "1750.00",
+              "priceCurrency": "CAD"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/service-areas/whitby",
+            "url": "https://www.thetorontosaunaco.com/service-areas/whitby",
+            "name": "Backyard Saunas in Whitby",
+            "description": "Premium backyard saunas in Whitby, delivered and installed for $1,750. Serving Port Whitby, Lynde Shores, Williamsburg and more. Visit our King Township showroom."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Whitby",
+                "item": "https://www.thetorontosaunaco.com/service-areas/whitby"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for a backyard sauna in Whitby?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your lot and model before you order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a sauna OK close to Lake Ontario?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Cedar handles damp air well. We recommend a sheltered location, a well-drained base, and exterior oil to protect the wood from UV and weather."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you install a cold plunge with my sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We sell cold plunges and can plan both together."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does delivery and installation cost in Whitby?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery and installation is $1,750 anywhere in Ontario, including Whitby. Delivery only is $450. HST is shown separately on every quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What heater size does my sauna need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas",
+              "href": "/service-areas"
+            },
+            {
+              "text": "Whitby"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Durham Region",
+          "text": "Durham Region"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Saunas in <em><strong>Whitby</strong></em>",
+          "text": "Backyard Saunas in Whitby"
+        },
+        {
+          "type": "paragraph",
+          "html": "From the lakeside streets of Port Whitby to established family neighbourhoods like Williamsburg, Whitby backyards are ready for a sauna. We deliver and install premium cedar saunas across the town.",
+          "text": "From the lakeside streets of Port Whitby to established family neighbourhoods like Williamsburg, Whitby backyards are ready for a sauna. We deliver and install premium cedar saunas across the town."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Free Site Consult</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Book a Free Site Consult Call (437) 429-6623"
+        },
+        {
+          "type": "image",
+          "src": "./assets/c097562d448621e89abae62a75089f2c.jpg",
+          "alt": "Red cedar sauna beside a backyard pool and hot tub, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>$1,750 delivery and installation</strong>Anywhere in Ontario, including Whitby. Delivery only: $450.",
+          "text": "$1,750 delivery and installationAnywhere in Ontario, including Whitby. Delivery only: $450."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom in King Township</strong>17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "Showroom in King Township17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "5-star Google reviewsReal customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>Western Red Cedar saunas built for Ontario winters.",
+          "text": "Made in CanadaWestern Red Cedar saunas built for Ontario winters."
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhoods",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Where we install",
+          "text": "Where we install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Serving all of <em><strong>Whitby.</strong></em>",
+          "text": "Serving all of Whitby."
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install backyard saunas across Whitby, including Port Whitby, Lynde Shores, Williamsburg, Rolling Acres, Pringle Creek, Blue Grass Meadows and Downtown Whitby.",
+          "text": "We design, deliver and install backyard saunas across Whitby, including Port Whitby, Lynde Shores, Williamsburg, Rolling Acres, Pringle Creek, Blue Grass Meadows and Downtown Whitby."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Port Whitby",
+              "text": "Port Whitby"
+            },
+            {
+              "html": "Lynde Shores",
+              "text": "Lynde Shores"
+            },
+            {
+              "html": "Williamsburg",
+              "text": "Williamsburg"
+            },
+            {
+              "html": "Rolling Acres",
+              "text": "Rolling Acres"
+            },
+            {
+              "html": "Pringle Creek",
+              "text": "Pringle Creek"
+            },
+            {
+              "html": "Blue Grass Meadows",
+              "text": "Blue Grass Meadows"
+            },
+            {
+              "html": "Downtown Whitby",
+              "text": "Downtown Whitby"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local setting",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Lake Ontario weather",
+          "text": "Lake Ontario weather"
+        },
+        {
+          "type": "paragraph",
+          "html": "Lakefront neighbourhoods like Port Whitby and Lynde Shores get stronger winds and damp winter air off Lake Ontario. Our cedar saunas handle it well; for exposed lots we recommend a sheltered spot and a well-drained base.",
+          "text": "Lakefront neighbourhoods like Port Whitby and Lynde Shores get stronger winds and damp winter air off Lake Ontario. Our cedar saunas handle it well; for exposed lots we recommend a sheltered spot and a well-drained base."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Family neighbourhoods",
+          "text": "Family neighbourhoods"
+        },
+        {
+          "type": "paragraph",
+          "html": "Established areas like Williamsburg and Rolling Acres have good-sized yards for 4 to 6 person saunas, with simple electric heat and Wi-Fi control.",
+          "text": "Established areas like Williamsburg and Rolling Acres have good-sized yards for 4 to 6 person saunas, with simple electric heat and Wi-Fi control."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Cold plunge pairing",
+          "text": "Cold plunge pairing"
+        },
+        {
+          "type": "paragraph",
+          "html": "Many Whitby clients pair their sauna with a cold plunge for contrast therapy. We can plan both together, on one base and one electrical plan.",
+          "text": "Many Whitby clients pair their sauna with a cold plunge for contrast therapy. We can plan both together, on one base and one electrical plan."
+        }
+      ]
+    },
+    {
+      "name": "Picks",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Recommended for Whitby",
+          "text": "Recommended for Whitby"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas we recommend in <em><strong>Whitby.</strong></em>",
+          "text": "Saunas we recommend in Whitby."
+        },
+        {
+          "type": "paragraph",
+          "html": "Versatile cubes and signature designs for Whitby's family yards and lakeside lots.",
+          "text": "Versatile cubes and signature designs for Whitby's family yards and lakeside lots."
+        },
+        {
+          "type": "link",
+          "html": "Shop all saunas",
+          "text": "Shop all saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/pure-cube-672",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/c3e355a8c422ffa0a99f735490f26805.jpg",
+              "alt": "Pure Cube 672 clear cedar outdoor sauna with glass front by a pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Pure Cube 672",
+              "text": "Pure Cube 672"
+            },
+            {
+              "type": "text",
+              "html": "4–5 person",
+              "text": "4–5 person"
+            },
+            {
+              "type": "text",
+              "html": "$15,589",
+              "text": "$15,589"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/neptune",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/09fb97341972ee574c628f379620adfd.jpg",
+              "alt": "Neptune black outdoor sauna with full glass front in an autumn garden, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Neptune",
+              "text": "The Neptune"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person",
+              "text": "5–6 person"
+            },
+            {
+              "type": "text",
+              "html": "$17,896",
+              "text": "$17,896"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/hudson",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/90f0336d489830dc9f794cb8702242c0.jpg",
+              "alt": "Hudson outdoor sauna with black siding and covered cedar porch by a lake, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Hudson",
+              "text": "The Hudson"
+            },
+            {
+              "type": "text",
+              "html": "Black metal and cedar",
+              "text": "Black metal and cedar"
+            },
+            {
+              "type": "text",
+              "html": "$17,489",
+              "text": "$17,489"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/pure-cube-552",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/838851a2ee459fd52e1f565cc0bca4e7.jpg",
+              "alt": "Pure Cube 552 cedar outdoor sauna in a backyard, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Pure Cube 552",
+              "text": "The Pure Cube 552"
+            },
+            {
+              "type": "text",
+              "html": "2 person",
+              "text": "2 person"
+            },
+            {
+              "type": "text",
+              "html": "$11,884",
+              "text": "$11,884"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "How it works",
+          "text": "How it works"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>steam.</strong></em>",
+          "text": "From first call to first steam."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "html": "<strong>01</strong> <strong>Consult</strong> Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+              "text": "01 Consult Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+            },
+            {
+              "html": "<strong>02</strong> <strong>Site check</strong> We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+              "text": "02 Site check We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+            },
+            {
+              "html": "<strong>03</strong> <strong>Spec and quote</strong> We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+              "text": "03 Spec and quote We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+            },
+            {
+              "html": "<strong>04</strong> <strong>Deliver and install</strong> Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+              "text": "04 Deliver and install Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-heaters\">Compare heaters</a> <a href=\"/cold-plunges\">Add a cold plunge</a> <a href=\"/accessories\">Sauna accessories</a>",
+          "text": "Compare heaters Add a cold plunge Sauna accessories"
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Reviews",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "text": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "cite": "<strong>Caterina Imperium</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "text": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "cite": "<strong>Douglas S. Wright</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "text": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "cite": "<strong>Dave Lewis</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Questions",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas in Whitby: <em><strong>FAQ.</strong></em>",
+          "text": "Backyard saunas in Whitby: FAQ."
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a permit for a backyard sauna in Whitby?",
+          "text": "Do I need a permit for a backyard sauna in Whitby?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your lot and model before you order.",
+              "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your lot and model before you order."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Is a sauna OK close to Lake Ontario?",
+          "text": "Is a sauna OK close to Lake Ontario?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Cedar handles damp air well. We recommend a sheltered location, a well-drained base, and exterior oil to protect the wood from UV and weather.",
+              "text": "Yes. Cedar handles damp air well. We recommend a sheltered location, a well-drained base, and exterior oil to protect the wood from UV and weather."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can you install a cold plunge with my sauna?",
+          "text": "Can you install a cold plunge with my sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. We sell cold plunges and can plan both together.",
+              "text": "Yes. We sell cold plunges and can plan both together."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much does delivery and installation cost in Whitby?",
+          "text": "How much does delivery and installation cost in Whitby?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery and installation is $1,750 anywhere in Ontario, including Whitby. Delivery only is $450. HST is shown separately on every quote.",
+              "text": "Delivery and installation is $1,750 anywhere in Ontario, including Whitby. Delivery only is $450. HST is shown separately on every quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What heater size does my sauna need?",
+          "text": "What heater size does my sauna need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances.",
+              "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nearby",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Also serving nearby:</strong> <a href=\"/service-areas/brooklin\">Brooklin</a><a href=\"/service-areas/markham\">Markham</a><a href=\"/service-areas/prince-edward-county\">Prince Edward County</a><a href=\"/service-areas/toronto\">Toronto</a> <a href=\"/service-areas\">All service areas →</a>",
+          "text": "Also serving nearby: BrooklinMarkhamPrince Edward CountyToronto All service areas →"
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for a sauna in <em><strong>Whitby?</strong></em>",
+          "text": "Ready for a sauna in Whitby?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Site Consult</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Book a Site Consult (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

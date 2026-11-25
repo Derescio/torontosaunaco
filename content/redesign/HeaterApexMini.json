@@ -1,0 +1,797 @@
+{
+  "file": "HeaterApexMini.dc.html",
+  "route": "/sauna-heaters/apex-mini",
+  "pageMap": {
+    "route": "/sauna-heaters/apex-mini",
+    "title": "Homecraft Apex Mini — The Toronto Sauna Co.",
+    "description": "Homecraft Apex Mini: All the look and protected-element design of the full-size Apex, scaled down into a 14 × 32… Request a quote from The Toronto Sauna Co.",
+    "index": "",
+    "photos": 8
+  },
+  "head": {
+    "title": "Homecraft Apex Mini — The Toronto Sauna Co.",
+    "description": "Homecraft Apex Mini: All the look and protected-element design of the full-size Apex, scaled down into a 14 × 32… Request a quote from The Toronto Sauna Co.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-heaters/apex-mini",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "Homecraft Apex Mini — The Toronto Sauna Co.",
+      "description": "Homecraft Apex Mini: All the look and protected-element design of the full-size Apex, scaled down into a 14 × 32… Request a quote from The Toronto Sauna Co.",
+      "url": "https://www.thetorontosaunaco.com/sauna-heaters/apex-mini",
+      "image": "https://www.thetorontosaunaco.com/_blob/94aa61eb04201e21a3a857be09fe2f09"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Homecraft Apex Mini",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/94aa61eb04201e21a3a857be09fe2f09"
+        ],
+        "url": "https://www.thetorontosaunaco.com/sauna-heaters/apex-mini",
+        "description": "Homecraft Apex Mini: All the look and protected-element design of the full-size Apex, scaled down into a 14 × 32… Request a quote from The Toronto Sauna Co.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "2040.00",
+          "url": "https://www.thetorontosaunaco.com/sauna-heaters/apex-mini",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "d": {
+      "file": "HeaterApexMini",
+      "name": "Homecraft Apex Mini",
+      "code": "SKU APMI240",
+      "origin": "Made in Canada",
+      "brand": "Homecraft",
+      "mount": "Floor-standing tower",
+      "photos": [
+        "apex-mini_1.jpg",
+        "apex-mini_2.jpg",
+        "apex-mini_3.jpg"
+      ],
+      "intro": "All the look and protected-element design of the full-size Apex, scaled down into a 14 × 32 inch floor-standing tower, 4 inches shorter than the original. A great fit for mid-size backyard and indoor saunas.",
+      "highlights": [
+        "Same internals as the full-size Apex",
+        "Holds 175 lbs (80 kg) of sauna stone",
+        "Protected element air chamber",
+        "CSA certified to UL 875, made in Canada"
+      ],
+      "models": [
+        {
+          "kw": "6 kW",
+          "room": "200–325 cu ft",
+          "amps": "25 A",
+          "breaker": "40 A"
+        },
+        {
+          "kw": "7.5 kW",
+          "room": "250–370 cu ft",
+          "amps": "31.3 A",
+          "breaker": "40 A"
+        },
+        {
+          "kw": "9 kW",
+          "room": "350–450 cu ft",
+          "amps": "37.5 A",
+          "breaker": "50 A"
+        }
+      ],
+      "modelnote": "240V single-phase. Wire: #8 copper rated 90°C for all three outputs. Installation must be done by a licensed electrician.",
+      "specs": [
+        {
+          "k": "Dimensions",
+          "v": "14 in W × 14 in D × 32 in H"
+        },
+        {
+          "k": "Stone capacity",
+          "v": "175 lbs (80 kg)"
+        },
+        {
+          "k": "Stone size",
+          "v": "10–15 cm (4–6 in)"
+        },
+        {
+          "k": "Clearance to combustibles",
+          "v": "3.5 in sides, 45 in to ceiling"
+        },
+        {
+          "k": "Voltage",
+          "v": "240V 1-phase"
+        },
+        {
+          "k": "Control",
+          "v": "Homecraft TKE2 contactor with touchpad (digital or Wi-Fi)"
+        },
+        {
+          "k": "Certification",
+          "v": "CSA certified (UL 875)"
+        },
+        {
+          "k": "Warranty",
+          "v": "2-year manufacturer warranty"
+        },
+        {
+          "k": "Made in",
+          "v": "Canada"
+        }
+      ],
+      "needs": [
+        "Homecraft control and contactor box",
+        "Sauna stones (5 boxes, 20 kg each)",
+        "Installation by a licensed electrician"
+      ],
+      "others": [
+        {
+          "href": "/sauna-heaters/revive",
+          "name": "Homecraft Revive"
+        },
+        {
+          "href": "/sauna-heaters/revive-slim",
+          "name": "Homecraft Revive Slim"
+        },
+        {
+          "href": "/sauna-heaters/apex-240",
+          "name": "Homecraft Apex (240V / 1 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/apex-208",
+          "name": "Homecraft Apex (208V / 3 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/harvia-kip",
+          "name": "Harvia KIP"
+        },
+        {
+          "href": "/sauna-heaters/huum-drop",
+          "name": "HUUM Drop"
+        },
+        {
+          "href": "/sauna-heaters/huum-hive-mini",
+          "name": "HUUM Hive Mini"
+        }
+      ],
+      "short": "Apex Mini",
+      "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+      "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+      "gallery": [
+        {
+          "src": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+          "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "steps": [
+        {
+          "id": "heater",
+          "title": "Heater size",
+          "required": true,
+          "note": "Choose the output that matches your sauna volume.",
+          "options": [
+            {
+              "id": "kw0",
+              "label": "Apex Mini 6 kW",
+              "sub": "For 200–325 cu ft",
+              "price": 2040,
+              "photo": "apex-mini 6 kW",
+              "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+              "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw1",
+              "label": "Apex Mini 7.5 kW",
+              "sub": "For 250–370 cu ft",
+              "price": 2095,
+              "photo": "apex-mini 7.5 kW",
+              "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+              "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw2",
+              "label": "Apex Mini 9 kW",
+              "sub": "For 350–450 cu ft",
+              "price": 2150,
+              "photo": "apex-mini 9 kW",
+              "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+              "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co."
+            }
+          ]
+        },
+        {
+          "id": "control",
+          "title": "Controls",
+          "required": true,
+          "note": "Homecraft heaters run through a contactor box with a wall touchpad. Pick the version that matches where your sauna is.",
+          "options": [
+            {
+              "id": "hc_reg_in",
+              "label": "Homecraft Digital Touchpad + Contactor (Indoor)",
+              "sub": "For indoor saunas",
+              "price": 575,
+              "photo": "Homecraft touchpad"
+            },
+            {
+              "id": "hc_wifi_in",
+              "label": "Homecraft Wi-Fi Touchpad + Contactor (Indoor)",
+              "sub": "For indoor saunas, control from your phone",
+              "price": 825,
+              "photo": "Homecraft Wi-Fi touchpad"
+            },
+            {
+              "id": "hc_reg_out",
+              "label": "Homecraft Digital Touchpad + Contactor (Outdoor)",
+              "sub": "For outdoor saunas",
+              "price": 650,
+              "photo": "Homecraft touchpad outdoor"
+            },
+            {
+              "id": "hc_wifi_out",
+              "label": "Homecraft Wi-Fi Touchpad + Contactor (Outdoor)",
+              "sub": "For outdoor saunas, control from your phone",
+              "price": 900,
+              "photo": "Homecraft Wi-Fi touchpad outdoor"
+            }
+          ]
+        },
+        {
+          "id": "stones",
+          "title": "Sauna stones",
+          "required": false,
+          "note": "Fixed at the recommended fill for the Apex Mini: 5 boxes of 10–15 cm stones (about 175 lbs).",
+          "options": [
+            {
+              "id": "hc_st",
+              "label": "Homecraft Sauna Stones (10–15 cm)",
+              "sub": "5 boxes (20 kg each), the recommended fill ($60.00 per box)",
+              "price": 60,
+              "qty": 5,
+              "photo": "Homecraft sauna stones"
+            },
+            {
+              "id": "no_st",
+              "label": "No thanks",
+              "sub": "I already have stones",
+              "price": null,
+              "none": true,
+              "photo": "—"
+            }
+          ]
+        }
+      ],
+      "kwChips": [
+        "6 kW",
+        "7.5 kW",
+        "9 kW"
+      ],
+      "hasAmps": true
+    }
+  },
+  "sections": [
+    {
+      "name": "Product top",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Heaters",
+              "href": "/sauna-heaters"
+            },
+            {
+              "text": "Electric",
+              "href": "/sauna-heaters#electric"
+            },
+            {
+              "text": "{{p.name}}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "{{p.mainImg}}",
+          "alt": "{{p.mainAlt}}"
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasThumbs}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{p.thumbs}}",
+              "as": "t",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{t.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{t.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Electric</strong> <strong>{{p.origin}}</strong> <strong>{{p.mount}}</strong>",
+          "text": "Electric {{p.origin}} {{p.mount}}"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "{{p.name}}",
+          "text": "{{p.name}}"
+        },
+        {
+          "type": "text",
+          "html": "{{p.code}}",
+          "text": "{{p.code}}"
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.intro}}",
+          "text": "{{p.intro}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.highlights}}",
+              "as": "hl",
+              "items": [
+                {
+                  "html": "{{hl}}",
+                  "text": "{{hl}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Starting at (MSRP) <strong>{{p.fromPrice}}</strong>",
+          "text": "Starting at (MSRP) {{p.fromPrice}}"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.kwChips}}",
+          "as": "k",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "{{k}}",
+              "text": "{{k}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#configure\">Build Yours &amp; Add to Cart</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Build Yours & Add to Cart Call (437) 429-6623"
+        },
+        {
+          "type": "text",
+          "html": "Delivery and professional installation available across Ontario.",
+          "text": "Delivery and professional installation available across Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your heater",
+          "text": "Build your heater"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choose your size and <em><strong>add-ons.</strong></em>",
+          "text": "Choose your size and add-ons."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{steps}}",
+              "as": "st",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "if",
+                      "value": "{{st.done}}",
+                      "blocks": []
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.notDone}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{st.num}}",
+                          "text": "{{st.num}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "level": 3,
+                      "html": "{{st.title}}",
+                      "text": "{{st.title}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{st.tag}}",
+                      "text": "{{st.tag}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{st.note}}",
+                          "text": "{{st.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{st.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
+                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
+                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Your <em>{{p.short}}</em>",
+          "text": "Your {{p.short}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.step}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.step}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal before HST",
+                "text": "Subtotal before HST"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Delivery",
+                "text": "Delivery"
+              },
+              "details": {
+                "html": "Quoted separately, or free showroom pickup (in stock)",
+                "text": "Quoted separately, or free showroom pickup (in stock)"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some items are priced on request. We'll confirm your final price with you.",
+              "text": "Some items are priced on request. We'll confirm your final price with you."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasMissing}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "{{missingText}}",
+              "text": "{{missingText}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Add to Cart",
+          "text": "Add to Cart",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Added to your cart</strong> {{addedText}} <a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart {{addedText}} Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment.",
+          "text": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment."
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sizing &amp; electrical",
+          "text": "Sizing & electrical"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Every size, at a <em><strong>glance.</strong></em>",
+          "text": "Every size, at a glance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up.",
+          "text": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up."
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Output",
+                  "Room size",
+                  "Amps",
+                  "Breaker"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}",
+                  "{{m.amps}}",
+                  "{{m.breaker}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{p.noAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Output",
+                  "Room size"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.modelnote}}",
+          "text": "{{p.modelnote}}"
+        }
+      ]
+    },
+    {
+      "name": "Specs + needs",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.specs}}",
+              "as": "s",
+              "items": [
+                {
+                  "term": {
+                    "html": "{{s.k}}",
+                    "text": "{{s.k}}"
+                  },
+                  "details": {
+                    "html": "{{s.v}}",
+                    "text": "{{s.v}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "What you'll need",
+          "text": "What you'll need"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.needs}}",
+              "as": "n",
+              "items": [
+                {
+                  "html": "{{n}}",
+                  "text": "{{n}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which size? <em>We'll help.</em></strong> Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation. <a href=\"/contact\">Get a Sizing Recommendation</a>",
+          "text": "Not sure which size? We'll help. Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation. Get a Sizing Recommendation"
+        }
+      ]
+    },
+    {
+      "name": "Other electric heaters",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "More electric <em>heaters</em>",
+          "text": "More electric heaters"
+        },
+        {
+          "type": "link",
+          "html": "Back to all heaters",
+          "text": "Back to all heaters",
+          "href": "/sauna-heaters",
+          "variant": "link"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.others}}",
+          "as": "o",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{o.name}}",
+              "text": "{{o.name}}",
+              "href": "{{o.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

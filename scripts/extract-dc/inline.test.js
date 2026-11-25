@@ -38,6 +38,17 @@ test("spaces inside emphasis move outside it", () => {
   expect(inlineHtml(p(`a<em> b </em>c`), ctx)).toBe("a <em>b</em> c");
 });
 
+test("a block-displayed span inside inline copy is kept apart by a space", () => {
+  expect(inlineHtml(p(`Compare<span style="display: block">plunges</span>`), ctx)).toBe("Compare plunges");
+});
+
+test("a horizontal margin standing in for a space becomes a space", () => {
+  expect(inlineHtml(p(`<span style="font-style: italic; margin-right: 10px">Indoor saunas, too.</span>Ready-made kits.`), ctx)).toBe(
+    "<em>Indoor saunas, too.</em> Ready-made kits.",
+  );
+  expect(inlineHtml(p(`From<span style="margin-left: 0">x</span>`), ctx)).toBe("Fromx");
+});
+
 test("template holes survive", () => {
   expect(inlineHtml(p(`From {{it.price}} <a href="{{it.href}}">{{it.n}}</a>`), ctx)).toBe(
     `From {{it.price}} <a href="{{it.href}}">{{it.n}}</a>`,

@@ -5,6 +5,10 @@ import { mapHref } from "./links.mjs";
 
 const SKIP = new Set(["svg", "script", "style"]);
 
+/** Styled as its own box (block, flex or grid), so its text never joins a neighbour's. */
+export const isLayoutBox = (node) => LAYOUT_BOX.test(node.getAttribute?.("style") ?? "");
+const LAYOUT_BOX = /(^|;)\s*display\s*:\s*(block|flex|grid|inline-flex|inline-grid)\b/i;
+
 const escapeText = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const escapeAttr = (s) => escapeText(s).replace(/"/g, "&quot;");
 
@@ -36,7 +40,13 @@ function render(node, ctx) {
   let out = inner;
   if (bold) out = `<strong>${out}</strong>`;
   if (italic) out = `<em>${out}</em>`;
-  return out;
+  // A box laid out on its own line or in a flex/grid row must not run into its neighbours' words.
+  if (isLayoutBox(node)) return ` ${out} `;
+  // The design sometimes spaces words with a margin instead of a space character.
+  const style = node.getAttribute("style") ?? "";
+  const before = /margin-left\s*:\s*[1-9]/i.test(style) ? " " : "";
+  const after = /margin-right\s*:\s*[1-9]/i.test(style) ? " " : "";
+  return before + out + after;
 }
 
 function tidy(html) {

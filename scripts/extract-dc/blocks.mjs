@@ -1,7 +1,7 @@
 // Copy blocks: turns a design section's markup into typed blocks (heading, paragraph, link, card, image, …) so page
 // components can render the copy verbatim. See docs/superpowers/specs/2026-11-24-extract-dc-design.md.
 
-import { inlineHtml, htmlToText } from "./inline.mjs";
+import { inlineHtml, htmlToText, isLayoutBox } from "./inline.mjs";
 import { mapHref } from "./links.mjs";
 
 const HEADING = /^h([1-6])$/;
@@ -21,8 +21,16 @@ const KNOWN = new Set([
 const tagOf = (n) => n.rawTagName?.toLowerCase();
 const elements = (n) => n.childNodes.filter((c) => c.nodeType === 1);
 const hidden = (n) => SKIP.has(tagOf(n)) || n.getAttribute("aria-hidden") === "true";
-const isBlockish = (n) => HEADING.test(tagOf(n)) || BLOCK.has(tagOf(n)) || (tagOf(n) === "a" && containsBlock(n));
-const containsBlock = (n) => elements(n).some((c) => !hidden(c) && (isBlockish(c) || containsBlock(c)));
+const isBlockish = (n) =>
+  HEADING.test(tagOf(n)) || BLOCK.has(tagOf(n)) || isLayoutBox(n) || (tagOf(n) === "a" && containsBlock(n));
+// Parts that show as separate boxes in a flex/grid layout: element children and loose text.
+const layoutParts = (n) =>
+  n.childNodes.filter((c) => (c.nodeType === 3 ? c.text.trim() !== "" : c.nodeType === 1 && !hidden(c)));
+/** A flex/grid box with several parts: each part is its own block. */
+const splitsIntoParts = (n) =>
+  /(^|;)\s*display\s*:\s*(inline-)?(flex|grid)\b/i.test(n.getAttribute("style") ?? "") && layoutParts(n).length > 1;
+const containsBlock = (n) =>
+  splitsIntoParts(n) || elements(n).some((c) => !hidden(c) && (isBlockish(c) || containsBlock(c)));
 const withChildren = (childNodes) => ({ childNodes });
 
 /** Non-whitespace text that sits outside any <a>. */
@@ -249,9 +257,10 @@ function blocksOf(n, ctx) {
       if (/breadcrumb/i.test(n.getAttribute("aria-label") ?? "")) return breadcrumb(n, ctx);
   }
   // A run of text with inline links stays one block ("Call <a>(437) 429-6623</a>."); links on their own split out.
-  const inlineRun = !containsBlock(n) || (!hasNonLinkBlock(n) && textOutsideLinks(n));
+  const inlineRun = !containsBlock(n) || (!splitsIntoParts(n) && !hasNonLinkBlock(n) && textOutsideLinks(n));
   if (!inlineRun) return children(n, ctx);
-  const html = inlineHtml(n, ctx);
+  // Render the element itself, so its own italic/bold styling (a serif "01", a bold label) is kept.
+  const html = inlineHtml(withChildren([n]), ctx);
   if (!html) return [];
   for (const t of unknownTags(n)) {
     ctx.warn(`unhandled <${t.tag}> in ${ctx.section ?? "?"}: ${htmlToText(inlineHtml(t.node, ctx)).slice(0, 40)}`);

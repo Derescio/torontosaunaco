@@ -1,0 +1,289 @@
+{
+  "file": "Contact.dc.html",
+  "route": "/contact",
+  "pageMap": {
+    "route": "/contact",
+    "title": "Contact Us | Quotes & Showroom Visits | The Toronto Sauna Co.",
+    "description": "Request a sauna quote, book a visit to our Schomberg showroom, or ask a question. Call (437) 429-6623 or send us a message and we’ll get back to you fast.",
+    "index": "",
+    "photos": 7
+  },
+  "head": {
+    "title": "Contact Us | Quotes & Showroom Visits | The Toronto Sauna Co.",
+    "description": "Request a sauna quote, book a visit to our Schomberg showroom, or ask a question. Call (437) 429-6623 or send us a message and we’ll get back to you fast.",
+    "canonical": "https://www.thetorontosaunaco.com/contact",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna & Cold Plunge Warranty | The Toronto Sauna Co.",
+      "description": "Warranty coverage for saunas, cold plunges and heaters from The Toronto Sauna Co.: 5 years on all our cedar saunas (red or white cedar) and cold plunge tubs…",
+      "url": "https://www.thetorontosaunaco.com/warranty",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://www.thetorontosaunaco.com/contact",
+        "name": "Contact Us | Quotes & Showroom Visits | The Toronto Sauna Co.",
+        "description": "Request a sauna quote, book a visit to our Schomberg showroom, or ask a question. Call (437) 429-6623 or send us a message and we&rsquo;ll get back to you fast.",
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "The Toronto Sauna Co.",
+          "telephone": "+1-437-429-6623",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17380 Highway 27",
+            "addressLocality": "Schomberg",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Contact",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Contact"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Contact us",
+          "text": "Contact us"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Let’s <em><strong>talk saunas.</strong></em>",
+          "text": "Let’s talk saunas."
+        },
+        {
+          "type": "paragraph",
+          "html": "Get a quote, book a showroom visit or ask us anything. Every request goes straight to our sales team, and you’ll hear back fast.",
+          "text": "Get a quote, book a showroom visit or ask us anything. Every request goes straight to our sales team, and you’ll hear back fast."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Call or text:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a> <strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> <strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment) Delivery and installation across Ontario and British Columbia.",
+          "text": "Call or text: (437) 429-6623 Email: sales@thetorontosaunaco.com Showroom: 17380 Highway 27, Schomberg, ON (by appointment) Delivery and installation across Ontario and British Columbia."
+        },
+        {
+          "type": "if",
+          "value": "{{lfNotSent}}",
+          "blocks": [
+            {
+              "type": "form",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Get your sauna <em>quote.</em>",
+                      "text": "Get your sauna quote."
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfVisit}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Book a showroom <em>visit.</em>",
+                      "text": "Book a showroom visit."
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfAsk}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Ask us <em>anything.</em>",
+                      "text": "Ask us anything."
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "html": "Every request goes straight to our sales team, and we reply within one business day. Prefer to talk? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+                  "text": "Every request goes straight to our sales team, and we reply within one business day. Prefer to talk? Call (437) 429-6623."
+                },
+                {
+                  "type": "field",
+                  "label": "How can we help?",
+                  "id": "c-reason",
+                  "control": "select",
+                  "options": [
+                    "{{o.v}}"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Name *",
+                  "id": "c-name",
+                  "control": "input",
+                  "inputType": "text"
+                },
+                {
+                  "type": "field",
+                  "label": "Phone",
+                  "id": "c-phone",
+                  "control": "input",
+                  "inputType": "tel"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfNameErr}}",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "html": "Please enter your name.",
+                      "text": "Please enter your name."
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Email",
+                  "id": "c-email",
+                  "control": "input",
+                  "inputType": "email"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfReachErr}}",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "html": "{{lfReachMsg}}",
+                      "text": "{{lfReachMsg}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "City or postal code",
+                  "id": "c-city",
+                  "control": "input",
+                  "inputType": "text"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "I'm interested in",
+                      "id": "c-type",
+                      "control": "select",
+                      "options": [
+                        "{{o.v}}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfVisit}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "Preferred days and times",
+                      "id": "c-when",
+                      "control": "input",
+                      "inputType": "text",
+                      "placeholder": "e.g. Saturday morning"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "When would you like it installed?",
+                      "id": "c-time",
+                      "control": "select",
+                      "options": [
+                        "{{o.v}}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "{{lfMsgLabel}}",
+                  "id": "c-msg",
+                  "control": "textarea"
+                },
+                {
+                  "type": "link",
+                  "html": "{{lfBtn}}",
+                  "text": "{{lfBtn}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{lfDone}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Thanks, {{lfFirst}}.",
+              "text": "Thanks, {{lfFirst}}."
+            },
+            {
+              "type": "text",
+              "html": "We’ve got your request (reference {{lfRef}}) and our sales team will be in touch within one business day.",
+              "text": "We’ve got your request (reference {{lfRef}}) and our sales team will be in touch within one business day."
+            },
+            {
+              "type": "if",
+              "value": "{{lfMailed}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Your email app should have opened with your details filled in. Just press send. If it didn’t open, email <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> or call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+                  "text": "Your email app should have opened with your details filled in. Just press send. If it didn’t open, email sales@thetorontosaunaco.com or call (437) 429-6623."
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Send another request",
+              "text": "Send another request",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

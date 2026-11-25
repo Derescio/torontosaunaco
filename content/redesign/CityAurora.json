@@ -1,0 +1,649 @@
+{
+  "file": "CityAurora.dc.html",
+  "route": "/service-areas/aurora",
+  "pageMap": {
+    "route": "/service-areas/aurora",
+    "title": "Backyard Saunas in Aurora | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Aurora, delivered and installed for $1,750. Serving Aurora Estates, Hills of St Andrew, Aurora Highlands and more.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "Backyard Saunas in Aurora | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Aurora, delivered and installed for $1,750. Serving Aurora Estates, Hills of St Andrew, Aurora Highlands and more.",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas/aurora",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas in Aurora | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas in Aurora, delivered and installed for $1,750. Serving Aurora Estates, Hills of St Andrew, Aurora Highlands and more.",
+      "url": "https://www.thetorontosaunaco.com/service-areas/aurora",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Backyard sauna sales, delivery and installation in Aurora",
+            "serviceType": "Backyard sauna installation",
+            "provider": {
+              "@id": "https://www.thetorontosaunaco.com/#store"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Aurora",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ontario"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Delivery and installation",
+              "price": "1750.00",
+              "priceCurrency": "CAD"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/service-areas/aurora",
+            "url": "https://www.thetorontosaunaco.com/service-areas/aurora",
+            "name": "Backyard Saunas in Aurora",
+            "description": "Premium backyard saunas in Aurora, delivered and installed for $1,750. Serving Aurora Estates, Hills of St Andrew, Aurora Highlands and more. Visit our King Township showroom."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Aurora",
+                "item": "https://www.thetorontosaunaco.com/service-areas/aurora"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How far is your showroom from Aurora?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our showroom is at 17380 Highway 27 in Schomberg, King Township, a short drive west of Aurora. Visits are by appointment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for a backyard sauna in Aurora?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Properties near regulated watercourses may also need conservation authority sign-off. We check before you order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which sauna handles winter best?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All of our cedar saunas are used year-round. For the most efficient winter heat, the Studio Six Mini and Max are fully insulated and aluminum-clad."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does delivery and installation cost in Aurora?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery and installation is $1,750 anywhere in Ontario, including Aurora. Delivery only is $450. HST is shown separately on every quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What heater size does my sauna need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas",
+              "href": "/service-areas"
+            },
+            {
+              "text": "Aurora"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "York Region",
+          "text": "York Region"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Saunas in <em><strong>Aurora</strong></em>",
+          "text": "Backyard Saunas in Aurora"
+        },
+        {
+          "type": "paragraph",
+          "html": "Aurora's estate lots and tree-lined streets are made for a backyard sauna. We're a short drive west in King Township, so we can walk your property, show you models at our showroom and install on your schedule.",
+          "text": "Aurora's estate lots and tree-lined streets are made for a backyard sauna. We're a short drive west in King Township, so we can walk your property, show you models at our showroom and install on your schedule."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Free Site Consult</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Book a Free Site Consult Call (437) 429-6623"
+        },
+        {
+          "type": "image",
+          "src": "./assets/e4418d4b075947778dbc02c2ad3be0e5.jpg",
+          "alt": "Cedar barrel sauna with black roof on a garden path, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>$1,750 delivery and installation</strong>Anywhere in Ontario, including Aurora. Delivery only: $450.",
+          "text": "$1,750 delivery and installationAnywhere in Ontario, including Aurora. Delivery only: $450."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom in King Township</strong>17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "Showroom in King Township17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "5-star Google reviewsReal customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>Western Red Cedar saunas built for Ontario winters.",
+          "text": "Made in CanadaWestern Red Cedar saunas built for Ontario winters."
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhoods",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Where we install",
+          "text": "Where we install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Serving all of <em><strong>Aurora.</strong></em>",
+          "text": "Serving all of Aurora."
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install backyard saunas across Aurora, including Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington and Aurora Village.",
+          "text": "We design, deliver and install backyard saunas across Aurora, including Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington and Aurora Village."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Aurora Estates",
+              "text": "Aurora Estates"
+            },
+            {
+              "html": "Hills of St Andrew",
+              "text": "Hills of St Andrew"
+            },
+            {
+              "html": "Aurora Highlands",
+              "text": "Aurora Highlands"
+            },
+            {
+              "html": "Bayview Wellington",
+              "text": "Bayview Wellington"
+            },
+            {
+              "html": "Aurora Village",
+              "text": "Aurora Village"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local setting",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Close to our showroom",
+          "text": "Close to our showroom"
+        },
+        {
+          "type": "paragraph",
+          "html": "Our Schomberg showroom is just west of Aurora. Come see the Neptune, Orion and Pure Cube in person, sit inside, and compare electric and wood-burning heaters before you decide.",
+          "text": "Our Schomberg showroom is just west of Aurora. Come see the Neptune, Orion and Pure Cube in person, sit inside, and compare electric and wood-burning heaters before you decide."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Oak Ridges Moraine and conservation areas",
+          "text": "Oak Ridges Moraine and conservation areas"
+        },
+        {
+          "type": "paragraph",
+          "html": "Parts of Aurora sit on the Oak Ridges Moraine or near watercourses regulated by the Lake Simcoe Region Conservation Authority. For most backyards this changes nothing, but on larger rural lots we'll flag whether a conservation review is worth checking.",
+          "text": "Parts of Aurora sit on the Oak Ridges Moraine or near watercourses regulated by the Lake Simcoe Region Conservation Authority. For most backyards this changes nothing, but on larger rural lots we'll flag whether a conservation review is worth checking."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Four-season use",
+          "text": "Four-season use"
+        },
+        {
+          "type": "paragraph",
+          "html": "Aurora winters are long. Our cedar saunas are built for Ontario's climate, and the Studio Six models add full insulation and aluminum cladding for true four-season use.",
+          "text": "Aurora winters are long. Our cedar saunas are built for Ontario's climate, and the Studio Six models add full insulation and aluminum cladding for true four-season use."
+        }
+      ]
+    },
+    {
+      "name": "Picks",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Recommended for Aurora",
+          "text": "Recommended for Aurora"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas we recommend in <em><strong>Aurora.</strong></em>",
+          "text": "Saunas we recommend in Aurora."
+        },
+        {
+          "type": "paragraph",
+          "html": "Spacious signature models and the insulated Studio Six suit Aurora's larger lots and long winters.",
+          "text": "Spacious signature models and the insulated Studio Six suit Aurora's larger lots and long winters."
+        },
+        {
+          "type": "link",
+          "html": "Shop all saunas",
+          "text": "Shop all saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/neptune",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/09fb97341972ee574c628f379620adfd.jpg",
+              "alt": "Neptune black outdoor sauna with full glass front in an autumn garden, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Neptune",
+              "text": "The Neptune"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person",
+              "text": "5–6 person"
+            },
+            {
+              "type": "text",
+              "html": "$17,896",
+              "text": "$17,896"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/orion",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/33b1ffe495febe599aef11e4344ab64f.jpg",
+              "alt": "Orion outdoor sauna glass corner beside an outdoor shower, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Orion",
+              "text": "The Orion"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person, all glass",
+              "text": "5–6 person, all glass"
+            },
+            {
+              "type": "text",
+              "html": "$18,735",
+              "text": "$18,735"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/studio-six-max",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/2a91d5be2a07475b9fffa4c7ee9eadcb.jpg",
+              "alt": "Studio Six Max outdoor sauna in white metal siding, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Studio Six Max",
+              "text": "The Studio Six Max"
+            },
+            {
+              "type": "text",
+              "html": "4–5 person, four-season",
+              "text": "4–5 person, four-season"
+            },
+            {
+              "type": "text",
+              "html": "$22,350",
+              "text": "$22,350"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/avalon",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/c8ad1d74db4f0d61b44fa9e557d9f4b7.jpg",
+              "alt": "Avalon outdoor sauna in black stain with a large picture window beside a pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "The Avalon",
+              "text": "The Avalon"
+            },
+            {
+              "type": "text",
+              "html": "6–7 person, three tiers",
+              "text": "6–7 person, three tiers"
+            },
+            {
+              "type": "text",
+              "html": "$15,450",
+              "text": "$15,450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "How it works",
+          "text": "How it works"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>steam.</strong></em>",
+          "text": "From first call to first steam."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "html": "<strong>01</strong> <strong>Consult</strong> Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+              "text": "01 Consult Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+            },
+            {
+              "html": "<strong>02</strong> <strong>Site check</strong> We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+              "text": "02 Site check We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+            },
+            {
+              "html": "<strong>03</strong> <strong>Spec and quote</strong> We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+              "text": "03 Spec and quote We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+            },
+            {
+              "html": "<strong>04</strong> <strong>Deliver and install</strong> Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+              "text": "04 Deliver and install Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-heaters\">Compare heaters</a> <a href=\"/cold-plunges\">Add a cold plunge</a> <a href=\"/accessories\">Sauna accessories</a>",
+          "text": "Compare heaters Add a cold plunge Sauna accessories"
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Reviews",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "text": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "cite": "<strong>Matthew Alexander</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "text": "“TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "cite": "<strong>Caterina Imperium</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "text": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "cite": "<strong>Douglas S. Wright</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Questions",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas in Aurora: <em><strong>FAQ.</strong></em>",
+          "text": "Backyard saunas in Aurora: FAQ."
+        },
+        {
+          "type": "faq",
+          "html": "How far is your showroom from Aurora?",
+          "text": "How far is your showroom from Aurora?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Our showroom is at 17380 Highway 27 in Schomberg, King Township, a short drive west of Aurora. Visits are by appointment.",
+              "text": "Our showroom is at 17380 Highway 27 in Schomberg, King Township, a short drive west of Aurora. Visits are by appointment."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a permit for a backyard sauna in Aurora?",
+          "text": "Do I need a permit for a backyard sauna in Aurora?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Properties near regulated watercourses may also need conservation authority sign-off. We check before you order.",
+              "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. Properties near regulated watercourses may also need conservation authority sign-off. We check before you order."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Which sauna handles winter best?",
+          "text": "Which sauna handles winter best?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "All of our cedar saunas are used year-round. For the most efficient winter heat, the Studio Six Mini and Max are fully insulated and aluminum-clad.",
+              "text": "All of our cedar saunas are used year-round. For the most efficient winter heat, the Studio Six Mini and Max are fully insulated and aluminum-clad."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much does delivery and installation cost in Aurora?",
+          "text": "How much does delivery and installation cost in Aurora?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery and installation is $1,750 anywhere in Ontario, including Aurora. Delivery only is $450. HST is shown separately on every quote.",
+              "text": "Delivery and installation is $1,750 anywhere in Ontario, including Aurora. Delivery only is $450. HST is shown separately on every quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What heater size does my sauna need?",
+          "text": "What heater size does my sauna need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances.",
+              "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nearby",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Also serving nearby:</strong> <a href=\"/service-areas/king-city\">King City</a><a href=\"/service-areas/richmond-hill\">Richmond Hill</a><a href=\"/service-areas/markham\">Markham</a><a href=\"/service-areas/king-township\">King Township</a> <a href=\"/service-areas\">All service areas →</a>",
+          "text": "Also serving nearby: King CityRichmond HillMarkhamKing Township All service areas →"
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for a sauna in <em><strong>Aurora?</strong></em>",
+          "text": "Ready for a sauna in Aurora?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Site Consult</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Book a Site Consult (437) 429-6623"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

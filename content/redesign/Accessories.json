@@ -1,0 +1,2675 @@
+{
+  "file": "Accessories.dc.html",
+  "route": "/accessories",
+  "pageMap": {
+    "route": "/accessories",
+    "title": "Sauna Accessories, Lighting & Controls | The Toronto Sauna Co.",
+    "description": "Premium sauna accessories for your backyard sauna: cedar buckets, Narvi and Hukka soapstone, LED lighting, HUUM and Homecraft heater controls, heater shields…",
+    "index": "",
+    "photos": 76
+  },
+  "head": {
+    "title": "Sauna Accessories, Lighting & Controls | The Toronto Sauna Co.",
+    "description": "Premium sauna accessories for your backyard sauna: cedar buckets, Narvi and Hukka soapstone, LED lighting, HUUM and Homecraft heater controls, heater shields…",
+    "canonical": "https://www.thetorontosaunaco.com/accessories",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Accessories, Lighting & Controls | The Toronto Sauna Co.",
+      "description": "Premium sauna accessories for your backyard sauna: cedar buckets, Narvi and Hukka soapstone, LED lighting, HUUM and Homecraft heater controls, heater shields…",
+      "url": "https://www.thetorontosaunaco.com/accessories",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Ontario"
+            },
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=17380+Highway+27+Schomberg+ON+L0G+1T0"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/accessories",
+            "url": "https://www.thetorontosaunaco.com/accessories",
+            "name": "Sauna Accessories in Ontario",
+            "description": "Premium sauna accessories for your backyard sauna: cedar buckets, Narvi and Hukka soapstone, LED lighting, HUUM and Homecraft heater controls, heater shields and wood finishes. Delivered across Ontario.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "url": "https://www.thetorontosaunaco.com",
+              "name": "The Toronto Sauna Co."
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Accessories",
+                "item": "https://www.thetorontosaunaco.com/accessories"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Sauna accessories",
+            "numberOfItems": 70,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Product",
+                  "name": "Starter Sauna Accessory Package",
+                  "description": "Sauna essentials in one package. A simple start to the sauna ritual.",
+                  "category": "Accessory package",
+                  "sku": "APAC01",
+                  "image": "https://www.thetorontosaunaco.com/_blob/5729252e6a427c5e0791635437646abf",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "111.60",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Product",
+                  "name": "Deluxe Sauna Accessory Package",
+                  "description": "The Starter essentials plus a sand timer, bottle shelf and both of our cedar backrests.",
+                  "category": "Accessory package",
+                  "sku": "APAC02",
+                  "image": "https://www.thetorontosaunaco.com/_blob/c6851b17538b90f430d1541f74d46cc9",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "386.55",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Product",
+                  "name": "Supreme Sauna Accessory Package",
+                  "description": "The full Narvi Black set with eucalyptus essence and two Comfort backrests.",
+                  "category": "Accessory package",
+                  "sku": "APAC03",
+                  "image": "https://www.thetorontosaunaco.com/_blob/48c077a483491bc7683baeb0613fabd6",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "538.65",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Product",
+                  "name": "Wooden Sauna Bucket & Ladle",
+                  "description": "Handcrafted cedar with a plastic liner. Fill, ladle onto the stones, and make löyly.",
+                  "category": "Buckets & Ladles",
+                  "sku": "BL01",
+                  "image": "https://www.thetorontosaunaco.com/_blob/3f01c1da1436cadb18e25ce9a3a72bb3",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "82.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Black Bucket & Ladle",
+                  "description": "Black aluminum with birch details. A modern Finnish take on the classic set.",
+                  "category": "Buckets & Ladles",
+                  "sku": "163423 / 163424",
+                  "image": "https://www.thetorontosaunaco.com/_blob/e02d6ffb3263a55767dc5e20cf45e53e",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "186.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "Product",
+                  "name": "Comfort Sauna Backrest",
+                  "description": "A convex shape with a slight arch that supports an upright, well-postured seat.",
+                  "category": "Cedar Accessories",
+                  "sku": "BR04",
+                  "image": "https://www.thetorontosaunaco.com/_blob/a34977303c5df863babaaaf30e884955",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "106.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "Product",
+                  "name": "Elite Sauna Backrest",
+                  "description": "A concave curve that follows your spine and takes your weight, so you can lean back.",
+                  "category": "Cedar Accessories",
+                  "sku": "BR02",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2ceb627f48f7aafb5294b8189f72db1f",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "106.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "Product",
+                  "name": "Standard Sauna Headrest",
+                  "description": "Angled, ergonomic cedar headrest that supports your head and neck.",
+                  "category": "Cedar Accessories",
+                  "sku": "BR05",
+                  "image": "https://www.thetorontosaunaco.com/_blob/1fde00697018234ef5892a8f0d1b6e06",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "95.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                  "@type": "Product",
+                  "name": "Sauna Floor Mat 34\" x 60\"",
+                  "description": "Slatted cedar lets air flow and water drain, keeping the floor dry and comfortable. 88 x 150 cm.",
+                  "category": "Cedar Accessories",
+                  "sku": "SF02",
+                  "image": "https://www.thetorontosaunaco.com/_blob/6f618fdcd76af2f3591d99c0ffa19519",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "210.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "item": {
+                  "@type": "Product",
+                  "name": "Towel Hooks (3 Peg)",
+                  "description": "Three pegs keep towels and robes within reach. Mounts inside or outside the sauna.",
+                  "category": "Cedar Accessories",
+                  "sku": "HOOKS3",
+                  "image": "https://www.thetorontosaunaco.com/_blob/9cb6124676b68d63abfb7c079273865a",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "22.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "item": {
+                  "@type": "Product",
+                  "name": "Single Towel Hook",
+                  "description": "Sturdy hook on a square backplate, made to match cedar interiors. Inside or outside.",
+                  "category": "Cedar Accessories",
+                  "sku": "303088",
+                  "image": "https://www.thetorontosaunaco.com/_blob/4c711ff81bd96b94f99bddcc676ee5b6",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "9.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "item": {
+                  "@type": "Product",
+                  "name": "Cedar Bottle Shelf",
+                  "description": "Open cedar shelf for water bottles, essences and cleaners, right where you need them.",
+                  "category": "Cedar Accessories",
+                  "sku": "SHELF1",
+                  "image": "https://www.thetorontosaunaco.com/_blob/7b3f9bf92b691da81119bbbeea1a975d",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "60.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 13,
+                "item": {
+                  "@type": "Product",
+                  "name": "5\" x 11\" Cedar Sauna Sign",
+                  "description": "A simple cedar sign to mark your sauna. Hangs inside or outside.",
+                  "category": "Cedar Accessories",
+                  "sku": "SIGN01",
+                  "image": "https://www.thetorontosaunaco.com/_blob/77e228955bd398ee2ffd26966c58fce1",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "26.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 14,
+                "item": {
+                  "@type": "Product",
+                  "name": "Electric Sauna Heater Shield",
+                  "description": "Guards against accidental contact with an electric heater and blends with the interior. Pre-cut for easy assembly.",
+                  "category": "Cedar Accessories",
+                  "sku": "303087",
+                  "image": "https://www.thetorontosaunaco.com/_blob/8d1c2185f396282c5a7bad33a67f3b13",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "67.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 15,
+                "item": {
+                  "@type": "Product",
+                  "name": "Complete Sauna Vent Kit",
+                  "description": "Wall-mounted wooden panel with perforated plates. Rotate to fine-tune airflow, heat and humidity.",
+                  "category": "Cedar Accessories",
+                  "sku": "VENTKIT",
+                  "image": "https://www.thetorontosaunaco.com/_blob/641bde8de26c68fec38b35c173561641",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "33.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 16,
+                "item": {
+                  "@type": "Product",
+                  "name": "5' Clear Cedar Firewood Storage Barrel",
+                  "description": "Barrel-style log storage in clear cedar with stainless steel bands, for wood-fired saunas and hot tubs.",
+                  "category": "Cedar Accessories",
+                  "sku": "250F",
+                  "image": "https://www.thetorontosaunaco.com/_blob/ffbefc9b06675ce8b62fa53d4d57bea3",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "2053.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 17,
+                "item": {
+                  "@type": "Product",
+                  "name": "5' Knotty Cedar Firewood Storage Barrel",
+                  "description": "Weather-resistant log storage in knotty cedar with stainless steel bands. Sits beside a wood-fired sauna.",
+                  "category": "Cedar Accessories",
+                  "sku": "252F",
+                  "image": "https://www.thetorontosaunaco.com/_blob/163c8a1b897138809530a25ddca4e8a5",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1520.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 18,
+                "item": {
+                  "@type": "Product",
+                  "name": "SaunaScapes Sade 43\" Single Light Set",
+                  "description": "43\" RGB LED light set. Pick any colour from a free app.",
+                  "category": "Lighting & Sound",
+                  "sku": "BSADE43",
+                  "image": "https://www.thetorontosaunaco.com/_blob/e46df66cdb47089e89555fc61771c483",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "375.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 19,
+                "item": {
+                  "@type": "Product",
+                  "name": "SaunaScapes Sade 72\" Single Light Set",
+                  "description": "72\" RGB LED light set for larger saunas. Colour set from a free app.",
+                  "category": "Lighting & Sound",
+                  "sku": "BSADE72",
+                  "image": "https://www.thetorontosaunaco.com/_blob/1acce63a8eaea8a88dc4cd52cdd56040",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "416.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 20,
+                "item": {
+                  "@type": "Product",
+                  "name": "SaunaGlo 43\" LED Light Bar",
+                  "description": "43\" premium LED strip light bar. Warm, energy-efficient glow.",
+                  "category": "Lighting & Sound",
+                  "sku": "720734",
+                  "image": "https://www.thetorontosaunaco.com/_blob/1abf1c3e731a57dda634666362b26f6d",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1106.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 21,
+                "item": {
+                  "@type": "Product",
+                  "name": "SaunaGlo 72\" LED Light Bar",
+                  "description": "72\" premium LED strip light bar for longer runs.",
+                  "category": "Lighting & Sound",
+                  "sku": "720733",
+                  "image": "https://www.thetorontosaunaco.com/_blob/687cad671a9e1af7978c7108344bd8e7",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1317.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 22,
+                "item": {
+                  "@type": "Product",
+                  "name": "Electric Sauna Light (Marine Grade)",
+                  "description": "Traditional oval light, built to handle high heat and moisture.",
+                  "category": "Lighting & Sound",
+                  "sku": "LIGHT1",
+                  "image": "https://www.thetorontosaunaco.com/_blob/b301bc099761644f76939bd991a776f8",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "36.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 23,
+                "item": {
+                  "@type": "Product",
+                  "name": "Cedar Light Shade",
+                  "description": "Cedar shade that fits around the Electric Sauna Light.",
+                  "category": "Lighting & Sound",
+                  "sku": "SHADE1",
+                  "image": "https://www.thetorontosaunaco.com/_blob/bf94556b1c41fa4c62d3b40d8d008738",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "77.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 24,
+                "item": {
+                  "@type": "Product",
+                  "name": "SaunaScapes Kaiku Complete Sound System",
+                  "description": "Bluetooth sauna audio with an 8\" subwoofer base and wall transducers.",
+                  "category": "Lighting & Sound",
+                  "sku": "SSKAIK",
+                  "image": "https://www.thetorontosaunaco.com/_blob/9967e5bb43764bca5347d69bda75f7ff",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "893.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 25,
+                "item": {
+                  "@type": "Product",
+                  "name": "HÖYRYKIVI Soapstone Steam Stone",
+                  "description": "A soapstone block with four wells. Fill with water or essence and set it on the stones for gentle, scented steam.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/fe0dd00166592fba8753b0277f40a53a",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "35.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 26,
+                "item": {
+                  "@type": "Product",
+                  "name": "ELLI Soapstone Sauna Elf",
+                  "description": "A smiling soapstone sauna elf with a round cap. Sits among the heater stones as a friendly guardian.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/8401c0d79d9430b8c50c3f73367aa138",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "54.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 27,
+                "item": {
+                  "@type": "Product",
+                  "name": "TAHVO Soapstone Sauna Elf",
+                  "description": "ELLI's pointy-hatted companion, carved from soapstone to sit on the heater stones.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/d9abc3e4b1a984bfd3c16c21120c67da",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "54.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 28,
+                "item": {
+                  "@type": "Product",
+                  "name": "GRANDMA Engraved Soapstone",
+                  "description": "A soapstone block engraved with “GRANDMA”. A sauna keepsake and a thoughtful gift.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/11fdcc27634504d801002836d0a484b4",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "85.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 29,
+                "item": {
+                  "@type": "Product",
+                  "name": "LUMIUKKO Snowman Soapstone Thermometer",
+                  "description": "A crescent soapstone thermometer that reads by picture: from a snowman standing tall to one melted in the sun.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/6dc29c9b8bcdbce62de6b2267acf1951",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "99.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 30,
+                "item": {
+                  "@type": "Product",
+                  "name": "PISARAINEN Soapstone Thermometer (Fahrenheit)",
+                  "description": "A water-drop-shaped soapstone thermometer with a copper centre, reading 40–280 °F.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/fbd2591689619a226ddee30d13c12c18",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "121.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 31,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM UKU Wi-Fi Control (Black)",
+                  "description": "Control panel for HUUM heaters with app control: start, schedule and adjust your sauna from your phone.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/fee7140f09089fb6e6dc8304960fd763",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1392.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 32,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM UKU Local Control (Black)",
+                  "description": "The in-sauna control panel for HUUM heaters, without the app. Simple temperature and timer settings.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2f4e526fa32d5f0c4ae58b9a5083357c",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "1117.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 33,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Digital Touchpad + Contactor (Indoor)",
+                  "description": "Wall touchpad and contactor box for Homecraft heaters in indoor saunas.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2536c48f54263a9bb455f50e9d4c3f34",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "575.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 34,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Wi-Fi Touchpad + Contactor (Indoor)",
+                  "description": "Homecraft touchpad and contactor with Wi-Fi, so you can start an indoor sauna from your phone.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/d5d44bc1a93d7b5cd5a1412269941d2e",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "825.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 35,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Digital Touchpad + Contactor (Outdoor)",
+                  "description": "Wall touchpad and weather-ready contactor for Homecraft heaters in outdoor and backyard saunas.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2536c48f54263a9bb455f50e9d4c3f34",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "650.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 36,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Wi-Fi Touchpad + Contactor (Outdoor)",
+                  "description": "Outdoor Homecraft touchpad and contactor with Wi-Fi for app control of your backyard sauna.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/d5d44bc1a93d7b5cd5a1412269941d2e",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "900.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 37,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM Drop Safety Railing",
+                  "description": "Light wooden arcs on stainless supports that wrap the HUUM Drop to prevent accidental contact.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/bd6f66557841bd80281a9970bd2cccc0",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "306.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 38,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM HIVE Mini Safety Railing",
+                  "description": "A wooden safety rail sized for the HIVE Mini that keeps hands and knees off the hot stones.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2733590780c5fab204015e936ccefcf6",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "339.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 39,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM UKU Display Panel (Black)",
+                  "description": "Replacement or second control panel for the HUUM UKU system, with a bright display and turn-and-press dial.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/534723f1af80d6b27cd802e1a3257ea3",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "399.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 40,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM Drop Drip Tray",
+                  "description": "A black steel tray that sits under the HUUM Drop to catch water and stone grit and protect the floor.",
+                  "category": "Heater Controls & Safety Rails",
+                  "image": "https://www.thetorontosaunaco.com/_blob/a1e1274a3c3b302c0567145fbe1e1a7b",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "133.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 41,
+                "item": {
+                  "@type": "Product",
+                  "name": "Sauna Ceiling Heat Shield with Hardware (Curved)",
+                  "description": "A curved shield that mounts above the heater on a barrel sauna ceiling, with all hardware included.",
+                  "category": "Shields & Fixtures",
+                  "image": "https://www.thetorontosaunaco.com/_blob/e8082b7f1174926376236fa18db7e256",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "96.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 42,
+                "item": {
+                  "@type": "Product",
+                  "name": "Sauna Ceiling Heat Shield with Hardware (Flat)",
+                  "description": "A flat cedar-faced shield that hangs below a flat sauna ceiling above the heater, with all hardware included.",
+                  "category": "Shields & Fixtures",
+                  "image": "https://www.thetorontosaunaco.com/_blob/f0b8ddb3e4a7935b9c7362424bf49665",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "85.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 43,
+                "item": {
+                  "@type": "Product",
+                  "name": "Premium Shower Hardware",
+                  "description": "Brushed stainless shower set with a rain head, hand shower and thermostatic mixer. For saunas with a shower room.",
+                  "category": "Shields & Fixtures",
+                  "image": "https://www.thetorontosaunaco.com/_blob/585d10d590cd0e31185635befca9fa1b",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "388.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 44,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Wood Basket",
+                  "description": "Black steel firewood carrier with a wooden handle. Carry an armload to the stove and keep it tidy beside it.",
+                  "category": "Cedar Accessories",
+                  "image": "https://www.thetorontosaunaco.com/_blob/deba4c48ffa539d0b3d97c313c45ef8e",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "154.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 45,
+                "item": {
+                  "@type": "Product",
+                  "name": "SAUNAKKO Soapstone Aromatic Cup",
+                  "description": "A smooth soapstone cup that sits on the heater stones and releases essential-oil scent with the steam.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/e92a42aebe237a760c629f5c555f08cd",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "54.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 46,
+                "item": {
+                  "@type": "Product",
+                  "name": "SAUNAJOY Soapstone Massage Stone",
+                  "description": "A palm-sized soapstone massage stone shaped to grip. Warm it in the sauna and work tight shoulders and back.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/33ec9dfff142b224dd8fbfddcc89465c",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "54.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 47,
+                "item": {
+                  "@type": "Product",
+                  "name": "MINI SOLEJOY Foot Massager with Cork Base",
+                  "description": "A soapstone ball in a cork cradle. Roll your foot over it after a session to ease tired soles.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/304743d008c948ca09cc30876390675f",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "90.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 48,
+                "item": {
+                  "@type": "Product",
+                  "name": "SAUNATROIKKA Soapstone Fountain",
+                  "description": "A soapstone cup filled with small stones that sits on the heater. Pour water in and it sends up a playful fountain of steam.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/2f4c8fb3017020d8cc0d8e8afa62562c",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "153.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 49,
+                "item": {
+                  "@type": "Product",
+                  "name": "PISARAINEN Soapstone Thermometer (Celsius)",
+                  "description": "The water-drop soapstone thermometer with a copper centre, reading 20–120 °C.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/b4d4162d1d3ba5c6fcb76e348aed1272",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "121.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 50,
+                "item": {
+                  "@type": "Product",
+                  "name": "MAININKI Soapstone Thermometer & Hygrometer",
+                  "description": "A carved soapstone piece with two copper-capped dials: temperature in °C and humidity in %.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/e731481c67227da1e4e16228734f1537",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "172.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 51,
+                "item": {
+                  "@type": "Product",
+                  "name": "GRANDPA Engraved Soapstone",
+                  "description": "A soapstone block engraved with “GRANDPA”. The companion to GRANDMA.",
+                  "category": "Soapstone",
+                  "image": "https://www.thetorontosaunaco.com/_blob/b1c628f94836387f6f285f0125c0bae7",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "85.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 52,
+                "item": {
+                  "@type": "Product",
+                  "name": "4oz Eucalyptus Sauna Essence",
+                  "description": "The classic steam scent: sharp and green rather than sweet. Mix a few drops into your bucket.",
+                  "category": "Essences & Cleaners",
+                  "sku": "EUC04",
+                  "image": "https://www.thetorontosaunaco.com/_blob/6a254036b2a99bf31cbaf773e6bd2df8",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "19.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 53,
+                "item": {
+                  "@type": "Product",
+                  "name": "4oz Lavender Sauna Essence",
+                  "description": "Where eucalyptus wakes a room up, lavender settles it. A few drops in the bucket.",
+                  "category": "Essences & Cleaners",
+                  "sku": "LAV04",
+                  "image": "https://www.thetorontosaunaco.com/_blob/294bb713b17bd3cc8272d1ff7776c509",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "19.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 54,
+                "item": {
+                  "@type": "Product",
+                  "name": "Nystad Sauna Scent: Birch Leaf (3-Pack)",
+                  "description": "Ground Finnish birch leaves in biodegradable sachets that steep in your bucket like tea.",
+                  "category": "Essences & Cleaners",
+                  "sku": "645831",
+                  "image": "https://www.thetorontosaunaco.com/_blob/1ad9b92795b8627f7fed9a1476286721",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "27.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 55,
+                "item": {
+                  "@type": "Product",
+                  "name": "Nystad Sauna Scent: Birch & Peppermint (3-Pack)",
+                  "description": "Peppermint reads as cold in a hot room, a crisp contrast to the heat.",
+                  "category": "Essences & Cleaners",
+                  "sku": "645832",
+                  "image": "https://www.thetorontosaunaco.com/_blob/43e0f30860b8a9e9a18a0789acaee1c1",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "27.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 56,
+                "item": {
+                  "@type": "Product",
+                  "name": "Nystad Sauna Scent: Birch & Lavender (3-Pack)",
+                  "description": "Lavender softens the birch rather than competing with it. Made for evening sessions.",
+                  "category": "Essences & Cleaners",
+                  "sku": "645833",
+                  "image": "https://www.thetorontosaunaco.com/_blob/445a8ce21a2ea02b225031b7630bea73",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "27.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 57,
+                "item": {
+                  "@type": "Product",
+                  "name": "Sauna Menthol (25g Bag)",
+                  "description": "Crystals made from natural essential mint oil that bring a cool sensation to a hot room.",
+                  "category": "Essences & Cleaners",
+                  "sku": "645835",
+                  "image": "https://www.thetorontosaunaco.com/_blob/d7691d6aa708db7f3f304bd8498ce96b",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "32.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 58,
+                "item": {
+                  "@type": "Product",
+                  "name": "Aromatherapy Oil Cup",
+                  "description": "Holds oil above the heat so the scent evaporates slowly instead of flashing off the stones.",
+                  "category": "Essences & Cleaners",
+                  "sku": "163595",
+                  "image": "https://www.thetorontosaunaco.com/_blob/562f564bb0f07e4a427a078af090ef50",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "24.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 59,
+                "item": {
+                  "@type": "Product",
+                  "name": "Rento Foot Care Set",
+                  "description": "A Finnish foot care set that turns your post-sauna routine into a soothing ritual.",
+                  "category": "Essences & Cleaners",
+                  "sku": "322396",
+                  "image": "https://www.thetorontosaunaco.com/_blob/dfb7162fd90dea756646e7b165e62373",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "63.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 60,
+                "item": {
+                  "@type": "Product",
+                  "name": "750ml Sauna Room Cleaner",
+                  "description": "Spray-and-wipe cleaner made for the wood surfaces inside your sauna.",
+                  "category": "Essences & Cleaners",
+                  "sku": "CLE750",
+                  "image": "https://www.thetorontosaunaco.com/_blob/5b96864eebf61072a7af997c71a4f4ad",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "25.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 61,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Black Thermometer (Celsius)",
+                  "description": "Durable black aluminum face in a natural birch frame. Reads in Celsius.",
+                  "category": "Thermometers & Sand Timers",
+                  "sku": "163430",
+                  "image": "https://www.thetorontosaunaco.com/_blob/98721930381283cc313de0a432234e74",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "109.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 62,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Black Thermometer (Fahrenheit)",
+                  "description": "The same black aluminum and birch thermometer, reading in Fahrenheit.",
+                  "category": "Thermometers & Sand Timers",
+                  "sku": "163590",
+                  "image": "https://www.thetorontosaunaco.com/_blob/9b9fab8c9f2f6e14e270cae2882a4c8c",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "109.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 63,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Black Sand Timer",
+                  "description": "15-minute timer in black steel with birch details. Time your rounds without a phone.",
+                  "category": "Thermometers & Sand Timers",
+                  "sku": "163431",
+                  "image": "https://www.thetorontosaunaco.com/_blob/740cd40c292b97d7039e86fb1d14c774",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "71.50",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 64,
+                "item": {
+                  "@type": "Product",
+                  "name": "Cedar Sauna Thermometer",
+                  "description": "Classic teardrop cedar shape with a dial that reads both temperature and humidity.",
+                  "category": "Thermometers & Sand Timers",
+                  "sku": "THEM01",
+                  "image": "https://www.thetorontosaunaco.com/_blob/ece67e21882610e37ddc8f0fa2b166a4",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "23.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 65,
+                "item": {
+                  "@type": "Product",
+                  "name": "Wall Mount 15-Minute Sand Timer",
+                  "description": "Heat- and moisture-tolerant cedar frame for a classic, rustic look on the wall.",
+                  "category": "Thermometers & Sand Timers",
+                  "sku": "SAND1",
+                  "image": "https://www.thetorontosaunaco.com/_blob/fc2c0b4087941b7b54297dc0d7852b17",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "33.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 66,
+                "item": {
+                  "@type": "Product",
+                  "name": "Meldos Natural Sauna Oil (2.5 L)",
+                  "description": "Natural-resin oil that soaks into the cedar instead of forming a film.",
+                  "category": "Wood Finishes",
+                  "sku": "264-002",
+                  "image": "https://www.thetorontosaunaco.com/_blob/ed10910a82372a1495e2bbe91d879924",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "185.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 67,
+                "item": {
+                  "@type": "Product",
+                  "name": "Livos Alis Light Teak Sauna Oil",
+                  "description": "Exterior oil in Light Teak. Guards against UV greying.",
+                  "category": "Wood Finishes",
+                  "sku": "580-068",
+                  "image": "https://www.thetorontosaunaco.com/_blob/4d5d14fb10503d2de2362c3fc90f3ef6",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "215.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 68,
+                "item": {
+                  "@type": "Product",
+                  "name": "Livos Alis Sesame Sauna Oil",
+                  "description": "3-in-1 exterior oil in Sesame. Protects and stains in one coat.",
+                  "category": "Wood Finishes",
+                  "sku": "580-1125",
+                  "image": "https://www.thetorontosaunaco.com/_blob/595194c48adde23612c48240037fa9b8",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "215.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 69,
+                "item": {
+                  "@type": "Product",
+                  "name": "Livos Alis Bongossi Sauna Oil",
+                  "description": "Exterior oil in Bongossi, a rich hardwood tone.",
+                  "category": "Wood Finishes",
+                  "sku": "580-439",
+                  "image": "https://www.thetorontosaunaco.com/_blob/112a8aa3cf71bc3a65798d2cd4642c41",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "215.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 70,
+                "item": {
+                  "@type": "Product",
+                  "name": "Livos Alis Black Sauna Oil",
+                  "description": "Exterior oil in Black, with UV protection built in.",
+                  "category": "Wood Finishes",
+                  "sku": "580-101",
+                  "image": "https://www.thetorontosaunaco.com/_blob/65cbe4d3753f31fd0b4f46e8fbe666c6",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "215.00",
+                    "priceCurrency": "CAD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.thetorontosaunaco.com/accessories",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What do I need to start with a new sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At minimum: a bucket and ladle for making steam, a thermometer and a sand timer. Our Starter package covers the bucket, ladle and thermometer and adds eucalyptus essence. The Deluxe and Supreme packages add a sand timer and backrests. Every package is 10% off the individual prices."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you deliver accessories across Ontario?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We ship accessories anywhere in Ontario; shipping is quoted by phone based on your order and location. If you are buying a sauna from us, we can bring your accessories with your sauna delivery and set them up on installation day."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I see the accessories before I buy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is your return policy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unused accessories in their original packaging can be returned. Processing fees and shipping costs are deducted from your refund. Contact us before sending anything back so we can arrange the return."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which heater control do I need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "HUUM electric heaters need a HUUM UKU control: choose Wi-Fi for app control or Local for an in-sauna panel only. Homecraft heaters run through a contactor and touchpad; pick the indoor or outdoor version to match where your sauna sits, and Wi-Fi if you want to start it from your phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a safety railing around my heater?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It is not required, but we recommend one for families and for smaller saunas where knees and elbows are close to the heater. HUUM makes fitted railings for the Drop and HIVE Mini."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What accessories suit a barrel sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A curved ceiling heat shield above the heater, a cedar backrest or two, a floor mat, and a bucket, ladle and thermometer. Wood-fired barrels pair well with a cedar firewood barrel or a Narvi wood basket."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are LED lights safe inside a sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Every light we carry is made for sauna heat and humidity. The SaunaScapes Sade RGB sets and the Kaiku sound system carry a 2-year warranty, and the Electric Sauna Light is marine-grade."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is soapstone, and why use it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A dense Finnish stone that absorbs heat slowly and releases it gently, which makes it ideal for steam stones, aroma cups and thermometers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I look after the cedar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use Meldos sauna oil on interior cedar and Livos oil on the exterior. Left untreated, cedar weathers to a silver-grey that many owners love."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Promo bar",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Save 10% with our accessory packages · Delivered across Ontario or pick up at our King showroom",
+          "text": "Save 10% with our accessory packages · Delivered across Ontario or pick up at our King showroom"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Accessories"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Every ritual starts with water on stone",
+          "text": "Every ritual starts with water on stone"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Premium Sauna <em><strong>Accessories</strong></em>",
+          "text": "Premium Sauna Accessories"
+        },
+        {
+          "type": "paragraph",
+          "html": "Handcrafted cedar, Finnish soapstone, sauna-rated lighting, natural essences and wood care. Everything you need to finish your sauna, chosen by people who use theirs every day.",
+          "text": "Handcrafted cedar, Finnish soapstone, sauna-rated lighting, natural essences and wood care. Everything you need to finish your sauna, chosen by people who use theirs every day."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#packages\">Shop Packages</a> <a href=\"#shop\">Browse All</a>",
+          "text": "Shop Packages Browse All"
+        },
+        {
+          "type": "image",
+          "src": "./assets/a015f88c724aca2c4516b2412d0c4c88.webp",
+          "alt": "Narvi black sauna bucket and ladle with bamboo handles, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Delivery, showroom, returns",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Delivered across Ontario</strong> Ships anywhere in Ontario (shipping quoted by phone), or arrives with your sauna delivery.",
+          "text": "Delivered across Ontario Ships anywhere in Ontario (shipping quoted by phone), or arrives with your sauna delivery."
+        },
+        {
+          "type": "text",
+          "html": "<strong>See it at our Schomberg showroom</strong> 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
+          "text": "See it at our Schomberg showroom 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Easy returns</strong> Unused accessories can be returned. Processing fees and shipping costs are deducted from your refund.",
+          "text": "Easy returns Unused accessories can be returned. Processing fees and shipping costs are deducted from your refund."
+        }
+      ]
+    },
+    {
+      "name": "Packages",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Accessory packages",
+          "text": "Accessory packages"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Start right. Save <em><strong>more.</strong></em>",
+          "text": "Start right. Save more."
+        },
+        {
+          "type": "paragraph",
+          "html": "The essentials, bundled at 10% off the individual prices. New sauna? Most owners start with a package and add backrests and floor mats next.",
+          "text": "The essentials, bundled at 10% off the individual prices. New sauna? Most owners start with a package and add backrests and floor mats next."
+        },
+        {
+          "type": "repeat",
+          "list": "{{packages}}",
+          "as": "k",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{k.featured}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Most popular",
+                  "text": "Most popular"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "",
+              "text": "",
+              "href": null,
+              "variant": "button",
+              "label": "View details for the {{k.name}} package"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{k.name}}</strong> SKU {{k.sku}}",
+              "text": "{{k.name}} SKU {{k.sku}}"
+            },
+            {
+              "type": "text",
+              "html": "{{k.short}}",
+              "text": "{{k.short}}"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "type": "repeat",
+                  "list": "{{k.included}}",
+                  "as": "inc",
+                  "items": [
+                    {
+                      "html": "{{inc}}",
+                      "text": "{{inc}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "View details",
+              "text": "View details",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{k.price}}</strong> {{k.was}} separately · <strong>Save {{k.save}} (10%)</strong>",
+              "text": "{{k.price}} {{k.was}} separately · Save {{k.save}} (10%)"
+            },
+            {
+              "type": "link",
+              "html": "Add to Cart",
+              "text": "Add to Cart",
+              "href": null,
+              "variant": "button",
+              "label": "Add the {{k.name}} package to your quote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shop by category (filterable)",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Shop by category",
+          "text": "Shop by category"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Finish the <em><strong>ritual.</strong></em>",
+          "text": "Finish the ritual."
+        },
+        {
+          "type": "repeat",
+          "list": "{{cats}}",
+          "as": "c",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{c.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{c.label}}",
+                  "text": "{{c.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{c.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{c.label}}",
+                  "text": "{{c.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "{{countLabel}}",
+          "text": "{{countLabel}}"
+        },
+        {
+          "type": "repeat",
+          "list": "{{products}}",
+          "as": "p",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "Photo: {{p.photo}}",
+              "text": "Photo: {{p.photo}}",
+              "href": null,
+              "variant": "button",
+              "label": "View details for {{p.name}}"
+            },
+            {
+              "type": "text",
+              "html": "{{p.catLabel}}",
+              "text": "{{p.catLabel}}"
+            },
+            {
+              "type": "if",
+              "value": "{{p.hasSku}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "SKU {{p.sku}}",
+                  "text": "SKU {{p.sku}}"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "<strong>{{p.name}}</strong>",
+              "text": "{{p.name}}",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{p.desc}}",
+              "text": "{{p.desc}}"
+            },
+            {
+              "type": "text",
+              "html": "{{p.price}}",
+              "text": "{{p.price}}"
+            },
+            {
+              "type": "link",
+              "html": "Add to Cart",
+              "text": "Add to Cart",
+              "href": null,
+              "variant": "button",
+              "label": "Add {{p.name}} to your quote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Soapstone feature",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/e92a42aebe237a760c629f5c555f08cd.webp",
+          "alt": "Saunakko soapstone aromatic cup on sauna heater stones, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "The Hukka collection",
+          "text": "The Hukka collection"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Finnish soapstone, slow and <em><strong>steady.</strong></em>",
+          "text": "Finnish soapstone, slow and steady."
+        },
+        {
+          "type": "paragraph",
+          "html": "Quarried in Northern Karelia, Finland, soapstone is dense: it absorbs heat slowly and releases it gently. That makes it ideal for steam stones, aroma cups and massage stones.",
+          "text": "Quarried in Northern Karelia, Finland, soapstone is dense: it absorbs heat slowly and releases it gently. That makes it ideal for steam stones, aroma cups and massage stones."
+        },
+        {
+          "type": "link",
+          "html": "Shop Soapstone",
+          "text": "Shop Soapstone",
+          "href": "#shop",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Lighting & Sound",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Lighting &amp; sound",
+          "text": "Lighting & sound"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Set the mood. Keep the <em><strong>heat.</strong></em>",
+          "text": "Set the mood. Keep the heat."
+        },
+        {
+          "type": "paragraph",
+          "html": "From a classic marine-grade light to app-controlled RGB colour and Bluetooth sound. Every piece is made for the heat and humidity inside a sauna, and we can install it with your build.",
+          "text": "From a classic marine-grade light to app-controlled RGB colour and Bluetooth sound. Every piece is made for the heat and humidity inside a sauna, and we can install it with your build."
+        },
+        {
+          "type": "link",
+          "html": "Shop all 7 in the grid",
+          "text": "Shop all 7 in the grid",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "repeat",
+          "list": "{{lighting}}",
+          "as": "l",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{l.hasImg}}",
+              "blocks": [
+                {
+                  "type": "image",
+                  "src": "{{l.img}}",
+                  "alt": "{{l.alt}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{l.noImg}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Photo: {{l.photo}}",
+                  "text": "Photo: {{l.photo}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{l.type}}</strong> SKU {{l.sku}}",
+              "text": "{{l.type}} SKU {{l.sku}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "{{l.name}}",
+              "text": "{{l.name}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{l.desc}}",
+              "text": "{{l.desc}}"
+            },
+            {
+              "type": "if",
+              "value": "{{l.hasIncluded}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Included",
+                  "text": "Included"
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{l.included}}",
+                      "as": "inc",
+                      "items": [
+                        {
+                          "html": "{{inc}}",
+                          "text": "{{inc}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{l.price}}",
+              "text": "{{l.price}}"
+            },
+            {
+              "type": "if",
+              "value": "{{l.hasWarranty}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "{{l.warranty}}",
+                  "text": "{{l.warranty}}"
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Add to Cart",
+              "text": "Add to Cart",
+              "href": null,
+              "variant": "button",
+              "label": "Add {{l.name}} to your quote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wood Finishes",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Wood finishes",
+          "text": "Wood finishes"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Protect the cedar. Choose your <em><strong>colour.</strong></em>",
+          "text": "Protect the cedar. Choose your colour."
+        },
+        {
+          "type": "paragraph",
+          "html": "Natural oils that soak into the wood rather than sitting on top. Meldos for the inside of your sauna, and Livos Alis in four colours to protect the outside from UV greying.",
+          "text": "Natural oils that soak into the wood rather than sitting on top. Meldos for the inside of your sauna, and Livos Alis in four colours to protect the outside from UV greying."
+        },
+        {
+          "type": "link",
+          "html": "Shop all 5 in the grid",
+          "text": "Shop all 5 in the grid",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "repeat",
+          "list": "{{finishes}}",
+          "as": "f",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{f.hasImg}}",
+              "blocks": [
+                {
+                  "type": "image",
+                  "src": "{{f.img}}",
+                  "alt": "{{f.alt}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{f.noImg}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Photo: {{f.photo}}",
+                  "text": "Photo: {{f.photo}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{f.use}}</strong> SKU {{f.sku}}",
+              "text": "{{f.use}} SKU {{f.sku}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "{{f.name}}",
+              "text": "{{f.name}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{f.desc}}",
+              "text": "{{f.desc}}"
+            },
+            {
+              "type": "text",
+              "html": "{{f.price}}",
+              "text": "{{f.price}}"
+            },
+            {
+              "type": "link",
+              "html": "Add to Cart",
+              "text": "Add to Cart",
+              "href": null,
+              "variant": "button",
+              "label": "Add {{f.name}} to your quote"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Colour swatches are approximate. Ask to see a sample at the showroom before you choose.",
+          "text": "Colour swatches are approximate. Ask to see a sample at the showroom before you choose."
+        }
+      ]
+    },
+    {
+      "name": "Google reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Reviews",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I started looking for a sauna a year ago. Countless web searches and YouTube videos later, I landed on the Toronto Sauna Company website. Let me save you some time. Go there! … I was impressed with the service and the product … It’s looking great and it’s already a hit.”",
+          "text": "“I started looking for a sauna a year ago. Countless web searches and YouTube videos later, I landed on the Toronto Sauna Company website. Let me save you some time. Go there! … I was impressed with the service and the product … It’s looking great and it’s already a hit.”",
+          "cite": "<strong>Douglas S. Wright</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“We visited Toronto Sauna Showroom last Friday and we were impressed with Taurean. He showed us several sauna options in our price range, gave us good insight into different heaters … and answered all our questions. They have fair prices and good service. Highly recommend!”",
+          "text": "“We visited Toronto Sauna Showroom last Friday and we were impressed with Taurean. He showed us several sauna options in our price range, gave us good insight into different heaters … and answered all our questions. They have fair prices and good service. Highly recommend!”",
+          "cite": "<strong>Dave Lewis</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it. I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it. I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I had a fantastic experience purchasing my sauna from the Toronto Sauna Company. From start to finish, I was impressed with the quality of the product, the service, and the overall experience … Having one has been totally life-changing for our family!”",
+          "text": "“I had a fantastic experience purchasing my sauna from the Toronto Sauna Company. From start to finish, I was impressed with the quality of the product, the service, and the overall experience … Having one has been totally life-changing for our family!”",
+          "cite": "<strong>Matthew Alexander</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“The process of choosing the correct sauna configuration can be stressful. What makes it less so, is having a knowledgeable guide. TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "text": "“The process of choosing the correct sauna configuration can be stressful. What makes it less so, is having a knowledgeable guide. TJ has provided invaluable customer service. Any issues or concerns we had arise were dealt with immediately … Thank you TJ!”",
+          "cite": "<strong>Caterina Imperium</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Questions",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Good to <em><strong>know.</strong></em>",
+          "text": "Good to know."
+        },
+        {
+          "type": "faq",
+          "html": "What do I need to start with a new sauna?",
+          "text": "What do I need to start with a new sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "At minimum: a bucket and ladle for making steam, a thermometer and a sand timer. Our Starter package covers the bucket, ladle and thermometer and adds eucalyptus essence. The Deluxe and Supreme packages add a sand timer and backrests. Every package is 10% off the individual prices.",
+              "text": "At minimum: a bucket and ladle for making steam, a thermometer and a sand timer. Our Starter package covers the bucket, ladle and thermometer and adds eucalyptus essence. The Deluxe and Supreme packages add a sand timer and backrests. Every package is 10% off the individual prices."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do you deliver accessories across Ontario?",
+          "text": "Do you deliver accessories across Ontario?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. We ship accessories anywhere in Ontario; shipping is quoted by phone based on your order and location. If you are buying a sauna from us, we can bring your accessories with your sauna delivery and set them up on installation day.",
+              "text": "Yes. We ship accessories anywhere in Ontario; shipping is quoted by phone based on your order and location. If you are buying a sauna from us, we can bring your accessories with your sauna delivery and set them up on installation day."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can I see the accessories before I buy?",
+          "text": "Can I see the accessories before I buy?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book.",
+              "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What is your return policy?",
+          "text": "What is your return policy?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Unused accessories in their original packaging can be returned. Processing fees and shipping costs are deducted from your refund. Contact us before sending anything back so we can arrange the return.",
+              "text": "Unused accessories in their original packaging can be returned. Processing fees and shipping costs are deducted from your refund. Contact us before sending anything back so we can arrange the return."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Which heater control do I need?",
+          "text": "Which heater control do I need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "HUUM electric heaters need a HUUM UKU control: choose Wi-Fi for app control or Local for an in-sauna panel only. Homecraft heaters run through a contactor and touchpad; pick the indoor or outdoor version to match where your sauna sits, and Wi-Fi if you want to start it from your phone.",
+              "text": "HUUM electric heaters need a HUUM UKU control: choose Wi-Fi for app control or Local for an in-sauna panel only. Homecraft heaters run through a contactor and touchpad; pick the indoor or outdoor version to match where your sauna sits, and Wi-Fi if you want to start it from your phone."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a safety railing around my heater?",
+          "text": "Do I need a safety railing around my heater?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "It is not required, but we recommend one for families and for smaller saunas where knees and elbows are close to the heater. HUUM makes fitted railings for the Drop and HIVE Mini.",
+              "text": "It is not required, but we recommend one for families and for smaller saunas where knees and elbows are close to the heater. HUUM makes fitted railings for the Drop and HIVE Mini."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What accessories suit a barrel sauna?",
+          "text": "What accessories suit a barrel sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "A curved ceiling heat shield above the heater, a cedar backrest or two, a floor mat, and a bucket, ladle and thermometer. Wood-fired barrels pair well with a cedar firewood barrel or a Narvi wood basket.",
+              "text": "A curved ceiling heat shield above the heater, a cedar backrest or two, a floor mat, and a bucket, ladle and thermometer. Wood-fired barrels pair well with a cedar firewood barrel or a Narvi wood basket."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Are LED lights safe inside a sauna?",
+          "text": "Are LED lights safe inside a sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Every light we carry is made for sauna heat and humidity. The SaunaScapes Sade RGB sets and the Kaiku sound system carry a 2-year warranty, and the Electric Sauna Light is marine-grade.",
+              "text": "Yes. Every light we carry is made for sauna heat and humidity. The SaunaScapes Sade RGB sets and the Kaiku sound system carry a 2-year warranty, and the Electric Sauna Light is marine-grade."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What is soapstone, and why use it?",
+          "text": "What is soapstone, and why use it?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "A dense Finnish stone that absorbs heat slowly and releases it gently, which makes it ideal for steam stones, aroma cups and thermometers.",
+              "text": "A dense Finnish stone that absorbs heat slowly and releases it gently, which makes it ideal for steam stones, aroma cups and thermometers."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How do I look after the cedar?",
+          "text": "How do I look after the cedar?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Use Meldos sauna oil on interior cedar and Livos oil on the exterior. Left untreated, cedar weathers to a silver-grey that many owners love.",
+              "text": "Use Meldos sauna oil on interior cedar and Livos oil on the exterior. Left untreated, cedar weathers to a silver-grey that many owners love."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Not sure what fits your <em><strong>sauna?</strong></em>",
+          "text": "Not sure what fits your sauna?"
+        },
+        {
+          "type": "paragraph",
+          "html": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you.",
+          "text": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get Directions</a> <a href=\"tel:+14374296623\">Call Us</a>",
+          "text": "Get Directions Call Us"
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasAdded}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added {{addedName}} to your quote.",
+              "text": "Added {{addedName}} to your quote."
+            },
+            {
+              "type": "link",
+              "html": "Review &amp; Request Quote",
+              "text": "Review & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            },
+            {
+              "type": "link",
+              "html": "×",
+              "text": "×",
+              "href": null,
+              "variant": "button",
+              "label": "Dismiss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section 2",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "© 2026 The Toronto Sauna Co. · Proudly Canadian",
+          "text": "© 2026 The Toronto Sauna Co. · Proudly Canadian"
+        }
+      ]
+    },
+    {
+      "name": "Product detail overlay",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasDetail}}",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "",
+              "text": "",
+              "href": null,
+              "variant": "button",
+              "label": "Close product details"
+            },
+            {
+              "type": "link",
+              "html": "",
+              "text": "",
+              "href": null,
+              "variant": "button",
+              "label": "Close"
+            },
+            {
+              "type": "if",
+              "value": "{{d.hasImg}}",
+              "blocks": [
+                {
+                  "type": "image",
+                  "src": "{{d.img}}",
+                  "alt": "{{d.alt}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{d.noImg}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Photo: {{d.photo}}",
+                  "text": "Photo: {{d.photo}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{d.catLabel}}",
+              "text": "{{d.catLabel}}"
+            },
+            {
+              "type": "if",
+              "value": "{{d.hasSku}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "SKU {{d.sku}}",
+                  "text": "SKU {{d.sku}}"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "{{d.name}}",
+              "text": "{{d.name}}"
+            },
+            {
+              "type": "text",
+              "html": "{{d.price}}",
+              "text": "{{d.price}}"
+            },
+            {
+              "type": "if",
+              "value": "{{d.hasPrice}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "MSRP",
+                  "text": "MSRP"
+                }
+              ]
+            },
+            {
+              "type": "repeat",
+              "list": "{{d.paras}}",
+              "as": "para",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{para}}",
+                  "text": "{{para}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{d.hasIncluded}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "What's included",
+                  "text": "What's included"
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{d.included}}",
+                      "as": "inc",
+                      "items": [
+                        {
+                          "html": "{{inc}}",
+                          "text": "{{inc}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{d.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Details",
+                  "text": "Details"
+                },
+                {
+                  "type": "definitions",
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{d.specs}}",
+                      "as": "s",
+                      "items": [
+                        {
+                          "term": {
+                            "html": "{{s.k}}",
+                            "text": "{{s.k}}"
+                          },
+                          "details": {
+                            "html": "{{s.v}}",
+                            "text": "{{s.v}}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Add to Cart",
+              "text": "Add to Cart",
+              "href": null,
+              "variant": "button",
+              "label": "Add {{d.name}} to your quote"
+            },
+            {
+              "type": "link",
+              "html": "See it at the showroom",
+              "text": "See it at the showroom",
+              "href": "https://www.google.com/maps/search/?api=1&query=17380+Highway+27+Schomberg+ON+L0G+1T0",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

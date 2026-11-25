@@ -92,6 +92,40 @@ test("table rows and lists", () => {
   ]);
 });
 
+test("spans laid out by a flex list item become separate blocks", () => {
+  const html = `<ol><li style="display: flex; flex-direction: column"><span style="font-style: italic">01</span><span style="font-weight: 700">Consult</span><span>We talk.</span></li></ol>`;
+  expect(blocksFrom(el(html), ctx)).toEqual([
+    {
+      type: "list",
+      ordered: true,
+      items: [
+        {
+          blocks: [
+            { type: "text", html: "<em>01</em>", text: "01" },
+            { type: "text", html: "<strong>Consult</strong>", text: "Consult" },
+            { type: "text", html: "We talk.", text: "We talk." },
+          ],
+        },
+      ],
+    },
+  ]);
+});
+
+test("a flex anchor of spans is a card", () => {
+  const html = `<a href="Contact.dc.html" style="display: flex"><span style="display: flex; flex-direction: column"><strong>Will this fit?</strong><span>Check your space.</span></span><span>Try it →</span></a>`;
+  expect(blocksFrom(el(html), ctx)).toEqual([
+    {
+      type: "card",
+      href: "/contact",
+      blocks: [
+        { type: "text", html: "<strong>Will this fit?</strong>", text: "Will this fit?" },
+        { type: "text", html: "Check your space.", text: "Check your space." },
+        { type: "text", html: "Try it →", text: "Try it →" },
+      ],
+    },
+  ]);
+});
+
 test("definition lists become term/detail pairs, through div rows and sc-for", () => {
   const html = `<div><dl><div><dt>Subtotal <span>before HST</span></dt><dd class="serif">{{subtotalText}}</dd></div>
     <div><dt>HST (13%)</dt><dd>{{hstText}}</dd></div></dl>

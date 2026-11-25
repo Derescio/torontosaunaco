@@ -1,0 +1,751 @@
+{
+  "file": "HeaterPellum.dc.html",
+  "route": "/sauna-heaters/pellum",
+  "pageMap": {
+    "route": "/sauna-heaters/pellum",
+    "title": "Pellum P47 Pellet Sauna Heater — The Toronto Sauna Co.",
+    "description": "Pellum P47 Pellet Sauna Heater: A patented pellet-fired sauna stove. Request a quote from The Toronto Sauna Co.",
+    "index": "",
+    "photos": 11
+  },
+  "head": {
+    "title": "Pellum P47 Pellet Sauna Heater — The Toronto Sauna Co.",
+    "description": "Pellum P47 Pellet Sauna Heater: A patented pellet-fired sauna stove. Request a quote from The Toronto Sauna Co.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-heaters/pellum",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "Pellum P47 Pellet Sauna Heater — The Toronto Sauna Co.",
+      "description": "Pellum P47 Pellet Sauna Heater: A patented pellet-fired sauna stove. Request a quote from The Toronto Sauna Co.",
+      "url": "https://www.thetorontosaunaco.com/sauna-heaters/pellum",
+      "image": "https://www.thetorontosaunaco.com/_blob/504ade7ae14c25a2c613c3cb7959a72c"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Pellum P47 Pellet Sauna Heater",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/504ade7ae14c25a2c613c3cb7959a72c"
+        ],
+        "url": "https://www.thetorontosaunaco.com/sauna-heaters/pellum",
+        "description": "Pellum P47 Pellet Sauna Heater: A patented pellet-fired sauna stove. Request a quote from The Toronto Sauna Co.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "3985.00",
+          "url": "https://www.thetorontosaunaco.com/sauna-heaters/pellum",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "d": {
+      "file": "HeaterPellum",
+      "name": "Pellum P47 Pellet Sauna Heater",
+      "short": "Pellum P47",
+      "code": "SKU PELP47O",
+      "origin": "Designed and made in Estonia",
+      "mount": "Floor-standing, on wheels",
+      "intro": "A patented pellet-fired sauna stove. Load the 15 kg pellet chamber and it feeds itself for up to 4.5 hours, with no electricity needed. Real fire and steam with far less work than splitting logs, and very low emissions.",
+      "highlights": [
+        "Runs on wood pellets, no electricity",
+        "15 kg pellet chamber, up to 4.5 h per fill",
+        "Stainless steel body with glass door",
+        "Emissions well below wood-stove standards"
+      ],
+      "models": [
+        {
+          "kw": "Pellum P47",
+          "room": "212–565 cu ft (6–16 m³)",
+          "amps": "—",
+          "breaker": "—"
+        }
+      ],
+      "modelnote": "Use dry wood pellets, 6–8 mm diameter, under 10% moisture.",
+      "specs": [
+        {
+          "k": "Room size",
+          "v": "212–565 cu ft (6–16 m³)"
+        },
+        {
+          "k": "Fuel",
+          "v": "Wood pellets, 6–8 mm"
+        },
+        {
+          "k": "Pellet chamber",
+          "v": "15 kg"
+        },
+        {
+          "k": "Burn time",
+          "v": "Up to 4.5 hours per fill"
+        },
+        {
+          "k": "Power",
+          "v": "No electricity needed"
+        },
+        {
+          "k": "Weight",
+          "v": "95 kg (209 lbs)"
+        },
+        {
+          "k": "Body",
+          "v": "Stainless steel, glass door"
+        },
+        {
+          "k": "Extras",
+          "v": "Ash collector, adjustable airflow, lockable wheels"
+        },
+        {
+          "k": "Made in",
+          "v": "Estonia"
+        }
+      ],
+      "needs": [
+        "Chimney set (top exit)",
+        "Non-combustible floor",
+        "Sauna rocks (8 boxes)",
+        "Wood pellets"
+      ],
+      "steps": [
+        {
+          "id": "heater",
+          "title": "Size",
+          "required": true,
+          "note": "Choose the model that matches your sauna volume.",
+          "options": [
+            {
+              "id": "p47",
+              "label": "Pellum P47",
+              "sub": "212–565 cu ft",
+              "price": 3985,
+              "photo": "Pellum P47",
+              "img": "./assets/504ade7ae14c25a2c613c3cb7959a72c.webp",
+              "alt": "Pellum P47 pellet sauna heater, The Toronto Sauna Co."
+            }
+          ]
+        },
+        {
+          "id": "rocks",
+          "title": "Sauna rocks",
+          "required": false,
+          "note": "Set at the recommended fill for the Pellum P47: 8 boxes.",
+          "options": [
+            {
+              "id": "rocks",
+              "label": "4–6\" Wellendi Sauna Rocks",
+              "sub": "$89.00 per box",
+              "price": 89,
+              "qty": 8,
+              "photo": "Wellendi sauna rocks"
+            },
+            {
+              "id": "no_rocks",
+              "label": "No thanks",
+              "sub": "I already have rocks",
+              "price": null,
+              "none": true,
+              "photo": "—"
+            }
+          ]
+        },
+        {
+          "id": "chimney",
+          "title": "Chimney kit",
+          "required": false,
+          "note": "The Pellum vents out the top.",
+          "options": [
+            {
+              "id": "chimney0",
+              "label": "Chimney Set for out the Top",
+              "sub": "Exits through the roof",
+              "price": 681,
+              "photo": "Chimney Set for out the Top"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        "",
+        "",
+        ""
+      ],
+      "img": "./assets/504ade7ae14c25a2c613c3cb7959a72c.webp",
+      "alt": "Pellum P47 pellet sauna heater, The Toronto Sauna Co.",
+      "gallery": [
+        {
+          "src": "./assets/504ade7ae14c25a2c613c3cb7959a72c.webp",
+          "alt": "Pellum P47 pellet sauna heater, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/22094b0de4e642f569ad7d509507d269.webp",
+          "alt": "Pellum P47 pellet sauna heater in a barrel sauna, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/429f024f64ddeba0218223ff26cdb6a7.webp",
+          "alt": "Pellum P47 pellet sauna heater fire door, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/8ee4b2dd763b5c7fe409c9836a45723d.webp",
+          "alt": "Pellum P47 pellet sauna heater stones and chimney, The Toronto Sauna Co.",
+          "fit": "cover"
+        }
+      ],
+      "others": [
+        {
+          "href": "/sauna-heaters/timber-glow",
+          "name": "TimberGlow14 Wood-Burning Sauna Heater"
+        },
+        {
+          "href": "/sauna-heaters/narvi-velvet",
+          "name": "Narvi Velvet Wood-Burning Sauna Heater"
+        },
+        {
+          "href": "/sauna-heaters/narvi-kuru",
+          "name": "Narvi Kuru Wood-Burning Sauna Heater"
+        },
+        {
+          "href": "/sauna-heaters/narvi-nc",
+          "name": "Narvi NC Black Wood-Burning Sauna Heater"
+        },
+        {
+          "href": "/sauna-heaters/narvi-kaamos",
+          "name": "Narvi Kaamos Wood-Burning Sauna Heater"
+        }
+      ],
+      "kwChips": [
+        "Pellum P47"
+      ],
+      "hasAmps": false
+    }
+  },
+  "sections": [
+    {
+      "name": "Product top",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Heaters",
+              "href": "/sauna-heaters"
+            },
+            {
+              "text": "Wood-burning",
+              "href": "/sauna-heaters#wood"
+            },
+            {
+              "text": "{{p.name}}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "{{p.mainImg}}",
+          "alt": "{{p.mainAlt}}"
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasThumbs}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{p.thumbs}}",
+              "as": "t",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{t.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{t.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Wood-burning</strong> <strong>{{p.origin}}</strong> <strong>{{p.mount}}</strong>",
+          "text": "Wood-burning {{p.origin}} {{p.mount}}"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "{{p.name}}",
+          "text": "{{p.name}}"
+        },
+        {
+          "type": "text",
+          "html": "{{p.code}}",
+          "text": "{{p.code}}"
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.intro}}",
+          "text": "{{p.intro}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.highlights}}",
+              "as": "hl",
+              "items": [
+                {
+                  "html": "{{hl}}",
+                  "text": "{{hl}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Starting at (MSRP) <strong>{{p.fromPrice}}</strong>",
+          "text": "Starting at (MSRP) {{p.fromPrice}}"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.kwChips}}",
+          "as": "k",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "{{k}}",
+              "text": "{{k}}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#configure\">Build Yours &amp; Add to Cart</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
+          "text": "Build Yours & Add to Cart Call (437) 429-6623"
+        },
+        {
+          "type": "text",
+          "html": "Delivery and professional installation available across Ontario.",
+          "text": "Delivery and professional installation available across Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your heater",
+          "text": "Build your heater"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choose your size and <em><strong>add-ons.</strong></em>",
+          "text": "Choose your size and add-ons."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{steps}}",
+              "as": "st",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "if",
+                      "value": "{{st.done}}",
+                      "blocks": []
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.notDone}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{st.num}}",
+                          "text": "{{st.num}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "level": 3,
+                      "html": "{{st.title}}",
+                      "text": "{{st.title}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{st.tag}}",
+                      "text": "{{st.tag}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{st.note}}",
+                          "text": "{{st.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{st.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
+                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
+                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Your <em>{{p.short}}</em>",
+          "text": "Your {{p.short}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.step}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.step}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal before HST",
+                "text": "Subtotal before HST"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Delivery",
+                "text": "Delivery"
+              },
+              "details": {
+                "html": "Quoted separately, or free showroom pickup (in stock)",
+                "text": "Quoted separately, or free showroom pickup (in stock)"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some items are priced on request. We'll confirm your final price with you.",
+              "text": "Some items are priced on request. We'll confirm your final price with you."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasMissing}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "{{missingText}}",
+              "text": "{{missingText}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Add to Cart",
+          "text": "Add to Cart",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Added to your cart</strong> {{addedText}} <a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart {{addedText}} Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment.",
+          "text": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment."
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sizing",
+          "text": "Sizing"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Every size, at a <em><strong>glance.</strong></em>",
+          "text": "Every size, at a glance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up.",
+          "text": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up."
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Model",
+                  "Room size",
+                  "Amps",
+                  "Breaker"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}",
+                  "{{m.amps}}",
+                  "{{m.breaker}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{p.noAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Model",
+                  "Room size"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.modelnote}}",
+          "text": "{{p.modelnote}}"
+        }
+      ]
+    },
+    {
+      "name": "Specs + needs",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.specs}}",
+              "as": "s",
+              "items": [
+                {
+                  "term": {
+                    "html": "{{s.k}}",
+                    "text": "{{s.k}}"
+                  },
+                  "details": {
+                    "html": "{{s.v}}",
+                    "text": "{{s.v}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "What you'll need",
+          "text": "What you'll need"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.needs}}",
+              "as": "n",
+              "items": [
+                {
+                  "html": "{{n}}",
+                  "text": "{{n}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which size? <em>We'll help.</em></strong> Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation. <a href=\"/contact\">Get a Sizing Recommendation</a>",
+          "text": "Not sure which size? We'll help. Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation. Get a Sizing Recommendation"
+        }
+      ]
+    },
+    {
+      "name": "Other wood-burning heaters",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "More wood-burning <em>heaters</em>",
+          "text": "More wood-burning heaters"
+        },
+        {
+          "type": "link",
+          "html": "Back to all heaters",
+          "text": "Back to all heaters",
+          "href": "/sauna-heaters",
+          "variant": "link"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.others}}",
+          "as": "o",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{o.name}}",
+              "text": "{{o.name}}",
+              "href": "{{o.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

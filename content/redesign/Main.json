@@ -1,0 +1,2528 @@
+{
+  "file": "Main.dc.html",
+  "route": "/",
+  "pageMap": {
+    "route": "/",
+    "title": "Backyard Saunas Toronto & Ontario | The Toronto Sauna Co.",
+    "description": "Luxury backyard saunas and cold plunges, installed across Toronto and Ontario. Canadian cedar, showroom in Schomberg, $1,750 delivery and installation…",
+    "index": "",
+    "photos": 65
+  },
+  "head": {
+    "title": "Backyard Saunas Toronto & Ontario | The Toronto Sauna Co.",
+    "description": "Luxury backyard saunas and cold plunges, installed across Toronto and Ontario. Canadian cedar, showroom in Schomberg, $1,750 delivery and installation…",
+    "canonical": "https://www.thetorontosaunaco.com/",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas Toronto & Ontario | The Toronto Sauna Co.",
+      "description": "Luxury backyard saunas and cold plunges, installed across Toronto and Ontario. Canadian cedar, showroom in Schomberg, $1,750 delivery and installation…",
+      "url": "https://www.thetorontosaunaco.com/",
+      "image": "https://www.thetorontosaunaco.com/_blob/96c018aba6b80012fdedc30db0eb161f"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": [
+              "Store",
+              "HomeAndConstructionBusiness"
+            ],
+            "@id": "https://www.thetorontosaunaco.com/#business",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com/",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "description": "Premium outdoor saunas, cold plunges, sauna heaters and accessories, with delivery and installation across Toronto, the GTA, Ontario and British Columbia.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Toronto"
+              },
+              {
+                "@type": "City",
+                "name": "Mississauga"
+              },
+              {
+                "@type": "City",
+                "name": "Oakville"
+              },
+              {
+                "@type": "City",
+                "name": "Burlington"
+              },
+              {
+                "@type": "City",
+                "name": "Vaughan"
+              },
+              {
+                "@type": "City",
+                "name": "Richmond Hill"
+              },
+              {
+                "@type": "City",
+                "name": "Markham"
+              },
+              {
+                "@type": "City",
+                "name": "Aurora"
+              },
+              {
+                "@type": "City",
+                "name": "King"
+              },
+              {
+                "@type": "City",
+                "name": "Whitby"
+              },
+              {
+                "@type": "City",
+                "name": "Brooklin"
+              },
+              {
+                "@type": "City",
+                "name": "Niagara-on-the-Lake"
+              },
+              {
+                "@type": "City",
+                "name": "Prince Edward County"
+              },
+              {
+                "@type": "City",
+                "name": "Collingwood"
+              },
+              {
+                "@type": "City",
+                "name": "Muskoka"
+              },
+              {
+                "@type": "City",
+                "name": "Haliburton"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Greater Toronto Area"
+              },
+              {
+                "@type": "State",
+                "name": "Ontario"
+              },
+              {
+                "@type": "State",
+                "name": "British Columbia"
+              }
+            ],
+            "priceRange": "$$$",
+            "currenciesAccepted": "CAD",
+            "sameAs": [
+              "https://www.instagram.com/thetorontosaunaco/"
+            ],
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Pathways to Perennials Inc."
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.thetorontosaunaco.com/#website",
+            "url": "https://www.thetorontosaunaco.com/",
+            "name": "The Toronto Sauna Co.",
+            "publisher": {
+              "@id": "https://www.thetorontosaunaco.com/#business"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/#webpage",
+            "url": "https://www.thetorontosaunaco.com/",
+            "name": "Backyard Saunas Toronto & GTA | The Toronto Sauna Co.",
+            "isPartOf": {
+              "@id": "https://www.thetorontosaunaco.com/#website"
+            },
+            "about": {
+              "@id": "https://www.thetorontosaunaco.com/#business"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.thetorontosaunaco.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does an outdoor sauna cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on the size, the heater and your site. Our best-selling Pure Cube 552 is $11,884. Delivery, the base and electrical work vary by property, so we give every customer a personalized quote after a consultation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for a backyard sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your municipality. In Toronto, for example, a building permit is generally required for an accessory structure larger than 10 m² (107 sq ft), or one that's attached to your house or has plumbing. Electrical work must be done by a licensed electrician. We'll help you check your local rules before you buy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do you deliver and install?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ontario and British Columbia. In the GTA we install in Toronto, Mississauga, Oakville, Burlington, Vaughan, Richmond Hill, Markham, Aurora, King and Whitby, and across Ontario from Niagara-on-the-Lake and Prince Edward County to Collingwood, Muskoka and Haliburton. Sauna delivery and installation is $1,750 anywhere in Ontario. We also install in British Columbia, and anywhere outside Ontario is quoted on request."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use an outdoor sauna in a Canadian winter?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely, winter is the best season for it. Our saunas are built from premium Canadian cedar and sized with heaters that bring them up to temperature year-round."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you build custom saunas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We design custom outdoor saunas and indoor sauna rooms for homes, cottages and rentals. Tell us about your space and we'll come back with a design and quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does installation take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The installation itself usually takes about 5 to 6 hours on site. From the day you order to installation day is typically 2 to 4 weeks, and we confirm your date when you order."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "fdData": [
+      {
+        "n": "The Pure Cube 552",
+        "href": "/saunas/pure-cube-552",
+        "img": "./assets/96c018aba6b80012fdedc30db0eb161f.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 70.75,
+            "d": 71.5,
+            "h": 91,
+            "p": 11884,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Trinity",
+        "href": "/saunas/trinity",
+        "img": "./assets/87585fc4ba150e041b383ae634217e76.jpg",
+        "k": "out",
+        "note": "Corner design",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 97.5,
+            "d": 63.5,
+            "h": 91,
+            "p": 11621,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 572",
+        "href": "/saunas/pure-cube-572",
+        "img": "./assets/e7769038792977a3b5faa282e2ddf871.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 88.125,
+            "d": 71.5,
+            "h": 91,
+            "p": 12898,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 582",
+        "href": "/saunas/pure-cube-582",
+        "img": "./assets/f238467d7e1d416a23e4d2b6ab60d2d6.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 111.375,
+            "d": 71.5,
+            "h": 91,
+            "p": 14843,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 582 with Shower",
+        "href": "/saunas/pure-cube-582-shower",
+        "img": "./assets/721409044b03c736650320e44ae3f263.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 111.375,
+            "d": 71.5,
+            "h": 91,
+            "p": 14537,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 672",
+        "href": "/saunas/pure-cube-672",
+        "img": "./assets/58a2a28ac886d2cf82390b41145b9708.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 103.625,
+            "d": 79.25,
+            "h": 91,
+            "p": 15589,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 772",
+        "href": "/saunas/pure-cube-772",
+        "img": "./assets/56f7eda6da844a49827e0d0d074a5c9d.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 87.75,
+            "d": 97.25,
+            "h": 91,
+            "p": 15120,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Neptune Mini",
+        "href": "/saunas/neptune-mini",
+        "img": "./assets/cbcc7056a1df009b2f6577e456102161.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 65,
+            "d": 86,
+            "h": 91,
+            "p": 14999,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Neptune",
+        "href": "/saunas/neptune",
+        "img": "./assets/4ae975455c55a574d58da146b4a8a99f.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 87.75,
+            "d": 115,
+            "h": 89.25,
+            "p": 17896,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Hudson",
+        "href": "/saunas/hudson",
+        "img": "./assets/30f7ceb7e3269da323c1950b3e194159.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 86,
+            "d": 119,
+            "h": 119,
+            "p": 17489,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Orion",
+        "href": "/saunas/orion",
+        "img": "./assets/5e9f4eaa2e94c9275988e1bb3ca181a7.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 89,
+            "d": 121,
+            "h": 91,
+            "p": 18735,
+            "seats": 7
+          }
+        ]
+      },
+      {
+        "n": "The Avalon",
+        "href": "/saunas/avalon",
+        "img": "./assets/a804429a8592e40dc5e9e5ef1774d6ee.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 120,
+            "d": 119,
+            "h": 100.5,
+            "p": 15450,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The Studio Six Mini",
+        "href": "/saunas/studio-six-mini",
+        "img": "./assets/796460f3cfa8d56058ff4d1769004a94.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 75,
+            "d": 66.75,
+            "h": 96.25,
+            "p": 17499,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Studio Six Max",
+        "href": "/saunas/studio-six-max",
+        "img": "./assets/c3ba4c791b08f2af25fa66d9d9178af4.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 97.5,
+            "d": 86.5,
+            "h": 104.75,
+            "p": 22350,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Studio Six Max with Porch",
+        "href": "/saunas/studio-six-max-porch",
+        "img": "./assets/24d1bb94e66c586e026a6a0586346bbd.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 145.5,
+            "d": 86,
+            "h": 105,
+            "p": 26599,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Studio Six Max with Changeroom",
+        "href": "/saunas/studio-six-max-changeroom",
+        "img": "./assets/a1dc5e2034da65d3a67ed7be56245cb4.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 145.5,
+            "d": 86,
+            "h": 105,
+            "p": 28460,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Luna Sauna",
+        "href": "/saunas/luna-sauna",
+        "img": "./assets/a05e478e4a848726a005486a0cf94731.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "8' × 6'",
+            "w": 101.5,
+            "d": 73,
+            "h": 84,
+            "p": 13200,
+            "seats": 4
+          },
+          {
+            "l": "8' × 7'",
+            "w": 101.5,
+            "d": 84,
+            "h": 84,
+            "p": 13500,
+            "seats": 5
+          },
+          {
+            "l": "8' × 8'",
+            "w": 101.5,
+            "d": 97,
+            "h": 84,
+            "p": 13800,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Luna Sauna with Porch",
+        "href": "/saunas/luna-porch",
+        "img": "./assets/704ca5d626bcc96ba42e9a509edb562e.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "8' × 6'",
+            "w": 101.5,
+            "d": 97,
+            "h": 84,
+            "p": 15400,
+            "seats": 4
+          },
+          {
+            "l": "8' × 7'",
+            "w": 101.5,
+            "d": 108,
+            "h": 84,
+            "p": 16600,
+            "seats": 5
+          },
+          {
+            "l": "8' × 8'",
+            "w": 101.5,
+            "d": 121,
+            "h": 84,
+            "p": 16800,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Georgian Cabin Sauna",
+        "href": "/saunas/ct-georgian",
+        "img": "./assets/5b0d35ccd6de9a18530e41e3a9fda468.jpg",
+        "k": "out",
+        "note": "Layout options",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "Sauna only",
+            "w": 96,
+            "d": 95,
+            "h": 100.75,
+            "p": 9695,
+            "seats": 5
+          },
+          {
+            "l": "With porch",
+            "w": 96,
+            "d": 124,
+            "h": 100.75,
+            "p": 10957,
+            "seats": 5
+          },
+          {
+            "l": "With changeroom",
+            "w": 96,
+            "d": 143,
+            "h": 100.75,
+            "p": 13100,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Palmer Cabin Sauna",
+        "href": "/saunas/ct-palmer",
+        "img": "./assets/00dce3422f5a1d020ff4afb03a6326ce.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 98.25,
+            "d": 97.25,
+            "h": 100.75,
+            "p": 9150,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Granby Cabin Sauna",
+        "href": "/saunas/ct-granby",
+        "img": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 74.25,
+            "d": 73.25,
+            "h": 97.5,
+            "p": 7850,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The MiniPOD Sauna",
+        "href": "/saunas/ct-mini-pod",
+        "img": "./assets/3756fbcfef5ae5190c76d6963f575af5.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 85,
+            "d": 85,
+            "h": 84,
+            "p": 7500,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The CT Luna Sauna",
+        "href": "/saunas/ct-luna",
+        "img": "./assets/bfca3460870c752a61ce20b0331626f0.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 84.75,
+            "h": 86.25,
+            "p": 9355,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Harmony Barrel Sauna",
+        "href": "/saunas/ct-harmony",
+        "img": "./assets/cd4d92d1e14fc912b6b65bfd8ae2e971.png",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84,
+            "d": 79,
+            "h": 84,
+            "p": 7468,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The Serenity Barrel Sauna",
+        "href": "/saunas/ct-serenity",
+        "img": "./assets/181bffff9a069465d8cf4cfd9cb41dd1.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 94.5,
+            "h": 86.25,
+            "p": 7710,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Serenity MP Barrel Sauna",
+        "href": "/saunas/ct-serenity-mp",
+        "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 94.5,
+            "h": 86.25,
+            "p": 10174,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Tranquility Barrel Sauna",
+        "href": "/saunas/ct-tranquility",
+        "img": "./assets/8d41bab8df6353c1c6bde79089892832.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 118,
+            "h": 86.25,
+            "p": 8185,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Tranquility MP Barrel Sauna",
+        "href": "/saunas/ct-tranquility-mp",
+        "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 118,
+            "h": 86.25,
+            "p": 10459,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna",
+        "href": "/saunas/barrel-sauna",
+        "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 4'",
+            "w": 84,
+            "d": 48,
+            "h": 84,
+            "p": 8499,
+            "seats": 2
+          },
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 72,
+            "h": 84,
+            "p": 9100,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 84,
+            "h": 84,
+            "p": 9600,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 96,
+            "h": 84,
+            "p": 9950,
+            "seats": 6
+          },
+          {
+            "l": "7' × 10'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 10900,
+            "seats": 8
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna with Porch",
+        "href": "/saunas/barrel-porch",
+        "img": "./assets/56292481706ea6386d3e8179d51b4351.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 96,
+            "h": 84,
+            "p": 10250,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 108,
+            "h": 84,
+            "p": 10700,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 11100,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna with Changeroom",
+        "href": "/saunas/barrel-changeroom",
+        "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 12100,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 132,
+            "h": 84,
+            "p": 12500,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 144,
+            "h": 84,
+            "p": 12900,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel Sauna",
+        "href": "/saunas/panoramic-barrel",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 92,
+            "h": 84,
+            "p": 12600,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 104,
+            "h": 84,
+            "p": 13100,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 116,
+            "h": 84,
+            "p": 13500,
+            "seats": 6
+          },
+          {
+            "l": "7' × 10'",
+            "w": 84,
+            "d": 140,
+            "h": 84,
+            "p": 14500,
+            "seats": 8
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel with Porch",
+        "href": "/saunas/panoramic-barrel-porch",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 13650,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 132,
+            "h": 84,
+            "p": 14200,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 144,
+            "h": 84,
+            "p": 14700,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel with Changeroom",
+        "href": "/saunas/panoramic-barrel-changeroom",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 140,
+            "h": 84,
+            "p": 15600,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 152,
+            "h": 84,
+            "p": 15950,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 164,
+            "h": 84,
+            "p": 16350,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Indoor 552",
+        "href": "/saunas/indoor/pure-cube-552",
+        "img": "./assets/fe896ac8a02116451e2ad8b4ae30a9b4.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 59,
+            "d": 59,
+            "h": 85,
+            "p": 11160,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Indoor 572",
+        "href": "/saunas/indoor/pure-cube-572",
+        "img": "./assets/1bd0de57aa4744319d31bd9db8e99519.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84,
+            "d": 59,
+            "h": 85,
+            "p": 11846,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Element Nook",
+        "href": "/saunas/element-nook",
+        "img": "./assets/ca619225e44f3cbfae268cce2fcb4d1e.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 54.75,
+            "d": 54.75,
+            "h": 88,
+            "p": 10850,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "The Element Loft",
+        "href": "/saunas/element-loft",
+        "img": "./assets/79fc232056ce940e334e53e606684d1c.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 74.75,
+            "d": 54.75,
+            "h": 88,
+            "p": 12650,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Element Studio",
+        "href": "/saunas/element-studio",
+        "img": "./assets/e82bd557fc69a737b046c542ac5639fd.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84.75,
+            "d": 64.75,
+            "h": 88,
+            "p": 13950,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "Indoor Cabin Sauna",
+        "href": "/saunas/indoor/cabin",
+        "img": "./assets/cbbbfbb6ee59b516229b457c305892b7.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "4' × 6'",
+            "w": 76.5,
+            "d": 52.75,
+            "h": 82.125,
+            "p": 8070,
+            "seats": 2
+          },
+          {
+            "l": "4' × 7'",
+            "w": 88.5,
+            "d": 52.75,
+            "h": 82.125,
+            "p": 8570,
+            "seats": 3
+          },
+          {
+            "l": "5' × 5'",
+            "w": 64.5,
+            "d": 64.75,
+            "h": 82.125,
+            "p": 8150,
+            "seats": 2
+          },
+          {
+            "l": "5' × 6'",
+            "w": 76.5,
+            "d": 64.75,
+            "h": 82.125,
+            "p": 8420,
+            "seats": 3
+          },
+          {
+            "l": "5' × 7'",
+            "w": 88.5,
+            "d": 65.75,
+            "h": 82.125,
+            "p": 8930,
+            "seats": 4
+          },
+          {
+            "l": "6' × 7'",
+            "w": 88.5,
+            "d": 76.75,
+            "h": 82.125,
+            "p": 9330,
+            "seats": 5
+          },
+          {
+            "l": "6' × 8'",
+            "w": 100.5,
+            "d": 76.75,
+            "h": 82.125,
+            "p": 9500,
+            "seats": 6
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/b3d682084526a70d9e67083978c6fa55.jpg",
+          "alt": "Glass-front cube outdoor sauna on a stone patio with fire pit and hot tub in a landscaped backyard, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "Outdoor saunas · Cold plunges · Across Ontario",
+          "text": "Outdoor saunas · Cold plunges · Across Ontario"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Luxury backyard saunas, installed across Toronto &amp; <em><strong>Ontario.</strong></em>",
+          "text": "Luxury backyard saunas, installed across Toronto & Ontario."
+        },
+        {
+          "type": "paragraph",
+          "html": "Premium Canadian cedar outdoor saunas, cold plunges and custom builds, delivered and installed by our own team, from downtown Toronto to cottage country, anywhere in Ontario. Visit our Schomberg showroom by appointment and try one before you buy.",
+          "text": "Premium Canadian cedar outdoor saunas, cold plunges and custom builds, delivered and installed by our own team, from downtown Toronto to cottage country, anywhere in Ontario. Visit our Schomberg showroom by appointment and try one before you buy."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#contact\">Book a Consultation</a> <a href=\"#finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Explore Outdoor Saunas</a>",
+          "text": "Book a Consultation Find your fit Explore Outdoor Saunas"
+        },
+        {
+          "type": "link",
+          "html": "Showroom in King Township, open by appointment <strong>Book a visit</strong>",
+          "text": "Showroom in King Township, open by appointment Book a visit",
+          "href": "#contact",
+          "variant": "link"
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Full-service installation in Ontario and BC Custom saunas designed for your space Premium Canadian cedar <a href=\"#contact\">King Township showroom, by appointment</a>",
+          "text": "Full-service installation in Ontario and BC Custom saunas designed for your space Premium Canadian cedar King Township showroom, by appointment"
+        }
+      ]
+    },
+    {
+      "name": "Signature Saunas",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Outdoor saunas",
+          "text": "Outdoor saunas"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Outdoor saunas for every <em><strong>backyard.</strong></em>",
+          "text": "Outdoor saunas for every backyard."
+        },
+        {
+          "type": "paragraph",
+          "html": "Luxury backyard saunas built for Canadian winters, from compact city lots and condo terraces to cottage retreats. Every model is delivered and installed by our team.",
+          "text": "Luxury backyard saunas built for Canadian winters, from compact city lots and condo terraces to cottage retreats. Every model is delivered and installed by our team."
+        },
+        {
+          "type": "link",
+          "html": "Shop all 8 best sellers",
+          "text": "Shop all 8 best sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "link"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/cube",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/209261d475201101ffea8fb4aa76732b.jpg",
+              "alt": "Pure Cube outdoor sauna with glass front glowing at night in a forest backyard, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Best seller · Small spaces",
+              "text": "Best seller · Small spaces"
+            },
+            {
+              "type": "text",
+              "html": "Pure Cube",
+              "text": "Pure Cube"
+            },
+            {
+              "type": "text",
+              "html": "Panoramic glass views in a compact footprint. Made for small yards, terraces and condos.",
+              "text": "Panoramic glass views in a compact footprint. Made for small yards, terraces and condos."
+            },
+            {
+              "type": "text",
+              "html": "Explore Pure Cube",
+              "text": "Explore Pure Cube"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/studio-six-mini",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/59b8f38770ac5d846cdb9c4e9f3d5966.jpg",
+              "alt": "Studio 6 Mini black outdoor sauna with glass door and cedar interior beside a backyard deck, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Best seller · Four-season",
+              "text": "Best seller · Four-season"
+            },
+            {
+              "type": "text",
+              "html": "Studio 6 Mini",
+              "text": "Studio 6 Mini"
+            },
+            {
+              "type": "text",
+              "html": "The balance of space and efficiency: a classic design with modern wellness technology.",
+              "text": "The balance of space and efficiency: a classic design with modern wellness technology."
+            },
+            {
+              "type": "text",
+              "html": "Explore Studio 6 Mini",
+              "text": "Explore Studio 6 Mini"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/orion",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/23e82ec36aa5818fd042ffa569a42822.jpg",
+              "alt": "Orion outdoor sauna with panoramic glass, cedar and black siding on a stone patio, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Best seller · Panoramic glass",
+              "text": "Best seller · Panoramic glass"
+            },
+            {
+              "type": "text",
+              "html": "The Orion",
+              "text": "The Orion"
+            },
+            {
+              "type": "text",
+              "html": "Panoramic glass and Canadian cedar in clear or knotty grain, seating 5 to 6.",
+              "text": "Panoramic glass and Canadian cedar in clear or knotty grain, seating 5 to 6."
+            },
+            {
+              "type": "text",
+              "html": "Explore the Orion",
+              "text": "Explore the Orion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sauna finder",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sauna finder",
+          "text": "Sauna finder"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Find a sauna that fits your <em><strong>space.</strong></em>",
+          "text": "Find a sauna that fits your space."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tell us how much room you have and we’ll show every sauna that fits, plus the ones that come close.",
+          "text": "Tell us how much room you have and we’ll show every sauna that fits, plus the ones that come close."
+        },
+        {
+          "type": "repeat",
+          "list": "{{fdModes}}",
+          "as": "m",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{m.label}}",
+              "text": "{{m.label}}",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "field",
+          "label": "Width of your space (feet)",
+          "id": null,
+          "control": "input",
+          "inputType": "number",
+          "placeholder": "e.g. 8"
+        },
+        {
+          "type": "field",
+          "label": "Depth of your space (feet)",
+          "id": null,
+          "control": "input",
+          "inputType": "number",
+          "placeholder": "e.g. 10"
+        },
+        {
+          "type": "if",
+          "value": "{{fdIndoor}}",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Ceiling height (feet, optional)",
+              "id": null,
+              "control": "input",
+              "inputType": "number",
+              "placeholder": "e.g. 8"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "How many people? (optional)",
+          "text": "How many people? (optional)"
+        },
+        {
+          "type": "repeat",
+          "list": "{{fdPeople}}",
+          "as": "p",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{p.label}}",
+              "text": "{{p.label}}",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{fdIdle}}",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Enter your width and depth to see what fits. Not sure? Measure the clear floor area where the sauna will sit.",
+              "text": "Enter your width and depth to see what fits. Not sure? Measure the clear floor area where the sauna will sit."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{fdReady}}",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "{{fdSummary}}",
+              "text": "{{fdSummary}}"
+            },
+            {
+              "type": "repeat",
+              "list": "{{fdResults}}",
+              "as": "r",
+              "blocks": [
+                {
+                  "type": "card",
+                  "href": "{{r.href}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{r.img}}",
+                      "alt": "{{r.alt}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.badge}}",
+                      "text": "{{r.badge}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{r.n}}</strong> {{r.detail}} {{r.seats}} <strong>{{r.price}}</strong>",
+                      "text": "{{r.n}} {{r.detail}} {{r.seats}} {{r.price}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{fdNone}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>Nothing off the shelf fits that space.</strong> That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
+                  "text": "Nothing off the shelf fits that space. That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"{{fdQuote}}\">Get a quote for my space</a> <a href=\"{{fdCustomHref}}\">{{fdCustomLabel}}</a> “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
+          "text": "Get a quote for my space {{fdCustomLabel}} “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
+        }
+      ]
+    },
+    {
+      "name": "Popular: Pure Cube 552 spotlight",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/c34f0533555be4f5f733e07a95239df3.jpg",
+          "alt": "Pure Cube 552 cedar outdoor sauna with glass front on a stone patio, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "Best seller",
+          "text": "Best seller"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "The Pure Cube <em><strong>552</strong></em>",
+          "text": "The Pure Cube 552"
+        },
+        {
+          "type": "paragraph",
+          "html": "Our most popular sauna. Modern lines, a glass front and premium cedar inside, sized to fit where a traditional sauna won't.",
+          "text": "Our most popular sauna. Modern lines, a glass front and premium cedar inside, sized to fit where a traditional sauna won't."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Capacity: 2 people",
+              "text": "Capacity: 2 people"
+            },
+            {
+              "html": "Heater: 6 kW electric",
+              "text": "Heater: 6 kW electric"
+            },
+            {
+              "html": "Footprint: 5′ × 5′ (150 × 150 cm)",
+              "text": "Footprint: 5′ × 5′ (150 × 150 cm)"
+            },
+            {
+              "html": "Warranty: 5 years",
+              "text": "Warranty: 5 years"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>$11,884</strong> <a href=\"/saunas/pure-cube-552\">Shop the Pure Cube 552</a>",
+          "text": "$11,884 Shop the Pure Cube 552"
+        }
+      ]
+    },
+    {
+      "name": "Sauna installation Ontario",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Sauna installation in Ontario",
+          "text": "Sauna installation in Ontario"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>heat.</strong></em>",
+          "text": "From first call to first heat."
+        },
+        {
+          "type": "paragraph",
+          "html": "We don't just ship a box. Our team handles your sauna installation from start to finish, anywhere in the GTA and across Ontario, and in British Columbia too, so all you have to do is step inside.",
+          "text": "We don't just ship a box. Our team handles your sauna installation from start to finish, anywhere in the GTA and across Ontario, and in British Columbia too, so all you have to do is step inside."
+        },
+        {
+          "type": "link",
+          "html": "Book a Site Consultation",
+          "text": "Book a Site Consultation",
+          "href": "#contact",
+          "variant": "button"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "html": "<em>01</em> <strong>Consultation</strong> Visit the showroom or book a call. We learn how you'll use your sauna and look at your space.",
+              "text": "01 Consultation Visit the showroom or book a call. We learn how you'll use your sauna and look at your space."
+            },
+            {
+              "html": "<em>02</em> <strong>Design &amp; planning</strong> We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early.",
+              "text": "02 Design & planning We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early."
+            },
+            {
+              "html": "<em>03</em> <strong>Delivery &amp; installation</strong> We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up.",
+              "text": "03 Delivery & installation We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up."
+            },
+            {
+              "html": "<em>04</em> <strong>First session &amp; support</strong> We walk you through your first heat, care and maintenance, and stay on hand for warranty support.",
+              "text": "04 First session & support We walk you through your first heat, care and maintenance, and stay on hand for warranty support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Custom saunas Toronto",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/1a0b1064ec424e63573ec13fb0f0ef3c.jpg",
+          "alt": "Custom cedar sauna room with floating two-tier benches and hidden LED lighting, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "Custom saunas Toronto",
+          "text": "Custom saunas Toronto"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Designed around your <em><strong>space.</strong></em>",
+          "text": "Designed around your space."
+        },
+        {
+          "type": "paragraph",
+          "html": "Have an unusual yard, a basement corner or a cottage dock in mind? We design custom saunas and sauna rooms for homes, cottages and short-term rentals across Ontario, in premium cedar with the heater, lighting and layout chosen for how you'll use it.",
+          "text": "Have an unusual yard, a basement corner or a cottage dock in mind? We design custom saunas and sauna rooms for homes, cottages and short-term rentals across Ontario, in premium cedar with the heater, lighting and layout chosen for how you'll use it."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Custom outdoor saunas",
+              "text": "Custom outdoor saunas"
+            },
+            {
+              "html": "Indoor and basement sauna rooms",
+              "text": "Indoor and basement sauna rooms"
+            },
+            {
+              "html": "Cottage and lakeside builds",
+              "text": "Cottage and lakeside builds"
+            },
+            {
+              "html": "Airbnb and hospitality saunas",
+              "text": "Airbnb and hospitality saunas"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Start a Custom Build",
+          "text": "Start a Custom Build",
+          "href": "/saunas/indoor/custom",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Shop by category",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Shop by category",
+          "text": "Shop by category"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas, plunges, showers &amp; <em><strong>accessories.</strong></em>",
+          "text": "Saunas, plunges, showers & accessories."
+        },
+        {
+          "type": "card",
+          "href": "/saunas",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/2de08aee6bbb39b27919c93620a64eea.jpg",
+              "alt": "Black outdoor sauna with full glass front beside a pool patio, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Saunas",
+              "text": "Saunas"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/cold-plunges",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/64ce03b2feb6db5f5abd8c0511fa1ed9.jpg",
+              "alt": "Cedar cold plunge tub on a forest deck next to an outdoor sauna, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Plunge &amp; Shower",
+              "text": "Plunge & Shower"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/sauna-heaters",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/f647b8af791ae7d1b0b50e2a60ac5eb1.jpg",
+              "alt": "HUUM electric sauna heater stones close-up, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Heaters",
+              "text": "Heaters"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/accessories",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/7edd9c4b0feb2c2831cd4f298f27ac63.jpg",
+              "alt": "The Toronto Sauna Co. sauna bucket and ladle on a cedar bench, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Accessories",
+              "text": "Accessories"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/indoor/custom",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/9bd7db102ef90d6bb0b132091aeeba15.jpg",
+              "alt": "Custom indoor sauna room in cedar with HUUM heater and backrest, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "Custom Sauna Rooms",
+              "text": "Custom Sauna Rooms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indoor-strip",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<em>Indoor saunas, too.</em>Ready-made kits from $8,070, or a custom room built into your space.",
+          "text": "Indoor saunas, too.Ready-made kits from $8,070, or a custom room built into your space."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/saunas/indoor/kits\">Indoor sauna kits</a> <a href=\"/saunas/indoor/custom\">Custom indoor saunas</a>",
+          "text": "Indoor sauna kits Custom indoor saunas"
+        }
+      ]
+    },
+    {
+      "name": "Brand messaging",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Why Toronto Sauna Co.",
+          "text": "Why Toronto Sauna Co."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Modern cedar saunas, built for <em><strong>Canadian winters.</strong></em>",
+          "text": "Modern cedar saunas, built for Canadian winters."
+        },
+        {
+          "type": "paragraph",
+          "html": "Modern cedar saunas for Canadian homes, made for relaxation and wellness without leaving the house.",
+          "text": "Modern cedar saunas for Canadian homes, made for relaxation and wellness without leaving the house."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Pure wellness</strong> Raw cedar and precision engineering, rooted in centuries-old sauna traditions.",
+          "text": "Pure wellness Raw cedar and precision engineering, rooted in centuries-old sauna traditions."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Crafted design</strong> We don't just sell saunas. We create sanctuaries of heat and calm, built around your space.",
+          "text": "Crafted design We don't just sell saunas. We create sanctuaries of heat and calm, built around your space."
+        },
+        {
+          "type": "image",
+          "src": "./assets/050d2314134825f21d06991b85ee2e15.jpg",
+          "alt": "Black cedar outdoor sauna with clear glass front reflecting autumn trees, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Customer stories",
+          "text": "Customer stories"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyards we've <em><strong>transformed.</strong></em>",
+          "text": "Backyards we've transformed."
+        },
+        {
+          "type": "link",
+          "html": "See all our Google reviews",
+          "text": "See all our Google reviews",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "link"
+        },
+        {
+          "type": "image",
+          "src": "./assets/b5fcf04e459a8ae1be0381a74c07913a.jpg",
+          "alt": "Stained cedar outdoor sauna with smoked glass beside a pool and hot tub, The Toronto Sauna Co.",
+          "caption": "Stained cedar, poolside"
+        },
+        {
+          "type": "image",
+          "src": "./assets/0e563f28c6946f5437940d932660234c.jpg",
+          "alt": "Outdoor sauna with slatted cedar privacy screens on a flagstone patio, The Toronto Sauna Co.",
+          "caption": "Slatted cedar facade"
+        },
+        {
+          "type": "image",
+          "src": "./assets/0f2a05fcaed7525b010543b317b3c71a.jpg",
+          "alt": "View from inside an outdoor sauna over a landscaped patio, with a HUUM heater, The Toronto Sauna Co.",
+          "caption": "The view from the top bench"
+        },
+        {
+          "type": "image",
+          "src": "./assets/aaed011ece9c09918cbebff1ca9182d0.jpg",
+          "alt": "Barrel sauna with a panoramic window overlooking a lake at a cottage, The Toronto Sauna Co.",
+          "caption": "Cottage-country barrel"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I started looking for a sauna a year ago. Countless web searches and YouTube videos later, I landed on the Toronto Sauna Company website. Let me save you some time. Go there! … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon. It’s looking great and it’s already a hit.”",
+          "text": "“I started looking for a sauna a year ago. Countless web searches and YouTube videos later, I landed on the Toronto Sauna Company website. Let me save you some time. Go there! … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon. It’s looking great and it’s already a hit.”",
+          "cite": "<strong>Douglas S. Wright</strong> · Island cottage install · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I had a fantastic experience purchasing my sauna from the Toronto Sauna Company. From start to finish, I was impressed with the quality of the product, the service, and the overall experience. … Having one has been totally life-changing for our family!”",
+          "text": "“I had a fantastic experience purchasing my sauna from the Toronto Sauna Company. From start to finish, I was impressed with the quality of the product, the service, and the overall experience. … Having one has been totally life-changing for our family!”",
+          "cite": "<strong>Matthew Alexander</strong> · Backyard sauna · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it. I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it. I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · The Orion · Google review"
+        }
+      ]
+    },
+    {
+      "name": "Service areas",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Service areas",
+          "text": "Service areas"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas across Ontario and <em><strong>Canada.</strong></em>",
+          "text": "Backyard saunas across Ontario and Canada."
+        },
+        {
+          "type": "paragraph",
+          "html": "Based in the GTA, we deliver and install saunas right across Ontario, from the city to cottage country, and install in British Columbia too.",
+          "text": "Based in the GTA, we deliver and install saunas right across Ontario, from the city to cottage country, and install in British Columbia too."
+        },
+        {
+          "type": "link",
+          "html": "See all service areas",
+          "text": "See all service areas",
+          "href": "/service-areas",
+          "variant": "link"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "<a href=\"/service-areas/toronto\">Toronto</a>",
+              "text": "Toronto"
+            },
+            {
+              "html": "<a href=\"/service-areas/mississauga\">Mississauga</a>",
+              "text": "Mississauga"
+            },
+            {
+              "html": "<a href=\"/service-areas/markham\">Markham</a>",
+              "text": "Markham"
+            },
+            {
+              "html": "<a href=\"/service-areas/aurora\">Aurora</a>",
+              "text": "Aurora"
+            },
+            {
+              "html": "<a href=\"/service-areas/richmond-hill\">Richmond Hill</a>",
+              "text": "Richmond Hill"
+            },
+            {
+              "html": "<a href=\"/service-areas/vaughan\">Vaughan</a>",
+              "text": "Vaughan"
+            },
+            {
+              "html": "<a href=\"/service-areas/king-township\">King Township</a>",
+              "text": "King Township"
+            },
+            {
+              "html": "<a href=\"/service-areas/king-city\">King City</a>",
+              "text": "King City"
+            },
+            {
+              "html": "<a href=\"/service-areas/brooklin\">Brooklin</a>",
+              "text": "Brooklin"
+            },
+            {
+              "html": "<a href=\"/service-areas/whitby\">Whitby</a>",
+              "text": "Whitby"
+            },
+            {
+              "html": "<a href=\"/service-areas/prince-edward-county\">Prince Edward County</a>",
+              "text": "Prince Edward County"
+            },
+            {
+              "html": "<a href=\"/service-areas/niagara-on-the-lake\">Niagara-on-the-Lake</a>",
+              "text": "Niagara-on-the-Lake"
+            },
+            {
+              "html": "<a href=\"/service-areas/oakville\">Oakville</a>",
+              "text": "Oakville"
+            },
+            {
+              "html": "<a href=\"/service-areas/burlington\">Burlington</a>",
+              "text": "Burlington"
+            },
+            {
+              "html": "<a href=\"/service-areas/muskoka\">Muskoka</a>",
+              "text": "Muskoka"
+            },
+            {
+              "html": "<a href=\"/service-areas/haliburton\">Haliburton</a>",
+              "text": "Haliburton"
+            },
+            {
+              "html": "<a href=\"/service-areas/collingwood\">Collingwood</a>",
+              "text": "Collingwood"
+            },
+            {
+              "html": "<a href=\"/service-areas\">All service areas →</a>",
+              "text": "All service areas →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proudly Canadian",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Proudly Canadian",
+          "text": "Proudly Canadian"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Quality materials. Honest <em><strong>craft.</strong></em>",
+          "text": "Quality materials. Honest craft."
+        },
+        {
+          "type": "text",
+          "html": "<em>01</em> <strong>Premium wood</strong> Woods chosen for durability, natural beauty and the way they hold heat.",
+          "text": "01 Premium wood Woods chosen for durability, natural beauty and the way they hold heat."
+        },
+        {
+          "type": "text",
+          "html": "<em>02</em> <strong>Ethically sourced</strong> Wood sourced to support sustainable forestry, so your sauna is good for the planet too.",
+          "text": "02 Ethically sourced Wood sourced to support sustainable forestry, so your sauna is good for the planet too."
+        },
+        {
+          "type": "text",
+          "html": "<em>03</em> <strong>Made for wellbeing</strong> A daily ritual for relaxation, recovery and stress relief, steps from your back door.",
+          "text": "03 Made for wellbeing A daily ritual for relaxation, recovery and stress relief, steps from your back door."
+        }
+      ]
+    },
+    {
+      "name": "Brands we carry",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Brands we carry",
+          "text": "Brands we carry"
+        },
+        {
+          "type": "image",
+          "src": "./assets/9f1bd4bf880d54245d752a65d1334390.png",
+          "alt": "Leisurecraft Authorized Dealer logo, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/22df0653e00eaa1d5e56539621a2a79c.png",
+          "alt": "HUUM sauna heaters logo, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/c09afe2755c6614b0d05c44ea5b393f2.png",
+          "alt": "Harvia Sauna & Spa logo, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "From the blog",
+          "text": "From the blog"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Guides for sauna <em><strong>owners.</strong></em>",
+          "text": "Guides for sauna owners."
+        },
+        {
+          "type": "link",
+          "html": "View all posts",
+          "text": "View all posts",
+          "href": "/blog",
+          "variant": "link"
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/how-long-does-an-outdoor-sauna-last",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/49655706d69b722e8134c4a963c2976f.jpg",
+              "alt": "Black outdoor sauna with cedar-framed glass door in a garden, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "November 18, 2026",
+              "text": "November 18, 2026"
+            },
+            {
+              "type": "text",
+              "html": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna",
+              "text": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna"
+            },
+            {
+              "type": "text",
+              "html": "Read more",
+              "text": "Read more"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/building-a-backyard-sauna-for-four-season-enjoyment",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/b8080efb1ab29e5fea55c3914d5975c4.jpg",
+              "alt": "Glass-front cube sauna on a landscaped stone patio with fire pit, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "November 3, 2026",
+              "text": "November 3, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Building a Backyard Sauna for Four-Season Enjoyment",
+              "text": "Building a Backyard Sauna for Four-Season Enjoyment"
+            },
+            {
+              "type": "text",
+              "html": "Read more",
+              "text": "Read more"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "https://www.thetorontosaunaco.com/blog/choosing-a-sauna-company-questions-to-ask-before-you-buy",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/31d8d6d8c010b5f26d2998a87545057a.jpg",
+              "alt": "Black outdoor sauna with glass front and LED-lit benches in a backyard, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "October 21, 2026",
+              "text": "October 21, 2026"
+            },
+            {
+              "type": "text",
+              "html": "Choosing a Sauna Company: Questions to Ask Before You Buy",
+              "text": "Choosing a Sauna Company: Questions to Ask Before You Buy"
+            },
+            {
+              "type": "text",
+              "html": "Read more",
+              "text": "Read more"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Outdoor sauna FAQ",
+          "text": "Outdoor sauna FAQ"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Questions homeowners <em><strong>ask us.</strong></em>",
+          "text": "Questions homeowners ask us."
+        },
+        {
+          "type": "faq",
+          "html": "How much does an outdoor sauna cost?",
+          "text": "How much does an outdoor sauna cost?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "It depends on the size, the heater and your site. Our best-selling Pure Cube 552 is $11,884. Delivery, the base and electrical work vary by property, so we give every customer a personalized quote after a consultation.",
+              "text": "It depends on the size, the heater and your site. Our best-selling Pure Cube 552 is $11,884. Delivery, the base and electrical work vary by property, so we give every customer a personalized quote after a consultation."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a permit for a backyard sauna?",
+          "text": "Do I need a permit for a backyard sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "It depends on your municipality. In Toronto, for example, a building permit is generally required for an accessory structure larger than 10 m² (107 sq ft), or one that's attached to your house or has plumbing. Electrical work must be done by a licensed electrician. We'll help you check your local rules before you buy.",
+              "text": "It depends on your municipality. In Toronto, for example, a building permit is generally required for an accessory structure larger than 10 m² (107 sq ft), or one that's attached to your house or has plumbing. Electrical work must be done by a licensed electrician. We'll help you check your local rules before you buy."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Where do you deliver and install?",
+          "text": "Where do you deliver and install?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Ontario and British Columbia. In the GTA we install in Toronto, Mississauga, Oakville, Burlington, Vaughan, Richmond Hill, Markham, Aurora, King and Whitby, and across Ontario from Niagara-on-the-Lake and Prince Edward County to Collingwood, Muskoka and Haliburton. Sauna delivery and installation is $1,750 anywhere in Ontario. We also install in British Columbia, and anywhere outside Ontario is quoted on request.",
+              "text": "Ontario and British Columbia. In the GTA we install in Toronto, Mississauga, Oakville, Burlington, Vaughan, Richmond Hill, Markham, Aurora, King and Whitby, and across Ontario from Niagara-on-the-Lake and Prince Edward County to Collingwood, Muskoka and Haliburton. Sauna delivery and installation is $1,750 anywhere in Ontario. We also install in British Columbia, and anywhere outside Ontario is quoted on request."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can I use an outdoor sauna in a Canadian winter?",
+          "text": "Can I use an outdoor sauna in a Canadian winter?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Absolutely, winter is the best season for it. Our saunas are built from premium Canadian cedar and sized with heaters that bring them up to temperature year-round.",
+              "text": "Absolutely, winter is the best season for it. Our saunas are built from premium Canadian cedar and sized with heaters that bring them up to temperature year-round."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do you build custom saunas?",
+          "text": "Do you build custom saunas?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. We design custom outdoor saunas and indoor sauna rooms for homes, cottages and rentals. Tell us about your space and we'll come back with a design and quote.",
+              "text": "Yes. We design custom outdoor saunas and indoor sauna rooms for homes, cottages and rentals. Tell us about your space and we'll come back with a design and quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How long does installation take?",
+          "text": "How long does installation take?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The installation itself usually takes about 5 to 6 hours on site. From the day you order to installation day is typically 2 to 4 weeks, and we confirm your date when you order.",
+              "text": "The installation itself usually takes about 5 to 6 hours on site. From the day you order to installation day is typically 2 to 4 weeks, and we confirm your date when you order."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Closing CTA",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/64d77f47f4149fa939e4ae1ee5d2f634.jpg",
+          "alt": "Cedar outdoor sauna with glass front beside a pool and hot tub in a Toronto backyard, The Toronto Sauna Co."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for your own backyard <em><strong>sauna?</strong></em>",
+          "text": "Ready for your own backyard sauna?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Handcrafted cedar saunas for relaxation, health and wellness. Tell us about your space and we'll help you find the right one.",
+          "text": "Handcrafted cedar saunas for relaxation, health and wellness. Tell us about your space and we'll help you find the right one."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/saunas\">View Saunas</a> <a href=\"#contact\">Request a Quote</a>",
+          "text": "View Saunas Request a Quote"
+        }
+      ]
+    },
+    {
+      "name": "Showroom + Contact",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Visit our showroom",
+          "text": "Visit our showroom"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Step inside before you <em><strong>buy.</strong></em>",
+          "text": "Step inside before you buy."
+        },
+        {
+          "type": "paragraph",
+          "html": "See the saunas in person, feel the heat and talk through your space with our team. Visits are by appointment only.",
+          "text": "See the saunas in person, feel the heat and talk through your space with our team. Visits are by appointment only."
+        },
+        {
+          "type": "link",
+          "html": "<strong>The Toronto Sauna Co. Showroom</strong>17380 Highway 27, Schomberg (King Township) · By appointment <strong>Get directions</strong>",
+          "text": "The Toronto Sauna Co. Showroom17380 Highway 27, Schomberg (King Township) · By appointment Get directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=17380+Highway+27+Schomberg+ON+L0G+1T0",
+          "variant": "link",
+          "label": "Open the showroom location in Google Maps"
+        },
+        {
+          "type": "text",
+          "html": "GTA showroom 17380 Highway 27<br>Schomberg, ON L0G 1T0",
+          "text": "GTA showroom 17380 Highway 27\nSchomberg, ON L0G 1T0"
+        },
+        {
+          "type": "text",
+          "html": "Call or email <a href=\"tel:+14374296623\">(437) 429-6623</a> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a>",
+          "text": "Call or email (437) 429-6623 sales@thetorontosaunaco.com"
+        },
+        {
+          "type": "link",
+          "html": "Schedule an Appointment",
+          "text": "Schedule an Appointment",
+          "href": "#contact",
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{lfNotSent}}",
+          "blocks": [
+            {
+              "type": "form",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Get your sauna <em>quote.</em>",
+                      "text": "Get your sauna quote."
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfVisit}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Book a showroom <em>visit.</em>",
+                      "text": "Book a showroom visit."
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfAsk}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Ask us <em>anything.</em>",
+                      "text": "Ask us anything."
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "html": "Every request goes straight to our sales team, and we reply within one business day. Prefer to talk? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+                  "text": "Every request goes straight to our sales team, and we reply within one business day. Prefer to talk? Call (437) 429-6623."
+                },
+                {
+                  "type": "field",
+                  "label": "How can we help?",
+                  "id": "c-reason",
+                  "control": "select",
+                  "options": [
+                    "{{o.v}}"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Name *",
+                  "id": "c-name",
+                  "control": "input",
+                  "inputType": "text"
+                },
+                {
+                  "type": "field",
+                  "label": "Phone",
+                  "id": "c-phone",
+                  "control": "input",
+                  "inputType": "tel"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfNameErr}}",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "html": "Please enter your name.",
+                      "text": "Please enter your name."
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Email",
+                  "id": "c-email",
+                  "control": "input",
+                  "inputType": "email"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfReachErr}}",
+                  "blocks": [
+                    {
+                      "type": "paragraph",
+                      "html": "{{lfReachMsg}}",
+                      "text": "{{lfReachMsg}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "City or postal code",
+                  "id": "c-city",
+                  "control": "input",
+                  "inputType": "text"
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "I'm interested in",
+                      "id": "c-type",
+                      "control": "select",
+                      "options": [
+                        "{{o.v}}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfVisit}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "Preferred days and times",
+                      "id": "c-when",
+                      "control": "input",
+                      "inputType": "text",
+                      "placeholder": "e.g. Saturday morning"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{lfQuote}}",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "When would you like it installed?",
+                      "id": "c-time",
+                      "control": "select",
+                      "options": [
+                        "{{o.v}}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "{{lfMsgLabel}}",
+                  "id": "c-msg",
+                  "control": "textarea"
+                },
+                {
+                  "type": "link",
+                  "html": "{{lfBtn}}",
+                  "text": "{{lfBtn}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{lfDone}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Thanks, {{lfFirst}}.",
+              "text": "Thanks, {{lfFirst}}."
+            },
+            {
+              "type": "text",
+              "html": "We’ve got your request (reference {{lfRef}}) and our sales team will be in touch within one business day.",
+              "text": "We’ve got your request (reference {{lfRef}}) and our sales team will be in touch within one business day."
+            },
+            {
+              "type": "if",
+              "value": "{{lfMailed}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Your email app should have opened with your details filled in. Just press send. If it didn’t open, email <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> or call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+                  "text": "Your email app should have opened with your details filled in. Just press send. If it didn’t open, email sales@thetorontosaunaco.com or call (437) 429-6623."
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Send another request",
+              "text": "Send another request",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

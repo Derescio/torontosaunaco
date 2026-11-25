@@ -1,0 +1,1202 @@
+{
+  "file": "SaunaCTGranby.dc.html",
+  "route": "/saunas/ct-granby",
+  "pageMap": {
+    "route": "/saunas/ct-granby",
+    "title": "The Granby Cabin Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Granby Cabin Sauna: The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail… Installed across Ontario. Request a quote.",
+    "index": "",
+    "photos": 35
+  },
+  "head": {
+    "title": "The Granby Cabin Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Granby Cabin Sauna: The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail… Installed across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/ct-granby",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Granby Cabin Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+      "description": "Granby Cabin Sauna: The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail… Installed across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/saunas/ct-granby",
+      "image": "https://www.thetorontosaunaco.com/_blob/69479cf5046df4023ee06465f8e2b246"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Granby Cabin Sauna",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/69479cf5046df4023ee06465f8e2b246"
+        ],
+        "url": "https://www.thetorontosaunaco.com/saunas/ct-granby",
+        "description": "Granby Cabin Sauna: The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail… Installed across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "7850.00",
+          "url": "https://www.thetorontosaunaco.com/saunas/ct-granby",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          },
+          "availability": "https://schema.org/MadeToOrder"
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "file": "SaunaCTGranby",
+      "name": "The Granby Cabin Sauna",
+      "series": "Canadian Timber",
+      "crumbTab": [
+        "Cabin & Canadian Timber",
+        "/saunas/canadian-timber"
+      ],
+      "intro": "The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail corners, a black steel roof and two-tier benches along the back wall. Seats four.",
+      "highlights": [
+        "4 people",
+        "5' × 5' footprint",
+        "Eastern White Cedar",
+        "Made in Canada"
+      ],
+      "photos": [
+        "The Granby Cabin Sauna exterior",
+        "Interior benches",
+        "Glass front"
+      ],
+      "specs": [
+        [
+          "Exterior (W × D × H)",
+          "74.25\" × 73.25\" × 97.5\" (189 × 186 × 248 cm)"
+        ],
+        [
+          "Interior (W × D × H)",
+          "60\" × 62.75\" × 84.25\""
+        ],
+        [
+          "Footprint",
+          "5' wide × 5' deep"
+        ],
+        [
+          "Seating",
+          "4 people, open-concept two-tier benches on the back wall"
+        ],
+        [
+          "Corners",
+          "Dovetail joinery"
+        ],
+        [
+          "Roof",
+          "28-gauge textured black steel, made in Canada"
+        ],
+        [
+          "Wood",
+          "Grade A Eastern White Cedar, single-stave bevels: light natural colour, tight knots, naturally weather resistant"
+        ],
+        [
+          "Heat",
+          "Electric only"
+        ],
+        [
+          "Base",
+          "Level and solid: concrete pad, wood deck, patio stone or crushed stone"
+        ],
+        [
+          "Electrical",
+          "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician"
+        ],
+        [
+          "Heater",
+          "6 kW electric, sized for this room"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Design",
+          "desc": "Wood and roof for your sauna.",
+          "groups": [
+            {
+              "id": "size",
+              "title": "Your sauna",
+              "type": "single",
+              "required": true,
+              "default": "m",
+              "base": true,
+              "options": [
+                {
+                  "id": "m",
+                  "label": "Granby Cabin Sauna",
+                  "sub": "Seats 4",
+                  "price": 7850,
+                  "photo": "The Granby Cabin Sauna",
+                  "img": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+                  "alt": "Granby cabin sauna with black steel roof and glass door, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            },
+            {
+              "id": "wood",
+              "title": "Wood",
+              "type": "single",
+              "required": true,
+              "default": "wec",
+              "options": [
+                {
+                  "id": "wec",
+                  "label": "Grade A Eastern White Cedar",
+                  "sub": "Light natural colour, tight knots. The Canadian Timber Collection is built only in white cedar",
+                  "price": 0,
+                  "photo": "Eastern White Cedar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heat",
+          "title": "Heat",
+          "desc": "One package, sized to this sauna. Pick the look and feel you like.",
+          "groups": [
+            {
+              "id": "heater",
+              "title": "Choose your heater package",
+              "type": "single",
+              "required": true,
+              "default": "h_kip",
+              "note": "Sized for this sauna (about 185 cu ft): 6 kW. Every package is ready to fire: the heater, its control and the right fill of stones. Electric heaters need a dedicated 240V circuit installed by a licensed electrician. This model is designed for electric heat only.",
+              "options": [
+                {
+                  "id": "h_kip",
+                  "label": "Harvia KIP 6 kW package",
+                  "sub": "Controls built in · best value. Includes built-in controls and stones.",
+                  "price": 1760,
+                  "img": "./assets/7d0e6db593e5c309d8cbfd9e609a6ce4.webp",
+                  "alt": "Harvia KIP electric sauna heater with built-in controls, The Toronto Sauna Co.",
+                  "photo": "Harvia KIP 6 kW"
+                },
+                {
+                  "id": "h_slim",
+                  "label": "Homecraft Revive Slim 6 kW package",
+                  "sub": "Slim wall-mount, made in Canada. Includes Homecraft touchpad and stones.",
+                  "price": 2725,
+                  "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+                  "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Revive Slim 6 kW"
+                },
+                {
+                  "id": "h_apexmini",
+                  "label": "Homecraft Apex Mini 6 kW package",
+                  "sub": "Big stone mass, soft steam. Includes Homecraft touchpad and stones.",
+                  "price": 2990,
+                  "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+                  "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Apex Mini 6 kW"
+                },
+                {
+                  "id": "h_drop",
+                  "label": "HUUM Drop 6 kW package",
+                  "sub": "Sculptural design, app-ready. Includes HUUM UKU control and stones.",
+                  "price": 3053,
+                  "img": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+                  "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM Drop 6 kW"
+                },
+                {
+                  "id": "h_hive",
+                  "label": "HUUM HIVE Mini 6 kW package",
+                  "sub": "Floor-standing stone tower. Includes HUUM UKU control and stones.",
+                  "price": 4628,
+                  "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+                  "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM HIVE Mini 6 kW"
+                },
+                {
+                  "id": "h_none",
+                  "label": "No heater",
+                  "sub": "I already have one",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No heater"
+                }
+              ]
+            },
+            {
+              "id": "heatx",
+              "title": "Heater upgrades",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "wifi",
+                  "label": "Wi-Fi control upgrade",
+                  "sub": "Start and schedule your sauna from your phone. For Homecraft and HUUM heaters.",
+                  "price": 399,
+                  "notWith": {
+                    "group": "heater",
+                    "ids": [
+                      "h_kip",
+                      "h_none"
+                    ]
+                  },
+                  "img": "./assets/fee7140f09089fb6e6dc8304960fd763.webp",
+                  "alt": "HUUM UKU Wi-Fi control, The Toronto Sauna Co.",
+                  "photo": "Wi-Fi control"
+                },
+                {
+                  "id": "rail",
+                  "label": "Heater safety railing",
+                  "sub": "Recommended with kids; sized to your heater",
+                  "price": 306,
+                  "img": "./assets/bd6f66557841bd80281a9970bd2cccc0.webp",
+                  "alt": "HUUM Drop safety railing, The Toronto Sauna Co.",
+                  "photo": "Safety railing"
+                },
+                {
+                  "id": "hshield",
+                  "label": "Ceiling heat shield",
+                  "sub": "Protects the ceiling above the heater",
+                  "price": 96,
+                  "img": "./assets/e8082b7f1174926376236fa18db7e256.webp",
+                  "alt": "Sauna ceiling heat shield, The Toronto Sauna Co.",
+                  "photo": "Heat shield"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "title": "Lighting",
+          "desc": "Set the mood with warm, colour-changing LED light under the benches.",
+          "groups": [
+            {
+              "id": "light",
+              "title": "SaunaScapes LED lighting",
+              "type": "single",
+              "required": false,
+              "default": "l_none",
+              "note": "We recommend the 43\" set for this sauna.",
+              "options": [
+                {
+                  "id": "l_none",
+                  "label": "No lighting",
+                  "sub": "Add lighting later anytime",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No lighting"
+                },
+                {
+                  "id": "saunascapes_sade_43_",
+                  "label": "SaunaScapes Sade 43\" LED Light Set",
+                  "sub": "Colour-changing LED under the bench, recommended",
+                  "price": 375,
+                  "img": "./assets/e46df66cdb47089e89555fc61771c483.webp",
+                  "alt": "SaunaScapes Sade 43\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 43\" LED Light Set"
+                },
+                {
+                  "id": "saunascapes_sade_72_",
+                  "label": "SaunaScapes Sade 72\" LED Light Set",
+                  "sub": "Colour-changing LED for longer benches",
+                  "price": 416,
+                  "img": "./assets/1acce63a8eaea8a88dc4cd52cdd56040.webp",
+                  "alt": "SaunaScapes Sade 72\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 72\" LED Light Set"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acc",
+          "title": "Accessories",
+          "desc": "Finish the space. Everything here is optional.",
+          "groups": [
+            {
+              "id": "pkg",
+              "title": "Accessory package (10% off)",
+              "type": "single",
+              "required": false,
+              "options": [
+                {
+                  "id": "starter_package",
+                  "label": "Starter Package",
+                  "sub": "Bucket, ladle, thermometer and essentials",
+                  "price": 111.6,
+                  "img": "./assets/5729252e6a427c5e0791635437646abf.webp",
+                  "alt": "Starter Package, The Toronto Sauna Co.",
+                  "photo": "Starter Package"
+                },
+                {
+                  "id": "deluxe_package",
+                  "label": "Deluxe Package",
+                  "sub": "A fuller set with backrest and scent",
+                  "price": 386.55,
+                  "img": "./assets/c6851b17538b90f430d1541f74d46cc9.webp",
+                  "alt": "Deluxe Package, The Toronto Sauna Co.",
+                  "photo": "Deluxe Package"
+                },
+                {
+                  "id": "supreme_package",
+                  "label": "Supreme Package",
+                  "sub": "Narvi Black set, eucalyptus and two backrests",
+                  "price": 538.65,
+                  "img": "./assets/48c077a483491bc7683baeb0613fabd6.webp",
+                  "alt": "Supreme Package, The Toronto Sauna Co.",
+                  "photo": "Supreme Package"
+                }
+              ]
+            },
+            {
+              "id": "extras",
+              "title": "Or pick individual items",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "electric_sauna_light",
+                  "label": "Electric Sauna Light",
+                  "sub": "Classic marine-grade sauna light",
+                  "price": 36,
+                  "img": "./assets/b301bc099761644f76939bd991a776f8.webp",
+                  "alt": "Electric Sauna Light, The Toronto Sauna Co.",
+                  "photo": "Electric Sauna Light"
+                },
+                {
+                  "id": "wooden_bucket_&_ladl",
+                  "label": "Wooden Bucket & Ladle",
+                  "sub": "Classic cedar bucket and ladle",
+                  "price": 82,
+                  "img": "./assets/3f01c1da1436cadb18e25ce9a3a72bb3.webp",
+                  "alt": "Wooden Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Wooden Bucket & Ladle"
+                },
+                {
+                  "id": "narvi_black_bucket_&",
+                  "label": "Narvi Black Bucket & Ladle",
+                  "sub": "Black aluminum with birch handle",
+                  "price": 186,
+                  "img": "./assets/e02d6ffb3263a55767dc5e20cf45e53e.webp",
+                  "alt": "Narvi Black Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Narvi Black Bucket & Ladle"
+                },
+                {
+                  "id": "comfort_sauna_backre",
+                  "label": "Comfort Sauna Backrest",
+                  "sub": "Cedar backrest",
+                  "price": 106.5,
+                  "img": "./assets/a34977303c5df863babaaaf30e884955.webp",
+                  "alt": "Comfort Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Comfort Sauna Backrest"
+                },
+                {
+                  "id": "elite_sauna_backrest",
+                  "label": "Elite Sauna Backrest",
+                  "sub": "Curved to follow your spine",
+                  "price": 106,
+                  "img": "./assets/2ceb627f48f7aafb5294b8189f72db1f.webp",
+                  "alt": "Elite Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Elite Sauna Backrest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Choose delivery only, or let our team deliver and install it.",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Select your delivery option",
+              "type": "single",
+              "required": true,
+              "note": "Prices apply anywhere in Ontario. We also install in BC. Anywhere else, delivery is quoted for your location.",
+              "options": [
+                {
+                  "id": "d_only",
+                  "label": "Delivery Only",
+                  "sub": "Freight to a local depot in Ontario; you unload the crate",
+                  "price": 450,
+                  "photo": "Delivery truck"
+                },
+                {
+                  "id": "d_install",
+                  "label": "Delivery + Installation",
+                  "sub": "Delivered and assembled by our team, anywhere in Ontario",
+                  "price": 1750,
+                  "photo": "Installed sauna"
+                }
+              ]
+            }
+          ],
+          "prompt": "Choose your delivery option"
+        }
+      ],
+      "kind": "Outdoor sauna",
+      "crumbs": [
+        [
+          "Saunas",
+          "/saunas"
+        ],
+        [
+          "Cabin & Canadian Timber",
+          "/saunas/canadian-timber"
+        ]
+      ],
+      "buildLabel": "Build your sauna",
+      "related": [
+        "Compare other <span style=\"font-style: italic\">saunas</span>",
+        [
+          "View Cabin & Canadian Timber",
+          "/saunas/canadian-timber"
+        ],
+        [
+          "All Outdoor Saunas",
+          "/saunas"
+        ]
+      ],
+      "installCopy": "Delivered and assembled by our team, anywhere in Ontario.",
+      "elecNote": "Electrical hook-up must be completed by a licensed electrician.",
+      "gallery": [
+        {
+          "src": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+          "alt": "Granby cabin sauna with black steel roof and glass door, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/387427c6eca1fda5ec6892e1f3e2b4a4.jpg",
+          "alt": "Granby cabin sauna outdoors at sunset, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/ad116c15defe8ddfbbfa01717c08c2a6.jpg",
+          "alt": "Granby cabin sauna in winter, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/1a00199383612ef822b9aecca1320c77.jpg",
+          "alt": "Granby cabin sauna in the snow, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/f1812a9fcdd045b73c058cdfe8f441a3.jpg",
+          "alt": "Granby cabin sauna in a backyard, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/c0c26badc532a69dbc991be8110f92b2.jpg",
+          "alt": "Granby sauna black steel roof detail, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/cced77b9e738a2ad797917807af4ef06.jpg",
+          "alt": "Granby sauna two-tier benches with backrests, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/7e37962669636b57d75b9739ccb3c54b.jpg",
+          "alt": "Granby sauna interior bench and window, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/e2886083388cc21e1398daef97a278f7.jpg",
+          "alt": "Granby sauna interior with heater, The Toronto Sauna Co.",
+          "fit": "cover"
+        }
+      ],
+      "about": {
+        "title": "A cozy cabin for small spaces",
+        "lede": "The Granby fits a full cedar sauna into a 5' × 5' footprint, with house-like charm.",
+        "items": [
+          [
+            "Dovetail corners",
+            "Dovetail joinery makes for easy assembly and a long-lasting structure."
+          ],
+          [
+            "Black steel roof",
+            "28-gauge textured black metal, made in Canada, sheds rain and snow."
+          ],
+          [
+            "Two-tier benches",
+            "Open-concept white cedar benches along the back wall seat four."
+          ],
+          [
+            "Electric heat",
+            "Sized for a compact electric heater on a 240V circuit."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/adb47137b1c95290de542ef9a58dc9da.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "Cabin & Canadian Timber",
+              "href": "/saunas/canadian-timber"
+            },
+            {
+              "text": "The Granby Cabin Sauna"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "{{galCount}}",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Granby Cabin Sauna exterior",
+              "text": "Photo: The Granby Cabin Sauna exterior"
+            },
+            {
+              "type": "text",
+              "html": "The Granby Cabin Sauna exterior",
+              "text": "The Granby Cabin Sauna exterior"
+            },
+            {
+              "type": "text",
+              "html": "Interior benches",
+              "text": "Interior benches"
+            },
+            {
+              "type": "text",
+              "html": "Glass front",
+              "text": "Glass front"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Canadian Timber · Outdoor sauna",
+          "text": "Canadian Timber · Outdoor sauna"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Granby Cabin Sauna",
+          "text": "The Granby Cabin Sauna"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail corners, a black steel roof and two-tier benches along the back wall. Seats four.",
+          "text": "The charm of a classic cabin in a compact 5' × 5' footprint: Eastern White Cedar, dovetail corners, a black steel roof and two-tier benches along the back wall. Seats four."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "4 people",
+              "text": "4 people"
+            },
+            {
+              "html": "5' × 5' footprint",
+              "text": "5' × 5' footprint"
+            },
+            {
+              "html": "Eastern White Cedar",
+              "text": "Eastern White Cedar"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
+          "text": "Build Yours Book a Showroom Visit"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your sauna",
+          "text": "Build your sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
+              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{g.title}}",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
+          "text": "YOUR BUILD {{subtotalText}}+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart.Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "About this sauna",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "A cozy cabin for small spaces",
+          "text": "A cozy cabin for small spaces"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Granby fits a full cedar sauna into a 5' × 5' footprint, with house-like charm.",
+          "text": "The Granby fits a full cedar sauna into a 5' × 5' footprint, with house-like charm."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Dovetail corners",
+          "text": "Dovetail corners"
+        },
+        {
+          "type": "paragraph",
+          "html": "Dovetail joinery makes for easy assembly and a long-lasting structure.",
+          "text": "Dovetail joinery makes for easy assembly and a long-lasting structure."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Black steel roof",
+          "text": "Black steel roof"
+        },
+        {
+          "type": "paragraph",
+          "html": "28-gauge textured black metal, made in Canada, sheds rain and snow.",
+          "text": "28-gauge textured black metal, made in Canada, sheds rain and snow."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Two-tier benches",
+          "text": "Two-tier benches"
+        },
+        {
+          "type": "paragraph",
+          "html": "Open-concept white cedar benches along the back wall seat four.",
+          "text": "Open-concept white cedar benches along the back wall seat four."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Electric heat",
+          "text": "Electric heat"
+        },
+        {
+          "type": "paragraph",
+          "html": "Sized for a compact electric heater on a 240V circuit.",
+          "text": "Sized for a compact electric heater on a 240V circuit."
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<a href=\"/sauna-finder\"><strong>Will this fit your yard?</strong>Check your space in the Sauna Finder and compare every model that fits.<strong>Find your fit →</strong></a>",
+          "text": "Will this fit your yard?Check your space in the Sauna Finder and compare every model that fits.Find your fit →"
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Exterior (W × D × H)",
+                "text": "Exterior (W × D × H)"
+              },
+              "details": {
+                "html": "74.25\" × 73.25\" × 97.5\" (189 × 186 × 248 cm)",
+                "text": "74.25\" × 73.25\" × 97.5\" (189 × 186 × 248 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Interior (W × D × H)",
+                "text": "Interior (W × D × H)"
+              },
+              "details": {
+                "html": "60\" × 62.75\" × 84.25\"",
+                "text": "60\" × 62.75\" × 84.25\""
+              }
+            },
+            {
+              "term": {
+                "html": "Footprint",
+                "text": "Footprint"
+              },
+              "details": {
+                "html": "5' wide × 5' deep",
+                "text": "5' wide × 5' deep"
+              }
+            },
+            {
+              "term": {
+                "html": "Seating",
+                "text": "Seating"
+              },
+              "details": {
+                "html": "4 people, open-concept two-tier benches on the back wall",
+                "text": "4 people, open-concept two-tier benches on the back wall"
+              }
+            },
+            {
+              "term": {
+                "html": "Corners",
+                "text": "Corners"
+              },
+              "details": {
+                "html": "Dovetail joinery",
+                "text": "Dovetail joinery"
+              }
+            },
+            {
+              "term": {
+                "html": "Roof",
+                "text": "Roof"
+              },
+              "details": {
+                "html": "28-gauge textured black steel, made in Canada",
+                "text": "28-gauge textured black steel, made in Canada"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Grade A Eastern White Cedar, single-stave bevels: light natural colour, tight knots, naturally weather resistant",
+                "text": "Grade A Eastern White Cedar, single-stave bevels: light natural colour, tight knots, naturally weather resistant"
+              }
+            },
+            {
+              "term": {
+                "html": "Heat",
+                "text": "Heat"
+              },
+              "details": {
+                "html": "Electric only",
+                "text": "Electric only"
+              }
+            },
+            {
+              "term": {
+                "html": "Base",
+                "text": "Base"
+              },
+              "details": {
+                "html": "Level and solid: concrete pad, wood deck, patio stone or crushed stone",
+                "text": "Level and solid: concrete pad, wood deck, patio stone or crushed stone"
+              }
+            },
+            {
+              "term": {
+                "html": "Electrical",
+                "text": "Electrical"
+              },
+              "details": {
+                "html": "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician",
+                "text": "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician"
+              }
+            },
+            {
+              "term": {
+                "html": "Heater",
+                "text": "Heater"
+              },
+              "details": {
+                "html": "6 kW electric, sized for this room",
+                "text": "6 kW electric, sized for this room"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/adb47137b1c95290de542ef9a58dc9da.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery &amp; installation",
+          "text": "Delivery & installation"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery + Installation</strong>Delivered and assembled by our team, anywhere in Ontario. <strong>$1,750</strong>",
+          "text": "Delivery + InstallationDelivered and assembled by our team, anywhere in Ontario. $1,750"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery Only</strong>Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment. <strong>$450</strong>",
+          "text": "Delivery OnlyShipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment. $450"
+        },
+        {
+          "type": "paragraph",
+          "html": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician.",
+          "text": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other <em>saunas</em>",
+          "text": "Compare other saunas"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/saunas/canadian-timber\">View Cabin &amp; Canadian Timber</a> <a href=\"/saunas\">All Outdoor Saunas</a>",
+          "text": "View Cabin & Canadian Timber All Outdoor Saunas"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

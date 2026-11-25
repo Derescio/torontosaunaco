@@ -1,0 +1,897 @@
+{
+  "file": "ShowerRainbowBarrel.dc.html",
+  "route": "/outdoor-showers/rainbow-barrel",
+  "pageMap": {
+    "route": "/outdoor-showers/rainbow-barrel",
+    "title": "The Rainbow Barrel Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Rainbow Barrel Outdoor Shower: A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western… Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 15
+  },
+  "head": {
+    "title": "The Rainbow Barrel Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Rainbow Barrel Outdoor Shower: A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western… Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/outdoor-showers/rainbow-barrel",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Rainbow Barrel Outdoor Shower | The Toronto Sauna Co.",
+      "description": "Rainbow Barrel Outdoor Shower: A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western… Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/outdoor-showers/rainbow-barrel",
+      "image": "https://www.thetorontosaunaco.com/_blob/6845cf6ae659cb17a0774dc51c8651fd"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Rainbow Barrel Outdoor Shower",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/6845cf6ae659cb17a0774dc51c8651fd"
+        ],
+        "url": "https://www.thetorontosaunaco.com/outdoor-showers/rainbow-barrel",
+        "description": "Rainbow Barrel Outdoor Shower: A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western… Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "5234.00",
+          "url": "https://www.thetorontosaunaco.com/outdoor-showers/rainbow-barrel",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Outdoor shower",
+      "section": "plunge",
+      "basePrice": 5234,
+      "buildLabel": "Build your outdoor shower",
+      "related": [
+        "Compare other outdoor <span style=\"font-style: italic\">showers</span>",
+        [
+          "View All Outdoor Showers",
+          "/outdoor-showers"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+      "height": 4000,
+      "file": "ShowerRainbowBarrel",
+      "name": "The Rainbow Barrel Outdoor Shower",
+      "series": "Western Red Cedar",
+      "collection": null,
+      "intro": "A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western red cedar with stainless steel bands. A private spot to rinse off sand, salt or chlorine, and it assembles in about two hours.",
+      "highlights": [
+        "60\" diameter",
+        "80\" tall",
+        "Western Red Cedar",
+        "Made in Canada"
+      ],
+      "photos": [
+        "The Rainbow Barrel Outdoor Shower",
+        "Detail",
+        "In use"
+      ],
+      "specs": [
+        [
+          "Diameter",
+          "60\" (152 cm)"
+        ],
+        [
+          "Height",
+          "80\" (203 cm)"
+        ],
+        [
+          "Doorway",
+          "24\" (61 cm) wide × 60\" (152 cm) tall, open entry"
+        ],
+        [
+          "Construction",
+          "Cedar staves with stainless steel bands"
+        ],
+        [
+          "Assembly",
+          "About 2 hours"
+        ],
+        [
+          "Wood",
+          "Western red cedar, knotty or clear"
+        ],
+        [
+          "Hardware",
+          "Sold separately: Premium Shower Hardware add-on"
+        ],
+        [
+          "Water",
+          "Garden hose for cold water; hot and cold with premium hardware"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Wood",
+          "desc": "Choose the cedar for your shower.",
+          "groups": [
+            {
+              "id": "wood",
+              "title": "Choose your wood type",
+              "type": "single",
+              "required": true,
+              "default": "knotty",
+              "base": true,
+              "options": [
+                {
+                  "id": "knotty",
+                  "label": "Knotty Western Red Cedar",
+                  "sub": "Rustic, characterful grain",
+                  "price": 5234,
+                  "photo": "Knotty cedar",
+                  "img": "./assets/6845cf6ae659cb17a0774dc51c8651fd.jpg",
+                  "alt": "Rainbow Barrel cedar outdoor shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "clear",
+                  "label": "Clear Western Red Cedar",
+                  "sub": "Smooth, knot-free finish",
+                  "price": 7646,
+                  "photo": "Clear cedar",
+                  "img": "./assets/ae6b9794d6b3e0257f193e099ae00fba.jpg",
+                  "alt": "Clear western red cedar sample, The Toronto Sauna Co."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw",
+          "title": "Hardware",
+          "desc": "Buy the shower on its own, or add our premium hardware.",
+          "groups": [
+            {
+              "id": "hardware",
+              "title": "Shower hardware",
+              "type": "single",
+              "required": true,
+              "default": "hw_none",
+              "note": "Showers ship without hardware. Add the Premium Shower Hardware for a rain head, hand shower and hot and cold mixing valve. A plumber may be needed for hot water.",
+              "options": [
+                {
+                  "id": "hw_none",
+                  "label": "Unit only",
+                  "sub": "No hardware: I have my own or will add it later",
+                  "price": 0,
+                  "none": true,
+                  "photo": "Unit only"
+                },
+                {
+                  "id": "hw_prem",
+                  "label": "Premium Shower Hardware",
+                  "sub": "Brushed stainless steel: round rain head, hand shower on a slide bar, hot and cold mixing valve. A plumber may be needed for hot water.",
+                  "price": 390,
+                  "photo": "Premium Shower Hardware",
+                  "img": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+                  "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Plunge & Shower",
+          "/cold-plunges"
+        ],
+        [
+          "Outdoor Showers",
+          "/outdoor-showers"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/6845cf6ae659cb17a0774dc51c8651fd.jpg",
+          "alt": "Rainbow Barrel cedar outdoor shower, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/a291852ddc1d9a36a14ca12f72e40c8e.jpg",
+          "alt": "Rainbow Barrel outdoor shower on a brick patio, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/9158ffcc535ecb85d976c59892806a36.jpg",
+          "alt": "Rainbow Barrel outdoor shower in a garden, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/0da619d81b78899f7bb6828437d48861.jpg",
+          "alt": "Inside the Rainbow Barrel outdoor shower with towel, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/63ea152b50ded126fcd7bcef2c4ad467.jpg",
+          "alt": "Rainbow Barrel outdoor shower in a landscaped yard, The Toronto Sauna Co.",
+          "fit": "cover"
+        }
+      ],
+      "about": {
+        "title": "A barrel, for rinsing off",
+        "lede": "The same cedar barrel craft as our saunas, built as a private open-air shower.",
+        "items": [
+          [
+            "Round and private",
+            "Curved cedar walls wrap around you, with a 24\" open doorway and no door to manage."
+          ],
+          [
+            "Cedar and stainless",
+            "Western red cedar staves held by stainless steel bands, in knotty or clear grade."
+          ],
+          [
+            "Quick to assemble",
+            "Goes together in about two hours."
+          ],
+          [
+            "Add hot and cold",
+            "Pair it with the Premium Shower Hardware: rain head, hand shower and mixing valve."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/98bd36db87f3adf6f4ad9593cd2cd84a.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Outdoor Showers",
+              "href": "/outdoor-showers"
+            },
+            {
+              "text": "The Rainbow Barrel Outdoor Shower"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "{{galCount}}",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "",
+                      "text": "",
+                      "href": null,
+                      "variant": "button",
+                      "label": "{{t.label}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Rainbow Barrel Outdoor Shower",
+              "text": "Photo: The Rainbow Barrel Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "The Rainbow Barrel Outdoor Shower",
+              "text": "The Rainbow Barrel Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "Detail",
+              "text": "Detail"
+            },
+            {
+              "type": "text",
+              "html": "In use",
+              "text": "In use"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar · Outdoor shower",
+          "text": "Western Red Cedar · Outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Rainbow Barrel Outdoor Shower",
+          "text": "The Rainbow Barrel Outdoor Shower"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western red cedar with stainless steel bands. A private spot to rinse off sand, salt or chlorine, and it assembles in about two hours.",
+          "text": "A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western red cedar with stainless steel bands. A private spot to rinse off sand, salt or chlorine, and it assembles in about two hours."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "60\" diameter",
+              "text": "60\" diameter"
+            },
+            {
+              "html": "80\" tall",
+              "text": "80\" tall"
+            },
+            {
+              "html": "Western Red Cedar",
+              "text": "Western Red Cedar"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
+          "text": "Build Yours Book a Showroom Visit"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Build your outdoor shower",
+          "text": "Build your outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
+              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{g.title}}",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "link",
+                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
+                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
+                              "href": null,
+                              "variant": "button"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
+          "text": "YOUR BUILD {{subtotalText}}+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
+                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
+              "text": "Added to your cart.Review Cart & Request Quote"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "About this sauna",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "A barrel, for rinsing off",
+          "text": "A barrel, for rinsing off"
+        },
+        {
+          "type": "paragraph",
+          "html": "The same cedar barrel craft as our saunas, built as a private open-air shower.",
+          "text": "The same cedar barrel craft as our saunas, built as a private open-air shower."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Round and private",
+          "text": "Round and private"
+        },
+        {
+          "type": "paragraph",
+          "html": "Curved cedar walls wrap around you, with a 24\" open doorway and no door to manage.",
+          "text": "Curved cedar walls wrap around you, with a 24\" open doorway and no door to manage."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Cedar and stainless",
+          "text": "Cedar and stainless"
+        },
+        {
+          "type": "paragraph",
+          "html": "Western red cedar staves held by stainless steel bands, in knotty or clear grade.",
+          "text": "Western red cedar staves held by stainless steel bands, in knotty or clear grade."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Quick to assemble",
+          "text": "Quick to assemble"
+        },
+        {
+          "type": "paragraph",
+          "html": "Goes together in about two hours.",
+          "text": "Goes together in about two hours."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Add hot and cold",
+          "text": "Add hot and cold"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pair it with the Premium Shower Hardware: rain head, hand shower and mixing valve.",
+          "text": "Pair it with the Premium Shower Hardware: rain head, hand shower and mixing valve."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "Specifications",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Diameter",
+                "text": "Diameter"
+              },
+              "details": {
+                "html": "60\" (152 cm)",
+                "text": "60\" (152 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Height",
+                "text": "Height"
+              },
+              "details": {
+                "html": "80\" (203 cm)",
+                "text": "80\" (203 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Doorway",
+                "text": "Doorway"
+              },
+              "details": {
+                "html": "24\" (61 cm) wide × 60\" (152 cm) tall, open entry",
+                "text": "24\" (61 cm) wide × 60\" (152 cm) tall, open entry"
+              }
+            },
+            {
+              "term": {
+                "html": "Construction",
+                "text": "Construction"
+              },
+              "details": {
+                "html": "Cedar staves with stainless steel bands",
+                "text": "Cedar staves with stainless steel bands"
+              }
+            },
+            {
+              "term": {
+                "html": "Assembly",
+                "text": "Assembly"
+              },
+              "details": {
+                "html": "About 2 hours",
+                "text": "About 2 hours"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Western red cedar, knotty or clear",
+                "text": "Western red cedar, knotty or clear"
+              }
+            },
+            {
+              "term": {
+                "html": "Hardware",
+                "text": "Hardware"
+              },
+              "details": {
+                "html": "Sold separately: Premium Shower Hardware add-on",
+                "text": "Sold separately: Premium Shower Hardware add-on"
+              }
+            },
+            {
+              "term": {
+                "html": "Water",
+                "text": "Water"
+              },
+              "details": {
+                "html": "Garden hose for cold water; hot and cold with premium hardware",
+                "text": "Garden hose for cold water; hot and cold with premium hardware"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/98bd36db87f3adf6f4ad9593cd2cd84a.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. <strong>Quoted</strong>",
+          "text": "Delivery to your doorDelivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other outdoor <em>showers</em>",
+          "text": "Compare other outdoor showers"
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/outdoor-showers\">View All Outdoor Showers</a> <a href=\"/cold-plunges\">Cold Plunges</a>",
+          "text": "View All Outdoor Showers Cold Plunges"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}
