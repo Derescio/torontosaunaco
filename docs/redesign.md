@@ -90,7 +90,7 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 ### Phase 0: Inputs (owner, in parallel)
 - [x] Remaining design files / canvas link (C)
 - [ ] Redirect decisions for unmapped routes (B)
-- [ ] Price mismatch approvals (D), address string, quote wording (E)
+- [ ] Price mismatch approvals (D): owner and client go through `reports/price-diff-<date>.docx` (`npm run price-diff`); quote wording (E)
 
 ### Phase 1: Foundation (~3 days)
 - [x] **Design tokens** (`rd/1-tokens`): values in `lib/site/tokens.js`, spread into `tailwind.config.js`; Cormorant Garamond + Manrope self-hosted via `next/font/local`; `components/site/Button.jsx`; review page `/style-guide` (404 in production). Spec: `docs/superpowers/specs/2026-11-23-design-tokens-design.md`.
@@ -106,7 +106,13 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
     listings in `data.D.items[].p`, finder in `data.fdData[].s[].p`, accessories in `Accessories.json`
     `data.items` / `items_2` / `packages` / `lighting` (strings like `"$82.00"`), heater listing in `Heaters.json`
     `data.electric` / `data.wood`. Data is any constant JS literal in the page script (parsed with acorn, never run).
-- [ ] **Price/data diff script**: extracted design data vs MongoDB → a report for the owner.
+- [x] **Price/data diff script** (`rd/1-price-diff`): `npm run price-diff` compares `content/redesign` with the
+  `staging` catalogue (refuses any other database) and writes `reports/price-diff-<date>.docx` (the owner/client
+  meeting document: one table per product, a decision box per line, shared options decided once) and `.json` (same
+  rows with stable ids, for the later apply step). `reports/` is git-ignored. If staff changed prices in `/editor`
+  since the last staging copy, re-run `scripts/staging/copy-test-to-staging.mjs` first. Wrong or missing product
+  matches go in `scripts/price-diff/matches.json`. Spec: `docs/superpowers/specs/2026-11-24-price-diff-design.md`.
+  First run (24 Nov): 52 products compared, 14 new in the design, 3 hot tubs only on the website, 284 lines to decide.
 - [ ] `slug` on Products/Accessories + backfill migration (A).
 - [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.
 
