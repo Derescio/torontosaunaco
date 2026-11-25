@@ -34,6 +34,11 @@ test("barrel: sizes by wood are base points; baseCost only when no price and no 
   expect(productPoints({ _id: "c1", name: "X", baseCost: 500 })).toEqual([p("baseCost", "X", 500, "base", "X", "c1")]);
 });
 
+test("with sizes, the product price (a copy of the smallest size) is not a separate point", () => {
+  const cabin = { _id: "c9", name: "Cabin", price: 8070, baseCost: 8070, sizes: [{ key: "4x6", label: "4' x 6'", priceByWood: { "Knotty Cedar": 8070 } }] };
+  expect(productPoints(cabin)).toEqual([p("sizes.4x6.Knotty Cedar", "4' x 6' Knotty Cedar", 8070, "base", "Cabin", "c9")]);
+});
+
 test("array forms, empty objects and trimmed keys", () => {
   const doc = {
     _id: "x1",

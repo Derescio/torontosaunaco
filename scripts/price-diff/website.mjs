@@ -30,7 +30,8 @@ export function productPoints(doc) {
   const out = [];
   const price = parseMoney(doc.price);
   const sizes = Array.isArray(doc.sizes) ? doc.sizes : [];
-  if (price !== null) out.push(pt(doc, "price", doc.name, price, "base"));
+  // With sizes, `price` only repeats the smallest size, so the sizes alone are the base prices.
+  if (price !== null && !sizes.length) out.push(pt(doc, "price", doc.name, price, "base"));
   for (const s of sizes) {
     const byWood = s.priceByWood instanceof Map ? Object.fromEntries(s.priceByWood) : s.priceByWood ?? {};
     for (const [wood, raw] of Object.entries(byWood)) {

@@ -1,6 +1,7 @@
 // Text helpers for pairing design and website prices: label tokens, similarity, money parsing.
 
-const STOP = new Set(["the", "a", "and", "sauna", "saunas", "with", "package", "upgrade", "standard"]);
+// "supply"/"professional" qualify install options ("Supply_Install", "Professional Install") without naming them.
+const STOP = new Set(["the", "a", "and", "sauna", "saunas", "with", "package", "upgrade", "standard", "supply", "professional"]);
 
 function stem(word) {
   if (word.endsWith("ation") && word.length > 6) return word.slice(0, -5);
@@ -14,7 +15,8 @@ export function tokens(label) {
   s = s.replace(/[’′‘]/g, "'").replace(/×/g, "x").replace(/\bw\//g, " with ");
   s = s.replace(/(\d+)\s*'?\s*x\s*(\d+)\s*'?/g, " $1x$2 ");
   s = s.replace(/(\d+(?:\.\d+)?)\s*kw\b/g, " $1kw ");
-  s = s.replace(/([a-z0-9])-([a-z0-9])/g, "$1$2");
+  // "3-phase" is one token; "half-moon" is two words, so it matches "Half Moon".
+  s = s.replace(/(\d)-([a-z0-9])|([a-z0-9])-(\d)/g, "$1$3$2$4");
   return s
     .split(/[^a-z0-9.]+/)
     .map((t) => (/^\d+(\.\d+)?kw$/.test(t) ? t : t.replace(/\./g, "")))

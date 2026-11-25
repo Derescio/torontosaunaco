@@ -88,6 +88,16 @@ test("sizes pair with the same size only", () => {
   ]);
 });
 
+test("a weak label overlap without a shared size or kW does not pair", () => {
+  const design = { ...cubeDesign, points: [dp("S", "bench", "l", "Back wall and L-bench", 500)] };
+  const doc = { _id: "p1", name: "The Pure Cube 552", additional_upgrades: [{ name: "Back Wall Bronze Window", price: 450 }] };
+  const [prod] = build([design], { products: [doc] }).sections[0].products;
+  expect(prod.rows.map((r) => [r.id, r.outcome])).toEqual([
+    ["S:bench:l", "design-only"],
+    ["db:p1:additional_upgrades.Back Wall Bronze Window", "website-only"],
+  ]);
+});
+
 test("heater page matches every kW record of its series and pairs by kW", () => {
   const design = {
     file: "HeaterApex208.dc.html",
@@ -156,6 +166,35 @@ test("overrides: one page to two documents, and a forced option pair", () => {
   ]);
 });
 
+test("a lone website base price pairs with the design's lowest unpaired base option (its 'from' price)", () => {
+  const design = {
+    ...cubeDesign,
+    file: "ShowerCloudburst.dc.html",
+    name: "The Cloudburst Outdoor Shower",
+    points: [dp("ShowerCloudburst", "wood", "clear", "Clear Western Red Cedar", 6148, "base"), dp("ShowerCloudburst", "wood", "knotty", "Knotty Western Red Cedar", 5260, "base")],
+  };
+  const doc = { _id: "s1", name: "Cloudburst Outdoor Shower", price: 5490 };
+  const [prod] = build([design], { products: [doc] }).sections[0].products;
+  expect(prod.rows.map((r) => [r.id, r.outcome, r.website])).toEqual([
+    ["ShowerCloudburst:wood:clear", "design-only", null],
+    ["ShowerCloudburst:wood:knotty", "differs", 5490],
+  ]);
+});
+
+test("the same website option on two matched documents is not listed as website-only twice", () => {
+  const design = { ...cubeDesign, file: "P.dc.html", name: "Plunge", points: [dp("P", "chiller", "c", "Penguin Chiller", 3085)] };
+  const chillers = { "Penguin Chiller": { price: 3100 }, "Coldture Chiller": { price: 4675 } };
+  const docs = [
+    { _id: "k", name: "Plunge - Knotty", stove_type: chillers },
+    { _id: "c", name: "Plunge - Clear", stove_type: chillers },
+  ];
+  const [prod] = build([design], { products: docs }, { products: { "P.dc.html": ["k", "c"] }, options: {} }).sections[0].products;
+  expect(prod.rows.map((r) => [r.id, r.outcome])).toEqual([
+    ["P:chiller:c", "differs"],
+    ["db:k:stove_type.Coldture Chiller", "website-only"],
+  ]);
+});
+
 test("a product override of null makes a page new in the design; unmatched docs are website-only", () => {
   const r = build([cubeDesign], { products: [cubeDoc, { _id: "t", name: "The Cascade Tub 3'x7'", price: 7674 }] }, { products: { "SaunaPureCube552.dc.html": null }, options: {} });
   expect(r.sections).toEqual([]);
@@ -164,6 +203,38 @@ test("a product override of null makes a page new in the design; unmatched docs 
     { name: "The Cascade Tub 3'x7'", collection: "products", basePrice: 7674 },
     { name: "The Pure Cube 552", collection: "products", basePrice: 11884 },
   ]);
+});
+
+test("an option on 3+ products with the same design price is listed once as shared", () => {
+  const sauna = (n, websitePrice) => ({
+    design: {
+      ...cubeDesign,
+      file: `S${n}.dc.html`,
+      stem: `S${n}`,
+      name: `Sauna ${n}`,
+      points: [dp(`S${n}`, "heat", "kip", "Harvia KIP 6 kW package", 1760), dp(`S${n}`, "own", "x", `Bench ${n}`, 100 + n)],
+    },
+    doc: { _id: `d${n}`, name: `Sauna ${n}`, stove_type: { "Harvia Kip 8kW": { price: websitePrice } }, additional_upgrades: [{ name: `Bench ${n}`, price: 1 }] },
+  });
+  const all = [sauna(1, 1550), sauna(2, 1470), sauna(3, 1550), sauna(4, 1760)];
+  const r = build(all.map((s) => s.design), { products: all.map((s) => s.doc) });
+  expect(r.shared).toEqual([
+    {
+      id: "shared:heat:Harvia KIP 6 kW package:1760",
+      group: "heat",
+      label: "Harvia KIP 6 kW package",
+      websiteLabels: ["Harvia Kip 8kW"],
+      websiteMin: 1470,
+      websiteMax: 1550,
+      design: 1760,
+      outcome: "differs",
+      products: ["Sauna 1", "Sauna 2", "Sauna 3"],
+      rowIds: ["S1:heat:kip", "S2:heat:kip", "S3:heat:kip"],
+    },
+  ]);
+  const p1 = r.sections[0].products.find((p) => p.name === "Sauna 1");
+  expect(p1.rows.map((x) => x.id)).toEqual(["S1:own:x"]);
+  expect(r.sections[0].products.find((p) => p.name === "Sauna 4").sameCount).toBe(1);
 });
 
 test("sections in the fixed order, products by name", () => {

@@ -3,7 +3,7 @@ import { unzipSync, strFromU8 } from "fflate";
 import { renderDocument, money } from "./document.mjs";
 
 const report = {
-  generatedAt: "2026-11-24T12:00:00.000Z",
+  generatedAt: "2026-11-25T03:00:00.000Z", // 10 pm on 24 November in Toronto
   websiteAsOf: "2026-10-21T05:42:31.952Z",
   totals: { same: 2, differs: 1, "on-request": 1, "design-only": 1, "website-only": 1 },
   sections: [
@@ -25,9 +25,34 @@ const report = {
       ],
     },
   ],
+  shared: [
+    {
+      id: "shared:heat:Harvia KIP 6 kW package:1760",
+      group: "Choose your heater package",
+      label: "Harvia KIP 6 kW package",
+      websiteLabels: ["Harvia Kip 8kW"],
+      websiteMin: 1470,
+      websiteMax: 1550,
+      design: 1760,
+      outcome: "differs",
+      products: ["Sauna 1", "Sauna 2", "Sauna 3"],
+      rowIds: ["S1:heat:kip", "S2:heat:kip", "S3:heat:kip"],
+    },
+  ],
   designOnly: [{ name: "The Avalon Sauna", file: "SaunaAvalon.dc.html", basePrice: 15890 }],
   websiteOnly: [{ name: "The Cascade Tub 3'x7'", collection: "products", basePrice: 7674 }],
 };
+
+test("a product matched to many records shows a count, not every name", async () => {
+  const many = Array.from({ length: 7 }, (_, i) => `Item ${i}`);
+  const r = {
+    ...report,
+    sections: [{ category: "Accessories", products: [{ name: "Accessories catalogue", file: "Accessories.dc.html", matchedTo: many, sameCount: 0, rows: [] }] }],
+  };
+  const xml = strFromU8(unzipSync(new Uint8Array(await renderDocument(r)))["word/document.xml"]);
+  expect(xml).toContain("Matched to: 7 website records");
+  expect(xml).not.toContain("Item 6");
+});
 
 test("money formats whole dollars and cents", () => {
   expect(money(11884)).toBe("$11,884");
@@ -41,6 +66,9 @@ test("renders a Word document with the product table, decisions and appendix", a
   const xml = strFromU8(unzipSync(new Uint8Array(buf))["word/document.xml"]);
   for (const text of [
     "Price check: new design vs website",
+    "Prepared 24 November 2026. Website prices as of 21 October 2026.",
+    "This document has 5 lines to decide: 1 for options offered on many products and 4 for individual products.",
+    "Prices compared, across all products",
     "The Pure Cube 552",
     "Matched to: The Pure Cube 552",
     "2 prices already match",
@@ -56,6 +84,10 @@ test("renders a Word document with the product table, decisions and appendix", a
     "The Avalon Sauna",
     "On the website but not in the new design",
     "The Cascade Tub 3&apos;x7&apos;",
+    "Options offered on many products",
+    "$1,470 – $1,550",
+    "On 3 products: Sauna 1, Sauna 2, Sauna 3",
+    "shared:heat:Harvia KIP 6 kW package:1760",
   ]) {
     expect(xml).toContain(text);
   }

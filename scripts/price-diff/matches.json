@@ -1,1 +1,25 @@
-{ "products": {}, "options": {} }
+{
+  "products": {
+    "SaunaPureCube772.dc.html": null,
+    "SaunaStudioSixMaxChangeroom.dc.html": null,
+    "PlungeBaltic.dc.html": null,
+    "PlungePolar.dc.html": null,
+    "ShowerSavannah.dc.html": null,
+    "ShowerSierra.dc.html": null,
+    "HeaterNarviKaamos.dc.html": null,
+    "HeaterNarviKuru.dc.html": null,
+    "HeaterNarviVelvet.dc.html": null,
+    "SaunaCTHarmony.dc.html": ["6694829fa93a72ff9464ef6d"],
+    "SaunaCTSerenity.dc.html": ["66948450a93a72ff9464ef6e"],
+    "SaunaCTTranquility.dc.html": ["669484ffa93a72ff9464ef6f"],
+    "SaunaCTLuna.dc.html": ["669487bca93a72ff9464ef70"],
+    "SaunaIndoorPureCube552.dc.html": ["6917e4d53f05f33c3f08ca5d"],
+    "SaunaIndoorPureCube572.dc.html": ["6917e4d53f05f33c3f08ca5e"],
+    "PlungeArctic.dc.html": ["668af06648215c199c421a66", "668af06648215c199c420a66"],
+    "ShowerSunlight.dc.html": ["668af06648215c199c424b79"],
+    "HeaterRevive.dc.html": ["698e05e412f4e6caef8ed457", "698e080412f4e6caef8ed458"]
+  },
+  "options": {
+    "SaunaCTGeorgian:size:l_porch": "db:668c43ff22b4807f7ad15453:price"
+  }
+}

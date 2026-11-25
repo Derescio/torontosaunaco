@@ -39,7 +39,9 @@ export function money(v) {
 }
 
 const date = (iso) =>
-  iso ? new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : "unknown";
+  iso
+    ? new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "America/Toronto" })
+    : "unknown";
 
 const text = (t, opts = {}) => new TextRun({ text: t, ...opts });
 const para = (children, opts = {}) => new Paragraph({ children: Array.isArray(children) ? children : [children], ...opts });
@@ -91,10 +93,57 @@ function productRow(row) {
   });
 }
 
+const range = (min, max) => (min === null ? null : min === max ? money(min) : `${money(min)} – ${money(max)}`);
+
+function sharedRow(entry) {
+  const shown = entry.products.slice(0, 8).join(", ");
+  const more = entry.products.length > 8 ? ` and ${entry.products.length - 8} more` : "";
+  const option = [];
+  if (entry.group) option.push(para(text(entry.group, { size: 16, color: GREY })));
+  option.push(para(text(entry.label)));
+  if (entry.websiteLabels.length && !(entry.websiteLabels.length === 1 && entry.websiteLabels[0] === entry.label)) {
+    option.push(para(text(`Website: ${entry.websiteLabels.join("; ")}`, { size: 16, color: GREY, italics: true })));
+  }
+  option.push(para(text(`On ${entry.products.length} products: ${shown}${more}`, { size: 16, color: GREY })));
+  const [website, design] = priceCells({ ...entry, website: entry.websiteMin });
+  const websiteText = entry.outcome === "design-only" ? website : range(entry.websiteMin, entry.websiteMax) ?? website;
+  return new TableRow({
+    cantSplit: true,
+    children: [
+      cell(option, { width: COLUMNS[0] }),
+      cell([para(text(websiteText), { alignment: AlignmentType.RIGHT })], { width: COLUMNS[1] }),
+      cell([para(text(design, { bold: entry.outcome === "differs" }), { alignment: AlignmentType.RIGHT })], { width: COLUMNS[2] }),
+      cell([para(text(DECISION, { size: 18 }))], { width: COLUMNS[3] }),
+      cell([para(text(entry.id, { size: 14, color: GREY }))], { width: COLUMNS[4] }),
+    ],
+  });
+}
+
+function sharedSection(shared) {
+  if (!shared?.length) return [];
+  return [
+    para(text("Options offered on many products"), { heading: HeadingLevel.HEADING_1, pageBreakBefore: true }),
+    para(
+      text(
+        "These options appear on three or more products with the same design price. One decision here applies to " +
+          "every product listed. Where the website price varies by product, the range is shown.",
+        { color: GREY },
+      ),
+    ),
+    table([headerRow(["Option", "Website now", "New design", "Decision", "Ref"], COLUMNS), ...shared.map(sharedRow)]),
+  ];
+}
+
 function productBlock(product) {
   const out = [
     para(text(product.name), { heading: HeadingLevel.HEADING_2, keepNext: true }),
-    para(text(`Matched to: ${product.matchedTo.join(", ")}`, { size: 18, color: GREY }), { keepNext: true }),
+    para(
+      text(
+        `Matched to: ${product.matchedTo.length > 6 ? `${product.matchedTo.length} website records` : product.matchedTo.join(", ")}`,
+        { size: 18, color: GREY },
+      ),
+      { keepNext: true },
+    ),
     para(text(`${product.sameCount} ${product.sameCount === 1 ? "price already matches" : "prices already match"}`, { size: 18, color: GREY }), {
       keepNext: product.rows.length > 0,
     }),
@@ -128,12 +177,22 @@ function appendixTable(title, items, nameLabel) {
 }
 
 export async function renderDocument(report) {
+  const sharedLines = report.shared?.length ?? 0;
+  const productLines = report.sections.reduce((n, s) => n + s.products.reduce((m, p) => m + p.rows.length, 0), 0);
   const cover = [
     para(text("Price check: new design vs website"), { heading: HeadingLevel.TITLE }),
     para(text(`Prepared ${date(report.generatedAt)}. Website prices as of ${date(report.websiteAsOf)}.`, { color: GREY })),
     para(text("How to use this document"), { heading: HeadingLevel.HEADING_2 }),
     para(text(HOW_TO_USE)),
+    para(
+      text(
+        `This document has ${sharedLines + productLines} lines to decide: ${sharedLines} for options offered on many ` +
+          `products and ${productLines} for individual products.`,
+        { bold: true },
+      ),
+    ),
     para(text("")),
+    para(text("Prices compared, across all products"), { heading: HeadingLevel.HEADING_3 }),
     table([
       headerRow(["Result", "Prices"], [75, 25]),
       ...OUTCOME_LABELS.map(
@@ -172,7 +231,7 @@ export async function renderDocument(report) {
             margin: { top: 864, bottom: 864, left: 864, right: 864 },
           },
         },
-        children: [...cover, ...body, ...appendix],
+        children: [...cover, ...sharedSection(report.shared), ...body, ...appendix],
       },
     ],
   });

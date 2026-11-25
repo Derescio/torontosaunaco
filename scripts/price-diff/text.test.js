@@ -16,7 +16,18 @@ test("power becomes one token", () => {
 test("stop words, w/ and stems", () => {
   expect(tokens("The Luna Sauna w/Porch")).toEqual(["luna", "porch"]);
   expect(tokens("Delivery + Installation")).toEqual(["delivery", "install"]);
-  expect(tokens("Supply_Install")).toEqual(["supply", "install"]);
+  expect(tokens("Supply_Install")).toEqual(["install"]);
+});
+
+test("hyphens join next to digits but split words", () => {
+  expect(tokens("Two half-moon front windows")).toEqual(["two", "half", "moon", "front", "window"]);
+  expect(tokens("3-phase")).toEqual(["3phase"]);
+  expect(similarity("Two half-moon front windows", "Half Moon Front Wall Window")).toBeCloseTo(0.8, 2);
+});
+
+test("installation names pair with the website's install options", () => {
+  expect(similarity("Delivery + Installation", "Supply_Install")).toBeGreaterThanOrEqual(0.6);
+  expect(similarity("Delivery + Installation", "Professional Install")).toBeGreaterThanOrEqual(0.6);
 });
 
 test("similarity", () => {

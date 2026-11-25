@@ -12,7 +12,8 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "extract:dc": "node scripts/extract-dc.mjs"
+    "extract:dc": "node scripts/extract-dc.mjs",
+    "price-diff": "node --env-file=.env scripts/price-diff.mjs"
   },
   "dependencies": {
     "@cloudinary/react": "^1.13.0",

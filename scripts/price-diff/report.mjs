@@ -1,12 +1,22 @@
 // Pairs design price points with website (MongoDB) price points and builds the report the Word document is made from.
 // Spec: docs/superpowers/specs/2026-11-24-price-diff-design.md
 
-import { similarity, samePrice } from "./text.mjs";
+import { similarity, samePrice, tokens } from "./text.mjs";
 import { productPoints, heaterPoints, accessoryPoints, newestUpdate } from "./website.mjs";
 
 const SECTION_ORDER = ["Outdoor saunas", "Indoor saunas", "Cold plunges", "Outdoor showers", "Heaters", "Accessories"];
 const PRODUCT_THRESHOLD = 0.5;
-const OPTION_THRESHOLD = 0.5;
+// Options pair at 0.6, or at 0.5 when both labels name the same size or power ("7' × 4'" ↔ "7’ x 4’ Knotty Cedar",
+// "Apex 12 kW (208V)" ↔ "Homecraft Apex 12 kW"). Plain word overlap at 0.5 pairs unrelated things ("Back wall and
+// L-bench" ↔ "Back Wall Bronze Window").
+const OPTION_THRESHOLD = 0.6;
+const MEASURED_THRESHOLD = 0.5;
+const MEASURE = /^\d+x\d+$|^\d+(\.\d+)?kw$/;
+
+function minScore(a, b) {
+  const measures = new Set(tokens(a).filter((t) => MEASURE.test(t)));
+  return tokens(b).some((t) => measures.has(t)) ? MEASURED_THRESHOLD : OPTION_THRESHOLD;
+}
 const OUTCOMES = ["same", "differs", "on-request", "design-only", "website-only"];
 
 const idOf = (doc) => String(doc._id);
@@ -41,7 +51,7 @@ function pairGreedy(designPts, websitePts, paired, used) {
     websitePts.forEach((w, j) => {
       if (used.has(w.id) || w.kind !== d.kind) return;
       const score = similarity(d.label, w.label);
-      if (score >= OPTION_THRESHOLD) candidates.push({ d, w, score, i, j });
+      if (score >= minScore(d.label, w.label)) candidates.push({ d, w, score, i, j });
     });
   });
   candidates.sort((a, b) => b.score - a.score || a.i - b.i || a.j - b.j);
@@ -50,6 +60,21 @@ function pairGreedy(designPts, websitePts, paired, used) {
     paired.set(d.id, w);
     used.add(w.id);
   }
+}
+
+/**
+ * The website often has one price per product (labelled with its name) where the design prices each size or wood
+ * ("Knotty Western Red Cedar" $5,260, "Clear" $6,148). When exactly one website product price is left unpaired, it is
+ * compared with the design's lowest unpaired base option: starting price against starting price.
+ */
+function pairFromPrice(designPts, websitePts, paired, used) {
+  const own = websitePts.filter((w) => w.kind === "base" && !used.has(w.id) && /:(price|baseCost)$/.test(w.id));
+  if (own.length !== 1) return;
+  const candidates = designPts.filter((d) => d.kind === "base" && !paired.has(d.id) && d.price !== null);
+  if (!candidates.length) return;
+  const from = candidates.reduce((a, b) => (b.price < a.price ? b : a));
+  paired.set(from.id, own[0]);
+  used.add(own[0].id);
 }
 
 function designRow(d, w) {
@@ -98,6 +123,7 @@ export function buildReport({ designProducts, catalogue, overrides = { products:
       }
     }
     pairGreedy(product.points, websitePts, paired, used);
+    pairFromPrice(product.points, websitePts, paired, used);
     pairGreedy(
       product.points.filter((d) => d.kind === "addon"),
       fallback,
@@ -113,8 +139,12 @@ export function buildReport({ designProducts, catalogue, overrides = { products:
       if (row.outcome === "same") sameCount++;
       else rows.push(row);
     }
+    // Variants of one product (knotty and clear records) repeat the same options; list each once.
+    const seen = new Set(websitePts.filter((w) => used.has(w.id)).map((w) => `${w.label}|${w.price}`));
     for (const w of websitePts) {
-      if (used.has(w.id)) continue;
+      const key = `${w.label}|${w.price}`;
+      if (used.has(w.id) || seen.has(key)) continue;
+      seen.add(key);
       totals["website-only"]++;
       rows.push({ id: w.id, group: null, label: w.label, websiteLabel: w.label, website: w.price, design: null, outcome: "website-only" });
     }
@@ -123,6 +153,8 @@ export function buildReport({ designProducts, catalogue, overrides = { products:
     if (!bySection.has(product.category)) bySection.set(product.category, []);
     bySection.get(product.category).push(entry);
   }
+
+  const shared = extractShared([...bySection.values()].flat());
 
   const byName = (a, b) => a.name.localeCompare(b.name);
   const sections = SECTION_ORDER.filter((c) => bySection.has(c)).map((category) => ({
@@ -141,7 +173,51 @@ export function buildReport({ designProducts, catalogue, overrides = { products:
     websiteAsOf: newestUpdate([...catalogue.products, ...catalogue.heaters, ...catalogue.accessories]),
     totals,
     sections,
+    shared,
     designOnly: designOnly.sort(byName),
     websiteOnly,
   };
+}
+
+const SHARED_MIN_PRODUCTS = 3;
+const sharedKey = (row) =>
+  row.outcome === "website-only" ? `website:${row.label}` : `${row.group}:${row.label}:${row.design ?? "on-request"}`;
+
+/**
+ * Options offered on many products (heater packages, accessory packages, lighting…) with the same label and design
+ * price are one decision, not forty. Moves them out of the product tables into shared entries; row ids are kept so a
+ * decision can still be applied to every product.
+ */
+function extractShared(products) {
+  const groups = new Map();
+  for (const product of products) {
+    for (const row of product.rows) {
+      const key = sharedKey(row);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push({ product, row });
+    }
+  }
+  const shared = [];
+  for (const [key, items] of groups) {
+    const names = [...new Set(items.map((i) => i.product.name))];
+    if (names.length < SHARED_MIN_PRODUCTS) continue;
+    const rows = items.map((i) => i.row);
+    const prices = rows.map((r) => r.website).filter((p) => p !== null);
+    const outcomes = new Set(rows.map((r) => r.outcome));
+    const first = rows[0];
+    shared.push({
+      id: `shared:${key}`,
+      group: first.group,
+      label: first.label,
+      websiteLabels: [...new Set(rows.map((r) => r.websiteLabel).filter(Boolean))].sort(),
+      websiteMin: prices.length ? Math.min(...prices) : null,
+      websiteMax: prices.length ? Math.max(...prices) : null,
+      design: first.design,
+      outcome: outcomes.size === 1 ? first.outcome : "differs",
+      products: names.sort(),
+      rowIds: rows.map((r) => r.id),
+    });
+    for (const { product, row } of items) product.rows = product.rows.filter((r) => r !== row);
+  }
+  return shared.sort((a, b) => String(a.group).localeCompare(String(b.group)) || a.label.localeCompare(b.label));
 }
