@@ -112,7 +112,8 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   rows with stable ids, for the later apply step). `reports/` is git-ignored. If staff changed prices in `/editor`
   since the last staging copy, re-run `scripts/staging/copy-test-to-staging.mjs` first. Wrong or missing product
   matches go in `scripts/price-diff/matches.json`. Spec: `docs/superpowers/specs/2026-11-24-price-diff-design.md`.
-  First run (24 Nov): 52 products compared, 14 new in the design, 3 hot tubs only on the website, 284 lines to decide.
+  First run (24 Nov): 52 products compared, 14 new in the design, 3 hot tubs only on the website, 287 lines to decide
+  (75 shared options, 212 product-specific). Each row's `websiteIds` names the database points a decision changes.
 - [ ] `slug` on Products/Accessories + backfill migration (A).
 - [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.
 
