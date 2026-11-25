@@ -22,7 +22,7 @@ function render(node, ctx) {
   if (node.nodeType === 3) return escapeText(node.text);
   if (node.nodeType !== 1) return "";
   const tag = node.rawTagName.toLowerCase();
-  if (SKIP.has(tag)) return "";
+  if (SKIP.has(tag) || node.getAttribute("aria-hidden") === "true") return "";
   if (tag === "br") return "<br>";
   const inner = node.childNodes.map((c) => render(c, ctx)).join("");
   if (tag === "a") {
