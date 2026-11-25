@@ -122,8 +122,8 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   missing slugs only (not `npm run slugs:backfill -- --apply`: Windows PowerShell drops the `--`, so it only
   dry-runs). Staging only (`test` needs `--production`). Applied on staging 25 Nov: 42 design slugs, 4 from names
   (3 hot tubs, the Arctic "test" record), 51 accessories. The Arctic "Clear Red Cedar test" record
-  (`668af06648215c199c420a66`) was then deleted from staging at the owner's request; delete it from `test` too (owner,
-  in Atlas), or the next staging copy brings it back. **Re-run `npm run slugs:backfill:apply` after
+  (`668af06648215c199c420a66`) stays until after cutover (owner, 2026-11-25; see Phase 6). It was briefly deleted from
+  staging and came back with the next copy. **Re-run `npm run slugs:backfill:apply` after
   `copy-test-to-staging.mjs --write --drop`**, which wipes the slugs.
   Today's pages now serve at `/saunas/<slug>`, `/saunas/indoor/<slug>`, `/cold-plunges/<slug>`,
   `/outdoor-showers/<slug>`; old ID URLs (`/saunas/<id>`, `/cold-plunge/<id>`, `/showers/<id>`) 308 to them, and
@@ -171,5 +171,8 @@ Using the 36 files we have:
   Without it old product URLs still render but don't redirect, and the new slug URLs 404.
 - [ ] Merge to `main` → Vercel production. Submit the new sitemap in GSC.
 - [ ] Monitor GSC 404s/coverage and quote emails for 2–4 weeks.
+- [ ] Owner, after the post-cutover walkthrough: delete the Arctic "Clear Red Cedar test" product
+  (`668af06648215c199c420a66`) from `test` in Atlas (decided 2026-11-25). Until then it keeps its page at
+  `/cold-plunges/the-arctic-plunge-tub-clear-red-cedar-test`.
 
 **Estimate:** about 3–3.5 weeks of development once Phase 0 inputs arrive. Phases 1–2 can start now.
