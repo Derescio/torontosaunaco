@@ -1,3 +1,5 @@
+import { loadIdRedirects } from "./lib/products/idRedirects.js";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
@@ -17,6 +19,8 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Old product ID URLs → slug URLs (real 308s; see lib/products/idRedirects.js).
+      ...(await loadIdRedirects()),
     ];
   },
   images: {
