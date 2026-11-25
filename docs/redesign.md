@@ -91,6 +91,14 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 - [x] Remaining design files / canvas link (C)
 - [ ] Redirect decisions for unmapped routes (B)
 - [ ] Price mismatch approvals (D): owner and client go through `reports/price-diff-<date>.docx` (`npm run price-diff`); quote wording (E)
+  - **Revisit when the review is done (owner, 2026-11-25):** how the decided prices reach MongoDB.
+    1. The owner edits prices in `/editor` on the live site. Then re-copy staging, run `npm run slugs:backfill:apply`,
+       and re-run `npm run price-diff` to confirm only "keep website" rows remain.
+    2. Build an apply slice. It reads the ticked boxes and "Other" amounts from the `.docx` (Ref column), uses
+       `websiteIds` in the `.json`, dry-runs, applies on `staging`, then on `test` with the owner's go-ahead.
+       About a day of work.
+  - Either way, the 14 design-only products (Pure Cube 772, the Narvi heaters, …) have no database record yet and need
+    creating.
 
 ### Phase 1: Foundation (~3 days)
 - [x] **Design tokens** (`rd/1-tokens`): values in `lib/site/tokens.js`, spread into `tailwind.config.js`; Cormorant Garamond + Manrope self-hosted via `next/font/local`; `components/site/Button.jsx`; review page `/style-guide` (404 in production). Spec: `docs/superpowers/specs/2026-11-23-design-tokens-design.md`.
