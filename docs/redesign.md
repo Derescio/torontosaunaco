@@ -96,7 +96,14 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 - [x] **Design tokens** (`rd/1-tokens`): values in `lib/site/tokens.js`, spread into `tailwind.config.js`; Cormorant Garamond + Manrope self-hosted via `next/font/local`; `components/site/Button.jsx`; review page `/style-guide` (404 in production). Spec: `docs/superpowers/specs/2026-11-23-design-tokens-design.md`.
 - [x] `Header` (dropdown nav, phone menu) and `Footer` in `components/site/` (`rd/1-header-footer`). New pages live in `app/(site)/` and must be listed in `lib/site/routes.js`; live pages keep the old nav. Spec: `docs/superpowers/specs/2026-11-24-header-footer-design.md`.
 - [x] Client progress page `/progress` (staging only, noindex). **Update `lib/site/progress.js` (statuses + `UPDATED`) in every redesign PR.**
-- [ ] **Extraction script** (`scripts/extract-dc.mjs`): `.dc.html` → JSON per page (route, title, meta, canonical, OG, JSON-LD, data object, copy blocks). Output goes in `content/redesign/`.
+- [x] **Extraction script** (`rd/1-extract`): `scripts/extract-dc.mjs` turns the 108 `.dc.html` pages into JSON in
+  `content/redesign/` (route, page-map row, SEO head, data objects, copy as typed blocks, warnings), plus `index.json`
+  (route → file). Re-run with `npm run extract:dc` (folder: argument, `DC_SITE_DIR`, or `~/Downloads/TSC-REVAMP/Site`)
+  and commit the diff. Spec: `docs/superpowers/specs/2026-11-24-extract-dc-design.md`. Findings for the next slices:
+  - 65 product pages have `og:type "product"` in the design. The SEO helper must always emit `"website"` (`lessons.md`).
+  - All titles, descriptions and canonicals match `page-map.csv`; no "Leisurecraft" outside the homepage.
+  - Prices: products in `data.D.steps[].groups[].options[].price`, heaters in `data.d.steps[].options[].price`,
+    listings in `data.D.items[].p`, finder in `data.fdData[].s[].p`.
 - [ ] **Price/data diff script**: extracted design data vs MongoDB → a report for the owner.
 - [ ] `slug` on Products/Accessories + backfill migration (A).
 - [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.
