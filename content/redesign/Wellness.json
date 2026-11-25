@@ -69,7 +69,7 @@
         },
         {
           "type": "text",
-          "html": "Wellness &amp; lifestyle",
+          "html": "<strong>Wellness &amp; lifestyle</strong>",
           "text": "Wellness & lifestyle"
         },
         {
@@ -84,9 +84,18 @@
           "text": "The traditional Finnish sauna is one of the oldest wellness practices on earth, and one of the best studied. Here is what the research says, and why so many people make it the best part of their day."
         },
         {
-          "type": "text",
-          "html": "<a href=\"#research\">What the research says</a> <a href=\"#ritual\">How to sauna</a>",
-          "text": "What the research says How to sauna"
+          "type": "link",
+          "html": "What the research says",
+          "text": "What the research says",
+          "href": "#research",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "How to sauna",
+          "text": "How to sauna",
+          "href": "#ritual",
+          "variant": "button"
         }
       ]
     },
@@ -95,7 +104,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "The Finnish tradition",
+          "html": "<strong>The Finnish tradition</strong>",
           "text": "The Finnish tradition"
         },
         {
@@ -116,18 +125,33 @@
         },
         {
           "type": "text",
-          "html": "<strong>80–100°C</strong>Traditional dry heat",
-          "text": "80–100°CTraditional dry heat"
+          "html": "<strong>80–100°C</strong>",
+          "text": "80–100°C"
         },
         {
           "type": "text",
-          "html": "<strong>~3M</strong>Saunas in Finland",
-          "text": "~3MSaunas in Finland"
+          "html": "Traditional dry heat",
+          "text": "Traditional dry heat"
         },
         {
           "type": "text",
-          "html": "<strong>2020</strong>UNESCO heritage listing",
-          "text": "2020UNESCO heritage listing"
+          "html": "<strong>~3M</strong>",
+          "text": "~3M"
+        },
+        {
+          "type": "text",
+          "html": "Saunas in Finland",
+          "text": "Saunas in Finland"
+        },
+        {
+          "type": "text",
+          "html": "<strong>2020</strong>",
+          "text": "2020"
+        },
+        {
+          "type": "text",
+          "html": "UNESCO heritage listing",
+          "text": "UNESCO heritage listing"
         },
         {
           "type": "image",
@@ -141,7 +165,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "What the research says",
+          "html": "<strong>What the research says</strong>",
           "text": "What the research says"
         },
         {
@@ -157,12 +181,12 @@
         },
         {
           "type": "text",
-          "html": "40%",
+          "html": "<strong>40%</strong>",
           "text": "40%"
         },
         {
           "type": "text",
-          "html": "Lower risk of death from any cause",
+          "html": "<strong>Lower risk of death from any cause</strong>",
           "text": "Lower risk of death from any cause"
         },
         {
@@ -177,12 +201,12 @@
         },
         {
           "type": "text",
-          "html": "63%",
+          "html": "<strong>63%</strong>",
           "text": "63%"
         },
         {
           "type": "text",
-          "html": "Lower risk of sudden cardiac death",
+          "html": "<strong>Lower risk of sudden cardiac death</strong>",
           "text": "Lower risk of sudden cardiac death"
         },
         {
@@ -197,12 +221,12 @@
         },
         {
           "type": "text",
-          "html": "66%",
+          "html": "<strong>66%</strong>",
           "text": "66%"
         },
         {
           "type": "text",
-          "html": "Lower risk of dementia",
+          "html": "<strong>Lower risk of dementia</strong>",
           "text": "Lower risk of dementia"
         },
         {
@@ -217,12 +241,12 @@
         },
         {
           "type": "text",
-          "html": "70+",
+          "html": "<strong>70+</strong>",
           "text": "70+"
         },
         {
           "type": "text",
-          "html": "Studies reviewed",
+          "html": "<strong>Studies reviewed</strong>",
           "text": "Studies reviewed"
         },
         {
@@ -237,12 +261,12 @@
         },
         {
           "type": "text",
-          "html": "84%",
+          "html": "<strong>84%</strong>",
           "text": "84%"
         },
         {
           "type": "text",
-          "html": "Reported better sleep",
+          "html": "<strong>Reported better sleep</strong>",
           "text": "Reported better sleep"
         },
         {
@@ -257,12 +281,12 @@
         },
         {
           "type": "text",
-          "html": "#1",
+          "html": "<strong>#1</strong>",
           "text": "#1"
         },
         {
           "type": "text",
-          "html": "Reason people sauna: to de-stress",
+          "html": "<strong>Reason people sauna: to de-stress</strong>",
           "text": "Reason people sauna: to de-stress"
         },
         {
@@ -287,7 +311,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Inspiration",
+          "html": "<strong>Inspiration</strong>",
           "text": "Inspiration"
         },
         {
@@ -363,7 +387,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "The lifestyle",
+          "html": "<strong>The lifestyle</strong>",
           "text": "The lifestyle"
         },
         {
@@ -384,28 +408,53 @@
         },
         {
           "type": "text",
-          "html": "<strong>A daily reset</strong>Twenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day.",
-          "text": "A daily resetTwenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day."
+          "html": "<strong>A daily reset</strong>",
+          "text": "A daily reset"
         },
         {
           "type": "text",
-          "html": "<strong>The spa, at home</strong>No membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night.",
-          "text": "The spa, at homeNo membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night."
+          "html": "Twenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day.",
+          "text": "Twenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day."
         },
         {
           "type": "text",
-          "html": "<strong>Time together</strong>Sauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna.",
-          "text": "Time togetherSauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna."
+          "html": "<strong>The spa, at home</strong>",
+          "text": "The spa, at home"
         },
         {
           "type": "text",
-          "html": "<strong>Hot and cold</strong>Pair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake.",
-          "text": "Hot and coldPair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake."
+          "html": "No membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night.",
+          "text": "No membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night."
         },
         {
           "type": "text",
-          "html": "<strong>An elevated backyard</strong>A cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one.",
-          "text": "An elevated backyardA cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one."
+          "html": "<strong>Time together</strong>",
+          "text": "Time together"
+        },
+        {
+          "type": "text",
+          "html": "Sauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna.",
+          "text": "Sauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Hot and cold</strong>",
+          "text": "Hot and cold"
+        },
+        {
+          "type": "text",
+          "html": "Pair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake.",
+          "text": "Pair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake."
+        },
+        {
+          "type": "text",
+          "html": "<strong>An elevated backyard</strong>",
+          "text": "An elevated backyard"
+        },
+        {
+          "type": "text",
+          "html": "A cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one.",
+          "text": "A cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one."
         }
       ]
     },
@@ -414,7 +463,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "The ritual",
+          "html": "<strong>The ritual</strong>",
           "text": "The ritual"
         },
         {
@@ -438,24 +487,99 @@
           "ordered": true,
           "items": [
             {
-              "html": "<strong>01</strong><strong>Heat up</strong>Let the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new.",
-              "text": "01Heat upLet the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>01</strong>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Heat up</strong>",
+                  "text": "Heat up"
+                },
+                {
+                  "type": "text",
+                  "html": "Let the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new.",
+                  "text": "Let the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new."
+                }
+              ]
             },
             {
-              "html": "<strong>02</strong><strong>Add löyly</strong>Ladle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much.",
-              "text": "02Add löylyLadle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>02</strong>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Add löyly</strong>",
+                  "text": "Add löyly"
+                },
+                {
+                  "type": "text",
+                  "html": "Ladle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much.",
+                  "text": "Ladle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much."
+                }
+              ]
             },
             {
-              "html": "<strong>03</strong><strong>Cool down</strong>Step out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge.",
-              "text": "03Cool downStep out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>03</strong>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Cool down</strong>",
+                  "text": "Cool down"
+                },
+                {
+                  "type": "text",
+                  "html": "Step out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge.",
+                  "text": "Step out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge."
+                }
+              ]
             },
             {
-              "html": "<strong>04</strong><strong>Rest</strong>Sit or lie down for 10 minutes and let your heart rate settle. Have some water.",
-              "text": "04RestSit or lie down for 10 minutes and let your heart rate settle. Have some water."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>04</strong>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Rest</strong>",
+                  "text": "Rest"
+                },
+                {
+                  "type": "text",
+                  "html": "Sit or lie down for 10 minutes and let your heart rate settle. Have some water.",
+                  "text": "Sit or lie down for 10 minutes and let your heart rate settle. Have some water."
+                }
+              ]
             },
             {
-              "html": "<strong>05</strong><strong>Repeat</strong>Most people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone.",
-              "text": "05RepeatMost people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>05</strong>",
+                  "text": "05"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Repeat</strong>",
+                  "text": "Repeat"
+                },
+                {
+                  "type": "text",
+                  "html": "Most people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone.",
+                  "text": "Most people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone."
+                }
+              ]
             }
           ]
         }
@@ -466,7 +590,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Good to know",
+          "html": "<strong>Good to know</strong>",
           "text": "Good to know"
         },
         {
@@ -514,9 +638,25 @@
           "text": "Tell us about your space and we’ll help you find a sauna you’ll use every week."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Shop outdoor saunas</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Find your fit Shop outdoor saunas Call (437) 429-6623"
+          "type": "link",
+          "html": "Find your fit",
+          "text": "Find your fit",
+          "href": "/sauna-finder",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Shop outdoor saunas",
+          "text": "Shop outdoor saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     },

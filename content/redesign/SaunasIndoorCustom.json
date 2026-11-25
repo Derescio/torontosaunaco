@@ -48,7 +48,7 @@
         },
         {
           "type": "text",
-          "html": "Indoor custom saunas",
+          "html": "<strong>Indoor custom saunas</strong>",
           "text": "Indoor custom saunas"
         },
         {
@@ -73,9 +73,18 @@
       "name": "Tabs",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/saunas/indoor/kits\">Indoor Sauna Kits</a> <a href=\"/saunas/indoor/custom\">Custom Indoor Saunas</a>",
-          "text": "Indoor Sauna Kits Custom Indoor Saunas"
+          "type": "link",
+          "html": "Indoor Sauna Kits",
+          "text": "Indoor Sauna Kits",
+          "href": "/saunas/indoor/kits",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Custom Indoor Saunas",
+          "text": "Custom Indoor Saunas",
+          "href": "/saunas/indoor/custom",
+          "variant": "button"
         }
       ]
     },
@@ -83,9 +92,25 @@
       "name": "finder-bar",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\"><strong>Not sure what fits?</strong>Enter your space and we’ll show every sauna that fits, in about a minute.<strong>Find your fit →</strong></a>",
-          "text": "Not sure what fits?Enter your space and we’ll show every sauna that fits, in about a minute.Find your fit →"
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
         }
       ]
     },
@@ -94,7 +119,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "This isn't off-the-shelf",
+          "html": "<strong>This isn't off-the-shelf</strong>",
           "text": "This isn't off-the-shelf"
         },
         {
@@ -115,7 +140,7 @@
         },
         {
           "type": "text",
-          "html": "Residential",
+          "html": "<strong>Residential</strong>",
           "text": "Residential"
         },
         {
@@ -143,7 +168,7 @@
         },
         {
           "type": "text",
-          "html": "Commercial",
+          "html": "<strong>Commercial</strong>",
           "text": "Commercial"
         },
         {
@@ -171,7 +196,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "From consultation to completion",
+          "html": "<strong>From consultation to completion</strong>",
           "text": "From consultation to completion"
         },
         {
@@ -185,24 +210,99 @@
           "ordered": true,
           "items": [
             {
-              "html": "<em>01</em><strong>Consult</strong>We talk through your space, goals and budget.",
-              "text": "01ConsultWe talk through your space, goals and budget."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>01</em>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consult</strong>",
+                  "text": "Consult"
+                },
+                {
+                  "type": "text",
+                  "html": "We talk through your space, goals and budget.",
+                  "text": "We talk through your space, goals and budget."
+                }
+              ]
             },
             {
-              "html": "<em>02</em><strong>Design</strong>We map out the framing, layout and finishes.",
-              "text": "02DesignWe map out the framing, layout and finishes."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>02</em>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Design</strong>",
+                  "text": "Design"
+                },
+                {
+                  "type": "text",
+                  "html": "We map out the framing, layout and finishes.",
+                  "text": "We map out the framing, layout and finishes."
+                }
+              ]
             },
             {
-              "html": "<em>03</em><strong>Build</strong>Our contractors construct the room on site.",
-              "text": "03BuildOur contractors construct the room on site."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>03</em>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Build</strong>",
+                  "text": "Build"
+                },
+                {
+                  "type": "text",
+                  "html": "Our contractors construct the room on site.",
+                  "text": "Our contractors construct the room on site."
+                }
+              ]
             },
             {
-              "html": "<em>04</em><strong>Install</strong>Heater, cedar and finishing touches go in.",
-              "text": "04InstallHeater, cedar and finishing touches go in."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>04</em>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Install</strong>",
+                  "text": "Install"
+                },
+                {
+                  "type": "text",
+                  "html": "Heater, cedar and finishing touches go in.",
+                  "text": "Heater, cedar and finishing touches go in."
+                }
+              ]
             },
             {
-              "html": "<em>05</em><strong>Walkthrough</strong>We hand over the room and show you how to use it.",
-              "text": "05WalkthroughWe hand over the room and show you how to use it."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>05</em>",
+                  "text": "05"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Walkthrough</strong>",
+                  "text": "Walkthrough"
+                },
+                {
+                  "type": "text",
+                  "html": "We hand over the room and show you how to use it.",
+                  "text": "We hand over the room and show you how to use it."
+                }
+              ]
             }
           ]
         }
@@ -213,7 +313,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Recent projects",
+          "html": "<strong>Recent projects</strong>",
           "text": "Recent projects"
         },
         {
@@ -229,7 +329,7 @@
         },
         {
           "type": "text",
-          "html": "Before",
+          "html": "<strong>Before</strong>",
           "text": "Before"
         },
         {
@@ -240,7 +340,7 @@
         },
         {
           "type": "text",
-          "html": "After",
+          "html": "<strong>After</strong>",
           "text": "After"
         },
         {
@@ -250,7 +350,7 @@
         },
         {
           "type": "text",
-          "html": "Before",
+          "html": "<strong>Before</strong>",
           "text": "Before"
         },
         {
@@ -261,7 +361,7 @@
         },
         {
           "type": "text",
-          "html": "After",
+          "html": "<strong>After</strong>",
           "text": "After"
         },
         {
@@ -271,7 +371,7 @@
         },
         {
           "type": "text",
-          "html": "Before",
+          "html": "<strong>Before</strong>",
           "text": "Before"
         },
         {
@@ -282,12 +382,12 @@
         },
         {
           "type": "text",
-          "html": "After",
+          "html": "<strong>After</strong>",
           "text": "After"
         },
         {
           "type": "text",
-          "html": "Commercial build",
+          "html": "<strong>Commercial build</strong>",
           "text": "Commercial build"
         },
         {
@@ -318,23 +418,43 @@
         },
         {
           "type": "text",
-          "html": "<strong>Premium cedar</strong>The same cedar we use across our saunas.",
-          "text": "Premium cedarThe same cedar we use across our saunas."
+          "html": "<strong>Premium cedar</strong>",
+          "text": "Premium cedar"
         },
         {
           "type": "text",
-          "html": "<strong>Framed &amp; insulated</strong>Built and finished properly, not just panelled.",
-          "text": "Framed & insulatedBuilt and finished properly, not just panelled."
+          "html": "The same cedar we use across our saunas.",
+          "text": "The same cedar we use across our saunas."
         },
         {
           "type": "text",
-          "html": "<strong>Built for Ontario</strong>Materials specified for Canadian homes and climates.",
-          "text": "Built for OntarioMaterials specified for Canadian homes and climates."
+          "html": "<strong>Framed &amp; insulated</strong>",
+          "text": "Framed & insulated"
         },
         {
           "type": "text",
-          "html": "<strong>Commercial-grade</strong>Durable builds for high-traffic facilities.",
-          "text": "Commercial-gradeDurable builds for high-traffic facilities."
+          "html": "Built and finished properly, not just panelled.",
+          "text": "Built and finished properly, not just panelled."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Built for Ontario</strong>",
+          "text": "Built for Ontario"
+        },
+        {
+          "type": "text",
+          "html": "Materials specified for Canadian homes and climates.",
+          "text": "Materials specified for Canadian homes and climates."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Commercial-grade</strong>",
+          "text": "Commercial-grade"
+        },
+        {
+          "type": "text",
+          "html": "Durable builds for high-traffic facilities.",
+          "text": "Durable builds for high-traffic facilities."
         }
       ]
     },
@@ -352,7 +472,7 @@
             },
             {
               "type": "text",
-              "html": "Indoor sauna kits",
+              "html": "<strong>Indoor sauna kits</strong>",
               "text": "Indoor sauna kits"
             },
             {
@@ -368,7 +488,7 @@
             },
             {
               "type": "text",
-              "html": "Shop indoor kits →",
+              "html": "<strong>Shop indoor kits →</strong>",
               "text": "Shop indoor kits →"
             }
           ]
@@ -380,7 +500,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Indoor Custom Saunas",
+          "html": "<strong>Indoor Custom Saunas</strong>",
           "text": "Indoor Custom Saunas"
         },
         {
@@ -396,7 +516,7 @@
         },
         {
           "type": "text",
-          "html": "Not sure which sauna <em>fits?</em>",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
           "text": "Not sure which sauna fits?"
         },
         {
@@ -405,9 +525,18 @@
           "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a Consultation</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
-          "text": "Book a Consultation (437) 429-6623"
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

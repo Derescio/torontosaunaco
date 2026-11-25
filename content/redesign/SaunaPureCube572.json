@@ -635,7 +635,7 @@
                 },
                 {
                   "type": "text",
-                  "html": "{{galCount}}",
+                  "html": "<strong>{{galCount}}</strong>",
                   "text": "{{galCount}}"
                 }
               ]
@@ -691,7 +691,7 @@
         },
         {
           "type": "text",
-          "html": "Pure Cube · Outdoor sauna",
+          "html": "<strong>Pure Cube · Outdoor sauna</strong>",
           "text": "Pure Cube · Outdoor sauna"
         },
         {
@@ -702,8 +702,13 @@
         },
         {
           "type": "text",
-          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
-          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
         },
         {
           "type": "paragraph",
@@ -733,9 +738,18 @@
           ]
         },
         {
-          "type": "text",
-          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
-          "text": "Build Yours Book a Showroom Visit"
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
         }
       ]
     },
@@ -744,7 +758,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Build your sauna",
+          "html": "<strong>Build your sauna</strong>",
           "text": "Build your sauna"
         },
         {
@@ -781,7 +795,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "{{g.title}}",
+                      "html": "<strong>{{g.title}}</strong>",
                       "text": "{{g.title}}"
                     },
                     {
@@ -865,8 +879,18 @@
         },
         {
           "type": "text",
-          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
-          "text": "YOUR BUILD {{subtotalText}}+ HST"
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
         },
         {
           "type": "text",
@@ -883,8 +907,23 @@
               "as": "ln",
               "items": [
                 {
-                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
-                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
                 }
               ]
             }
@@ -949,8 +988,15 @@
           "blocks": [
             {
               "type": "text",
-              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
-              "text": "Added to your cart.Review Cart & Request Quote"
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
             }
           ]
         },
@@ -966,7 +1012,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "About this sauna",
+          "html": "<strong>About this sauna</strong>",
           "text": "About this sauna"
         },
         {
@@ -1030,9 +1076,25 @@
       "name": "finder-bar",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\"><strong>Will this fit your yard?</strong>Check your space in the Sauna Finder and compare every model that fits.<strong>Find your fit →</strong></a>",
-          "text": "Will this fit your yard?Check your space in the Sauna Finder and compare every model that fits.Find your fit →"
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Will this fit your yard?</strong>",
+              "text": "Will this fit your yard?"
+            },
+            {
+              "type": "text",
+              "html": "Check your space in the Sauna Finder and compare every model that fits.",
+              "text": "Check your space in the Sauna Finder and compare every model that fits."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
         }
       ]
     },
@@ -1041,7 +1103,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Specifications",
+          "html": "<strong>Specifications</strong>",
           "text": "Specifications"
         },
         {
@@ -1238,18 +1300,38 @@
         },
         {
           "type": "text",
-          "html": "Delivery &amp; installation",
+          "html": "<strong>Delivery &amp; installation</strong>",
           "text": "Delivery & installation"
         },
         {
           "type": "text",
-          "html": "<strong>Delivery + Installation</strong>Delivered and assembled by our team, anywhere in Ontario. <strong>$1,750</strong>",
-          "text": "Delivery + InstallationDelivered and assembled by our team, anywhere in Ontario. $1,750"
+          "html": "<strong>Delivery + Installation</strong>",
+          "text": "Delivery + Installation"
         },
         {
           "type": "text",
-          "html": "<strong>Delivery Only</strong>Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment. <strong>$450</strong>",
-          "text": "Delivery OnlyShipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment. $450"
+          "html": "Delivered and assembled by our team, anywhere in Ontario.",
+          "text": "Delivered and assembled by our team, anywhere in Ontario."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$1,750</strong>",
+          "text": "$1,750"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery Only</strong>",
+          "text": "Delivery Only"
+        },
+        {
+          "type": "text",
+          "html": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment.",
+          "text": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$450</strong>",
+          "text": "$450"
         },
         {
           "type": "paragraph",
@@ -1268,9 +1350,18 @@
           "text": "Compare other saunas"
         },
         {
-          "type": "text",
-          "html": "<a href=\"/saunas/cube\">View All Cube Saunas</a> <a href=\"/saunas/best-sellers\">Best Sellers</a>",
-          "text": "View All Cube Saunas Best Sellers"
+          "type": "link",
+          "html": "View All Cube Saunas",
+          "text": "View All Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
         }
       ]
     }

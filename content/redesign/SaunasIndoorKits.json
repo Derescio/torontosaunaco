@@ -163,7 +163,7 @@
         },
         {
           "type": "text",
-          "html": "Indoor sauna kits",
+          "html": "<strong>Indoor sauna kits</strong>",
           "text": "Indoor sauna kits"
         },
         {
@@ -188,9 +188,18 @@
       "name": "Tabs",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/saunas/indoor/kits\">Indoor Sauna Kits</a> <a href=\"/saunas/indoor/custom\">Custom Indoor Saunas</a>",
-          "text": "Indoor Sauna Kits Custom Indoor Saunas"
+          "type": "link",
+          "html": "Indoor Sauna Kits",
+          "text": "Indoor Sauna Kits",
+          "href": "/saunas/indoor/kits",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Custom Indoor Saunas",
+          "text": "Custom Indoor Saunas",
+          "href": "/saunas/indoor/custom",
+          "variant": "button"
         }
       ]
     },
@@ -198,9 +207,25 @@
       "name": "finder-bar",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\"><strong>Not sure what fits?</strong>Enter your space and we’ll show every sauna that fits, in about a minute.<strong>Find your fit →</strong></a>",
-          "text": "Not sure what fits?Enter your space and we’ll show every sauna that fits, in about a minute.Find your fit →"
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
         }
       ]
     },
@@ -305,7 +330,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "{{b}}",
+                      "html": "<strong>{{b}}</strong>",
                       "text": "{{b}}"
                     }
                   ]
@@ -347,8 +372,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{it.s}}</strong> {{it.cap}}",
-              "text": "{{it.s}} {{it.cap}}"
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
             },
             {
               "type": "heading",
@@ -386,8 +416,13 @@
             },
             {
               "type": "text",
-              "html": "{{it.priceLabel}} <strong>{{it.priceText}}</strong>",
-              "text": "{{it.priceLabel}} {{it.priceText}}"
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
             },
             {
               "type": "link",
@@ -414,7 +449,7 @@
             },
             {
               "type": "text",
-              "html": "Custom indoor saunas",
+              "html": "<strong>Custom indoor saunas</strong>",
               "text": "Custom indoor saunas"
             },
             {
@@ -430,7 +465,7 @@
             },
             {
               "type": "text",
-              "html": "Explore custom saunas →",
+              "html": "<strong>Explore custom saunas →</strong>",
               "text": "Explore custom saunas →"
             }
           ]
@@ -442,7 +477,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Indoor Sauna Kits",
+          "html": "<strong>Indoor Sauna Kits</strong>",
           "text": "Indoor Sauna Kits"
         },
         {
@@ -458,7 +493,7 @@
         },
         {
           "type": "text",
-          "html": "Not sure which sauna <em>fits?</em>",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
           "text": "Not sure which sauna fits?"
         },
         {
@@ -467,9 +502,18 @@
           "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a Consultation</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
-          "text": "Book a Consultation (437) 429-6623"
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

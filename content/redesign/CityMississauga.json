@@ -167,7 +167,7 @@
         },
         {
           "type": "text",
-          "html": "Peel Region",
+          "html": "<strong>Peel Region</strong>",
           "text": "Peel Region"
         },
         {
@@ -182,9 +182,18 @@
           "text": "From the big treed lots of Lorne Park and Mineola to lakeside Port Credit, Mississauga has some of the GTA's best backyards for a sauna. We design, deliver and install premium cedar saunas across the city."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a Free Site Consult</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Book a Free Site Consult Call (437) 429-6623"
+          "type": "link",
+          "html": "Book a Free Site Consult",
+          "text": "Book a Free Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         },
         {
           "type": "image",
@@ -198,23 +207,43 @@
       "blocks": [
         {
           "type": "text",
-          "html": "<strong>$1,750 delivery and installation</strong>Anywhere in Ontario, including Mississauga. Delivery only: $450.",
-          "text": "$1,750 delivery and installationAnywhere in Ontario, including Mississauga. Delivery only: $450."
+          "html": "<strong>$1,750 delivery and installation</strong>",
+          "text": "$1,750 delivery and installation"
         },
         {
           "type": "text",
-          "html": "<strong>Showroom in King Township</strong>17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
-          "text": "Showroom in King Township17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+          "html": "Anywhere in Ontario, including Mississauga. Delivery only: $450.",
+          "text": "Anywhere in Ontario, including Mississauga. Delivery only: $450."
         },
         {
           "type": "text",
-          "html": "<strong>5-star Google reviews</strong>Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
-          "text": "5-star Google reviewsReal customers, real installs. Read reviews"
+          "html": "<strong>Showroom in King Township</strong>",
+          "text": "Showroom in King Township"
         },
         {
           "type": "text",
-          "html": "<strong>Made in Canada</strong>Western Red Cedar saunas built for Ontario winters.",
-          "text": "Made in CanadaWestern Red Cedar saunas built for Ontario winters."
+          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>",
+          "text": "5-star Google reviews"
+        },
+        {
+          "type": "text",
+          "html": "Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "Real customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar saunas built for Ontario winters.",
+          "text": "Western Red Cedar saunas built for Ontario winters."
         }
       ]
     },
@@ -223,7 +252,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Where we install",
+          "html": "<strong>Where we install</strong>",
           "text": "Where we install"
         },
         {
@@ -320,7 +349,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Recommended for Mississauga",
+          "html": "<strong>Recommended for Mississauga</strong>",
           "text": "Recommended for Mississauga"
         },
         {
@@ -352,7 +381,7 @@
             },
             {
               "type": "text",
-              "html": "The Orion",
+              "html": "<strong>The Orion</strong>",
               "text": "The Orion"
             },
             {
@@ -362,7 +391,7 @@
             },
             {
               "type": "text",
-              "html": "$18,735",
+              "html": "<strong>$18,735</strong>",
               "text": "$18,735"
             }
           ]
@@ -378,7 +407,7 @@
             },
             {
               "type": "text",
-              "html": "The Neptune",
+              "html": "<strong>The Neptune</strong>",
               "text": "The Neptune"
             },
             {
@@ -388,7 +417,7 @@
             },
             {
               "type": "text",
-              "html": "$17,896",
+              "html": "<strong>$17,896</strong>",
               "text": "$17,896"
             }
           ]
@@ -404,7 +433,7 @@
             },
             {
               "type": "text",
-              "html": "The Hudson",
+              "html": "<strong>The Hudson</strong>",
               "text": "The Hudson"
             },
             {
@@ -414,7 +443,7 @@
             },
             {
               "type": "text",
-              "html": "$17,489",
+              "html": "<strong>$17,489</strong>",
               "text": "$17,489"
             }
           ]
@@ -430,7 +459,7 @@
             },
             {
               "type": "text",
-              "html": "Pure Cube 672",
+              "html": "<strong>Pure Cube 672</strong>",
               "text": "Pure Cube 672"
             },
             {
@@ -440,7 +469,7 @@
             },
             {
               "type": "text",
-              "html": "$15,589",
+              "html": "<strong>$15,589</strong>",
               "text": "$15,589"
             }
           ]
@@ -452,7 +481,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "How it works",
+          "html": "<strong>How it works</strong>",
           "text": "How it works"
         },
         {
@@ -466,27 +495,103 @@
           "ordered": true,
           "items": [
             {
-              "html": "<strong>01</strong> <strong>Consult</strong> Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
-              "text": "01 Consult Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>01</strong>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consult</strong>",
+                  "text": "Consult"
+                },
+                {
+                  "type": "text",
+                  "html": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+                  "text": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+                }
+              ]
             },
             {
-              "html": "<strong>02</strong> <strong>Site check</strong> We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
-              "text": "02 Site check We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>02</strong>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Site check</strong>",
+                  "text": "Site check"
+                },
+                {
+                  "type": "text",
+                  "html": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+                  "text": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+                }
+              ]
             },
             {
-              "html": "<strong>03</strong> <strong>Spec and quote</strong> We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
-              "text": "03 Spec and quote We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>03</strong>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Spec and quote</strong>",
+                  "text": "Spec and quote"
+                },
+                {
+                  "type": "text",
+                  "html": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+                  "text": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+                }
+              ]
             },
             {
-              "html": "<strong>04</strong> <strong>Deliver and install</strong> Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
-              "text": "04 Deliver and install Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>04</strong>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Deliver and install</strong>",
+                  "text": "Deliver and install"
+                },
+                {
+                  "type": "text",
+                  "html": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+                  "text": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+                }
+              ]
             }
           ]
         },
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-heaters\">Compare heaters</a> <a href=\"/cold-plunges\">Add a cold plunge</a> <a href=\"/accessories\">Sauna accessories</a>",
-          "text": "Compare heaters Add a cold plunge Sauna accessories"
+          "type": "link",
+          "html": "Compare heaters",
+          "text": "Compare heaters",
+          "href": "/sauna-heaters",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Add a cold plunge",
+          "text": "Add a cold plunge",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Sauna accessories",
+          "text": "Sauna accessories",
+          "href": "/accessories",
+          "variant": "button"
         }
       ]
     },
@@ -495,7 +600,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Reviews",
+          "html": "<strong>Reviews</strong>",
           "text": "Reviews"
         },
         {
@@ -554,7 +659,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Questions",
+          "html": "<strong>Questions</strong>",
           "text": "Questions"
         },
         {
@@ -630,8 +735,43 @@
       "blocks": [
         {
           "type": "text",
-          "html": "<strong>Also serving nearby:</strong> <a href=\"/service-areas/oakville\">Oakville</a><a href=\"/service-areas/toronto\">Toronto</a><a href=\"/service-areas/burlington\">Burlington</a><a href=\"/service-areas/vaughan\">Vaughan</a> <a href=\"/service-areas\">All service areas →</a>",
-          "text": "Also serving nearby: OakvilleTorontoBurlingtonVaughan All service areas →"
+          "html": "<strong>Also serving nearby:</strong>",
+          "text": "Also serving nearby:"
+        },
+        {
+          "type": "link",
+          "html": "Oakville",
+          "text": "Oakville",
+          "href": "/service-areas/oakville",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Toronto",
+          "text": "Toronto",
+          "href": "/service-areas/toronto",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Burlington",
+          "text": "Burlington",
+          "href": "/service-areas/burlington",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Vaughan",
+          "text": "Vaughan",
+          "href": "/service-areas/vaughan",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All service areas →",
+          "text": "All service areas →",
+          "href": "/service-areas",
+          "variant": "link"
         }
       ]
     },
@@ -650,9 +790,18 @@
           "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a Site Consult</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
-          "text": "Book a Site Consult (437) 429-6623"
+          "type": "link",
+          "html": "Book a Site Consult",
+          "text": "Book a Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

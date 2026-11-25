@@ -189,7 +189,7 @@
         },
         {
           "type": "text",
-          "html": "Cold plunges",
+          "html": "<strong>Cold plunges</strong>",
           "text": "Cold plunges"
         },
         {
@@ -214,9 +214,18 @@
       "name": "Tabs",
       "blocks": [
         {
-          "type": "text",
-          "html": "<a href=\"/cold-plunges\">Cold Plunges</a> <a href=\"/outdoor-showers\">Outdoor Showers</a>",
-          "text": "Cold Plunges Outdoor Showers"
+          "type": "link",
+          "html": "Cold Plunges",
+          "text": "Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Outdoor Showers",
+          "text": "Outdoor Showers",
+          "href": "/outdoor-showers",
+          "variant": "button"
         }
       ]
     },
@@ -321,7 +330,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "{{b}}",
+                      "html": "<strong>{{b}}</strong>",
                       "text": "{{b}}"
                     }
                   ]
@@ -352,8 +361,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{it.s}}</strong> {{it.cap}}",
-              "text": "{{it.s}} {{it.cap}}"
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
             },
             {
               "type": "heading",
@@ -391,8 +405,13 @@
             },
             {
               "type": "text",
-              "html": "{{it.priceLabel}} <strong>{{it.priceText}}</strong>",
-              "text": "{{it.priceLabel}} {{it.priceText}}"
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
             },
             {
               "type": "link",
@@ -410,7 +429,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Contrast therapy",
+          "html": "<strong>Contrast therapy</strong>",
           "text": "Contrast therapy"
         },
         {
@@ -433,23 +452,43 @@
         },
         {
           "type": "text",
-          "html": "<strong>Down to 37°F</strong>Every tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C).",
-          "text": "Down to 37°FEvery tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C)."
+          "html": "<strong>Down to 37°F</strong>",
+          "text": "Down to 37°F"
         },
         {
           "type": "text",
-          "html": "<strong>Filtered &amp; connected</strong>Built-in filtration and Wi-Fi temperature control with a chiller.",
-          "text": "Filtered & connectedBuilt-in filtration and Wi-Fi temperature control with a chiller."
+          "html": "Every tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C).",
+          "text": "Every tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C)."
         },
         {
           "type": "text",
-          "html": "<strong>No plumbing</strong>Fill with a garden hose and empty through the built-in drain.",
-          "text": "No plumbingFill with a garden hose and empty through the built-in drain."
+          "html": "<strong>Filtered &amp; connected</strong>",
+          "text": "Filtered & connected"
         },
         {
           "type": "text",
-          "html": "<strong>Arrives ready</strong>The Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it.",
-          "text": "Arrives readyThe Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it."
+          "html": "Built-in filtration and Wi-Fi temperature control with a chiller.",
+          "text": "Built-in filtration and Wi-Fi temperature control with a chiller."
+        },
+        {
+          "type": "text",
+          "html": "<strong>No plumbing</strong>",
+          "text": "No plumbing"
+        },
+        {
+          "type": "text",
+          "html": "Fill with a garden hose and empty through the built-in drain.",
+          "text": "Fill with a garden hose and empty through the built-in drain."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Arrives ready</strong>",
+          "text": "Arrives ready"
+        },
+        {
+          "type": "text",
+          "html": "The Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it.",
+          "text": "The Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it."
         }
       ]
     },
@@ -458,7 +497,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Cold plunge FAQ",
+          "html": "<strong>Cold plunge FAQ</strong>",
           "text": "Cold plunge FAQ"
         },
         {
@@ -522,7 +561,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Which plunge?",
+          "html": "<strong>Which plunge?</strong>",
           "text": "Which plunge?"
         },
         {
@@ -538,7 +577,7 @@
         },
         {
           "type": "text",
-          "html": "Not sure which plunge <em>fits?</em>",
+          "html": "<strong>Not sure which plunge <em>fits?</em></strong>",
           "text": "Not sure which plunge fits?"
         },
         {
@@ -547,9 +586,18 @@
           "text": "Visit our GTA showroom, or book a consultation and we'll recommend the right plunge and chiller for your space."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a Consultation</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
-          "text": "Book a Consultation (437) 429-6623"
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

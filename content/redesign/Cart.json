@@ -74,8 +74,15 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "Your cart is empty. <a href=\"/saunas/best-sellers\">Shop Saunas</a>",
-                  "text": "Your cart is empty. Shop Saunas"
+                  "html": "Your cart is empty.",
+                  "text": "Your cart is empty."
+                },
+                {
+                  "type": "link",
+                  "html": "Shop Saunas",
+                  "text": "Shop Saunas",
+                  "href": "/saunas/best-sellers",
+                  "variant": "button"
                 }
               ]
             },
@@ -120,7 +127,7 @@
                         },
                         {
                           "type": "text",
-                          "html": "{{it.lineText}}",
+                          "html": "<strong>{{it.lineText}}</strong>",
                           "text": "{{it.lineText}}"
                         },
                         {
@@ -138,8 +145,18 @@
                               "as": "dt",
                               "items": [
                                 {
-                                  "html": "{{dt.label}}{{dt.price}}",
-                                  "text": "{{dt.label}}{{dt.price}}"
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{dt.label}}",
+                                      "text": "{{dt.label}}"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "html": "{{dt.price}}",
+                                      "text": "{{dt.price}}"
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -151,7 +168,7 @@
                           "blocks": [
                             {
                               "type": "text",
-                              "html": "Shipping for this item will be quoted by phone.",
+                              "html": "<strong>Shipping for this item will be quoted by phone.</strong>",
                               "text": "Shipping for this item will be quoted by phone."
                             }
                           ]
@@ -166,7 +183,7 @@
                         },
                         {
                           "type": "text",
-                          "html": "{{it.qty}}",
+                          "html": "<strong>{{it.qty}}</strong>",
                           "text": "{{it.qty}}"
                         },
                         {
@@ -222,7 +239,7 @@
                       "blocks": [
                         {
                           "type": "text",
-                          "html": "{{f.err}}",
+                          "html": "<strong>{{f.err}}</strong>",
                           "text": "{{f.err}}"
                         }
                       ]
@@ -253,7 +270,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Please choose a timeline.",
+                      "html": "<strong>Please choose a timeline.</strong>",
                       "text": "Please choose a timeline."
                     }
                   ]
@@ -278,7 +295,7 @@
             },
             {
               "type": "text",
-              "html": "QUOTE SUMMARY",
+              "html": "<strong>QUOTE SUMMARY</strong>",
               "text": "QUOTE SUMMARY"
             },
             {
@@ -339,14 +356,14 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "Please complete the required fields above.",
+                  "html": "<strong>Please complete the required fields above.</strong>",
                   "text": "Please complete the required fields above."
                 }
               ]
             },
             {
               "type": "text",
-              "html": "How ordering works",
+              "html": "<strong>How ordering works</strong>",
               "text": "How ordering works"
             },
             {
@@ -424,7 +441,7 @@
             },
             {
               "type": "text",
-              "html": "QUOTE PROPOSAL",
+              "html": "<strong>QUOTE PROPOSAL</strong>",
               "text": "QUOTE PROPOSAL"
             },
             {
@@ -439,12 +456,12 @@
             },
             {
               "type": "text",
-              "html": "Customer",
+              "html": "<strong>Customer</strong>",
               "text": "Customer"
             },
             {
               "type": "text",
-              "html": "{{propCust.name}}",
+              "html": "<strong>{{propCust.name}}</strong>",
               "text": "{{propCust.name}}"
             },
             {
@@ -459,7 +476,7 @@
             },
             {
               "type": "text",
-              "html": "Order",
+              "html": "<strong>Order</strong>",
               "text": "Order"
             },
             {
@@ -469,8 +486,13 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "{{it.name}}{{it.line}}",
-                  "text": "{{it.name}}{{it.line}}"
+                  "html": "{{it.name}}",
+                  "text": "{{it.name}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{it.line}}",
+                  "text": "{{it.line}}"
                 },
                 {
                   "type": "repeat",
@@ -479,8 +501,13 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "{{d.label}}{{d.price}}",
-                      "text": "{{d.label}}{{d.price}}"
+                      "html": "{{d.label}}",
+                      "text": "{{d.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{d.price}}",
+                      "text": "{{d.price}}"
                     }
                   ]
                 }
@@ -488,28 +515,48 @@
             },
             {
               "type": "text",
-              "html": "Subtotal{{propSubtotal}}",
-              "text": "Subtotal{{propSubtotal}}"
+              "html": "Subtotal",
+              "text": "Subtotal"
             },
             {
               "type": "text",
-              "html": "HST (13%){{propHst}}",
-              "text": "HST (13%){{propHst}}"
+              "html": "{{propSubtotal}}",
+              "text": "{{propSubtotal}}"
             },
             {
               "type": "text",
-              "html": "Estimated total{{propTotal}}",
-              "text": "Estimated total{{propTotal}}"
+              "html": "HST (13%)",
+              "text": "HST (13%)"
             },
             {
               "type": "text",
-              "html": "Payment",
+              "html": "{{propHst}}",
+              "text": "{{propHst}}"
+            },
+            {
+              "type": "text",
+              "html": "Estimated total",
+              "text": "Estimated total"
+            },
+            {
+              "type": "text",
+              "html": "{{propTotal}}",
+              "text": "{{propTotal}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Payment</strong>",
               "text": "Payment"
             },
             {
               "type": "text",
-              "html": "Deposit to confirm your order{{propDeposit}}",
-              "text": "Deposit to confirm your order{{propDeposit}}"
+              "html": "Deposit to confirm your order",
+              "text": "Deposit to confirm your order"
+            },
+            {
+              "type": "text",
+              "html": "{{propDeposit}}",
+              "text": "{{propDeposit}}"
             },
             {
               "type": "if",
@@ -517,8 +564,13 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "Final balance, due 7 days before installation{{propBalance}}",
-                  "text": "Final balance, due 7 days before installation{{propBalance}}"
+                  "html": "Final balance, due 7 days before installation",
+                  "text": "Final balance, due 7 days before installation"
+                },
+                {
+                  "type": "text",
+                  "html": "{{propBalance}}",
+                  "text": "{{propBalance}}"
                 }
               ]
             },
@@ -534,7 +586,7 @@
             },
             {
               "type": "text",
-              "html": "TERMS &amp; CONDITIONS",
+              "html": "<strong>TERMS &amp; CONDITIONS</strong>",
               "text": "TERMS & CONDITIONS"
             },
             {
@@ -577,9 +629,18 @@
               ]
             },
             {
-              "type": "text",
-              "html": "<a href=\"/\">Back to Home</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-              "text": "Back to Home Call (437) 429-6623"
+              "type": "link",
+              "html": "Back to Home",
+              "text": "Back to Home",
+              "href": "/",
+              "variant": "button"
+            },
+            {
+              "type": "link",
+              "html": "Call (437) 429-6623",
+              "text": "Call (437) 429-6623",
+              "href": "tel:+14374296623",
+              "variant": "button"
             }
           ]
         }

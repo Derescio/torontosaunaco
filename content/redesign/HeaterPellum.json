@@ -304,8 +304,18 @@
         },
         {
           "type": "text",
-          "html": "<strong>Wood-burning</strong> <strong>{{p.origin}}</strong> <strong>{{p.mount}}</strong>",
-          "text": "Wood-burning {{p.origin}} {{p.mount}}"
+          "html": "<strong>Wood-burning</strong>",
+          "text": "Wood-burning"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.origin}}</strong>",
+          "text": "{{p.origin}}"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.mount}}</strong>",
+          "text": "{{p.mount}}"
         },
         {
           "type": "heading",
@@ -342,8 +352,13 @@
         },
         {
           "type": "text",
-          "html": "Starting at (MSRP) <strong>{{p.fromPrice}}</strong>",
-          "text": "Starting at (MSRP) {{p.fromPrice}}"
+          "html": "Starting at (MSRP)",
+          "text": "Starting at (MSRP)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.fromPrice}}</strong>",
+          "text": "{{p.fromPrice}}"
         },
         {
           "type": "repeat",
@@ -352,15 +367,24 @@
           "blocks": [
             {
               "type": "text",
-              "html": "{{k}}",
+              "html": "<strong>{{k}}</strong>",
               "text": "{{k}}"
             }
           ]
         },
         {
-          "type": "text",
-          "html": "<a href=\"#configure\">Build Yours &amp; Add to Cart</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Build Yours & Add to Cart Call (437) 429-6623"
+          "type": "link",
+          "html": "Build Yours &amp; Add to Cart",
+          "text": "Build Yours & Add to Cart",
+          "href": "#configure",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         },
         {
           "type": "text",
@@ -374,7 +398,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Build your heater",
+          "html": "<strong>Build your heater</strong>",
           "text": "Build your heater"
         },
         {
@@ -405,7 +429,7 @@
                       "blocks": [
                         {
                           "type": "text",
-                          "html": "{{st.num}}",
+                          "html": "<strong>{{st.num}}</strong>",
                           "text": "{{st.num}}"
                         }
                       ]
@@ -418,7 +442,7 @@
                     },
                     {
                       "type": "text",
-                      "html": "{{st.tag}}",
+                      "html": "<strong>{{st.tag}}</strong>",
                       "text": "{{st.tag}}"
                     },
                     {
@@ -473,7 +497,7 @@
         },
         {
           "type": "text",
-          "html": "Your <em>{{p.short}}</em>",
+          "html": "<strong>Your <em>{{p.short}}</em></strong>",
           "text": "Your {{p.short}}"
         },
         {
@@ -486,8 +510,23 @@
               "as": "ln",
               "items": [
                 {
-                  "html": "<strong>{{ln.label}}</strong>{{ln.step}} <strong>{{ln.priceText}}</strong>",
-                  "text": "{{ln.label}}{{ln.step}} {{ln.priceText}}"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.step}}",
+                      "text": "{{ln.step}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
                 }
               ]
             }
@@ -555,7 +594,7 @@
           "blocks": [
             {
               "type": "text",
-              "html": "{{missingText}}",
+              "html": "<strong>{{missingText}}</strong>",
               "text": "{{missingText}}"
             }
           ]
@@ -573,8 +612,20 @@
           "blocks": [
             {
               "type": "text",
-              "html": "<strong>Added to your cart</strong> {{addedText}} <a href=\"/cart\">Review Cart &amp; Request Quote</a>",
-              "text": "Added to your cart {{addedText}} Review Cart & Request Quote"
+              "html": "<strong>Added to your cart</strong>",
+              "text": "Added to your cart"
+            },
+            {
+              "type": "text",
+              "html": "{{addedText}}",
+              "text": "{{addedText}}"
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
             }
           ]
         },
@@ -590,7 +641,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Sizing",
+          "html": "<strong>Sizing</strong>",
           "text": "Sizing"
         },
         {
@@ -658,7 +709,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Specifications",
+          "html": "<strong>Specifications</strong>",
           "text": "Specifications"
         },
         {
@@ -685,7 +736,7 @@
         },
         {
           "type": "text",
-          "html": "What you'll need",
+          "html": "<strong>What you'll need</strong>",
           "text": "What you'll need"
         },
         {
@@ -707,8 +758,20 @@
         },
         {
           "type": "text",
-          "html": "<strong>Not sure which size? <em>We'll help.</em></strong> Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation. <a href=\"/contact\">Get a Sizing Recommendation</a>",
-          "text": "Not sure which size? We'll help. Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation. Get a Sizing Recommendation"
+          "html": "<strong>Not sure which size? <em>We'll help.</em></strong>",
+          "text": "Not sure which size? We'll help."
+        },
+        {
+          "type": "text",
+          "html": "Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation.",
+          "text": "Send us your sauna's measurements and we'll recommend the right stove, chimney and rocks, and quote installation."
+        },
+        {
+          "type": "link",
+          "html": "Get a Sizing Recommendation",
+          "text": "Get a Sizing Recommendation",
+          "href": "/contact",
+          "variant": "button"
         }
       ]
     },

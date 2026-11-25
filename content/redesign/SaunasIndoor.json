@@ -74,7 +74,7 @@
         },
         {
           "type": "text",
-          "html": "Indoor saunas",
+          "html": "<strong>Indoor saunas</strong>",
           "text": "Indoor saunas"
         },
         {
@@ -104,7 +104,7 @@
             },
             {
               "type": "text",
-              "html": "Ready-made",
+              "html": "<strong>Ready-made</strong>",
               "text": "Ready-made"
             },
             {
@@ -123,22 +123,52 @@
               "ordered": false,
               "items": [
                 {
-                  "html": "✓Pure Cube Indoor, Element and classic cedar cabins",
-                  "text": "✓Pure Cube Indoor, Element and classic cedar cabins"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "Pure Cube Indoor, Element and classic cedar cabins",
+                      "text": "Pure Cube Indoor, Element and classic cedar cabins"
+                    }
+                  ]
                 },
                 {
-                  "html": "✓Seats 1 to 6, from 54¾\" square to 6′ × 8′",
-                  "text": "✓Seats 1 to 6, from 54¾\" square to 6′ × 8′"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "Seats 1 to 6, from 54¾\" square to 6′ × 8′",
+                      "text": "Seats 1 to 6, from 54¾\" square to 6′ × 8′"
+                    }
+                  ]
                 },
                 {
-                  "html": "✓From $8,070",
-                  "text": "✓From $8,070"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "From $8,070",
+                      "text": "From $8,070"
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "text",
-              "html": "Shop indoor kits →",
+              "html": "<strong>Shop indoor kits →</strong>",
               "text": "Shop indoor kits →"
             }
           ]
@@ -154,7 +184,7 @@
             },
             {
               "type": "text",
-              "html": "Made to measure",
+              "html": "<strong>Made to measure</strong>",
               "text": "Made to measure"
             },
             {
@@ -173,22 +203,52 @@
               "ordered": false,
               "items": [
                 {
-                  "html": "✓Any size or shape, including odd corners and sloped ceilings",
-                  "text": "✓Any size or shape, including odd corners and sloped ceilings"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "Any size or shape, including odd corners and sloped ceilings",
+                      "text": "Any size or shape, including odd corners and sloped ceilings"
+                    }
+                  ]
                 },
                 {
-                  "html": "✓Your choice of wood, glass, benches and lighting",
-                  "text": "✓Your choice of wood, glass, benches and lighting"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "Your choice of wood, glass, benches and lighting",
+                      "text": "Your choice of wood, glass, benches and lighting"
+                    }
+                  ]
                 },
                 {
-                  "html": "✓Free design consultation",
-                  "text": "✓Free design consultation"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "✓",
+                      "text": "✓"
+                    },
+                    {
+                      "type": "text",
+                      "html": "Free design consultation",
+                      "text": "Free design consultation"
+                    }
+                  ]
                 }
               ]
             },
             {
               "type": "text",
-              "html": "Explore custom saunas →",
+              "html": "<strong>Explore custom saunas →</strong>",
               "text": "Explore custom saunas →"
             }
           ]
@@ -210,9 +270,18 @@
           "text": "A kit is faster and more affordable. Custom makes sense when your room is unusual, or you want the sauna built right into the walls. Tell us about your space and we’ll recommend the best fit."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Book a free consultation</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Book a free consultation Call (437) 429-6623"
+          "type": "link",
+          "html": "Book a free consultation",
+          "text": "Book a free consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

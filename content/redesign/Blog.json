@@ -136,7 +136,7 @@
         },
         {
           "type": "text",
-          "html": "The Toronto Sauna Co. blog",
+          "html": "<strong>The Toronto Sauna Co. blog</strong>",
           "text": "The Toronto Sauna Co. blog"
         },
         {
@@ -166,8 +166,23 @@
             },
             {
               "type": "text",
-              "html": "<strong>Latest · Ownership · November 18, 2026</strong> <strong>How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna</strong> What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going. <strong>Read the article</strong>",
-              "text": "Latest · Ownership · November 18, 2026 How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going. Read the article"
+              "html": "<strong>Latest · Ownership · November 18, 2026</strong>",
+              "text": "Latest · Ownership · November 18, 2026"
+            },
+            {
+              "type": "text",
+              "html": "<strong>How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna</strong>",
+              "text": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna"
+            },
+            {
+              "type": "text",
+              "html": "What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going.",
+              "text": "What decides how many years an outdoor sauna gives you, from the cedar and the heater to the simple care that keeps it going."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Read the article</strong>",
+              "text": "Read the article"
             }
           ]
         }
@@ -187,12 +202,12 @@
             },
             {
               "type": "text",
-              "html": "Planning · November 3, 2026",
+              "html": "<strong>Planning · November 3, 2026</strong>",
               "text": "Planning · November 3, 2026"
             },
             {
               "type": "text",
-              "html": "Building a Backyard Sauna for Four-Season Enjoyment",
+              "html": "<strong>Building a Backyard Sauna for Four-Season Enjoyment</strong>",
               "text": "Building a Backyard Sauna for Four-Season Enjoyment"
             },
             {
@@ -202,7 +217,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -218,12 +233,12 @@
             },
             {
               "type": "text",
-              "html": "Buying guide · October 21, 2026",
+              "html": "<strong>Buying guide · October 21, 2026</strong>",
               "text": "Buying guide · October 21, 2026"
             },
             {
               "type": "text",
-              "html": "Choosing a Sauna Company: Questions to Ask Before You Buy",
+              "html": "<strong>Choosing a Sauna Company: Questions to Ask Before You Buy</strong>",
               "text": "Choosing a Sauna Company: Questions to Ask Before You Buy"
             },
             {
@@ -233,7 +248,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -249,12 +264,12 @@
             },
             {
               "type": "text",
-              "html": "Sauna ritual · June 24, 2026",
+              "html": "<strong>Sauna ritual · June 24, 2026</strong>",
               "text": "Sauna ritual · June 24, 2026"
             },
             {
               "type": "text",
-              "html": "Sauna Etiquette for First-Time Users: A Beginner’s Guide",
+              "html": "<strong>Sauna Etiquette for First-Time Users: A Beginner’s Guide</strong>",
               "text": "Sauna Etiquette for First-Time Users: A Beginner’s Guide"
             },
             {
@@ -264,7 +279,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -280,12 +295,12 @@
             },
             {
               "type": "text",
-              "html": "Buying guide · May 27, 2026",
+              "html": "<strong>Buying guide · May 27, 2026</strong>",
               "text": "Buying guide · May 27, 2026"
             },
             {
               "type": "text",
-              "html": "Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?",
+              "html": "<strong>Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?</strong>",
               "text": "Traditional Finnish Sauna vs Infrared Sauna: What’s the Difference?"
             },
             {
@@ -295,7 +310,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -311,12 +326,12 @@
             },
             {
               "type": "text",
-              "html": "Costs · May 5, 2026",
+              "html": "<strong>Costs · May 5, 2026</strong>",
               "text": "Costs · May 5, 2026"
             },
             {
               "type": "text",
-              "html": "How Much Does a Sauna Cost in Toronto in 2026?",
+              "html": "<strong>How Much Does a Sauna Cost in Toronto in 2026?</strong>",
               "text": "How Much Does a Sauna Cost in Toronto in 2026?"
             },
             {
@@ -326,7 +341,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -342,12 +357,12 @@
             },
             {
               "type": "text",
-              "html": "Wellness · December 25, 2025",
+              "html": "<strong>Wellness · December 25, 2025</strong>",
               "text": "Wellness · December 25, 2025"
             },
             {
               "type": "text",
-              "html": "How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada",
+              "html": "<strong>How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada</strong>",
               "text": "How Sauna and Cold Plunge Help Battle Seasonal Depression in Canada"
             },
             {
@@ -357,7 +372,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -373,12 +388,12 @@
             },
             {
               "type": "text",
-              "html": "Sauna ritual · October 23, 2025",
+              "html": "<strong>Sauna ritual · October 23, 2025</strong>",
               "text": "Sauna ritual · October 23, 2025"
             },
             {
               "type": "text",
-              "html": "From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual",
+              "html": "<strong>From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual</strong>",
               "text": "From City to Cottage: Why Outdoor Saunas Are Canada’s Year-Round Ritual"
             },
             {
@@ -388,7 +403,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -404,12 +419,12 @@
             },
             {
               "type": "text",
-              "html": "Wellness · August 20, 2025",
+              "html": "<strong>Wellness · August 20, 2025</strong>",
               "text": "Wellness · August 20, 2025"
             },
             {
               "type": "text",
-              "html": "Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation",
+              "html": "<strong>Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation</strong>",
               "text": "Sauna Wellness Unleashed: Transforming Home Relaxation with Modern Innovation"
             },
             {
@@ -419,7 +434,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -435,12 +450,12 @@
             },
             {
               "type": "text",
-              "html": "Planning",
+              "html": "<strong>Planning</strong>",
               "text": "Planning"
             },
             {
               "type": "text",
-              "html": "Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area",
+              "html": "<strong>Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area</strong>",
               "text": "Transform Your Backyard with a Modern Outdoor Sauna in the Greater Toronto Area"
             },
             {
@@ -450,7 +465,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -466,12 +481,12 @@
             },
             {
               "type": "text",
-              "html": "Planning",
+              "html": "<strong>Planning</strong>",
               "text": "Planning"
             },
             {
               "type": "text",
-              "html": "Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA",
+              "html": "<strong>Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA</strong>",
               "text": "Creating a Backyard Oasis: Your Ultimate Guide to Outdoor Saunas in the GTA"
             },
             {
@@ -481,7 +496,7 @@
             },
             {
               "type": "text",
-              "html": "Read the article",
+              "html": "<strong>Read the article</strong>",
               "text": "Read the article"
             }
           ]
@@ -503,9 +518,25 @@
           "text": "Use the Sauna Finder to see what fits your space, or call us and talk it through."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Shop outdoor saunas</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Find your fit Shop outdoor saunas Call (437) 429-6623"
+          "type": "link",
+          "html": "Find your fit",
+          "text": "Find your fit",
+          "href": "/sauna-finder",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Shop outdoor saunas",
+          "text": "Shop outdoor saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

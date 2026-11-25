@@ -454,7 +454,7 @@
                 },
                 {
                   "type": "text",
-                  "html": "{{galCount}}",
+                  "html": "<strong>{{galCount}}</strong>",
                   "text": "{{galCount}}"
                 }
               ]
@@ -510,7 +510,7 @@
         },
         {
           "type": "text",
-          "html": "Dundalk Collection · Cold plunge",
+          "html": "<strong>Dundalk Collection · Cold plunge</strong>",
           "text": "Dundalk Collection · Cold plunge"
         },
         {
@@ -521,8 +521,13 @@
         },
         {
           "type": "text",
-          "html": "<strong>{{baseText}}</strong> {{baseLabel}} · Delivery &amp; installation available across Ontario",
-          "text": "{{baseText}} {{baseLabel}} · Delivery & installation available across Ontario"
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
         },
         {
           "type": "paragraph",
@@ -552,9 +557,18 @@
           ]
         },
         {
-          "type": "text",
-          "html": "<a href=\"#build\">Build Yours</a> <a href=\"/contact#visit\">Book a Showroom Visit</a>",
-          "text": "Build Yours Book a Showroom Visit"
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
         }
       ]
     },
@@ -563,7 +577,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Build your cold plunge",
+          "html": "<strong>Build your cold plunge</strong>",
           "text": "Build your cold plunge"
         },
         {
@@ -600,7 +614,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "{{g.title}}",
+                      "html": "<strong>{{g.title}}</strong>",
                       "text": "{{g.title}}"
                     },
                     {
@@ -684,8 +698,18 @@
         },
         {
           "type": "text",
-          "html": "<strong>YOUR BUILD</strong> {{subtotalText}}+ HST",
-          "text": "YOUR BUILD {{subtotalText}}+ HST"
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
         },
         {
           "type": "text",
@@ -702,8 +726,23 @@
               "as": "ln",
               "items": [
                 {
-                  "html": "<strong>{{ln.label}}</strong>{{ln.group}} <strong>{{ln.priceText}}</strong>",
-                  "text": "{{ln.label}}{{ln.group}} {{ln.priceText}}"
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
                 }
               ]
             }
@@ -768,8 +807,15 @@
           "blocks": [
             {
               "type": "text",
-              "html": "Added to your cart.<a href=\"/cart\">Review Cart &amp; Request Quote</a>",
-              "text": "Added to your cart.Review Cart & Request Quote"
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
             }
           ]
         },
@@ -785,7 +831,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Specifications",
+          "html": "<strong>Specifications</strong>",
           "text": "Specifications"
         },
         {
@@ -895,13 +941,23 @@
         },
         {
           "type": "text",
-          "html": "Delivery",
+          "html": "<strong>Delivery</strong>",
           "text": "Delivery"
         },
         {
           "type": "text",
-          "html": "<strong>Delivery to your door</strong>Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. <strong>Quoted</strong>",
-          "text": "Delivery to your doorDelivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered. Quoted"
+          "html": "<strong>Delivery to your door</strong>",
+          "text": "Delivery to your door"
+        },
+        {
+          "type": "text",
+          "html": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+          "text": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Quoted</strong>",
+          "text": "Quoted"
         },
         {
           "type": "paragraph",
@@ -920,9 +976,18 @@
           "text": "Compare other cold plunges"
         },
         {
-          "type": "text",
-          "html": "<a href=\"/cold-plunges\">View All Cold Plunges</a> <a href=\"/saunas/best-sellers\">Pair It With a Sauna</a>",
-          "text": "View All Cold Plunges Pair It With a Sauna"
+          "type": "link",
+          "html": "View All Cold Plunges",
+          "text": "View All Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Pair It With a Sauna",
+          "text": "Pair It With a Sauna",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
         }
       ]
     }

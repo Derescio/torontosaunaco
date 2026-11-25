@@ -78,7 +78,7 @@
         },
         {
           "type": "text",
-          "html": "Our policies",
+          "html": "<strong>Our policies</strong>",
           "text": "Our policies"
         },
         {
@@ -94,9 +94,36 @@
         },
         {
           "type": "text",
-          "html": "<strong>Warranty</strong><a href=\"/refund-policy\">Returns &amp; Refunds</a><a href=\"/shipping\">Delivery &amp; Shipping</a><a href=\"/terms\">Terms of Service</a><a href=\"/privacy\">Privacy Policy</a>",
-          "text": "WarrantyReturns & RefundsDelivery & ShippingTerms of ServicePrivacy Policy",
-          "label": "Other policies"
+          "html": "<strong>Warranty</strong>",
+          "text": "Warranty"
+        },
+        {
+          "type": "link",
+          "html": "Returns &amp; Refunds",
+          "text": "Returns & Refunds",
+          "href": "/refund-policy",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Delivery &amp; Shipping",
+          "text": "Delivery & Shipping",
+          "href": "/shipping",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Terms of Service",
+          "text": "Terms of Service",
+          "href": "/terms",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Privacy Policy",
+          "text": "Privacy Policy",
+          "href": "/privacy",
+          "variant": "button"
         },
         {
           "type": "text",
@@ -115,7 +142,7 @@
         },
         {
           "type": "text",
-          "html": "AT A GLANCE",
+          "html": "<strong>AT A GLANCE</strong>",
           "text": "AT A GLANCE"
         },
         {
@@ -284,9 +311,18 @@
           "text": "Talk to a real person. Visit our showroom at 17380 Highway 27, Schomberg, by appointment."
         },
         {
-          "type": "text",
-          "html": "<a href=\"tel:+14374296623\">Call (437) 429-6623</a> <a href=\"mailto:sales@thetorontosaunaco.com\">Email us</a>",
-          "text": "Call (437) 429-6623 Email us"
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Email us",
+          "text": "Email us",
+          "href": "mailto:sales@thetorontosaunaco.com",
+          "variant": "button"
         }
       ]
     }

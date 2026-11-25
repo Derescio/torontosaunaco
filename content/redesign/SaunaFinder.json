@@ -1058,7 +1058,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Sauna finder",
+          "html": "<strong>Sauna finder</strong>",
           "text": "Sauna finder"
         },
         {
@@ -1118,7 +1118,7 @@
         },
         {
           "type": "text",
-          "html": "How many people? (optional)",
+          "html": "<strong>How many people? (optional)</strong>",
           "text": "How many people? (optional)"
         },
         {
@@ -1176,8 +1176,23 @@
                     },
                     {
                       "type": "text",
-                      "html": "<strong>{{r.n}}</strong> {{r.detail}} {{r.seats}} <strong>{{r.price}}</strong>",
-                      "text": "{{r.n}} {{r.detail}} {{r.seats}} {{r.price}}"
+                      "html": "<strong>{{r.n}}</strong>",
+                      "text": "{{r.n}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.detail}}",
+                      "text": "{{r.detail}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.seats}}",
+                      "text": "{{r.seats}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{r.price}}</strong>",
+                      "text": "{{r.price}}"
                     }
                   ]
                 }
@@ -1189,17 +1204,36 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "<strong>Nothing off the shelf fits that space.</strong> That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
-                  "text": "Nothing off the shelf fits that space. That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
+                  "html": "<strong>Nothing off the shelf fits that space.</strong>",
+                  "text": "Nothing off the shelf fits that space."
+                },
+                {
+                  "type": "text",
+                  "html": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
+                  "text": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
                 }
               ]
             }
           ]
         },
         {
+          "type": "link",
+          "html": "Get a quote for my space",
+          "text": "Get a quote for my space",
+          "href": "{{fdQuote}}",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "{{fdCustomLabel}}",
+          "text": "{{fdCustomLabel}}",
+          "href": "{{fdCustomHref}}",
+          "variant": "button"
+        },
+        {
           "type": "text",
-          "html": "<a href=\"{{fdQuote}}\">Get a quote for my space</a> <a href=\"{{fdCustomHref}}\">{{fdCustomLabel}}</a> “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
-          "text": "Get a quote for my space {{fdCustomLabel}} “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
+          "html": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
+          "text": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
         }
       ]
     }

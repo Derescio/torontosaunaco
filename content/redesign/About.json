@@ -64,7 +64,7 @@
         },
         {
           "type": "text",
-          "html": "About us",
+          "html": "<strong>About us</strong>",
           "text": "About us"
         },
         {
@@ -90,7 +90,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Our approach",
+          "html": "<strong>Our approach</strong>",
           "text": "Our approach"
         },
         {
@@ -142,7 +142,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Why people choose us",
+          "html": "<strong>Why people choose us</strong>",
           "text": "Why people choose us"
         },
         {
@@ -153,12 +153,12 @@
         },
         {
           "type": "text",
-          "html": "01",
+          "html": "<strong>01</strong>",
           "text": "01"
         },
         {
           "type": "text",
-          "html": "Fast response",
+          "html": "<strong>Fast response</strong>",
           "text": "Fast response"
         },
         {
@@ -168,12 +168,12 @@
         },
         {
           "type": "text",
-          "html": "02",
+          "html": "<strong>02</strong>",
           "text": "02"
         },
         {
           "type": "text",
-          "html": "Customer first",
+          "html": "<strong>Customer first</strong>",
           "text": "Customer first"
         },
         {
@@ -183,12 +183,12 @@
         },
         {
           "type": "text",
-          "html": "03",
+          "html": "<strong>03</strong>",
           "text": "03"
         },
         {
           "type": "text",
-          "html": "Solutions, not obstacles",
+          "html": "<strong>Solutions, not obstacles</strong>",
           "text": "Solutions, not obstacles"
         },
         {
@@ -198,12 +198,12 @@
         },
         {
           "type": "text",
-          "html": "04",
+          "html": "<strong>04</strong>",
           "text": "04"
         },
         {
           "type": "text",
-          "html": "Support that lasts",
+          "html": "<strong>Support that lasts</strong>",
           "text": "Support that lasts"
         },
         {
@@ -223,7 +223,7 @@
         },
         {
           "type": "text",
-          "html": "After the install",
+          "html": "<strong>After the install</strong>",
           "text": "After the install"
         },
         {
@@ -249,7 +249,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Visit us",
+          "html": "<strong>Visit us</strong>",
           "text": "Visit us"
         },
         {
@@ -265,8 +265,25 @@
         },
         {
           "type": "text",
-          "html": "<strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment) <strong>Phone:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a> <strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> <a href=\"/contact#visit\">Book a visit</a>",
-          "text": "Showroom: 17380 Highway 27, Schomberg, ON (by appointment) Phone: (437) 429-6623 Email: sales@thetorontosaunaco.com Book a visit"
+          "html": "<strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment)",
+          "text": "Showroom: 17380 Highway 27, Schomberg, ON (by appointment)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Phone:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Phone: (437) 429-6623"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a>",
+          "text": "Email: sales@thetorontosaunaco.com"
+        },
+        {
+          "type": "link",
+          "html": "Book a visit",
+          "text": "Book a visit",
+          "href": "/contact#visit",
+          "variant": "button"
         }
       ]
     },
@@ -285,9 +302,25 @@
           "text": "Start with the Sauna Finder, or just call. Either way, you’ll hear back fast."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/sauna-finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Shop outdoor saunas</a> <a href=\"tel:+14374296623\">Call (437) 429-6623</a>",
-          "text": "Find your fit Shop outdoor saunas Call (437) 429-6623"
+          "type": "link",
+          "html": "Find your fit",
+          "text": "Find your fit",
+          "href": "/sauna-finder",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Shop outdoor saunas",
+          "text": "Shop outdoor saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

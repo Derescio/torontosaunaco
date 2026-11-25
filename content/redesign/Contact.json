@@ -64,7 +64,7 @@
         },
         {
           "type": "text",
-          "html": "Contact us",
+          "html": "<strong>Contact us</strong>",
           "text": "Contact us"
         },
         {
@@ -80,8 +80,23 @@
         },
         {
           "type": "text",
-          "html": "<strong>Call or text:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a> <strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> <strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment) Delivery and installation across Ontario and British Columbia.",
-          "text": "Call or text: (437) 429-6623 Email: sales@thetorontosaunaco.com Showroom: 17380 Highway 27, Schomberg, ON (by appointment) Delivery and installation across Ontario and British Columbia."
+          "html": "<strong>Call or text:</strong> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
+          "text": "Call or text: (437) 429-6623"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Email:</strong> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a>",
+          "text": "Email: sales@thetorontosaunaco.com"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom:</strong> 17380 Highway 27, Schomberg, ON (by appointment)",
+          "text": "Showroom: 17380 Highway 27, Schomberg, ON (by appointment)"
+        },
+        {
+          "type": "text",
+          "html": "Delivery and installation across Ontario and British Columbia.",
+          "text": "Delivery and installation across Ontario and British Columbia."
         },
         {
           "type": "if",
@@ -96,7 +111,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Get your sauna <em>quote.</em>",
+                      "html": "<strong>Get your sauna <em>quote.</em></strong>",
                       "text": "Get your sauna quote."
                     }
                   ]
@@ -107,7 +122,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Book a showroom <em>visit.</em>",
+                      "html": "<strong>Book a showroom <em>visit.</em></strong>",
                       "text": "Book a showroom visit."
                     }
                   ]
@@ -118,7 +133,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Ask us <em>anything.</em>",
+                      "html": "<strong>Ask us <em>anything.</em></strong>",
                       "text": "Ask us anything."
                     }
                   ]
@@ -254,7 +269,7 @@
           "blocks": [
             {
               "type": "text",
-              "html": "Thanks, {{lfFirst}}.",
+              "html": "<strong>Thanks, {{lfFirst}}.</strong>",
               "text": "Thanks, {{lfFirst}}."
             },
             {

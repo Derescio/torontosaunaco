@@ -454,7 +454,7 @@
         },
         {
           "type": "text",
-          "html": "The heart of every sauna",
+          "html": "<strong>The heart of every sauna</strong>",
           "text": "The heart of every sauna"
         },
         {
@@ -469,9 +469,18 @@
           "text": "Your heater sets the pace of each session, shapes the steam, and decides whether the heat feels gentle or deep. We carry electric and wood-burning heaters from Canadian, Finnish and Estonian makers, sized for rooms from 100 to 1,150 cubic feet, and delivered and installed across Ontario."
         },
         {
-          "type": "text",
-          "html": "<a href=\"#electric\">Electric Heaters</a> <a href=\"#wood\">Wood-Burning Heaters</a>",
-          "text": "Electric Heaters Wood-Burning Heaters"
+          "type": "link",
+          "html": "Electric Heaters",
+          "text": "Electric Heaters",
+          "href": "#electric",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Wood-Burning Heaters",
+          "text": "Wood-Burning Heaters",
+          "href": "#wood",
+          "variant": "button"
         },
         {
           "type": "image",
@@ -485,18 +494,33 @@
       "blocks": [
         {
           "type": "text",
-          "html": "<strong>Delivery or free pickup</strong>Buying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation.",
-          "text": "Delivery or free pickupBuying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation."
+          "html": "<strong>Delivery or free pickup</strong>",
+          "text": "Delivery or free pickup"
         },
         {
           "type": "text",
-          "html": "<strong>See them at our Schomberg showroom</strong>17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
-          "text": "See them at our Schomberg showroom17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+          "html": "Buying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation.",
+          "text": "Buying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation."
         },
         {
           "type": "text",
-          "html": "<strong>Certified for Canada</strong>Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page.",
-          "text": "Certified for CanadaHomecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page."
+          "html": "<strong>See them at our Schomberg showroom</strong>",
+          "text": "See them at our Schomberg showroom"
+        },
+        {
+          "type": "text",
+          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
+          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Certified for Canada</strong>",
+          "text": "Certified for Canada"
+        },
+        {
+          "type": "text",
+          "html": "Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page.",
+          "text": "Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page."
         }
       ]
     },
@@ -505,7 +529,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Two ways to heat",
+          "html": "<strong>Two ways to heat</strong>",
           "text": "Two ways to heat"
         },
         {
@@ -530,8 +554,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>Electric</strong> 8 heaters",
-              "text": "Electric 8 heaters"
+              "html": "<strong>Electric</strong>",
+              "text": "Electric"
+            },
+            {
+              "type": "text",
+              "html": "8 heaters",
+              "text": "8 heaters"
             },
             {
               "type": "text",
@@ -558,7 +587,7 @@
             },
             {
               "type": "text",
-              "html": "Shop electric heaters",
+              "html": "<strong>Shop electric heaters</strong>",
               "text": "Shop electric heaters"
             }
           ]
@@ -579,8 +608,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>Wood-burning</strong> 6 heaters",
-              "text": "Wood-burning 6 heaters"
+              "html": "<strong>Wood-burning</strong>",
+              "text": "Wood-burning"
+            },
+            {
+              "type": "text",
+              "html": "6 heaters",
+              "text": "6 heaters"
             },
             {
               "type": "text",
@@ -607,7 +641,7 @@
             },
             {
               "type": "text",
-              "html": "Shop wood-burning heaters",
+              "html": "<strong>Shop wood-burning heaters</strong>",
               "text": "Shop wood-burning heaters"
             }
           ]
@@ -669,7 +703,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Heater + sauna",
+          "html": "<strong>Heater + sauna</strong>",
           "text": "Heater + sauna"
         },
         {
@@ -860,7 +894,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Electric sauna heaters",
+          "html": "<strong>Electric sauna heaters</strong>",
           "text": "Electric sauna heaters"
         },
         {
@@ -914,8 +948,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{h.origin}}</strong> {{h.code}}",
-              "text": "{{h.origin}} {{h.code}}"
+              "html": "<strong>{{h.origin}}</strong>",
+              "text": "{{h.origin}}"
+            },
+            {
+              "type": "text",
+              "html": "{{h.code}}",
+              "text": "{{h.code}}"
             },
             {
               "type": "heading",
@@ -952,8 +991,18 @@
                   "as": "s",
                   "items": [
                     {
-                      "html": "{{s.k}} <strong>{{s.v}}</strong>",
-                      "text": "{{s.k}} {{s.v}}"
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{s.k}}",
+                          "text": "{{s.k}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{s.v}}</strong>",
+                          "text": "{{s.v}}"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -961,8 +1010,15 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{h.price}}</strong> <a href=\"{{h.href}}\">View Details</a>",
-              "text": "{{h.price}} View Details"
+              "html": "<strong>{{h.price}}</strong>",
+              "text": "{{h.price}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{h.href}}",
+              "variant": "button"
             }
           ]
         }
@@ -973,7 +1029,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Wood-burning sauna heaters",
+          "html": "<strong>Wood-burning sauna heaters</strong>",
           "text": "Wood-burning sauna heaters"
         },
         {
@@ -1062,8 +1118,13 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{h.origin}}</strong> {{h.code}}",
-              "text": "{{h.origin}} {{h.code}}"
+              "html": "<strong>{{h.origin}}</strong>",
+              "text": "{{h.origin}}"
+            },
+            {
+              "type": "text",
+              "html": "{{h.code}}",
+              "text": "{{h.code}}"
             },
             {
               "type": "heading",
@@ -1086,8 +1147,18 @@
                   "as": "s",
                   "items": [
                     {
-                      "html": "{{s.k}} <strong>{{s.v}}</strong>",
-                      "text": "{{s.k}} {{s.v}}"
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{s.k}}",
+                          "text": "{{s.k}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{s.v}}</strong>",
+                          "text": "{{s.v}}"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1095,8 +1166,15 @@
             },
             {
               "type": "text",
-              "html": "<strong>{{h.price}}</strong> <a href=\"{{h.href}}\">View options</a>",
-              "text": "{{h.price}} View options"
+              "html": "<strong>{{h.price}}</strong>",
+              "text": "{{h.price}}"
+            },
+            {
+              "type": "link",
+              "html": "View options",
+              "text": "View options",
+              "href": "{{h.href}}",
+              "variant": "button"
             }
           ]
         }
@@ -1107,7 +1185,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Sizing your heater",
+          "html": "<strong>Sizing your heater</strong>",
           "text": "Sizing your heater"
         },
         {
@@ -1130,43 +1208,83 @@
         },
         {
           "type": "text",
-          "html": "<strong>Homecraft Revive Slim</strong><strong>100–300 cu ft</strong>",
-          "text": "Homecraft Revive Slim100–300 cu ft"
+          "html": "<strong>Homecraft Revive Slim</strong>",
+          "text": "Homecraft Revive Slim"
         },
         {
           "type": "text",
-          "html": "<strong>Harvia KIP</strong><strong>100–425 cu ft</strong>",
-          "text": "Harvia KIP100–425 cu ft"
+          "html": "<strong>100–300 cu ft</strong>",
+          "text": "100–300 cu ft"
         },
         {
           "type": "text",
-          "html": "<strong>HUUM Drop</strong><strong>106–460 cu ft</strong>",
-          "text": "HUUM Drop106–460 cu ft"
+          "html": "<strong>Harvia KIP</strong>",
+          "text": "Harvia KIP"
         },
         {
           "type": "text",
-          "html": "<strong>HUUM HIVE Mini</strong><strong>177–566 cu ft</strong>",
-          "text": "HUUM HIVE Mini177–566 cu ft"
+          "html": "<strong>100–425 cu ft</strong>",
+          "text": "100–425 cu ft"
         },
         {
           "type": "text",
-          "html": "<strong>Homecraft Apex Mini</strong><strong>200–450 cu ft</strong>",
-          "text": "Homecraft Apex Mini200–450 cu ft"
+          "html": "<strong>HUUM Drop</strong>",
+          "text": "HUUM Drop"
         },
         {
           "type": "text",
-          "html": "<strong>Homecraft Revive</strong><strong>250–450 cu ft</strong>",
-          "text": "Homecraft Revive250–450 cu ft"
+          "html": "<strong>106–460 cu ft</strong>",
+          "text": "106–460 cu ft"
         },
         {
           "type": "text",
-          "html": "<strong>Homecraft Apex (240V)</strong><strong>400–950 cu ft</strong>",
-          "text": "Homecraft Apex (240V)400–950 cu ft"
+          "html": "<strong>HUUM HIVE Mini</strong>",
+          "text": "HUUM HIVE Mini"
         },
         {
           "type": "text",
-          "html": "<strong>Homecraft Apex (208V 3-phase)</strong><strong>400–1,150 cu ft</strong>",
-          "text": "Homecraft Apex (208V 3-phase)400–1,150 cu ft"
+          "html": "<strong>177–566 cu ft</strong>",
+          "text": "177–566 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex Mini</strong>",
+          "text": "Homecraft Apex Mini"
+        },
+        {
+          "type": "text",
+          "html": "<strong>200–450 cu ft</strong>",
+          "text": "200–450 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Revive</strong>",
+          "text": "Homecraft Revive"
+        },
+        {
+          "type": "text",
+          "html": "<strong>250–450 cu ft</strong>",
+          "text": "250–450 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex (240V)</strong>",
+          "text": "Homecraft Apex (240V)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>400–950 cu ft</strong>",
+          "text": "400–950 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex (208V 3-phase)</strong>",
+          "text": "Homecraft Apex (208V 3-phase)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>400–1,150 cu ft</strong>",
+          "text": "400–1,150 cu ft"
         },
         {
           "type": "paragraph",
@@ -1180,7 +1298,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Installing in Ontario",
+          "html": "<strong>Installing in Ontario</strong>",
           "text": "Installing in Ontario"
         },
         {
@@ -1223,7 +1341,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Reviews",
+          "html": "<strong>Reviews</strong>",
           "text": "Reviews"
         },
         {
@@ -1282,7 +1400,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Questions",
+          "html": "<strong>Questions</strong>",
           "text": "Questions"
         },
         {
@@ -1440,9 +1558,18 @@
           "text": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg (King Township), ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/contact#visit\">Schedule an Appointment</a> <a href=\"tel:+14374296623\">(437) 429-6623</a>",
-          "text": "Schedule an Appointment (437) 429-6623"
+          "type": "link",
+          "html": "Schedule an Appointment",
+          "text": "Schedule an Appointment",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
         }
       ]
     }

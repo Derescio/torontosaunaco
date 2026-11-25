@@ -1219,16 +1219,41 @@
           "text": "Premium Canadian cedar outdoor saunas, cold plunges and custom builds, delivered and installed by our own team, from downtown Toronto to cottage country, anywhere in Ontario. Visit our Schomberg showroom by appointment and try one before you buy."
         },
         {
-          "type": "text",
-          "html": "<a href=\"#contact\">Book a Consultation</a> <a href=\"#finder\">Find your fit</a> <a href=\"/saunas/best-sellers\">Explore Outdoor Saunas</a>",
-          "text": "Book a Consultation Find your fit Explore Outdoor Saunas"
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "#contact",
+          "variant": "button"
         },
         {
           "type": "link",
-          "html": "Showroom in King Township, open by appointment <strong>Book a visit</strong>",
-          "text": "Showroom in King Township, open by appointment Book a visit",
+          "html": "Find your fit",
+          "text": "Find your fit",
+          "href": "#finder",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Explore Outdoor Saunas",
+          "text": "Explore Outdoor Saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
           "href": "#contact",
-          "variant": "link"
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Showroom in King Township, open by appointment",
+              "text": "Showroom in King Township, open by appointment"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Book a visit</strong>",
+              "text": "Book a visit"
+            }
+          ]
         }
       ]
     },
@@ -1237,8 +1262,25 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Full-service installation in Ontario and BC Custom saunas designed for your space Premium Canadian cedar <a href=\"#contact\">King Township showroom, by appointment</a>",
-          "text": "Full-service installation in Ontario and BC Custom saunas designed for your space Premium Canadian cedar King Township showroom, by appointment"
+          "html": "Full-service installation in Ontario and BC",
+          "text": "Full-service installation in Ontario and BC"
+        },
+        {
+          "type": "text",
+          "html": "Custom saunas designed for your space",
+          "text": "Custom saunas designed for your space"
+        },
+        {
+          "type": "text",
+          "html": "Premium Canadian cedar",
+          "text": "Premium Canadian cedar"
+        },
+        {
+          "type": "link",
+          "html": "King Township showroom, by appointment",
+          "text": "King Township showroom, by appointment",
+          "href": "#contact",
+          "variant": "link"
         }
       ]
     },
@@ -1247,7 +1289,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Outdoor saunas",
+          "html": "<strong>Outdoor saunas</strong>",
           "text": "Outdoor saunas"
         },
         {
@@ -1284,7 +1326,7 @@
             },
             {
               "type": "text",
-              "html": "Pure Cube",
+              "html": "<strong>Pure Cube</strong>",
               "text": "Pure Cube"
             },
             {
@@ -1294,7 +1336,7 @@
             },
             {
               "type": "text",
-              "html": "Explore Pure Cube",
+              "html": "<strong>Explore Pure Cube</strong>",
               "text": "Explore Pure Cube"
             }
           ]
@@ -1315,7 +1357,7 @@
             },
             {
               "type": "text",
-              "html": "Studio 6 Mini",
+              "html": "<strong>Studio 6 Mini</strong>",
               "text": "Studio 6 Mini"
             },
             {
@@ -1325,7 +1367,7 @@
             },
             {
               "type": "text",
-              "html": "Explore Studio 6 Mini",
+              "html": "<strong>Explore Studio 6 Mini</strong>",
               "text": "Explore Studio 6 Mini"
             }
           ]
@@ -1346,7 +1388,7 @@
             },
             {
               "type": "text",
-              "html": "The Orion",
+              "html": "<strong>The Orion</strong>",
               "text": "The Orion"
             },
             {
@@ -1356,7 +1398,7 @@
             },
             {
               "type": "text",
-              "html": "Explore the Orion",
+              "html": "<strong>Explore the Orion</strong>",
               "text": "Explore the Orion"
             }
           ]
@@ -1368,7 +1410,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Sauna finder",
+          "html": "<strong>Sauna finder</strong>",
           "text": "Sauna finder"
         },
         {
@@ -1428,7 +1470,7 @@
         },
         {
           "type": "text",
-          "html": "How many people? (optional)",
+          "html": "<strong>How many people? (optional)</strong>",
           "text": "How many people? (optional)"
         },
         {
@@ -1486,8 +1528,23 @@
                     },
                     {
                       "type": "text",
-                      "html": "<strong>{{r.n}}</strong> {{r.detail}} {{r.seats}} <strong>{{r.price}}</strong>",
-                      "text": "{{r.n}} {{r.detail}} {{r.seats}} {{r.price}}"
+                      "html": "<strong>{{r.n}}</strong>",
+                      "text": "{{r.n}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.detail}}",
+                      "text": "{{r.detail}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.seats}}",
+                      "text": "{{r.seats}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{r.price}}</strong>",
+                      "text": "{{r.price}}"
                     }
                   ]
                 }
@@ -1499,17 +1556,36 @@
               "blocks": [
                 {
                   "type": "text",
-                  "html": "<strong>Nothing off the shelf fits that space.</strong> That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
-                  "text": "Nothing off the shelf fits that space. That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
+                  "html": "<strong>Nothing off the shelf fits that space.</strong>",
+                  "text": "Nothing off the shelf fits that space."
+                },
+                {
+                  "type": "text",
+                  "html": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
+                  "text": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
                 }
               ]
             }
           ]
         },
         {
+          "type": "link",
+          "html": "Get a quote for my space",
+          "text": "Get a quote for my space",
+          "href": "{{fdQuote}}",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "{{fdCustomLabel}}",
+          "text": "{{fdCustomLabel}}",
+          "href": "{{fdCustomHref}}",
+          "variant": "button"
+        },
+        {
           "type": "text",
-          "html": "<a href=\"{{fdQuote}}\">Get a quote for my space</a> <a href=\"{{fdCustomHref}}\">{{fdCustomLabel}}</a> “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
-          "text": "Get a quote for my space {{fdCustomLabel}} “Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
+          "html": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
+          "text": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
         }
       ]
     },
@@ -1523,7 +1599,7 @@
         },
         {
           "type": "text",
-          "html": "Best seller",
+          "html": "<strong>Best seller</strong>",
           "text": "Best seller"
         },
         {
@@ -1561,8 +1637,15 @@
         },
         {
           "type": "text",
-          "html": "<strong>$11,884</strong> <a href=\"/saunas/pure-cube-552\">Shop the Pure Cube 552</a>",
-          "text": "$11,884 Shop the Pure Cube 552"
+          "html": "<strong>$11,884</strong>",
+          "text": "$11,884"
+        },
+        {
+          "type": "link",
+          "html": "Shop the Pure Cube 552",
+          "text": "Shop the Pure Cube 552",
+          "href": "/saunas/pure-cube-552",
+          "variant": "button"
         }
       ]
     },
@@ -1571,7 +1654,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Sauna installation in Ontario",
+          "html": "<strong>Sauna installation in Ontario</strong>",
           "text": "Sauna installation in Ontario"
         },
         {
@@ -1597,20 +1680,80 @@
           "ordered": true,
           "items": [
             {
-              "html": "<em>01</em> <strong>Consultation</strong> Visit the showroom or book a call. We learn how you'll use your sauna and look at your space.",
-              "text": "01 Consultation Visit the showroom or book a call. We learn how you'll use your sauna and look at your space."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>01</em>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consultation</strong>",
+                  "text": "Consultation"
+                },
+                {
+                  "type": "text",
+                  "html": "Visit the showroom or book a call. We learn how you'll use your sauna and look at your space.",
+                  "text": "Visit the showroom or book a call. We learn how you'll use your sauna and look at your space."
+                }
+              ]
             },
             {
-              "html": "<em>02</em> <strong>Design &amp; planning</strong> We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early.",
-              "text": "02 Design & planning We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>02</em>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Design &amp; planning</strong>",
+                  "text": "Design & planning"
+                },
+                {
+                  "type": "text",
+                  "html": "We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early.",
+                  "text": "We help you choose the model, heater and finishes, and plan the base, power and placement. We'll flag any permit questions early."
+                }
+              ]
             },
             {
-              "html": "<em>03</em> <strong>Delivery &amp; installation</strong> We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up.",
-              "text": "03 Delivery & installation We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>03</em>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Delivery &amp; installation</strong>",
+                  "text": "Delivery & installation"
+                },
+                {
+                  "type": "text",
+                  "html": "We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up.",
+                  "text": "We deliver and install your sauna, set up the heater and controls, and coordinate the electrical hook-up."
+                }
+              ]
             },
             {
-              "html": "<em>04</em> <strong>First session &amp; support</strong> We walk you through your first heat, care and maintenance, and stay on hand for warranty support.",
-              "text": "04 First session & support We walk you through your first heat, care and maintenance, and stay on hand for warranty support."
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>04</em>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>First session &amp; support</strong>",
+                  "text": "First session & support"
+                },
+                {
+                  "type": "text",
+                  "html": "We walk you through your first heat, care and maintenance, and stay on hand for warranty support.",
+                  "text": "We walk you through your first heat, care and maintenance, and stay on hand for warranty support."
+                }
+              ]
             }
           ]
         }
@@ -1626,7 +1769,7 @@
         },
         {
           "type": "text",
-          "html": "Custom saunas Toronto",
+          "html": "<strong>Custom saunas Toronto</strong>",
           "text": "Custom saunas Toronto"
         },
         {
@@ -1676,7 +1819,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Shop by category",
+          "html": "<strong>Shop by category</strong>",
           "text": "Shop by category"
         },
         {
@@ -1696,7 +1839,7 @@
             },
             {
               "type": "text",
-              "html": "Saunas",
+              "html": "<strong>Saunas</strong>",
               "text": "Saunas"
             }
           ]
@@ -1712,7 +1855,7 @@
             },
             {
               "type": "text",
-              "html": "Plunge &amp; Shower",
+              "html": "<strong>Plunge &amp; Shower</strong>",
               "text": "Plunge & Shower"
             }
           ]
@@ -1728,7 +1871,7 @@
             },
             {
               "type": "text",
-              "html": "Heaters",
+              "html": "<strong>Heaters</strong>",
               "text": "Heaters"
             }
           ]
@@ -1744,7 +1887,7 @@
             },
             {
               "type": "text",
-              "html": "Accessories",
+              "html": "<strong>Accessories</strong>",
               "text": "Accessories"
             }
           ]
@@ -1760,7 +1903,7 @@
             },
             {
               "type": "text",
-              "html": "Custom Sauna Rooms",
+              "html": "<strong>Custom Sauna Rooms</strong>",
               "text": "Custom Sauna Rooms"
             }
           ]
@@ -1772,13 +1915,22 @@
       "blocks": [
         {
           "type": "paragraph",
-          "html": "<em>Indoor saunas, too.</em>Ready-made kits from $8,070, or a custom room built into your space.",
-          "text": "Indoor saunas, too.Ready-made kits from $8,070, or a custom room built into your space."
+          "html": "<em>Indoor saunas, too.</em> Ready-made kits from $8,070, or a custom room built into your space.",
+          "text": "Indoor saunas, too. Ready-made kits from $8,070, or a custom room built into your space."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/saunas/indoor/kits\">Indoor sauna kits</a> <a href=\"/saunas/indoor/custom\">Custom indoor saunas</a>",
-          "text": "Indoor sauna kits Custom indoor saunas"
+          "type": "link",
+          "html": "Indoor sauna kits",
+          "text": "Indoor sauna kits",
+          "href": "/saunas/indoor/kits",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Custom indoor saunas",
+          "text": "Custom indoor saunas",
+          "href": "/saunas/indoor/custom",
+          "variant": "button"
         }
       ]
     },
@@ -1787,7 +1939,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Why Toronto Sauna Co.",
+          "html": "<strong>Why Toronto Sauna Co.</strong>",
           "text": "Why Toronto Sauna Co."
         },
         {
@@ -1803,13 +1955,23 @@
         },
         {
           "type": "text",
-          "html": "<strong>Pure wellness</strong> Raw cedar and precision engineering, rooted in centuries-old sauna traditions.",
-          "text": "Pure wellness Raw cedar and precision engineering, rooted in centuries-old sauna traditions."
+          "html": "<strong>Pure wellness</strong>",
+          "text": "Pure wellness"
         },
         {
           "type": "text",
-          "html": "<strong>Crafted design</strong> We don't just sell saunas. We create sanctuaries of heat and calm, built around your space.",
-          "text": "Crafted design We don't just sell saunas. We create sanctuaries of heat and calm, built around your space."
+          "html": "Raw cedar and precision engineering, rooted in centuries-old sauna traditions.",
+          "text": "Raw cedar and precision engineering, rooted in centuries-old sauna traditions."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Crafted design</strong>",
+          "text": "Crafted design"
+        },
+        {
+          "type": "text",
+          "html": "We don't just sell saunas. We create sanctuaries of heat and calm, built around your space.",
+          "text": "We don't just sell saunas. We create sanctuaries of heat and calm, built around your space."
         },
         {
           "type": "image",
@@ -1823,7 +1985,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Customer stories",
+          "html": "<strong>Customer stories</strong>",
           "text": "Customer stories"
         },
         {
@@ -1906,7 +2068,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Service areas",
+          "html": "<strong>Service areas</strong>",
           "text": "Service areas"
         },
         {
@@ -2012,7 +2174,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Proudly Canadian",
+          "html": "<strong>Proudly Canadian</strong>",
           "text": "Proudly Canadian"
         },
         {
@@ -2023,18 +2185,48 @@
         },
         {
           "type": "text",
-          "html": "<em>01</em> <strong>Premium wood</strong> Woods chosen for durability, natural beauty and the way they hold heat.",
-          "text": "01 Premium wood Woods chosen for durability, natural beauty and the way they hold heat."
+          "html": "<em>01</em>",
+          "text": "01"
         },
         {
           "type": "text",
-          "html": "<em>02</em> <strong>Ethically sourced</strong> Wood sourced to support sustainable forestry, so your sauna is good for the planet too.",
-          "text": "02 Ethically sourced Wood sourced to support sustainable forestry, so your sauna is good for the planet too."
+          "html": "<strong>Premium wood</strong>",
+          "text": "Premium wood"
         },
         {
           "type": "text",
-          "html": "<em>03</em> <strong>Made for wellbeing</strong> A daily ritual for relaxation, recovery and stress relief, steps from your back door.",
-          "text": "03 Made for wellbeing A daily ritual for relaxation, recovery and stress relief, steps from your back door."
+          "html": "Woods chosen for durability, natural beauty and the way they hold heat.",
+          "text": "Woods chosen for durability, natural beauty and the way they hold heat."
+        },
+        {
+          "type": "text",
+          "html": "<em>02</em>",
+          "text": "02"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Ethically sourced</strong>",
+          "text": "Ethically sourced"
+        },
+        {
+          "type": "text",
+          "html": "Wood sourced to support sustainable forestry, so your sauna is good for the planet too.",
+          "text": "Wood sourced to support sustainable forestry, so your sauna is good for the planet too."
+        },
+        {
+          "type": "text",
+          "html": "<em>03</em>",
+          "text": "03"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made for wellbeing</strong>",
+          "text": "Made for wellbeing"
+        },
+        {
+          "type": "text",
+          "html": "A daily ritual for relaxation, recovery and stress relief, steps from your back door.",
+          "text": "A daily ritual for relaxation, recovery and stress relief, steps from your back door."
         }
       ]
     },
@@ -2043,7 +2235,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Brands we carry",
+          "html": "<strong>Brands we carry</strong>",
           "text": "Brands we carry"
         },
         {
@@ -2068,7 +2260,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "From the blog",
+          "html": "<strong>From the blog</strong>",
           "text": "From the blog"
         },
         {
@@ -2100,12 +2292,12 @@
             },
             {
               "type": "text",
-              "html": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna",
+              "html": "<strong>How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna</strong>",
               "text": "How Long Does a Sauna Last? A Guide to the Lifespan of an Outdoor Sauna"
             },
             {
               "type": "text",
-              "html": "Read more",
+              "html": "<strong>Read more</strong>",
               "text": "Read more"
             }
           ]
@@ -2126,12 +2318,12 @@
             },
             {
               "type": "text",
-              "html": "Building a Backyard Sauna for Four-Season Enjoyment",
+              "html": "<strong>Building a Backyard Sauna for Four-Season Enjoyment</strong>",
               "text": "Building a Backyard Sauna for Four-Season Enjoyment"
             },
             {
               "type": "text",
-              "html": "Read more",
+              "html": "<strong>Read more</strong>",
               "text": "Read more"
             }
           ]
@@ -2152,12 +2344,12 @@
             },
             {
               "type": "text",
-              "html": "Choosing a Sauna Company: Questions to Ask Before You Buy",
+              "html": "<strong>Choosing a Sauna Company: Questions to Ask Before You Buy</strong>",
               "text": "Choosing a Sauna Company: Questions to Ask Before You Buy"
             },
             {
               "type": "text",
-              "html": "Read more",
+              "html": "<strong>Read more</strong>",
               "text": "Read more"
             }
           ]
@@ -2169,7 +2361,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Outdoor sauna FAQ",
+          "html": "<strong>Outdoor sauna FAQ</strong>",
           "text": "Outdoor sauna FAQ"
         },
         {
@@ -2272,9 +2464,18 @@
           "text": "Handcrafted cedar saunas for relaxation, health and wellness. Tell us about your space and we'll help you find the right one."
         },
         {
-          "type": "text",
-          "html": "<a href=\"/saunas\">View Saunas</a> <a href=\"#contact\">Request a Quote</a>",
-          "text": "View Saunas Request a Quote"
+          "type": "link",
+          "html": "View Saunas",
+          "text": "View Saunas",
+          "href": "/saunas",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Request a Quote",
+          "text": "Request a Quote",
+          "href": "#contact",
+          "variant": "button"
         }
       ]
     },
@@ -2283,7 +2484,7 @@
       "blocks": [
         {
           "type": "text",
-          "html": "Visit our showroom",
+          "html": "<strong>Visit our showroom</strong>",
           "text": "Visit our showroom"
         },
         {
@@ -2298,22 +2499,54 @@
           "text": "See the saunas in person, feel the heat and talk through your space with our team. Visits are by appointment only."
         },
         {
-          "type": "link",
-          "html": "<strong>The Toronto Sauna Co. Showroom</strong>17380 Highway 27, Schomberg (King Township) · By appointment <strong>Get directions</strong>",
-          "text": "The Toronto Sauna Co. Showroom17380 Highway 27, Schomberg (King Township) · By appointment Get directions",
+          "type": "card",
           "href": "https://www.google.com/maps/search/?api=1&query=17380+Highway+27+Schomberg+ON+L0G+1T0",
-          "variant": "link",
-          "label": "Open the showroom location in Google Maps"
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>The Toronto Sauna Co. Showroom</strong>",
+              "text": "The Toronto Sauna Co. Showroom"
+            },
+            {
+              "type": "text",
+              "html": "17380 Highway 27, Schomberg (King Township) · By appointment",
+              "text": "17380 Highway 27, Schomberg (King Township) · By appointment"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Get directions</strong>",
+              "text": "Get directions"
+            }
+          ]
         },
         {
           "type": "text",
-          "html": "GTA showroom 17380 Highway 27<br>Schomberg, ON L0G 1T0",
-          "text": "GTA showroom 17380 Highway 27\nSchomberg, ON L0G 1T0"
+          "html": "GTA showroom",
+          "text": "GTA showroom"
         },
         {
           "type": "text",
-          "html": "Call or email <a href=\"tel:+14374296623\">(437) 429-6623</a> <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a>",
-          "text": "Call or email (437) 429-6623 sales@thetorontosaunaco.com"
+          "html": "17380 Highway 27<br>Schomberg, ON L0G 1T0",
+          "text": "17380 Highway 27\nSchomberg, ON L0G 1T0"
+        },
+        {
+          "type": "text",
+          "html": "Call or email",
+          "text": "Call or email"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "link"
+        },
+        {
+          "type": "link",
+          "html": "sales@thetorontosaunaco.com",
+          "text": "sales@thetorontosaunaco.com",
+          "href": "mailto:sales@thetorontosaunaco.com",
+          "variant": "link"
         },
         {
           "type": "link",
@@ -2335,7 +2568,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Get your sauna <em>quote.</em>",
+                      "html": "<strong>Get your sauna <em>quote.</em></strong>",
                       "text": "Get your sauna quote."
                     }
                   ]
@@ -2346,7 +2579,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Book a showroom <em>visit.</em>",
+                      "html": "<strong>Book a showroom <em>visit.</em></strong>",
                       "text": "Book a showroom visit."
                     }
                   ]
@@ -2357,7 +2590,7 @@
                   "blocks": [
                     {
                       "type": "text",
-                      "html": "Ask us <em>anything.</em>",
+                      "html": "<strong>Ask us <em>anything.</em></strong>",
                       "text": "Ask us anything."
                     }
                   ]
@@ -2493,7 +2726,7 @@
           "blocks": [
             {
               "type": "text",
-              "html": "Thanks, {{lfFirst}}.",
+              "html": "<strong>Thanks, {{lfFirst}}.</strong>",
               "text": "Thanks, {{lfFirst}}."
             },
             {
