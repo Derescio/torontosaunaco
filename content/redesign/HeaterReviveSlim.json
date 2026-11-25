@@ -1,0 +1,1008 @@
+{
+  "file": "HeaterReviveSlim.dc.html",
+  "route": "/sauna-heaters/revive-slim",
+  "pageMap": {
+    "route": "/sauna-heaters/revive-slim",
+    "title": "Homecraft Revive Slim — The Toronto Sauna Co.",
+    "description": "Homecraft Revive Slim: Some sauna rooms don't have the roughly 14 inches of depth a full-size heater needs. Request a quote from The Toronto Sauna Co.",
+    "index": "",
+    "photos": 8
+  },
+  "head": {
+    "title": "Homecraft Revive Slim — The Toronto Sauna Co.",
+    "description": "Homecraft Revive Slim: Some sauna rooms don't have the roughly 14 inches of depth a full-size heater needs. Request a quote from The Toronto Sauna Co.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-heaters/revive-slim",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "Homecraft Revive Slim — The Toronto Sauna Co.",
+      "description": "Homecraft Revive Slim: Some sauna rooms don't have the roughly 14 inches of depth a full-size heater needs. Request a quote from The Toronto Sauna Co.",
+      "url": "https://www.thetorontosaunaco.com/sauna-heaters/revive-slim",
+      "image": "https://www.thetorontosaunaco.com/_blob/adaccf76d04e21197ca34a296e32407d"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Homecraft Revive Slim",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/adaccf76d04e21197ca34a296e32407d"
+        ],
+        "url": "https://www.thetorontosaunaco.com/sauna-heaters/revive-slim",
+        "description": "Homecraft Revive Slim: Some sauna rooms don't have the roughly 14 inches of depth a full-size heater needs. Request a quote from The Toronto Sauna Co.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "1760.00",
+          "url": "https://www.thetorontosaunaco.com/sauna-heaters/revive-slim",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "d": {
+      "file": "HeaterReviveSlim",
+      "name": "Homecraft Revive Slim",
+      "code": "SKU REVSLI",
+      "origin": "Made in Canada",
+      "brand": "Homecraft",
+      "mount": "Floor-standing slim tower",
+      "photos": [
+        "REVSLI _14.jpg",
+        "REVSLI gallery 2",
+        "REVSLI gallery 3"
+      ],
+      "intro": "Some sauna rooms don't have the roughly 14 inches of depth a full-size heater needs. The Revive Slim solves that with a tall, narrow stainless steel tower that still holds 100 lbs of stone, making it ideal for compact indoor saunas and tight corners.",
+      "highlights": [
+        "Only 8 in deep, for rooms with limited depth",
+        "Holds 100 lbs of sauna stone",
+        "Heat shield included ($150 value)",
+        "CSA certified to UL 875, made in Canada"
+      ],
+      "models": [
+        {
+          "kw": "4 kW",
+          "room": "100–150 cu ft",
+          "amps": "16.7 A",
+          "breaker": "30 A"
+        },
+        {
+          "kw": "5 kW",
+          "room": "150–275 cu ft",
+          "amps": "20.8 A",
+          "breaker": "30 A"
+        },
+        {
+          "kw": "6 kW",
+          "room": "200–300 cu ft",
+          "amps": "25 A",
+          "breaker": "40 A"
+        }
+      ],
+      "modelnote": "240V single-phase. Wire: #10 copper rated 90°C for the 4 and 5 kW; #8 copper rated 90°C for the 6 kW. Installation must be done by a licensed electrician.",
+      "specs": [
+        {
+          "k": "Dimensions",
+          "v": "13.5 in W × 8 in D × 36 in H"
+        },
+        {
+          "k": "Stone capacity",
+          "v": "100 lbs"
+        },
+        {
+          "k": "Stone size",
+          "v": "5–10 cm (2–4 in)"
+        },
+        {
+          "k": "Clearance to combustibles",
+          "v": "3.5 in"
+        },
+        {
+          "k": "Voltage",
+          "v": "240V 1-phase"
+        },
+        {
+          "k": "Control",
+          "v": "Homecraft TKE2 contactor with touchpad (digital or Wi-Fi)"
+        },
+        {
+          "k": "Included",
+          "v": "Heat shield"
+        },
+        {
+          "k": "Certification",
+          "v": "CSA certified (UL 875)"
+        },
+        {
+          "k": "Warranty",
+          "v": "2-year manufacturer warranty"
+        },
+        {
+          "k": "Made in",
+          "v": "Canada"
+        }
+      ],
+      "needs": [
+        "Homecraft control and contactor box",
+        "Sauna stones (3 boxes, 20 kg each)",
+        "Installation by a licensed electrician"
+      ],
+      "others": [
+        {
+          "href": "/sauna-heaters/revive",
+          "name": "Homecraft Revive"
+        },
+        {
+          "href": "/sauna-heaters/apex-240",
+          "name": "Homecraft Apex (240V / 1 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/apex-208",
+          "name": "Homecraft Apex (208V / 3 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/apex-mini",
+          "name": "Homecraft Apex Mini"
+        },
+        {
+          "href": "/sauna-heaters/harvia-kip",
+          "name": "Harvia KIP"
+        },
+        {
+          "href": "/sauna-heaters/huum-drop",
+          "name": "HUUM Drop"
+        },
+        {
+          "href": "/sauna-heaters/huum-hive-mini",
+          "name": "HUUM Hive Mini"
+        }
+      ],
+      "short": "Revive Slim",
+      "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+      "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+      "gallery": [
+        {
+          "src": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+          "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "steps": [
+        {
+          "id": "heater",
+          "title": "Heater size",
+          "required": true,
+          "note": "Choose the output that matches your sauna volume.",
+          "options": [
+            {
+              "id": "kw0",
+              "label": "Revive Slim 4 kW",
+              "sub": "For 100–150 cu ft",
+              "price": 1760,
+              "photo": "REVSLI 4 kW",
+              "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+              "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw1",
+              "label": "Revive Slim 5 kW",
+              "sub": "For 150–275 cu ft",
+              "price": 1810,
+              "photo": "REVSLI 5 kW",
+              "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+              "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw2",
+              "label": "Revive Slim 6 kW",
+              "sub": "For 200–300 cu ft",
+              "price": 1895,
+              "photo": "REVSLI 6 kW",
+              "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+              "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co."
+            }
+          ]
+        },
+        {
+          "id": "control",
+          "title": "Controls",
+          "required": true,
+          "note": "Homecraft heaters run through a contactor box with a wall touchpad. Pick the version that matches where your sauna is.",
+          "options": [
+            {
+              "id": "hc_reg_in",
+              "label": "Homecraft Digital Touchpad + Contactor (Indoor)",
+              "sub": "For indoor saunas",
+              "price": 575,
+              "photo": "Homecraft touchpad"
+            },
+            {
+              "id": "hc_wifi_in",
+              "label": "Homecraft Wi-Fi Touchpad + Contactor (Indoor)",
+              "sub": "For indoor saunas, control from your phone",
+              "price": 825,
+              "photo": "Homecraft Wi-Fi touchpad"
+            },
+            {
+              "id": "hc_reg_out",
+              "label": "Homecraft Digital Touchpad + Contactor (Outdoor)",
+              "sub": "For outdoor saunas",
+              "price": 650,
+              "photo": "Homecraft touchpad outdoor"
+            },
+            {
+              "id": "hc_wifi_out",
+              "label": "Homecraft Wi-Fi Touchpad + Contactor (Outdoor)",
+              "sub": "For outdoor saunas, control from your phone",
+              "price": 900,
+              "photo": "Homecraft Wi-Fi touchpad outdoor"
+            }
+          ]
+        },
+        {
+          "id": "stones",
+          "title": "Sauna stones",
+          "required": false,
+          "note": "Fixed at the recommended fill for the Revive Slim: 3 boxes of 5–10 cm stones (about 100 lbs).",
+          "options": [
+            {
+              "id": "hc_st",
+              "label": "Homecraft Sauna Stones (5–10 cm)",
+              "sub": "3 boxes (20 kg each), the recommended fill ($60.00 per box)",
+              "price": 60,
+              "qty": 3,
+              "photo": "Homecraft sauna stones"
+            },
+            {
+              "id": "no_st",
+              "label": "No thanks",
+              "sub": "I already have stones",
+              "price": null,
+              "none": true,
+              "photo": "—"
+            }
+          ]
+        }
+      ],
+      "kwChips": [
+        "4 kW",
+        "5 kW",
+        "6 kW"
+      ],
+      "hasAmps": true
+    }
+  },
+  "sections": [
+    {
+      "name": "Product top",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Heaters",
+              "href": "/sauna-heaters"
+            },
+            {
+              "text": "Electric",
+              "href": "/sauna-heaters#electric"
+            },
+            {
+              "text": "{{p.name}}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "{{p.mainImg}}",
+          "alt": "{{p.mainAlt}}"
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasThumbs}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{p.thumbs}}",
+              "as": "t",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{t.on}}",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{t.off}}",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Electric</strong>",
+          "text": "Electric"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.origin}}</strong>",
+          "text": "{{p.origin}}"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.mount}}</strong>",
+          "text": "{{p.mount}}"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "{{p.name}}",
+          "text": "{{p.name}}"
+        },
+        {
+          "type": "text",
+          "html": "{{p.code}}",
+          "text": "{{p.code}}"
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.intro}}",
+          "text": "{{p.intro}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.highlights}}",
+              "as": "hl",
+              "items": [
+                {
+                  "html": "{{hl}}",
+                  "text": "{{hl}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Starting at (MSRP)",
+          "text": "Starting at (MSRP)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.fromPrice}}</strong>",
+          "text": "{{p.fromPrice}}"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.kwChips}}",
+          "as": "k",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>{{k}}</strong>",
+              "text": "{{k}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours &amp; Add to Cart",
+          "text": "Build Yours & Add to Cart",
+          "href": "#configure",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery and professional installation available across Ontario.",
+          "text": "Delivery and professional installation available across Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your heater</strong>",
+          "text": "Build your heater"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choose your size and <em><strong>add-ons.</strong></em>",
+          "text": "Choose your size and add-ons."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{steps}}",
+              "as": "st",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "if",
+                      "value": "{{st.done}}",
+                      "blocks": []
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.notDone}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "<strong>{{st.num}}</strong>",
+                          "text": "{{st.num}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "level": 3,
+                      "html": "{{st.title}}",
+                      "text": "{{st.title}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{st.tag}}</strong>",
+                      "text": "{{st.tag}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{st.note}}",
+                          "text": "{{st.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{st.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.badgeInline}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "<strong>{{o.qtyBadge}}</strong>",
+                                      "text": "{{o.qtyBadge}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Your <em>{{p.short}}</em></strong>",
+          "text": "Your {{p.short}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.step}}",
+                      "text": "{{ln.step}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal before HST",
+                "text": "Subtotal before HST"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Delivery",
+                "text": "Delivery"
+              },
+              "details": {
+                "html": "Quoted separately, or free showroom pickup (in stock)",
+                "text": "Quoted separately, or free showroom pickup (in stock)"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some items are priced on request. We'll confirm your final price with you.",
+              "text": "Some items are priced on request. We'll confirm your final price with you."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasMissing}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>{{missingText}}</strong>",
+              "text": "{{missingText}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Add to Cart",
+          "text": "Add to Cart",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Added to your cart</strong>",
+              "text": "Added to your cart"
+            },
+            {
+              "type": "text",
+              "html": "{{addedText}}",
+              "text": "{{addedText}}"
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment.",
+          "text": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment."
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Sizing &amp; electrical</strong>",
+          "text": "Sizing & electrical"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Every size, at a <em><strong>glance.</strong></em>",
+          "text": "Every size, at a glance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up.",
+          "text": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up."
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "caption": null,
+              "headerRows": 1,
+              "rows": [
+                [
+                  "Output",
+                  "Room size",
+                  "Amps",
+                  "Breaker"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}",
+                  "{{m.amps}}",
+                  "{{m.breaker}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{p.noAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "caption": null,
+              "headerRows": 1,
+              "rows": [
+                [
+                  "Output",
+                  "Room size"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.modelnote}}",
+          "text": "{{p.modelnote}}"
+        }
+      ]
+    },
+    {
+      "name": "Specs + needs",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.specs}}",
+              "as": "s",
+              "items": [
+                {
+                  "term": {
+                    "html": "{{s.k}}",
+                    "text": "{{s.k}}"
+                  },
+                  "details": {
+                    "html": "{{s.v}}",
+                    "text": "{{s.v}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>What you'll need</strong>",
+          "text": "What you'll need"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.needs}}",
+              "as": "n",
+              "items": [
+                {
+                  "html": "{{n}}",
+                  "text": "{{n}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which size? <em>We'll help.</em></strong>",
+          "text": "Not sure which size? We'll help."
+        },
+        {
+          "type": "text",
+          "html": "Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation.",
+          "text": "Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation."
+        },
+        {
+          "type": "link",
+          "html": "Get a Sizing Recommendation",
+          "text": "Get a Sizing Recommendation",
+          "href": "/contact",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Other electric heaters",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "More electric <em>heaters</em>",
+          "text": "More electric heaters"
+        },
+        {
+          "type": "link",
+          "html": "Back to all heaters",
+          "text": "Back to all heaters",
+          "href": "/sauna-heaters",
+          "variant": "link"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.others}}",
+          "as": "o",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{o.name}}",
+              "text": "{{o.name}}",
+              "href": "{{o.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

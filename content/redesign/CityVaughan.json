@@ -1,0 +1,806 @@
+{
+  "file": "CityVaughan.dc.html",
+  "route": "/service-areas/vaughan",
+  "pageMap": {
+    "route": "/service-areas/vaughan",
+    "title": "Backyard Saunas in Vaughan | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Vaughan, delivered and installed for $1,750. Serving Kleinburg, Woodbridge, Maple and more. Visit our King Township showroom.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "Backyard Saunas in Vaughan | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Vaughan, delivered and installed for $1,750. Serving Kleinburg, Woodbridge, Maple and more. Visit our King Township showroom.",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas/vaughan",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas in Vaughan | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas in Vaughan, delivered and installed for $1,750. Serving Kleinburg, Woodbridge, Maple and more. Visit our King Township showroom.",
+      "url": "https://www.thetorontosaunaco.com/service-areas/vaughan",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Backyard sauna sales, delivery and installation in Vaughan",
+            "serviceType": "Backyard sauna installation",
+            "provider": {
+              "@id": "https://www.thetorontosaunaco.com/#store"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Vaughan",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ontario"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Delivery and installation",
+              "price": "1750.00",
+              "priceCurrency": "CAD"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/service-areas/vaughan",
+            "url": "https://www.thetorontosaunaco.com/service-areas/vaughan",
+            "name": "Backyard Saunas in Vaughan",
+            "description": "Premium backyard saunas in Vaughan, delivered and installed for $1,750. Serving Kleinburg, Woodbridge, Maple and more. Visit our King Township showroom."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vaughan",
+                "item": "https://www.thetorontosaunaco.com/service-areas/vaughan"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How close is your showroom to Vaughan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Very close. We're at 17380 Highway 27 in Schomberg, just north of Vaughan. Visits are by appointment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a permit for a backyard sauna in Vaughan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your model and lot before you order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can a Vaughan sauna be wood-burning?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, on our larger saunas like the Neptune, Avalon and larger barrels. Check your insurer's requirements for wood stoves first."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does delivery and installation cost in Vaughan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery and installation is $1,750 anywhere in Ontario, including Vaughan. Delivery only is $450. HST is shown separately on every quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What heater size does my sauna need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas",
+              "href": "/service-areas"
+            },
+            {
+              "text": "Vaughan"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>York Region</strong>",
+          "text": "York Region"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Saunas in <em><strong>Vaughan</strong></em>",
+          "text": "Backyard Saunas in Vaughan"
+        },
+        {
+          "type": "paragraph",
+          "html": "From Kleinburg estates to Woodbridge family homes, Vaughan backyards are made for entertaining, and a sauna is the centrepiece. We're right next door in King Township, so design, delivery and installation stay close to home.",
+          "text": "From Kleinburg estates to Woodbridge family homes, Vaughan backyards are made for entertaining, and a sauna is the centrepiece. We're right next door in King Township, so design, delivery and installation stay close to home."
+        },
+        {
+          "type": "link",
+          "html": "Book a Free Site Consult",
+          "text": "Book a Free Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "image",
+          "src": "./assets/f561443cb6e210b955ff682822ecfb06.jpg",
+          "alt": "Cedar and black sauna on a stone patio with fire pit at golden hour, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>$1,750 delivery and installation</strong>",
+          "text": "$1,750 delivery and installation"
+        },
+        {
+          "type": "text",
+          "html": "Anywhere in Ontario, including Vaughan. Delivery only: $450.",
+          "text": "Anywhere in Ontario, including Vaughan. Delivery only: $450."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom in King Township</strong>",
+          "text": "Showroom in King Township"
+        },
+        {
+          "type": "text",
+          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>",
+          "text": "5-star Google reviews"
+        },
+        {
+          "type": "text",
+          "html": "Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "Real customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar saunas built for Ontario winters.",
+          "text": "Western Red Cedar saunas built for Ontario winters."
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhoods",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Where we install</strong>",
+          "text": "Where we install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Serving all of <em><strong>Vaughan.</strong></em>",
+          "text": "Serving all of Vaughan."
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install backyard saunas across Vaughan, including Kleinburg, Woodbridge, Maple, Thornhill Woods, Patterson, Vellore Village and Islington Woods.",
+          "text": "We design, deliver and install backyard saunas across Vaughan, including Kleinburg, Woodbridge, Maple, Thornhill Woods, Patterson, Vellore Village and Islington Woods."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Kleinburg",
+              "text": "Kleinburg"
+            },
+            {
+              "html": "Woodbridge",
+              "text": "Woodbridge"
+            },
+            {
+              "html": "Maple",
+              "text": "Maple"
+            },
+            {
+              "html": "Thornhill Woods",
+              "text": "Thornhill Woods"
+            },
+            {
+              "html": "Patterson",
+              "text": "Patterson"
+            },
+            {
+              "html": "Vellore Village",
+              "text": "Vellore Village"
+            },
+            {
+              "html": "Islington Woods",
+              "text": "Islington Woods"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local setting",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Next door to our showroom",
+          "text": "Next door to our showroom"
+        },
+        {
+          "type": "paragraph",
+          "html": "Our Schomberg showroom is just north of Vaughan. See the Avalon's three-tier seating, the Neptune's wide glass and our barrels in person before you choose.",
+          "text": "Our Schomberg showroom is just north of Vaughan. See the Avalon's three-tier seating, the Neptune's wide glass and our barrels in person before you choose."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Kleinburg estates",
+          "text": "Kleinburg estates"
+        },
+        {
+          "type": "paragraph",
+          "html": "Large Kleinburg lots suit our biggest models and wood-burning stoves. Kleinburg's village core is a heritage conservation district; backyard saunas are rarely affected, but we'll help you check if yours is visible from the street.",
+          "text": "Large Kleinburg lots suit our biggest models and wood-burning stoves. Kleinburg's village core is a heritage conservation district; backyard saunas are rarely affected, but we'll help you check if yours is visible from the street."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Built for entertaining",
+          "text": "Built for entertaining"
+        },
+        {
+          "type": "paragraph",
+          "html": "For families who host, the Avalon seats six to seven, and a barrel with porch or changeroom gives guests space to cool down between rounds.",
+          "text": "For families who host, the Avalon seats six to seven, and a barrel with porch or changeroom gives guests space to cool down between rounds."
+        }
+      ]
+    },
+    {
+      "name": "Picks",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Recommended for Vaughan</strong>",
+          "text": "Recommended for Vaughan"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas we recommend in <em><strong>Vaughan.</strong></em>",
+          "text": "Saunas we recommend in Vaughan."
+        },
+        {
+          "type": "paragraph",
+          "html": "Big, social saunas for Vaughan's entertaining backyards.",
+          "text": "Big, social saunas for Vaughan's entertaining backyards."
+        },
+        {
+          "type": "link",
+          "html": "Shop all saunas",
+          "text": "Shop all saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/avalon",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/c8ad1d74db4f0d61b44fa9e557d9f4b7.jpg",
+              "alt": "Avalon outdoor sauna in black stain with a large picture window beside a pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Avalon</strong>",
+              "text": "The Avalon"
+            },
+            {
+              "type": "text",
+              "html": "6–7 person, three tiers",
+              "text": "6–7 person, three tiers"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$15,450</strong>",
+              "text": "$15,450"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/neptune",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/689c0de1fe0d6131657ef80b5cab7e15.jpg",
+              "alt": "Neptune outdoor sauna with Villa cedar wood siding, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Neptune</strong>",
+              "text": "The Neptune"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person",
+              "text": "5–6 person"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$17,896</strong>",
+              "text": "$17,896"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/barrel-sauna",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/0b835a1c35c520a851e6469bcf775c0b.jpg",
+              "alt": "Barrel sauna with burgundy metal roof, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Barrel Sauna</strong>",
+              "text": "Barrel Sauna"
+            },
+            {
+              "type": "text",
+              "html": "Classic cedar barrel",
+              "text": "Classic cedar barrel"
+            },
+            {
+              "type": "text",
+              "html": "<strong>From $8,499</strong>",
+              "text": "From $8,499"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/hudson",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/90f0336d489830dc9f794cb8702242c0.jpg",
+              "alt": "Hudson outdoor sauna with black siding and covered cedar porch by a lake, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Hudson</strong>",
+              "text": "The Hudson"
+            },
+            {
+              "type": "text",
+              "html": "Black metal and cedar",
+              "text": "Black metal and cedar"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$17,489</strong>",
+              "text": "$17,489"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>How it works</strong>",
+          "text": "How it works"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>steam.</strong></em>",
+          "text": "From first call to first steam."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>01</strong>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consult</strong>",
+                  "text": "Consult"
+                },
+                {
+                  "type": "text",
+                  "html": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+                  "text": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>02</strong>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Site check</strong>",
+                  "text": "Site check"
+                },
+                {
+                  "type": "text",
+                  "html": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+                  "text": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>03</strong>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Spec and quote</strong>",
+                  "text": "Spec and quote"
+                },
+                {
+                  "type": "text",
+                  "html": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+                  "text": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>04</strong>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Deliver and install</strong>",
+                  "text": "Deliver and install"
+                },
+                {
+                  "type": "text",
+                  "html": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+                  "text": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Compare heaters",
+          "text": "Compare heaters",
+          "href": "/sauna-heaters",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Add a cold plunge",
+          "text": "Add a cold plunge",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Sauna accessories",
+          "text": "Sauna accessories",
+          "href": "/accessories",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Reviews</strong>",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "text": "“I set a time and drove just north of Toronto to meet Taurean Allen … I was impressed with the service and the product … Delivery in a crate came last week with two capable guys amiably and expertly transporting the contents to our island, and then efficiently assembling it in one afternoon.”",
+          "cite": "<strong>Douglas S. Wright</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "text": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "cite": "<strong>Dave Lewis</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Questions</strong>",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas in Vaughan: <em><strong>FAQ.</strong></em>",
+          "text": "Backyard saunas in Vaughan: FAQ."
+        },
+        {
+          "type": "faq",
+          "html": "How close is your showroom to Vaughan?",
+          "text": "How close is your showroom to Vaughan?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Very close. We're at 17380 Highway 27 in Schomberg, just north of Vaughan. Visits are by appointment.",
+              "text": "Very close. We're at 17380 Highway 27 in Schomberg, just north of Vaughan. Visits are by appointment."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a permit for a backyard sauna in Vaughan?",
+          "text": "Do I need a permit for a backyard sauna in Vaughan?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your model and lot before you order.",
+              "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check your model and lot before you order."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can a Vaughan sauna be wood-burning?",
+          "text": "Can a Vaughan sauna be wood-burning?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes, on our larger saunas like the Neptune, Avalon and larger barrels. Check your insurer's requirements for wood stoves first.",
+              "text": "Yes, on our larger saunas like the Neptune, Avalon and larger barrels. Check your insurer's requirements for wood stoves first."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much does delivery and installation cost in Vaughan?",
+          "text": "How much does delivery and installation cost in Vaughan?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery and installation is $1,750 anywhere in Ontario, including Vaughan. Delivery only is $450. HST is shown separately on every quote.",
+              "text": "Delivery and installation is $1,750 anywhere in Ontario, including Vaughan. Delivery only is $450. HST is shown separately on every quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What heater size does my sauna need?",
+          "text": "What heater size does my sauna need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances.",
+              "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nearby",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Also serving nearby:</strong>",
+          "text": "Also serving nearby:"
+        },
+        {
+          "type": "link",
+          "html": "King City",
+          "text": "King City",
+          "href": "/service-areas/king-city",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Toronto",
+          "text": "Toronto",
+          "href": "/service-areas/toronto",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Richmond Hill",
+          "text": "Richmond Hill",
+          "href": "/service-areas/richmond-hill",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "King Township",
+          "text": "King Township",
+          "href": "/service-areas/king-township",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All service areas →",
+          "text": "All service areas →",
+          "href": "/service-areas",
+          "variant": "link"
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for a sauna in <em><strong>Vaughan?</strong></em>",
+          "text": "Ready for a sauna in Vaughan?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+        },
+        {
+          "type": "link",
+          "html": "Book a Site Consult",
+          "text": "Book a Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

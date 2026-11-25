@@ -1,0 +1,1072 @@
+{
+  "file": "PlungeBaltic.dc.html",
+  "route": "/cold-plunges/baltic",
+  "pageMap": {
+    "route": "/cold-plunges/baltic",
+    "title": "The Baltic Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+    "description": "Baltic Plunge Tub: A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless… Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 14
+  },
+  "head": {
+    "title": "The Baltic Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+    "description": "Baltic Plunge Tub: A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless… Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/cold-plunges/baltic",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Baltic Plunge Tub | Cold Plunge | The Toronto Sauna Co.",
+      "description": "Baltic Plunge Tub: A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless… Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/cold-plunges/baltic",
+      "image": "https://www.thetorontosaunaco.com/_blob/592b87bf9f43155ba40e0cc32db96d39"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Baltic Plunge Tub",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/592b87bf9f43155ba40e0cc32db96d39"
+        ],
+        "url": "https://www.thetorontosaunaco.com/cold-plunges/baltic",
+        "description": "Baltic Plunge Tub: A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless… Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "2974.00",
+          "url": "https://www.thetorontosaunaco.com/cold-plunges/baltic",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Cold plunge",
+      "section": "plunge",
+      "basePrice": 2974,
+      "buildLabel": "Build your cold plunge",
+      "related": [
+        "Compare other cold <span style=\"font-style: italic\">plunges</span>",
+        [
+          "View All Cold Plunges",
+          "/cold-plunges"
+        ],
+        [
+          "Pair It With a Sauna",
+          "/saunas/best-sellers"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Chiller electrical connections must be made by a licensed electrician.",
+      "height": 4000,
+      "file": "PlungeBaltic",
+      "name": "The Baltic Plunge Tub",
+      "series": "Canadian Timber",
+      "collection": "Canadian Timber Collection",
+      "intro": "A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless white HDPE liner and stainless steel bands. It holds about 132 gallons (501 L), arrives fully assembled, and drains through a garden hose connection on the outside. Cool it with ice, or add a chiller to keep it cold all year.",
+      "highlights": [
+        "132 gallons (501 L)",
+        "Barrel style",
+        "HDPE liner",
+        "Arrives fully assembled"
+      ],
+      "photos": [
+        "CT33BPN_1.jpg",
+        "CT33BPN_2.jpg",
+        "CT33BPN_3.jpg"
+      ],
+      "specs": [
+        [
+          "Model",
+          "CT33BP"
+        ],
+        [
+          "Exterior dimensions",
+          "37½\" diameter × 43¾\" H"
+        ],
+        [
+          "Capacity",
+          "About 132 gallons (501 L)"
+        ],
+        [
+          "Exterior",
+          "Eastern White Cedar"
+        ],
+        [
+          "Liner",
+          "White HDPE"
+        ],
+        [
+          "Bands",
+          "Stainless steel"
+        ],
+        [
+          "Drain",
+          "Garden hose connection"
+        ],
+        [
+          "Dry weight",
+          "108 lb (49 kg)"
+        ],
+        [
+          "Filled weight",
+          "Adds about 1,105 lb (501 kg) of water"
+        ],
+        [
+          "Delivery",
+          "Arrives fully assembled"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited (tub)"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "chill",
+          "title": "Chiller",
+          "desc": "Keep it cold all year with a chiller, or use ice.",
+          "prompt": "Choose your chiller",
+          "groups": [
+            {
+              "id": "chiller",
+              "title": "Chiller",
+              "type": "single",
+              "required": true,
+              "note": "Chiller electrical connections must be made by a licensed electrician.",
+              "options": [
+                {
+                  "id": "ch_coldture",
+                  "label": "Coldture Water Chiller Pro with Fittings",
+                  "sub": "Compact chiller with digital temperature control",
+                  "price": 4666,
+                  "img": "./assets/376106c6b3170bc1d611ae132eeec99d.jpg",
+                  "alt": "Coldture Water Chiller Pro, The Toronto Sauna Co."
+                },
+                {
+                  "id": "ch_penguin",
+                  "label": "Penguin Chiller with Filter Kit",
+                  "sub": "Stainless chiller with filtration kit",
+                  "price": 3085,
+                  "img": "./assets/632e66cc7aebc9892f35e1d7aabcf87c.jpg",
+                  "alt": "Penguin chiller with filter kit, The Toronto Sauna Co."
+                },
+                {
+                  "id": "ch_none",
+                  "label": "No Chiller",
+                  "sub": "Use ice or cold tap water",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No chiller"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "steps",
+          "title": "Steps",
+          "desc": "Make getting in and out easy.",
+          "prompt": "Add steps",
+          "groups": [
+            {
+              "id": "steps",
+              "title": "Steps",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "st_3",
+                  "label": "3 Tier Steps, Knotty Red Cedar",
+                  "sub": "Sized for the Baltic barrel",
+                  "price": 319,
+                  "img": "./assets/2a62b34a8f318bbde6521ea7d67f3aa1.jpg",
+                  "alt": "3 tier knotty red cedar cold plunge steps, The Toronto Sauna Co."
+                },
+                {
+                  "id": "st_none",
+                  "label": "No Steps",
+                  "sub": "Add them later if you like",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No steps"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cover",
+          "title": "Cover",
+          "desc": "Keep the cold in and debris out.",
+          "prompt": "Choose a cover",
+          "groups": [
+            {
+              "id": "cover",
+              "title": "Cover",
+              "type": "single",
+              "required": true,
+              "options": [
+                {
+                  "id": "cv_vinyl",
+                  "label": "Insulated Vinyl Cover, Tan",
+                  "sub": "Insulated cover with tie-down straps",
+                  "price": 322,
+                  "img": "./assets/0f0c50d43b968e9f9487899cc77b2c91.jpg",
+                  "alt": "Insulated tan vinyl cover on a Baltic cold plunge, The Toronto Sauna Co."
+                },
+                {
+                  "id": "cv_lid",
+                  "label": "Cedar Cold Plunge Lid",
+                  "sub": "Solid cedar lid with handles",
+                  "price": 290,
+                  "img": "./assets/26ec06f920c04341d2fea410d4d1bb9d.jpg",
+                  "alt": "Cedar lid on a Baltic cold plunge, The Toronto Sauna Co."
+                },
+                {
+                  "id": "cv_none",
+                  "label": "No Cover",
+                  "sub": "Add one later if you like",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No cover"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/592b87bf9f43155ba40e0cc32db96d39.jpg",
+          "alt": "Baltic barrel cold plunge with cedar steps beside a backyard pool, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/26009a1d609d35bd3e5e07cd02e2af78.jpg",
+          "alt": "Baltic barrel cold plunge in Eastern White Cedar with white liner, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/2a62b34a8f318bbde6521ea7d67f3aa1.jpg",
+          "alt": "3 tier knotty red cedar steps for the Baltic cold plunge, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/0f0c50d43b968e9f9487899cc77b2c91.jpg",
+          "alt": "Baltic cold plunge with insulated tan vinyl cover, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/26ec06f920c04341d2fea410d4d1bb9d.jpg",
+          "alt": "Baltic cold plunge with cedar lid, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/376106c6b3170bc1d611ae132eeec99d.jpg",
+          "alt": "Coldture Water Chiller Pro, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/632e66cc7aebc9892f35e1d7aabcf87c.jpg",
+          "alt": "Penguin cold therapy chiller with filter kit, The Toronto Sauna Co.",
+          "fit": "cover"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Cold Plunges",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "The Baltic Plunge Tub"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>{{galCount}}</strong>",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: CT33BPN_1.jpg",
+              "text": "Photo: CT33BPN_1.jpg"
+            },
+            {
+              "type": "text",
+              "html": "CT33BPN_1.jpg",
+              "text": "CT33BPN_1.jpg"
+            },
+            {
+              "type": "text",
+              "html": "CT33BPN_2.jpg",
+              "text": "CT33BPN_2.jpg"
+            },
+            {
+              "type": "text",
+              "html": "CT33BPN_3.jpg",
+              "text": "CT33BPN_3.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Canadian Timber · Cold plunge</strong>",
+          "text": "Canadian Timber · Cold plunge"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Baltic Plunge Tub",
+          "text": "The Baltic Plunge Tub"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless white HDPE liner and stainless steel bands. It holds about 132 gallons (501 L), arrives fully assembled, and drains through a garden hose connection on the outside. Cool it with ice, or add a chiller to keep it cold all year.",
+          "text": "A compact, barrel-style cold plunge made in Canada from Eastern White Cedar, with a seamless white HDPE liner and stainless steel bands. It holds about 132 gallons (501 L), arrives fully assembled, and drains through a garden hose connection on the outside. Cool it with ice, or add a chiller to keep it cold all year."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "132 gallons (501 L)",
+              "text": "132 gallons (501 L)"
+            },
+            {
+              "html": "Barrel style",
+              "text": "Barrel style"
+            },
+            {
+              "html": "HDPE liner",
+              "text": "HDPE liner"
+            },
+            {
+              "html": "Arrives fully assembled",
+              "text": "Arrives fully assembled"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your cold plunge</strong>",
+          "text": "Build your cold plunge"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>STEP 0{{st.num}}</strong>",
+                  "text": "STEP 0{{st.num}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{st.title}}",
+                  "text": "{{st.title}}"
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.done}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.notDone}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.open}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>CLOSE</strong>",
+                      "text": "CLOSE"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.closed}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>EDIT</strong>",
+                      "text": "EDIT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{g.title}}</strong>",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.priceText}}</strong>",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Model",
+                "text": "Model"
+              },
+              "details": {
+                "html": "CT33BP",
+                "text": "CT33BP"
+              }
+            },
+            {
+              "term": {
+                "html": "Exterior dimensions",
+                "text": "Exterior dimensions"
+              },
+              "details": {
+                "html": "37½\" diameter × 43¾\" H",
+                "text": "37½\" diameter × 43¾\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "Capacity",
+                "text": "Capacity"
+              },
+              "details": {
+                "html": "About 132 gallons (501 L)",
+                "text": "About 132 gallons (501 L)"
+              }
+            },
+            {
+              "term": {
+                "html": "Exterior",
+                "text": "Exterior"
+              },
+              "details": {
+                "html": "Eastern White Cedar",
+                "text": "Eastern White Cedar"
+              }
+            },
+            {
+              "term": {
+                "html": "Liner",
+                "text": "Liner"
+              },
+              "details": {
+                "html": "White HDPE",
+                "text": "White HDPE"
+              }
+            },
+            {
+              "term": {
+                "html": "Bands",
+                "text": "Bands"
+              },
+              "details": {
+                "html": "Stainless steel",
+                "text": "Stainless steel"
+              }
+            },
+            {
+              "term": {
+                "html": "Drain",
+                "text": "Drain"
+              },
+              "details": {
+                "html": "Garden hose connection",
+                "text": "Garden hose connection"
+              }
+            },
+            {
+              "term": {
+                "html": "Dry weight",
+                "text": "Dry weight"
+              },
+              "details": {
+                "html": "108 lb (49 kg)",
+                "text": "108 lb (49 kg)"
+              }
+            },
+            {
+              "term": {
+                "html": "Filled weight",
+                "text": "Filled weight"
+              },
+              "details": {
+                "html": "Adds about 1,105 lb (501 kg) of water",
+                "text": "Adds about 1,105 lb (501 kg) of water"
+              }
+            },
+            {
+              "term": {
+                "html": "Delivery",
+                "text": "Delivery"
+              },
+              "details": {
+                "html": "Arrives fully assembled",
+                "text": "Arrives fully assembled"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited (tub)",
+                "text": "5-year residential limited (tub)"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery</strong>",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>",
+          "text": "Delivery to your door"
+        },
+        {
+          "type": "text",
+          "html": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+          "text": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Quoted</strong>",
+          "text": "Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Chiller electrical connections must be made by a licensed electrician.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Chiller electrical connections must be made by a licensed electrician."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other cold <em>plunges</em>",
+          "text": "Compare other cold plunges"
+        },
+        {
+          "type": "link",
+          "html": "View All Cold Plunges",
+          "text": "View All Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Pair It With a Sauna",
+          "text": "Pair It With a Sauna",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

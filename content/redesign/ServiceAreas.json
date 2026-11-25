@@ -1,0 +1,623 @@
+{
+  "file": "ServiceAreas.dc.html",
+  "route": "/service-areas",
+  "pageMap": {
+    "route": "/service-areas",
+    "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+    "index": "",
+    "photos": 7
+  },
+  "head": {
+    "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Service Areas: GTA & Ontario | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill…",
+      "url": "https://www.thetorontosaunaco.com/service-areas",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "url": "https://www.thetorontosaunaco.com/service-areas",
+            "name": "Backyard Sauna Service Areas",
+            "description": "Premium backyard saunas delivered and installed across the GTA and Ontario: Toronto, Mississauga, Oakville, Burlington, Markham, Aurora, Richmond Hill, Vaughan, King, Whitby, Muskoka, Haliburton, Collingwood, Prince Edward County and Niagara-on-the-Lake."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              }
+            ]
+          },
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Toronto"
+              },
+              {
+                "@type": "City",
+                "name": "Mississauga"
+              },
+              {
+                "@type": "City",
+                "name": "Markham"
+              },
+              {
+                "@type": "City",
+                "name": "Aurora"
+              },
+              {
+                "@type": "City",
+                "name": "Richmond Hill"
+              },
+              {
+                "@type": "City",
+                "name": "Vaughan"
+              },
+              {
+                "@type": "City",
+                "name": "King Township"
+              },
+              {
+                "@type": "City",
+                "name": "King City"
+              },
+              {
+                "@type": "City",
+                "name": "Brooklin"
+              },
+              {
+                "@type": "City",
+                "name": "Whitby"
+              },
+              {
+                "@type": "City",
+                "name": "Prince Edward County"
+              },
+              {
+                "@type": "City",
+                "name": "Niagara-on-the-Lake"
+              },
+              {
+                "@type": "City",
+                "name": "Oakville"
+              },
+              {
+                "@type": "City",
+                "name": "Burlington"
+              },
+              {
+                "@type": "City",
+                "name": "Muskoka"
+              },
+              {
+                "@type": "City",
+                "name": "Haliburton"
+              },
+              {
+                "@type": "City",
+                "name": "Collingwood"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Across the GTA and Ontario</strong>",
+          "text": "Across the GTA and Ontario"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Sauna <em><strong>Service Areas</strong></em>",
+          "text": "Backyard Sauna Service Areas"
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install premium backyard saunas across the Greater Toronto Area and Ontario, from our showroom in King Township. Delivery and installation is $1,750 anywhere in Ontario.",
+          "text": "We design, deliver and install premium backyard saunas across the Greater Toronto Area and Ontario, from our showroom in King Township. Delivery and installation is $1,750 anywhere in Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Section 2",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/service-areas/toronto",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "City of Toronto",
+              "text": "City of Toronto"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Toronto</strong>",
+              "text": "Toronto"
+            },
+            {
+              "type": "text",
+              "html": "Rosedale, Forest Hill, Lawrence Park, Leaside",
+              "text": "Rosedale, Forest Hill, Lawrence Park, Leaside"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Toronto</strong>",
+              "text": "Backyard saunas in Toronto"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/mississauga",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Peel Region",
+              "text": "Peel Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Mississauga</strong>",
+              "text": "Mississauga"
+            },
+            {
+              "type": "text",
+              "html": "Lorne Park, Mineola, Port Credit, Sheridan Homelands",
+              "text": "Lorne Park, Mineola, Port Credit, Sheridan Homelands"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Mississauga</strong>",
+              "text": "Backyard saunas in Mississauga"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/markham",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "York Region",
+              "text": "York Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Markham</strong>",
+              "text": "Markham"
+            },
+            {
+              "type": "text",
+              "html": "Unionville, Angus Glen, Cachet, Victoria Manor",
+              "text": "Unionville, Angus Glen, Cachet, Victoria Manor"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Markham</strong>",
+              "text": "Backyard saunas in Markham"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/aurora",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "York Region",
+              "text": "York Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Aurora</strong>",
+              "text": "Aurora"
+            },
+            {
+              "type": "text",
+              "html": "Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington",
+              "text": "Aurora Estates, Hills of St Andrew, Aurora Highlands, Bayview Wellington"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Aurora</strong>",
+              "text": "Backyard saunas in Aurora"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/richmond-hill",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "York Region",
+              "text": "York Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Richmond Hill</strong>",
+              "text": "Richmond Hill"
+            },
+            {
+              "type": "text",
+              "html": "Bayview Hill, Mill Pond, Oak Ridges, Lake Wilcox",
+              "text": "Bayview Hill, Mill Pond, Oak Ridges, Lake Wilcox"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Richmond Hill</strong>",
+              "text": "Backyard saunas in Richmond Hill"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/vaughan",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "York Region",
+              "text": "York Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Vaughan</strong>",
+              "text": "Vaughan"
+            },
+            {
+              "type": "text",
+              "html": "Kleinburg, Woodbridge, Maple, Thornhill Woods",
+              "text": "Kleinburg, Woodbridge, Maple, Thornhill Woods"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Vaughan</strong>",
+              "text": "Backyard saunas in Vaughan"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/king-township",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "York Region",
+              "text": "York Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>King Township</strong>",
+              "text": "King Township"
+            },
+            {
+              "type": "text",
+              "html": "Nobleton, Schomberg, Kettleby, Pottageville",
+              "text": "Nobleton, Schomberg, Kettleby, Pottageville"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in King Township</strong>",
+              "text": "Backyard saunas in King Township"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/king-city",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "King Township",
+              "text": "King Township"
+            },
+            {
+              "type": "text",
+              "html": "<strong>King City</strong>",
+              "text": "King City"
+            },
+            {
+              "type": "text",
+              "html": "King City village, Kingscross, Eversley, Temperanceville",
+              "text": "King City village, Kingscross, Eversley, Temperanceville"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in King City</strong>",
+              "text": "Backyard saunas in King City"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/brooklin",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Whitby, Durham Region",
+              "text": "Whitby, Durham Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Brooklin</strong>",
+              "text": "Brooklin"
+            },
+            {
+              "type": "text",
+              "html": "Brooklin village, North Brooklin, Ashburn, Myrtle",
+              "text": "Brooklin village, North Brooklin, Ashburn, Myrtle"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Brooklin</strong>",
+              "text": "Backyard saunas in Brooklin"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/whitby",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Durham Region",
+              "text": "Durham Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Whitby</strong>",
+              "text": "Whitby"
+            },
+            {
+              "type": "text",
+              "html": "Port Whitby, Lynde Shores, Williamsburg, Rolling Acres",
+              "text": "Port Whitby, Lynde Shores, Williamsburg, Rolling Acres"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Whitby</strong>",
+              "text": "Backyard saunas in Whitby"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/prince-edward-county",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Eastern Ontario",
+              "text": "Eastern Ontario"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Prince Edward County</strong>",
+              "text": "Prince Edward County"
+            },
+            {
+              "type": "text",
+              "html": "Picton, Wellington, Bloomfield, Milford",
+              "text": "Picton, Wellington, Bloomfield, Milford"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Prince Edward County</strong>",
+              "text": "Backyard saunas in Prince Edward County"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/niagara-on-the-lake",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Niagara Region",
+              "text": "Niagara Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Niagara-on-the-Lake</strong>",
+              "text": "Niagara-on-the-Lake"
+            },
+            {
+              "type": "text",
+              "html": "Old Town, Virgil, St. Davids, Queenston",
+              "text": "Old Town, Virgil, St. Davids, Queenston"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Niagara-on-the-Lake</strong>",
+              "text": "Backyard saunas in Niagara-on-the-Lake"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/oakville",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Halton Region",
+              "text": "Halton Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Oakville</strong>",
+              "text": "Oakville"
+            },
+            {
+              "type": "text",
+              "html": "Old Oakville, Morrison, Eastlake, Glen Abbey",
+              "text": "Old Oakville, Morrison, Eastlake, Glen Abbey"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Oakville</strong>",
+              "text": "Backyard saunas in Oakville"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/burlington",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Halton Region",
+              "text": "Halton Region"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Burlington</strong>",
+              "text": "Burlington"
+            },
+            {
+              "type": "text",
+              "html": "Roseland, Shoreacres, Tyandaga, Millcroft",
+              "text": "Roseland, Shoreacres, Tyandaga, Millcroft"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Burlington</strong>",
+              "text": "Backyard saunas in Burlington"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/muskoka",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Cottage country",
+              "text": "Cottage country"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Muskoka</strong>",
+              "text": "Muskoka"
+            },
+            {
+              "type": "text",
+              "html": "Lake Muskoka, Lake Rosseau, Lake Joseph, Port Carling",
+              "text": "Lake Muskoka, Lake Rosseau, Lake Joseph, Port Carling"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Muskoka</strong>",
+              "text": "Backyard saunas in Muskoka"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/haliburton",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Haliburton Highlands",
+              "text": "Haliburton Highlands"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Haliburton</strong>",
+              "text": "Haliburton"
+            },
+            {
+              "type": "text",
+              "html": "Haliburton Village, Minden, Kennisis Lake, Eagle Lake",
+              "text": "Haliburton Village, Minden, Kennisis Lake, Eagle Lake"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Haliburton</strong>",
+              "text": "Backyard saunas in Haliburton"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/service-areas/collingwood",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Southern Georgian Bay",
+              "text": "Southern Georgian Bay"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Collingwood</strong>",
+              "text": "Collingwood"
+            },
+            {
+              "type": "text",
+              "html": "Downtown Collingwood, Lighthouse Point, Cranberry, Blue Mountain",
+              "text": "Downtown Collingwood, Lighthouse Point, Cranberry, Blue Mountain"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Backyard saunas in Collingwood</strong>",
+              "text": "Backyard saunas in Collingwood"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Don't see your town? We deliver and install anywhere in Ontario. <a href=\"/contact\">Ask us about your area</a> or call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Don't see your town? We deliver and install anywhere in Ontario. Ask us about your area or call (437) 429-6623."
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

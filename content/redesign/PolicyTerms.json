@@ -1,0 +1,304 @@
+{
+  "file": "PolicyTerms.dc.html",
+  "route": "/terms",
+  "pageMap": {
+    "route": "/terms",
+    "title": "Terms of Service | The Toronto Sauna Co.",
+    "description": "Terms of service for The Toronto Sauna Co.: quote-based ordering, pricing and HST, permits and electrical, certification and liability.",
+    "index": "",
+    "photos": 7
+  },
+  "head": {
+    "title": "Terms of Service | The Toronto Sauna Co.",
+    "description": "Terms of service for The Toronto Sauna Co.: quote-based ordering, pricing and HST, permits and electrical, certification and liability.",
+    "canonical": "https://www.thetorontosaunaco.com/terms",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Terms of Service | The Toronto Sauna Co.",
+      "description": "Terms of service for The Toronto Sauna Co.: quote-based ordering, pricing and HST, permits and electrical, certification and liability.",
+      "url": "https://www.thetorontosaunaco.com/terms",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/terms",
+            "name": "Terms of Service | The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com/terms",
+            "description": "Terms of service for The Toronto Sauna Co.: quote-based ordering, pricing and HST, permits and electrical, certification and liability.",
+            "dateModified": "2026-11-18"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Terms of Service",
+                "item": "https://www.thetorontosaunaco.com/terms"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Policies"
+            },
+            {
+              "text": "Terms of Service"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Our policies</strong>",
+          "text": "Our policies"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Terms of Service",
+          "text": "Terms of Service"
+        },
+        {
+          "type": "paragraph",
+          "html": "Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a> or email <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a>.",
+          "text": "Questions? Call (437) 429-6623 or email sales@thetorontosaunaco.com."
+        },
+        {
+          "type": "link",
+          "html": "Warranty",
+          "text": "Warranty",
+          "href": "/warranty",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Returns &amp; Refunds",
+          "text": "Returns & Refunds",
+          "href": "/refund-policy",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Delivery &amp; Shipping",
+          "text": "Delivery & Shipping",
+          "href": "/shipping",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Terms of Service</strong>",
+          "text": "Terms of Service"
+        },
+        {
+          "type": "link",
+          "html": "Privacy Policy",
+          "text": "Privacy Policy",
+          "href": "/privacy",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Last updated November 18, 2026",
+          "text": "Last updated November 18, 2026"
+        }
+      ]
+    },
+    {
+      "name": "Section 2",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The short version: you request a quote, we confirm the details with you, and your order is placed once you approve it.",
+          "text": "The short version: you request a quote, we confirm the details with you, and your order is placed once you approve it."
+        },
+        {
+          "type": "text",
+          "html": "<strong>AT A GLANCE</strong>",
+          "text": "AT A GLANCE"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Ordering",
+                "text": "Ordering"
+              },
+              "details": {
+                "html": "By quote, confirmed with you",
+                "text": "By quote, confirmed with you"
+              }
+            },
+            {
+              "term": {
+                "html": "Prices",
+                "text": "Prices"
+              },
+              "details": {
+                "html": "CAD, plus 13% HST",
+                "text": "CAD, plus 13% HST"
+              }
+            },
+            {
+              "term": {
+                "html": "Permits",
+                "text": "Permits"
+              },
+              "details": {
+                "html": "Owner’s responsibility",
+                "text": "Owner’s responsibility"
+              }
+            },
+            {
+              "term": {
+                "html": "Governing law",
+                "text": "Governing law"
+              },
+              "details": {
+                "html": "Ontario",
+                "text": "Ontario"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Quotes and orders",
+          "text": "Quotes and orders"
+        },
+        {
+          "type": "paragraph",
+          "html": "Checking out on our website sends a quote request. It is not a payment or a binding order. We review your build, confirm pricing, delivery and timing with you, and your order is placed only once you approve it and payment is arranged. By placing an order, you agree to these terms.",
+          "text": "Checking out on our website sends a quote request. It is not a payment or a binding order. We review your build, confirm pricing, delivery and timing with you, and your order is placed only once you approve it and payment is arranged. By placing an order, you agree to these terms."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Pricing",
+          "text": "Pricing"
+        },
+        {
+          "type": "paragraph",
+          "html": "Prices are in Canadian dollars and are manufacturer’s suggested retail prices (MSRP). HST (13%) is added and shown separately. Prices and availability can change until your order is confirmed, and we’ll correct any obvious pricing errors before confirming.",
+          "text": "Prices are in Canadian dollars and are manufacturer’s suggested retail prices (MSRP). HST (13%) is added and shown separately. Prices and availability can change until your order is confirmed, and we’ll correct any obvious pricing errors before confirming."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Permits and electrical",
+          "text": "Permits and electrical"
+        },
+        {
+          "type": "paragraph",
+          "html": "You are responsible for any permits your property needs. In Ontario, an accessory building over 10 m² typically needs a building permit; check with your municipality. Electric heaters and chillers must be connected by a licensed electrician, and the work is subject to Electrical Safety Authority (ESA) requirements.",
+          "text": "You are responsible for any permits your property needs. In Ontario, an accessory building over 10 m² typically needs a building permit; check with your municipality. Electric heaters and chillers must be connected by a licensed electrician, and the work is subject to Electrical Safety Authority (ESA) requirements."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Certification",
+          "text": "Certification"
+        },
+        {
+          "type": "paragraph",
+          "html": "Electric heaters carry the certifications listed on each product page. Sauna rooms and kits are not certified as complete assemblies by CSA or WETT. Wood-burning heaters must be installed to the manufacturer’s instructions and local code, and we recommend a WETT-certified installer.",
+          "text": "Electric heaters carry the certifications listed on each product page. Sauna rooms and kits are not certified as complete assemblies by CSA or WETT. Wood-burning heaters must be installed to the manufacturer’s instructions and local code, and we recommend a WETT-certified installer."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Safe use",
+          "text": "Safe use"
+        },
+        {
+          "type": "paragraph",
+          "html": "Saunas and cold plunges carry real health considerations. Talk to your doctor before use if you are pregnant or have heart, blood pressure or other medical conditions, and always follow the owner’s manual.",
+          "text": "Saunas and cold plunges carry real health considerations. Talk to your doctor before use if you are pregnant or have heart, blood pressure or other medical conditions, and always follow the owner’s manual."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Liability",
+          "text": "Liability"
+        },
+        {
+          "type": "paragraph",
+          "html": "To the extent permitted by law, our liability for any claim is limited to the amount you paid for the product involved. Nothing in these terms limits rights you have under Ontario consumer protection law.",
+          "text": "To the extent permitted by law, our liability for any claim is limited to the amount you paid for the product involved. Nothing in these terms limits rights you have under Ontario consumer protection law."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "About us",
+          "text": "About us"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Toronto Sauna Co. is a subsidiary of Pathways to Perennials Inc. These terms are governed by the laws of Ontario and the federal laws of Canada that apply there.",
+          "text": "The Toronto Sauna Co. is a subsidiary of Pathways to Perennials Inc. These terms are governed by the laws of Ontario and the federal laws of Canada that apply there."
+        }
+      ]
+    },
+    {
+      "name": "Section 3",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Still have a question?",
+          "text": "Still have a question?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Talk to a real person. Visit our showroom at 17380 Highway 27, Schomberg, by appointment.",
+          "text": "Talk to a real person. Visit our showroom at 17380 Highway 27, Schomberg, by appointment."
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Email us",
+          "text": "Email us",
+          "href": "mailto:sales@thetorontosaunaco.com",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

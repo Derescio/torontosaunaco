@@ -1,0 +1,711 @@
+{
+  "file": "Wellness.dc.html",
+  "route": "/wellness",
+  "pageMap": {
+    "route": "/wellness",
+    "title": "Sauna Health Benefits & Wellness | The Toronto Sauna Co.",
+    "description": "What the research says about traditional Finnish sauna: heart health, brain health, sleep and stress, plus how to sauna the Finnish way and the lifestyle…",
+    "index": "",
+    "photos": 22
+  },
+  "head": {
+    "title": "Sauna Health Benefits & Wellness | The Toronto Sauna Co.",
+    "description": "What the research says about traditional Finnish sauna: heart health, brain health, sleep and stress, plus how to sauna the Finnish way and the lifestyle…",
+    "canonical": "https://www.thetorontosaunaco.com/wellness",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Health Benefits & Wellness | The Toronto Sauna Co.",
+      "description": "What the research says about traditional Finnish sauna: heart health, brain health, sleep and stress, plus how to sauna the Finnish way and the lifestyle…",
+      "url": "https://www.thetorontosaunaco.com/wellness",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "https://www.thetorontosaunaco.com/wellness",
+        "name": "Sauna Health Benefits & Wellness | Finnish Sauna Lifestyle | The Toronto Sauna Co.",
+        "description": "What the research says about traditional Finnish sauna: heart health, brain health, sleep and stress, plus how to sauna the Finnish way and the lifestyle behind it.",
+        "publisher": {
+          "@type": "LocalBusiness",
+          "name": "The Toronto Sauna Co.",
+          "telephone": "+1-437-429-6623",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17380 Highway 27",
+            "addressLocality": "Schomberg",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          }
+        }
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Wellness hero",
+      "blocks": [
+        {
+          "type": "image",
+          "src": "./assets/2cdc5247cc7e30e277072f510151789b.jpg",
+          "alt": "Glowing glass sauna in the forest at night as steam rises from the stones, The Toronto Sauna Co."
+        },
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Wellness"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Wellness &amp; lifestyle</strong>",
+          "text": "Wellness & lifestyle"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Heat. Quiet. <em><strong>Ritual.</strong></em>",
+          "text": "Heat. Quiet. Ritual."
+        },
+        {
+          "type": "paragraph",
+          "html": "The traditional Finnish sauna is one of the oldest wellness practices on earth, and one of the best studied. Here is what the research says, and why so many people make it the best part of their day.",
+          "text": "The traditional Finnish sauna is one of the oldest wellness practices on earth, and one of the best studied. Here is what the research says, and why so many people make it the best part of their day."
+        },
+        {
+          "type": "link",
+          "html": "What the research says",
+          "text": "What the research says",
+          "href": "#research",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "How to sauna",
+          "text": "How to sauna",
+          "href": "#ritual",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Finnish tradition",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>The Finnish tradition</strong>",
+          "text": "The Finnish tradition"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Real heat. <em><strong>Real steam.</strong></em>",
+          "text": "Real heat. Real steam."
+        },
+        {
+          "type": "paragraph",
+          "html": "In Finland, the sauna isn’t a luxury. It’s part of everyday life. The country has roughly three million saunas for about five and a half million people, and in 2020 Finnish sauna culture was added to UNESCO’s list of the Intangible Cultural Heritage of Humanity.",
+          "text": "In Finland, the sauna isn’t a luxury. It’s part of everyday life. The country has roughly three million saunas for about five and a half million people, and in 2020 Finnish sauna culture was added to UNESCO’s list of the Intangible Cultural Heritage of Humanity."
+        },
+        {
+          "type": "paragraph",
+          "html": "A true Finnish sauna is a dry, wood-lined room heated to about 80–100°C by a stove full of hot rocks. Ladle a little water on the stones and you get <em>löyly</em>: a soft wave of steam that rolls over you and makes the heat feel deeper. It’s the heat the research is built on, and it’s the heat every one of our saunas is designed around.",
+          "text": "A true Finnish sauna is a dry, wood-lined room heated to about 80–100°C by a stove full of hot rocks. Ladle a little water on the stones and you get löyly: a soft wave of steam that rolls over you and makes the heat feel deeper. It’s the heat the research is built on, and it’s the heat every one of our saunas is designed around."
+        },
+        {
+          "type": "text",
+          "html": "<strong>80–100°C</strong>",
+          "text": "80–100°C"
+        },
+        {
+          "type": "text",
+          "html": "Traditional dry heat",
+          "text": "Traditional dry heat"
+        },
+        {
+          "type": "text",
+          "html": "<strong>~3M</strong>",
+          "text": "~3M"
+        },
+        {
+          "type": "text",
+          "html": "Saunas in Finland",
+          "text": "Saunas in Finland"
+        },
+        {
+          "type": "text",
+          "html": "<strong>2020</strong>",
+          "text": "2020"
+        },
+        {
+          "type": "text",
+          "html": "UNESCO heritage listing",
+          "text": "UNESCO heritage listing"
+        },
+        {
+          "type": "image",
+          "src": "./assets/cdf3ec78492fad4542a3c42794b25add.jpg",
+          "alt": "Looking out at autumn forest from a sauna with a stone heater, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Research",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>What the research says</strong>",
+          "text": "What the research says"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "The science of <em><strong>sweat.</strong></em>",
+          "text": "The science of sweat."
+        },
+        {
+          "type": "paragraph",
+          "html": "Much of the best-known research comes from Finland, where researchers followed more than 2,300 middle-aged men for about 20 years and compared how often they used the sauna. The findings are striking.",
+          "text": "Much of the best-known research comes from Finland, where researchers followed more than 2,300 middle-aged men for about 20 years and compared how often they used the sauna. The findings are striking."
+        },
+        {
+          "type": "text",
+          "html": "<strong>40%</strong>",
+          "text": "40%"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Lower risk of death from any cause</strong>",
+          "text": "Lower risk of death from any cause"
+        },
+        {
+          "type": "paragraph",
+          "html": "Men who used the sauna 4–7 times a week had about a 40% lower risk of death from any cause over 20 years than men who went once a week.",
+          "text": "Men who used the sauna 4–7 times a week had about a 40% lower risk of death from any cause over 20 years than men who went once a week."
+        },
+        {
+          "type": "text",
+          "html": "JAMA Internal Medicine, 2015",
+          "text": "JAMA Internal Medicine, 2015"
+        },
+        {
+          "type": "text",
+          "html": "<strong>63%</strong>",
+          "text": "63%"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Lower risk of sudden cardiac death</strong>",
+          "text": "Lower risk of sudden cardiac death"
+        },
+        {
+          "type": "paragraph",
+          "html": "The same frequent sauna users had a 63% lower risk of sudden cardiac death. Even 2–3 sessions a week was linked to a 22% lower risk.",
+          "text": "The same frequent sauna users had a 63% lower risk of sudden cardiac death. Even 2–3 sessions a week was linked to a 22% lower risk."
+        },
+        {
+          "type": "text",
+          "html": "JAMA Internal Medicine, 2015",
+          "text": "JAMA Internal Medicine, 2015"
+        },
+        {
+          "type": "text",
+          "html": "<strong>66%</strong>",
+          "text": "66%"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Lower risk of dementia</strong>",
+          "text": "Lower risk of dementia"
+        },
+        {
+          "type": "paragraph",
+          "html": "In the same group of men, those who used the sauna 4–7 times a week were about 66% less likely to be diagnosed with dementia.",
+          "text": "In the same group of men, those who used the sauna 4–7 times a week were about 66% less likely to be diagnosed with dementia."
+        },
+        {
+          "type": "text",
+          "html": "Age and Ageing, 2017",
+          "text": "Age and Ageing, 2017"
+        },
+        {
+          "type": "text",
+          "html": "<strong>70+</strong>",
+          "text": "70+"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Studies reviewed</strong>",
+          "text": "Studies reviewed"
+        },
+        {
+          "type": "paragraph",
+          "html": "A Mayo Clinic Proceedings review of more than 70 studies linked regular Finnish sauna use with lower blood pressure, healthier blood vessels and less inflammation.",
+          "text": "A Mayo Clinic Proceedings review of more than 70 studies linked regular Finnish sauna use with lower blood pressure, healthier blood vessels and less inflammation."
+        },
+        {
+          "type": "text",
+          "html": "Mayo Clinic Proceedings, 2018",
+          "text": "Mayo Clinic Proceedings, 2018"
+        },
+        {
+          "type": "text",
+          "html": "<strong>84%</strong>",
+          "text": "84%"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Reported better sleep</strong>",
+          "text": "Reported better sleep"
+        },
+        {
+          "type": "paragraph",
+          "html": "In a global survey of regular sauna users, 84% said they slept better for one to two nights after a session.",
+          "text": "In a global survey of regular sauna users, 84% said they slept better for one to two nights after a session."
+        },
+        {
+          "type": "text",
+          "html": "Global Sauna Survey, 2019",
+          "text": "Global Sauna Survey, 2019"
+        },
+        {
+          "type": "text",
+          "html": "<strong>#1</strong>",
+          "text": "#1"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Reason people sauna: to de-stress</strong>",
+          "text": "Reason people sauna: to de-stress"
+        },
+        {
+          "type": "paragraph",
+          "html": "Every respondent in the same survey rated relaxation and stress relief as a key reason they use the sauna. People who went 5–15 times a month reported higher mental well-being.",
+          "text": "Every respondent in the same survey rated relaxation and stress relief as a key reason they use the sauna. People who went 5–15 times a month reported higher mental well-being."
+        },
+        {
+          "type": "text",
+          "html": "Global Sauna Survey, 2019",
+          "text": "Global Sauna Survey, 2019"
+        },
+        {
+          "type": "paragraph",
+          "html": "These are observational studies: they show strong associations, not proof that the sauna alone caused the results, and most of the long-term data comes from Finnish men. Sauna is a wonderful habit, not a medical treatment. Sources are listed at the bottom of this page.",
+          "text": "These are observational studies: they show strong associations, not proof that the sauna alone caused the results, and most of the long-term data comes from Finnish men. Sauna is a wonderful habit, not a medical treatment. Sources are listed at the bottom of this page."
+        }
+      ]
+    },
+    {
+      "name": "Inspiration gallery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Inspiration</strong>",
+          "text": "Inspiration"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "The good life, <em><strong>at home.</strong></em>",
+          "text": "The good life, at home."
+        },
+        {
+          "type": "paragraph",
+          "html": "Poolside in July, in the woods in October, in the snow in January. A sauna makes every season something to look forward to.",
+          "text": "Poolside in July, in the woods in October, in the snow in January. A sauna makes every season something to look forward to."
+        },
+        {
+          "type": "image",
+          "src": "./assets/d1098387fd5147cbaba3dc799db78b2e.jpg",
+          "alt": "Relaxing in a glass-front sauna on a forest deck under string lights, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/078e54f727a4bf4bdab635db5585a6cc.jpg",
+          "alt": "Modern black sauna glowing at dusk in the snow beside a home, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/a8d24dcbf8096024af26c74adf373a41.jpg",
+          "alt": "Woman relaxing with eyes closed in a sunlit cedar barrel sauna, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/931d581ab07ddb74707b2a9f33b21a2b.jpg",
+          "alt": "Relaxing in a panoramic barrel sauna in autumn sunshine, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/c097562d448621e89abae62a75089f2c.jpg",
+          "alt": "Red cedar sauna beside a backyard pool and hot tub, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/f3ead39c4753210067220d8b7ae3197c.jpg",
+          "alt": "Snow-covered barrel sauna by a frozen lake under string lights, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/106cf9c2291fd89ebc68fd50ac88ba99.jpg",
+          "alt": "Lake view through the open end of a barrel sauna, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/49aa21bda87137667ab590e558834815.jpg",
+          "alt": "Black cube sauna glowing in the forest at night, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/ec0d5e3a13ae96065e0a79e3a68eef5c.jpg",
+          "alt": "View from the sauna bench out to a landscaped backyard, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/12172edde7ae33d3b75d084362e17fe9.jpg",
+          "alt": "Hot tub and barrel sauna on a lakeside cottage deck at dusk, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/7956a19c38a42448b6dddee30389e59a.jpg",
+          "alt": "Cedar sauna by the pool framed by summer flowers, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Lifestyle",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>The lifestyle</strong>",
+          "text": "The lifestyle"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "More than health. <em><strong>A way of living.</strong></em>",
+          "text": "More than health. A way of living."
+        },
+        {
+          "type": "paragraph",
+          "html": "The numbers are compelling, but that isn’t why people fall in love with sauna. They fall in love with how it feels, and with what it does to the rhythm of their day.",
+          "text": "The numbers are compelling, but that isn’t why people fall in love with sauna. They fall in love with how it feels, and with what it does to the rhythm of their day."
+        },
+        {
+          "type": "image",
+          "src": "./assets/f561443cb6e210b955ff682822ecfb06.jpg",
+          "alt": "Cedar and black sauna on a stone patio with fire pit at golden hour, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>A daily reset</strong>",
+          "text": "A daily reset"
+        },
+        {
+          "type": "text",
+          "html": "Twenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day.",
+          "text": "Twenty minutes of heat with no phone, no screen and nowhere to be. For many people it’s the only truly quiet part of the day."
+        },
+        {
+          "type": "text",
+          "html": "<strong>The spa, at home</strong>",
+          "text": "The spa, at home"
+        },
+        {
+          "type": "text",
+          "html": "No membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night.",
+          "text": "No membership, no drive, no booking. Your own sauna is ready whenever you are: before work, after a run, or under the stars on a January night."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Time together</strong>",
+          "text": "Time together"
+        },
+        {
+          "type": "text",
+          "html": "Sauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna.",
+          "text": "Sauna has always been social. Partners talk, families unwind, friends linger. In the global survey, 79% of people said they talk with others in the sauna."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Hot and cold</strong>",
+          "text": "Hot and cold"
+        },
+        {
+          "type": "text",
+          "html": "Pair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake.",
+          "text": "Pair the heat with a cold plunge or a cool outdoor shower and you have the classic contrast ritual, the Nordic way to feel completely awake."
+        },
+        {
+          "type": "text",
+          "html": "<strong>An elevated backyard</strong>",
+          "text": "An elevated backyard"
+        },
+        {
+          "type": "text",
+          "html": "A cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one.",
+          "text": "A cedar sauna turns a corner of the yard into the place everyone wants to be. It’s a design piece, a wellness tool and a gathering spot in one."
+        }
+      ]
+    },
+    {
+      "name": "Ritual",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>The ritual</strong>",
+          "text": "The ritual"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "How to sauna, <em><strong>the Finnish way.</strong></em>",
+          "text": "How to sauna, the Finnish way."
+        },
+        {
+          "type": "paragraph",
+          "html": "There’s no wrong way to enjoy a sauna, but the classic ritual is simple: heat, cool, rest, repeat.",
+          "text": "There’s no wrong way to enjoy a sauna, but the classic ritual is simple: heat, cool, rest, repeat."
+        },
+        {
+          "type": "image",
+          "src": "./assets/436c1b5a4ef6f02e6929509803b1f9f0.jpg",
+          "alt": "Resting on a cedar bench as loyly steam fills a panoramic barrel sauna, The Toronto Sauna Co."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>01</strong>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Heat up</strong>",
+                  "text": "Heat up"
+                },
+                {
+                  "type": "text",
+                  "html": "Let the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new.",
+                  "text": "Let the sauna reach 80–90°C. Rinse off, then settle onto the bench for 10–15 minutes. The upper bench is hotter; start low if you’re new."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>02</strong>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Add löyly</strong>",
+                  "text": "Add löyly"
+                },
+                {
+                  "type": "text",
+                  "html": "Ladle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much.",
+                  "text": "Ladle a little water onto the hot rocks for a burst of soft steam. It makes the heat feel deeper without raising the temperature much."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>03</strong>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Cool down</strong>",
+                  "text": "Cool down"
+                },
+                {
+                  "type": "text",
+                  "html": "Step out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge.",
+                  "text": "Step out into fresh air, take a cool shower or, if you’re used to it, a quick cold plunge."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>04</strong>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Rest</strong>",
+                  "text": "Rest"
+                },
+                {
+                  "type": "text",
+                  "html": "Sit or lie down for 10 minutes and let your heart rate settle. Have some water.",
+                  "text": "Sit or lie down for 10 minutes and let your heart rate settle. Have some water."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>05</strong>",
+                  "text": "05"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Repeat</strong>",
+                  "text": "Repeat"
+                },
+                {
+                  "type": "text",
+                  "html": "Most people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone.",
+                  "text": "Most people do two or three rounds. Finish with a final rinse and an early night: you’ll sleep like a stone."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Safety",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Good to know</strong>",
+          "text": "Good to know"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Sauna sensibly.",
+          "text": "Sauna sensibly."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Drink water before and after. You’ll sweat more than you think.",
+              "text": "Drink water before and after. You’ll sweat more than you think."
+            },
+            {
+              "html": "Skip the alcohol. In a Swedish review of sauna deaths, about half of the people involved had been drinking.",
+              "text": "Skip the alcohol. In a Swedish review of sauna deaths, about half of the people involved had been drinking."
+            },
+            {
+              "html": "Talk to your doctor first if you have a heart condition, low or high blood pressure, are pregnant, or take medication that affects heat tolerance.",
+              "text": "Talk to your doctor first if you have a heart condition, low or high blood pressure, are pregnant, or take medication that affects heat tolerance."
+            },
+            {
+              "html": "Listen to your body. Leave whenever you feel dizzy or uncomfortable, and supervise children closely.",
+              "text": "Listen to your body. Leave whenever you feel dizzy or uncomfortable, and supervise children closely."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Bring the ritual <em><strong>home.</strong></em>",
+          "text": "Bring the ritual home."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tell us about your space and we’ll help you find a sauna you’ll use every week.",
+          "text": "Tell us about your space and we’ll help you find a sauna you’ll use every week."
+        },
+        {
+          "type": "link",
+          "html": "Find your fit",
+          "text": "Find your fit",
+          "href": "/sauna-finder",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Shop outdoor saunas",
+          "text": "Shop outdoor saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Sources",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Sources",
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "html": "Laukkanen T. et al. Association between sauna bathing and fatal cardiovascular and all-cause mortality events. JAMA Internal Medicine, 2015. <a href=\"https://pubmed.ncbi.nlm.nih.gov/25705824/\">pubmed.ncbi.nlm.nih.gov</a>",
+              "text": "Laukkanen T. et al. Association between sauna bathing and fatal cardiovascular and all-cause mortality events. JAMA Internal Medicine, 2015. pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "html": "Laukkanen T. et al. Sauna bathing is inversely associated with dementia and Alzheimer’s disease in middle-aged Finnish men. Age and Ageing, 2017. <a href=\"https://pubmed.ncbi.nlm.nih.gov/27932366/\">pubmed.ncbi.nlm.nih.gov</a>",
+              "text": "Laukkanen T. et al. Sauna bathing is inversely associated with dementia and Alzheimer’s disease in middle-aged Finnish men. Age and Ageing, 2017. pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "html": "Laukkanen J.A., Laukkanen T., Kunutsor S.K. Cardiovascular and other health benefits of sauna bathing: a review of the evidence. Mayo Clinic Proceedings, 2018. <a href=\"https://pubmed.ncbi.nlm.nih.gov/30077204/\">pubmed.ncbi.nlm.nih.gov</a>",
+              "text": "Laukkanen J.A., Laukkanen T., Kunutsor S.K. Cardiovascular and other health benefits of sauna bathing: a review of the evidence. Mayo Clinic Proceedings, 2018. pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "html": "Hussain J.N. et al. A hot topic for health: results of the Global Sauna Survey. Complementary Therapies in Medicine, 2019. <a href=\"https://pubmed.ncbi.nlm.nih.gov/31126560/\">pubmed.ncbi.nlm.nih.gov</a>",
+              "text": "Hussain J.N. et al. A hot topic for health: results of the Global Sauna Survey. Complementary Therapies in Medicine, 2019. pubmed.ncbi.nlm.nih.gov"
+            },
+            {
+              "html": "Finnish Government. Finland’s sauna culture inscribed on UNESCO Intangible Cultural Heritage List, 2020. <a href=\"https://valtioneuvosto.fi/en/-/1410845/finland-s-sauna-culture-inscribed-on-unesco-intangible-cultural-heritage-list\">valtioneuvosto.fi</a>",
+              "text": "Finnish Government. Finland’s sauna culture inscribed on UNESCO Intangible Cultural Heritage List, 2020. valtioneuvosto.fi"
+            },
+            {
+              "html": "van der Wall E.E. Sauna bathing: a warm heart proves beneficial. Netherlands Heart Journal, 2015. <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4409598/\">www.ncbi.nlm.nih.gov</a>",
+              "text": "van der Wall E.E. Sauna bathing: a warm heart proves beneficial. Netherlands Heart Journal, 2015. www.ncbi.nlm.nih.gov"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "This page is for general information and isn’t medical advice.",
+          "text": "This page is for general information and isn’t medical advice."
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

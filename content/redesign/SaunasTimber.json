@@ -1,0 +1,602 @@
+{
+  "file": "SaunasTimber.dc.html",
+  "route": "/saunas/canadian-timber",
+  "pageMap": {
+    "route": "/saunas/canadian-timber",
+    "title": "Cabin & Canadian Timber Saunas | The Toronto Sauna Co.",
+    "description": "Cabin and barrel saunas handcrafted in Ontario from Eastern White Cedar: Georgian, Palmer, Granby, MiniPOD, Serenity, Tranquility and more.",
+    "index": "",
+    "photos": 16
+  },
+  "head": {
+    "title": "Cabin & Canadian Timber Saunas | The Toronto Sauna Co.",
+    "description": "Cabin and barrel saunas handcrafted in Ontario from Eastern White Cedar: Georgian, Palmer, Granby, MiniPOD, Serenity, Tranquility and more.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/canadian-timber",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Cabin & Canadian Timber Saunas | The Toronto Sauna Co.",
+      "description": "Cabin and barrel saunas handcrafted in Ontario from Eastern White Cedar: Georgian, Palmer, Granby, MiniPOD, Serenity, Tranquility and more.",
+      "url": "https://www.thetorontosaunaco.com/saunas/canadian-timber",
+      "image": "https://www.thetorontosaunaco.com/_blob/5b0d35ccd6de9a18530e41e3a9fda468"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {
+    "D": {
+      "items": [
+        {
+          "n": "The Georgian Cabin Sauna",
+          "href": "/saunas/ct-georgian",
+          "s": "Canadian Timber",
+          "p": 9695,
+          "frm": 1,
+          "cap": "5–6 person",
+          "d": "Dovetail cabin with a black steel roof. Add a covered porch or a full changeroom.",
+          "best": 0,
+          "specs": [
+            "8' × 8' to 8' × 12'",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/5b0d35ccd6de9a18530e41e3a9fda468.jpg",
+          "alt": "Georgian cabin sauna with black steel roof and chimney, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Palmer Cabin Sauna",
+          "href": "/saunas/ct-palmer",
+          "s": "Canadian Timber",
+          "p": 9150,
+          "frm": 0,
+          "cap": "2–4 person",
+          "d": "A timeless shed-style cabin with a roof overhang and metal shingle roof.",
+          "best": 0,
+          "specs": [
+            "98\" × 97\" footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/00dce3422f5a1d020ff4afb03a6326ce.jpg",
+          "alt": "Palmer cabin sauna with roof overhang, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The CT Luna Sauna",
+          "href": "/saunas/ct-luna",
+          "s": "Canadian Timber",
+          "p": 9355,
+          "frm": 0,
+          "cap": "3–4 person",
+          "d": "Rounded corners, solid white cedar log walls and a leak-proof rubber roof.",
+          "best": 0,
+          "specs": [
+            "86\" × 85\" footprint",
+            "Eastern White Cedar",
+            "Electric heat"
+          ],
+          "img": "./assets/bfca3460870c752a61ce20b0331626f0.jpg",
+          "alt": "CT Luna sauna with rounded corners, window and glass door, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Granby Cabin Sauna",
+          "href": "/saunas/ct-granby",
+          "s": "Canadian Timber",
+          "p": 7850,
+          "frm": 0,
+          "cap": "4 person",
+          "d": "A compact dovetail cabin with a black steel roof, for small spaces.",
+          "best": 0,
+          "specs": [
+            "5' × 5' footprint",
+            "Eastern White Cedar",
+            "Electric heat"
+          ],
+          "img": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+          "alt": "Granby cabin sauna with black steel roof and glass door, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The MiniPOD Sauna",
+          "href": "/saunas/ct-mini-pod",
+          "s": "Canadian Timber",
+          "p": 7500,
+          "frm": 0,
+          "cap": "2–4 person",
+          "d": "A raindrop-shaped pod with a triple-layer roof. Metal roof upgrade available.",
+          "best": 0,
+          "specs": [
+            "85\" × 85\" footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/3756fbcfef5ae5190c76d6963f575af5.jpg",
+          "alt": "MiniPOD raindrop sauna with black asphalt roof, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Tranquility MP Barrel Sauna",
+          "href": "/saunas/ct-tranquility-mp",
+          "s": "Canadian Timber",
+          "p": 10459,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "Our longest porch barrel, with half-moon windows front and back.",
+          "best": 0,
+          "specs": [
+            "118\" long with porch",
+            "Half-moon windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+          "alt": "Tranquility MP barrel sauna with half-moon windows and porch, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Tranquility Barrel Sauna",
+          "href": "/saunas/ct-tranquility",
+          "s": "Canadian Timber",
+          "p": 8185,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "A long porch barrel with rectangular front windows and an 18\" porch.",
+          "best": 0,
+          "specs": [
+            "118\" long with porch",
+            "Rectangular windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/8d41bab8df6353c1c6bde79089892832.jpg",
+          "alt": "Tranquility barrel sauna with porch and side benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Serenity MP Barrel Sauna",
+          "href": "/saunas/ct-serenity-mp",
+          "s": "Canadian Timber",
+          "p": 10174,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "The Serenity porch barrel with half-moon windows front and back.",
+          "best": 0,
+          "specs": [
+            "94½\" long with porch",
+            "Half-moon windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+          "alt": "Serenity MP barrel sauna with half-moon windows and porch, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Serenity Barrel Sauna",
+          "href": "/saunas/ct-serenity",
+          "s": "Canadian Timber",
+          "p": 7710,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "A classic porch barrel in white cedar: solid walls and a glass door.",
+          "best": 0,
+          "specs": [
+            "94½\" long with porch",
+            "No windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/181bffff9a069465d8cf4cfd9cb41dd1.jpg",
+          "alt": "Serenity barrel sauna with front porch and benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Harmony Barrel Sauna",
+          "href": "/saunas/ct-harmony",
+          "s": "Canadian Timber",
+          "p": 7468,
+          "frm": 0,
+          "cap": "4 person",
+          "d": "Our most accessible barrel, with a choice of cedar or metal roofs.",
+          "best": 0,
+          "specs": [
+            "6.5' × 6.5' footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/cd4d92d1e14fc912b6b65bfd8ae2e971.png",
+          "alt": "Harmony barrel sauna with black shingle roof cover, The Toronto Sauna Co.",
+          "contain": 1
+        }
+      ],
+      "chips": [
+        "Modern Cabin",
+        "Canadian Timber"
+      ],
+      "showBest": true
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "Cabin & Canadian Timber"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Cabin &amp; Canadian Timber</strong>",
+          "text": "Cabin & Canadian Timber"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Cabin saunas in Canadian <em><strong>cedar.</strong></em>",
+          "text": "Cabin saunas in Canadian cedar."
+        },
+        {
+          "type": "paragraph",
+          "html": "Traditional cabin designs and our Canadian Timber Collection in Eastern White Cedar: great value, built for Canadian winters.",
+          "text": "Traditional cabin designs and our Canadian Timber Collection in Eastern White Cedar: great value, built for Canadian winters."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cube Saunas",
+          "text": "Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Barrel Saunas",
+          "text": "Barrel Saunas",
+          "href": "/saunas/barrel",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cabin &amp; Canadian Timber",
+          "text": "Cabin & Canadian Timber",
+          "href": "/saunas/canadian-timber",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All Outdoor Saunas",
+          "text": "All Outdoor Saunas",
+          "href": "/saunas",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Luna Saunas",
+          "text": "Luna Saunas",
+          "href": "/saunas/luna",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{b}}</strong>",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgCover}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgContain}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Cabin &amp; Canadian Timber</strong>",
+          "text": "Cabin & Canadian Timber"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "About the Canadian Timber Collection",
+          "text": "About the Canadian Timber Collection"
+        },
+        {
+          "type": "paragraph",
+          "html": "Built in Canada from Eastern White Cedar, the Canadian Timber Collection offers barrel, cabin and modern designs at accessible prices, without compromising on a real wood-fired or electric sauna experience.",
+          "text": "Built in Canada from Eastern White Cedar, the Canadian Timber Collection offers barrel, cabin and modern designs at accessible prices, without compromising on a real wood-fired or electric sauna experience."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
+          "text": "Not sure which sauna fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget.",
+          "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

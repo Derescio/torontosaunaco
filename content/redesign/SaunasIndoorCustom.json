@@ -1,0 +1,545 @@
+{
+  "file": "SaunasIndoorCustom.dc.html",
+  "route": "/saunas/indoor/custom",
+  "pageMap": {
+    "route": "/saunas/indoor/custom",
+    "title": "Custom Indoor Saunas | The Toronto Sauna Co.",
+    "description": "Custom indoor sauna rooms for homes, condos, gyms and spas, designed and built to fit your space. Request a design and quote.",
+    "index": "",
+    "photos": 17
+  },
+  "head": {
+    "title": "Custom Indoor Saunas | The Toronto Sauna Co.",
+    "description": "Custom indoor sauna rooms for homes, condos, gyms and spas, designed and built to fit your space. Request a design and quote.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/indoor/custom",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Custom Indoor Saunas | The Toronto Sauna Co.",
+      "description": "Custom indoor sauna rooms for homes, condos, gyms and spas, designed and built to fit your space. Request a design and quote.",
+      "url": "https://www.thetorontosaunaco.com/saunas/indoor/custom",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Indoor Saunas",
+              "href": "/saunas/indoor"
+            },
+            {
+              "text": "Indoor Custom Saunas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Indoor custom saunas</strong>",
+          "text": "Indoor custom saunas"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Custom indoor saunas, built into your <em><strong>space.</strong></em>",
+          "text": "Custom indoor saunas, built into your space."
+        },
+        {
+          "type": "paragraph",
+          "html": "Custom sauna rooms designed and built on site for homes, condos, gyms, spas and wellness studios across Ontario.",
+          "text": "Custom sauna rooms designed and built on site for homes, condos, gyms, spas and wellness studios across Ontario."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Indoor Sauna Kits",
+          "text": "Indoor Sauna Kits",
+          "href": "/saunas/indoor/kits",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Custom Indoor Saunas",
+          "text": "Custom Indoor Saunas",
+          "href": "/saunas/indoor/custom",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Intro + paths",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>This isn't off-the-shelf</strong>",
+          "text": "This isn't off-the-shelf"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "A sauna room designed and built on <em><strong>site.</strong></em>",
+          "text": "A sauna room designed and built on site."
+        },
+        {
+          "type": "paragraph",
+          "html": "Unlike a prebuilt kit, a custom indoor sauna is framed, insulated and finished inside your existing space, to your exact dimensions. We plan the layout, benches, heater and lighting around how you'll use it, then build it in premium cedar specified for Canadian homes.",
+          "text": "Unlike a prebuilt kit, a custom indoor sauna is framed, insulated and finished inside your existing space, to your exact dimensions. We plan the layout, benches, heater and lighting around how you'll use it, then build it in premium cedar specified for Canadian homes."
+        },
+        {
+          "type": "image",
+          "src": "./assets/a0d0b1e0e8fb343fbe25fac20f1f9c7d.jpg",
+          "alt": "Custom residential sauna with glass front and warm LED lighting, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Residential</strong>",
+          "text": "Residential"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Basement, garage &amp; spare-room saunas",
+          "text": "Basement, garage & spare-room saunas"
+        },
+        {
+          "type": "paragraph",
+          "html": "Framed, insulated and finished to match your home, whether it's a corner of the basement, a converted garage or a dedicated wellness room.",
+          "text": "Framed, insulated and finished to match your home, whether it's a corner of the basement, a converted garage or a dedicated wellness room."
+        },
+        {
+          "type": "link",
+          "html": "Request a Residential Quote",
+          "text": "Request a Residential Quote",
+          "href": "/contact",
+          "variant": "button"
+        },
+        {
+          "type": "image",
+          "src": "./assets/710e1a490fc0f39a88a4a8b6c0780ec9.jpg",
+          "alt": "Commercial cedar sauna with LED-lit benches, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Commercial</strong>",
+          "text": "Commercial"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Gyms, spas, condos &amp; wellness studios",
+          "text": "Gyms, spas, condos & wellness studios"
+        },
+        {
+          "type": "paragraph",
+          "html": "Sauna rooms built for daily, high-traffic use, with durable materials and heaters sized for back-to-back sessions.",
+          "text": "Sauna rooms built for daily, high-traffic use, with durable materials and heaters sized for back-to-back sessions."
+        },
+        {
+          "type": "link",
+          "html": "Request a Commercial Quote",
+          "text": "Request a Commercial Quote",
+          "href": "/contact",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>From consultation to completion</strong>",
+          "text": "From consultation to completion"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Five steps to your own <em><strong>sauna room.</strong></em>",
+          "text": "Five steps to your own sauna room."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>01</em>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consult</strong>",
+                  "text": "Consult"
+                },
+                {
+                  "type": "text",
+                  "html": "We talk through your space, goals and budget.",
+                  "text": "We talk through your space, goals and budget."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>02</em>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Design</strong>",
+                  "text": "Design"
+                },
+                {
+                  "type": "text",
+                  "html": "We map out the framing, layout and finishes.",
+                  "text": "We map out the framing, layout and finishes."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>03</em>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Build</strong>",
+                  "text": "Build"
+                },
+                {
+                  "type": "text",
+                  "html": "Our contractors construct the room on site.",
+                  "text": "Our contractors construct the room on site."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>04</em>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Install</strong>",
+                  "text": "Install"
+                },
+                {
+                  "type": "text",
+                  "html": "Heater, cedar and finishing touches go in.",
+                  "text": "Heater, cedar and finishing touches go in."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<em>05</em>",
+                  "text": "05"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Walkthrough</strong>",
+                  "text": "Walkthrough"
+                },
+                {
+                  "type": "text",
+                  "html": "We hand over the room and show you how to use it.",
+                  "text": "We hand over the room and show you how to use it."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Before / after",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Recent projects</strong>",
+          "text": "Recent projects"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "See the room <em><strong>transform.</strong></em>",
+          "text": "See the room transform."
+        },
+        {
+          "type": "image",
+          "src": "./assets/2bc220510a2c746025f5f4229dd70af9.jpg",
+          "alt": "Basement alcove framed and boarded, ready for a custom sauna, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Before</strong>",
+          "text": "Before"
+        },
+        {
+          "type": "image",
+          "src": "./assets/0e141fbe4815a71ebe70c12b63bac419.jpg",
+          "alt": "Finished custom cedar sauna with two-tier floating benches, The Toronto Sauna Co.",
+          "caption": "<strong>Basement alcove</strong>From bare drywall to a two-tier cedar sauna"
+        },
+        {
+          "type": "text",
+          "html": "<strong>After</strong>",
+          "text": "After"
+        },
+        {
+          "type": "image",
+          "src": "./assets/0ed236e4dc53de942ec96bea15cbb9dd.jpg",
+          "alt": "Cluttered basement storage room before a sauna build, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Before</strong>",
+          "text": "Before"
+        },
+        {
+          "type": "image",
+          "src": "./assets/0107c5463c0fabf8b024bc9c983cb2e7.jpg",
+          "alt": "Custom sauna with long bench and wall-mounted stone heater, The Toronto Sauna Co.",
+          "caption": "<strong>Storage room conversion</strong>A cluttered storage room turned into a private sauna"
+        },
+        {
+          "type": "text",
+          "html": "<strong>After</strong>",
+          "text": "After"
+        },
+        {
+          "type": "image",
+          "src": "./assets/279e249b6eba64d435d63401426169ec.jpg",
+          "alt": "Framed and insulated closet before a sauna build, The Toronto Sauna Co."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Before</strong>",
+          "text": "Before"
+        },
+        {
+          "type": "image",
+          "src": "./assets/af841ff4d08b3300ab23a359f4cc4343.jpg",
+          "alt": "Custom cedar sauna with glass door, L-bench and HUUM heater, The Toronto Sauna Co.",
+          "caption": "<strong>Bathroom closet</strong>A framed closet finished as a glass-front cedar sauna"
+        },
+        {
+          "type": "text",
+          "html": "<strong>After</strong>",
+          "text": "After"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Commercial build</strong>",
+          "text": "Commercial build"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Built for <em><strong>high traffic.</strong></em>",
+          "text": "Built for high traffic."
+        },
+        {
+          "type": "image",
+          "src": "./assets/ec15fc07e67a925cd313fe0bd399d824.jpg",
+          "alt": "Commercial cedar sauna entrance with LED-lit tiered benches, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/710e1a490fc0f39a88a4a8b6c0780ec9.jpg",
+          "alt": "Commercial sauna with cedar L-bench and backlit backrests, The Toronto Sauna Co."
+        },
+        {
+          "type": "image",
+          "src": "./assets/c4629a82f54a1a548f2b80dc2e3816e6.jpg",
+          "alt": "Commercial sauna with floor heater and LED-lit cedar benches, The Toronto Sauna Co."
+        },
+        {
+          "type": "paragraph",
+          "html": "Vertical cedar walls and ceiling, two-tier floating benches and a matching backrest, all with hidden LED lighting, and a commercial-grade heater, built for a busy wellness facility.",
+          "text": "Vertical cedar walls and ceiling, two-tier floating benches and a matching backrest, all with hidden LED lighting, and a commercial-grade heater, built for a busy wellness facility."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Premium cedar</strong>",
+          "text": "Premium cedar"
+        },
+        {
+          "type": "text",
+          "html": "The same cedar we use across our saunas.",
+          "text": "The same cedar we use across our saunas."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Framed &amp; insulated</strong>",
+          "text": "Framed & insulated"
+        },
+        {
+          "type": "text",
+          "html": "Built and finished properly, not just panelled.",
+          "text": "Built and finished properly, not just panelled."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Built for Ontario</strong>",
+          "text": "Built for Ontario"
+        },
+        {
+          "type": "text",
+          "html": "Materials specified for Canadian homes and climates.",
+          "text": "Materials specified for Canadian homes and climates."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Commercial-grade</strong>",
+          "text": "Commercial-grade"
+        },
+        {
+          "type": "text",
+          "html": "Durable builds for high-traffic facilities.",
+          "text": "Durable builds for high-traffic facilities."
+        }
+      ]
+    },
+    {
+      "name": "xpromo",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/saunas/indoor/kits",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/8754f99693bdfbbce7e107d10e29046c.jpg",
+              "alt": "Element Loft indoor sauna kit, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Indoor sauna kits</strong>",
+              "text": "Indoor sauna kits"
+            },
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Want it faster and simpler?",
+              "text": "Want it faster and simpler?"
+            },
+            {
+              "type": "paragraph",
+              "html": "Our ready-made indoor sauna kits come in set sizes, from a compact Element Nook to a 6′ × 8′ cedar cabin. Delivered and installed in about a day, from $8,070.",
+              "text": "Our ready-made indoor sauna kits come in set sizes, from a compact Element Nook to a 6′ × 8′ cedar cabin. Delivered and installed in about a day, from $8,070."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Shop indoor kits →</strong>",
+              "text": "Shop indoor kits →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Indoor Custom Saunas</strong>",
+          "text": "Indoor Custom Saunas"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Custom or kit?",
+          "text": "Custom or kit?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Prefer something faster? Our indoor sauna kits are prebuilt rooms in set sizes. Go custom when your space is unusual, or you want the sauna built right into the room.",
+          "text": "Prefer something faster? Our indoor sauna kits are prebuilt rooms in set sizes. Go custom when your space is unusual, or you want the sauna built right into the room."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
+          "text": "Not sure which sauna fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget.",
+          "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

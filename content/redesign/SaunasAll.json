@@ -1,0 +1,975 @@
+{
+  "file": "SaunasAll.dc.html",
+  "route": "/saunas",
+  "pageMap": {
+    "route": "/saunas",
+    "title": "Outdoor Saunas for Sale in Ontario | The Toronto Sauna Co.",
+    "description": "Shop every outdoor sauna we carry: cube, barrel, cabin and Luna saunas in Canadian cedar, delivered and installed across Ontario for $1,750.",
+    "index": "",
+    "photos": 37
+  },
+  "head": {
+    "title": "Outdoor Saunas for Sale in Ontario | The Toronto Sauna Co.",
+    "description": "Shop every outdoor sauna we carry: cube, barrel, cabin and Luna saunas in Canadian cedar, delivered and installed across Ontario for $1,750.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Outdoor Saunas for Sale in Ontario | The Toronto Sauna Co.",
+      "description": "Shop every outdoor sauna we carry: cube, barrel, cabin and Luna saunas in Canadian cedar, delivered and installed across Ontario for $1,750.",
+      "url": "https://www.thetorontosaunaco.com/saunas",
+      "image": "https://www.thetorontosaunaco.com/_blob/96c018aba6b80012fdedc30db0eb161f"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {
+    "D": {
+      "items": [
+        {
+          "n": "The Pure Cube 552",
+          "href": "/saunas/pure-cube-552",
+          "img": "./assets/96c018aba6b80012fdedc30db0eb161f.jpg",
+          "alt": "Pure Cube 552 cedar outdoor sauna with glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 11884,
+          "frm": 0,
+          "cap": "2 person",
+          "d": "A sleek two-person outdoor sauna that blends modern architecture with nature.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube Trinity",
+          "href": "/saunas/trinity",
+          "img": "./assets/87585fc4ba150e041b383ae634217e76.jpg",
+          "alt": "Pure Cube Trinity five-sided corner sauna in black stain, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 11621,
+          "frm": 0,
+          "cap": "1–2 person",
+          "d": "A five-sided corner sauna with three walls of glass, made for decks and patios.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube Sauna 572",
+          "href": "/saunas/pure-cube-572",
+          "img": "./assets/e7769038792977a3b5faa282e2ddf871.jpg",
+          "alt": "Pure Cube 572 cedar outdoor sauna with full glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 12898,
+          "frm": 0,
+          "cap": "3–4 person",
+          "d": "Room for three or four, with a focus on comfort, style and wellness.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube Sauna 582",
+          "href": "/saunas/pure-cube-582",
+          "img": "./assets/f238467d7e1d416a23e4d2b6ab60d2d6.jpg",
+          "alt": "Pure Cube 582 cedar outdoor sauna with three glass panels, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 14843,
+          "frm": 0,
+          "cap": "5 person",
+          "d": "A spacious five-person outdoor sauna with clean, modern lines.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube Sauna 582 w/ Shower",
+          "href": "/saunas/pure-cube-582-shower",
+          "img": "./assets/721409044b03c736650320e44ae3f263.jpg",
+          "alt": "Pure Cube 582 sauna with outdoor shower and slatted cedar panels, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 14537,
+          "frm": 0,
+          "cap": "3 person",
+          "d": "A three-person outdoor sauna with an integrated shower.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube 672",
+          "href": "/saunas/pure-cube-672",
+          "img": "./assets/58a2a28ac886d2cf82390b41145b9708.jpg",
+          "alt": "Pure Cube 672 cedar sauna with slatted semi-privacy panels, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 15589,
+          "frm": 0,
+          "cap": "5–6 person",
+          "d": "Designed for sessions with friends and family, seating four to five.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "Pure Cube 772",
+          "href": "/saunas/pure-cube-772",
+          "img": "./assets/56f7eda6da844a49827e0d0d074a5c9d.jpg",
+          "alt": "Pure Cube 772 cedar outdoor sauna with corner glass, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Pure Cube",
+          "p": 15120,
+          "frm": 0,
+          "cap": "Up to 6 person",
+          "d": "The largest Pure Cube: a full 7' x 7' room with corner glass, for up to six.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "The Studio Six Mini",
+          "href": "/saunas/studio-six-mini",
+          "img": "./assets/796460f3cfa8d56058ff4d1769004a94.jpg",
+          "alt": "Studio Six Mini black metal-clad outdoor sauna with glass door, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Studio Six",
+          "p": 17499,
+          "frm": 0,
+          "cap": "2–3 person",
+          "d": "R24 insulated SIP walls and metal siding for true four-season use.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "The Studio Six Max",
+          "href": "/saunas/studio-six-max",
+          "img": "./assets/c3ba4c791b08f2af25fa66d9d9178af4.jpg",
+          "alt": "Studio Six Max black metal-clad outdoor sauna with picture window, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Studio Six",
+          "p": 22350,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "About 8' × 7', with R24 insulated SIP walls and room for four to six.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Studio Six Max w/ Porch",
+          "href": "/saunas/studio-six-max-porch",
+          "img": "./assets/24d1bb94e66c586e026a6a0586346bbd.jpg",
+          "alt": "Studio Six Max with covered porch and outdoor shower, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Studio Six",
+          "p": 26599,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "The Studio Six Max with a cedar-lined shower porch under one roof.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "Studio Six Max w/ Changeroom",
+          "href": "/saunas/studio-six-max-changeroom",
+          "img": "./assets/a1dc5e2034da65d3a67ed7be56245cb4.jpg",
+          "alt": "Studio Six Max with Changeroom black outdoor sauna with picture window and glass door, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Studio Six",
+          "p": 28460,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "The Studio Six Max with a private, enclosed changeroom.",
+          "best": 0,
+          "specs": []
+        },
+        {
+          "n": "The Hudson",
+          "href": "/saunas/hudson",
+          "img": "./assets/30f7ceb7e3269da323c1950b3e194159.jpg",
+          "alt": "Hudson outdoor sauna with peaked roof and black metal siding, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Signature Designs",
+          "p": 17489,
+          "frm": 0,
+          "cap": "5 person",
+          "d": "Black metal exterior siding paired with warm Western Red Cedar.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "The Neptune Mini",
+          "href": "/saunas/neptune-mini",
+          "img": "./assets/cbcc7056a1df009b2f6577e456102161.jpg",
+          "alt": "Neptune Mini black outdoor sauna with open glass front, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Signature Designs",
+          "p": 14999,
+          "frm": 0,
+          "cap": "2–3 person",
+          "d": "The Neptune's wide-glass design in a smaller footprint.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "The Neptune",
+          "href": "/saunas/neptune",
+          "img": "./assets/4ae975455c55a574d58da146b4a8a99f.jpg",
+          "alt": "Neptune black outdoor sauna with large glass wall, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Signature Designs",
+          "p": 17896,
+          "frm": 0,
+          "cap": "Up to 6 person",
+          "d": "Wide glass walls that bring the outdoors in.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "The Orion",
+          "href": "/saunas/orion",
+          "img": "./assets/5e9f4eaa2e94c9275988e1bb3ca181a7.jpg",
+          "alt": "Orion outdoor sauna with wrap-around glass and black siding, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Signature Designs",
+          "p": 18735,
+          "frm": 0,
+          "cap": "5–7 person",
+          "d": "Crafted from Canadian cedar, in clear or knotty grain.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "The Avalon Sauna",
+          "href": "/saunas/avalon",
+          "img": "./assets/a804429a8592e40dc5e9e5ef1774d6ee.jpg",
+          "alt": "Avalon cedar log outdoor sauna with large front window, The Toronto Sauna Co.",
+          "contain": 1,
+          "s": "Signature Designs",
+          "p": 15450,
+          "frm": 0,
+          "cap": "3–4 person",
+          "d": "Three-tier seating, solid timber and a contemporary roofline.",
+          "best": 1,
+          "specs": []
+        },
+        {
+          "n": "Barrel Sauna",
+          "href": "/saunas/barrel-sauna",
+          "s": "Barrel",
+          "p": 8499,
+          "frm": 1,
+          "cap": "2–10 person",
+          "d": "The classic Western Red Cedar barrel, for an authentic Finnish sauna.",
+          "best": 0,
+          "specs": [
+            "7' × 4' to 7' × 10'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+          "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Barrel Sauna w/ Porch",
+          "href": "/saunas/barrel-porch",
+          "s": "Barrel",
+          "p": 10250,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "Our classic barrel with a covered porch to cool down.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/56292481706ea6386d3e8179d51b4351.jpg",
+          "alt": "Barrel sauna with covered porch and benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Barrel Sauna w/ Changeroom",
+          "href": "/saunas/barrel-changeroom",
+          "s": "Barrel",
+          "p": 12100,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "A barrel sauna with a built-in changeroom.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+          "alt": "Barrel sauna with changeroom, front door and windows, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna",
+          "href": "/saunas/panoramic-barrel",
+          "s": "Panoramic Barrel",
+          "p": 12600,
+          "frm": 1,
+          "cap": "4–10 person",
+          "d": "A full glass back wall, built for the view.",
+          "best": 0,
+          "specs": [
+            "7' × 6' to 7' × 10'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with domed glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna w/ Porch",
+          "href": "/saunas/panoramic-barrel-porch",
+          "s": "Panoramic Barrel",
+          "p": 13650,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "The panoramic barrel with a covered porch.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with porch and glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna w/ Changeroom",
+          "href": "/saunas/panoramic-barrel-changeroom",
+          "s": "Panoramic Barrel",
+          "p": 15600,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "The panoramic barrel with a built-in changeroom.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with changeroom and glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Luna Sauna",
+          "href": "/saunas/luna-sauna",
+          "s": "Luna",
+          "p": 13200,
+          "frm": 1,
+          "cap": "4–6 person",
+          "d": "Modern cedar cabin with softly rounded corners and a big bronze-glass front.",
+          "best": 0,
+          "specs": [
+            "8' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/a05e478e4a848726a005486a0cf94731.jpg",
+          "alt": "Luna outdoor sauna with rounded cedar corners and glass front, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Luna Sauna w/ Porch",
+          "href": "/saunas/luna-porch",
+          "s": "Luna",
+          "p": 15400,
+          "frm": 1,
+          "cap": "4–6 person",
+          "d": "The Luna with a covered cedar porch and bench for cooling off between rounds.",
+          "best": 0,
+          "specs": [
+            "8' × 6', 7' or 8' + porch",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/704ca5d626bcc96ba42e9a509edb562e.jpg",
+          "alt": "Luna sauna with covered cedar porch and benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Georgian Cabin Sauna",
+          "href": "/saunas/ct-georgian",
+          "s": "Canadian Timber",
+          "p": 9695,
+          "frm": 1,
+          "cap": "5–6 person",
+          "d": "Dovetail cabin with a black steel roof. Add a covered porch or a full changeroom.",
+          "best": 0,
+          "specs": [
+            "8' × 8' to 8' × 12'",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/5b0d35ccd6de9a18530e41e3a9fda468.jpg",
+          "alt": "Georgian cabin sauna with black steel roof and chimney, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Palmer Cabin Sauna",
+          "href": "/saunas/ct-palmer",
+          "s": "Canadian Timber",
+          "p": 9150,
+          "frm": 0,
+          "cap": "2–4 person",
+          "d": "A timeless shed-style cabin with a roof overhang and metal shingle roof.",
+          "best": 0,
+          "specs": [
+            "98\" × 97\" footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/00dce3422f5a1d020ff4afb03a6326ce.jpg",
+          "alt": "Palmer cabin sauna with roof overhang, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The CT Luna Sauna",
+          "href": "/saunas/ct-luna",
+          "s": "Canadian Timber",
+          "p": 9355,
+          "frm": 0,
+          "cap": "3–4 person",
+          "d": "Rounded corners, solid white cedar log walls and a leak-proof rubber roof.",
+          "best": 0,
+          "specs": [
+            "86\" × 85\" footprint",
+            "Eastern White Cedar",
+            "Electric heat"
+          ],
+          "img": "./assets/bfca3460870c752a61ce20b0331626f0.jpg",
+          "alt": "CT Luna sauna with rounded corners, window and glass door, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Granby Cabin Sauna",
+          "href": "/saunas/ct-granby",
+          "s": "Canadian Timber",
+          "p": 7850,
+          "frm": 0,
+          "cap": "4 person",
+          "d": "A compact dovetail cabin with a black steel roof, for small spaces.",
+          "best": 0,
+          "specs": [
+            "5' × 5' footprint",
+            "Eastern White Cedar",
+            "Electric heat"
+          ],
+          "img": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+          "alt": "Granby cabin sauna with black steel roof and glass door, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The MiniPOD Sauna",
+          "href": "/saunas/ct-mini-pod",
+          "s": "Canadian Timber",
+          "p": 7500,
+          "frm": 0,
+          "cap": "2–4 person",
+          "d": "A raindrop-shaped pod with a triple-layer roof. Metal roof upgrade available.",
+          "best": 0,
+          "specs": [
+            "85\" × 85\" footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/3756fbcfef5ae5190c76d6963f575af5.jpg",
+          "alt": "MiniPOD raindrop sauna with black asphalt roof, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Tranquility MP Barrel Sauna",
+          "href": "/saunas/ct-tranquility-mp",
+          "s": "Canadian Timber",
+          "p": 10459,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "Our longest porch barrel, with half-moon windows front and back.",
+          "best": 0,
+          "specs": [
+            "118\" long with porch",
+            "Half-moon windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+          "alt": "Tranquility MP barrel sauna with half-moon windows and porch, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Tranquility Barrel Sauna",
+          "href": "/saunas/ct-tranquility",
+          "s": "Canadian Timber",
+          "p": 8185,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "A long porch barrel with rectangular front windows and an 18\" porch.",
+          "best": 0,
+          "specs": [
+            "118\" long with porch",
+            "Rectangular windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/8d41bab8df6353c1c6bde79089892832.jpg",
+          "alt": "Tranquility barrel sauna with porch and side benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Serenity MP Barrel Sauna",
+          "href": "/saunas/ct-serenity-mp",
+          "s": "Canadian Timber",
+          "p": 10174,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "The Serenity porch barrel with half-moon windows front and back.",
+          "best": 0,
+          "specs": [
+            "94½\" long with porch",
+            "Half-moon windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+          "alt": "Serenity MP barrel sauna with half-moon windows and porch, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Serenity Barrel Sauna",
+          "href": "/saunas/ct-serenity",
+          "s": "Canadian Timber",
+          "p": 7710,
+          "frm": 0,
+          "cap": "4–6 person",
+          "d": "A classic porch barrel in white cedar: solid walls and a glass door.",
+          "best": 0,
+          "specs": [
+            "94½\" long with porch",
+            "No windows",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/181bffff9a069465d8cf4cfd9cb41dd1.jpg",
+          "alt": "Serenity barrel sauna with front porch and benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "The Harmony Barrel Sauna",
+          "href": "/saunas/ct-harmony",
+          "s": "Canadian Timber",
+          "p": 7468,
+          "frm": 0,
+          "cap": "4 person",
+          "d": "Our most accessible barrel, with a choice of cedar or metal roofs.",
+          "best": 0,
+          "specs": [
+            "6.5' × 6.5' footprint",
+            "Eastern White Cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/cd4d92d1e14fc912b6b65bfd8ae2e971.png",
+          "alt": "Harmony barrel sauna with black shingle roof cover, The Toronto Sauna Co.",
+          "contain": 1
+        }
+      ],
+      "chips": [
+        "Pure Cube",
+        "Studio Six",
+        "Signature Designs",
+        "Barrel",
+        "Panoramic Barrel",
+        "Modern Cabin",
+        "Canadian Timber"
+      ],
+      "showBest": true
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "All Saunas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>All outdoor saunas</strong>",
+          "text": "All outdoor saunas"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Outdoor saunas for sale across Ontario &amp; <em><strong>Canada.</strong></em>",
+          "text": "Outdoor saunas for sale across Ontario & Canada."
+        },
+        {
+          "type": "paragraph",
+          "html": "Every outdoor sauna we offer, from compact cedar barrels and modern cubes to four-season Studio Six models. Delivered and installed across Ontario, and shipped Canada-wide.",
+          "text": "Every outdoor sauna we offer, from compact cedar barrels and modern cubes to four-season Studio Six models. Delivered and installed across Ontario, and shipped Canada-wide."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cube Saunas",
+          "text": "Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Barrel Saunas",
+          "text": "Barrel Saunas",
+          "href": "/saunas/barrel",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cabin &amp; Canadian Timber",
+          "text": "Cabin & Canadian Timber",
+          "href": "/saunas/canadian-timber",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All Outdoor Saunas",
+          "text": "All Outdoor Saunas",
+          "href": "/saunas",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Luna Saunas",
+          "text": "Luna Saunas",
+          "href": "/saunas/luna",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{b}}</strong>",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgCover}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgContain}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>All Saunas</strong>",
+          "text": "All Saunas"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Need help choosing?",
+          "text": "Need help choosing?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Start with where it's going (backyard, deck, dock or cottage), how many people you want to seat, and whether you'd like wood or electric heat. Or book a consultation and we'll walk you through it.",
+          "text": "Start with where it's going (backyard, deck, dock or cottage), how many people you want to seat, and whether you'd like wood or electric heat. Or book a consultation and we'll walk you through it."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
+          "text": "Not sure which sauna fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget.",
+          "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

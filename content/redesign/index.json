@@ -1,0 +1,437 @@
+{
+  "pages": {
+    "/": {
+      "file": "Main.json",
+      "warnings": 0
+    },
+    "/about": {
+      "file": "About.json",
+      "warnings": 0
+    },
+    "/accessories": {
+      "file": "Accessories.json",
+      "warnings": 0
+    },
+    "/blog": {
+      "file": "Blog.json",
+      "warnings": 0
+    },
+    "/cart": {
+      "file": "Cart.json",
+      "warnings": 0
+    },
+    "/cold-plunges": {
+      "file": "ColdPlunges.json",
+      "warnings": 0
+    },
+    "/cold-plunges/arctic": {
+      "file": "PlungeArctic.json",
+      "warnings": 1
+    },
+    "/cold-plunges/baltic": {
+      "file": "PlungeBaltic.json",
+      "warnings": 1
+    },
+    "/cold-plunges/flow": {
+      "file": "PlungeFlow.json",
+      "warnings": 1
+    },
+    "/cold-plunges/glacier": {
+      "file": "PlungeGlacier.json",
+      "warnings": 1
+    },
+    "/cold-plunges/polar": {
+      "file": "PlungePolar.json",
+      "warnings": 1
+    },
+    "/contact": {
+      "file": "Contact.json",
+      "warnings": 0
+    },
+    "/outdoor-showers": {
+      "file": "OutdoorShowers.json",
+      "warnings": 0
+    },
+    "/outdoor-showers/cloudburst": {
+      "file": "ShowerCloudburst.json",
+      "warnings": 1
+    },
+    "/outdoor-showers/rainbow-barrel": {
+      "file": "ShowerRainbowBarrel.json",
+      "warnings": 1
+    },
+    "/outdoor-showers/savannah": {
+      "file": "ShowerSavannah.json",
+      "warnings": 1
+    },
+    "/outdoor-showers/sierra": {
+      "file": "ShowerSierra.json",
+      "warnings": 1
+    },
+    "/outdoor-showers/skylight": {
+      "file": "ShowerSkylight.json",
+      "warnings": 1
+    },
+    "/outdoor-showers/sunlight": {
+      "file": "ShowerSunlight.json",
+      "warnings": 1
+    },
+    "/privacy": {
+      "file": "PolicyPrivacy.json",
+      "warnings": 0
+    },
+    "/refund-policy": {
+      "file": "PolicyReturns.json",
+      "warnings": 0
+    },
+    "/sauna-finder": {
+      "file": "SaunaFinder.json",
+      "warnings": 0
+    },
+    "/sauna-heaters": {
+      "file": "Heaters.json",
+      "warnings": 0
+    },
+    "/sauna-heaters/apex-208": {
+      "file": "HeaterApex208.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/apex-240": {
+      "file": "HeaterApex240.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/apex-mini": {
+      "file": "HeaterApexMini.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/harvia-kip": {
+      "file": "HeaterHarviaKIP.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/huum-drop": {
+      "file": "HeaterHuumDrop.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/huum-hive-mini": {
+      "file": "HeaterHuumHiveMini.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/narvi-kaamos": {
+      "file": "HeaterNarviKaamos.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/narvi-kuru": {
+      "file": "HeaterNarviKuru.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/narvi-nc": {
+      "file": "HeaterNarviNC.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/narvi-velvet": {
+      "file": "HeaterNarviVelvet.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/pellum": {
+      "file": "HeaterPellum.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/revive": {
+      "file": "HeaterRevive.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/revive-slim": {
+      "file": "HeaterReviveSlim.json",
+      "warnings": 1
+    },
+    "/sauna-heaters/timber-glow": {
+      "file": "HeaterTimberGlow.json",
+      "warnings": 1
+    },
+    "/saunas": {
+      "file": "SaunasAll.json",
+      "warnings": 0
+    },
+    "/saunas/avalon": {
+      "file": "SaunaAvalon.json",
+      "warnings": 1
+    },
+    "/saunas/barrel": {
+      "file": "SaunasBarrel.json",
+      "warnings": 0
+    },
+    "/saunas/barrel-changeroom": {
+      "file": "SaunaBarrelChangeroom.json",
+      "warnings": 1
+    },
+    "/saunas/barrel-porch": {
+      "file": "SaunaBarrelPorch.json",
+      "warnings": 1
+    },
+    "/saunas/barrel-sauna": {
+      "file": "SaunaBarrel.json",
+      "warnings": 1
+    },
+    "/saunas/best-sellers": {
+      "file": "SaunasBestSellers.json",
+      "warnings": 0
+    },
+    "/saunas/canadian-timber": {
+      "file": "SaunasTimber.json",
+      "warnings": 0
+    },
+    "/saunas/ct-georgian": {
+      "file": "SaunaCTGeorgian.json",
+      "warnings": 1
+    },
+    "/saunas/ct-granby": {
+      "file": "SaunaCTGranby.json",
+      "warnings": 1
+    },
+    "/saunas/ct-harmony": {
+      "file": "SaunaCTHarmony.json",
+      "warnings": 1
+    },
+    "/saunas/ct-luna": {
+      "file": "SaunaCTLuna.json",
+      "warnings": 1
+    },
+    "/saunas/ct-mini-pod": {
+      "file": "SaunaCTMiniPod.json",
+      "warnings": 1
+    },
+    "/saunas/ct-palmer": {
+      "file": "SaunaCTPalmer.json",
+      "warnings": 1
+    },
+    "/saunas/ct-serenity": {
+      "file": "SaunaCTSerenity.json",
+      "warnings": 1
+    },
+    "/saunas/ct-serenity-mp": {
+      "file": "SaunaCTSerenityMP.json",
+      "warnings": 1
+    },
+    "/saunas/ct-tranquility": {
+      "file": "SaunaCTTranquility.json",
+      "warnings": 1
+    },
+    "/saunas/ct-tranquility-mp": {
+      "file": "SaunaCTTranquilityMP.json",
+      "warnings": 1
+    },
+    "/saunas/cube": {
+      "file": "SaunasCube.json",
+      "warnings": 0
+    },
+    "/saunas/element-loft": {
+      "file": "SaunaElementLoft.json",
+      "warnings": 1
+    },
+    "/saunas/element-nook": {
+      "file": "SaunaElementNook.json",
+      "warnings": 1
+    },
+    "/saunas/element-studio": {
+      "file": "SaunaElementStudio.json",
+      "warnings": 1
+    },
+    "/saunas/hudson": {
+      "file": "SaunaHudson.json",
+      "warnings": 1
+    },
+    "/saunas/indoor": {
+      "file": "SaunasIndoor.json",
+      "warnings": 0
+    },
+    "/saunas/indoor/cabin": {
+      "file": "SaunaIndoorCabin.json",
+      "warnings": 1
+    },
+    "/saunas/indoor/custom": {
+      "file": "SaunasIndoorCustom.json",
+      "warnings": 0
+    },
+    "/saunas/indoor/kits": {
+      "file": "SaunasIndoorKits.json",
+      "warnings": 0
+    },
+    "/saunas/indoor/pure-cube-552": {
+      "file": "SaunaIndoorPureCube552.json",
+      "warnings": 1
+    },
+    "/saunas/indoor/pure-cube-572": {
+      "file": "SaunaIndoorPureCube572.json",
+      "warnings": 1
+    },
+    "/saunas/luna": {
+      "file": "SaunasLuna.json",
+      "warnings": 0
+    },
+    "/saunas/luna-porch": {
+      "file": "SaunaLunaPorch.json",
+      "warnings": 1
+    },
+    "/saunas/luna-sauna": {
+      "file": "SaunaLuna.json",
+      "warnings": 1
+    },
+    "/saunas/neptune": {
+      "file": "SaunaNeptune.json",
+      "warnings": 1
+    },
+    "/saunas/neptune-mini": {
+      "file": "SaunaNeptuneMini.json",
+      "warnings": 1
+    },
+    "/saunas/orion": {
+      "file": "SaunaOrion.json",
+      "warnings": 1
+    },
+    "/saunas/panoramic-barrel": {
+      "file": "SaunaPanoramicBarrel.json",
+      "warnings": 1
+    },
+    "/saunas/panoramic-barrel-changeroom": {
+      "file": "SaunaPanoramicBarrelChangeroom.json",
+      "warnings": 1
+    },
+    "/saunas/panoramic-barrel-porch": {
+      "file": "SaunaPanoramicBarrelPorch.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-552": {
+      "file": "SaunaPureCube552.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-572": {
+      "file": "SaunaPureCube572.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-582": {
+      "file": "SaunaPureCube582.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-582-shower": {
+      "file": "SaunaPureCube582Shower.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-672": {
+      "file": "SaunaPureCube672.json",
+      "warnings": 1
+    },
+    "/saunas/pure-cube-772": {
+      "file": "SaunaPureCube772.json",
+      "warnings": 1
+    },
+    "/saunas/studio-six-max": {
+      "file": "SaunaStudioSixMax.json",
+      "warnings": 1
+    },
+    "/saunas/studio-six-max-changeroom": {
+      "file": "SaunaStudioSixMaxChangeroom.json",
+      "warnings": 1
+    },
+    "/saunas/studio-six-max-porch": {
+      "file": "SaunaStudioSixMaxPorch.json",
+      "warnings": 1
+    },
+    "/saunas/studio-six-mini": {
+      "file": "SaunaStudioSixMini.json",
+      "warnings": 1
+    },
+    "/saunas/trinity": {
+      "file": "SaunaTrinity.json",
+      "warnings": 1
+    },
+    "/service-areas": {
+      "file": "ServiceAreas.json",
+      "warnings": 0
+    },
+    "/service-areas/aurora": {
+      "file": "CityAurora.json",
+      "warnings": 0
+    },
+    "/service-areas/brooklin": {
+      "file": "CityBrooklin.json",
+      "warnings": 0
+    },
+    "/service-areas/burlington": {
+      "file": "CityBurlington.json",
+      "warnings": 0
+    },
+    "/service-areas/collingwood": {
+      "file": "CityCollingwood.json",
+      "warnings": 0
+    },
+    "/service-areas/haliburton": {
+      "file": "CityHaliburton.json",
+      "warnings": 0
+    },
+    "/service-areas/king-city": {
+      "file": "CityKingCity.json",
+      "warnings": 0
+    },
+    "/service-areas/king-township": {
+      "file": "CityKingTownship.json",
+      "warnings": 0
+    },
+    "/service-areas/markham": {
+      "file": "CityMarkham.json",
+      "warnings": 0
+    },
+    "/service-areas/mississauga": {
+      "file": "CityMississauga.json",
+      "warnings": 0
+    },
+    "/service-areas/muskoka": {
+      "file": "CityMuskoka.json",
+      "warnings": 0
+    },
+    "/service-areas/niagara-on-the-lake": {
+      "file": "CityNiagaraOnTheLake.json",
+      "warnings": 0
+    },
+    "/service-areas/oakville": {
+      "file": "CityOakville.json",
+      "warnings": 0
+    },
+    "/service-areas/prince-edward-county": {
+      "file": "CityPrinceEdwardCounty.json",
+      "warnings": 0
+    },
+    "/service-areas/richmond-hill": {
+      "file": "CityRichmondHill.json",
+      "warnings": 0
+    },
+    "/service-areas/toronto": {
+      "file": "CityToronto.json",
+      "warnings": 0
+    },
+    "/service-areas/vaughan": {
+      "file": "CityVaughan.json",
+      "warnings": 0
+    },
+    "/service-areas/whitby": {
+      "file": "CityWhitby.json",
+      "warnings": 0
+    },
+    "/shipping": {
+      "file": "PolicyShipping.json",
+      "warnings": 0
+    },
+    "/terms": {
+      "file": "PolicyTerms.json",
+      "warnings": 0
+    },
+    "/warranty": {
+      "file": "PolicyWarranty.json",
+      "warnings": 0
+    },
+    "/wellness": {
+      "file": "Wellness.json",
+      "warnings": 0
+    }
+  },
+  "warnings": []
+}

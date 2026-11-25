@@ -1,0 +1,530 @@
+{
+  "file": "SaunasBarrel.dc.html",
+  "route": "/saunas/barrel",
+  "pageMap": {
+    "route": "/saunas/barrel",
+    "title": "Barrel Saunas | The Toronto Sauna Co.",
+    "description": "Classic cedar barrel saunas in sizes for 2 to 8, with porch, changeroom and panoramic glass options. Delivered and installed across Ontario.",
+    "index": "",
+    "photos": 10
+  },
+  "head": {
+    "title": "Barrel Saunas | The Toronto Sauna Co.",
+    "description": "Classic cedar barrel saunas in sizes for 2 to 8, with porch, changeroom and panoramic glass options. Delivered and installed across Ontario.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/barrel",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Barrel Saunas | The Toronto Sauna Co.",
+      "description": "Classic cedar barrel saunas in sizes for 2 to 8, with porch, changeroom and panoramic glass options. Delivered and installed across Ontario.",
+      "url": "https://www.thetorontosaunaco.com/saunas/barrel",
+      "image": "https://www.thetorontosaunaco.com/_blob/ccc6045b732dfca5807d61e6d8c85bed"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {
+    "D": {
+      "items": [
+        {
+          "n": "Barrel Sauna",
+          "href": "/saunas/barrel-sauna",
+          "s": "Barrel",
+          "p": 8499,
+          "frm": 1,
+          "cap": "2–10 person",
+          "d": "The classic Western Red Cedar barrel, for an authentic Finnish sauna.",
+          "best": 0,
+          "specs": [
+            "7' × 4' to 7' × 10'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+          "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Barrel Sauna w/ Porch",
+          "href": "/saunas/barrel-porch",
+          "s": "Barrel",
+          "p": 10250,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "Our classic barrel with a covered porch to cool down.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/56292481706ea6386d3e8179d51b4351.jpg",
+          "alt": "Barrel sauna with covered porch and benches, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Barrel Sauna w/ Changeroom",
+          "href": "/saunas/barrel-changeroom",
+          "s": "Barrel",
+          "p": 12100,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "A barrel sauna with a built-in changeroom.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+          "alt": "Barrel sauna with changeroom, front door and windows, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna",
+          "href": "/saunas/panoramic-barrel",
+          "s": "Panoramic Barrel",
+          "p": 12600,
+          "frm": 1,
+          "cap": "4–10 person",
+          "d": "A full glass back wall, built for the view.",
+          "best": 0,
+          "specs": [
+            "7' × 6' to 7' × 10'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with domed glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna w/ Porch",
+          "href": "/saunas/panoramic-barrel-porch",
+          "s": "Panoramic Barrel",
+          "p": 13650,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "The panoramic barrel with a covered porch.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with porch and glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        },
+        {
+          "n": "Panoramic Barrel Sauna w/ Changeroom",
+          "href": "/saunas/panoramic-barrel-changeroom",
+          "s": "Panoramic Barrel",
+          "p": 15600,
+          "frm": 1,
+          "cap": "4–8 person",
+          "d": "The panoramic barrel with a built-in changeroom.",
+          "best": 0,
+          "specs": [
+            "7' × 6', 7' or 8'",
+            "Knotty or clear red cedar",
+            "Wood or electric heat"
+          ],
+          "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+          "alt": "Panoramic barrel sauna with changeroom and glass back wall, The Toronto Sauna Co.",
+          "contain": 1
+        }
+      ],
+      "chips": [
+        "Barrel",
+        "Panoramic Barrel"
+      ],
+      "showBest": true
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "Barrel Saunas"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Barrel saunas</strong>",
+          "text": "Barrel saunas"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Classic cedar barrel <em><strong>saunas.</strong></em>",
+          "text": "Classic cedar barrel saunas."
+        },
+        {
+          "type": "paragraph",
+          "html": "The traditional Finnish shape in Western Red Cedar. The round form heats quickly and evenly, and you can add a porch, a changeroom or a full panoramic glass wall.",
+          "text": "The traditional Finnish shape in Western Red Cedar. The round form heats quickly and evenly, and you can add a porch, a changeroom or a full panoramic glass wall."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cube Saunas",
+          "text": "Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Barrel Saunas",
+          "text": "Barrel Saunas",
+          "href": "/saunas/barrel",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cabin &amp; Canadian Timber",
+          "text": "Cabin & Canadian Timber",
+          "href": "/saunas/canadian-timber",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All Outdoor Saunas",
+          "text": "All Outdoor Saunas",
+          "href": "/saunas",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Luna Saunas",
+          "text": "Luna Saunas",
+          "href": "/saunas/luna",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Not sure what fits?</strong>",
+              "text": "Not sure what fits?"
+            },
+            {
+              "type": "text",
+              "html": "Enter your space and we’ll show every sauna that fits, in about a minute.",
+              "text": "Enter your space and we’ll show every sauna that fits, in about a minute."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{b}}</strong>",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgCover}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgContain}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Barrel Saunas</strong>",
+          "text": "Barrel Saunas"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Why choose a barrel sauna?",
+          "text": "Why choose a barrel sauna?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Barrel saunas are the most efficient shape to heat: there's less air volume above the benches, so they warm up fast. They're also one of the most affordable ways into a real outdoor cedar sauna.",
+          "text": "Barrel saunas are the most efficient shape to heat: there's less air volume above the benches, so they warm up fast. They're also one of the most affordable ways into a real outdoor cedar sauna."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which sauna <em>fits?</em></strong>",
+          "text": "Not sure which sauna fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget.",
+          "text": "Visit our GTA showroom to sit inside the models, or book a consultation and we'll recommend the right sauna for your space and budget."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

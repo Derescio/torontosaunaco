@@ -1,0 +1,1062 @@
+{
+  "file": "ShowerSierra.dc.html",
+  "route": "/outdoor-showers/sierra",
+  "pageMap": {
+    "route": "/outdoor-showers/sierra",
+    "title": "The Sierra Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Sierra Outdoor Shower: Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design… Delivered across Ontario. Request a quote.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "The Sierra Outdoor Shower | The Toronto Sauna Co.",
+    "description": "Sierra Outdoor Shower: Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design… Delivered across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/outdoor-showers/sierra",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Sierra Outdoor Shower | The Toronto Sauna Co.",
+      "description": "Sierra Outdoor Shower: Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design… Delivered across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/outdoor-showers/sierra",
+      "image": "https://www.thetorontosaunaco.com/_blob/4bc7f6784691d4713252dbf417242385"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Sierra Outdoor Shower",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/4bc7f6784691d4713252dbf417242385"
+        ],
+        "url": "https://www.thetorontosaunaco.com/outdoor-showers/sierra",
+        "description": "Sierra Outdoor Shower: Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design… Delivered across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "872.50",
+          "url": "https://www.thetorontosaunaco.com/outdoor-showers/sierra",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "kind": "Outdoor shower",
+      "section": "plunge",
+      "basePrice": 872.5,
+      "buildLabel": "Build your outdoor shower",
+      "related": [
+        "Compare other outdoor <span style=\"font-style: italic\">showers</span>",
+        [
+          "View All Outdoor Showers",
+          "/outdoor-showers"
+        ],
+        [
+          "Cold Plunges",
+          "/cold-plunges"
+        ]
+      ],
+      "installCopy": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+      "elecNote": "Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+      "height": 4000,
+      "file": "ShowerSierra",
+      "name": "The Sierra Outdoor Shower",
+      "series": "Canadian Timber Collection",
+      "collection": null,
+      "intro": "Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design as the Sunlight, in light, tight-knot white cedar. Garden-hose ready, with premium hardware available.",
+      "highlights": [
+        "Pillar shower",
+        "31\" × 31\" base",
+        "Eastern White Cedar",
+        "Made in Canada"
+      ],
+      "photos": [
+        "The Sierra Outdoor Shower",
+        "Detail",
+        "In use"
+      ],
+      "specs": [
+        [
+          "Overall height",
+          "81½\" (207 cm) with base"
+        ],
+        [
+          "Pillar",
+          "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep"
+        ],
+        [
+          "Base",
+          "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high"
+        ],
+        [
+          "Shower head height",
+          "About 76\" (193 cm) with premium hardware"
+        ],
+        [
+          "Wood",
+          "Eastern White Cedar"
+        ],
+        [
+          "Hardware",
+          "Sold separately: Premium Shower Hardware add-on"
+        ],
+        [
+          "Water",
+          "Garden hose for cold water; hot and cold with premium hardware"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Wood",
+          "desc": "Built in Eastern White Cedar.",
+          "groups": [
+            {
+              "id": "wood",
+              "title": "Wood",
+              "type": "single",
+              "required": true,
+              "default": "wec",
+              "base": true,
+              "options": [
+                {
+                  "id": "wec",
+                  "label": "Eastern White Cedar",
+                  "sub": "Light natural colour, tight knots. Canadian Timber models come in white cedar only",
+                  "price": 872.5,
+                  "photo": "White cedar",
+                  "img": "./assets/4bc7f6784691d4713252dbf417242385.jpg",
+                  "alt": "Sierra white cedar pillar outdoor shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hw",
+          "title": "Hardware",
+          "desc": "Buy the shower on its own, or add our premium hardware.",
+          "groups": [
+            {
+              "id": "hardware",
+              "title": "Shower hardware",
+              "type": "single",
+              "required": true,
+              "default": "hw_none",
+              "note": "Showers ship without hardware. Pillar showers can run cold from a garden hose; add the Premium Shower Hardware for a rain head, hand shower and hot and cold mixing valve. A plumber may be needed for hot water.",
+              "options": [
+                {
+                  "id": "hw_none",
+                  "label": "Unit only",
+                  "sub": "No hardware: I have my own or will add it later",
+                  "price": 0,
+                  "none": true,
+                  "photo": "Unit only"
+                },
+                {
+                  "id": "hw_prem",
+                  "label": "Premium Shower Hardware",
+                  "sub": "Brushed stainless steel: round rain head, hand shower on a slide bar, hot and cold mixing valve. A plumber may be needed for hot water.",
+                  "price": 390,
+                  "photo": "Premium Shower Hardware",
+                  "img": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+                  "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Delivered to your door anywhere in Ontario, quoted for your location.",
+          "prompt": "Delivery",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Delivery",
+              "type": "single",
+              "required": true,
+              "default": "d_quote",
+              "note": "We confirm your delivery cost when we follow up on your quote request. Outside Ontario? We ship Canada-wide; contact us for a quote.",
+              "options": [
+                {
+                  "id": "d_quote",
+                  "label": "Delivery to your door",
+                  "sub": "Anywhere in Ontario; cost confirmed with your quote",
+                  "price": 0,
+                  "tag": "Quoted separately",
+                  "photo": "Delivery truck"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "crumbs": [
+        [
+          "Plunge & Shower",
+          "/cold-plunges"
+        ],
+        [
+          "Outdoor Showers",
+          "/outdoor-showers"
+        ]
+      ],
+      "gallery": [
+        {
+          "src": "./assets/4bc7f6784691d4713252dbf417242385.jpg",
+          "alt": "Sierra white cedar pillar outdoor shower, The Toronto Sauna Co.",
+          "fit": "contain"
+        },
+        {
+          "src": "./assets/c5584142ca965517f5488205bb8058fe.jpg",
+          "alt": "Sierra outdoor shower on a pool deck, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/ebe5243e975e997d08a26b1e2b4b1e8d.jpg",
+          "alt": "Sierra outdoor shower in a garden, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a026decc32945722a11ed3b7012cb170.jpg",
+          "alt": "Premium stainless outdoor shower hardware with hand shower, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "about": {
+        "title": "Simple, light and Canadian",
+        "lede": "The Sierra is the easiest way to add an outdoor shower by the pool, hot tub or sauna.",
+        "items": [
+          [
+            "Eastern White Cedar",
+            "Light natural colour and tight knots. Leave it to weather to silver-grey, or keep the colour with an exterior oil."
+          ],
+          [
+            "Compact footprint",
+            "A 15\" pillar on a 31\" slatted deck. Easy to assemble, connect and move."
+          ],
+          [
+            "Garden hose or hot and cold",
+            "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve."
+          ],
+          [
+            "Made in Canada",
+            "Part of the Canadian Timber Collection, with a 5-year residential limited warranty."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/958af6053b9085c2d3176a040b7c4eff.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Outdoor Showers",
+              "href": "/outdoor-showers"
+            },
+            {
+              "text": "The Sierra Outdoor Shower"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>{{galCount}}</strong>",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Sierra Outdoor Shower",
+              "text": "Photo: The Sierra Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "The Sierra Outdoor Shower",
+              "text": "The Sierra Outdoor Shower"
+            },
+            {
+              "type": "text",
+              "html": "Detail",
+              "text": "Detail"
+            },
+            {
+              "type": "text",
+              "html": "In use",
+              "text": "In use"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Canadian Timber Collection · Outdoor shower</strong>",
+          "text": "Canadian Timber Collection · Outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Sierra Outdoor Shower",
+          "text": "The Sierra Outdoor Shower"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design as the Sunlight, in light, tight-knot white cedar. Garden-hose ready, with premium hardware available.",
+          "text": "Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design as the Sunlight, in light, tight-knot white cedar. Garden-hose ready, with premium hardware available."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Pillar shower",
+              "text": "Pillar shower"
+            },
+            {
+              "html": "31\" × 31\" base",
+              "text": "31\" × 31\" base"
+            },
+            {
+              "html": "Eastern White Cedar",
+              "text": "Eastern White Cedar"
+            },
+            {
+              "html": "Made in Canada",
+              "text": "Made in Canada"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your outdoor shower</strong>",
+          "text": "Build your outdoor shower"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>STEP 0{{st.num}}</strong>",
+                  "text": "STEP 0{{st.num}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{st.title}}",
+                  "text": "{{st.title}}"
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.done}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.notDone}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.open}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>CLOSE</strong>",
+                      "text": "CLOSE"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.closed}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>EDIT</strong>",
+                      "text": "EDIT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{g.title}}</strong>",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.priceText}}</strong>",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total, before delivery",
+                "text": "Estimated total, before delivery"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>About this sauna</strong>",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Simple, light and Canadian",
+          "text": "Simple, light and Canadian"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Sierra is the easiest way to add an outdoor shower by the pool, hot tub or sauna.",
+          "text": "The Sierra is the easiest way to add an outdoor shower by the pool, hot tub or sauna."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Eastern White Cedar",
+          "text": "Eastern White Cedar"
+        },
+        {
+          "type": "paragraph",
+          "html": "Light natural colour and tight knots. Leave it to weather to silver-grey, or keep the colour with an exterior oil.",
+          "text": "Light natural colour and tight knots. Leave it to weather to silver-grey, or keep the colour with an exterior oil."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Compact footprint",
+          "text": "Compact footprint"
+        },
+        {
+          "type": "paragraph",
+          "html": "A 15\" pillar on a 31\" slatted deck. Easy to assemble, connect and move.",
+          "text": "A 15\" pillar on a 31\" slatted deck. Easy to assemble, connect and move."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Garden hose or hot and cold",
+          "text": "Garden hose or hot and cold"
+        },
+        {
+          "type": "paragraph",
+          "html": "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve.",
+          "text": "Connect a garden hose for a cold rinse, or add the Premium Shower Hardware for a rain head, hand shower and mixing valve."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Made in Canada",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "paragraph",
+          "html": "Part of the Canadian Timber Collection, with a 5-year residential limited warranty.",
+          "text": "Part of the Canadian Timber Collection, with a 5-year residential limited warranty."
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Overall height",
+                "text": "Overall height"
+              },
+              "details": {
+                "html": "81½\" (207 cm) with base",
+                "text": "81½\" (207 cm) with base"
+              }
+            },
+            {
+              "term": {
+                "html": "Pillar",
+                "text": "Pillar"
+              },
+              "details": {
+                "html": "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep",
+                "text": "78¼\" (199 cm) tall; 15\" (38 cm) wide at the cap, 5½\" (14 cm) deep"
+              }
+            },
+            {
+              "term": {
+                "html": "Base",
+                "text": "Base"
+              },
+              "details": {
+                "html": "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high",
+                "text": "31\" × 31\" (79 × 79 cm) cedar deck, 3¼\" (8 cm) high"
+              }
+            },
+            {
+              "term": {
+                "html": "Shower head height",
+                "text": "Shower head height"
+              },
+              "details": {
+                "html": "About 76\" (193 cm) with premium hardware",
+                "text": "About 76\" (193 cm) with premium hardware"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Eastern White Cedar",
+                "text": "Eastern White Cedar"
+              }
+            },
+            {
+              "term": {
+                "html": "Hardware",
+                "text": "Hardware"
+              },
+              "details": {
+                "html": "Sold separately: Premium Shower Hardware add-on",
+                "text": "Sold separately: Premium Shower Hardware add-on"
+              }
+            },
+            {
+              "term": {
+                "html": "Water",
+                "text": "Water"
+              },
+              "details": {
+                "html": "Garden hose for cold water; hot and cold with premium hardware",
+                "text": "Garden hose for cold water; hot and cold with premium hardware"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/958af6053b9085c2d3176a040b7c4eff.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery</strong>",
+          "text": "Delivery"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery to your door</strong>",
+          "text": "Delivery to your door"
+        },
+        {
+          "type": "text",
+          "html": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered.",
+          "text": "Delivered right to your door, anywhere in Ontario. The cost depends on your location, and we confirm it with your quote before anything is ordered."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Quoted</strong>",
+          "text": "Quoted"
+        },
+        {
+          "type": "paragraph",
+          "html": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber.",
+          "text": "Buying a sauna too? We can deliver both together. Outside Ontario? We ship Canada-wide. Contact us for a shipping quote. Hot and cold water with the Premium Shower Hardware may need a licensed plumber."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other outdoor <em>showers</em>",
+          "text": "Compare other outdoor showers"
+        },
+        {
+          "type": "link",
+          "html": "View All Outdoor Showers",
+          "text": "View All Outdoor Showers",
+          "href": "/outdoor-showers",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Cold Plunges",
+          "text": "Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

@@ -1,0 +1,1274 @@
+{
+  "file": "SaunaFinder.dc.html",
+  "route": "/sauna-finder",
+  "pageMap": {
+    "route": "/sauna-finder",
+    "title": "Sauna Finder: Which Sauna Fits My Space? | The Toronto Sauna Co.",
+    "description": "Enter your width, depth and ceiling height to see every outdoor and indoor sauna from The Toronto Sauna Co. that fits your space, with prices.",
+    "index": "",
+    "photos": 43
+  },
+  "head": {
+    "title": "Sauna Finder: Which Sauna Fits My Space? | The Toronto Sauna Co.",
+    "description": "Enter your width, depth and ceiling height to see every outdoor and indoor sauna from The Toronto Sauna Co. that fits your space, with prices.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-finder",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Finder: Which Sauna Fits My Space? | The Toronto Sauna Co.",
+      "description": "Enter your width, depth and ceiling height to see every outdoor and indoor sauna from The Toronto Sauna Co. that fits your space, with prices.",
+      "url": "https://www.thetorontosaunaco.com/sauna-finder",
+      "image": "https://www.thetorontosaunaco.com/_blob/96c018aba6b80012fdedc30db0eb161f"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/sauna-finder",
+            "name": "Sauna Finder: Which Sauna Fits My Space? | The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com/sauna-finder",
+            "description": "Enter your width, depth and ceiling height to see every outdoor and indoor sauna from The Toronto Sauna Co. that fits your space, with prices."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sauna Finder",
+                "item": "https://www.thetorontosaunaco.com/sauna-finder"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "fdData": [
+      {
+        "n": "The Pure Cube 552",
+        "href": "/saunas/pure-cube-552",
+        "img": "./assets/96c018aba6b80012fdedc30db0eb161f.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 70.75,
+            "d": 71.5,
+            "h": 91,
+            "p": 11884,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Trinity",
+        "href": "/saunas/trinity",
+        "img": "./assets/87585fc4ba150e041b383ae634217e76.jpg",
+        "k": "out",
+        "note": "Corner design",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 97.5,
+            "d": 63.5,
+            "h": 91,
+            "p": 11621,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 572",
+        "href": "/saunas/pure-cube-572",
+        "img": "./assets/e7769038792977a3b5faa282e2ddf871.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 88.125,
+            "d": 71.5,
+            "h": 91,
+            "p": 12898,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 582",
+        "href": "/saunas/pure-cube-582",
+        "img": "./assets/f238467d7e1d416a23e4d2b6ab60d2d6.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 111.375,
+            "d": 71.5,
+            "h": 91,
+            "p": 14843,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 582 with Shower",
+        "href": "/saunas/pure-cube-582-shower",
+        "img": "./assets/721409044b03c736650320e44ae3f263.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 111.375,
+            "d": 71.5,
+            "h": 91,
+            "p": 14537,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 672",
+        "href": "/saunas/pure-cube-672",
+        "img": "./assets/58a2a28ac886d2cf82390b41145b9708.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 103.625,
+            "d": 79.25,
+            "h": 91,
+            "p": 15589,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube 772",
+        "href": "/saunas/pure-cube-772",
+        "img": "./assets/56f7eda6da844a49827e0d0d074a5c9d.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 87.75,
+            "d": 97.25,
+            "h": 91,
+            "p": 15120,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Neptune Mini",
+        "href": "/saunas/neptune-mini",
+        "img": "./assets/cbcc7056a1df009b2f6577e456102161.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 65,
+            "d": 86,
+            "h": 91,
+            "p": 14999,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Neptune",
+        "href": "/saunas/neptune",
+        "img": "./assets/4ae975455c55a574d58da146b4a8a99f.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 87.75,
+            "d": 115,
+            "h": 89.25,
+            "p": 17896,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Hudson",
+        "href": "/saunas/hudson",
+        "img": "./assets/30f7ceb7e3269da323c1950b3e194159.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 86,
+            "d": 119,
+            "h": 119,
+            "p": 17489,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Orion",
+        "href": "/saunas/orion",
+        "img": "./assets/5e9f4eaa2e94c9275988e1bb3ca181a7.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 89,
+            "d": 121,
+            "h": 91,
+            "p": 18735,
+            "seats": 7
+          }
+        ]
+      },
+      {
+        "n": "The Avalon",
+        "href": "/saunas/avalon",
+        "img": "./assets/a804429a8592e40dc5e9e5ef1774d6ee.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 120,
+            "d": 119,
+            "h": 100.5,
+            "p": 15450,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The Studio Six Mini",
+        "href": "/saunas/studio-six-mini",
+        "img": "./assets/796460f3cfa8d56058ff4d1769004a94.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 1,
+        "s": [
+          {
+            "l": "",
+            "w": 75,
+            "d": 66.75,
+            "h": 96.25,
+            "p": 17499,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Studio Six Max",
+        "href": "/saunas/studio-six-max",
+        "img": "./assets/c3ba4c791b08f2af25fa66d9d9178af4.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 97.5,
+            "d": 86.5,
+            "h": 104.75,
+            "p": 22350,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Studio Six Max with Porch",
+        "href": "/saunas/studio-six-max-porch",
+        "img": "./assets/24d1bb94e66c586e026a6a0586346bbd.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 145.5,
+            "d": 86,
+            "h": 105,
+            "p": 26599,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Studio Six Max with Changeroom",
+        "href": "/saunas/studio-six-max-changeroom",
+        "img": "./assets/a1dc5e2034da65d3a67ed7be56245cb4.jpg",
+        "k": "out",
+        "note": "",
+        "c": 1,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 145.5,
+            "d": 86,
+            "h": 105,
+            "p": 28460,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Luna Sauna",
+        "href": "/saunas/luna-sauna",
+        "img": "./assets/a05e478e4a848726a005486a0cf94731.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "8' × 6'",
+            "w": 101.5,
+            "d": 73,
+            "h": 84,
+            "p": 13200,
+            "seats": 4
+          },
+          {
+            "l": "8' × 7'",
+            "w": 101.5,
+            "d": 84,
+            "h": 84,
+            "p": 13500,
+            "seats": 5
+          },
+          {
+            "l": "8' × 8'",
+            "w": 101.5,
+            "d": 97,
+            "h": 84,
+            "p": 13800,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Luna Sauna with Porch",
+        "href": "/saunas/luna-porch",
+        "img": "./assets/704ca5d626bcc96ba42e9a509edb562e.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "8' × 6'",
+            "w": 101.5,
+            "d": 97,
+            "h": 84,
+            "p": 15400,
+            "seats": 4
+          },
+          {
+            "l": "8' × 7'",
+            "w": 101.5,
+            "d": 108,
+            "h": 84,
+            "p": 16600,
+            "seats": 5
+          },
+          {
+            "l": "8' × 8'",
+            "w": 101.5,
+            "d": 121,
+            "h": 84,
+            "p": 16800,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "The Georgian Cabin Sauna",
+        "href": "/saunas/ct-georgian",
+        "img": "./assets/5b0d35ccd6de9a18530e41e3a9fda468.jpg",
+        "k": "out",
+        "note": "Layout options",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "Sauna only",
+            "w": 96,
+            "d": 95,
+            "h": 100.75,
+            "p": 9695,
+            "seats": 5
+          },
+          {
+            "l": "With porch",
+            "w": 96,
+            "d": 124,
+            "h": 100.75,
+            "p": 10957,
+            "seats": 5
+          },
+          {
+            "l": "With changeroom",
+            "w": 96,
+            "d": 143,
+            "h": 100.75,
+            "p": 13100,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Palmer Cabin Sauna",
+        "href": "/saunas/ct-palmer",
+        "img": "./assets/00dce3422f5a1d020ff4afb03a6326ce.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 98.25,
+            "d": 97.25,
+            "h": 100.75,
+            "p": 9150,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Granby Cabin Sauna",
+        "href": "/saunas/ct-granby",
+        "img": "./assets/69479cf5046df4023ee06465f8e2b246.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 74.25,
+            "d": 73.25,
+            "h": 97.5,
+            "p": 7850,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The MiniPOD Sauna",
+        "href": "/saunas/ct-mini-pod",
+        "img": "./assets/3756fbcfef5ae5190c76d6963f575af5.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 85,
+            "d": 85,
+            "h": 84,
+            "p": 7500,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The CT Luna Sauna",
+        "href": "/saunas/ct-luna",
+        "img": "./assets/bfca3460870c752a61ce20b0331626f0.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 84.75,
+            "h": 86.25,
+            "p": 9355,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Harmony Barrel Sauna",
+        "href": "/saunas/ct-harmony",
+        "img": "./assets/cd4d92d1e14fc912b6b65bfd8ae2e971.png",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84,
+            "d": 79,
+            "h": 84,
+            "p": 7468,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "The Serenity Barrel Sauna",
+        "href": "/saunas/ct-serenity",
+        "img": "./assets/181bffff9a069465d8cf4cfd9cb41dd1.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 94.5,
+            "h": 86.25,
+            "p": 7710,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Serenity MP Barrel Sauna",
+        "href": "/saunas/ct-serenity-mp",
+        "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 94.5,
+            "h": 86.25,
+            "p": 10174,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Tranquility Barrel Sauna",
+        "href": "/saunas/ct-tranquility",
+        "img": "./assets/8d41bab8df6353c1c6bde79089892832.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 118,
+            "h": 86.25,
+            "p": 8185,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "The Tranquility MP Barrel Sauna",
+        "href": "/saunas/ct-tranquility-mp",
+        "img": "./assets/a57d2576a3130b06421a208b431713ea.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 86.25,
+            "d": 118,
+            "h": 86.25,
+            "p": 10459,
+            "seats": 5
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna",
+        "href": "/saunas/barrel-sauna",
+        "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 4'",
+            "w": 84,
+            "d": 48,
+            "h": 84,
+            "p": 8499,
+            "seats": 2
+          },
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 72,
+            "h": 84,
+            "p": 9100,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 84,
+            "h": 84,
+            "p": 9600,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 96,
+            "h": 84,
+            "p": 9950,
+            "seats": 6
+          },
+          {
+            "l": "7' × 10'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 10900,
+            "seats": 8
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna with Porch",
+        "href": "/saunas/barrel-porch",
+        "img": "./assets/56292481706ea6386d3e8179d51b4351.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 96,
+            "h": 84,
+            "p": 10250,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 108,
+            "h": 84,
+            "p": 10700,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 11100,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Barrel Sauna with Changeroom",
+        "href": "/saunas/barrel-changeroom",
+        "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 12100,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 132,
+            "h": 84,
+            "p": 12500,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 144,
+            "h": 84,
+            "p": 12900,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel Sauna",
+        "href": "/saunas/panoramic-barrel",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 92,
+            "h": 84,
+            "p": 12600,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 104,
+            "h": 84,
+            "p": 13100,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 116,
+            "h": 84,
+            "p": 13500,
+            "seats": 6
+          },
+          {
+            "l": "7' × 10'",
+            "w": 84,
+            "d": 140,
+            "h": 84,
+            "p": 14500,
+            "seats": 8
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel with Porch",
+        "href": "/saunas/panoramic-barrel-porch",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 120,
+            "h": 84,
+            "p": 13650,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 132,
+            "h": 84,
+            "p": 14200,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 144,
+            "h": 84,
+            "p": 14700,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Panoramic Barrel with Changeroom",
+        "href": "/saunas/panoramic-barrel-changeroom",
+        "img": "./assets/f3ec6268e14bb8bd783c7f5c9df29225.jpg",
+        "k": "out",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "7' × 6'",
+            "w": 84,
+            "d": 140,
+            "h": 84,
+            "p": 15600,
+            "seats": 4
+          },
+          {
+            "l": "7' × 7'",
+            "w": 84,
+            "d": 152,
+            "h": 84,
+            "p": 15950,
+            "seats": 5
+          },
+          {
+            "l": "7' × 8'",
+            "w": 84,
+            "d": 164,
+            "h": 84,
+            "p": 16350,
+            "seats": 6
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Indoor 552",
+        "href": "/saunas/indoor/pure-cube-552",
+        "img": "./assets/fe896ac8a02116451e2ad8b4ae30a9b4.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 59,
+            "d": 59,
+            "h": 85,
+            "p": 11160,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "Pure Cube Indoor 572",
+        "href": "/saunas/indoor/pure-cube-572",
+        "img": "./assets/1bd0de57aa4744319d31bd9db8e99519.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84,
+            "d": 59,
+            "h": 85,
+            "p": 11846,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Element Nook",
+        "href": "/saunas/element-nook",
+        "img": "./assets/ca619225e44f3cbfae268cce2fcb4d1e.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 54.75,
+            "d": 54.75,
+            "h": 88,
+            "p": 10850,
+            "seats": 2
+          }
+        ]
+      },
+      {
+        "n": "The Element Loft",
+        "href": "/saunas/element-loft",
+        "img": "./assets/79fc232056ce940e334e53e606684d1c.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 74.75,
+            "d": 54.75,
+            "h": 88,
+            "p": 12650,
+            "seats": 3
+          }
+        ]
+      },
+      {
+        "n": "The Element Studio",
+        "href": "/saunas/element-studio",
+        "img": "./assets/e82bd557fc69a737b046c542ac5639fd.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "",
+            "w": 84.75,
+            "d": 64.75,
+            "h": 88,
+            "p": 13950,
+            "seats": 4
+          }
+        ]
+      },
+      {
+        "n": "Indoor Cabin Sauna",
+        "href": "/saunas/indoor/cabin",
+        "img": "./assets/cbbbfbb6ee59b516229b457c305892b7.jpg",
+        "k": "in",
+        "note": "",
+        "c": 0,
+        "b": 0,
+        "s": [
+          {
+            "l": "4' × 6'",
+            "w": 76.5,
+            "d": 52.75,
+            "h": 82.125,
+            "p": 8070,
+            "seats": 2
+          },
+          {
+            "l": "4' × 7'",
+            "w": 88.5,
+            "d": 52.75,
+            "h": 82.125,
+            "p": 8570,
+            "seats": 3
+          },
+          {
+            "l": "5' × 5'",
+            "w": 64.5,
+            "d": 64.75,
+            "h": 82.125,
+            "p": 8150,
+            "seats": 2
+          },
+          {
+            "l": "5' × 6'",
+            "w": 76.5,
+            "d": 64.75,
+            "h": 82.125,
+            "p": 8420,
+            "seats": 3
+          },
+          {
+            "l": "5' × 7'",
+            "w": 88.5,
+            "d": 65.75,
+            "h": 82.125,
+            "p": 8930,
+            "seats": 4
+          },
+          {
+            "l": "6' × 7'",
+            "w": 88.5,
+            "d": 76.75,
+            "h": 82.125,
+            "p": 9330,
+            "seats": 5
+          },
+          {
+            "l": "6' × 8'",
+            "w": 100.5,
+            "d": 76.75,
+            "h": 82.125,
+            "p": 9500,
+            "seats": 6
+          }
+        ]
+      }
+    ],
+    "modes": [
+      [
+        "out",
+        "Outdoor"
+      ],
+      [
+        "in",
+        "Indoor"
+      ]
+    ],
+    "people": [
+      [
+        0,
+        "Any"
+      ],
+      [
+        2,
+        "2+"
+      ],
+      [
+        4,
+        "4+"
+      ],
+      [
+        6,
+        "6+"
+      ],
+      [
+        8,
+        "8+"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Finder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sauna finder",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Sauna finder</strong>",
+          "text": "Sauna finder"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Find a sauna that fits your <em><strong>space.</strong></em>",
+          "text": "Find a sauna that fits your space."
+        },
+        {
+          "type": "paragraph",
+          "html": "Tell us how much room you have and we’ll show every sauna that fits, plus the ones that come close.",
+          "text": "Tell us how much room you have and we’ll show every sauna that fits, plus the ones that come close."
+        },
+        {
+          "type": "repeat",
+          "list": "{{fdModes}}",
+          "as": "m",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{m.label}}",
+              "text": "{{m.label}}",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "field",
+          "label": "Width of your space (feet)",
+          "id": null,
+          "control": "input",
+          "inputType": "number",
+          "placeholder": "e.g. 8"
+        },
+        {
+          "type": "field",
+          "label": "Depth of your space (feet)",
+          "id": null,
+          "control": "input",
+          "inputType": "number",
+          "placeholder": "e.g. 10"
+        },
+        {
+          "type": "if",
+          "value": "{{fdIndoor}}",
+          "blocks": [
+            {
+              "type": "field",
+              "label": "Ceiling height (feet, optional)",
+              "id": null,
+              "control": "input",
+              "inputType": "number",
+              "placeholder": "e.g. 8"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>How many people? (optional)</strong>",
+          "text": "How many people? (optional)"
+        },
+        {
+          "type": "repeat",
+          "list": "{{fdPeople}}",
+          "as": "p",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{p.label}}",
+              "text": "{{p.label}}",
+              "href": null,
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{fdIdle}}",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Enter your width and depth to see what fits. Not sure? Measure the clear floor area where the sauna will sit.",
+              "text": "Enter your width and depth to see what fits. Not sure? Measure the clear floor area where the sauna will sit."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{fdReady}}",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "{{fdSummary}}",
+              "text": "{{fdSummary}}"
+            },
+            {
+              "type": "repeat",
+              "list": "{{fdResults}}",
+              "as": "r",
+              "blocks": [
+                {
+                  "type": "card",
+                  "href": "{{r.href}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{r.img}}",
+                      "alt": "{{r.alt}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.badge}}",
+                      "text": "{{r.badge}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{r.n}}</strong>",
+                      "text": "{{r.n}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.detail}}",
+                      "text": "{{r.detail}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{r.seats}}",
+                      "text": "{{r.seats}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{r.price}}</strong>",
+                      "text": "{{r.price}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{fdNone}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>Nothing off the shelf fits that space.</strong>",
+                  "text": "Nothing off the shelf fits that space."
+                },
+                {
+                  "type": "text",
+                  "html": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them.",
+                  "text": "That’s exactly what our custom builds are for. Tell us your measurements and we’ll design around them."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Get a quote for my space",
+          "text": "Get a quote for my space",
+          "href": "{{fdQuote}}",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "{{fdCustomLabel}}",
+          "text": "{{fdCustomLabel}}",
+          "href": "{{fdCustomHref}}",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote.",
+          "text": "“Close fit” saunas are within about a foot of your space. Many still work, and we confirm the exact fit with your quote."
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,620 @@
+{
+  "file": "ColdPlunges.dc.html",
+  "route": "/cold-plunges",
+  "pageMap": {
+    "route": "/cold-plunges",
+    "title": "Cedar Cold Plunge Tubs & Chillers | The Toronto Sauna Co.",
+    "description": "Canadian-made cedar and stainless cold plunge tubs with chillers, delivered to your door across Ontario. Compare the Glacier, Arctic, Polar, Baltic and Flow.",
+    "index": "",
+    "photos": 11
+  },
+  "head": {
+    "title": "Cedar Cold Plunge Tubs & Chillers | The Toronto Sauna Co.",
+    "description": "Canadian-made cedar and stainless cold plunge tubs with chillers, delivered to your door across Ontario. Compare the Glacier, Arctic, Polar, Baltic and Flow.",
+    "canonical": "https://www.thetorontosaunaco.com/cold-plunges",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Cedar Cold Plunge Tubs & Chillers | The Toronto Sauna Co.",
+      "description": "Canadian-made cedar and stainless cold plunge tubs with chillers, delivered to your door across Ontario. Compare the Glacier, Arctic, Polar, Baltic and Flow.",
+      "url": "https://www.thetorontosaunaco.com/cold-plunges",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.thetorontosaunaco.com/cold-plunges#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What temperature should a cold plunge be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people find 10°C to 15°C (50°F to 59°F) the sweet spot. Experienced plungers sometimes go colder, and our chillers can reach 37°F (2.8°C)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use a cold plunge outdoors in a Canadian winter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Cedar handles moisture and temperature swings well, and a cover helps. At 0°C (32°F) or below, either drain the tub or keep the chiller running so it doesn't freeze."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do the tubs need plumbing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Fill with a garden hose and drain through the built-in drain. Chillers are self-contained and connect directly to the tub; their electrical connection must be made by a licensed electrician."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Stainless steel or HDPE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Polar and Glacier come with either. 304 stainless steel is the premium, easy-clean option; HDPE is a durable, seamless liner at a lower price."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "items": [
+        {
+          "n": "The Glacier Plunge Tub",
+          "href": "/cold-plunges/glacier",
+          "s": "Dundalk Collection",
+          "p": 4389,
+          "frm": 1,
+          "img": "./assets/f20866f0c70f44118012645dc4775fb4.jpg",
+          "alt": "Glacier cold plunge tub with stainless interior and Red Cedar skirt, The Toronto Sauna Co.",
+          "cap": "190 gal",
+          "d": "Our largest Dundalk plunge: 190 gallons with a 304 stainless steel or HDPE interior inside a warm Red Cedar skirt. Add a chiller for year-round cold, and drain it with a garden hose.",
+          "best": 0,
+          "specs": [
+            "190 gallons",
+            "Stainless or HDPE interior",
+            "Red Cedar skirt",
+            "Made in Canada"
+          ]
+        },
+        {
+          "n": "The Arctic Plunge Tub",
+          "href": "/cold-plunges/arctic",
+          "s": "Dundalk Collection",
+          "p": 2974,
+          "frm": 1,
+          "img": "./assets/73e50601489fc0e42b5b083e727821e6.jpg",
+          "alt": "Arctic cold plunge tub in knotty Red Cedar, The Toronto Sauna Co.",
+          "cap": "132 gal",
+          "d": "A welded HDPE shell wrapped in a Red Cedar skirt with stainless steel bands. Holds 132 gallons and ships fully assembled, ready for an optional chiller with ozone filter.",
+          "best": 0,
+          "specs": [
+            "132 gallons",
+            "Welded HDPE shell",
+            "Red Cedar skirt",
+            "Ships assembled"
+          ]
+        },
+        {
+          "n": "The Flow Cold Plunge",
+          "href": "/cold-plunges/flow",
+          "s": "Flow",
+          "p": 7104,
+          "frm": 1,
+          "img": "./assets/39bf27802a6436bbbda63d8c23d0d4c7.webp",
+          "alt": "Flow cold plunge with concealed chiller on a rooftop deck, The Toronto Sauna Co.",
+          "cap": "",
+          "d": "A stainless steel plunge wrapped in cedar, with the chiller hidden in a bay built into the shell. No hoses or equipment on show, just a clean finished look. Arrives fully assembled.",
+          "best": 0,
+          "specs": [
+            "Stainless steel tub",
+            "Concealed chiller bay",
+            "Cedar exterior",
+            "Arrives assembled"
+          ]
+        },
+        {
+          "n": "The Polar Plunge Tub",
+          "href": "/cold-plunges/polar",
+          "s": "Canadian Timber Collection",
+          "p": 4133,
+          "frm": 1,
+          "img": "./assets/b38958ce7c571becf6b57cb62b3dc106.webp",
+          "alt": "Polar cold plunge tub in Eastern White Cedar, The Toronto Sauna Co.",
+          "cap": "190 gal",
+          "d": "A 190-gallon cold plunge in Eastern White Cedar, with your choice of a 304 stainless steel or white HDPE interior. Angled sides make it easy to step in and out, and a garden hose drain makes emptying simple.",
+          "best": 0,
+          "specs": [
+            "190 gallons",
+            "Stainless or HDPE interior",
+            "Eastern White Cedar",
+            "Made in Canada"
+          ]
+        },
+        {
+          "n": "The Baltic Plunge Tub",
+          "href": "/cold-plunges/baltic",
+          "s": "Canadian Timber Collection",
+          "p": 2974,
+          "frm": 1,
+          "img": "./assets/592b87bf9f43155ba40e0cc32db96d39.jpg",
+          "alt": "Baltic barrel cold plunge in Eastern White Cedar, The Toronto Sauna Co.",
+          "cap": "132 gal",
+          "d": "A classic barrel-style cold plunge in Eastern White Cedar, with an HDPE liner and stainless steel bands. Holds 132 gallons, ships assembled, and works with a chiller or plain ice.",
+          "best": 0,
+          "specs": [
+            "132 gallons",
+            "Barrel style",
+            "HDPE liner",
+            "Ships assembled"
+          ]
+        }
+      ],
+      "chips": [
+        "Dundalk Collection",
+        "Canadian Timber Collection",
+        "Flow"
+      ],
+      "showBest": false
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Cold Plunges"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Cold plunges</strong>",
+          "text": "Cold plunges"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Cedar cold plunge <em><strong>tubs.</strong></em>",
+          "text": "Cedar cold plunge tubs."
+        },
+        {
+          "type": "paragraph",
+          "html": "Handcrafted in Ontario from the same Canadian cedar as our saunas, with stainless steel or HDPE interiors and optional chillers for year-round cold. Five models across two collections.",
+          "text": "Handcrafted in Ontario from the same Canadian cedar as our saunas, with stainless steel or HDPE interiors and optional chillers for year-round cold. Five models across two collections."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Cold Plunges",
+          "text": "Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Outdoor Showers",
+          "text": "Outdoor Showers",
+          "href": "/outdoor-showers",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{b}}</strong>",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.hasImg}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Why cold plunge",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Contrast therapy</strong>",
+          "text": "Contrast therapy"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Heat, then cold. <em><strong>Repeat.</strong></em>",
+          "text": "Heat, then cold. Repeat."
+        },
+        {
+          "type": "paragraph",
+          "html": "Alternating a sauna session with a cold plunge is known as contrast therapy. Many people use it to support recovery, circulation and a clear head. Our plunges are handcrafted in Ontario from the same Canadian cedar as our saunas, so they look right side by side.",
+          "text": "Alternating a sauna session with a cold plunge is known as contrast therapy. Many people use it to support recovery, circulation and a clear head. Our plunges are handcrafted in Ontario from the same Canadian cedar as our saunas, so they look right side by side."
+        },
+        {
+          "type": "link",
+          "html": "Pair It With a Sauna",
+          "text": "Pair It With a Sauna",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Down to 37°F</strong>",
+          "text": "Down to 37°F"
+        },
+        {
+          "type": "text",
+          "html": "Every tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C).",
+          "text": "Every tub works with Penguin and Coldture Pro chillers, which cool water to 37°F (2.8°C)."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Filtered &amp; connected</strong>",
+          "text": "Filtered & connected"
+        },
+        {
+          "type": "text",
+          "html": "Built-in filtration and Wi-Fi temperature control with a chiller.",
+          "text": "Built-in filtration and Wi-Fi temperature control with a chiller."
+        },
+        {
+          "type": "text",
+          "html": "<strong>No plumbing</strong>",
+          "text": "No plumbing"
+        },
+        {
+          "type": "text",
+          "html": "Fill with a garden hose and empty through the built-in drain.",
+          "text": "Fill with a garden hose and empty through the built-in drain."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Arrives ready</strong>",
+          "text": "Arrives ready"
+        },
+        {
+          "type": "text",
+          "html": "The Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it.",
+          "text": "The Arctic, Baltic and Flow ship fully assembled. Add a roll-up cover to protect it."
+        }
+      ]
+    },
+    {
+      "name": "Plunge FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Cold plunge FAQ</strong>",
+          "text": "Cold plunge FAQ"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Good to <em><strong>know.</strong></em>",
+          "text": "Good to know."
+        },
+        {
+          "type": "faq",
+          "html": "What temperature should a cold plunge be?",
+          "text": "What temperature should a cold plunge be?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Most people find 10°C to 15°C (50°F to 59°F) the sweet spot. Experienced plungers sometimes go colder, and our chillers can reach 37°F (2.8°C).",
+              "text": "Most people find 10°C to 15°C (50°F to 59°F) the sweet spot. Experienced plungers sometimes go colder, and our chillers can reach 37°F (2.8°C)."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can I use a cold plunge outdoors in a Canadian winter?",
+          "text": "Can I use a cold plunge outdoors in a Canadian winter?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Cedar handles moisture and temperature swings well, and a cover helps. At 0°C (32°F) or below, either drain the tub or keep the chiller running so it doesn't freeze.",
+              "text": "Yes. Cedar handles moisture and temperature swings well, and a cover helps. At 0°C (32°F) or below, either drain the tub or keep the chiller running so it doesn't freeze."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do the tubs need plumbing?",
+          "text": "Do the tubs need plumbing?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "No. Fill with a garden hose and drain through the built-in drain. Chillers are self-contained and connect directly to the tub; their electrical connection must be made by a licensed electrician.",
+              "text": "No. Fill with a garden hose and drain through the built-in drain. Chillers are self-contained and connect directly to the tub; their electrical connection must be made by a licensed electrician."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Stainless steel or HDPE?",
+          "text": "Stainless steel or HDPE?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The Polar and Glacier come with either. 304 stainless steel is the premium, easy-clean option; HDPE is a durable, seamless liner at a lower price.",
+              "text": "The Polar and Glacier come with either. 304 stainless steel is the premium, easy-clean option; HDPE is a durable, seamless liner at a lower price."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Which plunge?</strong>",
+          "text": "Which plunge?"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choosing your cold plunge",
+          "text": "Choosing your cold plunge"
+        },
+        {
+          "type": "paragraph",
+          "html": "The Dundalk Collection (Glacier and Arctic) pairs Western Red Cedar with stainless or HDPE interiors. The Canadian Timber Collection (Polar and Baltic) uses Eastern White Cedar at a lower price point. The Flow hides its chiller inside the cedar for the cleanest look.",
+          "text": "The Dundalk Collection (Glacier and Arctic) pairs Western Red Cedar with stainless or HDPE interiors. The Canadian Timber Collection (Polar and Baltic) uses Eastern White Cedar at a lower price point. The Flow hides its chiller inside the cedar for the cleanest look."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which plunge <em>fits?</em></strong>",
+          "text": "Not sure which plunge fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom, or book a consultation and we'll recommend the right plunge and chiller for your space.",
+          "text": "Visit our GTA showroom, or book a consultation and we'll recommend the right plunge and chiller for your space."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

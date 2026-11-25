@@ -1,0 +1,740 @@
+{
+  "file": "Cart.dc.html",
+  "route": "/cart",
+  "pageMap": {
+    "route": "/cart",
+    "title": "Cart & Quote Request | The Toronto Sauna Co.",
+    "description": "Review your sauna, cold plunge or heater build and request a personalized quote. HST shown separately. Showroom in Schomberg by appointment.",
+    "index": "noindex",
+    "photos": 7
+  },
+  "head": {
+    "title": "Cart & Quote Request | The Toronto Sauna Co.",
+    "description": "Review your sauna, cold plunge or heater build and request a personalized quote. HST shown separately. Showroom in Schomberg by appointment.",
+    "canonical": "https://www.thetorontosaunaco.com/cart",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Cart & Quote Request | The Toronto Sauna Co.",
+      "description": "Review your sauna, cold plunge or heater build and request a personalized quote. HST shown separately. Showroom in Schomberg by appointment.",
+      "url": "https://www.thetorontosaunaco.com/cart",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": []
+  },
+  "data": {
+    "v": {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "street": "",
+      "city": "",
+      "postal": ""
+    },
+    "TO": [
+      "sales@thetorontosaunaco.com",
+      "tjallen@thetorontosaunaco.com"
+    ],
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "defs": [
+      [
+        "name",
+        "Full name *",
+        "text",
+        "name",
+        true
+      ],
+      [
+        "email",
+        "Email *",
+        "email",
+        "email",
+        false
+      ],
+      [
+        "phone",
+        "Phone *",
+        "tel",
+        "tel",
+        false
+      ],
+      [
+        "street",
+        "Street address *",
+        "text",
+        "street-address",
+        true
+      ],
+      [
+        "city",
+        "City *",
+        "text",
+        "address-level2",
+        false
+      ],
+      [
+        "postal",
+        "Postal code *",
+        "text",
+        "postal-code",
+        false
+      ]
+    ],
+    "provinces": [
+      "Ontario",
+      "Quebec",
+      "Manitoba",
+      "Saskatchewan",
+      "Alberta",
+      "British Columbia",
+      "New Brunswick",
+      "Nova Scotia",
+      "Prince Edward Island",
+      "Newfoundland and Labrador",
+      "Yukon",
+      "Northwest Territories",
+      "Nunavut"
+    ],
+    "timelines": [
+      "Choose a timeline",
+      "As soon as possible",
+      "Within 1 month",
+      "1–3 months",
+      "3–6 months",
+      "Just researching"
+    ],
+    "contacts": [
+      "Phone",
+      "Email",
+      "Text message"
+    ]
+  },
+  "sections": [
+    {
+      "name": "Cart hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Cart"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Your cart &amp; quote <em><strong>request.</strong></em>",
+          "text": "Your cart & quote request."
+        },
+        {
+          "type": "paragraph",
+          "html": "Review your items, then send us your details. No payment is taken on this website.",
+          "text": "Review your items, then send us your details. No payment is taken on this website."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{notSubmitted}}",
+          "blocks": [
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Items ({{itemCount}})",
+              "text": "Items ({{itemCount}})"
+            },
+            {
+              "type": "if",
+              "value": "{{isEmpty}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Your cart is empty.",
+                  "text": "Your cart is empty."
+                },
+                {
+                  "type": "link",
+                  "html": "Shop Saunas",
+                  "text": "Shop Saunas",
+                  "href": "/saunas/best-sellers",
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "type": "repeat",
+                  "list": "{{items}}",
+                  "as": "it",
+                  "items": [
+                    {
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{it.hasImg}}",
+                          "blocks": [
+                            {
+                              "type": "image",
+                              "src": "{{it.img}}",
+                              "alt": "{{it.alt}}"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{it.noImg}}",
+                          "blocks": [
+                            {
+                              "type": "text",
+                              "html": "Photo",
+                              "text": "Photo"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "heading",
+                          "level": 3,
+                          "html": "{{it.name}}",
+                          "text": "{{it.name}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{it.lineText}}</strong>",
+                          "text": "{{it.lineText}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "{{it.kind}}",
+                          "text": "{{it.kind}}"
+                        },
+                        {
+                          "type": "list",
+                          "ordered": false,
+                          "items": [
+                            {
+                              "type": "repeat",
+                              "list": "{{it.details}}",
+                              "as": "dt",
+                              "items": [
+                                {
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{dt.label}}",
+                                      "text": "{{dt.label}}"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "html": "{{dt.price}}",
+                                      "text": "{{dt.price}}"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{it.shipNote}}",
+                          "blocks": [
+                            {
+                              "type": "text",
+                              "html": "<strong>Shipping for this item will be quoted by phone.</strong>",
+                              "text": "Shipping for this item will be quoted by phone."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "link",
+                          "html": "−",
+                          "text": "−",
+                          "href": null,
+                          "variant": "button",
+                          "label": "Decrease quantity of {{it.name}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{it.qty}}</strong>",
+                          "text": "{{it.qty}}"
+                        },
+                        {
+                          "type": "link",
+                          "html": "+",
+                          "text": "+",
+                          "href": null,
+                          "variant": "button",
+                          "label": "Increase quantity of {{it.name}}"
+                        },
+                        {
+                          "type": "link",
+                          "html": "Remove",
+                          "text": "Remove",
+                          "href": null,
+                          "variant": "button"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "form",
+              "blocks": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "html": "Your details",
+                  "text": "Your details"
+                },
+                {
+                  "type": "paragraph",
+                  "html": "We'll use these to prepare your quote and contact you. Fields marked * are required.",
+                  "text": "We'll use these to prepare your quote and contact you. Fields marked * are required."
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{fields}}",
+                  "as": "f",
+                  "blocks": [
+                    {
+                      "type": "field",
+                      "label": "{{f.label}}",
+                      "id": "{{f.id}}",
+                      "control": "input",
+                      "inputType": "{{f.type}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{f.showErr}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "<strong>{{f.err}}</strong>",
+                          "text": "{{f.err}}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Province *",
+                  "id": "q-prov",
+                  "control": "select",
+                  "options": [
+                    "{{pv.v}}"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "When would you like it? *",
+                  "id": "q-time",
+                  "control": "select",
+                  "options": [
+                    "{{tl.v}}"
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{timeErr}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>Please choose a timeline.</strong>",
+                      "text": "Please choose a timeline."
+                    }
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Best way to reach you",
+                  "id": "q-contact",
+                  "control": "select",
+                  "options": [
+                    "{{ct.v}}"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "label": "Notes for our team",
+                  "id": "q-notes",
+                  "control": "textarea",
+                  "placeholder": "Site access, where it's going, questions…"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>QUOTE SUMMARY</strong>",
+              "text": "QUOTE SUMMARY"
+            },
+            {
+              "type": "definitions",
+              "items": [
+                {
+                  "term": {
+                    "html": "Subtotal before HST",
+                    "text": "Subtotal before HST"
+                  },
+                  "details": {
+                    "html": "{{subtotalText}}",
+                    "text": "{{subtotalText}}"
+                  }
+                },
+                {
+                  "term": {
+                    "html": "HST (13%)",
+                    "text": "HST (13%)"
+                  },
+                  "details": {
+                    "html": "{{hstText}}",
+                    "text": "{{hstText}}"
+                  }
+                },
+                {
+                  "term": {
+                    "html": "Shipping",
+                    "text": "Shipping"
+                  },
+                  "details": {
+                    "html": "{{shipText}}",
+                    "text": "{{shipText}}"
+                  }
+                },
+                {
+                  "term": {
+                    "html": "Estimated total",
+                    "text": "Estimated total"
+                  },
+                  "details": {
+                    "html": "{{totalText}}",
+                    "text": "{{totalText}}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "{{submitLabel}}",
+              "text": "{{submitLabel}}",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "if",
+              "value": "{{showFormErr}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>Please complete the required fields above.</strong>",
+                  "text": "Please complete the required fields above."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>How ordering works</strong>",
+              "text": "How ordering works"
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                {
+                  "html": "<strong>Submit your quote request.</strong> Nothing is purchased through the website, and no payment is accepted online.",
+                  "text": "Submit your quote request. Nothing is purchased through the website, and no payment is accepted online."
+                },
+                {
+                  "html": "<strong>A sales representative will contact you shortly</strong> to firm up the details of your order and process payment.",
+                  "text": "A sales representative will contact you shortly to firm up the details of your order and process payment."
+                },
+                {
+                  "html": "<strong>Buying items individually?</strong> Shipping is determined over the phone. We'll follow up with an estimated shipping cost.",
+                  "text": "Buying items individually? Shipping is determined over the phone. We'll follow up with an estimated shipping cost."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Saunas and plunges with Delivery or Delivery + Installation already include Ontario delivery in the price above.",
+              "text": "Saunas and plunges with Delivery or Delivery + Installation already include Ontario delivery in the price above."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section 2",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{submitted}}",
+          "blocks": [
+            {
+              "type": "heading",
+              "level": 2,
+              "html": "Thank you, <em><strong>{{firstName}}.</strong></em>",
+              "text": "Thank you, {{firstName}}."
+            },
+            {
+              "type": "paragraph",
+              "html": "Your quote request has been received. Here is your proposal, <strong>{{propNo}}</strong>, based on the options you selected. No payment has been taken. A sales representative will contact you shortly by {{contactPref}} to firm up the details of your order, confirm shipping and process payment.",
+              "text": "Your quote request has been received. Here is your proposal, {{propNo}}, based on the options you selected. No payment has been taken. A sales representative will contact you shortly by {{contactPref}} to firm up the details of your order, confirm shipping and process payment."
+            },
+            {
+              "type": "if",
+              "value": "{{mailed}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "Your email app should have opened with your quote filled in. Just press send so it reaches our team. If it didn’t open, email <a href=\"mailto:sales@thetorontosaunaco.com\">sales@thetorontosaunaco.com</a> with reference <strong>{{refNo}}</strong>.",
+                  "text": "Your email app should have opened with your quote filled in. Just press send so it reaches our team. If it didn’t open, email sales@thetorontosaunaco.com with reference {{refNo}}."
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Download PDF",
+              "text": "Download PDF",
+              "href": null,
+              "variant": "button"
+            },
+            {
+              "type": "text",
+              "html": "{{propCopyNote}}",
+              "text": "{{propCopyNote}}"
+            },
+            {
+              "type": "image",
+              "src": "./assets/a450a2a1d29722870d5d30594e037eaa.png",
+              "alt": "The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>QUOTE PROPOSAL</strong>",
+              "text": "QUOTE PROPOSAL"
+            },
+            {
+              "type": "text",
+              "html": "No. {{propNo}} | {{propDate}}",
+              "text": "No. {{propNo}} | {{propDate}}"
+            },
+            {
+              "type": "text",
+              "html": "17380 Highway 27, King, Ontario L7B 0E3 | (437) 429-6623 | HST No. 718682164RT0001",
+              "text": "17380 Highway 27, King, Ontario L7B 0E3 | (437) 429-6623 | HST No. 718682164RT0001"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Customer</strong>",
+              "text": "Customer"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{propCust.name}}</strong>",
+              "text": "{{propCust.name}}"
+            },
+            {
+              "type": "text",
+              "html": "{{propCust.addr}}",
+              "text": "{{propCust.addr}}"
+            },
+            {
+              "type": "text",
+              "html": "{{propCust.contact}}",
+              "text": "{{propCust.contact}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Order</strong>",
+              "text": "Order"
+            },
+            {
+              "type": "repeat",
+              "list": "{{propItems}}",
+              "as": "it",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "{{it.name}}",
+                  "text": "{{it.name}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{it.line}}",
+                  "text": "{{it.line}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{it.details}}",
+                  "as": "d",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{d.label}}",
+                      "text": "{{d.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{d.price}}",
+                      "text": "{{d.price}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Subtotal",
+              "text": "Subtotal"
+            },
+            {
+              "type": "text",
+              "html": "{{propSubtotal}}",
+              "text": "{{propSubtotal}}"
+            },
+            {
+              "type": "text",
+              "html": "HST (13%)",
+              "text": "HST (13%)"
+            },
+            {
+              "type": "text",
+              "html": "{{propHst}}",
+              "text": "{{propHst}}"
+            },
+            {
+              "type": "text",
+              "html": "Estimated total",
+              "text": "Estimated total"
+            },
+            {
+              "type": "text",
+              "html": "{{propTotal}}",
+              "text": "{{propTotal}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>Payment</strong>",
+              "text": "Payment"
+            },
+            {
+              "type": "text",
+              "html": "Deposit to confirm your order",
+              "text": "Deposit to confirm your order"
+            },
+            {
+              "type": "text",
+              "html": "{{propDeposit}}",
+              "text": "{{propDeposit}}"
+            },
+            {
+              "type": "if",
+              "value": "{{propHasBalance}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Final balance, due 7 days before installation",
+                  "text": "Final balance, due 7 days before installation"
+                },
+                {
+                  "type": "text",
+                  "html": "{{propBalance}}",
+                  "text": "{{propBalance}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "Pay by e-transfer to TJallen@thetorontosaunaco.com, bank draft, or cheque payable to The Toronto Sauna Co. Inc. No payment is due until your order is confirmed.",
+              "text": "Pay by e-transfer to TJallen@thetorontosaunaco.com, bank draft, or cheque payable to The Toronto Sauna Co. Inc. No payment is due until your order is confirmed."
+            },
+            {
+              "type": "text",
+              "html": "This proposal is an estimate based on the options you selected and is valid until {{propValid}}. Items marked “on request” and delivery outside Ontario will be confirmed by our team before you order.",
+              "text": "This proposal is an estimate based on the options you selected and is valid until {{propValid}}. Items marked “on request” and delivery outside Ontario will be confirmed by our team before you order."
+            },
+            {
+              "type": "text",
+              "html": "<strong>TERMS &amp; CONDITIONS</strong>",
+              "text": "TERMS & CONDITIONS"
+            },
+            {
+              "type": "text",
+              "html": "The Toronto Sauna Co. Inc.",
+              "text": "The Toronto Sauna Co. Inc."
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                {
+                  "html": "<strong>Deposit &amp; payment.</strong> A minimum $5,000.00 deposit (or the full amount on orders under $5,000.00) is required to confirm the order. The full balance is due 7 days before installation. If it is not received, installation may be rescheduled.",
+                  "text": "Deposit & payment. A minimum $5,000.00 deposit (or the full amount on orders under $5,000.00) is required to confirm the order. The full balance is due 7 days before installation. If it is not received, installation may be rescheduled."
+                },
+                {
+                  "html": "<strong>Cancellation.</strong> Once manufacturing begins, the deposit is non-refundable. Before that, cancellation must be in writing and may carry an administrative fee.",
+                  "text": "Cancellation. Once manufacturing begins, the deposit is non-refundable. Before that, cancellation must be in writing and may carry an administrative fee."
+                },
+                {
+                  "html": "<strong>Site readiness.</strong> The customer provides a level base, clear access for delivery, and a working electrical panel with capacity for the heater. A return visit caused by an unready site may be charged.",
+                  "text": "Site readiness. The customer provides a level base, clear access for delivery, and a working electrical panel with capacity for the heater. A return visit caused by an unready site may be charged."
+                },
+                {
+                  "html": "<strong>Electrical.</strong> All electrical heaters require a certified electrician. Wiring and inspection are the customer’s responsibility and are not included.",
+                  "text": "Electrical. All electrical heaters require a certified electrician. Wiring and inspection are the customer’s responsibility and are not included."
+                },
+                {
+                  "html": "<strong>Plumbing.</strong> All plumbing connections must be done by a plumber and are not included in the installation cost.",
+                  "text": "Plumbing. All plumbing connections must be done by a plumber and are not included in the installation cost."
+                },
+                {
+                  "html": "<strong>Schedule.</strong> Delivery and installation dates are estimates. We are not liable for delays outside our control, including supplier, carrier or weather delays.",
+                  "text": "Schedule. Delivery and installation dates are estimates. We are not liable for delays outside our control, including supplier, carrier or weather delays."
+                },
+                {
+                  "html": "<strong>Warranty.</strong> The sauna kit carries a five-year manufacturer warranty. Other products carry their manufacturer’s warranty. Warranty does not cover misuse, excess moisture, work by others, lack of maintenance, or natural wood variation.",
+                  "text": "Warranty. The sauna kit carries a five-year manufacturer warranty. Other products carry their manufacturer’s warranty. Warranty does not cover misuse, excess moisture, work by others, lack of maintenance, or natural wood variation."
+                }
+              ]
+            },
+            {
+              "type": "link",
+              "html": "Back to Home",
+              "text": "Back to Home",
+              "href": "/",
+              "variant": "button"
+            },
+            {
+              "type": "link",
+              "html": "Call (437) 429-6623",
+              "text": "Call (437) 429-6623",
+              "href": "tel:+14374296623",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

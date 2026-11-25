@@ -1,0 +1,648 @@
+{
+  "file": "OutdoorShowers.dc.html",
+  "route": "/outdoor-showers",
+  "pageMap": {
+    "route": "/outdoor-showers",
+    "title": "Outdoor Showers | Cedar Outdoor Showers | The Toronto Sauna Co.",
+    "description": "Cedar outdoor showers for beside your sauna, pool or hot tub: pillar, barrel and fully enclosed designs, with optional hot and cold shower hardware.",
+    "index": "",
+    "photos": 13
+  },
+  "head": {
+    "title": "Outdoor Showers | Cedar Outdoor Showers | The Toronto Sauna Co.",
+    "description": "Cedar outdoor showers for beside your sauna, pool or hot tub: pillar, barrel and fully enclosed designs, with optional hot and cold shower hardware.",
+    "canonical": "https://www.thetorontosaunaco.com/outdoor-showers",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Outdoor Showers | Cedar Outdoor Showers | The Toronto Sauna Co.",
+      "description": "Cedar outdoor showers for beside your sauna, pool or hot tub: pillar, barrel and fully enclosed designs, with optional hot and cold shower hardware.",
+      "url": "https://www.thetorontosaunaco.com/outdoor-showers",
+      "image": "https://www.thetorontosaunaco.com/_blob/d47d02b3e35e487cf5444e1d1cc65780"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://www.thetorontosaunaco.com/outdoor-showers#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is shower hardware included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every shower is sold as the cedar unit on its own, so you can use hardware you already have. Add our Premium Shower Hardware for a stainless rain head, hand shower and hot and cold mixing valve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a plumber?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not for a cold rinse: the Sunlight, Sierra and Savannah connect to a standard garden hose. For hot and cold water through the premium hardware, a licensed plumber may be needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What about winter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Drain the lines and hardware fully before freezing weather. The cedar can stay outside year-round; leave it to weather to silver-grey or keep the colour with an exterior oil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Red cedar or white cedar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Sunlight, Cloudburst, Rainbow Barrel and Skylight are Western red cedar, in knotty or clear grade. The Sierra and Savannah are Eastern White Cedar from the Canadian Timber Collection."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "chips": [
+        "Red Cedar",
+        "Eastern White Cedar"
+      ],
+      "showBest": false,
+      "items": [
+        {
+          "n": "The Sunlight Outdoor Shower",
+          "href": "/outdoor-showers/sunlight",
+          "s": "Red Cedar",
+          "p": 970,
+          "frm": 1,
+          "img": "./assets/d47d02b3e35e487cf5444e1d1cc65780.jpg",
+          "alt": "Sunlight cedar pillar outdoor shower with premium hardware, The Toronto Sauna Co.",
+          "contain": 1,
+          "cap": "Pillar",
+          "d": "A slim cedar pillar shower for quick rinses beside your sauna, hot tub or pool.",
+          "best": 0,
+          "specs": [
+            "Pillar shower",
+            "31\" × 31\" base",
+            "Western Red Cedar"
+          ]
+        },
+        {
+          "n": "The Sierra Outdoor Shower",
+          "href": "/outdoor-showers/sierra",
+          "s": "Eastern White Cedar",
+          "p": 872.5,
+          "frm": 1,
+          "img": "./assets/4bc7f6784691d4713252dbf417242385.jpg",
+          "alt": "Sierra white cedar pillar outdoor shower, The Toronto Sauna Co.",
+          "contain": 1,
+          "cap": "Pillar",
+          "d": "Our Canadian Timber pillar shower in Eastern White Cedar: the same slim, easy-to-place design as the Sunlight, in light, tight-knot white cedar.",
+          "best": 0,
+          "specs": [
+            "Pillar shower",
+            "31\" × 31\" base",
+            "Eastern White Cedar"
+          ]
+        },
+        {
+          "n": "The Savannah Outdoor Shower",
+          "href": "/outdoor-showers/savannah",
+          "s": "Eastern White Cedar",
+          "p": 1300,
+          "frm": 1,
+          "img": "./assets/120c6792ddacfd1f163078d96668a1e6.jpg",
+          "alt": "Savannah white cedar privacy panel outdoor shower with rain head, The Toronto Sauna Co.",
+          "contain": 1,
+          "cap": "Privacy panel",
+          "d": "A wider take on the pillar: a 42\" Eastern White Cedar privacy panel on a 40\" × 40\" deck, for a little more screening and room to rinse off.",
+          "best": 0,
+          "specs": [
+            "Privacy panel",
+            "40\" × 40\" base",
+            "Eastern White Cedar"
+          ]
+        },
+        {
+          "n": "The Cloudburst Outdoor Shower",
+          "href": "/outdoor-showers/cloudburst",
+          "s": "Red Cedar",
+          "p": 5260,
+          "frm": 1,
+          "img": "./assets/b808ddd1210bdb2c29b5c926d5602850.jpg",
+          "alt": "Cloudburst enclosed cedar outdoor shower with door, The Toronto Sauna Co.",
+          "contain": 0,
+          "cap": "Enclosed",
+          "d": "A fully enclosed cedar shower with a modern slatted privacy wall and a self-closing door on stainless steel hinges.",
+          "best": 0,
+          "specs": [
+            "Fully enclosed",
+            "Self-closing door",
+            "Western Red Cedar"
+          ]
+        },
+        {
+          "n": "The Rainbow Barrel Outdoor Shower",
+          "href": "/outdoor-showers/rainbow-barrel",
+          "s": "Red Cedar",
+          "p": 5234,
+          "frm": 1,
+          "img": "./assets/6845cf6ae659cb17a0774dc51c8651fd.jpg",
+          "alt": "Rainbow Barrel cedar outdoor shower, The Toronto Sauna Co.",
+          "contain": 1,
+          "cap": "Barrel",
+          "d": "A round cedar barrel shower with an open doorway: 60\" across and 80\" tall, in Western red cedar with stainless steel bands.",
+          "best": 0,
+          "specs": [
+            "60\" diameter",
+            "80\" tall",
+            "Western Red Cedar"
+          ]
+        },
+        {
+          "n": "The Skylight Washroom & Shower Combo",
+          "href": "/outdoor-showers/skylight",
+          "s": "Red Cedar",
+          "p": null,
+          "frm": 0,
+          "img": "./assets/67993d876cbf3a93f02820beee16a5d8.jpg",
+          "alt": "Skylight cedar barrel washroom and shower combo with acrylic dome, The Toronto Sauna Co.",
+          "contain": 1,
+          "cap": "Washroom + shower",
+          "d": "A 7' cedar barrel divided into a washroom and a shower, under a clear acrylic skylight dome.",
+          "best": 0,
+          "specs": [
+            "7' diameter",
+            "Washroom + shower",
+            "Acrylic skylight"
+          ]
+        }
+      ]
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
+  },
+  "sections": [
+    {
+      "name": "Collection hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Plunge & Shower",
+              "href": "/cold-plunges"
+            },
+            {
+              "text": "Outdoor Showers"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Outdoor showers</strong>",
+          "text": "Outdoor showers"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Cedar outdoor <em><strong>showers.</strong></em>",
+          "text": "Cedar outdoor showers."
+        },
+        {
+          "type": "paragraph",
+          "html": "Rinse off between sauna rounds, after the lake or out of the pool. Pillar, privacy-panel, enclosed and barrel showers in red or white cedar. Buy the shower on its own, or add our premium hot and cold hardware.",
+          "text": "Rinse off between sauna rounds, after the lake or out of the pool. Pillar, privacy-panel, enclosed and barrel showers in red or white cedar. Buy the shower on its own, or add our premium hot and cold hardware."
+        },
+        {
+          "type": "text",
+          "html": "<a href=\"/contact#visit\">Book a Consultation</a>",
+          "text": "Book a Consultation"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "blocks": [
+        {
+          "type": "link",
+          "html": "Cold Plunges",
+          "text": "Cold Plunges",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Outdoor Showers",
+          "text": "Outdoor Showers",
+          "href": "/outdoor-showers",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Toolbar + grid",
+      "blocks": [
+        {
+          "type": "if",
+          "value": "{{hasChips}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{chips}}",
+              "as": "c",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{c.on}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{c.off}}",
+                  "blocks": [
+                    {
+                      "type": "link",
+                      "html": "{{c.label}}",
+                      "text": "{{c.label}}",
+                      "href": null,
+                      "variant": "button"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "{{countText}}",
+          "text": "{{countText}}"
+        },
+        {
+          "type": "text",
+          "html": "Sort",
+          "text": "Sort"
+        },
+        {
+          "type": "repeat",
+          "list": "{{sorts}}",
+          "as": "so",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{so.on}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{so.off}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{so.label}}",
+                  "text": "{{so.label}}",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "repeat",
+          "list": "{{items}}",
+          "as": "it",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{it.href}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{it.badges}}",
+                  "as": "b",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{b}}</strong>",
+                      "text": "{{b}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgCover}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.imgContain}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{it.img}}",
+                      "alt": "{{it.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{it.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{it.n}}",
+                      "text": "Photo: {{it.n}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.s}}</strong>",
+              "text": "{{it.s}}"
+            },
+            {
+              "type": "text",
+              "html": "{{it.cap}}",
+              "text": "{{it.cap}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{it.href}}\">{{it.n}}</a>",
+              "text": "{{it.n}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{it.d}}",
+              "text": "{{it.d}}"
+            },
+            {
+              "type": "if",
+              "value": "{{it.hasSpecs}}",
+              "blocks": [
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "items": [
+                    {
+                      "type": "repeat",
+                      "list": "{{it.specs}}",
+                      "as": "sp",
+                      "items": [
+                        {
+                          "html": "{{sp}}",
+                          "text": "{{sp}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "{{it.priceLabel}}",
+              "text": "{{it.priceLabel}}"
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{it.priceText}}</strong>",
+              "text": "{{it.priceText}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{it.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Why outdoor shower",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Complete the ritual</strong>",
+          "text": "Complete the ritual"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Sauna, rinse, <em><strong>plunge.</strong></em>",
+          "text": "Sauna, rinse, plunge."
+        },
+        {
+          "type": "paragraph",
+          "html": "A quick rinse before your plunge keeps the water cleaner, and a cool shower between sauna rounds is the classic Finnish way to reset. Our showers are cedar, like our saunas and plunges, so the whole setup matches.",
+          "text": "A quick rinse before your plunge keeps the water cleaner, and a cool shower between sauna rounds is the classic Finnish way to reset. Our showers are cedar, like our saunas and plunges, so the whole setup matches."
+        },
+        {
+          "type": "link",
+          "html": "Pair It With a Cold Plunge",
+          "text": "Pair It With a Cold Plunge",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Garden hose ready</strong>",
+          "text": "Garden hose ready"
+        },
+        {
+          "type": "text",
+          "html": "Pillar and panel showers run cold from a standard garden hose. No plumbing needed.",
+          "text": "Pillar and panel showers run cold from a standard garden hose. No plumbing needed."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Premium hardware</strong>",
+          "text": "Premium hardware"
+        },
+        {
+          "type": "text",
+          "html": "Add a stainless rain head, hand shower and hot and cold mixing valve.",
+          "text": "Add a stainless rain head, hand shower and hot and cold mixing valve."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Red or white cedar</strong>",
+          "text": "Red or white cedar"
+        },
+        {
+          "type": "text",
+          "html": "Western red cedar in knotty or clear grade, or Eastern White Cedar from the Canadian Timber Collection.",
+          "text": "Western red cedar in knotty or clear grade, or Eastern White Cedar from the Canadian Timber Collection."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "text",
+          "html": "Handcrafted in Canada with a 5-year residential limited warranty.",
+          "text": "Handcrafted in Canada with a 5-year residential limited warranty."
+        }
+      ]
+    },
+    {
+      "name": "Shower FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Outdoor shower FAQ</strong>",
+          "text": "Outdoor shower FAQ"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Good to <em><strong>know.</strong></em>",
+          "text": "Good to know."
+        },
+        {
+          "type": "faq",
+          "html": "Is shower hardware included?",
+          "text": "Is shower hardware included?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "No. Every shower is sold as the cedar unit on its own, so you can use hardware you already have. Add our Premium Shower Hardware for a stainless rain head, hand shower and hot and cold mixing valve.",
+              "text": "No. Every shower is sold as the cedar unit on its own, so you can use hardware you already have. Add our Premium Shower Hardware for a stainless rain head, hand shower and hot and cold mixing valve."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a plumber?",
+          "text": "Do I need a plumber?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Not for a cold rinse: the Sunlight, Sierra and Savannah connect to a standard garden hose. For hot and cold water through the premium hardware, a licensed plumber may be needed.",
+              "text": "Not for a cold rinse: the Sunlight, Sierra and Savannah connect to a standard garden hose. For hot and cold water through the premium hardware, a licensed plumber may be needed."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What about winter?",
+          "text": "What about winter?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Drain the lines and hardware fully before freezing weather. The cedar can stay outside year-round; leave it to weather to silver-grey or keep the colour with an exterior oil.",
+              "text": "Drain the lines and hardware fully before freezing weather. The cedar can stay outside year-round; leave it to weather to silver-grey or keep the colour with an exterior oil."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Red cedar or white cedar?",
+          "text": "Red cedar or white cedar?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The Sunlight, Cloudburst, Rainbow Barrel and Skylight are Western red cedar, in knotty or clear grade. The Sierra and Savannah are Eastern White Cedar from the Canadian Timber Collection.",
+              "text": "The Sunlight, Cloudburst, Rainbow Barrel and Skylight are Western red cedar, in knotty or clear grade. The Sierra and Savannah are Eastern White Cedar from the Canadian Timber Collection."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Help band",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Which shower?</strong>",
+          "text": "Which shower?"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choosing your outdoor shower",
+          "text": "Choosing your outdoor shower"
+        },
+        {
+          "type": "paragraph",
+          "html": "Pillar showers (Sunlight and Sierra) are the simplest: a slim cedar post on a deck base. The Savannah adds a wide privacy panel. For full privacy, choose the enclosed Cloudburst or the round Rainbow Barrel, and for a washroom too, the Skylight combo.",
+          "text": "Pillar showers (Sunlight and Sierra) are the simplest: a slim cedar post on a deck base. The Savannah adds a wide privacy panel. For full privacy, choose the enclosed Cloudburst or the round Rainbow Barrel, and for a washroom too, the Skylight combo."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which shower <em>fits?</em></strong>",
+          "text": "Not sure which shower fits?"
+        },
+        {
+          "type": "text",
+          "html": "Visit our GTA showroom, or book a consultation and we'll recommend the right shower and hardware for your setup.",
+          "text": "Visit our GTA showroom, or book a consultation and we'll recommend the right shower and hardware for your setup."
+        },
+        {
+          "type": "link",
+          "html": "Book a Consultation",
+          "text": "Book a Consultation",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,1769 @@
+{
+  "file": "SaunaBarrel.dc.html",
+  "route": "/saunas/barrel-sauna",
+  "pageMap": {
+    "route": "/saunas/barrel-sauna",
+    "title": "Barrel Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Barrel Sauna: The classic Finnish barrel in western red cedar. Installed across Ontario. Request a quote.",
+    "index": "",
+    "photos": 52
+  },
+  "head": {
+    "title": "Barrel Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Barrel Sauna: The classic Finnish barrel in western red cedar. Installed across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/barrel-sauna",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "Barrel Sauna | Outdoor Sauna | The Toronto Sauna Co.",
+      "description": "Barrel Sauna: The classic Finnish barrel in western red cedar. Installed across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/saunas/barrel-sauna",
+      "image": "https://www.thetorontosaunaco.com/_blob/33c57edaf03d183771e5e4f313aa6110"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Barrel Sauna",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/33c57edaf03d183771e5e4f313aa6110"
+        ],
+        "url": "https://www.thetorontosaunaco.com/saunas/barrel-sauna",
+        "description": "Barrel Sauna: The classic Finnish barrel in western red cedar. Installed across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "8499.00",
+          "url": "https://www.thetorontosaunaco.com/saunas/barrel-sauna",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          },
+          "availability": "https://schema.org/MadeToOrder"
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "file": "SaunaBarrel",
+      "name": "Barrel Sauna",
+      "series": "Barrel",
+      "crumbTab": [
+        "Barrel Saunas",
+        "/saunas/barrel"
+      ],
+      "intro": "The classic Finnish barrel in western red cedar. The round shape has less air to heat above the benches, so it warms up fast and holds heat evenly, and it is one of the most affordable ways into a real outdoor cedar sauna.",
+      "highlights": [
+        "Fast, even heat",
+        "Western red cedar",
+        "Stainless steel bands",
+        "Built in Canada"
+      ],
+      "photos": [
+        "Barrel Sauna exterior",
+        "Interior benches",
+        "Glass front"
+      ],
+      "specs": [
+        [
+          "7' × 4' (seats 2)",
+          "84\" W × 48\" L × 84\" H"
+        ],
+        [
+          "7' × 6' (seats 4)",
+          "84\" W × 72\" L × 84\" H"
+        ],
+        [
+          "7' × 7' (seats 5)",
+          "84\" W × 84\" L × 84\" H"
+        ],
+        [
+          "7' × 8' (seats 6)",
+          "84\" W × 96\" L × 84\" H"
+        ],
+        [
+          "7' × 10' (seats 6–8)",
+          "84\" W × 120\" L × 84\" H"
+        ],
+        [
+          "Footprint",
+          "7' wide, by 4' to 14' long depending on size and add-ons"
+        ],
+        [
+          "Door",
+          "Cedar door with tempered glass, 50\" (127 cm) glass height on the 7' model"
+        ],
+        [
+          "Wood",
+          "Western red cedar, knotty or clear"
+        ],
+        [
+          "Construction",
+          "Cedar staves with stainless steel bands, on cedar cradles"
+        ],
+        [
+          "Floor",
+          "Flat or rounded along the contours of the barrel"
+        ],
+        [
+          "Heat",
+          "Wood-burning or electric"
+        ],
+        [
+          "Base",
+          "Level, with a slight slope at the back for drainage: concrete pad, deck, patio stone or crushed stone"
+        ],
+        [
+          "Electrical",
+          "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician"
+        ],
+        [
+          "Heater",
+          "6 kW electric or wood-burning, sized for this room"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Design",
+          "desc": "Wood and finishes for your sauna.",
+          "groups": [
+            {
+              "id": "size",
+              "title": "Choose your size",
+              "type": "single",
+              "required": true,
+              "default": "s4",
+              "base": true,
+              "options": [
+                {
+                  "id": "s4",
+                  "label": "7' × 4'",
+                  "sub": "Seats 2 · sauna 84\" × 48\"",
+                  "price": 8499,
+                  "photo": "7' × 4'",
+                  "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+                  "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "s6",
+                  "label": "7' × 6'",
+                  "sub": "Seats 4 · sauna 84\" × 72\"",
+                  "price": 9100,
+                  "photo": "7' × 6'",
+                  "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+                  "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "s7",
+                  "label": "7' × 7'",
+                  "sub": "Seats 5 · sauna 84\" × 84\"",
+                  "price": 9600,
+                  "photo": "7' × 7'",
+                  "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+                  "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "s8",
+                  "label": "7' × 8'",
+                  "sub": "Seats 6 · sauna 84\" × 96\"",
+                  "price": 9950,
+                  "photo": "7' × 8'",
+                  "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+                  "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+                  "fit": "contain"
+                },
+                {
+                  "id": "s10",
+                  "label": "7' × 10'",
+                  "sub": "Seats 6–8 · sauna 84\" × 120\"",
+                  "price": 10900,
+                  "photo": "7' × 10'",
+                  "img": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+                  "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ],
+              "note": "Sizes are the sauna room (width × length). Clear cedar and all upgrades below are priced on request for your size and confirmed in your quote."
+            },
+            {
+              "id": "wood",
+              "title": "Choose your wood type",
+              "type": "single",
+              "required": true,
+              "default": "knotty",
+              "options": [
+                {
+                  "id": "knotty",
+                  "label": "Knotty Western Red Cedar",
+                  "sub": "Rustic, characterful grain",
+                  "price": 0,
+                  "photo": "Knotty cedar",
+                  "img": "./assets/c96319b77d308aac26135445e7863280.jpg",
+                  "alt": "Knotty western red cedar sample, The Toronto Sauna Co."
+                },
+                {
+                  "id": "clear",
+                  "label": "Clear Western Red Cedar",
+                  "sub": "Smooth, knot-free finish",
+                  "price": null,
+                  "photo": "Clear cedar",
+                  "img": "./assets/ae6b9794d6b3e0257f193e099ae00fba.jpg",
+                  "alt": "Clear western red cedar sample, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "roof",
+              "title": "Roof",
+              "type": "single",
+              "required": true,
+              "default": "r_none",
+              "options": [
+                {
+                  "id": "r_none",
+                  "label": "Cedar roof (standard)",
+                  "sub": "Natural cedar staves",
+                  "price": 0,
+                  "photo": "Cedar roof (standard)",
+                  "img": "./assets/33c57edaf03d183771e5e4f313aa6110.jpg",
+                  "alt": "Cedar barrel sauna with no metal roof, The Toronto Sauna Co."
+                },
+                {
+                  "id": "r_black",
+                  "label": "Black metal roof",
+                  "sub": "Our most popular look",
+                  "price": null,
+                  "photo": "Black metal roof",
+                  "img": "./assets/56cd09efb02ce256be7ecef3eae6046d.jpg",
+                  "alt": "Barrel sauna with black metal roof, The Toronto Sauna Co."
+                },
+                {
+                  "id": "r_green",
+                  "label": "Green metal roof",
+                  "sub": "",
+                  "price": null,
+                  "photo": "Green metal roof",
+                  "img": "./assets/fe8cb1a67ad7e41a5b61ea2e5713b531.jpg",
+                  "alt": "Barrel sauna with green metal roof, The Toronto Sauna Co."
+                },
+                {
+                  "id": "r_burg",
+                  "label": "Burgundy metal roof",
+                  "sub": "",
+                  "price": null,
+                  "photo": "Burgundy metal roof",
+                  "img": "./assets/0b835a1c35c520a851e6469bcf775c0b.jpg",
+                  "alt": "Barrel sauna with burgundy metal roof, The Toronto Sauna Co."
+                },
+                {
+                  "id": "r_brown",
+                  "label": "Brown woodgrain metal roof",
+                  "sub": "",
+                  "price": null,
+                  "photo": "Brown woodgrain metal roof",
+                  "img": "./assets/bf86bf64b086d62c71ebbf729573aff7.jpg",
+                  "alt": "Barrel sauna with brown woodgrain metal roof, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "front",
+              "title": "Front windows",
+              "type": "single",
+              "required": true,
+              "default": "f_none",
+              "options": [
+                {
+                  "id": "f_none",
+                  "label": "No front windows",
+                  "sub": "Door only",
+                  "price": 0,
+                  "photo": "No front windows",
+                  "img": "./assets/d213f986745e9fde4b8f5e1233ac6bde.jpg",
+                  "alt": "Barrel sauna front with door only, The Toronto Sauna Co."
+                },
+                {
+                  "id": "f_two",
+                  "label": "Two small front windows",
+                  "sub": "One each side of the door",
+                  "price": null,
+                  "photo": "Two small front windows",
+                  "img": "./assets/70c66e58a20f4d04a45317b4d946b001.jpg",
+                  "alt": "Barrel sauna with two small front windows, The Toronto Sauna Co."
+                },
+                {
+                  "id": "f_hm",
+                  "label": "Two half-moon front windows",
+                  "sub": "Curved glass following the barrel, each side of the door",
+                  "price": null,
+                  "photo": "Two half-moon front windows",
+                  "img": "./assets/66a9669f7fee0d6c10d580c43e938cfc.jpg",
+                  "alt": "Barrel sauna with two half-moon front windows, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "back",
+              "title": "Back window",
+              "type": "single",
+              "required": true,
+              "default": "b_none",
+              "options": [
+                {
+                  "id": "b_none",
+                  "label": "No back window",
+                  "sub": "Solid cedar back wall",
+                  "price": 0,
+                  "photo": "No back window",
+                  "img": "./assets/1a24e8e629f2d435cafc5d884ddacaa6.jpg",
+                  "alt": "Barrel sauna back wall with no window, The Toronto Sauna Co."
+                },
+                {
+                  "id": "b_hm",
+                  "label": "Half-moon back window",
+                  "sub": "A curved window across the upper back wall",
+                  "price": null,
+                  "photo": "Half-moon back window",
+                  "img": "./assets/77575d981f12fede25f2f440439dea0a.jpg",
+                  "alt": "Barrel sauna with half-moon back window, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "door",
+              "title": "Door window",
+              "type": "single",
+              "required": true,
+              "default": "d_long",
+              "options": [
+                {
+                  "id": "d_long",
+                  "label": "Long glass window",
+                  "sub": "Tall rectangular glass panel",
+                  "price": 0,
+                  "photo": "Long glass window",
+                  "img": "./assets/cb389b588b1535486d6b5b6cb16cf74f.jpg",
+                  "alt": "Barrel sauna door with long glass window, The Toronto Sauna Co."
+                },
+                {
+                  "id": "d_round",
+                  "label": "Round porthole window",
+                  "sub": "A round window in a solid cedar door",
+                  "price": null,
+                  "photo": "Round porthole window",
+                  "img": "./assets/3da0c61d631f34fc7402ca8a47937f3a.jpg",
+                  "alt": "Barrel sauna door with round porthole window, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "glass",
+              "title": "Glass tint",
+              "type": "single",
+              "required": true,
+              "default": "t_bronze",
+              "options": [
+                {
+                  "id": "t_bronze",
+                  "label": "Bronze tinted",
+                  "sub": "Warm tint, standard",
+                  "price": 0,
+                  "photo": "Bronze tinted",
+                  "img": "./assets/56292481706ea6386d3e8179d51b4351.jpg",
+                  "alt": "Barrel sauna with bronze tinted glass, The Toronto Sauna Co."
+                },
+                {
+                  "id": "t_mirror",
+                  "label": "Mirrored",
+                  "sub": "Privacy from outside",
+                  "price": null,
+                  "photo": "Mirrored",
+                  "img": "./assets/79a9665b6171f07aa1536288b470fe9f.jpg",
+                  "alt": "Mirrored sauna glass, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "bench",
+              "title": "Benches",
+              "type": "single",
+              "required": true,
+              "default": "n_std",
+              "options": [
+                {
+                  "id": "n_std",
+                  "label": "Standard benches",
+                  "sub": "Classic straight cedar benches",
+                  "price": 0,
+                  "photo": "Standard benches",
+                  "img": "./assets/5a707401a728e2055ecdfc248d1a6d45.jpg",
+                  "alt": "Standard cedar barrel sauna benches, The Toronto Sauna Co."
+                },
+                {
+                  "id": "n_sig",
+                  "label": "Signature benches",
+                  "sub": "Ergonomic, with backrests and rounded corners",
+                  "price": null,
+                  "photo": "Signature benches",
+                  "img": "./assets/363fe3c637410d8c2d0d52d377afc1ba.jpg",
+                  "alt": "Signature cedar benches with backrests, The Toronto Sauna Co."
+                },
+                {
+                  "id": "n_lounge",
+                  "label": "Lounge bench set",
+                  "sub": "Adjustable built-in backrests",
+                  "price": null,
+                  "photo": "Lounge bench set",
+                  "img": "./assets/d68ff47b6679f7809c85031a02072b0e.jpg",
+                  "alt": "Barrel sauna lounge benches with adjustable backrests, The Toronto Sauna Co."
+                }
+              ]
+            },
+            {
+              "id": "cove",
+              "title": "Overhanging cove",
+              "type": "single",
+              "required": true,
+              "default": "c_none",
+              "options": [
+                {
+                  "id": "c_none",
+                  "label": "No cove",
+                  "sub": "Standard front",
+                  "price": 0,
+                  "photo": "No cove",
+                  "img": "./assets/d213f986745e9fde4b8f5e1233ac6bde.jpg",
+                  "alt": "Barrel sauna front without a cove, The Toronto Sauna Co."
+                },
+                {
+                  "id": "c_cove",
+                  "label": "Overhanging cove",
+                  "sub": "Extends the roof 32\" over the door to keep rain and snow off",
+                  "price": null,
+                  "photo": "Overhanging cove",
+                  "img": "./assets/a37c16eea276835437cf1970c1c6de45.jpg",
+                  "alt": "Barrel sauna with overhanging cove over the door, The Toronto Sauna Co."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heat",
+          "title": "Heat",
+          "desc": "One package, sized to this sauna. Pick the look and feel you like.",
+          "groups": [
+            {
+              "id": "heater",
+              "title": "Choose your heater package",
+              "type": "single",
+              "required": true,
+              "default": "h_kip",
+              "note": "6 kW suits the smaller barrels. We size the heater up for 7' × 8' and larger in your quote. Every package is ready to fire: the heater, its control and the right fill of stones. Electric heaters need a dedicated 240V circuit installed by a licensed electrician. This sauna is large enough for a wood-burning stove too.",
+              "options": [
+                {
+                  "id": "h_kip",
+                  "label": "Harvia KIP 6 kW package",
+                  "sub": "Controls built in · best value. Includes built-in controls and stones.",
+                  "price": 1760,
+                  "img": "./assets/7d0e6db593e5c309d8cbfd9e609a6ce4.webp",
+                  "alt": "Harvia KIP electric sauna heater with built-in controls, The Toronto Sauna Co.",
+                  "photo": "Harvia KIP 6 kW"
+                },
+                {
+                  "id": "h_slim",
+                  "label": "Homecraft Revive Slim 6 kW package",
+                  "sub": "Slim wall-mount, made in Canada. Includes Homecraft touchpad and stones.",
+                  "price": 2725,
+                  "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+                  "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Revive Slim 6 kW"
+                },
+                {
+                  "id": "h_apexmini",
+                  "label": "Homecraft Apex Mini 6 kW package",
+                  "sub": "Big stone mass, soft steam. Includes Homecraft touchpad and stones.",
+                  "price": 2990,
+                  "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+                  "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Apex Mini 6 kW"
+                },
+                {
+                  "id": "h_drop",
+                  "label": "HUUM Drop 6 kW package",
+                  "sub": "Sculptural design, app-ready. Includes HUUM UKU control and stones.",
+                  "price": 3053,
+                  "img": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+                  "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM Drop 6 kW"
+                },
+                {
+                  "id": "h_hive",
+                  "label": "HUUM HIVE Mini 6 kW package",
+                  "sub": "Floor-standing stone tower. Includes HUUM UKU control and stones.",
+                  "price": 4628,
+                  "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+                  "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM HIVE Mini 6 kW"
+                },
+                {
+                  "id": "h_tg",
+                  "label": "TimberGlow14 wood-burning package",
+                  "sub": "Wood-fired heat, no wiring. Includes rocks; chimney kit quoted.",
+                  "price": 3316,
+                  "img": "./assets/d60e58e245437d8f8fa5fa88e1c5fa48.webp",
+                  "alt": "TimberGlow14 wood-burning sauna heater, The Toronto Sauna Co.",
+                  "photo": "TimberGlow14"
+                },
+                {
+                  "id": "h_kuru",
+                  "label": "Narvi Kuru wood-burning stove",
+                  "sub": "Compact Finnish stove; chimney kit quoted.",
+                  "price": null,
+                  "img": "./assets/8d2cbfbdd1b0d69d57412757ec8af66a.webp",
+                  "alt": "Narvi Kuru wood-burning sauna heater, The Toronto Sauna Co.",
+                  "photo": "Narvi Kuru"
+                },
+                {
+                  "id": "h_none",
+                  "label": "No heater",
+                  "sub": "I already have one",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No heater"
+                }
+              ]
+            },
+            {
+              "id": "heatx",
+              "title": "Heater upgrades",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "wifi",
+                  "label": "Wi-Fi control upgrade",
+                  "sub": "Start and schedule your sauna from your phone. For Homecraft and HUUM heaters.",
+                  "price": 399,
+                  "notWith": {
+                    "group": "heater",
+                    "ids": [
+                      "h_kip",
+                      "h_tg",
+                      "h_kuru",
+                      "h_none"
+                    ]
+                  },
+                  "img": "./assets/fee7140f09089fb6e6dc8304960fd763.webp",
+                  "alt": "HUUM UKU Wi-Fi control, The Toronto Sauna Co.",
+                  "photo": "Wi-Fi control"
+                },
+                {
+                  "id": "rail",
+                  "label": "Heater safety railing",
+                  "sub": "Recommended with kids; sized to your heater",
+                  "price": 306,
+                  "img": "./assets/bd6f66557841bd80281a9970bd2cccc0.webp",
+                  "alt": "HUUM Drop safety railing, The Toronto Sauna Co.",
+                  "photo": "Safety railing"
+                },
+                {
+                  "id": "hshield",
+                  "label": "Ceiling heat shield",
+                  "sub": "Protects the ceiling above the heater",
+                  "price": 96,
+                  "img": "./assets/e8082b7f1174926376236fa18db7e256.webp",
+                  "alt": "Sauna ceiling heat shield, The Toronto Sauna Co.",
+                  "photo": "Heat shield"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "title": "Lighting",
+          "desc": "Set the mood with warm, colour-changing LED light under the benches.",
+          "groups": [
+            {
+              "id": "light",
+              "title": "SaunaScapes LED lighting",
+              "type": "single",
+              "required": false,
+              "default": "l_none",
+              "note": "We recommend the 43\" set for this sauna.",
+              "options": [
+                {
+                  "id": "l_none",
+                  "label": "No lighting",
+                  "sub": "Add lighting later anytime",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No lighting"
+                },
+                {
+                  "id": "saunascapes_sade_43_",
+                  "label": "SaunaScapes Sade 43\" LED Light Set",
+                  "sub": "Colour-changing LED under the bench, recommended",
+                  "price": 375,
+                  "img": "./assets/e46df66cdb47089e89555fc61771c483.webp",
+                  "alt": "SaunaScapes Sade 43\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 43\" LED Light Set"
+                },
+                {
+                  "id": "saunascapes_sade_72_",
+                  "label": "SaunaScapes Sade 72\" LED Light Set",
+                  "sub": "Colour-changing LED for longer benches",
+                  "price": 416,
+                  "img": "./assets/1acce63a8eaea8a88dc4cd52cdd56040.webp",
+                  "alt": "SaunaScapes Sade 72\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 72\" LED Light Set"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acc",
+          "title": "Accessories",
+          "desc": "Finish the space. Everything here is optional.",
+          "groups": [
+            {
+              "id": "pkg",
+              "title": "Accessory package (10% off)",
+              "type": "single",
+              "required": false,
+              "options": [
+                {
+                  "id": "starter_package",
+                  "label": "Starter Package",
+                  "sub": "Bucket, ladle, thermometer and essentials",
+                  "price": 111.6,
+                  "img": "./assets/5729252e6a427c5e0791635437646abf.webp",
+                  "alt": "Starter Package, The Toronto Sauna Co.",
+                  "photo": "Starter Package"
+                },
+                {
+                  "id": "deluxe_package",
+                  "label": "Deluxe Package",
+                  "sub": "A fuller set with backrest and scent",
+                  "price": 386.55,
+                  "img": "./assets/c6851b17538b90f430d1541f74d46cc9.webp",
+                  "alt": "Deluxe Package, The Toronto Sauna Co.",
+                  "photo": "Deluxe Package"
+                },
+                {
+                  "id": "supreme_package",
+                  "label": "Supreme Package",
+                  "sub": "Narvi Black set, eucalyptus and two backrests",
+                  "price": 538.65,
+                  "img": "./assets/48c077a483491bc7683baeb0613fabd6.webp",
+                  "alt": "Supreme Package, The Toronto Sauna Co.",
+                  "photo": "Supreme Package"
+                }
+              ]
+            },
+            {
+              "id": "extras",
+              "title": "Or pick individual items",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "electric_sauna_light",
+                  "label": "Electric Sauna Light",
+                  "sub": "Classic marine-grade sauna light",
+                  "price": 36,
+                  "img": "./assets/b301bc099761644f76939bd991a776f8.webp",
+                  "alt": "Electric Sauna Light, The Toronto Sauna Co.",
+                  "photo": "Electric Sauna Light"
+                },
+                {
+                  "id": "wooden_bucket_&_ladl",
+                  "label": "Wooden Bucket & Ladle",
+                  "sub": "Classic cedar bucket and ladle",
+                  "price": 82,
+                  "img": "./assets/3f01c1da1436cadb18e25ce9a3a72bb3.webp",
+                  "alt": "Wooden Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Wooden Bucket & Ladle"
+                },
+                {
+                  "id": "narvi_black_bucket_&",
+                  "label": "Narvi Black Bucket & Ladle",
+                  "sub": "Black aluminum with birch handle",
+                  "price": 186,
+                  "img": "./assets/e02d6ffb3263a55767dc5e20cf45e53e.webp",
+                  "alt": "Narvi Black Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Narvi Black Bucket & Ladle"
+                },
+                {
+                  "id": "comfort_sauna_backre",
+                  "label": "Comfort Sauna Backrest",
+                  "sub": "Cedar backrest",
+                  "price": 106.5,
+                  "img": "./assets/a34977303c5df863babaaaf30e884955.webp",
+                  "alt": "Comfort Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Comfort Sauna Backrest"
+                },
+                {
+                  "id": "elite_sauna_backrest",
+                  "label": "Elite Sauna Backrest",
+                  "sub": "Curved to follow your spine",
+                  "price": 106,
+                  "img": "./assets/2ceb627f48f7aafb5294b8189f72db1f.webp",
+                  "alt": "Elite Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Elite Sauna Backrest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Choose delivery only, or let our team deliver and install it.",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Select your delivery option",
+              "type": "single",
+              "required": true,
+              "note": "Prices apply anywhere in Ontario. We also install in BC. Anywhere else, delivery is quoted for your location.",
+              "options": [
+                {
+                  "id": "d_only",
+                  "label": "Delivery Only",
+                  "sub": "Freight to a local depot in Ontario; you unload the crate",
+                  "price": 450,
+                  "photo": "Delivery truck"
+                },
+                {
+                  "id": "d_install",
+                  "label": "Delivery + Installation",
+                  "sub": "Delivered and assembled by our team, anywhere in Ontario",
+                  "price": 1750,
+                  "photo": "Installed sauna"
+                }
+              ]
+            }
+          ],
+          "prompt": "Choose your delivery option"
+        }
+      ],
+      "kind": "Outdoor sauna",
+      "crumbs": [
+        [
+          "Saunas",
+          "/saunas"
+        ],
+        [
+          "Barrel Saunas",
+          "/saunas/barrel"
+        ]
+      ],
+      "buildLabel": "Build your sauna",
+      "related": [
+        "Compare other <span style=\"font-style: italic\">saunas</span>",
+        [
+          "View All Cube Saunas",
+          "/saunas/cube"
+        ],
+        [
+          "Best Sellers",
+          "/saunas/best-sellers"
+        ]
+      ],
+      "installCopy": "Delivered and assembled by our team, anywhere in Ontario.",
+      "elecNote": "Electrical hook-up must be completed by a licensed electrician.",
+      "gallery": [
+        {
+          "src": "./assets/33c57edaf03d183771e5e4f313aa6110.jpg",
+          "alt": "Cedar barrel sauna on a backyard deck, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/c1307ea300e93a0720b70977ce3048b0.jpg",
+          "alt": "Cedar barrel sauna with wood stove chimney in the garden, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/70c66e58a20f4d04a45317b4d946b001.jpg",
+          "alt": "Cedar barrel sauna with two front windows by a lake, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a2c09ab680c8709fd9b6ed5d47dcf1c8.jpg",
+          "alt": "Barrel sauna with half-moon back window beside a lake, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/fe8cb1a67ad7e41a5b61ea2e5713b531.jpg",
+          "alt": "Barrel sauna with green metal roof, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/0b835a1c35c520a851e6469bcf775c0b.jpg",
+          "alt": "Barrel sauna with burgundy metal roof, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/3da0c61d631f34fc7402ca8a47937f3a.jpg",
+          "alt": "Cedar barrel sauna with porthole door beside a fire pit, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a5113017383f2b1c38c0babb20912f16.jpg",
+          "alt": "Cedar barrel sauna installed in a finished basement, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/ccc6045b732dfca5807d61e6d8c85bed.jpg",
+          "alt": "Cedar barrel sauna with glass door and two front windows, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "about": {
+        "title": "Classic shape, built your way",
+        "lede": "The barrel is the traditional Finnish shape in western red cedar, and one of the most efficient saunas to heat.",
+        "items": [
+          [
+            "Heats fast and evenly",
+            "The round shape circulates heat naturally, with less air to warm above the benches."
+          ],
+          [
+            "Pick your length",
+            "Every barrel is 7' across; choose the length that seats your crew, from a cozy 2-person to 8 or more."
+          ],
+          [
+            "Make it yours",
+            "Front and back windows, an overhanging cove over the door, cedar or metal roofs, and regular, signature or lounge benches. We confirm options and pricing in your quote."
+          ],
+          [
+            "Wood or electric",
+            "Fire it with a wood-burning stove or a 240V electric heater. Built in Canada from western red cedar."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/f55a775912738bc814ce761320938ad7.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "Barrel Saunas",
+              "href": "/saunas/barrel"
+            },
+            {
+              "text": "Barrel Sauna"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>{{galCount}}</strong>",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: Barrel Sauna exterior",
+              "text": "Photo: Barrel Sauna exterior"
+            },
+            {
+              "type": "text",
+              "html": "Barrel Sauna exterior",
+              "text": "Barrel Sauna exterior"
+            },
+            {
+              "type": "text",
+              "html": "Interior benches",
+              "text": "Interior benches"
+            },
+            {
+              "type": "text",
+              "html": "Glass front",
+              "text": "Glass front"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Barrel · Outdoor sauna</strong>",
+          "text": "Barrel · Outdoor sauna"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Barrel Sauna",
+          "text": "Barrel Sauna"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "The classic Finnish barrel in western red cedar. The round shape has less air to heat above the benches, so it warms up fast and holds heat evenly, and it is one of the most affordable ways into a real outdoor cedar sauna.",
+          "text": "The classic Finnish barrel in western red cedar. The round shape has less air to heat above the benches, so it warms up fast and holds heat evenly, and it is one of the most affordable ways into a real outdoor cedar sauna."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Fast, even heat",
+              "text": "Fast, even heat"
+            },
+            {
+              "html": "Western red cedar",
+              "text": "Western red cedar"
+            },
+            {
+              "html": "Stainless steel bands",
+              "text": "Stainless steel bands"
+            },
+            {
+              "html": "Built in Canada",
+              "text": "Built in Canada"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your sauna</strong>",
+          "text": "Build your sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>STEP 0{{st.num}}</strong>",
+                  "text": "STEP 0{{st.num}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{st.title}}",
+                  "text": "{{st.title}}"
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.done}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.notDone}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.open}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>CLOSE</strong>",
+                      "text": "CLOSE"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.closed}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>EDIT</strong>",
+                      "text": "EDIT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{g.title}}</strong>",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.priceText}}</strong>",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>About this sauna</strong>",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Classic shape, built your way",
+          "text": "Classic shape, built your way"
+        },
+        {
+          "type": "paragraph",
+          "html": "The barrel is the traditional Finnish shape in western red cedar, and one of the most efficient saunas to heat.",
+          "text": "The barrel is the traditional Finnish shape in western red cedar, and one of the most efficient saunas to heat."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Heats fast and evenly",
+          "text": "Heats fast and evenly"
+        },
+        {
+          "type": "paragraph",
+          "html": "The round shape circulates heat naturally, with less air to warm above the benches.",
+          "text": "The round shape circulates heat naturally, with less air to warm above the benches."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Pick your length",
+          "text": "Pick your length"
+        },
+        {
+          "type": "paragraph",
+          "html": "Every barrel is 7' across; choose the length that seats your crew, from a cozy 2-person to 8 or more.",
+          "text": "Every barrel is 7' across; choose the length that seats your crew, from a cozy 2-person to 8 or more."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Make it yours",
+          "text": "Make it yours"
+        },
+        {
+          "type": "paragraph",
+          "html": "Front and back windows, an overhanging cove over the door, cedar or metal roofs, and regular, signature or lounge benches. We confirm options and pricing in your quote.",
+          "text": "Front and back windows, an overhanging cove over the door, cedar or metal roofs, and regular, signature or lounge benches. We confirm options and pricing in your quote."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Wood or electric",
+          "text": "Wood or electric"
+        },
+        {
+          "type": "paragraph",
+          "html": "Fire it with a wood-burning stove or a 240V electric heater. Built in Canada from western red cedar.",
+          "text": "Fire it with a wood-burning stove or a 240V electric heater. Built in Canada from western red cedar."
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Will this fit your yard?</strong>",
+              "text": "Will this fit your yard?"
+            },
+            {
+              "type": "text",
+              "html": "Check your space in the Sauna Finder and compare every model that fits.",
+              "text": "Check your space in the Sauna Finder and compare every model that fits."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "7' × 4' (seats 2)",
+                "text": "7' × 4' (seats 2)"
+              },
+              "details": {
+                "html": "84\" W × 48\" L × 84\" H",
+                "text": "84\" W × 48\" L × 84\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "7' × 6' (seats 4)",
+                "text": "7' × 6' (seats 4)"
+              },
+              "details": {
+                "html": "84\" W × 72\" L × 84\" H",
+                "text": "84\" W × 72\" L × 84\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "7' × 7' (seats 5)",
+                "text": "7' × 7' (seats 5)"
+              },
+              "details": {
+                "html": "84\" W × 84\" L × 84\" H",
+                "text": "84\" W × 84\" L × 84\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "7' × 8' (seats 6)",
+                "text": "7' × 8' (seats 6)"
+              },
+              "details": {
+                "html": "84\" W × 96\" L × 84\" H",
+                "text": "84\" W × 96\" L × 84\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "7' × 10' (seats 6–8)",
+                "text": "7' × 10' (seats 6–8)"
+              },
+              "details": {
+                "html": "84\" W × 120\" L × 84\" H",
+                "text": "84\" W × 120\" L × 84\" H"
+              }
+            },
+            {
+              "term": {
+                "html": "Footprint",
+                "text": "Footprint"
+              },
+              "details": {
+                "html": "7' wide, by 4' to 14' long depending on size and add-ons",
+                "text": "7' wide, by 4' to 14' long depending on size and add-ons"
+              }
+            },
+            {
+              "term": {
+                "html": "Door",
+                "text": "Door"
+              },
+              "details": {
+                "html": "Cedar door with tempered glass, 50\" (127 cm) glass height on the 7' model",
+                "text": "Cedar door with tempered glass, 50\" (127 cm) glass height on the 7' model"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Western red cedar, knotty or clear",
+                "text": "Western red cedar, knotty or clear"
+              }
+            },
+            {
+              "term": {
+                "html": "Construction",
+                "text": "Construction"
+              },
+              "details": {
+                "html": "Cedar staves with stainless steel bands, on cedar cradles",
+                "text": "Cedar staves with stainless steel bands, on cedar cradles"
+              }
+            },
+            {
+              "term": {
+                "html": "Floor",
+                "text": "Floor"
+              },
+              "details": {
+                "html": "Flat or rounded along the contours of the barrel",
+                "text": "Flat or rounded along the contours of the barrel"
+              }
+            },
+            {
+              "term": {
+                "html": "Heat",
+                "text": "Heat"
+              },
+              "details": {
+                "html": "Wood-burning or electric",
+                "text": "Wood-burning or electric"
+              }
+            },
+            {
+              "term": {
+                "html": "Base",
+                "text": "Base"
+              },
+              "details": {
+                "html": "Level, with a slight slope at the back for drainage: concrete pad, deck, patio stone or crushed stone",
+                "text": "Level, with a slight slope at the back for drainage: concrete pad, deck, patio stone or crushed stone"
+              }
+            },
+            {
+              "term": {
+                "html": "Electrical",
+                "text": "Electrical"
+              },
+              "details": {
+                "html": "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician",
+                "text": "240V, 30–50 amp depending on the heater; final hookup by a licensed electrician"
+              }
+            },
+            {
+              "term": {
+                "html": "Heater",
+                "text": "Heater"
+              },
+              "details": {
+                "html": "6 kW electric or wood-burning, sized for this room",
+                "text": "6 kW electric or wood-burning, sized for this room"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/f55a775912738bc814ce761320938ad7.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery &amp; installation</strong>",
+          "text": "Delivery & installation"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery + Installation</strong>",
+          "text": "Delivery + Installation"
+        },
+        {
+          "type": "text",
+          "html": "Delivered and assembled by our team, anywhere in Ontario.",
+          "text": "Delivered and assembled by our team, anywhere in Ontario."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$1,750</strong>",
+          "text": "$1,750"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery Only</strong>",
+          "text": "Delivery Only"
+        },
+        {
+          "type": "text",
+          "html": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment.",
+          "text": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$450</strong>",
+          "text": "$450"
+        },
+        {
+          "type": "paragraph",
+          "html": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician.",
+          "text": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other <em>saunas</em>",
+          "text": "Compare other saunas"
+        },
+        {
+          "type": "link",
+          "html": "View All Cube Saunas",
+          "text": "View All Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

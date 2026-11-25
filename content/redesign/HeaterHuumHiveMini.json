@@ -1,0 +1,1013 @@
+{
+  "file": "HeaterHuumHiveMini.dc.html",
+  "route": "/sauna-heaters/huum-hive-mini",
+  "pageMap": {
+    "route": "/sauna-heaters/huum-hive-mini",
+    "title": "HUUM Hive Mini — The Toronto Sauna Co.",
+    "description": "HUUM Hive Mini: A smaller version of HUUM's popular HIVE, inspired by a beehive. Request a quote from The Toronto Sauna Co.",
+    "index": "",
+    "photos": 8
+  },
+  "head": {
+    "title": "HUUM Hive Mini — The Toronto Sauna Co.",
+    "description": "HUUM Hive Mini: A smaller version of HUUM's popular HIVE, inspired by a beehive. Request a quote from The Toronto Sauna Co.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-heaters/huum-hive-mini",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "HUUM Hive Mini — The Toronto Sauna Co.",
+      "description": "HUUM Hive Mini: A smaller version of HUUM's popular HIVE, inspired by a beehive. Request a quote from The Toronto Sauna Co.",
+      "url": "https://www.thetorontosaunaco.com/sauna-heaters/huum-hive-mini",
+      "image": "https://www.thetorontosaunaco.com/_blob/461d358117b67716669c1b303e7cdc7d"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "HUUM Hive Mini",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/461d358117b67716669c1b303e7cdc7d"
+        ],
+        "url": "https://www.thetorontosaunaco.com/sauna-heaters/huum-hive-mini",
+        "description": "HUUM Hive Mini: A smaller version of HUUM's popular HIVE, inspired by a beehive. Request a quote from The Toronto Sauna Co.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "2631.00",
+          "url": "https://www.thetorontosaunaco.com/sauna-heaters/huum-hive-mini",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          }
+        }
+      }
+    ]
+  },
+  "data": {
+    "d": {
+      "file": "HeaterHuumHiveMini",
+      "name": "HUUM Hive Mini",
+      "code": "HUUMHIVE",
+      "origin": "Designed in Estonia",
+      "brand": "HUUM",
+      "mount": "Floor-standing",
+      "photos": [
+        "HUUMHIVE_1.jpg",
+        "HUUMHIVE gallery 2",
+        "HUUMHIVE gallery 3"
+      ],
+      "intro": "A smaller version of HUUM's popular HIVE, inspired by a beehive. Its open stone column holds a huge mass of rock, which releases mild, long-lasting steam for extended sessions. It looks more like sculpture than a heater.",
+      "highlights": [
+        "150 kg (331 lbs) of stone for soft, lasting steam",
+        "Air Tunnel included for even heat",
+        "Free-standing, legs adjust up to 7 cm",
+        "Remote start from your phone with UKU Wi-Fi"
+      ],
+      "models": [
+        {
+          "kw": "6 kW",
+          "room": "177–318 cu ft",
+          "amps": "25 A",
+          "breaker": "30 A"
+        },
+        {
+          "kw": "9 kW",
+          "room": "283–460 cu ft",
+          "amps": "37.5 A",
+          "breaker": "50 A"
+        },
+        {
+          "kw": "10.5 kW",
+          "room": "354–566 cu ft",
+          "amps": "43.75 A",
+          "breaker": "50 A"
+        }
+      ],
+      "modelnote": "240V single-phase, double-pole breaker. Wire: 10 AWG copper for the 6 kW; 8 AWG copper for the 9 kW; 6 AWG copper for the 10.5 kW. No UKU extension box needed. Installation must be done by a licensed electrician.",
+      "specs": [
+        {
+          "k": "Dimensions",
+          "v": "18.1 in (460 mm) diameter × 29.5 in (750 mm) tall"
+        },
+        {
+          "k": "Heater weight",
+          "v": "≈31 lbs (14 kg)"
+        },
+        {
+          "k": "Stone capacity",
+          "v": "150 kg (331 lbs)"
+        },
+        {
+          "k": "Voltage",
+          "v": "240V 1-phase"
+        },
+        {
+          "k": "Control",
+          "v": "HUUM UKU required (Local or Wi-Fi)"
+        },
+        {
+          "k": "Mounting",
+          "v": "Floor-standing, adjustable legs (up to 7 cm)"
+        },
+        {
+          "k": "Optional add-ons",
+          "v": "Safety railing, reflector, protective bedding, embedding flange"
+        },
+        {
+          "k": "Warranty",
+          "v": "3-year warranty"
+        },
+        {
+          "k": "Designed in",
+          "v": "Estonia"
+        }
+      ],
+      "needs": [
+        "HUUM UKU control (Local or Wi-Fi)",
+        "HUUM sauna stones (10 boxes, 15 kg each)",
+        "Installation by a licensed electrician"
+      ],
+      "others": [
+        {
+          "href": "/sauna-heaters/revive",
+          "name": "Homecraft Revive"
+        },
+        {
+          "href": "/sauna-heaters/revive-slim",
+          "name": "Homecraft Revive Slim"
+        },
+        {
+          "href": "/sauna-heaters/apex-240",
+          "name": "Homecraft Apex (240V / 1 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/apex-208",
+          "name": "Homecraft Apex (208V / 3 Phase)"
+        },
+        {
+          "href": "/sauna-heaters/apex-mini",
+          "name": "Homecraft Apex Mini"
+        },
+        {
+          "href": "/sauna-heaters/harvia-kip",
+          "name": "Harvia KIP"
+        },
+        {
+          "href": "/sauna-heaters/huum-drop",
+          "name": "HUUM Drop"
+        }
+      ],
+      "short": "Hive Mini",
+      "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+      "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+      "gallery": [
+        {
+          "src": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+          "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "steps": [
+        {
+          "id": "heater",
+          "title": "Heater size",
+          "required": true,
+          "note": "Choose the output that matches your sauna volume.",
+          "options": [
+            {
+              "id": "kw0",
+              "label": "HUUM HIVE Mini 6 kW (includes Air Tunnel)",
+              "sub": "For 177–318 cu ft",
+              "price": 2631,
+              "photo": "HUUMHIVE 6 kW",
+              "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+              "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw1",
+              "label": "HUUM HIVE Mini 9 kW (includes Air Tunnel)",
+              "sub": "For 283–460 cu ft",
+              "price": 2794,
+              "photo": "HUUMHIVE 9 kW",
+              "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+              "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "id": "kw2",
+              "label": "HUUM HIVE Mini 10.5 kW (includes Air Tunnel)",
+              "sub": "For 354–566 cu ft",
+              "price": 2930,
+              "photo": "HUUMHIVE 10.5 kW",
+              "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+              "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co."
+            }
+          ]
+        },
+        {
+          "id": "control",
+          "title": "Controls",
+          "required": true,
+          "note": "HUUM heaters need a UKU control. Wi-Fi adds app control from anywhere.",
+          "options": [
+            {
+              "id": "uku_wifi",
+              "label": "HUUM UKU Wi-Fi Control (Black)",
+              "sub": "App control and scheduling",
+              "price": 1392,
+              "photo": "UKU 4.1 Wi-Fi kit"
+            },
+            {
+              "id": "uku_local",
+              "label": "HUUM UKU Local Control (Black)",
+              "sub": "Control panel in the sauna",
+              "price": 1117,
+              "photo": "UKU Local panel"
+            }
+          ]
+        },
+        {
+          "id": "stones",
+          "title": "HUUM sauna stones",
+          "required": false,
+          "note": "Fixed at the recommended fill for the HIVE Mini: 10 boxes (150 kg / 331 lbs).",
+          "options": [
+            {
+              "id": "huum_st",
+              "label": "HUUM Sauna Stones",
+              "sub": "10 boxes (15 kg each), the recommended fill ($88.00 per box)",
+              "price": 88,
+              "qty": 10,
+              "photo": "HUUM sauna stones"
+            },
+            {
+              "id": "no_st",
+              "label": "No thanks",
+              "sub": "I already have stones",
+              "price": null,
+              "none": true,
+              "photo": "—"
+            }
+          ]
+        },
+        {
+          "id": "rail",
+          "title": "Safety railing",
+          "required": false,
+          "note": "A guard rail around the heater to prevent accidental contact.",
+          "options": [
+            {
+              "id": "rail",
+              "label": "HUUM HIVE Mini Safety Railing",
+              "sub": "Recommended for families",
+              "price": null,
+              "photo": "HUUM safety railing"
+            },
+            {
+              "id": "no_rail",
+              "label": "No thanks",
+              "sub": "",
+              "price": null,
+              "none": true,
+              "photo": "—"
+            }
+          ]
+        }
+      ],
+      "kwChips": [
+        "6 kW",
+        "9 kW",
+        "10.5 kW"
+      ],
+      "hasAmps": true
+    }
+  },
+  "sections": [
+    {
+      "name": "Product top",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Heaters",
+              "href": "/sauna-heaters"
+            },
+            {
+              "text": "Electric",
+              "href": "/sauna-heaters#electric"
+            },
+            {
+              "text": "{{p.name}}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "{{p.mainImg}}",
+          "alt": "{{p.mainAlt}}"
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasThumbs}}",
+          "blocks": [
+            {
+              "type": "repeat",
+              "list": "{{p.thumbs}}",
+              "as": "t",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{t.on}}",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{t.off}}",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Electric</strong>",
+          "text": "Electric"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.origin}}</strong>",
+          "text": "{{p.origin}}"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.mount}}</strong>",
+          "text": "{{p.mount}}"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "{{p.name}}",
+          "text": "{{p.name}}"
+        },
+        {
+          "type": "text",
+          "html": "{{p.code}}",
+          "text": "{{p.code}}"
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.intro}}",
+          "text": "{{p.intro}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.highlights}}",
+              "as": "hl",
+              "items": [
+                {
+                  "html": "{{hl}}",
+                  "text": "{{hl}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Starting at (MSRP)",
+          "text": "Starting at (MSRP)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{p.fromPrice}}</strong>",
+          "text": "{{p.fromPrice}}"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.kwChips}}",
+          "as": "k",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>{{k}}</strong>",
+              "text": "{{k}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours &amp; Add to Cart",
+          "text": "Build Yours & Add to Cart",
+          "href": "#configure",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "Delivery and professional installation available across Ontario.",
+          "text": "Delivery and professional installation available across Ontario."
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your heater</strong>",
+          "text": "Build your heater"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choose your size and <em><strong>add-ons.</strong></em>",
+          "text": "Choose your size and add-ons."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{steps}}",
+              "as": "st",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "if",
+                      "value": "{{st.done}}",
+                      "blocks": []
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.notDone}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "<strong>{{st.num}}</strong>",
+                          "text": "{{st.num}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "level": 3,
+                      "html": "{{st.title}}",
+                      "text": "{{st.title}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{st.tag}}</strong>",
+                      "text": "{{st.tag}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{st.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{st.note}}",
+                          "text": "{{st.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{st.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.badgeInline}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "<strong>{{o.qtyBadge}}</strong>",
+                                      "text": "{{o.qtyBadge}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Your <em>{{p.short}}</em></strong>",
+          "text": "Your {{p.short}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.step}}",
+                      "text": "{{ln.step}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal before HST",
+                "text": "Subtotal before HST"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Delivery",
+                "text": "Delivery"
+              },
+              "details": {
+                "html": "Quoted separately, or free showroom pickup (in stock)",
+                "text": "Quoted separately, or free showroom pickup (in stock)"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some items are priced on request. We'll confirm your final price with you.",
+              "text": "Some items are priced on request. We'll confirm your final price with you."
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasMissing}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>{{missingText}}</strong>",
+              "text": "{{missingText}}"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Add to Cart",
+          "text": "Add to Cart",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Added to your cart</strong>",
+              "text": "Added to your cart"
+            },
+            {
+              "type": "text",
+              "html": "{{addedText}}",
+              "text": "{{addedText}}"
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment.",
+          "text": "No payment is taken online. Submit your cart as a quote request and a sales representative will contact you to confirm details, delivery or pickup, and payment."
+        }
+      ]
+    },
+    {
+      "name": "Sizes",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Sizing &amp; electrical</strong>",
+          "text": "Sizing & electrical"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Every size, at a <em><strong>glance.</strong></em>",
+          "text": "Every size, at a glance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up.",
+          "text": "Measure length × width × height in feet to get your sauna's volume. Rooms with lots of glass or uninsulated walls need the upper end of a range or the next size up."
+        },
+        {
+          "type": "if",
+          "value": "{{p.hasAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "caption": null,
+              "headerRows": 1,
+              "rows": [
+                [
+                  "Output",
+                  "Room size",
+                  "Amps",
+                  "Breaker"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}",
+                  "{{m.amps}}",
+                  "{{m.breaker}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{p.noAmps}}",
+          "blocks": [
+            {
+              "type": "table",
+              "caption": null,
+              "headerRows": 1,
+              "rows": [
+                [
+                  "Output",
+                  "Room size"
+                ],
+                [
+                  "{{m.kw}}",
+                  "{{m.room}}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "{{p.modelnote}}",
+          "text": "{{p.modelnote}}"
+        }
+      ]
+    },
+    {
+      "name": "Specs + needs",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.specs}}",
+              "as": "s",
+              "items": [
+                {
+                  "term": {
+                    "html": "{{s.k}}",
+                    "text": "{{s.k}}"
+                  },
+                  "details": {
+                    "html": "{{s.v}}",
+                    "text": "{{s.v}}"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>What you'll need</strong>",
+          "text": "What you'll need"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{p.needs}}",
+              "as": "n",
+              "items": [
+                {
+                  "html": "{{n}}",
+                  "text": "{{n}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Not sure which size? <em>We'll help.</em></strong>",
+          "text": "Not sure which size? We'll help."
+        },
+        {
+          "type": "text",
+          "html": "Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation.",
+          "text": "Send us your sauna's measurements and we'll recommend the right heater, control and stones, and quote installation."
+        },
+        {
+          "type": "link",
+          "html": "Get a Sizing Recommendation",
+          "text": "Get a Sizing Recommendation",
+          "href": "/contact",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Other electric heaters",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "More electric <em>heaters</em>",
+          "text": "More electric heaters"
+        },
+        {
+          "type": "link",
+          "html": "Back to all heaters",
+          "text": "Back to all heaters",
+          "href": "/sauna-heaters",
+          "variant": "link"
+        },
+        {
+          "type": "repeat",
+          "list": "{{p.others}}",
+          "as": "o",
+          "blocks": [
+            {
+              "type": "link",
+              "html": "{{o.name}}",
+              "text": "{{o.name}}",
+              "href": "{{o.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

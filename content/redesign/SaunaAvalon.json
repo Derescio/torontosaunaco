@@ -1,0 +1,1436 @@
+{
+  "file": "SaunaAvalon.dc.html",
+  "route": "/saunas/avalon",
+  "pageMap": {
+    "route": "/saunas/avalon",
+    "title": "The Avalon | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Avalon outdoor sauna: A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window… Installed across Ontario. Request a quote.",
+    "index": "",
+    "photos": 29
+  },
+  "head": {
+    "title": "The Avalon | Outdoor Sauna | The Toronto Sauna Co.",
+    "description": "Avalon outdoor sauna: A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window… Installed across Ontario. Request a quote.",
+    "canonical": "https://www.thetorontosaunaco.com/saunas/avalon",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "product",
+      "title": "The Avalon | Outdoor Sauna | The Toronto Sauna Co.",
+      "description": "Avalon outdoor sauna: A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window… Installed across Ontario. Request a quote.",
+      "url": "https://www.thetorontosaunaco.com/saunas/avalon",
+      "image": "https://www.thetorontosaunaco.com/_blob/c8ad1d74db4f0d61b44fa9e557d9f4b7"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Avalon",
+        "image": [
+          "https://www.thetorontosaunaco.com/_blob/c8ad1d74db4f0d61b44fa9e557d9f4b7"
+        ],
+        "url": "https://www.thetorontosaunaco.com/saunas/avalon",
+        "description": "Avalon outdoor sauna: A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window… Installed across Ontario. Request a quote.",
+        "brand": {
+          "@type": "Brand",
+          "name": "The Toronto Sauna Co."
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "CAD",
+          "price": "15450.00",
+          "url": "https://www.thetorontosaunaco.com/saunas/avalon",
+          "seller": {
+            "@id": "https://www.thetorontosaunaco.com/#business"
+          },
+          "availability": "https://schema.org/MadeToOrder"
+        }
+      }
+    ]
+  },
+  "data": {
+    "D": {
+      "file": "SaunaAvalon",
+      "name": "The Avalon",
+      "series": "Canadian Timber",
+      "crumbTab": [
+        "Cabin & Timber Saunas",
+        "/saunas/canadian-timber"
+      ],
+      "intro": "A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window and three tiers of benches so everyone can choose their heat. The sloped roof sheds snow and rain.",
+      "highlights": [
+        "3–4 people",
+        "95\" × 95\" walls",
+        "75\" picture window",
+        "Built in Canada"
+      ],
+      "photos": [
+        "The Avalon exterior",
+        "Interior benches",
+        "Glass front"
+      ],
+      "specs": [
+        [
+          "Roof (W × D)",
+          "120\" × 119\" (305 × 302 cm)"
+        ],
+        [
+          "Walls (W × D)",
+          "95\" × 95\" (241 × 241 cm)"
+        ],
+        [
+          "Height",
+          "100½\" (255 cm) high side · 80\" (203 cm) low side"
+        ],
+        [
+          "Interior (W × D)",
+          "79¼\" × 77½\" (201 × 197 cm)"
+        ],
+        [
+          "Interior height",
+          "91½\" (232 cm) to 79\" (201 cm), sloped"
+        ],
+        [
+          "Benches",
+          "Three tiers at 16\", 32\" and 48\" high; 79\" long"
+        ],
+        [
+          "Front window",
+          "75\" × 50¼\" (191 × 128 cm)"
+        ],
+        [
+          "Door",
+          "27½\" × 74¾\" cedar door with glass"
+        ],
+        [
+          "Base",
+          "4\" (10 cm)"
+        ],
+        [
+          "Seating",
+          "3–4 people on the three-tier bench"
+        ],
+        [
+          "Crate weight",
+          "1,883 lbs (854 kg)"
+        ],
+        [
+          "Wood",
+          "Eastern white cedar, 2¾\" double-groove log walls"
+        ],
+        [
+          "Room volume",
+          "About 325 cu ft"
+        ],
+        [
+          "Roof",
+          "Sloped standing-seam metal"
+        ],
+        [
+          "Heater",
+          "9 kW electric or wood-burning, sized for this room"
+        ],
+        [
+          "Warranty",
+          "5-year residential limited"
+        ],
+        [
+          "Made in",
+          "Canada"
+        ]
+      ],
+      "steps": [
+        {
+          "id": "design",
+          "title": "Design",
+          "desc": "Wood and finishes for your sauna.",
+          "groups": [
+            {
+              "id": "size",
+              "title": "Your sauna",
+              "type": "single",
+              "required": true,
+              "default": "m",
+              "base": true,
+              "options": [
+                {
+                  "id": "m",
+                  "label": "The Avalon",
+                  "sub": "Canadian Timber Avalon",
+                  "price": 15450,
+                  "photo": "The Avalon",
+                  "img": "./assets/a804429a8592e40dc5e9e5ef1774d6ee.jpg",
+                  "alt": "Avalon cedar log outdoor sauna with large front window, The Toronto Sauna Co.",
+                  "fit": "contain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heat",
+          "title": "Heat",
+          "desc": "One package, sized to this sauna. Pick the look and feel you like.",
+          "groups": [
+            {
+              "id": "heater",
+              "title": "Choose your heater package",
+              "type": "single",
+              "required": true,
+              "default": "h_rev",
+              "note": "Sized for this sauna (about 325 cu ft): 9 kW. Every package is ready to fire: the heater, its control and the right fill of stones. Electric heaters need a dedicated 240V circuit installed by a licensed electrician. This sauna is large enough for a wood-burning stove too.",
+              "options": [
+                {
+                  "id": "h_rev",
+                  "label": "Homecraft Revive 9 kW package",
+                  "sub": "Stainless, made in Canada. Includes Homecraft touchpad and stones.",
+                  "price": 2935,
+                  "img": "./assets/a27efebc69e88e87349b66fe4cdf78fb.webp",
+                  "alt": "Homecraft Revive stainless steel electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Revive 9 kW"
+                },
+                {
+                  "id": "h_apexmini",
+                  "label": "Homecraft Apex Mini 9 kW package",
+                  "sub": "Big stone mass, soft steam. Includes Homecraft touchpad and stones.",
+                  "price": 3100,
+                  "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+                  "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "Homecraft Apex Mini 9 kW"
+                },
+                {
+                  "id": "h_drop",
+                  "label": "HUUM Drop 9 kW package",
+                  "sub": "Sculptural design, app-ready. Includes HUUM UKU control and stones.",
+                  "price": 3311,
+                  "img": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+                  "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM Drop 9 kW"
+                },
+                {
+                  "id": "h_hive",
+                  "label": "HUUM HIVE Mini 9 kW package",
+                  "sub": "Floor-standing stone tower. Includes HUUM UKU control and stones.",
+                  "price": 4791,
+                  "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+                  "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+                  "photo": "HUUM HIVE Mini 9 kW"
+                },
+                {
+                  "id": "h_tg",
+                  "label": "TimberGlow14 wood-burning package",
+                  "sub": "Wood-fired heat, no wiring. Includes rocks; chimney kit quoted.",
+                  "price": 3316,
+                  "img": "./assets/d60e58e245437d8f8fa5fa88e1c5fa48.webp",
+                  "alt": "TimberGlow14 wood-burning sauna heater, The Toronto Sauna Co.",
+                  "photo": "TimberGlow14"
+                },
+                {
+                  "id": "h_kuru",
+                  "label": "Narvi Kuru wood-burning stove",
+                  "sub": "Compact Finnish stove; chimney kit quoted.",
+                  "price": null,
+                  "img": "./assets/8d2cbfbdd1b0d69d57412757ec8af66a.webp",
+                  "alt": "Narvi Kuru wood-burning sauna heater, The Toronto Sauna Co.",
+                  "photo": "Narvi Kuru"
+                },
+                {
+                  "id": "h_none",
+                  "label": "No heater",
+                  "sub": "I already have one",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No heater"
+                }
+              ]
+            },
+            {
+              "id": "heatx",
+              "title": "Heater upgrades",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "wifi",
+                  "label": "Wi-Fi control upgrade",
+                  "sub": "Start and schedule your sauna from your phone. For Homecraft and HUUM heaters.",
+                  "price": 399,
+                  "notWith": {
+                    "group": "heater",
+                    "ids": [
+                      "h_tg",
+                      "h_kuru",
+                      "h_none"
+                    ]
+                  },
+                  "img": "./assets/fee7140f09089fb6e6dc8304960fd763.webp",
+                  "alt": "HUUM UKU Wi-Fi control, The Toronto Sauna Co.",
+                  "photo": "Wi-Fi control"
+                },
+                {
+                  "id": "rail",
+                  "label": "Heater safety railing",
+                  "sub": "Recommended with kids; sized to your heater",
+                  "price": 306,
+                  "img": "./assets/bd6f66557841bd80281a9970bd2cccc0.webp",
+                  "alt": "HUUM Drop safety railing, The Toronto Sauna Co.",
+                  "photo": "Safety railing"
+                },
+                {
+                  "id": "hshield",
+                  "label": "Ceiling heat shield",
+                  "sub": "Protects the ceiling above the heater",
+                  "price": 96,
+                  "img": "./assets/e8082b7f1174926376236fa18db7e256.webp",
+                  "alt": "Sauna ceiling heat shield, The Toronto Sauna Co.",
+                  "photo": "Heat shield"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "title": "Lighting",
+          "desc": "Set the mood with warm, colour-changing LED light under the benches.",
+          "groups": [
+            {
+              "id": "light",
+              "title": "SaunaScapes LED lighting",
+              "type": "single",
+              "required": false,
+              "default": "l_none",
+              "note": "We recommend the 72\" set for this sauna.",
+              "options": [
+                {
+                  "id": "l_none",
+                  "label": "No lighting",
+                  "sub": "Add lighting later anytime",
+                  "price": 0,
+                  "none": true,
+                  "photo": "No lighting"
+                },
+                {
+                  "id": "saunascapes_sade_43_",
+                  "label": "SaunaScapes Sade 43\" LED Light Set",
+                  "sub": "Colour-changing LED under the bench",
+                  "price": 375,
+                  "img": "./assets/e46df66cdb47089e89555fc61771c483.webp",
+                  "alt": "SaunaScapes Sade 43\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 43\" LED Light Set"
+                },
+                {
+                  "id": "saunascapes_sade_72_",
+                  "label": "SaunaScapes Sade 72\" LED Light Set",
+                  "sub": "Colour-changing LED for longer benches, recommended",
+                  "price": 416,
+                  "img": "./assets/1acce63a8eaea8a88dc4cd52cdd56040.webp",
+                  "alt": "SaunaScapes Sade 72\" LED Light Set, The Toronto Sauna Co.",
+                  "photo": "SaunaScapes Sade 72\" LED Light Set"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acc",
+          "title": "Accessories",
+          "desc": "Finish the space. Everything here is optional.",
+          "groups": [
+            {
+              "id": "pkg",
+              "title": "Accessory package (10% off)",
+              "type": "single",
+              "required": false,
+              "options": [
+                {
+                  "id": "starter_package",
+                  "label": "Starter Package",
+                  "sub": "Bucket, ladle, thermometer and essentials",
+                  "price": 111.6,
+                  "img": "./assets/5729252e6a427c5e0791635437646abf.webp",
+                  "alt": "Starter Package, The Toronto Sauna Co.",
+                  "photo": "Starter Package"
+                },
+                {
+                  "id": "deluxe_package",
+                  "label": "Deluxe Package",
+                  "sub": "A fuller set with backrest and scent",
+                  "price": 386.55,
+                  "img": "./assets/c6851b17538b90f430d1541f74d46cc9.webp",
+                  "alt": "Deluxe Package, The Toronto Sauna Co.",
+                  "photo": "Deluxe Package"
+                },
+                {
+                  "id": "supreme_package",
+                  "label": "Supreme Package",
+                  "sub": "Narvi Black set, eucalyptus and two backrests",
+                  "price": 538.65,
+                  "img": "./assets/48c077a483491bc7683baeb0613fabd6.webp",
+                  "alt": "Supreme Package, The Toronto Sauna Co.",
+                  "photo": "Supreme Package"
+                }
+              ]
+            },
+            {
+              "id": "extras",
+              "title": "Or pick individual items",
+              "type": "multi",
+              "required": false,
+              "options": [
+                {
+                  "id": "electric_sauna_light",
+                  "label": "Electric Sauna Light",
+                  "sub": "Classic marine-grade sauna light",
+                  "price": 36,
+                  "img": "./assets/b301bc099761644f76939bd991a776f8.webp",
+                  "alt": "Electric Sauna Light, The Toronto Sauna Co.",
+                  "photo": "Electric Sauna Light"
+                },
+                {
+                  "id": "wooden_bucket_&_ladl",
+                  "label": "Wooden Bucket & Ladle",
+                  "sub": "Classic cedar bucket and ladle",
+                  "price": 82,
+                  "img": "./assets/3f01c1da1436cadb18e25ce9a3a72bb3.webp",
+                  "alt": "Wooden Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Wooden Bucket & Ladle"
+                },
+                {
+                  "id": "narvi_black_bucket_&",
+                  "label": "Narvi Black Bucket & Ladle",
+                  "sub": "Black aluminum with birch handle",
+                  "price": 186,
+                  "img": "./assets/e02d6ffb3263a55767dc5e20cf45e53e.webp",
+                  "alt": "Narvi Black Bucket & Ladle, The Toronto Sauna Co.",
+                  "photo": "Narvi Black Bucket & Ladle"
+                },
+                {
+                  "id": "comfort_sauna_backre",
+                  "label": "Comfort Sauna Backrest",
+                  "sub": "Cedar backrest",
+                  "price": 106.5,
+                  "img": "./assets/a34977303c5df863babaaaf30e884955.webp",
+                  "alt": "Comfort Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Comfort Sauna Backrest"
+                },
+                {
+                  "id": "elite_sauna_backrest",
+                  "label": "Elite Sauna Backrest",
+                  "sub": "Curved to follow your spine",
+                  "price": 106,
+                  "img": "./assets/2ceb627f48f7aafb5294b8189f72db1f.webp",
+                  "alt": "Elite Sauna Backrest, The Toronto Sauna Co.",
+                  "photo": "Elite Sauna Backrest"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "delivery",
+          "title": "Delivery",
+          "desc": "Choose delivery only, or let our team deliver and install it.",
+          "groups": [
+            {
+              "id": "assembly",
+              "title": "Select your delivery option",
+              "type": "single",
+              "required": true,
+              "note": "Prices apply anywhere in Ontario. We also install in BC. Anywhere else, delivery is quoted for your location.",
+              "options": [
+                {
+                  "id": "d_only",
+                  "label": "Delivery Only",
+                  "sub": "Freight to a local depot in Ontario; you unload the crate",
+                  "price": 450,
+                  "photo": "Delivery truck"
+                },
+                {
+                  "id": "d_install",
+                  "label": "Delivery + Installation",
+                  "sub": "Delivered and assembled by our team, anywhere in Ontario",
+                  "price": 1750,
+                  "photo": "Installed sauna"
+                }
+              ]
+            }
+          ],
+          "prompt": "Choose your delivery option"
+        }
+      ],
+      "kind": "Outdoor sauna",
+      "crumbs": [
+        [
+          "Saunas",
+          "/saunas"
+        ],
+        [
+          "Cabin & Timber Saunas",
+          "/saunas/canadian-timber"
+        ]
+      ],
+      "buildLabel": "Build your sauna",
+      "related": [
+        "Compare other <span style=\"font-style: italic\">saunas</span>",
+        [
+          "View All Cube Saunas",
+          "/saunas/cube"
+        ],
+        [
+          "Best Sellers",
+          "/saunas/best-sellers"
+        ]
+      ],
+      "installCopy": "Delivered and assembled by our team, anywhere in Ontario.",
+      "elecNote": "Electrical hook-up must be completed by a licensed electrician.",
+      "gallery": [
+        {
+          "src": "./assets/c8ad1d74db4f0d61b44fa9e557d9f4b7.jpg",
+          "alt": "Avalon outdoor sauna in black stain with a large picture window beside a pool, The Toronto Sauna Co.",
+          "fit": "cover"
+        },
+        {
+          "src": "./assets/a804429a8592e40dc5e9e5ef1774d6ee.jpg",
+          "alt": "Avalon cedar log outdoor sauna with large front window, The Toronto Sauna Co.",
+          "fit": "contain"
+        }
+      ],
+      "about": {
+        "title": "A proper log sauna",
+        "lede": "Solid cedar log walls, a big window and three bench levels make the Avalon feel like a cottage sauna.",
+        "items": [
+          [
+            "Solid cedar log walls",
+            "2¾\" double-groove eastern white cedar logs hold heat and give that classic timber look."
+          ],
+          [
+            "Three tiers of heat",
+            "Benches at 16\", 32\" and 48\", each 79\" long. Sit high for heat, low to cool down."
+          ],
+          [
+            "A 75\" picture window",
+            "A 75\" × 50¼\" window looks out from the bench side."
+          ],
+          [
+            "Wood or electric",
+            "Big enough for a wood-burning stove as well as electric, under a sloped metal roof that extends past the walls."
+          ]
+        ]
+      },
+      "specDoc": [
+        "Download dimensions (PDF)",
+        "./assets/028dfa6ca6a8055087ccf23f2da1d558.pdf"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "name": "Product hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Outdoor Saunas",
+              "href": "/saunas"
+            },
+            {
+              "text": "Cabin & Timber Saunas",
+              "href": "/saunas/canadian-timber"
+            },
+            {
+              "text": "The Avalon"
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasGallery}}",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "{{galMain.src}}",
+              "alt": "{{galMain.alt}}"
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "‹",
+                  "text": "‹",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Previous photo"
+                },
+                {
+                  "type": "link",
+                  "html": "›",
+                  "text": "›",
+                  "href": null,
+                  "variant": "button",
+                  "label": "Next photo"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>{{galCount}}</strong>",
+                  "text": "{{galCount}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{galMulti}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{galThumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{noGallery}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Photo: The Avalon exterior",
+              "text": "Photo: The Avalon exterior"
+            },
+            {
+              "type": "text",
+              "html": "The Avalon exterior",
+              "text": "The Avalon exterior"
+            },
+            {
+              "type": "text",
+              "html": "Interior benches",
+              "text": "Interior benches"
+            },
+            {
+              "type": "text",
+              "html": "Glass front",
+              "text": "Glass front"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Canadian Timber · Outdoor sauna</strong>",
+          "text": "Canadian Timber · Outdoor sauna"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "The Avalon",
+          "text": "The Avalon"
+        },
+        {
+          "type": "text",
+          "html": "<strong>{{baseText}}</strong>",
+          "text": "{{baseText}}"
+        },
+        {
+          "type": "text",
+          "html": "{{baseLabel}} · Delivery &amp; installation available across Ontario",
+          "text": "{{baseLabel}} · Delivery & installation available across Ontario"
+        },
+        {
+          "type": "paragraph",
+          "html": "A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window and three tiers of benches so everyone can choose their heat. The sloped roof sheds snow and rain.",
+          "text": "A timber-cabin sauna with 2¾\" double-groove white cedar log walls, a big 75\" picture window and three tiers of benches so everyone can choose their heat. The sloped roof sheds snow and rain."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "3–4 people",
+              "text": "3–4 people"
+            },
+            {
+              "html": "95\" × 95\" walls",
+              "text": "95\" × 95\" walls"
+            },
+            {
+              "html": "75\" picture window",
+              "text": "75\" picture window"
+            },
+            {
+              "html": "Built in Canada",
+              "text": "Built in Canada"
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Build Yours",
+          "text": "Build Yours",
+          "href": "#build",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Book a Showroom Visit",
+          "text": "Book a Showroom Visit",
+          "href": "/contact#visit",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Configurator",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Build your sauna</strong>",
+          "text": "Build your sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Make it <em><strong>yours.</strong></em>",
+          "text": "Make it yours."
+        },
+        {
+          "type": "repeat",
+          "list": "{{steps}}",
+          "as": "st",
+          "blocks": [
+            {
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>STEP 0{{st.num}}</strong>",
+                  "text": "STEP 0{{st.num}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{st.title}}",
+                  "text": "{{st.title}}"
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.done}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.notDone}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.open}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>CLOSE</strong>",
+                      "text": "CLOSE"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.closed}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>EDIT</strong>",
+                      "text": "EDIT"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{st.open}}",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "{{st.desc}}",
+                  "text": "{{st.desc}}"
+                },
+                {
+                  "type": "repeat",
+                  "list": "{{st.groups}}",
+                  "as": "g",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{g.title}}</strong>",
+                      "text": "{{g.title}}"
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.required}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Choose one",
+                          "text": "Choose one"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.optional}}",
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "Optional",
+                          "text": "Optional"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{g.hasNote}}",
+                      "blocks": [
+                        {
+                          "type": "paragraph",
+                          "html": "{{g.note}}",
+                          "text": "{{g.note}}"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "list": "{{g.options}}",
+                      "as": "o",
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "value": "{{o.on}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.priceText}}</strong>",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "value": "{{o.off}}",
+                          "blocks": [
+                            {
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "link",
+                  "html": "{{st.nextLabel}} →",
+                  "text": "{{st.nextLabel}} →",
+                  "href": null,
+                  "variant": "button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>YOUR BUILD</strong>",
+          "text": "YOUR BUILD"
+        },
+        {
+          "type": "text",
+          "html": "{{subtotalText}}",
+          "text": "{{subtotalText}}"
+        },
+        {
+          "type": "text",
+          "html": "+ HST",
+          "text": "+ HST"
+        },
+        {
+          "type": "text",
+          "html": "{{statusText}}",
+          "text": "{{statusText}}"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "type": "repeat",
+              "list": "{{lines}}",
+              "as": "ln",
+              "items": [
+                {
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.label}}</strong>",
+                      "text": "{{ln.label}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "{{ln.group}}",
+                      "text": "{{ln.group}}"
+                    },
+                    {
+                      "type": "text",
+                      "html": "<strong>{{ln.priceText}}</strong>",
+                      "text": "{{ln.priceText}}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Subtotal",
+                "text": "Subtotal"
+              },
+              "details": {
+                "html": "{{subtotalText}}",
+                "text": "{{subtotalText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "HST (13%)",
+                "text": "HST (13%)"
+              },
+              "details": {
+                "html": "{{hstText}}",
+                "text": "{{hstText}}"
+              }
+            },
+            {
+              "term": {
+                "html": "Estimated total",
+                "text": "Estimated total"
+              },
+              "details": {
+                "html": "{{totalText}}",
+                "text": "{{totalText}}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "value": "{{hasUnpriced}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Some selections are priced on request. We'll confirm your final price in your quote.",
+              "text": "Some selections are priced on request. We'll confirm your final price in your quote."
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "{{cartLabel}}",
+          "text": "{{cartLabel}}",
+          "href": null,
+          "variant": "button"
+        },
+        {
+          "type": "if",
+          "value": "{{added}}",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "Added to your cart.",
+              "text": "Added to your cart."
+            },
+            {
+              "type": "link",
+              "html": "Review Cart &amp; Request Quote",
+              "text": "Review Cart & Request Quote",
+              "href": "/cart",
+              "variant": "button"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call <a href=\"tel:+14374296623\">(437) 429-6623</a>.",
+          "text": "Prices in CAD. No payment is taken online: submit your cart as a quote request and a sales representative will contact you to confirm details and payment. Questions? Call (437) 429-6623."
+        }
+      ]
+    },
+    {
+      "name": "Section 1",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>About this sauna</strong>",
+          "text": "About this sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "A proper log sauna",
+          "text": "A proper log sauna"
+        },
+        {
+          "type": "paragraph",
+          "html": "Solid cedar log walls, a big window and three bench levels make the Avalon feel like a cottage sauna.",
+          "text": "Solid cedar log walls, a big window and three bench levels make the Avalon feel like a cottage sauna."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Solid cedar log walls",
+          "text": "Solid cedar log walls"
+        },
+        {
+          "type": "paragraph",
+          "html": "2¾\" double-groove eastern white cedar logs hold heat and give that classic timber look.",
+          "text": "2¾\" double-groove eastern white cedar logs hold heat and give that classic timber look."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Three tiers of heat",
+          "text": "Three tiers of heat"
+        },
+        {
+          "type": "paragraph",
+          "html": "Benches at 16\", 32\" and 48\", each 79\" long. Sit high for heat, low to cool down.",
+          "text": "Benches at 16\", 32\" and 48\", each 79\" long. Sit high for heat, low to cool down."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "A 75\" picture window",
+          "text": "A 75\" picture window"
+        },
+        {
+          "type": "paragraph",
+          "html": "A 75\" × 50¼\" window looks out from the bench side.",
+          "text": "A 75\" × 50¼\" window looks out from the bench side."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Wood or electric",
+          "text": "Wood or electric"
+        },
+        {
+          "type": "paragraph",
+          "html": "Big enough for a wood-burning stove as well as electric, under a sloped metal roof that extends past the walls.",
+          "text": "Big enough for a wood-burning stove as well as electric, under a sloped metal roof that extends past the walls."
+        }
+      ]
+    },
+    {
+      "name": "finder-bar",
+      "blocks": [
+        {
+          "type": "card",
+          "href": "/sauna-finder",
+          "blocks": [
+            {
+              "type": "text",
+              "html": "<strong>Will this fit your yard?</strong>",
+              "text": "Will this fit your yard?"
+            },
+            {
+              "type": "text",
+              "html": "Check your space in the Sauna Finder and compare every model that fits.",
+              "text": "Check your space in the Sauna Finder and compare every model that fits."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Find your fit →</strong>",
+              "text": "Find your fit →"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Specs + delivery",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Specifications</strong>",
+          "text": "Specifications"
+        },
+        {
+          "type": "definitions",
+          "items": [
+            {
+              "term": {
+                "html": "Roof (W × D)",
+                "text": "Roof (W × D)"
+              },
+              "details": {
+                "html": "120\" × 119\" (305 × 302 cm)",
+                "text": "120\" × 119\" (305 × 302 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Walls (W × D)",
+                "text": "Walls (W × D)"
+              },
+              "details": {
+                "html": "95\" × 95\" (241 × 241 cm)",
+                "text": "95\" × 95\" (241 × 241 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Height",
+                "text": "Height"
+              },
+              "details": {
+                "html": "100½\" (255 cm) high side · 80\" (203 cm) low side",
+                "text": "100½\" (255 cm) high side · 80\" (203 cm) low side"
+              }
+            },
+            {
+              "term": {
+                "html": "Interior (W × D)",
+                "text": "Interior (W × D)"
+              },
+              "details": {
+                "html": "79¼\" × 77½\" (201 × 197 cm)",
+                "text": "79¼\" × 77½\" (201 × 197 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Interior height",
+                "text": "Interior height"
+              },
+              "details": {
+                "html": "91½\" (232 cm) to 79\" (201 cm), sloped",
+                "text": "91½\" (232 cm) to 79\" (201 cm), sloped"
+              }
+            },
+            {
+              "term": {
+                "html": "Benches",
+                "text": "Benches"
+              },
+              "details": {
+                "html": "Three tiers at 16\", 32\" and 48\" high; 79\" long",
+                "text": "Three tiers at 16\", 32\" and 48\" high; 79\" long"
+              }
+            },
+            {
+              "term": {
+                "html": "Front window",
+                "text": "Front window"
+              },
+              "details": {
+                "html": "75\" × 50¼\" (191 × 128 cm)",
+                "text": "75\" × 50¼\" (191 × 128 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Door",
+                "text": "Door"
+              },
+              "details": {
+                "html": "27½\" × 74¾\" cedar door with glass",
+                "text": "27½\" × 74¾\" cedar door with glass"
+              }
+            },
+            {
+              "term": {
+                "html": "Base",
+                "text": "Base"
+              },
+              "details": {
+                "html": "4\" (10 cm)",
+                "text": "4\" (10 cm)"
+              }
+            },
+            {
+              "term": {
+                "html": "Seating",
+                "text": "Seating"
+              },
+              "details": {
+                "html": "3–4 people on the three-tier bench",
+                "text": "3–4 people on the three-tier bench"
+              }
+            },
+            {
+              "term": {
+                "html": "Crate weight",
+                "text": "Crate weight"
+              },
+              "details": {
+                "html": "1,883 lbs (854 kg)",
+                "text": "1,883 lbs (854 kg)"
+              }
+            },
+            {
+              "term": {
+                "html": "Wood",
+                "text": "Wood"
+              },
+              "details": {
+                "html": "Eastern white cedar, 2¾\" double-groove log walls",
+                "text": "Eastern white cedar, 2¾\" double-groove log walls"
+              }
+            },
+            {
+              "term": {
+                "html": "Room volume",
+                "text": "Room volume"
+              },
+              "details": {
+                "html": "About 325 cu ft",
+                "text": "About 325 cu ft"
+              }
+            },
+            {
+              "term": {
+                "html": "Roof",
+                "text": "Roof"
+              },
+              "details": {
+                "html": "Sloped standing-seam metal",
+                "text": "Sloped standing-seam metal"
+              }
+            },
+            {
+              "term": {
+                "html": "Heater",
+                "text": "Heater"
+              },
+              "details": {
+                "html": "9 kW electric or wood-burning, sized for this room",
+                "text": "9 kW electric or wood-burning, sized for this room"
+              }
+            },
+            {
+              "term": {
+                "html": "Warranty",
+                "text": "Warranty"
+              },
+              "details": {
+                "html": "5-year residential limited",
+                "text": "5-year residential limited"
+              }
+            },
+            {
+              "term": {
+                "html": "Made in",
+                "text": "Made in"
+              },
+              "details": {
+                "html": "Canada",
+                "text": "Canada"
+              }
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Download dimensions (PDF)",
+          "text": "Download dimensions (PDF)",
+          "href": "./assets/028dfa6ca6a8055087ccf23f2da1d558.pdf",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery &amp; installation</strong>",
+          "text": "Delivery & installation"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery + Installation</strong>",
+          "text": "Delivery + Installation"
+        },
+        {
+          "type": "text",
+          "html": "Delivered and assembled by our team, anywhere in Ontario.",
+          "text": "Delivered and assembled by our team, anywhere in Ontario."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$1,750</strong>",
+          "text": "$1,750"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Delivery Only</strong>",
+          "text": "Delivery Only"
+        },
+        {
+          "type": "text",
+          "html": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment.",
+          "text": "Shipped by freight to a local depot in Ontario. The carrier can’t unload the crate, so you arrange to unload it by hand or with equipment."
+        },
+        {
+          "type": "text",
+          "html": "<strong>$450</strong>",
+          "text": "$450"
+        },
+        {
+          "type": "paragraph",
+          "html": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician.",
+          "text": "We also install in BC. Anywhere else, delivery is quoted for your location. Electrical hook-up must be completed by a licensed electrician."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Compare other <em>saunas</em>",
+          "text": "Compare other saunas"
+        },
+        {
+          "type": "link",
+          "html": "View All Cube Saunas",
+          "text": "View All Cube Saunas",
+          "href": "/saunas/cube",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Best Sellers",
+          "text": "Best Sellers",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "og:type is \"product\", expected \"website\""
+  ]
+}

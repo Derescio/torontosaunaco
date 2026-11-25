@@ -1,0 +1,806 @@
+{
+  "file": "CityNiagaraOnTheLake.dc.html",
+  "route": "/service-areas/niagara-on-the-lake",
+  "pageMap": {
+    "route": "/service-areas/niagara-on-the-lake",
+    "title": "Backyard Saunas in Niagara-on-the-Lake | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Niagara-on-the-Lake, delivered and installed for $1,750. Serving Old Town, Virgil, St. Davids and more.",
+    "index": "",
+    "photos": 12
+  },
+  "head": {
+    "title": "Backyard Saunas in Niagara-on-the-Lake | The Toronto Sauna Co.",
+    "description": "Premium backyard saunas in Niagara-on-the-Lake, delivered and installed for $1,750. Serving Old Town, Virgil, St. Davids and more.",
+    "canonical": "https://www.thetorontosaunaco.com/service-areas/niagara-on-the-lake",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Backyard Saunas in Niagara-on-the-Lake | The Toronto Sauna Co.",
+      "description": "Premium backyard saunas in Niagara-on-the-Lake, delivered and installed for $1,750. Serving Old Town, Virgil, St. Davids and more.",
+      "url": "https://www.thetorontosaunaco.com/service-areas/niagara-on-the-lake",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Backyard sauna sales, delivery and installation in Niagara-on-the-Lake",
+            "serviceType": "Backyard sauna installation",
+            "provider": {
+              "@id": "https://www.thetorontosaunaco.com/#store"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Niagara-on-the-Lake",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ontario"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Delivery and installation",
+              "price": "1750.00",
+              "priceCurrency": "CAD"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/service-areas/niagara-on-the-lake",
+            "url": "https://www.thetorontosaunaco.com/service-areas/niagara-on-the-lake",
+            "name": "Backyard Saunas in Niagara-on-the-Lake",
+            "description": "Premium backyard saunas in Niagara-on-the-Lake, delivered and installed for $1,750. Serving Old Town, Virgil, St. Davids and more. Visit our King Township showroom."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://www.thetorontosaunaco.com/service-areas"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Niagara-on-the-Lake",
+                "item": "https://www.thetorontosaunaco.com/service-areas/niagara-on-the-lake"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you deliver to Niagara-on-the-Lake?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Delivery and installation is $1,750 anywhere in Ontario, including NOTL."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "I'm in the Old Town heritage district. Can I add a sauna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Usually, yes. Changes visible from the street can need heritage review. We'll help you check and provide drawings and photos if the town asks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a building permit in NOTL?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check before you order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does delivery and installation cost in Niagara-on-the-Lake?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery and installation is $1,750 anywhere in Ontario, including Niagara-on-the-Lake. Delivery only is $450. HST is shown separately on every quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What heater size does my sauna need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {},
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Service Areas",
+              "href": "/service-areas"
+            },
+            {
+              "text": "Niagara-on-the-Lake"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>Niagara Region</strong>",
+          "text": "Niagara Region"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Backyard Saunas in <em><strong>Niagara-on-the-Lake</strong></em>",
+          "text": "Backyard Saunas in Niagara-on-the-Lake"
+        },
+        {
+          "type": "paragraph",
+          "html": "Niagara-on-the-Lake pairs wine country with some of Ontario's most beautiful homes. We deliver and install premium cedar saunas across NOTL, sized and finished to suit heritage streets, vineyard estates and inns alike.",
+          "text": "Niagara-on-the-Lake pairs wine country with some of Ontario's most beautiful homes. We deliver and install premium cedar saunas across NOTL, sized and finished to suit heritage streets, vineyard estates and inns alike."
+        },
+        {
+          "type": "link",
+          "html": "Book a Free Site Consult",
+          "text": "Book a Free Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Call (437) 429-6623",
+          "text": "Call (437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        },
+        {
+          "type": "image",
+          "src": "./assets/5c72210b598f83645641029c0cb8cdc3.jpg",
+          "alt": "Glass and cedar sauna on an estate patio at golden hour, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Trust strip",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>$1,750 delivery and installation</strong>",
+          "text": "$1,750 delivery and installation"
+        },
+        {
+          "type": "text",
+          "html": "Anywhere in Ontario, including Niagara-on-the-Lake. Delivery only: $450.",
+          "text": "Anywhere in Ontario, including Niagara-on-the-Lake. Delivery only: $450."
+        },
+        {
+          "type": "text",
+          "html": "<strong>Showroom in King Township</strong>",
+          "text": "Showroom in King Township"
+        },
+        {
+          "type": "text",
+          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>5-star Google reviews</strong>",
+          "text": "5-star Google reviews"
+        },
+        {
+          "type": "text",
+          "html": "Real customers, real installs. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Toronto+Sauna+Co+Schomberg\">Read reviews</a>",
+          "text": "Real customers, real installs. Read reviews"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Made in Canada</strong>",
+          "text": "Made in Canada"
+        },
+        {
+          "type": "text",
+          "html": "Western Red Cedar saunas built for Ontario winters.",
+          "text": "Western Red Cedar saunas built for Ontario winters."
+        }
+      ]
+    },
+    {
+      "name": "Neighbourhoods",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Where we install</strong>",
+          "text": "Where we install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Serving all of <em><strong>Niagara-on-the-Lake.</strong></em>",
+          "text": "Serving all of Niagara-on-the-Lake."
+        },
+        {
+          "type": "paragraph",
+          "html": "We design, deliver and install backyard saunas across Niagara-on-the-Lake, including Old Town, Virgil, St. Davids, Queenston, Chautauqua, Glendale and Niagara-on-the-Green.",
+          "text": "We design, deliver and install backyard saunas across Niagara-on-the-Lake, including Old Town, Virgil, St. Davids, Queenston, Chautauqua, Glendale and Niagara-on-the-Green."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "Old Town",
+              "text": "Old Town"
+            },
+            {
+              "html": "Virgil",
+              "text": "Virgil"
+            },
+            {
+              "html": "St. Davids",
+              "text": "St. Davids"
+            },
+            {
+              "html": "Queenston",
+              "text": "Queenston"
+            },
+            {
+              "html": "Chautauqua",
+              "text": "Chautauqua"
+            },
+            {
+              "html": "Glendale",
+              "text": "Glendale"
+            },
+            {
+              "html": "Niagara-on-the-Green",
+              "text": "Niagara-on-the-Green"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local setting",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Heritage Old Town",
+          "text": "Heritage Old Town"
+        },
+        {
+          "type": "paragraph",
+          "html": "Much of the Old Town is a heritage conservation district, where changes visible from the street can need town review. Backyard saunas are often out of view, but we'll help you check and provide drawings if needed.",
+          "text": "Much of the Old Town is a heritage conservation district, where changes visible from the street can need town review. Backyard saunas are often out of view, but we'll help you check and provide drawings if needed."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Vineyard estates and inns",
+          "text": "Vineyard estates and inns"
+        },
+        {
+          "type": "paragraph",
+          "html": "Larger properties in St. Davids, Queenston and the countryside suit statement saunas like the Orion and Avalon. For inns and B&amp;Bs, a sauna adds real value to a stay.",
+          "text": "Larger properties in St. Davids, Queenston and the countryside suit statement saunas like the Orion and Avalon. For inns and B&Bs, a sauna adds real value to a stay."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Lake breezes",
+          "text": "Lake breezes"
+        },
+        {
+          "type": "paragraph",
+          "html": "Lakeside lots get wind off Lake Ontario. We recommend a sheltered spot, a well-drained base and exterior oil to protect the cedar.",
+          "text": "Lakeside lots get wind off Lake Ontario. We recommend a sheltered spot, a well-drained base and exterior oil to protect the cedar."
+        }
+      ]
+    },
+    {
+      "name": "Picks",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Recommended for Niagara-on-the-Lake</strong>",
+          "text": "Recommended for Niagara-on-the-Lake"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Saunas we recommend in <em><strong>Niagara-on-the-Lake.</strong></em>",
+          "text": "Saunas we recommend in Niagara-on-the-Lake."
+        },
+        {
+          "type": "paragraph",
+          "html": "Refined, statement saunas suited to NOTL's heritage homes, estates and inns.",
+          "text": "Refined, statement saunas suited to NOTL's heritage homes, estates and inns."
+        },
+        {
+          "type": "link",
+          "html": "Shop all saunas",
+          "text": "Shop all saunas",
+          "href": "/saunas/best-sellers",
+          "variant": "button"
+        },
+        {
+          "type": "card",
+          "href": "/saunas/orion",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/23e82ec36aa5818fd042ffa569a42822.jpg",
+              "alt": "Orion outdoor sauna on a stone patio, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Orion</strong>",
+              "text": "The Orion"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person, all glass",
+              "text": "5–6 person, all glass"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$18,735</strong>",
+              "text": "$18,735"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/avalon",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/c8ad1d74db4f0d61b44fa9e557d9f4b7.jpg",
+              "alt": "Avalon outdoor sauna in black stain with a large picture window beside a pool, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Avalon</strong>",
+              "text": "The Avalon"
+            },
+            {
+              "type": "text",
+              "html": "6–7 person, three tiers",
+              "text": "6–7 person, three tiers"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$15,450</strong>",
+              "text": "$15,450"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/neptune",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/689c0de1fe0d6131657ef80b5cab7e15.jpg",
+              "alt": "Neptune outdoor sauna with Villa cedar wood siding, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Neptune</strong>",
+              "text": "The Neptune"
+            },
+            {
+              "type": "text",
+              "html": "5–6 person",
+              "text": "5–6 person"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$17,896</strong>",
+              "text": "$17,896"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "/saunas/studio-six-mini",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/1f29348dbdde28710da0f0cc65a21b49.jpg",
+              "alt": "Studio Six Mini black outdoor sauna glowing with LED bench lighting, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>The Studio Six Mini</strong>",
+              "text": "The Studio Six Mini"
+            },
+            {
+              "type": "text",
+              "html": "2 person, four-season",
+              "text": "2 person, four-season"
+            },
+            {
+              "type": "text",
+              "html": "<strong>$17,499</strong>",
+              "text": "$17,499"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Process",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>How it works</strong>",
+          "text": "How it works"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "From first call to first <em><strong>steam.</strong></em>",
+          "text": "From first call to first steam."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>01</strong>",
+                  "text": "01"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Consult</strong>",
+                  "text": "Consult"
+                },
+                {
+                  "type": "text",
+                  "html": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget.",
+                  "text": "Visit our Schomberg showroom or book a call. We talk through how you'll use the sauna, who'll use it, and your budget."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>02</strong>",
+                  "text": "02"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Site check</strong>",
+                  "text": "Site check"
+                },
+                {
+                  "type": "text",
+                  "html": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel.",
+                  "text": "We review your yard: placement, access for delivery, base (gravel or concrete), and the distance to your electrical panel."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>03</strong>",
+                  "text": "03"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Spec and quote</strong>",
+                  "text": "Spec and quote"
+                },
+                {
+                  "type": "text",
+                  "html": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST.",
+                  "text": "We size the heater to the sauna's volume (never under 6 kW for our saunas), choose controls and finishes, and send a clear quote with HST."
+                }
+              ]
+            },
+            {
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>04</strong>",
+                  "text": "04"
+                },
+                {
+                  "type": "text",
+                  "html": "<strong>Deliver and install</strong>",
+                  "text": "Deliver and install"
+                },
+                {
+                  "type": "text",
+                  "html": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit.",
+                  "text": "Delivery and installation anywhere in Ontario is $1,750 (delivery only is $450). Your licensed electrician makes the final connection under an ESA permit."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "link",
+          "html": "Compare heaters",
+          "text": "Compare heaters",
+          "href": "/sauna-heaters",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Add a cold plunge",
+          "text": "Add a cold plunge",
+          "href": "/cold-plunges",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Sauna accessories",
+          "text": "Sauna accessories",
+          "href": "/accessories",
+          "variant": "button"
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Reviews</strong>",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "What our customers <em><strong>say.</strong></em>",
+          "text": "What our customers say."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "text": "“He showed us several sauna options in our price range, gave us good insight into different heaters, make recommendations for the base (cement or gravel) and answered all our questions … They have fair prices and good service. Highly recommend!”",
+          "cite": "<strong>Dave Lewis</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I shopped for a very long time to find the right sauna and sauna guy — and Toronto Sauna Co was it … I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "text": "“The sauna is a beautiful addition to our home, and I’m thrilled with the purchase … Having one has been totally life-changing for our family!”",
+          "cite": "<strong>Matthew Alexander</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Questions</strong>",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Backyard saunas in Niagara-on-the-Lake: <em><strong>FAQ.</strong></em>",
+          "text": "Backyard saunas in Niagara-on-the-Lake: FAQ."
+        },
+        {
+          "type": "faq",
+          "html": "Do you deliver to Niagara-on-the-Lake?",
+          "text": "Do you deliver to Niagara-on-the-Lake?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Delivery and installation is $1,750 anywhere in Ontario, including NOTL.",
+              "text": "Yes. Delivery and installation is $1,750 anywhere in Ontario, including NOTL."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "I'm in the Old Town heritage district. Can I add a sauna?",
+          "text": "I'm in the Old Town heritage district. Can I add a sauna?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Usually, yes. Changes visible from the street can need heritage review. We'll help you check and provide drawings and photos if the town asks.",
+              "text": "Usually, yes. Changes visible from the street can need heritage review. We'll help you check and provide drawings and photos if the town asks."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need a building permit in NOTL?",
+          "text": "Do I need a building permit in NOTL?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check before you order.",
+              "text": "An accessory building over 10 m² typically needs a building permit, zoning setbacks apply, and the electrical connection needs an ESA permit. We check before you order."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much does delivery and installation cost in Niagara-on-the-Lake?",
+          "text": "How much does delivery and installation cost in Niagara-on-the-Lake?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery and installation is $1,750 anywhere in Ontario, including Niagara-on-the-Lake. Delivery only is $450. HST is shown separately on every quote.",
+              "text": "Delivery and installation is $1,750 anywhere in Ontario, including Niagara-on-the-Lake. Delivery only is $450. HST is shown separately on every quote."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What heater size does my sauna need?",
+          "text": "What heater size does my sauna need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances.",
+              "text": "We size every heater to the sauna's interior volume plus extra for glass. None of our saunas take less than a 6 kW heater; larger models use 9 to 10.5 kW electric or a wood stove where there's room for its clearances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nearby",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Also serving nearby:</strong>",
+          "text": "Also serving nearby:"
+        },
+        {
+          "type": "link",
+          "html": "Burlington",
+          "text": "Burlington",
+          "href": "/service-areas/burlington",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Oakville",
+          "text": "Oakville",
+          "href": "/service-areas/oakville",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Prince Edward County",
+          "text": "Prince Edward County",
+          "href": "/service-areas/prince-edward-county",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Toronto",
+          "text": "Toronto",
+          "href": "/service-areas/toronto",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "All service areas →",
+          "text": "All service areas →",
+          "href": "/service-areas",
+          "variant": "link"
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Ready for a sauna in <em><strong>Niagara-on-the-Lake?</strong></em>",
+          "text": "Ready for a sauna in Niagara-on-the-Lake?"
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+        },
+        {
+          "type": "link",
+          "html": "Book a Site Consult",
+          "text": "Book a Site Consult",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

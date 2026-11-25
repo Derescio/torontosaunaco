@@ -1,0 +1,2191 @@
+{
+  "file": "Heaters.dc.html",
+  "route": "/sauna-heaters",
+  "pageMap": {
+    "route": "/sauna-heaters",
+    "title": "Sauna Heaters: HUUM, Homecraft & Narvi | The Toronto Sauna Co.",
+    "description": "Electric and wood-burning sauna heaters for your backyard sauna: HUUM, Homecraft, Harvia and Narvi, sized and priced by kW.",
+    "index": "",
+    "photos": 32
+  },
+  "head": {
+    "title": "Sauna Heaters: HUUM, Homecraft & Narvi | The Toronto Sauna Co.",
+    "description": "Electric and wood-burning sauna heaters for your backyard sauna: HUUM, Homecraft, Harvia and Narvi, sized and priced by kW.",
+    "canonical": "https://www.thetorontosaunaco.com/sauna-heaters",
+    "og": {
+      "site_name": "The Toronto Sauna Co.",
+      "type": "website",
+      "title": "Sauna Heaters: HUUM, Homecraft & Narvi | The Toronto Sauna Co.",
+      "description": "Electric and wood-burning sauna heaters for your backyard sauna: HUUM, Homecraft, Harvia and Narvi, sized and priced by kW.",
+      "url": "https://www.thetorontosaunaco.com/sauna-heaters",
+      "image": "https://www.thetorontosaunaco.com/_blob/f20866f0c70f44118012645dc4775fb4"
+    },
+    "twitter": {
+      "card": "summary_large_image"
+    },
+    "jsonLd": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Store",
+            "@id": "https://www.thetorontosaunaco.com/#store",
+            "name": "The Toronto Sauna Co.",
+            "url": "https://www.thetorontosaunaco.com",
+            "telephone": "+1-437-429-6623",
+            "email": "sales@thetorontosaunaco.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "17380 Highway 27",
+              "addressLocality": "Schomberg",
+              "addressRegion": "ON",
+              "postalCode": "L0G 1T0",
+              "addressCountry": "CA"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Ontario"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.thetorontosaunaco.com/sauna-heaters",
+            "url": "https://www.thetorontosaunaco.com/sauna-heaters",
+            "name": "Electric & Wood-Burning Sauna Heaters",
+            "description": "Electric and wood-burning sauna heaters for your backyard sauna: HUUM, Homecraft, Harvia and Narvi, sized and priced by kW. Delivered and installed across Ontario."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.thetorontosaunaco.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sauna Heaters",
+                "item": "https://www.thetorontosaunaco.com/sauna-heaters"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Sauna heaters",
+            "numberOfItems": 14,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Revive",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/a27efebc69e88e87349b66fe4cdf78fb",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "1905.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Revive Slim",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/adaccf76d04e21197ca34a296e32407d",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "1760.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Apex (240V / 1 Phase)",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/94aa61eb04201e21a3a857be09fe2f09",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "2450.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Apex (208V / 3 Phase)",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/94aa61eb04201e21a3a857be09fe2f09",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "3010.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Product",
+                  "name": "Homecraft Apex Mini",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/94aa61eb04201e21a3a857be09fe2f09",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "2040.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "Product",
+                  "name": "Harvia KIP",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/7d0e6db593e5c309d8cbfd9e609a6ce4",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "1700",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM Drop",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/4e56c7df8cc7a6ec0d8d42a40fff8813",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "1584",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "Product",
+                  "name": "HUUM Hive Mini",
+                  "category": "Sauna heater",
+                  "image": "https://www.thetorontosaunaco.com/_blob/461d358117b67716669c1b303e7cdc7d",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "2631.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                  "@type": "Product",
+                  "name": "TimberGlow14",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "CAD",
+                    "price": "2693.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Kaamos",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "2095.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Kuru",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "1391.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi NC Black",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "2142.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 13,
+                "item": {
+                  "@type": "Product",
+                  "name": "Narvi Velvet",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "CAD",
+                    "lowPrice": "5995.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 14,
+                "item": {
+                  "@type": "Product",
+                  "name": "Pellum P47 Pellet Stove",
+                  "category": "Sauna heater",
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "CAD",
+                    "price": "3985.00",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                      "@id": "https://www.thetorontosaunaco.com/#store"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I know what size heater I need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Measure your sauna's length, width and height in feet and multiply them to get cubic feet, then pick a heater whose range covers that number. Add volume for glass walls or doors. Every heater page lists the room range for each kW output, or send us your measurements and we'll recommend one."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Electric or wood-burning: what's the difference?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Electric heaters reach temperature in about 30 to 45 minutes, give you precise control, and need a dedicated 240V circuit. Wood-burning stoves take longer to heat, run off-grid, and bring the atmosphere of a real fire. Both make steam when you pour water on the stones."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much is delivery for a heater?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Delivery for a heater bought on its own is quoted for your location, or you can pick it up free at our Schomberg showroom when in stock. If you buy a sauna from us, the heater is included in the sauna's delivery and installation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What size breaker does a sauna heater need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on the heater and its output: from a 30 A double-pole breaker for 6 kW heaters like the HUUM Drop 6 kW or Harvia KIP 6 kW, up to 80 A for the Homecraft Apex 15 kW. The exact breaker and wire size for every output is listed on each heater page."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need an electrician and a permit in Ontario?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. An electric sauna heater must be connected by a licensed electrical contractor under an Electrical Safety Authority (ESA) permit, following the Ontario Electrical Safety Code."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I start my sauna from my phone?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, with a Wi-Fi control. HUUM heaters use the UKU Wi-Fi control, and Homecraft heaters can be paired with a Homecraft Wi-Fi touchpad. Both are available on our Accessories page."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a difference between indoor and outdoor controls?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For Homecraft heaters, yes: choose the outdoor contactor and touchpad for a backyard sauna, and the indoor version for a basement or home sauna."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do wood-burning heaters need a chimney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Wood-burning stoves need a chimney, installed to local building codes, on a non-combustible base with the clearances listed for each stove. Check your home insurer's requirements before installing a wood stove."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the electric heaters safety certified?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Homecraft heaters (Revive, Revive Slim, Apex Mini and Apex) are CSA certified to UL 875, and the Harvia KIP is UL/cUL listed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What warranty comes with each heater?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Homecraft heaters carry a 2-year manufacturer warranty, HUUM heaters a 3-year warranty, the Harvia KIP up to 3 years, and Narvi stoves 2 years. Details are on each heater page."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where are your heaters made?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Homecraft (Revive, Revive Slim, Apex Mini, Apex) and TimberGlow are made in Canada. Narvi stoves and the Harvia KIP come from Finland. HUUM heaters are designed in Estonia, and the Pellum pellet stove is designed and made there too."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "electric": [
+      {
+        "name": "Homecraft Revive",
+        "img": "./assets/a27efebc69e88e87349b66fe4cdf78fb.webp",
+        "alt": "Homecraft Revive stainless steel electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/revive",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $1,905.00",
+        "code": "SKU REV240",
+        "origin": "Made in Canada",
+        "photo": "REV240 _10.jpg",
+        "desc": "A tower heater in 100% stainless steel, with the rock chamber wrapped around a protected element chamber.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "250–450 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "200 lbs (5 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "14 × 14 × 36 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Revive Slim",
+        "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+        "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/revive-slim",
+        "kw": [
+          "4 kW",
+          "5 kW",
+          "6 kW"
+        ],
+        "price": "From $1,760.00",
+        "code": "SKU REVSLI",
+        "origin": "Made in Canada",
+        "photo": "REVSLI _14.jpg",
+        "desc": "A slim stainless tower for rooms without the 14 inches of depth a full-size heater needs.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "100–300 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "100 lbs (3 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "13.5 × 8 × 36 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex (240V / 1 Phase)",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-240",
+        "kw": [
+          "10 kW",
+          "12 kW",
+          "15 kW"
+        ],
+        "price": "From $2,450.00",
+        "code": "SKU APEX240",
+        "origin": "Made in Canada",
+        "photo": "APEX240 _12.jpg",
+        "desc": "The largest residential heater that runs on standard 240V single-phase power, with a protected element air chamber.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "400–950 cu ft"
+          },
+          {
+            "k": "Power",
+            "v": "240V, 1-phase"
+          },
+          {
+            "k": "Stones",
+            "v": "310 lbs (7 boxes)"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex (208V / 3 Phase)",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-208",
+        "kw": [
+          "10 kW",
+          "12 kW",
+          "15 kW",
+          "18 kW"
+        ],
+        "price": "From $3,010.00",
+        "code": "SKU APEX208",
+        "origin": "Made in Canada",
+        "photo": "APEX208 _12.jpg",
+        "desc": "The floor-standing Apex for large residential or commercial saunas running on three-phase power.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "400–1,150 cu ft"
+          },
+          {
+            "k": "Power",
+            "v": "208V, 3-phase"
+          },
+          {
+            "k": "Stones",
+            "v": "310 lbs (7 boxes)"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex Mini",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-mini",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $2,040.00",
+        "code": "SKU APMI240",
+        "origin": "Made in Canada",
+        "photo": "apex-mini_1.jpg",
+        "desc": "The Apex protected-element design in a floor-standing unit 4 inches shorter than the full-size Apex.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "200–450 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "175 lbs (5 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "14 × 14 × 32 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Harvia KIP",
+        "img": "./assets/7d0e6db593e5c309d8cbfd9e609a6ce4.webp",
+        "alt": "Harvia KIP electric sauna heater with built-in controls, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/harvia-kip",
+        "kw": [
+          "6 kW",
+          "8 kW"
+        ],
+        "price": "From $1,700.00",
+        "code": "SKU HARVKIP",
+        "origin": "Made in Finland",
+        "photo": "HARKIPN_1.jpg",
+        "desc": "Finnish-made with built-in time and temperature controls, a delay start of up to 8 hours, and a dual-wall stainless casing.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "100–425 cu ft"
+          },
+          {
+            "k": "Output",
+            "v": "6 or 8 kW"
+          },
+          {
+            "k": "Stones",
+            "v": "44 lbs (20 kg)"
+          },
+          {
+            "k": "Certification",
+            "v": "UL/cUL listed"
+          }
+        ]
+      },
+      {
+        "name": "HUUM Drop",
+        "img": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+        "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/huum-drop",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $1,584.00",
+        "code": "HUUMDROP",
+        "origin": "Designed in Estonia",
+        "photo": "HUUMDROP _10.jpg",
+        "desc": "Sleek and rounded, inspired by a drop of water. A Red Dot design award winner with app control.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "106–460 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "55 kg (4 boxes)"
+          },
+          {
+            "k": "Controls",
+            "v": "HUUM UKU, Local or Wi-Fi"
+          },
+          {
+            "k": "Warranty",
+            "v": "3 years"
+          }
+        ]
+      },
+      {
+        "name": "HUUM Hive Mini",
+        "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+        "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/huum-hive-mini",
+        "kw": [
+          "6 kW",
+          "9 kW",
+          "10.5 kW"
+        ],
+        "price": "From $2,631.00",
+        "code": "HUUMHIVE",
+        "origin": "Designed in Estonia",
+        "photo": "HUUMHIVE_1.jpg",
+        "desc": "A smaller version of the popular HIVE. Its large stone mass gives long-lasting, mild steam for extended sessions.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "177–566 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "150 kg (10 boxes)"
+          },
+          {
+            "k": "Controls",
+            "v": "HUUM UKU, Local or Wi-Fi"
+          },
+          {
+            "k": "Warranty",
+            "v": "3 years"
+          }
+        ]
+      }
+    ],
+    "wood": [
+      {
+        "name": "TimberGlow14",
+        "href": "/sauna-heaters/timber-glow",
+        "price": "$2,693.00",
+        "gallery": [
+          {
+            "src": "./assets/d60e58e245437d8f8fa5fa88e1c5fa48.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater with black steel stone cage, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/9bdaa7643d6db03ca3438db1ec0bf489.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/b048b817e9a6f497b73ba40060ee3861.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater with fire through the glass door, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU 120224",
+        "origin": "Made in Canada",
+        "photo": "120224_1.jpg",
+        "desc": "A 14 kW Canadian-built wood stove with a heavy 3/16 in steel firebox and a 20 in round cage that holds 200 lbs of rock. It takes full 16 in logs, so you load less often and get long, even heat for mid-size backyard saunas.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "212–495 cu ft"
+          },
+          {
+            "k": "Chimney kits",
+            "v": "Top $681 · Side $1,156"
+          },
+          {
+            "k": "Output",
+            "v": "14 kW"
+          },
+          {
+            "k": "Stones",
+            "v": "200 lbs (90 kg)"
+          },
+          {
+            "k": "Size",
+            "v": "20 in dia × 30 in H"
+          },
+          {
+            "k": "Log length",
+            "v": "Up to 16 in"
+          },
+          {
+            "k": "Chimney",
+            "v": "4½ in, top outlet"
+          },
+          {
+            "k": "Warranty",
+            "v": "5-year parts"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Kaamos",
+        "href": "/sauna-heaters/narvi-kaamos",
+        "price": "From $2,095.00",
+        "gallery": [
+          {
+            "src": "./assets/130109c1d84fe4234df7583226805e88.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/3f297501d733057fbc575c3e88dcc30b.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/9dcd51369ea2b304084c8f0834f3ceab.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater with door open, The Toronto Sauna Co.",
+            "fit": "contain"
+          }
+        ],
+        "code": "SKU NARKAAM",
+        "origin": "Designed in Finland",
+        "photo": "NARKAAM _12.jpg",
+        "desc": "Kaamos means polar night in Finnish. An angular, matte-black stove with a full-glass cast iron door, a 10 mm firebox roof and a large stone load for soft, even steam. Handcrafted in Rauma, Finland, in three sizes.",
+        "specs": [
+          {
+            "k": "Kaamos 16",
+            "v": "283–565 cu ft · 50 kg stones · $2,095"
+          },
+          {
+            "k": "Kaamos 20",
+            "v": "353–706 cu ft · 60 kg stones · $2,295"
+          },
+          {
+            "k": "Kaamos 24",
+            "v": "424–847 cu ft · 80 kg stones · $2,495"
+          },
+          {
+            "k": "Size (20)",
+            "v": "19 × 20 × 30 in"
+          },
+          {
+            "k": "Clearances",
+            "v": "12 in sides, 8 in back, 20 in front"
+          },
+          {
+            "k": "Chimney",
+            "v": "Top or back"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Kuru",
+        "href": "/sauna-heaters/narvi-kuru",
+        "price": "From $1,391.00",
+        "gallery": [
+          {
+            "src": "./assets/92b69955b6a6a214ac7c73c9a0526c4e.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater with stainless steel front, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/c19de50ae057d7da0536f9ebdff8032a.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/0a328f6d928dba3a02738fbd2af4f217.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater installed in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "NARKURU",
+        "origin": "Made in Finland",
+        "photo": "NARKURU _14.webp",
+        "desc": "Narvi's compact, value-priced stove. Black-painted steel, a glazed door to watch the fire and wooden handles that stay cool to the touch. Fewer stones means it heats up quickly, ideal for smaller backyard and cottage saunas.",
+        "specs": [
+          {
+            "k": "Kuru 14",
+            "v": "283–494 cu ft · 35 kg stones · $1,391"
+          },
+          {
+            "k": "Kuru 20",
+            "v": "Up to 706 cu ft · 40 kg stones · $1,693"
+          },
+          {
+            "k": "Size (14)",
+            "v": "16.5 × 18.7 × 26.6 in"
+          },
+          {
+            "k": "Logs",
+            "v": "Up to 13 in"
+          },
+          {
+            "k": "Clearances",
+            "v": "10 in sides/back, 20 in front"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Narvi NC Black",
+        "href": "/sauna-heaters/narvi-nc",
+        "price": "From $2,142.00",
+        "gallery": [
+          {
+            "src": "./assets/ff5e4f46da8d8bf97c8011d051665617.webp",
+            "alt": "Narvi NC Black wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/aa66dc3beefe12610aa715a1bc8c5c64.webp",
+            "alt": "Narvi NC Black wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          }
+        ],
+        "code": "NARVINC",
+        "origin": "Made in Finland",
+        "photo": "NARVINC _10.jpg",
+        "desc": "A traditional, hand-made Finnish stove with a cast iron glass door and front panel, a clean-burning CE fire chamber and adjustable feet. Its big stone load gives even heat without burning excess wood. The 20 VS adds a 23 L water tank.",
+        "specs": [
+          {
+            "k": "NC 16",
+            "v": "Up to 565 cu ft · 50 kg stones · $2,142"
+          },
+          {
+            "k": "NC 20",
+            "v": "Up to 706 cu ft · 60 kg stones · $2,397"
+          },
+          {
+            "k": "NC 24",
+            "v": "Up to 847 cu ft · 80 kg stones · $2,652"
+          },
+          {
+            "k": "NC 20 VS",
+            "v": "Up to 706 cu ft · 23 L water tank · $2,890"
+          },
+          {
+            "k": "Chimney",
+            "v": "Rear pipe included, top optional"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Velvet",
+        "href": "/sauna-heaters/narvi-velvet",
+        "price": "From $5,995.00",
+        "gallery": [
+          {
+            "src": "./assets/4a24c7ae9f53a63ea33d7c2aef573f45.webp",
+            "alt": "Narvi Velvet wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/458a2b966a3b2144b26dbae1d6de45ff.webp",
+            "alt": "Narvi Velvet wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/9e179da82fde600e82fa4282bbfa91e5.webp",
+            "alt": "Narvi Velvet sauna heater stone cage detail, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU NARVELV",
+        "origin": "Made in Finland",
+        "photo": "narvi-velvet_10.jpg",
+        "desc": "Narvi's premium stove. A double casing holds a deep stone load similar to the Stony 20 (about 160 kg), for long, velvety steam. A glazed hatch lets you watch the fire, and the furnace is replaceable for a long service life.",
+        "specs": [
+          {
+            "k": "Velvet 20",
+            "v": "Up to 706 cu ft · $5,995"
+          },
+          {
+            "k": "Velvet 35",
+            "v": "Larger saunas · $9,995"
+          },
+          {
+            "k": "Stones (20)",
+            "v": "60 kg (10–15 cm) + 100 kg (5–10 cm)"
+          },
+          {
+            "k": "Furnace",
+            "v": "Replaceable"
+          },
+          {
+            "k": "Chimney",
+            "v": "Top or back"
+          },
+          {
+            "k": "Feet",
+            "v": "Adjustable"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Pellum P47 Pellet Stove",
+        "href": "/sauna-heaters/pellum",
+        "price": "$3,985.00",
+        "gallery": [
+          {
+            "src": "./assets/504ade7ae14c25a2c613c3cb7959a72c.webp",
+            "alt": "Pellum P47 pellet sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/22094b0de4e642f569ad7d509507d269.webp",
+            "alt": "Pellum P47 pellet sauna heater in a barrel sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/429f024f64ddeba0218223ff26cdb6a7.webp",
+            "alt": "Pellum P47 pellet sauna heater fire door, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/8ee4b2dd763b5c7fe409c9836a45723d.webp",
+            "alt": "Pellum P47 pellet sauna heater stones and chimney, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU PELP47O",
+        "origin": "Made in Estonia",
+        "photo": "Pellum-Sauna-Heater_10.webp",
+        "desc": "A patented pellet-fired sauna stove from Estonia. Load the 15 kg pellet chamber and it feeds itself for up to 4.5 hours, with no electricity needed. Stainless steel body, glass door and very low emissions.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "212–565 cu ft (6–16 m³)"
+          },
+          {
+            "k": "Chimney kit",
+            "v": "Top exit, $681"
+          },
+          {
+            "k": "Fuel",
+            "v": "Wood pellets, 6–8 mm"
+          },
+          {
+            "k": "Pellet chamber",
+            "v": "15 kg, up to 4.5 h per fill"
+          },
+          {
+            "k": "Power",
+            "v": "No electricity needed"
+          },
+          {
+            "k": "Weight",
+            "v": "95 kg (209 lbs)"
+          },
+          {
+            "k": "Body",
+            "v": "Stainless steel, glass door"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "blocks": [
+        {
+          "type": "breadcrumb",
+          "items": [
+            {
+              "text": "Home",
+              "href": "/"
+            },
+            {
+              "text": "Sauna Heaters"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<strong>The heart of every sauna</strong>",
+          "text": "The heart of every sauna"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "html": "Electric &amp; Wood-Burning <em><strong>Sauna Heaters</strong></em>",
+          "text": "Electric & Wood-Burning Sauna Heaters"
+        },
+        {
+          "type": "paragraph",
+          "html": "Your heater sets the pace of each session, shapes the steam, and decides whether the heat feels gentle or deep. We carry electric and wood-burning heaters from Canadian, Finnish and Estonian makers, sized for rooms from 100 to 1,150 cubic feet, and delivered and installed across Ontario.",
+          "text": "Your heater sets the pace of each session, shapes the steam, and decides whether the heat feels gentle or deep. We carry electric and wood-burning heaters from Canadian, Finnish and Estonian makers, sized for rooms from 100 to 1,150 cubic feet, and delivered and installed across Ontario."
+        },
+        {
+          "type": "link",
+          "html": "Electric Heaters",
+          "text": "Electric Heaters",
+          "href": "#electric",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "Wood-Burning Heaters",
+          "text": "Wood-Burning Heaters",
+          "href": "#wood",
+          "variant": "button"
+        },
+        {
+          "type": "image",
+          "src": "./assets/3a5cc7b47a0f20ff046d26c6e43adbfe.webp",
+          "alt": "Water ladled onto a HUUM Drop electric sauna heater, steam rising off the stones, The Toronto Sauna Co."
+        }
+      ]
+    },
+    {
+      "name": "Delivery, showroom, warranty",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Delivery or free pickup</strong>",
+          "text": "Delivery or free pickup"
+        },
+        {
+          "type": "text",
+          "html": "Buying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation.",
+          "text": "Buying a heater on its own: delivery quoted for your location, or free pickup at our showroom when in stock. Buying a sauna: your heater is included in the sauna's delivery and installation."
+        },
+        {
+          "type": "text",
+          "html": "<strong>See them at our Schomberg showroom</strong>",
+          "text": "See them at our Schomberg showroom"
+        },
+        {
+          "type": "text",
+          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
+          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Certified for Canada</strong>",
+          "text": "Certified for Canada"
+        },
+        {
+          "type": "text",
+          "html": "Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page.",
+          "text": "Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed. Breaker and wire sizes are listed on every heater page."
+        }
+      ]
+    },
+    {
+      "name": "Options",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Two ways to heat</strong>",
+          "text": "Two ways to heat"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Choose your <em><strong>heat.</strong></em>",
+          "text": "Choose your heat."
+        },
+        {
+          "type": "card",
+          "href": "#electric",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/a27efebc69e88e87349b66fe4cdf78fb.webp",
+              "alt": "Homecraft Revive electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "type": "image",
+              "src": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+              "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Electric</strong>",
+              "text": "Electric"
+            },
+            {
+              "type": "text",
+              "html": "8 heaters",
+              "text": "8 heaters"
+            },
+            {
+              "type": "text",
+              "html": "Precise temperature control, faster heat-up and simple on/off. The easy everyday choice.",
+              "text": "Precise temperature control, faster heat-up and simple on/off. The easy everyday choice."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "html": "Ready in about 30 to 45 minutes",
+                  "text": "Ready in about 30 to 45 minutes"
+                },
+                {
+                  "html": "Needs a 240V connection (208V 3-phase options for larger rooms)",
+                  "text": "Needs a 240V connection (208V 3-phase options for larger rooms)"
+                },
+                {
+                  "html": "App and Wi-Fi control available on select models",
+                  "text": "App and Wi-Fi control available on select models"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>Shop electric heaters</strong>",
+              "text": "Shop electric heaters"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "href": "#wood",
+          "blocks": [
+            {
+              "type": "image",
+              "src": "./assets/ff5e4f46da8d8bf97c8011d051665617.webp",
+              "alt": "Narvi NC Black wood-burning sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "type": "image",
+              "src": "./assets/4a24c7ae9f53a63ea33d7c2aef573f45.webp",
+              "alt": "Narvi Velvet wood-burning sauna heater, The Toronto Sauna Co."
+            },
+            {
+              "type": "text",
+              "html": "<strong>Wood-burning</strong>",
+              "text": "Wood-burning"
+            },
+            {
+              "type": "text",
+              "html": "6 heaters",
+              "text": "6 heaters"
+            },
+            {
+              "type": "text",
+              "html": "The crackle of the fire, the ritual of lighting it, and no need for power. The traditional choice.",
+              "text": "The crackle of the fire, the ritual of lighting it, and no need for power. The traditional choice."
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "html": "Runs completely off-grid",
+                  "text": "Runs completely off-grid"
+                },
+                {
+                  "html": "Takes longer to heat, with a deeper, softer feel",
+                  "text": "Takes longer to heat, with a deeper, softer feel"
+                },
+                {
+                  "html": "Needs a chimney, installed to local building code",
+                  "text": "Needs a chimney, installed to local building code"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>Shop wood-burning heaters</strong>",
+              "text": "Shop wood-burning heaters"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Either way: pour water on the stones for steam, and the more stone a heater holds, the softer and longer-lasting that steam will be.",
+          "text": "Either way: pour water on the stones for steam, and the more stone a heater holds, the softer and longer-lasting that steam will be."
+        }
+      ]
+    },
+    {
+      "name": "Compare",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Electric vs wood-burning sauna heaters",
+          "headerRows": 1,
+          "rows": [
+            [
+              "",
+              "Electric",
+              "Wood-burning"
+            ],
+            [
+              "Heater price",
+              "$1,403 to $3,540, heater only",
+              "$1,391 to $9,995, stove only"
+            ],
+            [
+              "Also needed",
+              "Control ($575 to $1,392; built into the Harvia KIP) and stones",
+              "Chimney set ($681 to $1,156), floor plate and wall shield, and stones"
+            ],
+            [
+              "Power",
+              "Dedicated 240V circuit, 30 A to 80 A breaker (208V 3-phase for the largest Apex)",
+              "None, runs fully off-grid"
+            ],
+            [
+              "Heat-up",
+              "About 30 to 45 minutes",
+              "Longer, depending on the stove and your firewood"
+            ],
+            [
+              "Control",
+              "Set temperature and timer; Wi-Fi app control on HUUM UKU and Homecraft Wi-Fi",
+              "You manage the fire and the airflow"
+            ],
+            [
+              "Best for",
+              "Everyday use and starting the sauna from the house",
+              "Cottages, off-grid sites and the ritual of a real fire"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heater to sauna",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Heater + sauna</strong>",
+          "text": "Heater + sauna"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Which heater fits your <em><strong>sauna?</strong></em>",
+          "text": "Which heater fits your sauna?"
+        },
+        {
+          "type": "paragraph",
+          "html": "We size every heater to the sauna's interior volume (length × width × height), plus extra for glass, which loses heat faster than cedar. None of our saunas take less than a 6 kW heater.",
+          "text": "We size every heater to the sauna's interior volume (length × width × height), plus extra for glass, which loses heat faster than cedar. None of our saunas take less than a 6 kW heater."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "2-person cubes and studios",
+          "text": "2-person cubes and studios"
+        },
+        {
+          "type": "text",
+          "html": "Pure Cube 552 and Trinity, Studio Six Mini, Neptune Mini",
+          "text": "Pure Cube 552 and Trinity, Studio Six Mini, Neptune Mini"
+        },
+        {
+          "type": "text",
+          "html": "About 150 to 250 cu ft once the glass front is counted.",
+          "text": "About 150 to 250 cu ft once the glass front is counted."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Electric:</strong> 6 kW electric: Harvia KIP 6, HUUM Drop 6, Homecraft Revive Slim 6 or Apex Mini 6.",
+          "text": "Electric: 6 kW electric: Harvia KIP 6, HUUM Drop 6, Homecraft Revive Slim 6 or Apex Mini 6."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wood:</strong> Electric only. There is not enough space between the bench and the glass for a wood stove's clearances.",
+          "text": "Wood: Electric only. There is not enough space between the bench and the glass for a wood stove's clearances."
+        },
+        {
+          "type": "link",
+          "html": "Shop cube saunas →",
+          "text": "Shop cube saunas →",
+          "href": "/saunas/cube",
+          "variant": "link"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "3 to 5 person cubes",
+          "text": "3 to 5 person cubes"
+        },
+        {
+          "type": "text",
+          "html": "Pure Cube 572, 582 and 672, The Hudson, Studio Six Max",
+          "text": "Pure Cube 572, 582 and 672, The Hudson, Studio Six Max"
+        },
+        {
+          "type": "text",
+          "html": "About 250 to 400 cu ft with glass.",
+          "text": "About 250 to 400 cu ft with glass."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Electric:</strong> 6 to 9 kW electric: Homecraft Revive or Apex Mini, HUUM Drop 7.5 or 9, HUUM HIVE Mini 6 or 9.",
+          "text": "Electric: 6 to 9 kW electric: Homecraft Revive or Apex Mini, HUUM Drop 7.5 or 9, HUUM HIVE Mini 6 or 9."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wood:</strong> Electric recommended for these footprints.",
+          "text": "Wood: Electric recommended for these footprints."
+        },
+        {
+          "type": "link",
+          "html": "Shop cube saunas →",
+          "text": "Shop cube saunas →",
+          "href": "/saunas/cube",
+          "variant": "link"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "The Neptune and Avalon",
+          "text": "The Neptune and Avalon"
+        },
+        {
+          "type": "text",
+          "html": "Our larger 5 to 7 person signature saunas",
+          "text": "Our larger 5 to 7 person signature saunas"
+        },
+        {
+          "type": "text",
+          "html": "About 400 to 600 cu ft with glass.",
+          "text": "About 400 to 600 cu ft with glass."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Electric:</strong> 9 to 10.5 kW electric: HUUM HIVE Mini 9 or 10.5, Homecraft Revive 9 or Apex 10.",
+          "text": "Electric: 9 to 10.5 kW electric: HUUM HIVE Mini 9 or 10.5, Homecraft Revive 9 or Apex 10."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wood:</strong> Wood works here too: Narvi Kuru 20, NC 20, Kaamos 20 or TimberGlow14, with room for the required clearances.",
+          "text": "Wood: Wood works here too: Narvi Kuru 20, NC 20, Kaamos 20 or TimberGlow14, with room for the required clearances."
+        },
+        {
+          "type": "link",
+          "html": "See best sellers →",
+          "text": "See best sellers →",
+          "href": "/saunas/best-sellers",
+          "variant": "link"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "The Orion",
+          "text": "The Orion"
+        },
+        {
+          "type": "text",
+          "html": "5 to 6 person, glass on every side",
+          "text": "5 to 6 person, glass on every side"
+        },
+        {
+          "type": "text",
+          "html": "About 400 to 600 cu ft with glass.",
+          "text": "About 400 to 600 cu ft with glass."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Electric:</strong> 9 to 10.5 kW electric: HUUM HIVE Mini 9 or 10.5, Homecraft Revive 9 or Apex 10.",
+          "text": "Electric: 9 to 10.5 kW electric: HUUM HIVE Mini 9 or 10.5, Homecraft Revive 9 or Apex 10."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wood:</strong> Electric only. The all-glass design leaves no safe spot for a wood stove and its clearances.",
+          "text": "Wood: Electric only. The all-glass design leaves no safe spot for a wood stove and its clearances."
+        },
+        {
+          "type": "link",
+          "html": "See best sellers →",
+          "text": "See best sellers →",
+          "href": "/saunas/best-sellers",
+          "variant": "link"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "html": "Barrels and timber cabins",
+          "text": "Barrels and timber cabins"
+        },
+        {
+          "type": "text",
+          "html": "Barrel saunas with porch or changeroom, Canadian Timber cabins",
+          "text": "Barrel saunas with porch or changeroom, Canadian Timber cabins"
+        },
+        {
+          "type": "text",
+          "html": "Varies by length; we size every one.",
+          "text": "Varies by length; we size every one."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Electric:</strong> 6 to 10 kW electric, matched to the room's volume.",
+          "text": "Electric: 6 to 10 kW electric, matched to the room's volume."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wood:</strong> Larger barrels and cabins also take a wood stove such as the Narvi Kuru, NC or TimberGlow14.",
+          "text": "Wood: Larger barrels and cabins also take a wood stove such as the Narvi Kuru, NC or TimberGlow14."
+        },
+        {
+          "type": "link",
+          "html": "Shop barrel saunas →",
+          "text": "Shop barrel saunas →",
+          "href": "/saunas/barrel",
+          "variant": "link"
+        },
+        {
+          "type": "paragraph",
+          "html": "Volumes are typical ranges. We confirm the exact heater for your sauna, layout and power supply before you order.",
+          "text": "Volumes are typical ranges. We confirm the exact heater for your sauna, layout and power supply before you order."
+        }
+      ]
+    },
+    {
+      "name": "Electric",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Electric sauna heaters</strong>",
+          "text": "Electric sauna heaters"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Flip a switch. Feel the <em><strong>heat.</strong></em>",
+          "text": "Flip a switch. Feel the heat."
+        },
+        {
+          "type": "paragraph",
+          "html": "Canadian-made Homecraft towers, Finnish Harvia, and award-winning HUUM designs from Estonia. Certified for barrel, cabin and cube saunas.",
+          "text": "Canadian-made Homecraft towers, Finnish Harvia, and award-winning HUUM designs from Estonia. Certified for barrel, cabin and cube saunas."
+        },
+        {
+          "type": "text",
+          "html": "8 heaters",
+          "text": "8 heaters"
+        },
+        {
+          "type": "repeat",
+          "list": "{{electric}}",
+          "as": "h",
+          "blocks": [
+            {
+              "type": "card",
+              "href": "{{h.href}}",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{h.hasImg}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{h.img}}",
+                      "alt": "{{h.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{h.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{h.photo}}",
+                      "text": "Photo: {{h.photo}}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{h.origin}}</strong>",
+              "text": "{{h.origin}}"
+            },
+            {
+              "type": "text",
+              "html": "{{h.code}}",
+              "text": "{{h.code}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "<a href=\"{{h.href}}\">{{h.name}}</a>",
+              "text": "{{h.name}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{h.desc}}",
+              "text": "{{h.desc}}"
+            },
+            {
+              "type": "repeat",
+              "list": "{{h.kw}}",
+              "as": "k",
+              "blocks": [
+                {
+                  "type": "link",
+                  "html": "{{k}}",
+                  "text": "{{k}}",
+                  "href": "{{h.href}}",
+                  "variant": "button"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "type": "repeat",
+                  "list": "{{h.specs}}",
+                  "as": "s",
+                  "items": [
+                    {
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{s.k}}",
+                          "text": "{{s.k}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{s.v}}</strong>",
+                          "text": "{{s.v}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{h.price}}</strong>",
+              "text": "{{h.price}}"
+            },
+            {
+              "type": "link",
+              "html": "View Details",
+              "text": "View Details",
+              "href": "{{h.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wood-burning",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Wood-burning sauna heaters</strong>",
+          "text": "Wood-burning sauna heaters"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Light the fire. Slow it <em><strong>down.</strong></em>",
+          "text": "Light the fire. Slow it down."
+        },
+        {
+          "type": "paragraph",
+          "html": "The Canadian-made TimberGlow, a range of Finnish Narvi stoves, and an Estonian pellet stove for an easier way to burn.",
+          "text": "The Canadian-made TimberGlow, a range of Finnish Narvi stoves, and an Estonian pellet stove for an easier way to burn."
+        },
+        {
+          "type": "text",
+          "html": "6 heaters",
+          "text": "6 heaters"
+        },
+        {
+          "type": "repeat",
+          "list": "{{wood}}",
+          "as": "h",
+          "blocks": [
+            {
+              "type": "if",
+              "value": "{{h.hasImg}}",
+              "blocks": [
+                {
+                  "type": "image",
+                  "src": "{{h.img}}",
+                  "alt": "{{h.alt}}"
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{h.hasThumbs}}",
+              "blocks": [
+                {
+                  "type": "repeat",
+                  "list": "{{h.thumbs}}",
+                  "as": "t",
+                  "blocks": [
+                    {
+                      "type": "if",
+                      "value": "{{t.on}}",
+                      "blocks": [
+                        {
+                          "type": "button",
+                          "label": "{{t.label}}",
+                          "blocks": [
+                            {
+                              "type": "image",
+                              "src": "{{t.src}}",
+                              "alt": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "value": "{{t.off}}",
+                      "blocks": [
+                        {
+                          "type": "button",
+                          "label": "{{t.label}}",
+                          "blocks": [
+                            {
+                              "type": "image",
+                              "src": "{{t.src}}",
+                              "alt": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "value": "{{h.noImg}}",
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "Photo: {{h.photo}}",
+                  "text": "Photo: {{h.photo}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{h.origin}}</strong>",
+              "text": "{{h.origin}}"
+            },
+            {
+              "type": "text",
+              "html": "{{h.code}}",
+              "text": "{{h.code}}"
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "html": "{{h.name}}",
+              "text": "{{h.name}}"
+            },
+            {
+              "type": "paragraph",
+              "html": "{{h.desc}}",
+              "text": "{{h.desc}}"
+            },
+            {
+              "type": "list",
+              "ordered": false,
+              "items": [
+                {
+                  "type": "repeat",
+                  "list": "{{h.specs}}",
+                  "as": "s",
+                  "items": [
+                    {
+                      "blocks": [
+                        {
+                          "type": "text",
+                          "html": "{{s.k}}",
+                          "text": "{{s.k}}"
+                        },
+                        {
+                          "type": "text",
+                          "html": "<strong>{{s.v}}</strong>",
+                          "text": "{{s.v}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "html": "<strong>{{h.price}}</strong>",
+              "text": "{{h.price}}"
+            },
+            {
+              "type": "link",
+              "html": "View options",
+              "text": "View options",
+              "href": "{{h.href}}",
+              "variant": "button"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sizing",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Sizing your heater</strong>",
+          "text": "Sizing your heater"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Match the heater to the <em><strong>room.</strong></em>",
+          "text": "Match the heater to the room."
+        },
+        {
+          "type": "paragraph",
+          "html": "Heaters are sized by your sauna's volume in cubic feet (length × width × height). Not sure? Send us your measurements and we'll recommend the right model.",
+          "text": "Heaters are sized by your sauna's volume in cubic feet (length × width × height). Not sure? Send us your measurements and we'll recommend the right model."
+        },
+        {
+          "type": "link",
+          "html": "Get a Sizing Recommendation",
+          "text": "Get a Sizing Recommendation",
+          "href": "/contact",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Revive Slim</strong>",
+          "text": "Homecraft Revive Slim"
+        },
+        {
+          "type": "text",
+          "html": "<strong>100–300 cu ft</strong>",
+          "text": "100–300 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Harvia KIP</strong>",
+          "text": "Harvia KIP"
+        },
+        {
+          "type": "text",
+          "html": "<strong>100–425 cu ft</strong>",
+          "text": "100–425 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>HUUM Drop</strong>",
+          "text": "HUUM Drop"
+        },
+        {
+          "type": "text",
+          "html": "<strong>106–460 cu ft</strong>",
+          "text": "106–460 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>HUUM HIVE Mini</strong>",
+          "text": "HUUM HIVE Mini"
+        },
+        {
+          "type": "text",
+          "html": "<strong>177–566 cu ft</strong>",
+          "text": "177–566 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex Mini</strong>",
+          "text": "Homecraft Apex Mini"
+        },
+        {
+          "type": "text",
+          "html": "<strong>200–450 cu ft</strong>",
+          "text": "200–450 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Revive</strong>",
+          "text": "Homecraft Revive"
+        },
+        {
+          "type": "text",
+          "html": "<strong>250–450 cu ft</strong>",
+          "text": "250–450 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex (240V)</strong>",
+          "text": "Homecraft Apex (240V)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>400–950 cu ft</strong>",
+          "text": "400–950 cu ft"
+        },
+        {
+          "type": "text",
+          "html": "<strong>Homecraft Apex (208V 3-phase)</strong>",
+          "text": "Homecraft Apex (208V 3-phase)"
+        },
+        {
+          "type": "text",
+          "html": "<strong>400–1,150 cu ft</strong>",
+          "text": "400–1,150 cu ft"
+        },
+        {
+          "type": "paragraph",
+          "html": "Electric heaters. The range for each model depends on the kW output you choose; exact ranges are on each heater page. Rooms with lots of glass need the upper end of a range.",
+          "text": "Electric heaters. The range for each model depends on the kW output you choose; exact ranges are on each heater page. Rooms with lots of glass need the upper end of a range."
+        }
+      ]
+    },
+    {
+      "name": "Ontario electrical",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Installing in Ontario</strong>",
+          "text": "Installing in Ontario"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Wired right, <em><strong>first time.</strong></em>",
+          "text": "Wired right, first time."
+        },
+        {
+          "type": "paragraph",
+          "html": "An electric sauna heater is a permanent 240V appliance, so it has to be installed properly. We spec every heater for your sauna and power supply before you order.",
+          "text": "An electric sauna heater is a permanent 240V appliance, so it has to be installed properly. We spec every heater for your sauna and power supply before you order."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "html": "<strong>Dedicated circuit.</strong> Each heater needs its own breaker, from 30 A for small heaters up to 80 A for the Apex 15 kW. Every heater page lists the breaker and wire size for each output.",
+              "text": "Dedicated circuit. Each heater needs its own breaker, from 30 A for small heaters up to 80 A for the Apex 15 kW. Every heater page lists the breaker and wire size for each output."
+            },
+            {
+              "html": "<strong>Licensed electrician and ESA permit.</strong> The connection must be made by a licensed electrical contractor under an Electrical Safety Authority permit, following the Ontario Electrical Safety Code.",
+              "text": "Licensed electrician and ESA permit. The connection must be made by a licensed electrical contractor under an Electrical Safety Authority permit, following the Ontario Electrical Safety Code."
+            },
+            {
+              "html": "<strong>Approved equipment.</strong> Heaters, contactors and controls must be certified for use in Canada. Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed.",
+              "text": "Approved equipment. Heaters, contactors and controls must be certified for use in Canada. Homecraft heaters are CSA certified to UL 875 and the Harvia KIP is UL/cUL listed."
+            },
+            {
+              "html": "<strong>Wood stoves.</strong> Need a chimney, a non-combustible floor and the clearances listed on each stove page. Check your home insurer's requirements before installation.",
+              "text": "Wood stoves. Need a chimney, a non-combustible floor and the clearances listed on each stove page. Check your home insurer's requirements before installation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google reviews",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Reviews</strong>",
+          "text": "Reviews"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Advice you can <em><strong>trust.</strong></em>",
+          "text": "Advice you can trust."
+        },
+        {
+          "type": "link",
+          "html": "Read all reviews on Google",
+          "text": "Read all reviews on Google",
+          "href": "https://www.google.com/maps/search/?api=1&query=The+Toronto+Sauna+Co+Schomberg",
+          "variant": "button"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“We visited Toronto Sauna Showroom last Friday and we were impressed with Taurean. He showed us several sauna options in our price range, gave us good insight into different heaters … and answered all our questions - dimensions, how remote works, lighting options, etc. They have fair prices and good service. Highly recommend!”",
+          "text": "“We visited Toronto Sauna Showroom last Friday and we were impressed with Taurean. He showed us several sauna options in our price range, gave us good insight into different heaters … and answered all our questions - dimensions, how remote works, lighting options, etc. They have fair prices and good service. Highly recommend!”",
+          "cite": "<strong>Dave Lewis</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "text": "“I was very impressed with the products they offered (we ended up with the Orion) and more importantly, the responsiveness, intellect and effort demonstrated by TJ. I wish my search started with them — but I am glad it ended there.”",
+          "cite": "<strong>Paul Ruth</strong> · Google review"
+        },
+        {
+          "type": "text",
+          "html": "★★★★★",
+          "text": "★★★★★",
+          "label": "5 out of 5 stars"
+        },
+        {
+          "type": "quote",
+          "html": "“The process of choosing the correct sauna configuration can be stressful. What makes it less so, is having a knowledgeable guide. TJ has provided invaluable customer service … Thank you TJ!”",
+          "text": "“The process of choosing the correct sauna configuration can be stressful. What makes it less so, is having a knowledgeable guide. TJ has provided invaluable customer service … Thank you TJ!”",
+          "cite": "<strong>Caterina Imperium</strong> · Google review"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "text",
+          "html": "<strong>Questions</strong>",
+          "text": "Questions"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Good to <em><strong>know.</strong></em>",
+          "text": "Good to know."
+        },
+        {
+          "type": "faq",
+          "html": "How do I know what size heater I need?",
+          "text": "How do I know what size heater I need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Measure your sauna's length, width and height in feet and multiply them to get cubic feet, then pick a heater whose range covers that number. Add volume for glass walls or doors. Every heater page lists the room range for each kW output, or send us your measurements and we'll recommend one.",
+              "text": "Measure your sauna's length, width and height in feet and multiply them to get cubic feet, then pick a heater whose range covers that number. Add volume for glass walls or doors. Every heater page lists the room range for each kW output, or send us your measurements and we'll recommend one."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Electric or wood-burning: what's the difference?",
+          "text": "Electric or wood-burning: what's the difference?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Electric heaters reach temperature in about 30 to 45 minutes, give you precise control, and need a dedicated 240V circuit. Wood-burning stoves take longer to heat, run off-grid, and bring the atmosphere of a real fire. Both make steam when you pour water on the stones.",
+              "text": "Electric heaters reach temperature in about 30 to 45 minutes, give you precise control, and need a dedicated 240V circuit. Wood-burning stoves take longer to heat, run off-grid, and bring the atmosphere of a real fire. Both make steam when you pour water on the stones."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "How much is delivery for a heater?",
+          "text": "How much is delivery for a heater?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Delivery for a heater bought on its own is quoted for your location, or you can pick it up free at our Schomberg showroom when in stock. If you buy a sauna from us, the heater is included in the sauna's delivery and installation.",
+              "text": "Delivery for a heater bought on its own is quoted for your location, or you can pick it up free at our Schomberg showroom when in stock. If you buy a sauna from us, the heater is included in the sauna's delivery and installation."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What size breaker does a sauna heater need?",
+          "text": "What size breaker does a sauna heater need?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "It depends on the heater and its output: from a 30 A double-pole breaker for 6 kW heaters like the HUUM Drop 6 kW or Harvia KIP 6 kW, up to 80 A for the Homecraft Apex 15 kW. The exact breaker and wire size for every output is listed on each heater page.",
+              "text": "It depends on the heater and its output: from a 30 A double-pole breaker for 6 kW heaters like the HUUM Drop 6 kW or Harvia KIP 6 kW, up to 80 A for the Homecraft Apex 15 kW. The exact breaker and wire size for every output is listed on each heater page."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do I need an electrician and a permit in Ontario?",
+          "text": "Do I need an electrician and a permit in Ontario?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. An electric sauna heater must be connected by a licensed electrical contractor under an Electrical Safety Authority (ESA) permit, following the Ontario Electrical Safety Code.",
+              "text": "Yes. An electric sauna heater must be connected by a licensed electrical contractor under an Electrical Safety Authority (ESA) permit, following the Ontario Electrical Safety Code."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Can I start my sauna from my phone?",
+          "text": "Can I start my sauna from my phone?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes, with a Wi-Fi control. HUUM heaters use the UKU Wi-Fi control, and Homecraft heaters can be paired with a Homecraft Wi-Fi touchpad. Both are available on our Accessories page.",
+              "text": "Yes, with a Wi-Fi control. HUUM heaters use the UKU Wi-Fi control, and Homecraft heaters can be paired with a Homecraft Wi-Fi touchpad. Both are available on our Accessories page."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Is there a difference between indoor and outdoor controls?",
+          "text": "Is there a difference between indoor and outdoor controls?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "For Homecraft heaters, yes: choose the outdoor contactor and touchpad for a backyard sauna, and the indoor version for a basement or home sauna.",
+              "text": "For Homecraft heaters, yes: choose the outdoor contactor and touchpad for a backyard sauna, and the indoor version for a basement or home sauna."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Do wood-burning heaters need a chimney?",
+          "text": "Do wood-burning heaters need a chimney?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Wood-burning stoves need a chimney, installed to local building codes, on a non-combustible base with the clearances listed for each stove. Check your home insurer's requirements before installing a wood stove.",
+              "text": "Yes. Wood-burning stoves need a chimney, installed to local building codes, on a non-combustible base with the clearances listed for each stove. Check your home insurer's requirements before installing a wood stove."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Are the electric heaters safety certified?",
+          "text": "Are the electric heaters safety certified?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Yes. Homecraft heaters (Revive, Revive Slim, Apex Mini and Apex) are CSA certified to UL 875, and the Harvia KIP is UL/cUL listed.",
+              "text": "Yes. Homecraft heaters (Revive, Revive Slim, Apex Mini and Apex) are CSA certified to UL 875, and the Harvia KIP is UL/cUL listed."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "What warranty comes with each heater?",
+          "text": "What warranty comes with each heater?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Homecraft heaters carry a 2-year manufacturer warranty, HUUM heaters a 3-year warranty, the Harvia KIP up to 3 years, and Narvi stoves 2 years. Details are on each heater page.",
+              "text": "Homecraft heaters carry a 2-year manufacturer warranty, HUUM heaters a 3-year warranty, the Harvia KIP up to 3 years, and Narvi stoves 2 years. Details are on each heater page."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "html": "Where are your heaters made?",
+          "text": "Where are your heaters made?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Homecraft (Revive, Revive Slim, Apex Mini, Apex) and TimberGlow are made in Canada. Narvi stoves and the Harvia KIP come from Finland. HUUM heaters are designed in Estonia, and the Pellum pellet stove is designed and made there too.",
+              "text": "Homecraft (Revive, Revive Slim, Apex Mini, Apex) and TimberGlow are made in Canada. Narvi stoves and the Harvia KIP come from Finland. HUUM heaters are designed in Estonia, and the Pellum pellet stove is designed and made there too."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CTA",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "html": "Feel the difference in <em><strong>person.</strong></em>",
+          "text": "Feel the difference in person."
+        },
+        {
+          "type": "paragraph",
+          "html": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg (King Township), ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation.",
+          "text": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg (King Township), ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation."
+        },
+        {
+          "type": "link",
+          "html": "Schedule an Appointment",
+          "text": "Schedule an Appointment",
+          "href": "/contact#visit",
+          "variant": "button"
+        },
+        {
+          "type": "link",
+          "html": "(437) 429-6623",
+          "text": "(437) 429-6623",
+          "href": "tel:+14374296623",
+          "variant": "button"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

@@ -5,7 +5,7 @@ module.exports = {
     "^@/(.*)$": "<rootDir>/$1",
   },
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": [
+    "^.+\\.(m?js|jsx|ts|tsx)$": [
       "babel-jest",
       {
         presets: [
