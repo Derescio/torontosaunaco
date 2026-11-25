@@ -10,6 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadPageMap } from "./extract-dc/pagemap.mjs";
 import { extractPage } from "./extract-dc/page.mjs";
+import { buildSeoIndex } from "./extract-dc/seo.mjs";
 
 const SKIP = new Set(["Piece-zsi1.dc.html"]); // stray copy of Main.dc.html
 const OUT_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "content", "redesign");
@@ -64,6 +65,8 @@ for (const route of [...byRoute.keys()].sort()) {
   index.pages[route] = { file: jsonName(p.file), warnings: p.warnings.length };
 }
 write("index.json", index);
+fs.writeFileSync(path.join(OUT_DIR, "..", "seo.json"), `${JSON.stringify(buildSeoIndex(pages), null, 2)}
+`);
 
 // Summary
 const countBlocks = (blocks) =>

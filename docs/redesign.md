@@ -91,6 +91,14 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 - [x] Remaining design files / canvas link (C)
 - [ ] Redirect decisions for unmapped routes (B)
 - [ ] Price mismatch approvals (D): owner and client go through `reports/price-diff-<date>.docx` (`npm run price-diff`); quote wording (E)
+  - **Revisit when the review is done (owner, 2026-11-25):** how the decided prices reach MongoDB.
+    1. The owner edits prices in `/editor` on the live site. Then re-copy staging, run `npm run slugs:backfill:apply`,
+       and re-run `npm run price-diff` to confirm only "keep website" rows remain.
+    2. Build an apply slice. It reads the ticked boxes and "Other" amounts from the `.docx` (Ref column), uses
+       `websiteIds` in the `.json`, dry-runs, applies on `staging`, then on `test` with the owner's go-ahead.
+       About a day of work.
+  - Either way, the 14 design-only products (Pure Cube 772, the Narvi heaters, …) have no database record yet and need
+    creating.
 
 ### Phase 1: Foundation (~3 days)
 - [x] **Design tokens** (`rd/1-tokens`): values in `lib/site/tokens.js`, spread into `tailwind.config.js`; Cormorant Garamond + Manrope self-hosted via `next/font/local`; `components/site/Button.jsx`; review page `/style-guide` (404 in production). Spec: `docs/superpowers/specs/2026-11-23-design-tokens-design.md`.
@@ -130,7 +138,23 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   render as before when a product has no slug. The sitemap lists slug URLs. Spec:
   `docs/superpowers/specs/2026-11-25-slugs-design.md`. Finding for the heater pages: `HeaterApex208` and
   `HeaterApex240` both match one "Homecraft Apex" record, and `HeaterRevive` matches two.
-- [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.
+- [x] **Shared SEO helper** (`rd/1-seo`): `pageSeo(route, { price })` in `lib/site/seo.js` returns Next `metadata`
+  and JSON-LD from the design head (`content/seo.json`, written by `npm run extract:dc`; it sits outside
+  `content/redesign/` because the price diff and slug backfill read every file there). Rules applied every time:
+  og:type `"website"`, domain `www.thetorontosaunaco.com`, one business `@id` (`/#business`, was `#store` on 20
+  pages) with Schomberg, `noindex` from the page-map Index column (`/cart`). Catalogue prices come only from
+  MongoDB: `price` for the page's own product, `prices: { "<route>": number }` for products listed on the page
+  (`/accessories` lists 70, `/sauna-heaters` 14); each sets `Offer.price` / `AggregateOffer.lowPrice` plus
+  `availability` and `priceValidUntil`. A Product with no price is removed (inside a list it becomes a plain link),
+  since a Product without offers is an invalid rich result. The city pages' Service offer ($1,750 delivery +
+  installation) stays as designed. Design images (`/_blob/<id>`) map through `content/image-map.json` (empty
+  until the photos are matched); unmapped ones are dropped and og:image falls back to `/og/Redesign_BG_Image.png`.
+  **Fill the image map before product pages go live:** Google wants an image on every Product.
+  Use: `export const metadata = pageSeo("/about").metadata` and `<JsonLd data={pageSeo("/about").jsonLd} />`
+  (`components/site/JsonLd.jsx`). Spec: `docs/superpowers/specs/2026-11-25-seo-helper-design.md`.
+  **Owner decision pending:** two design prices sit in copy, not in `offers`: "sauna kits from $8,070" (`/saunas/indoor`
+  description) and "Pure Cube 552 is $11,884" (homepage FAQ). Keep, update to the MongoDB price, or remove? Until
+  then they're allow-listed in `lib/site/seo.routes.test.js`, which fails on any other dollar amount.
 
 ### Phase 2: Content pages (~4 days)
 Using the 36 files we have:
