@@ -435,7 +435,612 @@
       }
     ]
   },
-  "data": {},
+  "data": {
+    "electric": [
+      {
+        "name": "Homecraft Revive",
+        "img": "./assets/a27efebc69e88e87349b66fe4cdf78fb.webp",
+        "alt": "Homecraft Revive stainless steel electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/revive",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $1,905.00",
+        "code": "SKU REV240",
+        "origin": "Made in Canada",
+        "photo": "REV240 _10.jpg",
+        "desc": "A tower heater in 100% stainless steel, with the rock chamber wrapped around a protected element chamber.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "250–450 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "200 lbs (5 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "14 × 14 × 36 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Revive Slim",
+        "img": "./assets/adaccf76d04e21197ca34a296e32407d.webp",
+        "alt": "Homecraft Revive Slim electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/revive-slim",
+        "kw": [
+          "4 kW",
+          "5 kW",
+          "6 kW"
+        ],
+        "price": "From $1,760.00",
+        "code": "SKU REVSLI",
+        "origin": "Made in Canada",
+        "photo": "REVSLI _14.jpg",
+        "desc": "A slim stainless tower for rooms without the 14 inches of depth a full-size heater needs.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "100–300 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "100 lbs (3 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "13.5 × 8 × 36 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex (240V / 1 Phase)",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-240",
+        "kw": [
+          "10 kW",
+          "12 kW",
+          "15 kW"
+        ],
+        "price": "From $2,450.00",
+        "code": "SKU APEX240",
+        "origin": "Made in Canada",
+        "photo": "APEX240 _12.jpg",
+        "desc": "The largest residential heater that runs on standard 240V single-phase power, with a protected element air chamber.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "400–950 cu ft"
+          },
+          {
+            "k": "Power",
+            "v": "240V, 1-phase"
+          },
+          {
+            "k": "Stones",
+            "v": "310 lbs (7 boxes)"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex (208V / 3 Phase)",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-208",
+        "kw": [
+          "10 kW",
+          "12 kW",
+          "15 kW",
+          "18 kW"
+        ],
+        "price": "From $3,010.00",
+        "code": "SKU APEX208",
+        "origin": "Made in Canada",
+        "photo": "APEX208 _12.jpg",
+        "desc": "The floor-standing Apex for large residential or commercial saunas running on three-phase power.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "400–1,150 cu ft"
+          },
+          {
+            "k": "Power",
+            "v": "208V, 3-phase"
+          },
+          {
+            "k": "Stones",
+            "v": "310 lbs (7 boxes)"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Homecraft Apex Mini",
+        "img": "./assets/94aa61eb04201e21a3a857be09fe2f09.webp",
+        "alt": "Homecraft Apex Mini electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/apex-mini",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $2,040.00",
+        "code": "SKU APMI240",
+        "origin": "Made in Canada",
+        "photo": "apex-mini_1.jpg",
+        "desc": "The Apex protected-element design in a floor-standing unit 4 inches shorter than the full-size Apex.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "200–450 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "175 lbs (5 boxes)"
+          },
+          {
+            "k": "Size",
+            "v": "14 × 14 × 32 in"
+          },
+          {
+            "k": "Certification",
+            "v": "CSA (UL 875)"
+          }
+        ]
+      },
+      {
+        "name": "Harvia KIP",
+        "img": "./assets/7d0e6db593e5c309d8cbfd9e609a6ce4.webp",
+        "alt": "Harvia KIP electric sauna heater with built-in controls, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/harvia-kip",
+        "kw": [
+          "6 kW",
+          "8 kW"
+        ],
+        "price": "From $1,700.00",
+        "code": "SKU HARVKIP",
+        "origin": "Made in Finland",
+        "photo": "HARKIPN_1.jpg",
+        "desc": "Finnish-made with built-in time and temperature controls, a delay start of up to 8 hours, and a dual-wall stainless casing.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "100–425 cu ft"
+          },
+          {
+            "k": "Output",
+            "v": "6 or 8 kW"
+          },
+          {
+            "k": "Stones",
+            "v": "44 lbs (20 kg)"
+          },
+          {
+            "k": "Certification",
+            "v": "UL/cUL listed"
+          }
+        ]
+      },
+      {
+        "name": "HUUM Drop",
+        "img": "./assets/4e56c7df8cc7a6ec0d8d42a40fff8813.webp",
+        "alt": "HUUM Drop electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/huum-drop",
+        "kw": [
+          "6 kW",
+          "7.5 kW",
+          "9 kW"
+        ],
+        "price": "From $1,584.00",
+        "code": "HUUMDROP",
+        "origin": "Designed in Estonia",
+        "photo": "HUUMDROP _10.jpg",
+        "desc": "Sleek and rounded, inspired by a drop of water. A Red Dot design award winner with app control.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "106–460 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "55 kg (4 boxes)"
+          },
+          {
+            "k": "Controls",
+            "v": "HUUM UKU, Local or Wi-Fi"
+          },
+          {
+            "k": "Warranty",
+            "v": "3 years"
+          }
+        ]
+      },
+      {
+        "name": "HUUM Hive Mini",
+        "img": "./assets/461d358117b67716669c1b303e7cdc7d.webp",
+        "alt": "HUUM HIVE Mini electric sauna heater, The Toronto Sauna Co.",
+        "href": "/sauna-heaters/huum-hive-mini",
+        "kw": [
+          "6 kW",
+          "9 kW",
+          "10.5 kW"
+        ],
+        "price": "From $2,631.00",
+        "code": "HUUMHIVE",
+        "origin": "Designed in Estonia",
+        "photo": "HUUMHIVE_1.jpg",
+        "desc": "A smaller version of the popular HIVE. Its large stone mass gives long-lasting, mild steam for extended sessions.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "177–566 cu ft"
+          },
+          {
+            "k": "Stones",
+            "v": "150 kg (10 boxes)"
+          },
+          {
+            "k": "Controls",
+            "v": "HUUM UKU, Local or Wi-Fi"
+          },
+          {
+            "k": "Warranty",
+            "v": "3 years"
+          }
+        ]
+      }
+    ],
+    "wood": [
+      {
+        "name": "TimberGlow14",
+        "href": "/sauna-heaters/timber-glow",
+        "price": "$2,693.00",
+        "gallery": [
+          {
+            "src": "./assets/d60e58e245437d8f8fa5fa88e1c5fa48.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater with black steel stone cage, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/9bdaa7643d6db03ca3438db1ec0bf489.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/b048b817e9a6f497b73ba40060ee3861.webp",
+            "alt": "TimberGlow14 wood-burning sauna heater with fire through the glass door, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU 120224",
+        "origin": "Made in Canada",
+        "photo": "120224_1.jpg",
+        "desc": "A 14 kW Canadian-built wood stove with a heavy 3/16 in steel firebox and a 20 in round cage that holds 200 lbs of rock. It takes full 16 in logs, so you load less often and get long, even heat for mid-size backyard saunas.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "212–495 cu ft"
+          },
+          {
+            "k": "Chimney kits",
+            "v": "Top $681 · Side $1,156"
+          },
+          {
+            "k": "Output",
+            "v": "14 kW"
+          },
+          {
+            "k": "Stones",
+            "v": "200 lbs (90 kg)"
+          },
+          {
+            "k": "Size",
+            "v": "20 in dia × 30 in H"
+          },
+          {
+            "k": "Log length",
+            "v": "Up to 16 in"
+          },
+          {
+            "k": "Chimney",
+            "v": "4½ in, top outlet"
+          },
+          {
+            "k": "Warranty",
+            "v": "5-year parts"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Kaamos",
+        "href": "/sauna-heaters/narvi-kaamos",
+        "price": "From $2,095.00",
+        "gallery": [
+          {
+            "src": "./assets/130109c1d84fe4234df7583226805e88.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/3f297501d733057fbc575c3e88dcc30b.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/9dcd51369ea2b304084c8f0834f3ceab.webp",
+            "alt": "Narvi Kaamos wood-burning sauna heater with door open, The Toronto Sauna Co.",
+            "fit": "contain"
+          }
+        ],
+        "code": "SKU NARKAAM",
+        "origin": "Designed in Finland",
+        "photo": "NARKAAM _12.jpg",
+        "desc": "Kaamos means polar night in Finnish. An angular, matte-black stove with a full-glass cast iron door, a 10 mm firebox roof and a large stone load for soft, even steam. Handcrafted in Rauma, Finland, in three sizes.",
+        "specs": [
+          {
+            "k": "Kaamos 16",
+            "v": "283–565 cu ft · 50 kg stones · $2,095"
+          },
+          {
+            "k": "Kaamos 20",
+            "v": "353–706 cu ft · 60 kg stones · $2,295"
+          },
+          {
+            "k": "Kaamos 24",
+            "v": "424–847 cu ft · 80 kg stones · $2,495"
+          },
+          {
+            "k": "Size (20)",
+            "v": "19 × 20 × 30 in"
+          },
+          {
+            "k": "Clearances",
+            "v": "12 in sides, 8 in back, 20 in front"
+          },
+          {
+            "k": "Chimney",
+            "v": "Top or back"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Kuru",
+        "href": "/sauna-heaters/narvi-kuru",
+        "price": "From $1,391.00",
+        "gallery": [
+          {
+            "src": "./assets/92b69955b6a6a214ac7c73c9a0526c4e.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater with stainless steel front, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/c19de50ae057d7da0536f9ebdff8032a.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/0a328f6d928dba3a02738fbd2af4f217.webp",
+            "alt": "Narvi Kuru wood-burning sauna heater installed in a cedar sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "NARKURU",
+        "origin": "Made in Finland",
+        "photo": "NARKURU _14.webp",
+        "desc": "Narvi's compact, value-priced stove. Black-painted steel, a glazed door to watch the fire and wooden handles that stay cool to the touch. Fewer stones means it heats up quickly, ideal for smaller backyard and cottage saunas.",
+        "specs": [
+          {
+            "k": "Kuru 14",
+            "v": "283–494 cu ft · 35 kg stones · $1,391"
+          },
+          {
+            "k": "Kuru 20",
+            "v": "Up to 706 cu ft · 40 kg stones · $1,693"
+          },
+          {
+            "k": "Size (14)",
+            "v": "16.5 × 18.7 × 26.6 in"
+          },
+          {
+            "k": "Logs",
+            "v": "Up to 13 in"
+          },
+          {
+            "k": "Clearances",
+            "v": "10 in sides/back, 20 in front"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Narvi NC Black",
+        "href": "/sauna-heaters/narvi-nc",
+        "price": "From $2,142.00",
+        "gallery": [
+          {
+            "src": "./assets/ff5e4f46da8d8bf97c8011d051665617.webp",
+            "alt": "Narvi NC Black wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/aa66dc3beefe12610aa715a1bc8c5c64.webp",
+            "alt": "Narvi NC Black wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          }
+        ],
+        "code": "NARVINC",
+        "origin": "Made in Finland",
+        "photo": "NARVINC _10.jpg",
+        "desc": "A traditional, hand-made Finnish stove with a cast iron glass door and front panel, a clean-burning CE fire chamber and adjustable feet. Its big stone load gives even heat without burning excess wood. The 20 VS adds a 23 L water tank.",
+        "specs": [
+          {
+            "k": "NC 16",
+            "v": "Up to 565 cu ft · 50 kg stones · $2,142"
+          },
+          {
+            "k": "NC 20",
+            "v": "Up to 706 cu ft · 60 kg stones · $2,397"
+          },
+          {
+            "k": "NC 24",
+            "v": "Up to 847 cu ft · 80 kg stones · $2,652"
+          },
+          {
+            "k": "NC 20 VS",
+            "v": "Up to 706 cu ft · 23 L water tank · $2,890"
+          },
+          {
+            "k": "Chimney",
+            "v": "Rear pipe included, top optional"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Narvi Velvet",
+        "href": "/sauna-heaters/narvi-velvet",
+        "price": "From $5,995.00",
+        "gallery": [
+          {
+            "src": "./assets/4a24c7ae9f53a63ea33d7c2aef573f45.webp",
+            "alt": "Narvi Velvet wood-burning sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/458a2b966a3b2144b26dbae1d6de45ff.webp",
+            "alt": "Narvi Velvet wood-burning sauna heater, angled view, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/9e179da82fde600e82fa4282bbfa91e5.webp",
+            "alt": "Narvi Velvet sauna heater stone cage detail, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU NARVELV",
+        "origin": "Made in Finland",
+        "photo": "narvi-velvet_10.jpg",
+        "desc": "Narvi's premium stove. A double casing holds a deep stone load similar to the Stony 20 (about 160 kg), for long, velvety steam. A glazed hatch lets you watch the fire, and the furnace is replaceable for a long service life.",
+        "specs": [
+          {
+            "k": "Velvet 20",
+            "v": "Up to 706 cu ft · $5,995"
+          },
+          {
+            "k": "Velvet 35",
+            "v": "Larger saunas · $9,995"
+          },
+          {
+            "k": "Stones (20)",
+            "v": "60 kg (10–15 cm) + 100 kg (5–10 cm)"
+          },
+          {
+            "k": "Furnace",
+            "v": "Replaceable"
+          },
+          {
+            "k": "Chimney",
+            "v": "Top or back"
+          },
+          {
+            "k": "Feet",
+            "v": "Adjustable"
+          },
+          {
+            "k": "Warranty",
+            "v": "2 years"
+          }
+        ]
+      },
+      {
+        "name": "Pellum P47 Pellet Stove",
+        "href": "/sauna-heaters/pellum",
+        "price": "$3,985.00",
+        "gallery": [
+          {
+            "src": "./assets/504ade7ae14c25a2c613c3cb7959a72c.webp",
+            "alt": "Pellum P47 pellet sauna heater, The Toronto Sauna Co.",
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/22094b0de4e642f569ad7d509507d269.webp",
+            "alt": "Pellum P47 pellet sauna heater in a barrel sauna, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/429f024f64ddeba0218223ff26cdb6a7.webp",
+            "alt": "Pellum P47 pellet sauna heater fire door, The Toronto Sauna Co.",
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/8ee4b2dd763b5c7fe409c9836a45723d.webp",
+            "alt": "Pellum P47 pellet sauna heater stones and chimney, The Toronto Sauna Co.",
+            "fit": "cover"
+          }
+        ],
+        "code": "SKU PELP47O",
+        "origin": "Made in Estonia",
+        "photo": "Pellum-Sauna-Heater_10.webp",
+        "desc": "A patented pellet-fired sauna stove from Estonia. Load the 15 kg pellet chamber and it feeds itself for up to 4.5 hours, with no electricity needed. Stainless steel body, glass door and very low emissions.",
+        "specs": [
+          {
+            "k": "Room size",
+            "v": "212–565 cu ft (6–16 m³)"
+          },
+          {
+            "k": "Chimney kit",
+            "v": "Top exit, $681"
+          },
+          {
+            "k": "Fuel",
+            "v": "Wood pellets, 6–8 mm"
+          },
+          {
+            "k": "Pellet chamber",
+            "v": "15 kg, up to 4.5 h per fill"
+          },
+          {
+            "k": "Power",
+            "v": "No electricity needed"
+          },
+          {
+            "k": "Weight",
+            "v": "95 kg (209 lbs)"
+          },
+          {
+            "k": "Body",
+            "v": "Stainless steel, glass door"
+          }
+        ]
+      }
+    ]
+  },
   "sections": [
     {
       "name": "Hero",
@@ -658,6 +1263,8 @@
       "blocks": [
         {
           "type": "table",
+          "caption": "Electric vs wood-burning sauna heaters",
+          "headerRows": 1,
           "rows": [
             [
               "",
@@ -1078,12 +1685,15 @@
                       "value": "{{t.on}}",
                       "blocks": [
                         {
-                          "type": "link",
-                          "html": "",
-                          "text": "",
-                          "href": null,
-                          "variant": "button",
-                          "label": "{{t.label}}"
+                          "type": "button",
+                          "label": "{{t.label}}",
+                          "blocks": [
+                            {
+                              "type": "image",
+                              "src": "{{t.src}}",
+                              "alt": ""
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1092,12 +1702,15 @@
                       "value": "{{t.off}}",
                       "blocks": [
                         {
-                          "type": "link",
-                          "html": "",
-                          "text": "",
-                          "href": null,
-                          "variant": "button",
-                          "label": "{{t.label}}"
+                          "type": "button",
+                          "label": "{{t.label}}",
+                          "blocks": [
+                            {
+                              "type": "image",
+                              "src": "{{t.src}}",
+                              "alt": ""
+                            }
+                          ]
                         }
                       ]
                     }

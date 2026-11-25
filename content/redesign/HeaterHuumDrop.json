@@ -330,12 +330,15 @@
                   "value": "{{t.on}}",
                   "blocks": [
                     {
-                      "type": "link",
-                      "html": "",
-                      "text": "",
-                      "href": null,
-                      "variant": "button",
-                      "label": "{{t.label}}"
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
                     }
                   ]
                 },
@@ -344,12 +347,15 @@
                   "value": "{{t.off}}",
                   "blocks": [
                     {
-                      "type": "link",
-                      "html": "",
-                      "text": "",
-                      "href": null,
-                      "variant": "button",
-                      "label": "{{t.label}}"
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
                     }
                   ]
                 }
@@ -521,11 +527,81 @@
                           "value": "{{o.on}}",
                           "blocks": [
                             {
-                              "type": "link",
-                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
-                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
-                              "href": null,
-                              "variant": "button"
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
                             }
                           ]
                         },
@@ -534,11 +610,75 @@
                           "value": "{{o.off}}",
                           "blocks": [
                             {
-                              "type": "link",
-                              "html": "<strong>{{o.qtyBadge}}</strong> {{o.photo}} <strong>{{o.qtyBadge}}</strong> {{o.priceText}} <strong>{{o.label}}</strong> {{o.sub}}",
-                              "text": "{{o.qtyBadge}} {{o.photo}} {{o.qtyBadge}} {{o.priceText}} {{o.label}} {{o.sub}}",
-                              "href": null,
-                              "variant": "button"
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasQty}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "<strong>{{o.qtyBadge}}</strong>",
+                                          "text": "{{o.qtyBadge}}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.hasImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "image",
+                                          "src": "{{o.img}}",
+                                          "alt": ""
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "if",
+                                      "value": "{{o.noImg}}",
+                                      "blocks": [
+                                        {
+                                          "type": "text",
+                                          "html": "{{o.photo}}",
+                                          "text": "{{o.photo}}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.badgeInline}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "<strong>{{o.qtyBadge}}</strong>",
+                                      "text": "{{o.qtyBadge}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -716,6 +856,8 @@
           "blocks": [
             {
               "type": "table",
+              "caption": null,
+              "headerRows": 1,
               "rows": [
                 [
                   "Output",
@@ -739,6 +881,8 @@
           "blocks": [
             {
               "type": "table",
+              "caption": null,
+              "headerRows": 1,
               "rows": [
                 [
                   "Output",

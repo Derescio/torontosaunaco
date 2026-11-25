@@ -70,7 +70,21 @@
         "Panoramic Barrel"
       ],
       "showBest": true
-    }
+    },
+    "sortDefs": [
+      [
+        "featured",
+        "Featured"
+      ],
+      [
+        "low",
+        "Price: low to high"
+      ],
+      [
+        "high",
+        "Price: high to low"
+      ]
+    ]
   },
   "sections": [
     {

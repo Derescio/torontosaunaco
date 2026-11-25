@@ -80,9 +80,13 @@ route → file with a warning count per page. Shape:
 }
 ```
 
-**Data:** every JSON literal assigned (`x = {…}` / `x = […]`) or returned from a method in the page script is parsed
-with `JSON.parse`, keyed by its variable or method name. Literals that aren't valid JSON are skipped silently (they are
-logic, not data); duplicate names get a numeric suffix.
+**Data:** every constant object/array literal in the page script (JSON or plain JS such as `{ sku: 'X', price:
+'$82.00' }`), found by parsing the script with acorn (never running it). It is keyed by the variable or property it is
+assigned to, the method that returns it, or, for array arguments (`lfReasons: opt([...])`), the name the call is assigned
+to. Literals that reference variables are logic; `this.x = …` state and objects passed to calls are options; neither is
+data. Identical repeats are dropped; differing repeats get a numeric suffix. A script that won't parse is a warning.
+(Revised after the final review: the first version used `JSON.parse` and silently missed the accessories catalogue, the
+heater listing and the contact form options, which the design writes as plain JS.)
 
 **Blocks:** `heading` (level), `paragraph`, `text` (loose text in a `span`/`div`, e.g. eyebrows and prices), `list`
 (ordered, items), `link` (`variant: "button" | "link"`; button when it has a `btn`/`hbtn` class or a pill radius),

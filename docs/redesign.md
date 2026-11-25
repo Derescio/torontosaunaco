@@ -103,7 +103,9 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   - 65 product pages have `og:type "product"` in the design. The SEO helper must always emit `"website"` (`lessons.md`).
   - All titles, descriptions and canonicals match `page-map.csv`; no "Leisurecraft" outside the homepage.
   - Prices: products in `data.D.steps[].groups[].options[].price`, heaters in `data.d.steps[].options[].price`,
-    listings in `data.D.items[].p`, finder in `data.fdData[].s[].p`.
+    listings in `data.D.items[].p`, finder in `data.fdData[].s[].p`, accessories in `Accessories.json`
+    `data.items` / `items_2` / `packages` / `lighting` (strings like `"$82.00"`), heater listing in `Heaters.json`
+    `data.electric` / `data.wood`. Data is any constant JS literal in the page script (parsed with acorn, never run).
 - [ ] **Price/data diff script**: extracted design data vs MongoDB → a report for the owner.
 - [ ] `slug` on Products/Accessories + backfill migration (A).
 - [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.

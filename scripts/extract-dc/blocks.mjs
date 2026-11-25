@@ -215,7 +215,9 @@ function blocksOf(n, ctx) {
     case "a":
       return containsBlock(n) ? [{ type: "card", href: cardHref(n, ctx), blocks: children(n, ctx) }] : link(n, ctx);
     case "button":
-      return link(n, ctx);
+      if (!containsBlock(n)) return link(n, ctx);
+      // Option tiles and step headers: keep their parts, sc-if states and images instead of one merged label.
+      return [{ type: "button", label: n.getAttribute("aria-label") ?? null, blocks: children(n, ctx) }];
     case "img":
       return [{ type: "image", src: n.getAttribute("src") ?? null, alt: n.getAttribute("alt") ?? "" }];
     case "figure":
@@ -228,15 +230,27 @@ function blocksOf(n, ctx) {
       const rest = children(withChildren(n.childNodes.filter((c) => c !== summary)), ctx);
       return [{ type: "faq", html, text: htmlToText(html), blocks: rest }];
     }
-    case "table":
+    case "table": {
+      const caption = n.querySelector("caption");
+      const trs = n.querySelectorAll("tr");
+      const cells = (tr) => elements(tr).filter((c) => ["th", "td"].includes(tagOf(c)));
+      // Header rows: rows inside <thead>, or leading rows made only of <th>.
+      let headerRows = 0;
+      while (
+        headerRows < trs.length &&
+        (tagOf(trs[headerRows].parentNode) === "thead" || cells(trs[headerRows]).every((c) => tagOf(c) === "th"))
+      ) {
+        headerRows++;
+      }
       return [
         {
           type: "table",
-          rows: n.querySelectorAll("tr").map((tr) =>
-            elements(tr).filter((c) => ["th", "td"].includes(tagOf(c))).map((c) => inlineHtml(c, ctx)),
-          ),
+          caption: caption ? inlineHtml(caption, ctx) || null : null,
+          headerRows,
+          rows: trs.map((tr) => cells(tr).map((c) => inlineHtml(c, ctx))),
         },
       ];
+    }
     case "form":
       return [{ type: "form", blocks: children(n, ctx) }];
     case "label":

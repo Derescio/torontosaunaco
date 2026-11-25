@@ -1686,7 +1686,1219 @@
       }
     ]
   },
-  "data": {},
+  "data": {
+    "catList": [
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "bucket",
+        "label": "Buckets & Ladles"
+      },
+      {
+        "id": "cedar",
+        "label": "Cedar Accessories"
+      },
+      {
+        "id": "fixtures",
+        "label": "Shields & Fixtures"
+      },
+      {
+        "id": "controls",
+        "label": "Heater Controls & Safety Rails"
+      },
+      {
+        "id": "light",
+        "label": "Lighting & Sound"
+      },
+      {
+        "id": "stone",
+        "label": "Soapstone"
+      },
+      {
+        "id": "scent",
+        "label": "Essences & Cleaners"
+      },
+      {
+        "id": "thermo",
+        "label": "Thermometers & Sand Timers"
+      },
+      {
+        "id": "care",
+        "label": "Wood Finishes"
+      }
+    ],
+    "packages": [
+      {
+        "id": "pkg-starter",
+        "sku": "APAC01",
+        "name": "Starter",
+        "fullName": "Starter Sauna Accessory Package",
+        "price": "$111.60",
+        "was": "$124.00",
+        "save": "$12.40",
+        "img": "./assets/5729252e6a427c5e0791635437646abf.webp",
+        "alt": "Starter package: wooden bucket and ladle, cedar thermometer and eucalyptus essence, The Toronto Sauna Co.",
+        "short": "Sauna essentials in one package. A simple start to the sauna ritual.",
+        "long": [
+          "Everything you need for your first session, in one box: a wooden bucket and ladle for making steam, a cedar thermometer to read the room, and eucalyptus essence for the bucket.",
+          "A simple start to the sauna ritual. Most owners add a backrest and a floor mat next."
+        ],
+        "included": [
+          "Wooden Sauna Bucket & Ladle",
+          "Cedar Sauna Thermometer",
+          "4oz Eucalyptus Sauna Essence"
+        ]
+      },
+      {
+        "id": "pkg-deluxe",
+        "sku": "APAC02",
+        "name": "Deluxe",
+        "fullName": "Deluxe Sauna Accessory Package",
+        "price": "$386.55",
+        "was": "$429.50",
+        "save": "$42.95",
+        "img": "./assets/c6851b17538b90f430d1541f74d46cc9.webp",
+        "featured": true,
+        "alt": "Deluxe package: bucket and ladle, cedar thermometer, sand timer, eucalyptus essence and two cedar backrests, The Toronto Sauna Co.",
+        "short": "The Starter essentials plus a sand timer, bottle shelf and both of our cedar backrests.",
+        "long": [
+          "A complete setup for comfort as well as steam. You get the Starter essentials (bucket and ladle, cedar thermometer and eucalyptus essence), plus a wall-mount sand timer to pace your rounds and a cedar bottle shelf.",
+          "It also includes both backrest styles: the Comfort for sitting upright, and the Elite for leaning back."
+        ],
+        "included": [
+          "Wooden Sauna Bucket & Ladle",
+          "Cedar Sauna Thermometer",
+          "4oz Eucalyptus Sauna Essence",
+          "Cedar Bottle Shelf",
+          "Wall Mount Sand Timer",
+          "Comfort Sauna Backrest",
+          "Elite Sauna Backrest"
+        ]
+      },
+      {
+        "id": "pkg-supreme",
+        "sku": "APAC03",
+        "name": "Supreme",
+        "fullName": "Supreme Sauna Accessory Package",
+        "price": "$538.65",
+        "was": "$598.50",
+        "save": "$59.85",
+        "img": "./assets/48c077a483491bc7683baeb0613fabd6.webp",
+        "alt": "Supreme package: Narvi black bucket, ladle, thermometer and sand timer, eucalyptus essence and two cedar backrests, The Toronto Sauna Co.",
+        "short": "The full Narvi Black set with eucalyptus essence and two Comfort backrests.",
+        "long": [
+          "Our fullest bundle, built around the Finnish Narvi Black series: a black bucket and ladle, a matching black thermometer and a black sand timer. Dark pieces that stand out against pale cedar.",
+          "Rounded out with eucalyptus essence and two Comfort backrests, so two people can sit back in comfort."
+        ],
+        "included": [
+          "Narvi Black Sauna Bucket",
+          "Narvi Black Sauna Ladle",
+          "Narvi Black Thermometer",
+          "Narvi Black Sand Timer",
+          "4oz Eucalyptus Sauna Essence",
+          "Comfort Sauna Backrest (x2)"
+        ]
+      }
+    ],
+    "lighting": [
+      {
+        "sku": "BSADE43",
+        "price": "$375.00",
+        "img": "./assets/e46df66cdb47089e89555fc61771c483.webp",
+        "name": "SaunaScapes Sade 43\" Single Light Set",
+        "type": "RGB LED",
+        "photo": "BSADE43_10.webp",
+        "short": "43\" RGB LED light set. Pick any colour from a free app.",
+        "desc": "A 43-inch RGB LED light set that lets you pick the colour of your sauna from a free app. Mounts in a clean aluminum channel.",
+        "included": [
+          "Aluminum mounting channel",
+          "Controller",
+          "Power supply",
+          "Wiring"
+        ],
+        "warranty": "2-year warranty"
+      },
+      {
+        "sku": "BSADE72",
+        "price": "$416.00",
+        "img": "./assets/1acce63a8eaea8a88dc4cd52cdd56040.webp",
+        "name": "SaunaScapes Sade 72\" Single Light Set",
+        "type": "RGB LED",
+        "photo": "BSADE72_10.webp",
+        "short": "72\" RGB LED light set for larger saunas. Colour set from a free app.",
+        "desc": "The longer 72-inch version of the Sade set, for larger benches and walls. Choose your colour from a free app.",
+        "included": [
+          "Aluminum mounting channel",
+          "Controller",
+          "Power supply",
+          "Wiring"
+        ],
+        "warranty": "2-year warranty"
+      },
+      {
+        "sku": "720734",
+        "price": "$1,106.00",
+        "img": "./assets/1abf1c3e731a57dda634666362b26f6d.webp",
+        "name": "SaunaGlo 43\" LED Light Bar",
+        "type": "LED light bar",
+        "photo": "720734_1.jpg",
+        "short": "43\" premium LED strip light bar. Warm, energy-efficient glow.",
+        "desc": "Premium LED strip lighting in a 43-inch bar, giving a warm, energy-efficient glow under benches or along walls.",
+        "included": [],
+        "warranty": ""
+      },
+      {
+        "sku": "720733",
+        "price": "$1,317.50",
+        "img": "./assets/687cad671a9e1af7978c7108344bd8e7.webp",
+        "name": "SaunaGlo 72\" LED Light Bar",
+        "type": "LED light bar",
+        "photo": "720733_1.jpg",
+        "short": "72\" premium LED strip light bar for longer runs.",
+        "desc": "The 72-inch SaunaGlo bar for longer benches and larger saunas, with the same warm, energy-efficient LED glow.",
+        "included": [],
+        "warranty": ""
+      },
+      {
+        "sku": "LIGHT1",
+        "price": "$36.00",
+        "img": "./assets/b301bc099761644f76939bd991a776f8.webp",
+        "name": "Electric Sauna Light (Marine Grade)",
+        "type": "Classic light",
+        "photo": "LIGHT1_1.jpg",
+        "short": "Traditional oval light, built to handle high heat and moisture.",
+        "desc": "A traditional oval sauna light with marine-grade construction, built to handle high heat and moisture. Suits any wood interior.",
+        "included": [],
+        "warranty": ""
+      },
+      {
+        "sku": "SHADE1",
+        "price": "$77.50",
+        "img": "./assets/bf94556b1c41fa4c62d3b40d8d008738.webp",
+        "name": "Cedar Light Shade",
+        "type": "Light shade",
+        "photo": "SHADE1_1.jpg",
+        "short": "Cedar shade that fits around the Electric Sauna Light.",
+        "desc": "Adds a warm, natural cedar touch and diffuses the light. Designed to fit around the standard Electric Sauna Light.",
+        "included": [],
+        "warranty": ""
+      },
+      {
+        "sku": "SSKAIK",
+        "price": "$893.00",
+        "img": "./assets/9967e5bb43764bca5347d69bda75f7ff.webp",
+        "name": "SaunaScapes Kaiku Complete Sound System",
+        "type": "Sound",
+        "photo": "SSKAIK_10.webp",
+        "short": "Bluetooth sauna audio with an 8\" subwoofer base and wall transducers.",
+        "desc": "Stream music from your phone over Bluetooth. Sound comes from an 8-inch subwoofer base and two wall-mounted transducers.",
+        "included": [
+          "8\" subwoofer base",
+          "Two wall-mounted transducers",
+          "Power supply",
+          "Wiring harness"
+        ],
+        "warranty": "2-year warranty"
+      }
+    ],
+    "finishes": [
+      {
+        "sku": "264-002",
+        "price": "$185.00",
+        "img": "./assets/ed10910a82372a1495e2bbe91d879924.webp",
+        "name": "Meldos Natural Sauna Oil (2.5 L)",
+        "photo": "264-002_1.jpg",
+        "use": "Interior",
+        "swatch": "#D8B98E",
+        "short": "Natural-resin oil that soaks into the cedar instead of forming a film.",
+        "desc": "A natural-resin oil that penetrates into the timber rather than sitting on top, so it won’t peel or crack like a film finish. 2.5 litre can."
+      },
+      {
+        "sku": "580-068",
+        "price": "$215.00",
+        "img": "./assets/4d5d14fb10503d2de2362c3fc90f3ef6.webp",
+        "name": "Livos Alis Light Teak Sauna Oil",
+        "photo": "580-068_1.jpg",
+        "use": "Exterior",
+        "swatch": "#B98A55",
+        "short": "Exterior oil in Light Teak. Guards against UV greying.",
+        "desc": "Protects an outdoor sauna from the UV greying that sets in after a Canadian winter, with a warm Light Teak tone."
+      },
+      {
+        "sku": "580-1125",
+        "price": "$215.00",
+        "img": "./assets/595194c48adde23612c48240037fa9b8.webp",
+        "name": "Livos Alis Sesame Sauna Oil",
+        "photo": "580-1125_1.jpg",
+        "use": "Exterior",
+        "swatch": "#A47A4F",
+        "short": "3-in-1 exterior oil in Sesame. Protects and stains in one coat.",
+        "desc": "A 3-in-1 exterior oil that protects and stains your outdoor sauna in a single application, in a soft Sesame tone."
+      },
+      {
+        "sku": "580-439",
+        "price": "$215.00",
+        "img": "./assets/112a8aa3cf71bc3a65798d2cd4642c41.webp",
+        "name": "Livos Alis Bongossi Sauna Oil",
+        "photo": "580-439_1.jpg",
+        "use": "Exterior",
+        "swatch": "#6E4528",
+        "short": "Exterior oil in Bongossi, a rich hardwood tone.",
+        "desc": "Named after the dense African hardwood, Bongossi gives an outdoor sauna a deep, rich brown finish with built-in protection."
+      },
+      {
+        "sku": "580-101",
+        "price": "$215.00",
+        "img": "./assets/65cbe4d3753f31fd0b4f46e8fbe666c6.webp",
+        "name": "Livos Alis Black Sauna Oil",
+        "photo": "580-101_1.jpg",
+        "use": "Exterior",
+        "swatch": "#222020",
+        "short": "Exterior oil in Black, with UV protection built in.",
+        "desc": "Gives an outdoor sauna a dark, modern finish, with UV protection built into the oil to prevent discolouration."
+      }
+    ],
+    "items": [
+      {
+        "cat": "bucket",
+        "sku": "BL01",
+        "name": "Wooden Sauna Bucket & Ladle",
+        "price": "$82.00",
+        "img": "./assets/3f01c1da1436cadb18e25ce9a3a72bb3.webp",
+        "desc": "Handcrafted cedar with a plastic liner. Fill, ladle onto the stones, and make löyly.",
+        "long": [
+          "The standard bucket and ladle set, made from cedar. In a cedar-lined sauna, it looks like it belongs there.",
+          "A plastic liner inside the bucket holds the water, so the wood stays sound. Fill it, ladle water onto the hot stones, and make löyly: the wave of steam at the heart of a Finnish sauna."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Cedar, with plastic liner"
+          },
+          {
+            "k": "Includes",
+            "v": "Bucket and ladle"
+          }
+        ]
+      },
+      {
+        "cat": "bucket",
+        "sku": "163423 / 163424",
+        "name": "Narvi Black Bucket & Ladle",
+        "price": "$186.00",
+        "img": "./assets/e02d6ffb3263a55767dc5e20cf45e53e.webp",
+        "desc": "Black aluminum with birch details. A modern Finnish take on the classic set.",
+        "long": [
+          "Most sauna buckets are pale wood, and so are most saunas, so the bucket disappears. Narvi’s Black series does the opposite: a black aluminum bucket that stands out against a cedar bench.",
+          "The matching ladle pairs a black aluminum spoon with a birch handle. It’s the piece you actually hold, so the handle matters."
+        ],
+        "specs": [
+          {
+            "k": "Bucket",
+            "v": "Black aluminum, bent birch handle"
+          },
+          {
+            "k": "Ladle",
+            "v": "Black aluminum spoon, birch handle"
+          },
+          {
+            "k": "Series",
+            "v": "Narvi Black (Finland)"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "BR04",
+        "name": "Comfort Sauna Backrest",
+        "price": "$106.50",
+        "img": "./assets/a34977303c5df863babaaaf30e884955.webp",
+        "desc": "A convex shape with a slight arch that supports an upright, well-postured seat.",
+        "long": [
+          "The Comfort backrest supports an upright seated posture. Its convex shape and slight arch encourage good posture and let your back rest gently against it.",
+          "Best if you like to sit up during your session. Prefer to lean back? See the Elite backrest."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Cedar"
+          },
+          {
+            "k": "Shape",
+            "v": "Convex, gentle arch"
+          },
+          {
+            "k": "Best for",
+            "v": "Sitting upright"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "BR02",
+        "photo": "BR02_1.jpg",
+        "name": "Elite Sauna Backrest",
+        "price": "$106.00",
+        "img": "./assets/2ceb627f48f7aafb5294b8189f72db1f.webp",
+        "desc": "A concave curve that follows your spine and takes your weight, so you can lean back."
+      },
+      {
+        "cat": "cedar",
+        "sku": "BR05",
+        "name": "Standard Sauna Headrest",
+        "price": "$95.00",
+        "img": "./assets/1fde00697018234ef5892a8f0d1b6e06.webp",
+        "desc": "Angled, ergonomic cedar headrest that supports your head and neck.",
+        "long": [
+          "Lie back on a flat bench and your neck ends up doing all the work. This cedar headrest has an angled, ergonomic shape that cradles your head and neck, so you can stretch out and properly relax."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Cedar"
+          },
+          {
+            "k": "Shape",
+            "v": "Angled, ergonomic"
+          },
+          {
+            "k": "Sold",
+            "v": "Each, or ask about a pair"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "SF02",
+        "name": "Sauna Floor Mat 34\" x 60\"",
+        "price": "$210.50",
+        "img": "./assets/6f618fdcd76af2f3591d99c0ffa19519.webp",
+        "desc": "Slatted cedar lets air flow and water drain, keeping the floor dry and comfortable. 88 x 150 cm.",
+        "long": [
+          "A slatted cedar duckboard for the sauna floor. The gaps between slats let air flow and water drain away, so the floor stays dry and comfortable underfoot."
+        ],
+        "specs": [
+          {
+            "k": "Size",
+            "v": "34\" x 60\" (88 x 150 cm)"
+          },
+          {
+            "k": "Material",
+            "v": "Cedar"
+          },
+          {
+            "k": "Style",
+            "v": "Slatted duckboard"
+          },
+          {
+            "k": "Made in",
+            "v": "Canada"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "HOOKS3",
+        "name": "Towel Hooks (3 Peg)",
+        "price": "$22.50",
+        "img": "./assets/9cb6124676b68d63abfb7c079273865a.webp",
+        "desc": "Three pegs keep towels and robes within reach. Mounts inside or outside the sauna.",
+        "long": [
+          "Three sturdy pegs keep towels and robes organized and within reach.",
+          "Mount it inside or outside the sauna. Ideal when the whole family joins the session."
+        ],
+        "specs": [
+          {
+            "k": "Pegs",
+            "v": "3"
+          },
+          {
+            "k": "Mounting",
+            "v": "Inside or outside the sauna"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "303088",
+        "price": "$9.50",
+        "img": "./assets/4c711ff81bd96b94f99bddcc676ee5b6.webp",
+        "photo": "303088_1.jpg",
+        "name": "Single Towel Hook",
+        "desc": "Sturdy hook on a square backplate, made to match cedar interiors. Inside or outside."
+      },
+      {
+        "cat": "cedar",
+        "sku": "SHELF1",
+        "price": "$60.00",
+        "img": "./assets/7b3f9bf92b691da81119bbbeea1a975d.webp",
+        "photo": "SHELF1_1.jpg",
+        "name": "Cedar Bottle Shelf",
+        "desc": "Open cedar shelf for water bottles, essences and cleaners, right where you need them."
+      },
+      {
+        "cat": "cedar",
+        "sku": "SIGN01",
+        "name": "5\" x 11\" Cedar Sauna Sign",
+        "price": "$26.00",
+        "img": "./assets/77e228955bd398ee2ffd26966c58fce1.webp",
+        "desc": "A simple cedar sign to mark your sauna. Hangs inside or outside.",
+        "long": [
+          "A simple cedar sign that reads “Sauna” to mark your sauna space. Hang it inside or outside. A charming finishing touch."
+        ],
+        "specs": [
+          {
+            "k": "Size",
+            "v": "5\" x 11\""
+          },
+          {
+            "k": "Material",
+            "v": "Cedar"
+          },
+          {
+            "k": "Mounting",
+            "v": "Inside or outside"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "sku": "303087",
+        "photo": "303087_1.jpg",
+        "name": "Electric Sauna Heater Shield",
+        "price": "$67.00",
+        "img": "./assets/8d1c2185f396282c5a7bad33a67f3b13.webp",
+        "desc": "Guards against accidental contact with an electric heater and blends with the interior. Pre-cut for easy assembly."
+      },
+      {
+        "cat": "cedar",
+        "sku": "VENTKIT",
+        "price": "$33.50",
+        "img": "./assets/641bde8de26c68fec38b35c173561641.webp",
+        "photo": "VENTKIT_1.jpg",
+        "name": "Complete Sauna Vent Kit",
+        "desc": "Wall-mounted wooden panel with perforated plates. Rotate to fine-tune airflow, heat and humidity."
+      },
+      {
+        "cat": "cedar",
+        "sku": "250F",
+        "price": "$2,053.00",
+        "img": "./assets/ffbefc9b06675ce8b62fa53d4d57bea3.webp",
+        "photo": "250F_1.jpg",
+        "name": "5' Clear Cedar Firewood Storage Barrel",
+        "desc": "Barrel-style log storage in clear cedar with stainless steel bands, for wood-fired saunas and hot tubs."
+      },
+      {
+        "cat": "cedar",
+        "sku": "252F",
+        "photo": "252F_1.jpg",
+        "name": "5' Knotty Cedar Firewood Storage Barrel",
+        "price": "$1,520.00",
+        "img": "./assets/163c8a1b897138809530a25ddca4e8a5.webp",
+        "desc": "Weather-resistant log storage in knotty cedar with stainless steel bands. Sits beside a wood-fired sauna."
+      }
+    ],
+    "items_2": [
+      {
+        "cat": "stone",
+        "name": "HÖYRYKIVI Soapstone Steam Stone",
+        "price": "$35.00",
+        "img": "./assets/fe0dd00166592fba8753b0277f40a53a.webp",
+        "desc": "A soapstone block with four wells. Fill with water or essence and set it on the stones for gentle, scented steam.",
+        "long": [
+          "A rough-cut Finnish soapstone block with four shallow wells. Fill them with water or a few drops of essence and place it among the heater stones: the scent rises slowly with the steam instead of flashing off."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Sold",
+            "v": "1 per box"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "ELLI Soapstone Sauna Elf",
+        "price": "$54.00",
+        "img": "./assets/8401c0d79d9430b8c50c3f73367aa138.webp",
+        "desc": "A smiling soapstone sauna elf with a round cap. Sits among the heater stones as a friendly guardian.",
+        "long": [
+          "In Finnish tradition a sauna elf (saunatonttu) watches over the sauna. ELLI is carved from Finnish soapstone, so it can sit right among the heater stones."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "TAHVO Soapstone Sauna Elf",
+        "price": "$54.00",
+        "img": "./assets/d9abc3e4b1a984bfd3c16c21120c67da.webp",
+        "desc": "ELLI's pointy-hatted companion, carved from soapstone to sit on the heater stones.",
+        "long": [
+          "TAHVO is the pointy-hatted sauna elf, carved from Finnish soapstone. Pair him with ELLI for a matching set on the heater."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "GRANDMA Engraved Soapstone",
+        "price": "$85.50",
+        "img": "./assets/11fdcc27634504d801002836d0a484b4.webp",
+        "desc": "A soapstone block engraved with “GRANDMA”. A sauna keepsake and a thoughtful gift.",
+        "long": [
+          "A rough-edged soapstone block engraved with “GRANDMA”. Set it on a bench or shelf, or among the heater stones. A lasting gift for the family sauna."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Engraving",
+            "v": "GRANDMA"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "LUMIUKKO Snowman Soapstone Thermometer",
+        "price": "$99.00",
+        "img": "./assets/6dc29c9b8bcdbce62de6b2267acf1951.webp",
+        "desc": "A crescent soapstone thermometer that reads by picture: from a snowman standing tall to one melted in the sun.",
+        "long": [
+          "Instead of numbers, this soapstone thermometer tells the temperature with a melting snowman: standing tall when the room is cool, a puddle when it's hot. A playful piece that families love."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Dial",
+            "v": "Picture scale (snowman)"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "PISARAINEN Soapstone Thermometer (Fahrenheit)",
+        "price": "$121.50",
+        "img": "./assets/fbd2591689619a226ddee30d13c12c18.webp",
+        "desc": "A water-drop-shaped soapstone thermometer with a copper centre, reading 40–280 °F.",
+        "long": [
+          "Shaped like a drop of water and carved from Finnish soapstone, with a clean dial reading 40 to 280 °F and a copper centre cap."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Scale",
+            "v": "40–280 °F"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM UKU Wi-Fi Control (Black)",
+        "img": "./assets/fee7140f09089fb6e6dc8304960fd763.webp",
+        "price": "$1,392.00",
+        "photo": "UKU Wi-Fi",
+        "desc": "Control panel for HUUM heaters with app control: start, schedule and adjust your sauna from your phone.",
+        "long": [
+          "The UKU Wi-Fi is the control system for HUUM electric heaters such as the Drop and HIVE Mini. Set temperature and timers on the panel, or start the sauna from anywhere with the HUUM app so it is hot when you arrive.",
+          "Every HUUM electric heater needs a UKU control (Wi-Fi or Local)."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM electric heaters"
+          },
+          {
+            "k": "Control",
+            "v": "Panel + phone app"
+          },
+          {
+            "k": "Finish",
+            "v": "Black"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM UKU Local Control (Black)",
+        "img": "./assets/2f4e526fa32d5f0c4ae58b9a5083357c.webp",
+        "price": "$1,117.00",
+        "photo": "UKU Local",
+        "desc": "The in-sauna control panel for HUUM heaters, without the app. Simple temperature and timer settings.",
+        "long": [
+          "The UKU Local gives you the same in-sauna control panel as the Wi-Fi version, without remote app access. A good choice if you only want to start the sauna on site.",
+          "Every HUUM electric heater needs a UKU control (Wi-Fi or Local)."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM electric heaters"
+          },
+          {
+            "k": "Control",
+            "v": "Panel in the sauna"
+          },
+          {
+            "k": "Finish",
+            "v": "Black"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "Homecraft Digital Touchpad + Contactor (Indoor)",
+        "img": "./assets/2536c48f54263a9bb455f50e9d4c3f34.webp",
+        "price": "$575.00",
+        "photo": "Homecraft touchpad",
+        "desc": "Wall touchpad and contactor box for Homecraft heaters in indoor saunas.",
+        "long": [
+          "Homecraft heaters (Revive, Revive Slim, Apex Mini, Apex) run through a contactor box with a wall-mounted touchpad. This digital version sets temperature and run time at the sauna."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "Homecraft electric heaters"
+          },
+          {
+            "k": "Sauna",
+            "v": "Indoor"
+          },
+          {
+            "k": "Control",
+            "v": "Digital touchpad"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "Homecraft Wi-Fi Touchpad + Contactor (Indoor)",
+        "img": "./assets/d5d44bc1a93d7b5cd5a1412269941d2e.webp",
+        "price": "$825.00",
+        "photo": "Homecraft Wi-Fi touchpad",
+        "desc": "Homecraft touchpad and contactor with Wi-Fi, so you can start an indoor sauna from your phone.",
+        "long": [
+          "The Wi-Fi touchpad adds remote control to a Homecraft heater: preheat the sauna from your phone and arrive to a hot room."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "Homecraft electric heaters"
+          },
+          {
+            "k": "Sauna",
+            "v": "Indoor"
+          },
+          {
+            "k": "Control",
+            "v": "Wi-Fi touchpad"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "Homecraft Digital Touchpad + Contactor (Outdoor)",
+        "img": "./assets/2536c48f54263a9bb455f50e9d4c3f34.webp",
+        "price": "$650.00",
+        "photo": "Homecraft touchpad outdoor",
+        "desc": "Wall touchpad and weather-ready contactor for Homecraft heaters in outdoor and backyard saunas.",
+        "long": [
+          "The outdoor version of the Homecraft digital touchpad and contactor, for barrel, cube and cabin saunas in the backyard."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "Homecraft electric heaters"
+          },
+          {
+            "k": "Sauna",
+            "v": "Outdoor"
+          },
+          {
+            "k": "Control",
+            "v": "Digital touchpad"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "Homecraft Wi-Fi Touchpad + Contactor (Outdoor)",
+        "img": "./assets/d5d44bc1a93d7b5cd5a1412269941d2e.webp",
+        "price": "$900.00",
+        "photo": "Homecraft Wi-Fi touchpad outdoor",
+        "desc": "Outdoor Homecraft touchpad and contactor with Wi-Fi for app control of your backyard sauna.",
+        "long": [
+          "Start your backyard sauna from the house. The outdoor Wi-Fi touchpad pairs with Homecraft heaters for remote preheating and scheduling."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "Homecraft electric heaters"
+          },
+          {
+            "k": "Sauna",
+            "v": "Outdoor"
+          },
+          {
+            "k": "Control",
+            "v": "Wi-Fi touchpad"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM Drop Safety Railing",
+        "price": "$306.00",
+        "img": "./assets/bd6f66557841bd80281a9970bd2cccc0.webp",
+        "photo": "HUUM Drop safety railing",
+        "desc": "Light wooden arcs on stainless supports that wrap the HUUM Drop to prevent accidental contact.",
+        "long": [
+          "A safety railing made for the HUUM Drop: light-coloured wooden arcs on stainless steel supports. Recommended for families and smaller saunas."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM Drop"
+          },
+          {
+            "k": "Material",
+            "v": "Wood, stainless steel"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM HIVE Mini Safety Railing",
+        "price": "$339.00",
+        "img": "./assets/2733590780c5fab204015e936ccefcf6.webp",
+        "photo": "HUUM HIVE Mini safety railing",
+        "desc": "A wooden safety rail sized for the HIVE Mini that keeps hands and knees off the hot stones.",
+        "long": [
+          "Wooden arcs on stainless steel supports, sized for the HUUM HIVE Mini (about 22 in diameter). Adds a physical buffer around the heater and a warm visual detail."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM HIVE Mini"
+          },
+          {
+            "k": "Material",
+            "v": "Wood, stainless steel"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM UKU Display Panel (Black)",
+        "price": "$399.50",
+        "img": "./assets/534723f1af80d6b27cd802e1a3257ea3.webp",
+        "desc": "Replacement or second control panel for the HUUM UKU system, with a bright display and turn-and-press dial.",
+        "long": [
+          "The in-sauna display panel for the HUUM UKU control system. Use it to replace a damaged panel or to add the black panel to an existing UKU setup. Set temperature and timer with the single dial."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM UKU control system"
+          },
+          {
+            "k": "Finish",
+            "v": "Black"
+          }
+        ]
+      },
+      {
+        "cat": "controls",
+        "name": "HUUM Drop Drip Tray",
+        "price": "$133.00",
+        "img": "./assets/a1e1274a3c3b302c0567145fbe1e1a7b.webp",
+        "desc": "A black steel tray that sits under the HUUM Drop to catch water and stone grit and protect the floor.",
+        "long": [
+          "Shaped to fit beneath the HUUM Drop, this black steel tray catches drips and small stone fragments so your sauna floor stays clean and protected."
+        ],
+        "specs": [
+          {
+            "k": "For",
+            "v": "HUUM Drop"
+          },
+          {
+            "k": "Material",
+            "v": "Black steel"
+          }
+        ]
+      },
+      {
+        "cat": "fixtures",
+        "name": "Sauna Ceiling Heat Shield with Hardware (Curved)",
+        "price": "$96.00",
+        "img": "./assets/e8082b7f1174926376236fa18db7e256.webp",
+        "desc": "A curved shield that mounts above the heater on a barrel sauna ceiling, with all hardware included.",
+        "long": [
+          "Shaped to follow the curve of a barrel sauna ceiling, this shield mounts above the heater to protect the wood from direct heat. Comes with the mounting hardware."
+        ],
+        "specs": [
+          {
+            "k": "Shape",
+            "v": "Curved, for barrel saunas"
+          },
+          {
+            "k": "Includes",
+            "v": "Mounting hardware"
+          }
+        ]
+      },
+      {
+        "cat": "fixtures",
+        "name": "Sauna Ceiling Heat Shield with Hardware (Flat)",
+        "price": "$85.50",
+        "img": "./assets/f0b8ddb3e4a7935b9c7362424bf49665.webp",
+        "desc": "A flat cedar-faced shield that hangs below a flat sauna ceiling above the heater, with all hardware included.",
+        "long": [
+          "For cabin, cube and indoor saunas with a flat ceiling. The shield hangs just below the ceiling boards above the heater, leaving an air gap that keeps direct heat off the wood. Mounting hardware included."
+        ],
+        "specs": [
+          {
+            "k": "Shape",
+            "v": "Flat, for flat ceilings"
+          },
+          {
+            "k": "Includes",
+            "v": "Mounting hardware"
+          }
+        ]
+      },
+      {
+        "cat": "fixtures",
+        "name": "Premium Shower Hardware",
+        "price": "$388.50",
+        "img": "./assets/585d10d590cd0e31185635befca9fa1b.webp",
+        "desc": "Brushed stainless shower set with a rain head, hand shower and thermostatic mixer. For saunas with a shower room.",
+        "long": [
+          "A brushed stainless shower column with an overhead rain head, a sliding hand shower and a thermostatic mixer with spout. A clean, modern finish for saunas with a shower or change room."
+        ],
+        "specs": [
+          {
+            "k": "Finish",
+            "v": "Brushed stainless"
+          },
+          {
+            "k": "Includes",
+            "v": "Rain head, hand shower, thermostatic mixer"
+          }
+        ]
+      },
+      {
+        "cat": "cedar",
+        "name": "Narvi Wood Basket",
+        "price": "$154.50",
+        "img": "./assets/deba4c48ffa539d0b3d97c313c45ef8e.webp",
+        "desc": "Black steel firewood carrier with a wooden handle. Carry an armload to the stove and keep it tidy beside it.",
+        "long": [
+          "A Finnish-designed firewood basket in black powder-coated steel with a wooden carry handle. Load it at the woodpile, carry it to your wood-burning sauna, and leave it beside the stove as a tidy, good-looking log holder."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Black steel, wooden handle"
+          },
+          {
+            "k": "Brand",
+            "v": "Narvi (Finland)"
+          },
+          {
+            "k": "Best for",
+            "v": "Wood-burning saunas"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "SAUNAKKO Soapstone Aromatic Cup",
+        "price": "$54.00",
+        "img": "./assets/e92a42aebe237a760c629f5c555f08cd.webp",
+        "desc": "A smooth soapstone cup that sits on the heater stones and releases essential-oil scent with the steam.",
+        "long": [
+          "An egg-shaped soapstone cup that nestles among the heater stones. Add water and a few drops of essence; the dense stone warms slowly, so the scent lasts through your session."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Use",
+            "v": "On the heater stones"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "SAUNAJOY Soapstone Massage Stone",
+        "price": "$54.00",
+        "img": "./assets/33ec9dfff142b224dd8fbfddcc89465c.webp",
+        "desc": "A palm-sized soapstone massage stone shaped to grip. Warm it in the sauna and work tight shoulders and back.",
+        "long": [
+          "Finnish soapstone holds heat gently and evenly, so SAUNAJOY stays comfortably warm as you massage. The shaped grip fits your fingers for easy pressure on shoulders, back and legs."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Use",
+            "v": "Warm massage"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "MINI SOLEJOY Foot Massager with Cork Base",
+        "price": "$90.00",
+        "img": "./assets/304743d008c948ca09cc30876390675f.webp",
+        "desc": "A soapstone ball in a cork cradle. Roll your foot over it after a session to ease tired soles.",
+        "long": [
+          "A smooth soapstone ball sits in a cork base so it stays put on the floor. Roll the arch of your foot over it to relax tired soles. Lovely after a long day or a long sauna."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone, cork base"
+          },
+          {
+            "k": "Use",
+            "v": "Foot massage"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "SAUNATROIKKA Soapstone Fountain",
+        "price": "$153.00",
+        "img": "./assets/2f4c8fb3017020d8cc0d8e8afa62562c.webp",
+        "desc": "A soapstone cup filled with small stones that sits on the heater. Pour water in and it sends up a playful fountain of steam.",
+        "long": [
+          "Set SAUNATROIKKA among the heater stones and pour water into it: the small stones inside heat up and send the water back up in a lively burst of steam. A favourite talking point in any sauna."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Use",
+            "v": "On the heater stones"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "PISARAINEN Soapstone Thermometer (Celsius)",
+        "price": "$121.50",
+        "img": "./assets/b4d4162d1d3ba5c6fcb76e348aed1272.webp",
+        "desc": "The water-drop soapstone thermometer with a copper centre, reading 20–120 °C.",
+        "long": [
+          "The Celsius version of PISARAINEN: a drop-shaped Finnish soapstone body with a cream dial reading 20 to 120 °C and a copper centre cap."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Scale",
+            "v": "20–120 °C"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "MAININKI Soapstone Thermometer & Hygrometer",
+        "price": "$172.50",
+        "img": "./assets/e731481c67227da1e4e16228734f1537.webp",
+        "desc": "A carved soapstone piece with two copper-capped dials: temperature in °C and humidity in %.",
+        "long": [
+          "MAININKI is carved from a single piece of Finnish soapstone and holds two dials side by side, one for temperature (°C) and one for humidity, so you can see exactly how your löyly is building."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Reads",
+            "v": "Temperature (°C) and humidity (%)"
+          }
+        ]
+      },
+      {
+        "cat": "stone",
+        "name": "GRANDPA Engraved Soapstone",
+        "price": "$85.50",
+        "img": "./assets/b1c628f94836387f6f285f0125c0bae7.webp",
+        "desc": "A soapstone block engraved with “GRANDPA”. The companion to GRANDMA.",
+        "long": [
+          "A rough-edged soapstone block engraved with “GRANDPA”. Pair it with GRANDMA for a family keepsake in the sauna."
+        ],
+        "specs": [
+          {
+            "k": "Material",
+            "v": "Finnish soapstone"
+          },
+          {
+            "k": "Engraving",
+            "v": "GRANDPA"
+          }
+        ]
+      },
+      {
+        "cat": "scent",
+        "sku": "EUC04",
+        "photo": "EUC04_1.jpg",
+        "price": "$19.00",
+        "img": "./assets/6a254036b2a99bf31cbaf773e6bd2df8.webp",
+        "name": "4oz Eucalyptus Sauna Essence",
+        "desc": "The classic steam scent: sharp and green rather than sweet. Mix a few drops into your bucket."
+      },
+      {
+        "cat": "scent",
+        "sku": "LAV04",
+        "photo": "LAV04_1.jpg",
+        "price": "$19.00",
+        "img": "./assets/294bb713b17bd3cc8272d1ff7776c509.webp",
+        "name": "4oz Lavender Sauna Essence",
+        "desc": "Where eucalyptus wakes a room up, lavender settles it. A few drops in the bucket."
+      },
+      {
+        "cat": "scent",
+        "sku": "645831",
+        "price": "$27.00",
+        "img": "./assets/1ad9b92795b8627f7fed9a1476286721.webp",
+        "photo": "645831_1.jpg",
+        "name": "Nystad Sauna Scent: Birch Leaf (3-Pack)",
+        "desc": "Ground Finnish birch leaves in biodegradable sachets that steep in your bucket like tea."
+      },
+      {
+        "cat": "scent",
+        "sku": "645832",
+        "price": "$27.00",
+        "img": "./assets/43e0f30860b8a9e9a18a0789acaee1c1.webp",
+        "photo": "645832_1.jpg",
+        "name": "Nystad Sauna Scent: Birch & Peppermint (3-Pack)",
+        "desc": "Peppermint reads as cold in a hot room, a crisp contrast to the heat."
+      },
+      {
+        "cat": "scent",
+        "sku": "645833",
+        "price": "$27.00",
+        "img": "./assets/445a8ce21a2ea02b225031b7630bea73.webp",
+        "photo": "645833_1.jpg",
+        "name": "Nystad Sauna Scent: Birch & Lavender (3-Pack)",
+        "desc": "Lavender softens the birch rather than competing with it. Made for evening sessions."
+      },
+      {
+        "cat": "scent",
+        "sku": "645835",
+        "price": "$32.50",
+        "img": "./assets/d7691d6aa708db7f3f304bd8498ce96b.webp",
+        "photo": "645835_1.jpg",
+        "name": "Sauna Menthol (25g Bag)",
+        "desc": "Crystals made from natural essential mint oil that bring a cool sensation to a hot room."
+      },
+      {
+        "cat": "scent",
+        "sku": "163595",
+        "photo": "163595_1.jpg",
+        "price": "$24.50",
+        "img": "./assets/562f564bb0f07e4a427a078af090ef50.webp",
+        "name": "Aromatherapy Oil Cup",
+        "desc": "Holds oil above the heat so the scent evaporates slowly instead of flashing off the stones."
+      },
+      {
+        "cat": "scent",
+        "sku": "322396",
+        "price": "$63.00",
+        "img": "./assets/dfb7162fd90dea756646e7b165e62373.webp",
+        "photo": "322396_1.jpg",
+        "name": "Rento Foot Care Set",
+        "desc": "A Finnish foot care set that turns your post-sauna routine into a soothing ritual."
+      },
+      {
+        "cat": "scent",
+        "sku": "CLE750",
+        "photo": "CLE750_1.jpg",
+        "price": "$25.00",
+        "img": "./assets/5b96864eebf61072a7af997c71a4f4ad.webp",
+        "name": "750ml Sauna Room Cleaner",
+        "desc": "Spray-and-wipe cleaner made for the wood surfaces inside your sauna."
+      },
+      {
+        "cat": "thermo",
+        "sku": "163430",
+        "price": "$109.00",
+        "img": "./assets/98721930381283cc313de0a432234e74.webp",
+        "photo": "163430_1.jpg",
+        "name": "Narvi Black Thermometer (Celsius)",
+        "desc": "Durable black aluminum face in a natural birch frame. Reads in Celsius."
+      },
+      {
+        "cat": "thermo",
+        "sku": "163590",
+        "price": "$109.00",
+        "img": "./assets/9b9fab8c9f2f6e14e270cae2882a4c8c.webp",
+        "photo": "163590_1.jpg",
+        "name": "Narvi Black Thermometer (Fahrenheit)",
+        "desc": "The same black aluminum and birch thermometer, reading in Fahrenheit."
+      },
+      {
+        "cat": "thermo",
+        "sku": "163431",
+        "price": "$71.50",
+        "img": "./assets/740cd40c292b97d7039e86fb1d14c774.webp",
+        "photo": "163431_1.jpg",
+        "name": "Narvi Black Sand Timer",
+        "desc": "15-minute timer in black steel with birch details. Time your rounds without a phone."
+      },
+      {
+        "cat": "thermo",
+        "sku": "THEM01",
+        "price": "$23.00",
+        "img": "./assets/ece67e21882610e37ddc8f0fa2b166a4.webp",
+        "photo": "THEM01_1.jpg",
+        "name": "Cedar Sauna Thermometer",
+        "desc": "Classic teardrop cedar shape with a dial that reads both temperature and humidity."
+      },
+      {
+        "cat": "thermo",
+        "sku": "SAND1",
+        "price": "$33.00",
+        "img": "./assets/fc2c0b4087941b7b54297dc0d7852b17.webp",
+        "photo": "SAND1_1.jpg",
+        "name": "Wall Mount 15-Minute Sand Timer",
+        "desc": "Heat- and moisture-tolerant cedar frame for a classic, rustic look on the wall."
+      }
+    ]
+  },
   "sections": [
     {
       "name": "Promo bar",
@@ -1821,12 +3033,15 @@
               ]
             },
             {
-              "type": "link",
-              "html": "",
-              "text": "",
-              "href": null,
-              "variant": "button",
-              "label": "View details for the {{k.name}} package"
+              "type": "button",
+              "label": "View details for the {{k.name}} package",
+              "blocks": [
+                {
+                  "type": "image",
+                  "src": "{{k.img}}",
+                  "alt": "{{k.alt}}"
+                }
+              ]
             },
             {
               "type": "text",
@@ -1947,12 +3162,32 @@
           "as": "p",
           "blocks": [
             {
-              "type": "link",
-              "html": "Photo: {{p.photo}}",
-              "text": "Photo: {{p.photo}}",
-              "href": null,
-              "variant": "button",
-              "label": "View details for {{p.name}}"
+              "type": "button",
+              "label": "View details for {{p.name}}",
+              "blocks": [
+                {
+                  "type": "if",
+                  "value": "{{p.hasImg}}",
+                  "blocks": [
+                    {
+                      "type": "image",
+                      "src": "{{p.img}}",
+                      "alt": "{{p.alt}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{p.noImg}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "Photo: {{p.photo}}",
+                      "text": "Photo: {{p.photo}}"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "text",
@@ -1971,11 +3206,16 @@
               ]
             },
             {
-              "type": "link",
-              "html": "<strong>{{p.name}}</strong>",
-              "text": "{{p.name}}",
-              "href": null,
-              "variant": "button"
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "html": "{{p.name}}",
+                  "text": "{{p.name}}"
+                }
+              ]
             },
             {
               "type": "paragraph",

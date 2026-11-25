@@ -53,6 +53,22 @@ test("button-styled anchor, pill anchor, plain link and button", () => {
   ]);
 });
 
+test("a button holding layout keeps its parts, conditions and images", () => {
+  const html = `<button type="button" onClick="{{o.pick}}" aria-label="{{o.label}}"><img src="{{o.img}}" alt="{{o.alt}}"><span style="display: flex"><span>{{o.label}}</span><span>{{o.sub}}</span></span><sc-if value="{{o.on}}"><span>Selected</span></sc-if></button>`;
+  expect(blocksFrom(el(html), ctx)).toEqual([
+    {
+      type: "button",
+      label: "{{o.label}}",
+      blocks: [
+        { type: "image", src: "{{o.img}}", alt: "{{o.alt}}" },
+        { type: "text", html: "{{o.label}}", text: "{{o.label}}" },
+        { type: "text", html: "{{o.sub}}", text: "{{o.sub}}" },
+        { type: "if", value: "{{o.on}}", blocks: [{ type: "text", html: "Selected", text: "Selected" }] },
+      ],
+    },
+  ]);
+});
+
 test("text around a link stays one text block", () => {
   const html = `<div><span>Prefer to talk? Call <a href="tel:+14374296623">(437) 429-6623</a>.</span></div>`;
   expect(blocksFrom(el(html), ctx)).toEqual([
@@ -86,7 +102,7 @@ test("table rows and lists", () => {
   const html = `<div><table><thead><tr><th>Output</th><th>Amps</th></tr></thead><tbody><tr><td>10 kW</td><td>27 A</td></tr></tbody></table>
     <ul><li>2 people</li><li><em>Clear</em> cedar</li></ul><ol><li>One</li></ol></div>`;
   expect(blocksFrom(el(html), ctx)).toEqual([
-    { type: "table", rows: [["Output", "Amps"], ["10 kW", "27 A"]] },
+    { type: "table", caption: null, headerRows: 1, rows: [["Output", "Amps"], ["10 kW", "27 A"]] },
     { type: "list", ordered: false, items: [{ html: "2 people", text: "2 people" }, { html: "<em>Clear</em> cedar", text: "Clear cedar" }] },
     { type: "list", ordered: true, items: [{ html: "One", text: "One" }] },
   ]);
@@ -143,6 +159,18 @@ test("address is ordinary text with its line breaks", () => {
     { type: "text", html: "17380 Highway 27<br>Schomberg, ON", text: "17380 Highway 27\nSchomberg, ON" },
   ]);
   expect(warn).not.toHaveBeenCalled();
+});
+
+test("table keeps its caption; header rows are counted with or without thead", () => {
+  const html = `<table><caption>Electric vs <em>wood</em> heaters</caption><tr><th>Type</th><th>Heat-up</th></tr><tr><td>Electric</td><td>30 min</td></tr></table>`;
+  expect(blocksFrom(el(html), ctx)).toEqual([
+    {
+      type: "table",
+      caption: "Electric vs <em>wood</em> heaters",
+      headerRows: 1,
+      rows: [["Type", "Heat-up"], ["Electric", "30 min"]],
+    },
+  ]);
 });
 
 test("form keeps its copy and pairs labels with controls", () => {

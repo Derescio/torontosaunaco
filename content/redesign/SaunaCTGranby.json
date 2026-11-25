@@ -621,12 +621,15 @@
                   "as": "t",
                   "blocks": [
                     {
-                      "type": "link",
-                      "html": "",
-                      "text": "",
-                      "href": null,
-                      "variant": "button",
-                      "label": "{{t.label}}"
+                      "type": "button",
+                      "label": "{{t.label}}",
+                      "blocks": [
+                        {
+                          "type": "image",
+                          "src": "{{t.src}}",
+                          "alt": ""
+                        }
+                      ]
                     }
                   ]
                 }
@@ -744,11 +747,64 @@
           "as": "st",
           "blocks": [
             {
-              "type": "link",
-              "html": "<strong>STEP 0{{st.num}}</strong> {{st.title}} {{st.subtitle}} {{st.subtitle}} <strong>CLOSE</strong> <strong>EDIT</strong>",
-              "text": "STEP 0{{st.num}} {{st.title}} {{st.subtitle}} {{st.subtitle}} CLOSE EDIT",
-              "href": null,
-              "variant": "button"
+              "type": "button",
+              "label": null,
+              "blocks": [
+                {
+                  "type": "text",
+                  "html": "<strong>STEP 0{{st.num}}</strong>",
+                  "text": "STEP 0{{st.num}}"
+                },
+                {
+                  "type": "text",
+                  "html": "{{st.title}}",
+                  "text": "{{st.title}}"
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.done}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.notDone}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "{{st.subtitle}}",
+                      "text": "{{st.subtitle}}"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.open}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>CLOSE</strong>",
+                      "text": "CLOSE"
+                    }
+                  ]
+                },
+                {
+                  "type": "if",
+                  "value": "{{st.closed}}",
+                  "blocks": [
+                    {
+                      "type": "text",
+                      "html": "<strong>EDIT</strong>",
+                      "text": "EDIT"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "if",
@@ -812,11 +868,47 @@
                           "value": "{{o.on}}",
                           "blocks": [
                             {
-                              "type": "link",
-                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} <strong>{{o.priceText}}</strong>",
-                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
-                              "href": null,
-                              "variant": "button"
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.priceText}}</strong>",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
                             }
                           ]
                         },
@@ -825,11 +917,47 @@
                           "value": "{{o.off}}",
                           "blocks": [
                             {
-                              "type": "link",
-                              "html": "{{o.photo}} <strong>{{o.label}}</strong> {{o.sub}} {{o.priceText}}",
-                              "text": "{{o.photo}} {{o.label}} {{o.sub}} {{o.priceText}}",
-                              "href": null,
-                              "variant": "button"
+                              "type": "button",
+                              "label": null,
+                              "blocks": [
+                                {
+                                  "type": "if",
+                                  "value": "{{o.hasImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "image",
+                                      "src": "{{o.img}}",
+                                      "alt": "{{o.alt}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "if",
+                                  "value": "{{o.noImg}}",
+                                  "blocks": [
+                                    {
+                                      "type": "text",
+                                      "html": "{{o.photo}}",
+                                      "text": "{{o.photo}}"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "<strong>{{o.label}}</strong>",
+                                  "text": "{{o.label}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.sub}}",
+                                  "text": "{{o.sub}}"
+                                },
+                                {
+                                  "type": "text",
+                                  "html": "{{o.priceText}}",
+                                  "text": "{{o.priceText}}"
+                                }
+                              ]
                             }
                           ]
                         }
