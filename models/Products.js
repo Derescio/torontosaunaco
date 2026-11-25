@@ -1,4 +1,5 @@
 import { Schema, model, models } from "mongoose";
+import { slugFromName } from "./plugins/slugFromName.js";
 
 const ProductsSchema = new Schema(
   {
@@ -169,6 +170,8 @@ const ProductsSchema = new Schema(
     timestamps: true,
   }
 );
+
+ProductsSchema.plugin(slugFromName);
 
 const Products = models.Products || model("Products", ProductsSchema);
 

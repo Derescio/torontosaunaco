@@ -1,4 +1,5 @@
 import { fetchProducts } from "@/assets/utils/request";
+import { productPath } from "@/lib/products/slugs";
 
 const baseUrl = "https://www.thetorontosaunaco.com";
 
@@ -56,7 +57,8 @@ export default async function sitemap() {
     const products = await fetchProducts();
     if (products && Array.isArray(products)) {
       productSitemapEntries = products.map((product) => ({
-        url: `${baseUrl}/saunas/${product._id}`,
+        // Slug URL when the product has one; until then (and for hot tubs) the old ID URL, which still renders.
+        url: `${baseUrl}${productPath(product) ?? `/saunas/${product._id}`}`,
         lastModified: currentDate,
         changeFrequency: "monthly",
         priority: 0.6,
@@ -109,28 +111,11 @@ export default async function sitemap() {
     priority: 0.5,
   }));
 
-  // Product category combinations for better SEO coverage
-  const productCategories = [
-    "/saunas/668af06648215c199c427a97",
-    "/saunas/668af06648215c199c406a65",
-    "/cold-plunge/6917e50d3f05f33c3f08ca61",
-    "/saunas/668af06648215c199c406a64",
-    "/saunas/691273a0fffa32247e8079f5",
-  ];
-
-  const categoryEntries = productCategories.map((category) => ({
-    url: `${baseUrl}${category}`,
-    lastModified: currentDate,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
-
   // Combine all entries
   return [
     ...staticSitemapEntries,
     ...productSitemapEntries,
     ...heaterSitemapEntries,
     ...serviceAreaEntries,
-    ...categoryEntries,
   ];
 }
