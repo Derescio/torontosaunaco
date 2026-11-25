@@ -105,6 +105,11 @@ function sharedRow(entry) {
     option.push(para(text(`Website: ${entry.websiteLabels.join("; ")}`, { size: 16, color: GREY, italics: true })));
   }
   option.push(para(text(`On ${entry.products.length} products: ${shown}${more}`, { size: 16, color: GREY })));
+  if (entry.notOffered && entry.outcome !== "design-only") {
+    option.push(
+      para(text(`Not on the website for ${entry.notOffered} of ${entry.products.length} products`, { size: 16, color: GREY, bold: true })),
+    );
+  }
   const [website, design] = priceCells({ ...entry, website: entry.websiteMin });
   const websiteText = entry.outcome === "design-only" ? website : range(entry.websiteMin, entry.websiteMax) ?? website;
   return new TableRow({

@@ -20,6 +20,7 @@
     "HeaterRevive.dc.html": ["698e05e412f4e6caef8ed457", "698e080412f4e6caef8ed458"]
   },
   "options": {
-    "SaunaCTGeorgian:size:l_porch": "db:668c43ff22b4807f7ad15453:price"
+    "SaunaCTGeorgian:size:l_porch": "db:668c43ff22b4807f7ad15453:price",
+    "*:heater:h_kuru": null
   }
 }

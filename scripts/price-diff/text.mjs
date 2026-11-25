@@ -15,24 +15,31 @@ export function tokens(label) {
   s = s.replace(/[’′‘]/g, "'").replace(/×/g, "x").replace(/\bw\//g, " with ");
   s = s.replace(/(\d+)\s*'?\s*x\s*(\d+)\s*'?/g, " $1x$2 ");
   s = s.replace(/(\d+(?:\.\d+)?)\s*kw\b/g, " $1kw ");
+  s = s.replace(/(\d+(?:\.\d+)?)\s*(ml|l)\b/g, " $1$2 ");
   // "3-phase" is one token; "half-moon" is two words, so it matches "Half Moon".
   s = s.replace(/(\d)-([a-z0-9])|([a-z0-9])-(\d)/g, "$1$3$2$4");
   return s
     .split(/[^a-z0-9.]+/)
-    .map((t) => (/^\d+(\.\d+)?kw$/.test(t) ? t : t.replace(/\./g, "")))
+    .map((t) => (/^\d+(\.\d+)?(kw|ml|l)$/.test(t) ? t : t.replace(/\./g, "")))
     .filter((t) => t && !STOP.has(t))
     .map(stem);
 }
 
-/** Dice coefficient on token sets, 0–1. */
-export function similarity(a, b) {
-  const x = new Set(tokens(a));
-  const y = new Set(tokens(b));
+/** A size (7x6), power (12kw) or volume (250ml, 2.5l) token. */
+export const isMeasure = (t) => /^\d+x\d+$|^\d+(\.\d+)?(kw|ml|l)$/.test(t);
+
+/** Dice coefficient of two token lists, 0–1. */
+export function dice(a, b) {
+  const x = new Set(a);
+  const y = new Set(b);
   if (!x.size || !y.size) return 0;
   let shared = 0;
   for (const t of x) if (y.has(t)) shared++;
   return (2 * shared) / (x.size + y.size);
 }
+
+/** Dice coefficient on label tokens, 0–1. */
+export const similarity = (a, b) => dice(tokens(a), tokens(b));
 
 /** A price as a number, or null when it isn't one ("Call", null, NaN). */
 export function parseMoney(v) {

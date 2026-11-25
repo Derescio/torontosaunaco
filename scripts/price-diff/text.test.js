@@ -13,6 +13,11 @@ test("power becomes one token", () => {
   expect(tokens("Homecraft Apex Mini 7.5kW")).toEqual(["homecraft", "apex", "mini", "7.5kw"]);
 });
 
+test("volumes become one token", () => {
+  expect(tokens("Meldos Natural Sauna Oil (2.5 L)")).toEqual(["meldo", "natural", "oil", "2.5l"]);
+  expect(tokens("Meldos Natural Sauna Oil 250ml")).toEqual(["meldo", "natural", "oil", "250ml"]);
+});
+
 test("stop words, w/ and stems", () => {
   expect(tokens("The Luna Sauna w/Porch")).toEqual(["luna", "porch"]);
   expect(tokens("Delivery + Installation")).toEqual(["delivery", "install"]);

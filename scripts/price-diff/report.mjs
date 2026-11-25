@@ -1,21 +1,35 @@
 // Pairs design price points with website (MongoDB) price points and builds the report the Word document is made from.
 // Spec: docs/superpowers/specs/2026-11-24-price-diff-design.md
 
-import { similarity, samePrice, tokens } from "./text.mjs";
+import { similarity, samePrice, tokens, dice, isMeasure } from "./text.mjs";
 import { productPoints, heaterPoints, accessoryPoints, newestUpdate } from "./website.mjs";
 
 const SECTION_ORDER = ["Outdoor saunas", "Indoor saunas", "Cold plunges", "Outdoor showers", "Heaters", "Accessories"];
 const PRODUCT_THRESHOLD = 0.5;
-// Options pair at 0.6, or at 0.5 when both labels name the same size or power ("7' × 4'" ↔ "7’ x 4’ Knotty Cedar",
-// "Apex 12 kW (208V)" ↔ "Homecraft Apex 12 kW"). Plain word overlap at 0.5 pairs unrelated things ("Back wall and
-// L-bench" ↔ "Back Wall Bronze Window").
 const OPTION_THRESHOLD = 0.6;
-const MEASURED_THRESHOLD = 0.5;
-const MEASURE = /^\d+x\d+$|^\d+(\.\d+)?kw$/;
+const MEASURED_WORDS_THRESHOLD = 0.4;
 
-function minScore(a, b) {
-  const measures = new Set(tokens(a).filter((t) => MEASURE.test(t)));
-  return tokens(b).some((t) => measures.has(t)) ? MEASURED_THRESHOLD : OPTION_THRESHOLD;
+/**
+ * How well two option labels pair, 0 when they must not. When both name a size, power or volume, those must agree
+ * (a 6 kW package never pairs with an 8 kW heater, 8' × 6' never with 7' × 6'), and the remaining words must still
+ * overlap ("Homecraft Apex Mini 9 kW" is not "Homecraft Revive 9 kW"). Otherwise plain word overlap of 0.6 is needed
+ * ("Back wall and L-bench" is not "Back Wall Bronze Window").
+ */
+export function pairScore(a, b) {
+  const ta = tokens(a);
+  const tb = tokens(b);
+  const ma = ta.filter(isMeasure);
+  const mb = tb.filter(isMeasure);
+  if (ma.length && mb.length) {
+    if (!ma.some((t) => mb.includes(t))) return 0;
+    const wa = ta.filter((t) => !isMeasure(t));
+    const wb = tb.filter((t) => !isMeasure(t));
+    if (!wa.length || !wb.length) return 1; // a bare size ("7' × 4'") against the same size with its wood
+    const words = dice(wa, wb);
+    return words >= MEASURED_WORDS_THRESHOLD ? words : 0;
+  }
+  const score = dice(ta, tb);
+  return score >= OPTION_THRESHOLD ? score : 0;
 }
 const OUTCOMES = ["same", "differs", "on-request", "design-only", "website-only"];
 
@@ -50,8 +64,8 @@ function pairGreedy(designPts, websitePts, paired, used) {
     if (paired.has(d.id)) return;
     websitePts.forEach((w, j) => {
       if (used.has(w.id) || w.kind !== d.kind) return;
-      const score = similarity(d.label, w.label);
-      if (score >= minScore(d.label, w.label)) candidates.push({ d, w, score, i, j });
+      const score = pairScore(d.label, w.label);
+      if (score > 0) candidates.push({ d, w, score, i, j });
     });
   });
   candidates.sort((a, b) => b.score - a.score || a.i - b.i || a.j - b.j);
@@ -77,12 +91,26 @@ function pairFromPrice(designPts, websitePts, paired, used) {
   used.add(own[0].id);
 }
 
-function designRow(d, w) {
-  if (!w) return { id: d.id, group: d.group, label: d.label, websiteLabel: null, website: null, design: d.price, outcome: "design-only" };
+/**
+ * An option override for a design point id: a website point id to force a pair, null to never pair, or undefined.
+ * Keys are exact ids ("SaunaBarrel:wood:clear") or "*:<group>:<option>" for the same option on every page.
+ */
+function optionOverride(overrides, id) {
+  const options = overrides.options ?? {};
+  if (Object.hasOwn(options, id)) return options[id];
+  const wildcard = `*:${id.split(":").slice(1).join(":")}`;
+  return Object.hasOwn(options, wildcard) ? options[wildcard] : undefined;
+}
+
+/** `websiteIds` are the database points a decision on this row would change (the paired point and identical copies). */
+function designRow(d, w, websiteIds) {
+  if (!w) {
+    return { id: d.id, group: d.group, label: d.label, websiteLabel: null, website: null, design: d.price, outcome: "design-only", websiteIds: [] };
+  }
   let outcome;
   if (d.price === null) outcome = "on-request";
   else outcome = samePrice(d.price, w.price) ? "same" : "differs";
-  return { id: d.id, group: d.group, label: d.label, websiteLabel: w.label, website: w.price, design: d.price, outcome };
+  return { id: d.id, group: d.group, label: d.label, websiteLabel: w.label, website: w.price, design: d.price, outcome, websiteIds };
 }
 
 export function buildReport({ designProducts, catalogue, overrides = { products: {}, options: {} }, now = new Date().toISOString() }) {
@@ -114,39 +142,62 @@ export function buildReport({ designProducts, catalogue, overrides = { products:
     const websitePts = docs.flatMap((doc) => pointsOf.get(idOf(doc)));
     const paired = new Map();
     const used = new Set();
+    const pairable = [];
     for (const d of product.points) {
-      const forcedId = overrides.options?.[d.id];
-      const w = forcedId && websitePts.find((p) => p.id === forcedId && !used.has(p.id));
+      const override = optionOverride(overrides, d.id);
+      if (override === null) continue; // explicitly never paired: stays "only in the design"
+      const w = override && websitePts.find((p) => p.id === override && !used.has(p.id));
       if (w) {
         paired.set(d.id, w);
         used.add(w.id);
       }
+      pairable.push(d);
     }
-    pairGreedy(product.points, websitePts, paired, used);
-    pairFromPrice(product.points, websitePts, paired, used);
+    pairGreedy(pairable, websitePts, paired, used);
+    pairFromPrice(pairable, websitePts, paired, used);
     pairGreedy(
-      product.points.filter((d) => d.kind === "addon"),
+      pairable.filter((d) => d.kind === "addon"),
       fallback,
       paired,
       new Set(),
     );
 
+    // Variants of one product (knotty and clear records) repeat the same options: one row covers every copy.
+    const claimed = new Set(used);
+    const copiesOf = (w) => {
+      const ids = [w.id];
+      for (const x of websitePts) {
+        if (x !== w && !claimed.has(x.id) && x.label === w.label && x.price === w.price) {
+          ids.push(x.id);
+          claimed.add(x.id);
+        }
+      }
+      return ids;
+    };
+
     const rows = [];
     let sameCount = 0;
     for (const d of product.points) {
-      const row = designRow(d, paired.get(d.id));
+      const w = paired.get(d.id);
+      const row = designRow(d, w, w ? (websitePts.includes(w) ? copiesOf(w) : [w.id]) : []);
       totals[row.outcome]++;
       if (row.outcome === "same") sameCount++;
       else rows.push(row);
     }
-    // Variants of one product (knotty and clear records) repeat the same options; list each once.
-    const seen = new Set(websitePts.filter((w) => used.has(w.id)).map((w) => `${w.label}|${w.price}`));
     for (const w of websitePts) {
-      const key = `${w.label}|${w.price}`;
-      if (used.has(w.id) || seen.has(key)) continue;
-      seen.add(key);
+      if (claimed.has(w.id)) continue;
+      claimed.add(w.id);
       totals["website-only"]++;
-      rows.push({ id: w.id, group: null, label: w.label, websiteLabel: w.label, website: w.price, design: null, outcome: "website-only" });
+      rows.push({
+        id: w.id,
+        group: null,
+        label: w.label,
+        websiteLabel: w.label,
+        website: w.price,
+        design: null,
+        outcome: "website-only",
+        websiteIds: copiesOf(w),
+      });
     }
 
     const entry = { name: product.name, file: product.file, matchedTo: [...new Set(docs.map((d) => d.name))], sameCount, rows };
@@ -203,17 +254,23 @@ function extractShared(products) {
     if (names.length < SHARED_MIN_PRODUCTS) continue;
     const rows = items.map((i) => i.row);
     const prices = rows.map((r) => r.website).filter((p) => p !== null);
-    const outcomes = new Set(rows.map((r) => r.outcome));
     const first = rows[0];
+    // Rows share a label and design price, so only the website side varies: some products may have no website price.
+    let outcome;
+    if (first.outcome === "website-only") outcome = "website-only";
+    else if (!prices.length) outcome = "design-only";
+    else outcome = first.design === null ? "on-request" : "differs";
     shared.push({
       id: `shared:${key}`,
       group: first.group,
       label: first.label,
       websiteLabels: [...new Set(rows.map((r) => r.websiteLabel).filter(Boolean))].sort(),
+      websiteIds: rows.flatMap((r) => r.websiteIds),
+      notOffered: rows.filter((r) => r.website === null).length,
       websiteMin: prices.length ? Math.min(...prices) : null,
       websiteMax: prices.length ? Math.max(...prices) : null,
       design: first.design,
-      outcome: outcomes.size === 1 ? first.outcome : "differs",
+      outcome,
       products: names.sort(),
       rowIds: rows.map((r) => r.id),
     });

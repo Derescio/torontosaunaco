@@ -37,6 +37,22 @@ const report = {
       outcome: "differs",
       products: ["Sauna 1", "Sauna 2", "Sauna 3"],
       rowIds: ["S1:heat:kip", "S2:heat:kip", "S3:heat:kip"],
+      websiteIds: ["db:d1:stove_type.Harvia Kip 6kW"],
+      notOffered: 0,
+    },
+    {
+      id: "shared:roof:Black metal roof:on-request",
+      group: "Roof",
+      label: "Black metal roof",
+      websiteLabels: ["Black Metal Roof"],
+      websiteMin: 950,
+      websiteMax: 950,
+      design: null,
+      outcome: "on-request",
+      products: ["Roof 1", "Roof 2", "Roof 3"],
+      rowIds: ["R1:roof:black", "R2:roof:black", "R3:roof:black"],
+      websiteIds: ["db:r1:x", "db:r2:x"],
+      notOffered: 1,
     },
   ],
   designOnly: [{ name: "The Avalon Sauna", file: "SaunaAvalon.dc.html", basePrice: 15890 }],
@@ -67,7 +83,7 @@ test("renders a Word document with the product table, decisions and appendix", a
   for (const text of [
     "Price check: new design vs website",
     "Prepared 24 November 2026. Website prices as of 21 October 2026.",
-    "This document has 5 lines to decide: 1 for options offered on many products and 4 for individual products.",
+    "This document has 6 lines to decide: 2 for options offered on many products and 4 for individual products.",
     "Prices compared, across all products",
     "The Pure Cube 552",
     "Matched to: The Pure Cube 552",
@@ -88,6 +104,7 @@ test("renders a Word document with the product table, decisions and appendix", a
     "$1,470 – $1,550",
     "On 3 products: Sauna 1, Sauna 2, Sauna 3",
     "shared:heat:Harvia KIP 6 kW package:1760",
+    "Not on the website for 1 of 3 products",
   ]) {
     expect(xml).toContain(text);
   }
