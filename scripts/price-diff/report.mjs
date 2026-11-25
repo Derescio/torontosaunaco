@@ -36,7 +36,7 @@ const OUTCOMES = ["same", "differs", "on-request", "design-only", "website-only"
 const idOf = (doc) => String(doc._id);
 const basePriceOf = (points) => points.find((p) => p.kind === "base")?.price ?? null;
 
-function matchDocs(product, docs, overrides) {
+export function matchDocs(product, docs, overrides) {
   if (Object.hasOwn(overrides.products ?? {}, product.file)) {
     const ids = overrides.products[product.file];
     return ids === null ? [] : docs.filter((d) => ids.includes(idOf(d)));
