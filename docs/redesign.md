@@ -130,7 +130,17 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   render as before when a product has no slug. The sitemap lists slug URLs. Spec:
   `docs/superpowers/specs/2026-11-25-slugs-design.md`. Finding for the heater pages: `HeaterApex208` and
   `HeaterApex240` both match one "Homecraft Apex" record, and `HeaterRevive` matches two.
-- [ ] Shared SEO helper: build Next `metadata` + JSON-LD from the extracted head and the `page-map.csv` row.
+- [x] **Shared SEO helper** (`rd/1-seo`): `pageSeo(route, { price })` in `lib/site/seo.js` returns Next `metadata`
+  and JSON-LD from the design head (`content/seo.json`, written by `npm run extract:dc`; it sits outside
+  `content/redesign/` because the price diff and slug backfill read every file there). Rules applied every time:
+  og:type `"website"`, domain `www.thetorontosaunaco.com`, one business `@id` (`/#business`, was `#store` on 20
+  pages) with Schomberg, `noindex` from the page-map Index column (`/cart`). Catalogue prices come only from the
+  `price` the page passes from MongoDB (`Offer.price` / `AggregateOffer.lowPrice`, plus `availability` and
+  `priceValidUntil`); without one, `offers` is dropped. The city pages' Service offer ($1,750 delivery +
+  installation) stays as designed. Design images (`/_blob/<id>`) map through `content/image-map.json` (empty
+  until the photos are matched); unmapped ones are dropped and og:image falls back to `/og/Redesign_BG_Image.png`.
+  Use: `export const metadata = pageSeo("/about").metadata` and `<JsonLd data={pageSeo("/about").jsonLd} />`
+  (`components/site/JsonLd.jsx`). Spec: `docs/superpowers/specs/2026-11-25-seo-helper-design.md`.
 
 ### Phase 2: Content pages (~4 days)
 Using the 36 files we have:
