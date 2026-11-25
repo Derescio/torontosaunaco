@@ -134,13 +134,19 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   and JSON-LD from the design head (`content/seo.json`, written by `npm run extract:dc`; it sits outside
   `content/redesign/` because the price diff and slug backfill read every file there). Rules applied every time:
   og:type `"website"`, domain `www.thetorontosaunaco.com`, one business `@id` (`/#business`, was `#store` on 20
-  pages) with Schomberg, `noindex` from the page-map Index column (`/cart`). Catalogue prices come only from the
-  `price` the page passes from MongoDB (`Offer.price` / `AggregateOffer.lowPrice`, plus `availability` and
-  `priceValidUntil`); without one, `offers` is dropped. The city pages' Service offer ($1,750 delivery +
+  pages) with Schomberg, `noindex` from the page-map Index column (`/cart`). Catalogue prices come only from
+  MongoDB: `price` for the page's own product, `prices: { "<route>": number }` for products listed on the page
+  (`/accessories` lists 70, `/sauna-heaters` 14); each sets `Offer.price` / `AggregateOffer.lowPrice` plus
+  `availability` and `priceValidUntil`. A Product with no price is removed (inside a list it becomes a plain link),
+  since a Product without offers is an invalid rich result. The city pages' Service offer ($1,750 delivery +
   installation) stays as designed. Design images (`/_blob/<id>`) map through `content/image-map.json` (empty
   until the photos are matched); unmapped ones are dropped and og:image falls back to `/og/Redesign_BG_Image.png`.
+  **Fill the image map before product pages go live:** Google wants an image on every Product.
   Use: `export const metadata = pageSeo("/about").metadata` and `<JsonLd data={pageSeo("/about").jsonLd} />`
   (`components/site/JsonLd.jsx`). Spec: `docs/superpowers/specs/2026-11-25-seo-helper-design.md`.
+  **Owner decision pending:** two design prices sit in copy, not in `offers`: "sauna kits from $8,070" (`/saunas/indoor`
+  description) and "Pure Cube 552 is $11,884" (homepage FAQ). Keep, update to the MongoDB price, or remove? Until
+  then they're allow-listed in `lib/site/seo.routes.test.js`, which fails on any other dollar amount.
 
 ### Phase 2: Content pages (~4 days)
 Using the 36 files we have:
