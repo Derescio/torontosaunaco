@@ -118,9 +118,13 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   from the name on save). A slug is the route below its root, so indoor ones keep their folder
   (`indoor/pure-cube-552`); `productPath()` in `lib/products/slugs.js` is the one place that rule lives. Hot tubs have
   no new URL. `npm run slugs:backfill` plans slugs from the price diff's design ↔ product matching (`primary.json`
-  picks Knotty Red Cedar for the two Arctic records), dry run by default, `-- --apply` writes missing slugs only,
-  staging only (`test` needs `--production`). Applied on staging 25 Nov: 42 design slugs, 4 from names (3 hot tubs,
-  the Arctic "test" record), 51 accessories. **Re-run it after `copy-test-to-staging.mjs --drop`**, which wipes them.
+  picks Knotty Red Cedar for the two Arctic records), dry run by default; `npm run slugs:backfill:apply` writes
+  missing slugs only (not `npm run slugs:backfill -- --apply`: Windows PowerShell drops the `--`, so it only
+  dry-runs). Staging only (`test` needs `--production`). Applied on staging 25 Nov: 42 design slugs, 4 from names
+  (3 hot tubs, the Arctic "test" record), 51 accessories. The Arctic "Clear Red Cedar test" record
+  (`668af06648215c199c420a66`) was then deleted from staging at the owner's request; delete it from `test` too (owner,
+  in Atlas), or the next staging copy brings it back. **Re-run `npm run slugs:backfill:apply` after
+  `copy-test-to-staging.mjs --write --drop`**, which wipes the slugs.
   Today's pages now serve at `/saunas/<slug>`, `/saunas/indoor/<slug>`, `/cold-plunges/<slug>`,
   `/outdoor-showers/<slug>`; old ID URLs (`/saunas/<id>`, `/cold-plunge/<id>`, `/showers/<id>`) 308 to them, and
   render as before when a product has no slug. The sitemap lists slug URLs. Spec:
@@ -162,7 +166,8 @@ Using the 36 files we have:
 - [ ] Regression: `/editor` edits show up on the new pages (ISR revalidate). Admin login still works.
 
 ### Phase 6: Launch
-- [ ] Owner: `npm run slugs:backfill -- --production` (dry run on `test`), then with `--apply`, before the merge.
+- [ ] Owner, before the merge, with `MONGO_URI` pointing at `test`:
+  `node --env-file=.env scripts/slugs/backfill-slugs.mjs --production` (dry run), then add `--apply`.
   Without it old product URLs still render but don't redirect, and the new slug URLs 404.
 - [ ] Merge to `main` → Vercel production. Submit the new sitemap in GSC.
 - [ ] Monitor GSC 404s/coverage and quote emails for 2–4 weeks.

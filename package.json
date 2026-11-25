@@ -14,7 +14,8 @@
     "test:watch": "jest --watchAll",
     "extract:dc": "node scripts/extract-dc.mjs",
     "price-diff": "node --env-file=.env scripts/price-diff.mjs",
-    "slugs:backfill": "node --env-file=.env scripts/slugs/backfill-slugs.mjs"
+    "slugs:backfill": "node --env-file=.env scripts/slugs/backfill-slugs.mjs",
+    "slugs:backfill:apply": "node --env-file=.env scripts/slugs/backfill-slugs.mjs --apply"
   },
   "dependencies": {
     "@cloudinary/react": "^1.13.0",

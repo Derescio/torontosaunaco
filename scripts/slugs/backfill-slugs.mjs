@@ -2,7 +2,9 @@
 // Slug backfill: gives every product and accessory a slug. Products with a design page get its route
 // (/saunas/indoor/pure-cube-552 → "indoor/pure-cube-552"); the rest get their slugified name. Never overwrites a slug.
 // Usage: npm run slugs:backfill                 dry run on staging (prints the plan, writes nothing)
-//        npm run slugs:backfill -- --apply      write missing slugs on staging
+//        npm run slugs:backfill:apply           write missing slugs on staging
+//        (Windows PowerShell 5.1 drops "--" before npm args, so "npm run slugs:backfill -- --apply" only dry-runs;
+//        use the :apply script, or: node --env-file=.env scripts/slugs/backfill-slugs.mjs --apply)
 //        add --production to run on "test" (owner only, at cutover). MONGO_URI is never printed.
 // Spec: docs/superpowers/specs/2026-11-25-slugs-design.md
 
