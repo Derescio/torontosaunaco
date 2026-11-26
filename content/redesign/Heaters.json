@@ -1114,8 +1114,8 @@
         },
         {
           "type": "text",
-          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
-          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+          "html": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
+          "text": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. Get directions"
         },
         {
           "type": "text",
@@ -2167,8 +2167,8 @@
         },
         {
           "type": "paragraph",
-          "html": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg (King Township), ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation.",
-          "text": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg (King Township), ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation."
+          "html": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg, ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation.",
+          "text": "Book a visit to our Schomberg showroom (17380 Highway 27, Schomberg, ON L0G 1T0) to see electric and wood-burning heaters side by side, or call us for a recommendation."
         },
         {
           "type": "link",
