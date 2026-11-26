@@ -60,6 +60,15 @@ describe.each(Object.entries(POLICY_PAGES))("PolicyPage %s", (route, page) => {
   });
 });
 
+it("pins the intro and at-a-glance column on desktop only", () => {
+  render(<PolicyPage page={POLICY_PAGES["/warranty"]} />);
+  const box = screen.getByText("AT A GLANCE").parentElement; // the dark glance box
+  const column = box.parentElement; // intro + glance column
+  expect(column).toHaveTextContent(POLICY_PAGES["/warranty"].sections[1].blocks[0].text);
+  expect(column).toHaveClass("desktop:sticky", "desktop:top-8");
+  expect(column).not.toHaveClass("sticky");
+});
+
 it("shipping says Schomberg, not King Township", () => {
   const { container } = render(<PolicyPage page={POLICY_PAGES["/shipping"]} />);
   expect(container.textContent).toContain("in Schomberg, by appointment");

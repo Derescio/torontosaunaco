@@ -76,7 +76,8 @@ export default function PolicyPage({ page }) {
 
       <section className="border-t border-line bg-white">
         <div className={cn(CONTAINER, "grid items-start gap-14 py-16 desktop:grid-cols-2 desktop:pb-24")}>
-          <div className="flex flex-col gap-4">
+          {/* Pinned on desktop so the summary stays beside long sections (owner, 2026-11-26; the design doesn't pin). */}
+          <div className="flex flex-col gap-4 desktop:sticky desktop:top-8">
             <Block block={p.intro} className="text-lead" />
             <Glance label={p.glance.label} items={p.glance.items} />
           </div>
