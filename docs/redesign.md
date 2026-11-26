@@ -107,7 +107,9 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 - [x] **Extraction script** (`rd/1-extract`): `scripts/extract-dc.mjs` turns the 108 `.dc.html` pages into JSON in
   `content/redesign/` (route, page-map row, SEO head, data objects, copy as typed blocks, warnings), plus `index.json`
   (route → file). Re-run with `npm run extract:dc` (folder: argument, `DC_SITE_DIR`, or `~/Downloads/TSC-REVAMP/Site`)
-  and commit the diff. Spec: `docs/superpowers/specs/2026-11-24-extract-dc-design.md`. Findings for the next slices:
+  and commit the diff. Spec: `docs/superpowers/specs/2026-11-24-extract-dc-design.md`. Owner-approved copy changes
+  live in `scripts/extract-dc/copy-edits.mjs` and apply to every extracted string (the run fails if a rule stops
+  matching). First rule: "Schomberg (King Township)" → "Schomberg". Findings for the next slices:
   - 65 product pages have `og:type "product"` in the design. The SEO helper must always emit `"website"` (`lessons.md`).
   - All titles, descriptions and canonicals match `page-map.csv`; no "Leisurecraft" outside the homepage.
   - Prices: products in `data.D.steps[].groups[].options[].price`, heaters in `data.d.steps[].options[].price`,
@@ -158,7 +160,10 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
 
 ### Phase 2: Content pages (~4 days)
 Using the 36 files we have:
-- [ ] Policy pages (5): `/privacy`, `/refund-policy`, `/shipping`, `/terms`, `/warranty`
+- [x] Policy pages (5): `/privacy`, `/refund-policy`, `/shipping`, `/terms`, `/warranty` (`rd/2-policies`). One
+  template, `components/site/PolicyPage.jsx`, fed by `lib/site/policy.js`; `components/site/Blocks.jsx` renders extracted
+  blocks and is meant for the rest of Phase 2. The live `app/{shipping,terms,warranty}` pages were removed on `redesign`.
+  Spec: `docs/superpowers/specs/2026-11-26-policies-design.md`.
 - [ ] `/about`, `/wellness`, `/contact` (with `#visit` preselect), `/blog` index (and reskin `/blog/[slug]`)
 - [ ] `/service-areas` hub + `[id]` city template (15 cities from files; Toronto and Muskoka once their files arrive)
 - [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
