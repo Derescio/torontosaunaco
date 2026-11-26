@@ -35,6 +35,7 @@ describe("Button", () => {
     ["light", "bg-white"],
     ["outline-light", "border-white"],
     ["outline-walnut", "border-walnut"],
+    ["tan", "bg-tan"],
   ])("applies the %s variant classes", (variant, cls) => {
     render(<Button variant={variant}>Go</Button>);
     expect(screen.getByRole("button")).toHaveClass(cls, "rounded-full", "font-semibold");
