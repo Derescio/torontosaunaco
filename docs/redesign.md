@@ -41,7 +41,7 @@ Copied from the handoff's `IMPLEMENTATION-PLAN.md` (v2, 2026-11-21) on 2026-11-2
 | `sitemap.xml`, `robots.txt` | `app/sitemap.js`, `app/robots.js` | Update the dynamic versions to the new URLs. Don't drop in the static files. |
 | 11 blog posts to migrate | Already in Sanity at `/blog/[slug]` | Nothing to migrate. Just reskin and check the slugs match. |
 | `/_blob/<id>` images | Cloudinary + `public/images` | Most photos probably already exist. Match them, and upload only the new ones to Cloudinary. |
-| Service-area city pages | `app/service-areas/[id]` + city data | Reskin and add the new cities. |
+| Service-area city pages | `app/service-areas/[id]` + city data | Reskin and add the new cities. Done: 17 design cities (Phase 2). |
 
 
 ---
@@ -184,7 +184,14 @@ Using the 36 files we have:
     have no design: built from site pieces, OpenGraph `website` plus `BlogPosting` JSON-LD. Sanity photos are resized by
     Sanity's CDN. No pagination: revisit past ~60 posts. The live homepage's "BLOGS" strip moved to
     `components/LatestBlogPosts.jsx` until the Phase 3 homepage. Spec: `docs/superpowers/specs/2026-11-26-blog-design.md`.
-- [ ] `/service-areas` hub + `[id]` city template (15 cities from files; Toronto and Muskoka once their files arrive)
+- [x] **Service areas** (`rd/2-service-areas`): `/service-areas` hub and `/service-areas/[id]` for all 17 design cities
+  (Toronto and Muskoka arrived), from `ServiceAreas.json` and `City*.json` via `lib/site/cities.js` (one entry per file,
+  in the hub's card order; feeds `generateStaticParams` and the sitemap). Unknown slugs → `notFound()`. The live
+  `app/service-areas/` and `lib/cities.js` are gone from `redesign` only; the dropped live cities (Ottawa, Barrie,
+  Kawarthas, Vancouver, Calgary, Newmarket) redirect to the hub at cutover (`redirect-map.csv`). Owner, 2026-11-26: the
+  recommended-sauna cards show the **design's prices** (not MongoDB; no product prices in the city JSON-LD), and
+  "King Township showroom" stays as designed. FAQ is native `<details>`. Spec:
+  `docs/superpowers/specs/2026-11-26-service-areas-design.md`.
 - [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
 
 ### Phase 3: Catalogue (~5–6 days, needs C)
