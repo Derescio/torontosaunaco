@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import { Block, Html, INLINE_LINKS } from "./Blocks";
+import CtaBand from "./CtaBand";
 import { policyParts } from "../../lib/site/policy";
 import { cn } from "../../lib/site/cn";
 
@@ -60,7 +61,6 @@ function Glance({ label, items }) {
 
 export default function PolicyPage({ page }) {
   const p = policyParts(page);
-  const [call, email] = p.cta.links;
   return (
     <>
       <section className="bg-linen">
@@ -94,18 +94,7 @@ export default function PolicyPage({ page }) {
         </div>
       </section>
 
-      <section className="bg-ink text-cream">
-        <div className={cn(CONTAINER, "flex flex-wrap items-center justify-between gap-6 py-16")}>
-          <div className="flex max-w-2xl flex-col gap-2">
-            <Block block={p.cta.heading} />
-            <Html as="p" html={p.cta.text.html} className="text-lead text-sand-300" />
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {call && <Block block={call} variant="tan" />}
-            {email && <Block block={email} variant="outline-light" />}
-          </div>
-        </div>
-      </section>
+      <CtaBand heading={p.cta.heading} text={p.cta.text} links={p.cta.links} />
     </>
   );
 }

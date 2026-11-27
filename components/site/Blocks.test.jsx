@@ -16,7 +16,7 @@ const find = (page, type, i = 0) => page.sections.flatMap((s) => s.blocks).filte
 
 describe("Blocks", () => {
   it("lists the block types it renders", () => {
-    expect(BLOCK_TYPES).toEqual(["paragraph", "heading", "text", "list", "definitions", "link"]);
+    expect(BLOCK_TYPES).toEqual(["paragraph", "heading", "text", "list", "definitions", "link", "quote"]);
   });
 
   it("paragraph keeps inline tel and mailto links", () => {
