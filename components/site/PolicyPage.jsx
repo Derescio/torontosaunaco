@@ -1,6 +1,6 @@
-import { Fragment } from "react";
 import Link from "next/link";
 import { Block, Html, INLINE_LINKS } from "./Blocks";
+import Breadcrumb from "./Breadcrumb";
 import CtaBand from "./CtaBand";
 import { policyParts } from "../../lib/site/policy";
 import { cn } from "../../lib/site/cn";
@@ -9,25 +9,6 @@ import { cn } from "../../lib/site/cn";
 
 const CONTAINER = "mx-auto max-w-site px-5 desktop:px-8";
 const TAB = "inline-flex min-h-11 items-center rounded-full border border-ink px-5 text-small font-semibold";
-
-function Breadcrumb({ items }) {
-  return (
-    <nav aria-label="Breadcrumb" className="text-caption text-taupe-500">
-      {items.map((item, i) => (
-        <Fragment key={i}>
-          {i > 0 && " / "}
-          {item.href ? (
-            <Link href={item.href} className="underline hover:text-walnut">
-              {item.text}
-            </Link>
-          ) : (
-            <span aria-current={i === items.length - 1 ? "page" : undefined}>{item.text}</span>
-          )}
-        </Fragment>
-      ))}
-    </nav>
-  );
-}
 
 function PolicyTabs({ tabs }) {
   return (
