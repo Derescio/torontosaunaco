@@ -154,8 +154,6 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   all 439 design photos are in Cloudinary under `redesign/<hash>`, with url, width and height per hash
   (`npm run images:upload`; dry run by default, `--write` uploads what's missing). Pages render them with
   `components/site/SiteImage.jsx` (Cloudinary resizes; Vercel doesn't). The 34 design PDFs aren't uploaded yet.
-  **`.env` has `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` misspelled (`dw4e5whz`; the account is `dw4ev5whz`).** The
-  owner fixes `.env`; until then pass the right name on the command line when running the upload.
   Use: `export const metadata = pageSeo("/about").metadata` and `<JsonLd data={pageSeo("/about").jsonLd} />`
   (`components/site/JsonLd.jsx`). Spec: `docs/superpowers/specs/2026-11-25-seo-helper-design.md`.
   **Owner decision pending:** two design prices sit in copy, not in `offers`: "sauna kits from $8,070" (`/saunas/indoor`
@@ -173,7 +171,13 @@ Using the 36 files we have:
     (`SectionHeader`, `Split`, `NumberedPoints`, `StatGrid`, `PhotoGrid`, `Steps`, `CtaBand`) with copy looked up by
     section name (`lib/site/content.js`). The live `app/about` page is removed on `redesign`.
     Spec: `docs/superpowers/specs/2026-11-26-about-wellness-design.md`.
-  - [ ] `/contact` (form: quote / visit / question, `#visit` preselect)
+  - [x] `/contact` (`rd/2-contact`): the design's three-mode form (`#visit` / `#question` preselect) posts to
+    `app/api/site/contact/route.js`, a route only the new site uses. Production mail goes to sales@ and tjallen@
+    (design); everything else goes through `applyEmailSafety()` to `STAGING_EMAIL_TO` only, and the "open your email
+    app" fallback exists only in production (sales@ only). HubSpot only in production; attribution saved as
+    `site_contact`. Spec: `docs/superpowers/specs/2026-11-26-contact-design.md`.
+    **For `development` (live site):** `app/api/emails/route.js` puts visitor input into the email HTML unescaped,
+    so anyone can inject links or markup into staff emails. The new route escapes everything.
   - [ ] `/blog` index from Sanity, then reskin `/blog/[slug]`
 - [ ] `/service-areas` hub + `[id]` city template (15 cities from files; Toronto and Muskoka once their files arrive)
 - [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
