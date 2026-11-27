@@ -11,6 +11,7 @@ import { fileURLToPath } from "node:url";
 import { loadPageMap } from "./extract-dc/pagemap.mjs";
 import { extractPage } from "./extract-dc/page.mjs";
 import { buildSeoIndex } from "./extract-dc/seo.mjs";
+import { COPY_EDITS, applyCopyEdits, unusedEdits } from "./extract-dc/copy-edits.mjs";
 
 const SKIP = new Set(["Piece-zsi1.dc.html"]); // stray copy of Main.dc.html
 const OUT_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "content", "redesign");
@@ -32,13 +33,17 @@ const files = fs
   .sort();
 
 const pages = [];
+const editCounts = new Map();
 for (const file of files) {
   try {
-    pages.push(extractPage({ fileName: file, html: fs.readFileSync(path.join(siteDir, file), "utf8"), pageMap }));
+    const page = extractPage({ fileName: file, html: fs.readFileSync(path.join(siteDir, file), "utf8"), pageMap });
+    pages.push(applyCopyEdits(page, COPY_EDITS, editCounts));
   } catch (err) {
     fail(`${file} failed to parse: ${err.message}`);
   }
 }
+const stale = unusedEdits(editCounts);
+if (stale.length) fail(`copy edits matched nothing (stale rule?): ${stale.map((e) => JSON.stringify(e.find)).join(", ")}`);
 
 const byRoute = new Map();
 for (const p of pages) {
@@ -86,4 +91,5 @@ for (const w of allWarnings) {
   kinds.set(kind, (kinds.get(kind) ?? 0) + 1);
 }
 for (const [kind, n] of [...kinds].sort((a, b) => b[1] - a[1])) console.log(`  ${n} × ${kind}`);
+for (const { find } of COPY_EDITS) console.log(`copy edits: ${JSON.stringify(find)} ×${editCounts.get(find)}`);
 console.log(`wrote ${pages.length + 1} files to ${path.relative(process.cwd(), OUT_DIR)}`);

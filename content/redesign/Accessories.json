@@ -1621,7 +1621,7 @@
                 "name": "Can I see the accessories before I buy?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
+                  "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg, ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
                 }
               },
               {
@@ -2982,8 +2982,8 @@
         },
         {
           "type": "text",
-          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
-          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Get directions"
+          "html": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Get directions</a>",
+          "text": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. Get directions"
         },
         {
           "type": "text",
@@ -3626,8 +3626,8 @@
           "blocks": [
             {
               "type": "paragraph",
-              "html": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book.",
-              "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
+              "html": "Yes. Visit our showroom at 17380 Highway 27, Schomberg, ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book.",
+              "text": "Yes. Visit our showroom at 17380 Highway 27, Schomberg, ON L0G 1T0. Visits are by appointment; call (437) 429-6623 to book."
             }
           ]
         },
@@ -3728,8 +3728,8 @@
         },
         {
           "type": "paragraph",
-          "html": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you.",
-          "text": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg (King Township), ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you."
+          "html": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg, ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you.",
+          "text": "See and feel every accessory at our showroom, 17380 Highway 27, Schomberg, ON L0G 1T0 (by appointment), or add them to your installation and we'll set them up for you."
         },
         {
           "type": "link",

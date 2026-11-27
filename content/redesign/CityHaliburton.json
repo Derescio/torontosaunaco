@@ -222,8 +222,8 @@
         },
         {
           "type": "text",
-          "html": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
-          "text": "17380 Highway 27, Schomberg (King Township), ON L0G 1T0 · By appointment. Directions"
+          "html": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. <a href=\"https://www.google.com/maps/search/?api=1&amp;query=17380+Highway+27+Schomberg+ON+L0G+1T0\">Directions</a>",
+          "text": "17380 Highway 27, Schomberg, ON L0G 1T0 · By appointment. Directions"
         },
         {
           "type": "text",
@@ -786,8 +786,8 @@
         },
         {
           "type": "paragraph",
-          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0.",
-          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg (King Township), ON L0G 1T0."
+          "html": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg, ON L0G 1T0.",
+          "text": "Book a free site consult or visit our showroom at 17380 Highway 27, Schomberg, ON L0G 1T0."
         },
         {
           "type": "link",

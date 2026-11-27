@@ -13,6 +13,8 @@ export const buttonVariants = cva(
         light: "bg-white text-ink hover:bg-linen focus-visible:ring-tan focus-visible:ring-offset-ink",
         "outline-light": "border border-white text-white hover:bg-white/10 focus-visible:ring-tan focus-visible:ring-offset-ink",
         "outline-walnut": "border border-walnut text-walnut hover:bg-walnut hover:text-white focus-visible:ring-walnut",
+        // Accent call to action on dark bands.
+        tan: "bg-tan text-ink hover:bg-tan-light focus-visible:ring-tan focus-visible:ring-offset-ink",
       },
       size: {
         sm: "h-9 px-4 text-small",
