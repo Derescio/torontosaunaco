@@ -35,7 +35,8 @@ describe("Blocks additions", () => {
   it("renders a quote as a blockquote", () => {
     const quote = pick(section(About, "Approach"), "quote");
     render(<Block block={quote} />);
-    expect(screen.getByText(/Every inquiry gets a fast, real answer/).closest("blockquote")).not.toBeNull();
+    const blockquote = screen.getByText(/Every inquiry gets a fast, real answer/).closest("blockquote");
+    expect(blockquote).toHaveClass("text-display-sm", "border-l-[3px]", "border-tan");
   });
 
   it("styles the italic phrase in headings", () => {

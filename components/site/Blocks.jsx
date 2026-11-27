@@ -33,7 +33,7 @@ export function Block({ block, className, variant }) {
     }
     case "quote":
       return (
-        <blockquote className={cn("border-l-2 border-tan pl-6 font-display text-title italic text-ink", className)}>
+        <blockquote className={cn("border-l-[3px] border-tan pl-6 font-display text-display-sm italic text-ink", className)}>
           <Html html={block.html} />
         </blockquote>
       );
