@@ -8,7 +8,7 @@ import LCL from "@/public/images/Leisurecraft logo 3.jpg";
 import HL from "@/public/images/humm_logo.jpg";
 import HarL from "@/public/images/Harvia.jpg";
 import HomePageImage from "@/components/HomePageImage";
-import BlogPage from "./blog/page";
+import BlogPage from "@/components/LatestBlogPosts";
 import newLogo from "@/public/images/Black Transparent.png";
 import Link from "next/link";
 import Hero from "@/components/redesign/Hero";

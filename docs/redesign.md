@@ -166,7 +166,7 @@ Using the 36 files we have:
   template, `components/site/PolicyPage.jsx`, fed by `lib/site/policy.js`; `components/site/Blocks.jsx` renders extracted
   blocks and is meant for the rest of Phase 2. The live `app/{shipping,terms,warranty}` pages were removed on `redesign`.
   Spec: `docs/superpowers/specs/2026-11-26-policies-design.md`.
-- [ ] `/about`, `/wellness`, `/contact` (with `#visit` preselect), `/blog` index (and reskin `/blog/[slug]`)
+- [x] `/about`, `/wellness`, `/contact` (with `#visit` preselect), `/blog` index (and reskin `/blog/[slug]`)
   - [x] `/about` and `/wellness` (`rd/2-about-wellness`), built from section components in `components/site/`
     (`SectionHeader`, `Split`, `NumberedPoints`, `StatGrid`, `PhotoGrid`, `Steps`, `CtaBand`) with copy looked up by
     section name (`lib/site/content.js`). The live `app/about` page is removed on `redesign`.
@@ -178,7 +178,12 @@ Using the 36 files we have:
     `site_contact`. Spec: `docs/superpowers/specs/2026-11-26-contact-design.md`.
     **For `development` (live site):** `app/api/emails/route.js` puts visitor input into the email HTML unescaped,
     so anyone can inject links or markup into staff emails. The new route escapes everything.
-  - [ ] `/blog` index from Sanity, then reskin `/blog/[slug]`
+  - [x] `/blog` and `/blog/[slug]` (`rd/2-blog`): every published Sanity post, newest first (the newest is featured),
+    refreshed every 2 hours (ISR). The design's 11 posts keep the design's category, summary and photo; other posts use
+    their Sanity photo and description. If Sanity is down or empty, `/blog` shows the design's 11 cards. Article pages
+    have no design: built from site pieces, OpenGraph `website` plus `BlogPosting` JSON-LD. Sanity photos are resized by
+    Sanity's CDN. No pagination: revisit past ~60 posts. The live homepage's "BLOGS" strip moved to
+    `components/LatestBlogPosts.jsx` until the Phase 3 homepage. Spec: `docs/superpowers/specs/2026-11-26-blog-design.md`.
 - [ ] `/service-areas` hub + `[id]` city template (15 cities from files; Toronto and Muskoka once their files arrive)
 - [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
 

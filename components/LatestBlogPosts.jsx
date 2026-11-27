@@ -1,16 +1,9 @@
+// The live homepage's latest-posts strip (was app/blog/page.jsx). Moved here when /blog moved to the new site
+// (rd/2-blog); the Phase 3 homepage replaces it.
 import { client } from "@/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/lib/sanity";
-
-export const metadata = {
-  title:
-    "Blogs | Toronto Sauna Co. | Sauna for Sale| outdoor sauna for sale | custome sauna Toronto",
-  description:
-    "Explore premium outdoor and indoor saunas for your home, crafted from high-quality cedar wood. Proudly made in Canada, our cedar barrel and cube saunas, sauna kits, and backyard wellness solutions provide relaxation, health benefits, and timeless luxury. Elevate your space today—cold plunges available!",
-};
-
-export const revalidate = 7200;
 
 export const GetData = async () => {
   const query = `*[_type == "blogPost"] | order(publishedAt desc) {
