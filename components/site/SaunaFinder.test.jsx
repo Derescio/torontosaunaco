@@ -47,6 +47,11 @@ describe("SaunaFinder", () => {
     expect(screen.queryByLabelText("Ceiling height (feet, optional)")).toBeNull();
   });
 
+  it("names the outdoor/indoor group with the design's wording", () => {
+    setup();
+    expect(screen.getByRole("group", { name: "Where is it going?" })).toBeInTheDocument();
+  });
+
   it("lists what fits, with the summary in a live region", () => {
     const { container } = setup();
     space("10", "8");

@@ -81,7 +81,7 @@ export default function SaunaFinder({ catalogue, copy }) {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-6 rounded-card border border-line bg-white p-6 desktop:p-8">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Where will the sauna go?">
+        <div className="flex flex-wrap gap-2" role="group" aria-label="Where is it going?">
           {MODES.map(([key, label]) => (
             <Chip key={key} pressed={mode === key} onClick={() => setMode(key)}>
               {label}
