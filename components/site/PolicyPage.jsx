@@ -1,6 +1,7 @@
-import { Fragment } from "react";
 import Link from "next/link";
 import { Block, Html, INLINE_LINKS } from "./Blocks";
+import Breadcrumb from "./Breadcrumb";
+import CtaBand from "./CtaBand";
 import { policyParts } from "../../lib/site/policy";
 import { cn } from "../../lib/site/cn";
 
@@ -8,25 +9,6 @@ import { cn } from "../../lib/site/cn";
 
 const CONTAINER = "mx-auto max-w-site px-5 desktop:px-8";
 const TAB = "inline-flex min-h-11 items-center rounded-full border border-ink px-5 text-small font-semibold";
-
-function Breadcrumb({ items }) {
-  return (
-    <nav aria-label="Breadcrumb" className="text-caption text-taupe-500">
-      {items.map((item, i) => (
-        <Fragment key={i}>
-          {i > 0 && " / "}
-          {item.href ? (
-            <Link href={item.href} className="underline hover:text-walnut">
-              {item.text}
-            </Link>
-          ) : (
-            <span aria-current={i === items.length - 1 ? "page" : undefined}>{item.text}</span>
-          )}
-        </Fragment>
-      ))}
-    </nav>
-  );
-}
 
 function PolicyTabs({ tabs }) {
   return (
@@ -60,7 +42,6 @@ function Glance({ label, items }) {
 
 export default function PolicyPage({ page }) {
   const p = policyParts(page);
-  const [call, email] = p.cta.links;
   return (
     <>
       <section className="bg-linen">
@@ -94,18 +75,7 @@ export default function PolicyPage({ page }) {
         </div>
       </section>
 
-      <section className="bg-ink text-cream">
-        <div className={cn(CONTAINER, "flex flex-wrap items-center justify-between gap-6 py-16")}>
-          <div className="flex max-w-2xl flex-col gap-2">
-            <Block block={p.cta.heading} />
-            <Html as="p" html={p.cta.text.html} className="text-lead text-sand-300" />
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {call && <Block block={call} variant="tan" />}
-            {email && <Block block={email} variant="outline-light" />}
-          </div>
-        </div>
-      </section>
+      <CtaBand heading={p.cta.heading} text={p.cta.text} links={p.cta.links} />
     </>
   );
 }

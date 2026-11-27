@@ -149,9 +149,13 @@ Work on the long-lived `redesign` branch (deploys to Staging). Merge `main` into
   (`/accessories` lists 70, `/sauna-heaters` 14); each sets `Offer.price` / `AggregateOffer.lowPrice` plus
   `availability` and `priceValidUntil`. A Product with no price is removed (inside a list it becomes a plain link),
   since a Product without offers is an invalid rich result. The city pages' Service offer ($1,750 delivery +
-  installation) stays as designed. Design images (`/_blob/<id>`) map through `content/image-map.json` (empty
-  until the photos are matched); unmapped ones are dropped and og:image falls back to `/og/Redesign_BG_Image.png`.
-  **Fill the image map before product pages go live:** Google wants an image on every Product.
+  installation) stays as designed. Design images (`/_blob/<id>`) map through `content/image-map.json`; unmapped
+  ones are dropped and og:image falls back to `/og/Redesign_BG_Image.png`. The map is filled (`rd/2-about-wellness`):
+  all 439 design photos are in Cloudinary under `redesign/<hash>`, with url, width and height per hash
+  (`npm run images:upload`; dry run by default, `--write` uploads what's missing). Pages render them with
+  `components/site/SiteImage.jsx` (Cloudinary resizes; Vercel doesn't). The 34 design PDFs aren't uploaded yet.
+  **`.env` has `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` misspelled (`dw4e5whz`; the account is `dw4ev5whz`).** The
+  owner fixes `.env`; until then pass the right name on the command line when running the upload.
   Use: `export const metadata = pageSeo("/about").metadata` and `<JsonLd data={pageSeo("/about").jsonLd} />`
   (`components/site/JsonLd.jsx`). Spec: `docs/superpowers/specs/2026-11-25-seo-helper-design.md`.
   **Owner decision pending:** two design prices sit in copy, not in `offers`: "sauna kits from $8,070" (`/saunas/indoor`
@@ -165,6 +169,12 @@ Using the 36 files we have:
   blocks and is meant for the rest of Phase 2. The live `app/{shipping,terms,warranty}` pages were removed on `redesign`.
   Spec: `docs/superpowers/specs/2026-11-26-policies-design.md`.
 - [ ] `/about`, `/wellness`, `/contact` (with `#visit` preselect), `/blog` index (and reskin `/blog/[slug]`)
+  - [x] `/about` and `/wellness` (`rd/2-about-wellness`), built from section components in `components/site/`
+    (`SectionHeader`, `Split`, `NumberedPoints`, `StatGrid`, `PhotoGrid`, `Steps`, `CtaBand`) with copy looked up by
+    section name (`lib/site/content.js`). The live `app/about` page is removed on `redesign`.
+    Spec: `docs/superpowers/specs/2026-11-26-about-wellness-design.md`.
+  - [ ] `/contact` (form: quote / visit / question, `#visit` preselect)
+  - [ ] `/blog` index from Sanity, then reskin `/blog/[slug]`
 - [ ] `/service-areas` hub + `[id]` city template (15 cities from files; Toronto and Muskoka once their files arrive)
 - [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
 

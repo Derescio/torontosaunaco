@@ -15,7 +15,8 @@
     "extract:dc": "node scripts/extract-dc.mjs",
     "price-diff": "node --env-file=.env scripts/price-diff.mjs",
     "slugs:backfill": "node --env-file=.env scripts/slugs/backfill-slugs.mjs",
-    "slugs:backfill:apply": "node --env-file=.env scripts/slugs/backfill-slugs.mjs --apply"
+    "slugs:backfill:apply": "node --env-file=.env scripts/slugs/backfill-slugs.mjs --apply",
+    "images:upload": "node scripts/images/upload-design-images.mjs"
   },
   "dependencies": {
     "@cloudinary/react": "^1.13.0",

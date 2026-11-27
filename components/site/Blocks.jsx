@@ -4,7 +4,10 @@ import { cn } from "../../lib/site/cn";
 // Renders content blocks extracted from the design (content/redesign/*.json, npm run extract:dc).
 // Block html is the extractor's sanitized inline markup (a, strong, em, br) from our own repo, never user input.
 
-export const BLOCK_TYPES = ["paragraph", "heading", "text", "list", "definitions", "link"];
+export const BLOCK_TYPES = ["paragraph", "heading", "text", "list", "definitions", "link", "quote"];
+
+// The design sets one phrase per heading in <em><strong>: italic and bold.
+const EMPHASIS = "[&_em]:italic [&_strong]:font-bold";
 
 // Inline links inside running text.
 export const INLINE_LINKS = "[&_a]:font-semibold [&_a]:text-ink [&_a]:underline [&_a:hover]:text-walnut";
@@ -26,8 +29,14 @@ export function Block({ block, className, variant }) {
       return <Html as="p" html={block.html} className={cn("text-body text-taupe-700", INLINE_LINKS, className)} />;
     case "heading": {
       const level = Math.min(Math.max(Number(block.level) || 2, 1), 6);
-      return <Html as={`h${level}`} html={block.html} className={cn(HEADING[level], className)} />;
+      return <Html as={`h${level}`} html={block.html} className={cn(HEADING[level], EMPHASIS, className)} />;
     }
+    case "quote":
+      return (
+        <blockquote className={cn("border-l-[3px] border-tan pl-6 font-display text-display-sm italic text-ink", className)}>
+          <Html html={block.html} />
+        </blockquote>
+      );
     case "text":
       return <Html html={block.html} className={className} />;
     case "list": {
