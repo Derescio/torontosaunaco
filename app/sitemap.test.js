@@ -36,3 +36,19 @@ describe("sitemap product URLs", () => {
     expect(urls.some((u) => u.includes("6917e4d53f05f33c3f08ca5d"))).toBe(false);
   });
 });
+
+describe("sitemap service areas", () => {
+  beforeEach(() => fetchProducts.mockResolvedValue([]));
+
+  it("lists the 17 design cities and none of the dropped ones", async () => {
+    const urls = (await sitemap()).map((e) => e.url);
+    for (const slug of ["toronto", "muskoka", "king-city", "niagara-on-the-lake", "collingwood"]) {
+      expect(urls).toContain(`${SITE}/service-areas/${slug}`);
+    }
+    for (const slug of ["ottawa", "barrie", "kawarthas", "vancouver", "calgary"]) {
+      expect(urls).not.toContain(`${SITE}/service-areas/${slug}`);
+    }
+    expect(urls.filter((u) => u.startsWith(`${SITE}/service-areas/`))).toHaveLength(17);
+    expect(urls.some((u) => /\s$/.test(u))).toBe(false);
+  });
+});

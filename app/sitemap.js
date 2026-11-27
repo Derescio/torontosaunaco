@@ -1,5 +1,6 @@
 import { fetchProducts } from "@/assets/utils/request";
 import { productPath } from "@/lib/products/slugs";
+import { CITIES } from "@/lib/site/cities";
 
 const baseUrl = "https://www.thetorontosaunaco.com";
 
@@ -85,27 +86,9 @@ export default async function sitemap() {
     console.log("Error fetching heaters for sitemap:", error);
   }
 
-  // Service area routes (common locations in Ontario/Canada)
-  const serviceAreas = [
-    "toronto",
-    "aurora",
-    "markham",
-    "vaughan",
-    "richmond-hill",
-    "oakville",
-    "burlington",
-    "ottawa",
-    "barrie",
-    "muskoka",
-    "collingwood ",
-    "kawarthas",
-    "haliburton",
-    "vancouver",
-    "calgary",
-  ];
-
-  const serviceAreaEntries = serviceAreas.map((area) => ({
-    url: `${baseUrl}/service-areas/${area}`,
+  // Service area city pages (the 17 design cities)
+  const serviceAreaEntries = CITIES.map(({ route }) => ({
+    url: `${baseUrl}${route}`,
     lastModified: currentDate,
     changeFrequency: "monthly",
     priority: 0.5,
