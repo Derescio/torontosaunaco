@@ -13,6 +13,7 @@ import {
   TYPES,
   TIMES,
   CONTACT_COPY,
+  CAP,
   modeOf,
   defaultReason,
   validate,
@@ -55,7 +56,13 @@ export default function ContactForm({ copy, fallbackEmail = null }) {
   const fields = { name: useRef(null), email: useRef(null) };
 
   useEffect(() => {
-    setValues((v) => ({ ...v, reason: defaultReason(`${window.location.hash}${window.location.search}`) }));
+    // `?msg=` (the Sauna Finder's quote button) fills an empty message box.
+    const prefill = new URLSearchParams(window.location.search).get("msg");
+    setValues((v) => ({
+      ...v,
+      reason: defaultReason(`${window.location.hash}${window.location.search}`),
+      msg: v.msg || (prefill ? prefill.slice(0, CAP.msg) : ""),
+    }));
   }, []);
 
   const mode = modeOf(values.reason);
