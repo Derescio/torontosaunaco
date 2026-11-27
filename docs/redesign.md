@@ -192,7 +192,20 @@ Using the 36 files we have:
   recommended-sauna cards show the **design's prices** (not MongoDB; no product prices in the city JSON-LD), and
   "King Township showroom" stays as designed. FAQ is native `<details>`. Spec:
   `docs/superpowers/specs/2026-11-26-service-areas-design.md`.
-- [ ] `/sauna-finder` (port the `fdData/fdState/fdVals` logic as a client component, fed from MongoDB)
+- [x] **Sauna Finder** (`rd/2-sauna-finder`): `/sauna-finder`. The design's `fdVals()` rules are ported to
+  `findSaunas()` in `lib/site/saunaFinder.js`, a pure function checked against the design's own logic over 1,470
+  inputs (`saunaFinder.reference.js`, test-only). `components/site/SaunaFinder.jsx` holds the inputs.
+  - **Catalogue:** the design's `fdData` as is: sizes, seats, prices and flags (owner, 2026-11-27, option A).
+    MongoDB has no seats, incomplete dimensions, and four finder saunas are missing on staging (Pure Cube 772,
+    Studio Six Max with Changeroom, Palmer, MiniPOD).
+  - **Phase 3:** add the fields (seats, full dimensions per size, best-seller/range flags) with `/editor` inputs,
+    then build the catalogue from MongoDB in the same shape.
+  - **Missing product pages:** the page reads the product URLs (ISR, 2h). Finder cards for saunas without a product
+    go to `/contact?msg=…` with the model named (`linkProductPages`), not a 404. Today that's those four. If the
+    catalogue can't be read, the design's links stay.
+  - **Quote button:** the design's `mailto:` to sales@/tjallen@ became `/contact?msg=…`. The contact form fills the
+    message box from `?msg=`, and its mode ignores the message text.
+  - Spec: `docs/superpowers/specs/2026-11-27-sauna-finder-design.md`.
 
 ### Phase 3: Catalogue (~5–6 days, needs C)
 - [ ] Category listing template with filter chips + sort → `/saunas/{cube,barrel,luna,canadian-timber,indoor,indoor/kits,indoor/custom,best-sellers}`, `/cold-plunges`, `/outdoor-showers`, `/sauna-heaters`, `/saunas`

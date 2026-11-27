@@ -72,6 +72,28 @@ describe("ContactForm", () => {
     expect(screen.getByRole("button", { name: "Send Message" })).toBeInTheDocument();
   });
 
+  describe("a prefilled message", () => {
+    afterEach(() => window.history.replaceState({}, "", "/"));
+
+    it("fills the message box from ?msg= and stays in quote mode", async () => {
+      window.history.replaceState({}, "", "/contact?msg=Hi%0AWhere%3A%20outdoor%2C%20visit%20soon");
+      const { container } = render(<ContactForm copy={copy} fallbackEmail={null} />);
+      await waitFor(() => expect(container.querySelector("#c-msg").value).toBe("Hi\nWhere: outdoor, visit soon"));
+      expect(screen.getByRole("heading", { name: "Get your sauna quote." })).toBeInTheDocument();
+    });
+
+    it("caps the message at 5000 characters", async () => {
+      window.history.replaceState({}, "", `/contact?msg=${"a".repeat(6000)}`);
+      const { container } = render(<ContactForm copy={copy} fallbackEmail={null} />);
+      await waitFor(() => expect(container.querySelector("#c-msg").value).toHaveLength(5000));
+    });
+
+    it("leaves the box empty without ?msg=", () => {
+      const { container } = render(<ContactForm copy={copy} fallbackEmail={null} />);
+      expect(container.querySelector("#c-msg").value).toBe("");
+    });
+  });
+
   it("opens in visit mode from #visit", async () => {
     window.location.hash = "#visit";
     render(<ContactForm copy={copy} fallbackEmail={null} />);
