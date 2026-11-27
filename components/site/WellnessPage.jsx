@@ -1,5 +1,5 @@
 import Wellness from "../../content/redesign/Wellness.json";
-import { section, pick, pickAll } from "../../lib/site/content";
+import { section, pick, pickAll, groups } from "../../lib/site/content";
 import { cn } from "../../lib/site/cn";
 import { Block, Html } from "./Blocks";
 import Breadcrumb from "./Breadcrumb";
@@ -16,12 +16,6 @@ import SiteImage from "./SiteImage";
 
 const CONTAINER = "mx-auto max-w-site px-5 desktop:px-8";
 
-const pairs = (blocks) => {
-  const out = [];
-  for (let i = 0; i + 1 < blocks.length; i += 2) out.push([blocks[i], blocks[i + 1]]);
-  return out;
-};
-
 export default function WellnessPage() {
   const hero = section(Wellness, "Wellness hero");
   const tradition = section(Wellness, "Finnish tradition");
@@ -33,23 +27,29 @@ export default function WellnessPage() {
   const cta = section(Wellness, "Section 1");
   const sources = section(Wellness, "Sources");
 
+  // Repeated groups are checked for count and block types (groups throws), so a design change can't
+  // silently pair a title with the wrong text.
   const heroImage = pick(hero, "image");
-  const [heroPrimary, heroSecondary] = pickAll(hero, "link");
+  const [[heroPrimary, heroSecondary]] = groups(pickAll(hero, "link"), ["link", "link"], 1);
 
-  const stats = pairs(pickAll(tradition, "text").slice(1)).map(([figure, label]) => ({ figure, label }));
+  // Eyebrow, heading, two paragraphs, then three figure/label pairs, then the photo.
+  const stats = groups(tradition.slice(4, -1), ["text", "text"], 3).map(([figure, label]) => ({ figure, label }));
 
-  // After eyebrow, heading and lead: figure, label, text, source per card; the last paragraph is the footnote.
-  const cardBlocks = research.slice(3, -1);
-  const cards = [];
-  for (let i = 0; i + 3 < cardBlocks.length; i += 4) {
-    const [figure, label, text, source] = cardBlocks.slice(i, i + 4);
-    cards.push({ figure, label, text, source });
-  }
-  const footnote = research.at(-1);
-  if (cards.length !== 6 || footnote.type !== "paragraph") throw new Error(`content: ${research.where}: expected 6 research cards and a footnote`);
+  // Eyebrow, heading, lead, six cards (figure, label, text, source), then the footnote.
+  const cards = groups(research.slice(3, -1), ["text", "text", "paragraph", "text"], 6).map(([figure, label, text, source]) => ({
+    figure,
+    label,
+    text,
+    source,
+  }));
+  const [[footnote]] = groups(research.slice(-1), ["paragraph"], 1);
 
-  const lifestyleItems = pairs(pickAll(lifestyle, "text").slice(1));
-  const steps = pick(ritual, "list").items.map(({ blocks: [number, title, text] }) => ({ number, title, text }));
+  // Eyebrow, heading, paragraph, photo, then five title/text pairs.
+  const lifestyleItems = groups(lifestyle.slice(4), ["text", "text"], 5);
+  const steps = pick(ritual, "list").items.map((item) => {
+    const [[number, title, text]] = groups(item.blocks, ["text", "text", "text"], 1);
+    return { number, title, text };
+  });
 
   return (
     <>

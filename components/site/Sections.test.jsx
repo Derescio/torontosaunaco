@@ -102,8 +102,13 @@ describe("PhotoGrid", () => {
     const { container } = render(<PhotoGrid images={images} layout="gallery" />);
     const tiles = [...container.querySelectorAll("figure")];
     expect(tiles).toHaveLength(11);
-    for (const i of [0, 2, 5, 6]) expect(tiles[i]).toHaveClass("row-span-2");
-    expect(tiles[9]).toHaveClass("col-span-2");
+    // Placed by named areas so phones get the design's own gap-free order, not auto-placement.
+    "abcdefghijk".split("").forEach((area, i) => expect(tiles[i]).toHaveClass(`[grid-area:${area}]`));
+    const grid = tiles[0].parentElement;
+    expect(grid).toHaveClass(
+      "[grid-template-areas:'a_c'_'a_c'_'b_d'_'g_f'_'g_f'_'e_h'_'j_j'_'i_k']",
+      "desktop:[grid-template-areas:'a_b_c_d'_'a_e_c_f'_'g_h_i_f'_'g_j_j_k']"
+    );
     for (const img of images) expect(screen.getByAltText(img.alt)).toBeInTheDocument();
   });
 

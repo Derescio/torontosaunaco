@@ -1,5 +1,5 @@
 import About from "../../content/redesign/About.json";
-import { section, pick, pickAll } from "../../lib/site/content";
+import { section, pick, pickAll, groups } from "../../lib/site/content";
 import { cn } from "../../lib/site/cn";
 import { Block, Html, INLINE_LINKS } from "./Blocks";
 import Breadcrumb from "./Breadcrumb";
@@ -21,11 +21,8 @@ export default function AboutPage() {
   const showroom = section(About, "Showroom");
   const cta = section(About, "Section 1");
 
-  // "01", title, paragraph repeated after the eyebrow and heading.
-  const numbers = pickAll(points, "text").slice(1);
-  const items = numbers
-    .filter((_, i) => i % 2 === 0)
-    .map((number, i) => ({ number, title: numbers[i * 2 + 1], text: pick(points, "paragraph", i) }));
+  // After the eyebrow and heading: four "01", title, paragraph groups.
+  const items = groups(points.slice(2), ["text", "text", "paragraph"], 4).map(([number, title, text]) => ({ number, title, text }));
 
   return (
     <>
