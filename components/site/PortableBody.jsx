@@ -3,33 +3,60 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/lib/sanity";
 import SanityImage from "./SanityImage";
 import { sanityDims } from "./PostCard";
+import { isSanityImage } from "../../lib/site/blog";
 
-// Sanity article body (Portable Text) in the new site's typography. Internal links use next/link; external links open
-// in a new tab with rel="noopener noreferrer"; images come resized from Sanity's CDN.
+// Sanity article body (Portable Text) in the new site's typography.
+// - Headings: the page has its own h1, so body h1s render as h2s, and h5/h6 as h4s.
+// - Links: our own domain becomes an internal link (path, query and hash kept); other http(s) links open in a new tab
+//   with rel="noopener noreferrer"; mailto/tel links stay as they are; anything else (e.g. javascript:) renders as text.
+// - Images come resized from Sanity's CDN; an unreadable reference is skipped.
 
-const SITE_HOST = /^https?:\/\/(www\.)?(the)?torontosaunaco\.com/i;
+const OWN_HOSTS = new Set(["thetorontosaunaco.com", "www.thetorontosaunaco.com", "torontosaunaco.com", "www.torontosaunaco.com"]);
+const LINK = "font-semibold text-ink underline underline-offset-2 hover:text-walnut";
+
+/** { kind: "internal" | "external" | "contact", href } for a safe link, or null. */
+export function resolveLink(raw) {
+  const href = typeof raw === "string" ? raw.trim() : "";
+  if (!href) return null;
+  if (href.startsWith("/") && !href.startsWith("//")) return { kind: "internal", href };
+  let url;
+  try {
+    url = new URL(href);
+  } catch {
+    return null;
+  }
+  if (url.protocol === "mailto:" || url.protocol === "tel:") return { kind: "contact", href };
+  if (url.protocol !== "http:" && url.protocol !== "https:") return null;
+  if (OWN_HOSTS.has(url.hostname.toLowerCase())) return { kind: "internal", href: `${url.pathname || "/"}${url.search}${url.hash}` };
+  return { kind: "external", href: url.href };
+}
 
 function LinkMark({ value, children }) {
-  const href = typeof value?.href === "string" ? value.href.trim() : "";
-  if (!href) return <>{children}</>;
-  const internal = href.startsWith("/") || SITE_HOST.test(href);
-  const cls = "font-semibold text-ink underline underline-offset-2 hover:text-walnut";
-  if (internal) {
+  const link = resolveLink(value?.href);
+  if (!link) return <>{children}</>;
+  if (link.kind === "internal") {
     return (
-      <Link href={href.replace(SITE_HOST, "") || "/"} className={cls}>
+      <Link href={link.href} className={LINK}>
         {children}
       </Link>
     );
   }
+  if (link.kind === "contact") {
+    return (
+      <a href={link.href} className={LINK}>
+        {children}
+      </a>
+    );
+  }
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>
+    <a href={link.href} target="_blank" rel="noopener noreferrer" className={LINK}>
       {children}
     </a>
   );
 }
 
 function BodyImage({ value }) {
-  if (!value?.asset) return null;
+  if (!isSanityImage(value)) return null;
   const dims = sanityDims(value) ?? { width: 1600, height: 900 };
   return (
     <figure className="my-2 overflow-hidden rounded-card">
@@ -45,12 +72,19 @@ function BodyImage({ value }) {
   );
 }
 
+const H2 = ({ children }) => <h2 className="mt-6 font-display text-heading font-semibold text-ink">{children}</h2>;
+const H3 = ({ children }) => <h3 className="mt-4 font-display text-title font-semibold text-ink">{children}</h3>;
+const H4 = ({ children }) => <h4 className="mt-2 text-body font-semibold text-ink">{children}</h4>;
+
 const components = {
   block: {
     normal: ({ children }) => <p className="text-body text-taupe-700">{children}</p>,
-    h2: ({ children }) => <h2 className="mt-6 font-display text-heading font-semibold text-ink">{children}</h2>,
-    h3: ({ children }) => <h3 className="mt-4 font-display text-title font-semibold text-ink">{children}</h3>,
-    h4: ({ children }) => <h4 className="mt-2 text-body font-semibold text-ink">{children}</h4>,
+    h1: H2,
+    h2: H2,
+    h3: H3,
+    h4: H4,
+    h5: H4,
+    h6: H4,
     blockquote: ({ children }) => (
       <blockquote className="border-l-[3px] border-tan pl-6 font-display text-title italic text-ink">{children}</blockquote>
     ),

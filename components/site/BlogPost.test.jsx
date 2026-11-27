@@ -75,6 +75,46 @@ describe("BlogPost", () => {
     expect(within(article).getByAltText("Sauna at dusk").getAttribute("src")).toMatch(/^https:\/\/cdn\.sanity\.io\//);
   });
 
+  it("turns body h1s into h2s and h5/h6 into h4s, so the page keeps one h1", () => {
+    const body = [block("h1", [span("Big body heading")]), block("h5", [span("Small heading")]), block("h6", [span("Tiny heading")])];
+    render(<BlogPost post={{ ...post, content: body }} card={card} related={[]} />);
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    expect(screen.getByRole("heading", { level: 2, name: "Big body heading" })).toHaveClass("font-display");
+    expect(screen.getByRole("heading", { level: 4, name: "Small heading" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 4, name: "Tiny heading" })).toBeInTheDocument();
+  });
+
+  it("handles own-domain, look-alike, unsafe and mailto links", () => {
+    const links = {
+      ...block("normal", [span("home", ["a"]), span(" "), span("lookalike", ["b"]), span(" "), span("bad", ["c"]), span(" "), span("mail", ["d"]), span(" "), span("page", ["e"])]),
+      markDefs: [
+        { _key: "a", _type: "link", href: "https://thetorontosaunaco.com?utm_source=chatgpt.com" },
+        { _key: "b", _type: "link", href: "https://thetorontosaunaco.com.evil.com/x" },
+        { _key: "c", _type: "link", href: "javascript:alert(1)" },
+        { _key: "d", _type: "link", href: "mailto:sales@thetorontosaunaco.com" },
+        { _key: "e", _type: "link", href: "https://www.thetorontosaunaco.com/saunas/best-sellers#top" },
+      ],
+    };
+    const { container } = render(<BlogPost post={{ ...post, content: [links] }} card={card} related={[]} />);
+    const article = container.querySelector("article");
+    expect(within(article).getByRole("link", { name: "home" })).toHaveAttribute("href", "/?utm_source=chatgpt.com");
+    const lookalike = within(article).getByRole("link", { name: "lookalike" });
+    expect(lookalike).toHaveAttribute("href", "https://thetorontosaunaco.com.evil.com/x");
+    expect(lookalike).toHaveAttribute("target", "_blank");
+    expect(within(article).queryByRole("link", { name: "bad" })).toBeNull();
+    expect(within(article).getByText("bad")).toBeInTheDocument();
+    const mail = within(article).getByRole("link", { name: "mail" });
+    expect(mail).toHaveAttribute("href", "mailto:sales@thetorontosaunaco.com");
+    expect(mail).not.toHaveAttribute("target");
+    expect(within(article).getByRole("link", { name: "page" })).toHaveAttribute("href", "/saunas/best-sellers#top");
+  });
+
+  it("skips a body image whose reference can't be read", () => {
+    const bad = { _type: "image", _key: "bad", asset: { _ref: "garbage" }, alt: "Broken" };
+    render(<BlogPost post={{ ...post, content: [bad] }} card={card} related={[]} />);
+    expect(screen.queryByAltText("Broken")).toBeNull();
+  });
+
   it("shows three related posts and the CTA band", () => {
     render(<BlogPost post={post} card={card} related={related} />);
     for (const r of related) expect(screen.getByRole("link", { name: r.title })).toHaveAttribute("href", r.href);
