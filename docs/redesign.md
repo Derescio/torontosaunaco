@@ -200,6 +200,9 @@ Using the 36 files we have:
     Studio Six Max with Changeroom, Palmer, MiniPOD).
   - **Phase 3:** add the fields (seats, full dimensions per size, best-seller/range flags) with `/editor` inputs,
     then build the catalogue from MongoDB in the same shape.
+  - **Missing product pages:** the page reads the product URLs (ISR, 2h). Finder cards for saunas without a product
+    go to `/contact?msg=…` with the model named (`linkProductPages`), not a 404. Today that's those four. If the
+    catalogue can't be read, the design's links stay.
   - **Quote button:** the design's `mailto:` to sales@/tjallen@ became `/contact?msg=…`. The contact form fills the
     message box from `?msg=`, and its mode ignores the message text.
   - Spec: `docs/superpowers/specs/2026-11-27-sauna-finder-design.md`.
