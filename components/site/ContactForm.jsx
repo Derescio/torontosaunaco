@@ -215,10 +215,11 @@ export default function ContactForm({ copy, fallbackEmail = null }) {
         <textarea id="c-msg" rows={5} value={values.msg} onChange={set("msg")} className={cn(INPUT, "min-h-32")} />
       </Field>
 
-      {/* Honeypot: off-screen and hidden from assistive tech; people never fill it. */}
+      {/* Honeypot: off-screen and hidden from assistive tech. Its name and label avoid anything browser autofill
+          treats as a name, company or address field, so real visitors never fill it by accident. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
-        <label htmlFor="c-company">Company</label>
-        <input id="c-company" name="company" type="text" tabIndex={-1} autoComplete="off" value={values.hp} onChange={set("hp")} />
+        <label htmlFor="c-hp">Leave this empty</label>
+        <input id="c-hp" name="tsc_hp" type="text" tabIndex={-1} autoComplete="off" value={values.hp} onChange={set("hp")} />
       </div>
 
       {status === "failed" && (

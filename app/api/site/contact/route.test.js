@@ -86,10 +86,24 @@ describe("POST /api/site/contact", () => {
     expect(html).not.toContain('<a href="https://evil.example">');
   });
 
-  it("treats a filled honeypot as done and sends nothing", async () => {
+  it("treats a filled honeypot as done, sends nothing, and logs it so lost leads can be spotted", async () => {
+    const warn = jest.spyOn(console, "warn").mockImplementation(() => {});
     const res = await post({ ...quote, hp: "spam co" });
     expect(res.status).toBe(200);
     expect(sendMail).not.toHaveBeenCalled();
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining("honeypot"));
+    warn.mockRestore();
+  });
+
+  it("only sets Reply-To to a single plain address", async () => {
+    await post({ ...quote, phone: "416 555 1234", email: "a@x.com, sales@thetorontosaunaco.com" });
+    expect(sendMail.mock.calls[0][0].replyTo).toBeUndefined();
+    sendMail.mockClear();
+    await post({ ...quote, phone: "416 555 1234", email: "Ann <ann@example.com>" });
+    expect(sendMail.mock.calls[0][0].replyTo).toBeUndefined();
+    sendMail.mockClear();
+    await post(quote);
+    expect(sendMail.mock.calls[0][0].replyTo).toBe("ann@example.com");
   });
 
   it("rejects invalid input with the field errors", async () => {

@@ -137,8 +137,12 @@ describe("ContactForm", () => {
 
   it("hides the honeypot from people and assistive tech", () => {
     const { container } = render(<ContactForm copy={copy} fallbackEmail={null} />);
-    const hp = container.querySelector('input[name="company"]');
+    const hp = container.querySelector('input[name="tsc_hp"]');
     expect(hp).toHaveAttribute("tabindex", "-1");
+    // Nothing that browser autofill would treat as a name, company or address field.
+    expect(container.querySelector('input[name="company"]')).toBeNull();
+    expect(hp.getAttribute("id")).not.toMatch(/company|name|address|org/i);
+    expect(container.querySelector(`label[for="${hp.id}"]`)).toHaveTextContent("Leave this empty");
     expect(hp.closest('[aria-hidden="true"]')).not.toBeNull();
     expect(within(container).queryByRole("textbox", { name: /company/i })).toBeNull();
   });

@@ -10,6 +10,8 @@ import { validate, leadEmail, newRef } from "@/lib/site/contactForm";
 
 export const TEAM_RECIPIENTS = ["sales@thetorontosaunaco.com", "tjallen@thetorontosaunaco.com"];
 const REF = /^TSC-\d{6}$/;
+// Reply-To only ever holds one plain address (no lists, names or brackets), so replying can't fan out to others.
+const SINGLE_ADDRESS = /^[^\s@,;<>"']+@[^\s@,;<>"']+\.[^\s@,;<>"']+$/;
 
 export async function POST(request) {
   let body;
@@ -21,7 +23,10 @@ export async function POST(request) {
   if (!body || typeof body !== "object") return NextResponse.json({ errors: { form: "invalid" } }, { status: 400 });
 
   // Honeypot: people never see this field, so treat a filled one as done without sending.
-  if (typeof body.hp === "string" && body.hp.trim()) return NextResponse.json({ ok: true }, { status: 200 });
+  if (typeof body.hp === "string" && body.hp.trim()) {
+    console.warn("site contact: honeypot filled; not sent");
+    return NextResponse.json({ ok: true }, { status: 200 });
+  }
 
   const { ok, errors, clean } = validate(body);
   if (!ok) return NextResponse.json({ errors }, { status: 400 });
@@ -37,7 +42,7 @@ export async function POST(request) {
     const mail = {
       from: process.env.MAIL_USER,
       to: TEAM_RECIPIENTS,
-      replyTo: clean.email || undefined,
+      replyTo: SINGLE_ADDRESS.test(clean.email) ? clean.email : undefined,
       subject,
       text,
       html,
